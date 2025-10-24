@@ -1,56 +1,214 @@
 # Executive Summary
 
-## Urban Rig Business Plan - 200 Tons Unit near CDG Airport
+## Urban Rig Business Plan - Global Waste-to-Value Solution
 
-Valorea will be a joint venture combining French operational strength with Urban Rig's cutting-edge waste recovery technology. The project will install a 200-ton continuous waste conversion unit near Charles de Gaulle Airport, capable of processing unsorted MSW, plastics, and industrial waste into valuable byproducts.
+This business plan template provides a comprehensive framework for deploying Urban Rig's cutting-edge waste recovery technology in any region worldwide. The plan is adaptable for installations ranging from 50 to 500+ tons/day capacity, processing unsorted municipal solid waste (MSW), plastics, and industrial waste into valuable products.
 
-## Key Highlights
+## The Global Opportunity
 
-### Technology Advantages
-- **Over 80% CO₂ savings** compared to conventional waste treatment
+**The Challenge**:
+- **2.3 billion tons** of waste generated globally each year, growing to **3.8 billion by 2050**
+- **58% of waste** is openly dumped or landfilled (minimal to no environmental controls)
+- **30-50% of waste cannot be effectively processed** by traditional recycling, composting, or beneficial reuse
+- **Conventional systems fail**: Recycling only captures 13.5% globally, incineration creates emissions and destroys materials, landfilling generates methane and wastes resources
+
+**The Urban Rig Solution**:
+- Processes the **750-950 million tons/year globally** of mixed, contaminated, and "unrecoverable" waste
+- Provides economically viable, environmentally superior alternative to landfilling and incineration
+- Aligns with global circular economy goals and carbon neutrality commitments
+
+## Key Technology Advantages
+
+### Environmental Performance
+- **80-90% CO₂ reduction** compared to conventional waste treatment (landfilling or incineration)
+- **95%+ material recovery rate** (oil, carbon, metals) vs 0-10% for conventional methods
+- **Zero methane emissions** (unlike landfills)
+- **Minimal air pollution** (vs incineration)
+
+### Operational Flexibility
 - **No sorting requirement** - accepts mixed, contaminated waste streams
-- **Minimal operator needs** - highly automated continuous operation
-- **Clean, safe operation** - closed-loop oxygen-free process
+- **Handles all waste types**: Organics, plastics, paper, composites, contaminated materials
+- **Energy self-sufficient** - uses process-generated gas for heating
+- **Continuous operation** - 24/7 automated processing
+- **Minimal operator needs** - highly automated system
 
-### Strategic Location
-The proximity to Charles de Gaulle Airport provides:
-- Excellent logistics and infrastructure
-- Access to diverse waste streams (aviation, catering, airport operations)
-- High visibility for France's commitment to circular economy
-- Strong regulatory and political support for innovation
+### Process Innovation
+- **Oxygen-free steam cracking** at 600°C (no combustion)
+- **Non-oxidized metal recovery** (high quality vs incineration)
+- **Closed-loop water system** (minimal water consumption)
+- **Clean, safe operation** - suitable for urban deployment
 
-### Financial Outlook
-Initial projections show a strong return on investment driven by:
-- **Recovered oil** - marketable sustainable fuel
-- **Carbon black** - industrial reuse applications
-- **Recovered metals** - non-oxidized, high-value recovery
-- **Tipping fees** - revenue from waste acceptance
+## Products and Revenue Streams
 
-### Environmental Impact
-The facility will:
-- Reduce landfilling and incineration in Île-de-France
-- Process materials currently considered "unrecoverable"
-- Create green jobs and upskill local workforce
-- Align with France's and EU's circular economy directives
+### Primary Output: Sustainable Oil
+- **Yield**: 85% of plastic content, ~30-40% of total MSW by weight
+- **Applications**: Refinery feedstock, industrial fuel, chemical precursor for circular plastics
+- **Market value**: €400-700/ton (linked to crude oil prices)
 
-## Business Model
+### Secondary Output: Carbon Black / Biochar
+- **Yield**: 15-20% of input weight
+- **Energy content**: ~25-30 MJ/kg (comparable to coal)
+- **Applications**:
+  - Industrial fuel (cement, steel kilns)
+  - Agricultural biochar (soil amendment, carbon sequestration)
+  - Activated carbon feedstock
+- **Market value**: €80-400/ton (depending on application and certification)
 
-**Joint Venture Structure**: 50/50 partnership between Urban Rig Co. Ltd and a French entity
+### Tertiary Output: Recovered Metals
+- **Yield**: 5-10% of input weight
+- **Quality**: Non-oxidized (vs degraded metals from incineration)
+- **Types**: Ferrous (steel), non-ferrous (aluminum, copper)
+- **Market value**: €200-500/ton (scrap metal rates)
+
+### Revenue Model: Dual Income Streams
+1. **Tipping fees**: €70-150/ton (paid by waste suppliers)
+2. **Product sales**: Oil + carbon + metals
+
+**Result**: Strong unit economics with significant downside protection
+
+## Business Model Framework
+
+### Typical Deployment Structure
+
+**Joint Venture or PPP (Public-Private Partnership)**:
+- **Technology Partner**: Urban Rig Co. Ltd (equipment, technical support, know-how)
+- **Local Partner**: Regional operator or government entity (permitting, operations, integration)
 
 **Urban Rig Contribution**:
 - Patented continuous steam-cracking technology
-- Technical expertise and operational support
-- Global knowledge transfer
+- Technical expertise and global operational support
+- Training and commissioning
+- Ongoing technical support and optimization
 
-**French Partner Contribution**:
-- Local regulatory compliance and permitting
-- Integration with French waste management systems
-- Operational management and stakeholder relations
+**Local Partner Contribution**:
+- Regulatory compliance and permitting
+- Integration with regional waste management systems
+- Day-to-day operations and stakeholder management
+- Access to waste supply and product off take markets
+
+## Global Applicability
+
+This business plan is adaptable for deployment in:
+
+### Europe
+**Focus**: Circular economy compliance, meeting 65% recycling targets, reducing incineration dependency
+**Opportunity**: 70-90 million tons/year of mixed waste
+**Example**: Paris CDG Airport (200 tons/day), industrial park integration in Germany/Netherlands
+
+### Asia
+**Focus**: Infrastructure gap, plastic waste crisis, energy demand, rapid urbanization
+**Opportunity**: 400-500 million tons/year of mixed waste
+**Example**: Mumbai/Delhi/Jakarta (multiple 200-300 ton units), coastal areas preventing ocean plastics
+
+### Africa
+**Focus**: Replacing open dumping, energy access, job creation, scalable low-cost solution
+**Opportunity**: 120-150 million tons/year of openly dumped waste
+**Example**: Nairobi/Lagos (200-300 ton units), off-grid mining towns (50-100 ton units)
+
+### Americas & Middle East
+**Focus**: Landfill diversion, renewable fuel standards, industrial integration
+**Opportunity**: 150-200 million tons/year
+
+## Financial Overview
+
+### Typical 200 Tons/Day Unit Economics
+
+**Capital Expenditure (CAPEX)**: €15-25 million
+- Urban Rig unit: 40-50%
+- Site, civil works, infrastructure: 30-40%
+- Engineering, commissioning, contingency: 20-30%
+
+**Operating Expenditure (OPEX)**: €2.5-3.5 million/year
+- Personnel (10-15 FTE): 40-45%
+- Maintenance and Urban Rig support: 15-20%
+- Utilities (minimal due to energy self-sufficiency): 5-10%
+- Other (insurance, compliance, admin): 25-30%
+
+**Revenue (Steady State)**: €18-25 million/year
+- Tipping fees (70,000 tons @ €80-120/ton): €5.6-8.4M
+- Oil sales (21,000 tons @ €400-700/ton): €8.4-14.7M
+- Carbon sales (12,000 tons @ €80-400/ton): €1.0-4.8M
+- Metal sales (5,000 tons @ €200-400/ton): €1.0-2.0M
+
+**EBITDA**: €15-22 million/year (75-85% margin)
+
+**Payback Period**: 1-3 years (depending on financing structure and local conditions)
+
+**IRR**: 30-60%+ (highly attractive returns)
+
+### Sensitivity and Scalability
+- **Break-even**: <25% capacity utilization (very low risk)
+- **Scalability**: Modular design allows 50-500+ ton/day units
+- **Climate finance eligible**: Carbon credits, green bonds, development bank loans
+
+## Environmental and Social Impact
+
+### Quantified Benefits (per 200-ton facility)
+- **Waste diverted**: 70,000 tons/year from landfill/incineration
+- **GHG reduction**: ~25,000 tons CO₂e/year
+- **Material recovery**: 95%+ (vs 0% landfill, 10-20% incineration)
+- **Energy**: Self-sufficient + surplus fuel production
+- **Water**: Closed-loop system (<10% of traditional recycling)
+
+### Job Creation
+- **Direct jobs**: 10-15 (operators, technicians, management)
+- **Indirect jobs**: 20-40 (collection, logistics, product buyers, services)
+- **Skills development**: Technical training, green economy careers
+
+### Alignment with Global Goals
+- **UN SDGs**: 7 (Energy), 11 (Cities), 12 (Consumption), 13 (Climate), 15 (Land)
+- **Paris Agreement**: Supports national climate commitments (NDCs)
+- **Circular Economy**: Closes material loops, reduces virgin material demand
 
 ## Strategic Vision
 
-Valorea will demonstrate that France can lead in transforming waste challenges into economic and environmental opportunities. By situating advanced waste valorization technology at the heart of Europe's logistics hub, the project positions the Paris region as a model for sustainable urban development and circular resource management.
+Urban Rig technology represents a **paradigm shift** in global waste management:
+
+**From**:
+- Waste as a burden → Waste as a resource
+- Landfilling and incineration → Material and energy recovery
+- Centralized mega-facilities → Distributed, modular processing
+- Environmental harm → Climate action and circularity
+
+**To**:
+- **750-950 million tons/year** global opportunity (current "unrecoverable" waste)
+- **10,000-13,000 potential units** worldwide over 20-30 years
+- **Major contributor** to global circular economy transition
+- **Proven pathway** to waste sector decarbonization
+
+## Implementation Approach
+
+### Phase 1: Pilot and Demonstration (Years 1-3)
+- Deploy 1-3 units in target region
+- Prove technology and business model
+- Secure offtake agreements and financing
+- Build local expertise
+
+### Phase 2: Commercial Scaling (Years 3-7)
+- Deploy 10-50 units regionally
+- Establish local manufacturing and support
+- Capture 5-10% of addressable market
+- Achieve profitability and positive cash flow
+
+### Phase 3: Regional Leadership (Years 7-15)
+- 100-500 units deployed
+- Standard technology for mixed waste management
+- Export model to adjacent regions
+- Sustained long-term returns
+
+## Next Steps
+
+This business plan provides the framework for adapting Urban Rig technology to specific regional contexts. Subsequent chapters detail:
+
+1. **Global Waste Management Status** (Chapter 1) - In-depth regional analysis
+2. **Company Structure** (Chapter 2) - How to set up the joint venture/partnership
+3. **Project Description** (Chapter 3) - Technical specifications and site requirements
+4. **Market Analysis** (Chapter 4) - Regional market dynamics and opportunities
+5. **Operations** (Chapter 5) - Staffing, maintenance, compliance
+6. **Financial Plan** (Chapter 6) - Detailed pro formas and financing strategies
+7. **Risk Assessment** (Chapter 7) - Technical, regulatory, market risks and mitigation
+8. **Legal & Compliance** (Chapter 8) - Regulatory frameworks by region
 
 ---
 
-**Next**: [Chapter 1 - Problem Statement: The Challenge We're Solving](01-problem-statement.md)
+**Next**: [Chapter 1 - Waste Management: Global Status, Solutions & Issues](01-wm-global-status.md)
