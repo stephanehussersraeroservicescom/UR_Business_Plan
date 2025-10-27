@@ -372,16 +372,16 @@ _**This is a preliminary market sizing estimate only - DO NOT use for financial 
 
 **CDG Site Enables Diversified Feedstock Strategy**:
 
-| Waste Stream | Volume (tons/year) | Gate Fee Potential **[VERIFY]** | Technical Challenge | Strategic Value |
+| Waste Stream | Volume (tons/year) | Gate Fee Potential | Technical Challenge | Strategic Value |
 |--------------|-------------------|-------------------|-------------------|-----------------|
-| **MSW (Île-de-France)** | _50,000-70,000_ | **€80-120/ton [VERIFY]** | Low (proven) | Base load, stable revenue |
-| **Airport waste** | _20,000-30,000_ | **€100-150/ton [VERIFY]** | Low | High-visibility, ADP partnership |
-| **Industrial/Logistics** | _30,000-50,000_ | **€80-120/ton [VERIFY]** | Low | Packaging-rich (high plastic yield) |
-| **DASRI (post-sterilized)** | _5,000-10,000_ | **€150-250/ton [VERIFY]** | High (regulatory) | Premium pricing, differentiation |
-| **Composites (wind blades)** | _10,000-20,000_ | **€100-150/ton [VERIFY]** | Medium (size reduction) | Unique market, no competition |
-| **EPS/foams** | _5,000-10,000_ | **€80-120/ton [VERIFY]** | Low | High oil yield, logistics synergy |
+| **MSW (Île-de-France)** | _50,000-70,000_ | **€80-120/ton** <span style="color:red">**[VERIFY]**</span> | Low (proven) | Base load, stable revenue |
+| **Airport waste** | _20,000-30,000_ | **€100-150/ton** <span style="color:red">**[VERIFY]**</span> | Low | High-visibility, ADP partnership |
+| **Industrial/Logistics** | _30,000-50,000_ | **€80-120/ton** <span style="color:red">**[VERIFY]**</span> | Low | Packaging-rich (high plastic yield) |
+| **DASRI (post-sterilized)** | _5,000-10,000_ | **€150-250/ton** <span style="color:red">**[VERIFY]**</span> | High (regulatory) | Premium pricing, differentiation |
+| **Composites (wind blades)** | _10,000-20,000_ | **€100-150/ton** <span style="color:red">**[VERIFY]**</span> | Medium (size reduction) | Unique market, no competition |
+| **EPS/foams** | _5,000-10,000_ | **€80-120/ton** <span style="color:red">**[VERIFY]**</span> | Low | High oil yield, logistics synergy |
 
-**Total Addressable Waste (CDG Catchment)**: _120,000-200,000 tons/year_ **[VERIFY]**
+**Total Addressable Waste (CDG Catchment)**: _120,000-200,000 tons/year_ <span style="color:red">**[VERIFY]**</span>
 
 **NOTE**: All volumes shown in italics are preliminary estimates. All gate fees marked **[VERIFY]** require validation through market research and negotiations with waste suppliers.
 
@@ -427,11 +427,11 @@ CDG Airport + Region                Urban Rig Facility              TotalEnergie
 • Composites, EPS               →                               →   • SAF production                  →
                                     ↓
                                  PYROLYSIS OIL                       1.5M tons SAF commitment         Closes loop:
-                                 • **20-25k tons/year [VERIFY]**     through 2035 (Air France-KLM)    Waste from CDG →
+                                 • 20-25k tons/year                  through 2035 (Air France-KLM)    Waste from CDG →
                                  • Circular feedstock                                                  SAF back to CDG
                                  • 75-90% CO₂ reduction
 
-**NOTE**: Pyrolysis oil volume is derived estimate based on 73,000 tons/year waste input × 30-35% oil yield. Requires validation with actual feedstock mix and Urban Rig performance data.
+**NOTE**: Pyrolysis oil volume **20-25k tons/year** <span style="color:red">**[VERIFY]**</span> is derived estimate based on 73,000 tons/year waste input × 30-35% oil yield. Requires validation with actual feedstock mix and Urban Rig performance data.
 ```
 
 **Benefits for TotalEnergies**:
