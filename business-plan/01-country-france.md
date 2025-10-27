@@ -51,11 +51,21 @@
 | **Landfilling** | 18.1% | 7.0 | ↓ Declining; target: <10% by 2035[1] |
 | **Other/Unaccounted** | 1.1% | 0.4 | Illegal dumping, lost waste[1] |
 
-**Combined "Valorization" Rate** (Recycling + Composting + Energy Recovery)[1]:
-- **80.8%** (2020)
-- **Target**: 65% material recycling + composting by 2035 (EU Waste Framework Directive)[2]
+**Understanding "Valorization" vs. EU Targets**:
 
-**Key Insight**: While France has 80.8% "valorization", only **42.7%** is true material recycling/composting. **38.1% is still incinerated**[1] (destroys materials, generates CO₂).
+France reports **80.8% "valorization"** (2020)[1], which includes:
+- **26.9% material recycling** (actual material recovery)[1]
+- **15.8% composting/organic recovery**[1]
+- **38.1% energy recovery from incineration** (waste-to-energy)[1]
+
+**EU 2035 Target**: **65% material recycling + composting ONLY** (excludes incineration)[2]
+
+**Key Insight**: The EU target (65%) is **MORE STRINGENT** than France's current 80.8% "valorization" because:
+- **Current true material recovery**: Only 42.7% (26.9% + 15.8%)[1]
+- **Target requirement**: 65% material recovery (no incineration counted)
+- **Gap**: France must **increase material recovery by 22.3 percentage points** AND **reduce incineration dependency** from 38.1% to meet EU targets[1][2]
+
+France's high "valorization" rate is misleading - it's heavily dependent on incineration (38.1%), which the EU no longer recognizes as "recycling" under the Circular Economy Action Plan[2].
 
 ---
 
