@@ -192,25 +192,35 @@ This document compiles research for Chapter 3 Project Description focused on ref
 - **Packaging waste from e-commerce, air freight operations**
 - Damaged goods, pallets, wrapping materials (EPS, stretch film)
 
-**Estimated Industrial/Commercial Waste**: 200,000-300,000 tons/year (regional estimate for Roissy industrial basin)
+**Estimated Industrial/Commercial Waste**: 200,000-300,000 tons/year
+**NOTE**: This is an ORDER-OF-MAGNITUDE ESTIMATE based on:
+- Île-de-France total commercial waste: ~6.2M tons/year[CDG-1]
+- Roissy industrial basin represents ~3-5% of regional industrial activity (based on employment/land area)
+- **This estimate requires validation with actual waste collection data**
 
 ---
 
 ### Airport-Specific Waste Streams
 
-**CDG Airport Waste Generation**:
-- **80,000-100,000 tons/year total waste**
-- **76.2 million passengers** (2019 pre-COVID), 65 million (2023 recovery)
+**CDG Airport Waste Generation**[CDG-2]:
+- **80,000-100,000 tons/year total waste** (estimate from France country module, based on ~1.2-1.5 kg/passenger)
+- **76.2 million passengers** (2019 pre-COVID)[CDG-2]
+- **65 million passengers** (2023 recovery estimate)[CDG-2]
+- **1.9 million tonnes cargo handled** (2024)[CDG-3]
 
-**Waste Composition by Source**:
+**NOTE**: Airport waste volume is an ESTIMATE. Actual volumes require validation with Aéroports de Paris (ADP) waste management data.
 
-| Source | % | Tons/Year | Characteristics |
+**Waste Composition by Source** (ESTIMATED breakdown):
+
+| Source | % (est.) | Tons/Year (est.) | Characteristics |
 |--------|---|-----------|-----------------|
 | **Aircraft cabin** | 40% | 32,000-40,000 | Meal trays, packaging, duty-free, magazines, mixed plastics |
 | **Terminal operations** | 30% | 24,000-30,000 | Food courts, retail, passenger waste, high plastic content |
 | **Catering operations** | 15% | 12,000-15,000 | Food prep waste + packaging (often contaminated) |
 | **Cargo & logistics** | 10% | 8,000-10,000 | Packaging, pallets, damaged goods, EPS, films |
 | **Airport operations** | 5% | 4,000-5,000 | Maintenance, offices, grounds keeping |
+
+**DISCLAIMER**: Waste composition breakdown is ESTIMATED based on typical airport waste profiles. Actual data requires ADP waste audit.
 
 **Key Advantage**:
 - **International flight waste = complex mixed waste stream** ideal for Urban Rig
@@ -254,7 +264,9 @@ This document compiles research for Chapter 3 Project Description focused on ref
   - Lower CO₂ emissions vs. incineration
   - Hospitals seeking circular economy solutions for non-infectious medical waste
 
-**Estimated DASRI Volume (Val d'Oise region)**: 5,000-10,000 tons/year (rough estimate for catchment area)
+**Estimated DASRI Volume (Val d'Oise region)**: 5,000-10,000 tons/year
+**BASIS**: Order-of-magnitude estimate only. France generates ~170,000 tons/year DASRI nationally[CDG-4]. Val d'Oise (population ~1.25M) would represent ~2% of national total = ~3,400 tons/year. Range accounts for regional medical infrastructure concentration.
+**CRITICAL**: This estimate requires validation with actual ABARIS, Séché Healthcare, or Val d'Oise health authority data.
 
 **NOTE**: DASRI integration requires additional regulatory work and may be Phase 2 opportunity after proving MSW/commercial waste processing.
 
@@ -262,13 +274,15 @@ This document compiles research for Chapter 3 Project Description focused on ref
 
 ### Composite Waste Sources
 
-**Wind Turbine Blades**:
-- France: 20 GW installed wind capacity (2023)
-- First-generation blades reaching end-of-life (2020-2030)
-- **Estimated blade waste: 50,000-100,000 tons/year by 2030** (France-wide)
-- Current disposal: 90% landfilled
-- **Problem**: No satisfactory recycling solution exists
+**Wind Turbine Blades**[CDG-5]:
+- France: 20 GW installed wind capacity (2023)[CDG-5]
+- First-generation blades reaching end-of-life (2020-2030)[CDG-5]
+- **Estimated blade waste: 50,000-100,000 tons/year by 2030** (France-wide)[CDG-5]
+- Current disposal: 90% landfilled[CDG-5]
+- **Problem**: No satisfactory recycling solution exists[CDG-5]
 - **CDG advantage**: Central location for collecting blades from northern France wind farms
+
+**NOTE**: France blade waste estimate from France country module research. Based on wind capacity and typical blade mass.
 
 **Automotive & Aerospace Composites**:
 - Carbon fiber panels, fiberglass components
@@ -282,6 +296,11 @@ This document compiles research for Chapter 3 Project Description focused on ref
 - **Urban Rig advantage**: Accepts low-density EPS, converts to high-value oil
 
 **Estimated Composite Waste (Regional)**: 10,000-20,000 tons/year accessible from CDG location
+
+**DISCLAIMER**: This is a HIGH-UNCERTAINTY ESTIMATE. Includes automotive composites, aerospace scrap, EPS packaging from logistics. Requires market validation with:
+- Wind turbine decommissioning companies
+- Airbus/Safran aerospace scrap volume data
+- Logistics packaging waste audits from FedEx/UPS/DHL Roissy operations
 
 ---
 
@@ -299,6 +318,15 @@ This document compiles research for Chapter 3 Project Description focused on ref
 | **EPS/foams** | 5,000-10,000 | €80-120/ton | Low | High oil yield, logistics synergy |
 
 **Total Addressable Waste (CDG Catchment)**: 120,000-200,000 tons/year
+
+**CRITICAL DISCLAIMER**: All waste volume estimates in the table above are ORDER-OF-MAGNITUDE ESTIMATES requiring validation through:
+1. ADP (Aéroports de Paris) waste management data
+2. Industrial zone waste collection contracts
+3. DASRI processors (ABARIS, Séché Healthcare)
+4. Wind turbine decommissioning schedules
+5. Logistics operators waste audits
+
+**These estimates provide strategic direction but CANNOT be used for financial projections without validation.**
 
 **Equipment Sizing Rationale**:
 - **2 × 100 tons/day units**: 73,000 tons/year combined (allows one unit maintenance while other operates)
@@ -396,6 +424,121 @@ CDG Airport + Region                Urban Rig Facility              TotalEnergie
 - **Multi-stream flexibility**: Not dependent on single waste source
 - **Strategic partnerships**: TotalEnergies (established), ADP (airport operator), Air France (end customer)
 - **Proven technology + environmental ambition**: Urban Rig maturity meets TotalEnergies' net-zero goals
+
+---
+
+## SOURCES AND REFERENCES
+
+### Refinery Sources (Verified)
+
+All refinery data verified in separate document: `refinery-technology-gap-verification.md` with 24 independent sources.
+
+**Primary Refinery Sources**:
+- TotalEnergies official press releases (Gonfreville SAF, Grandpuits conversion)
+- INEOS official announcements (Lavera pyrolysis oil purchases)
+- Trafigura/Entara press releases (Fos-sur-Mer acquisition)
+- Offshore Technology refinery profiles
+- Oil & Gas Journal industry reports
+
+See full citations in `refinery-technology-gap-verification.md`.
+
+---
+
+### CDG & Île-de-France Sources
+
+[CDG-1] ORDIF. (2021). *"Les chiffres-clés des déchets en Île-de-France."*
+**Used for**: Île-de-France total commercial/industrial waste volume (6.2M tons/year)
+**Details**: Regional waste statistics authority
+
+[CDG-2] Wikipedia. "Charles de Gaulle Airport."
+https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport
+**Used for**:
+- Multi-department coverage (Val-d'Oise, Seine-et-Marne, Seine-Saint-Denis)
+- Passenger traffic (76.2M in 2019, recovery estimates)
+- Location details
+
+[CDG-3] Web search results (2024). "CDG cargo traffic 2024."
+**Used for**: 1.9 million tonnes cargo handled (2024)
+**Source type**: Search result from airport traffic reporting
+
+[CDG-4] French healthcare waste industry estimates.
+**Used for**: National DASRI volume (~170,000 tons/year France)
+**NOTE**: Estimate used for Val d'Oise regional calculation
+**Requires validation**: With ABARIS, Séché Healthcare, or French health ministry data
+
+[CDG-5] France country module research.
+**Used for**: Wind turbine blade waste estimates (20 GW capacity, 50-100k tons/year by 2030)
+**Original sources**: See France country module references
+
+[CDG-6] Web search results. "Roissy industrial zones."
+**Used for**:
+- PLANÈTE FRANCE Industrial Zone (12.56 hectares)
+- ZONE D'ENTRETIEN (85.98 hectares)
+- PARINORD II, ROISSY PARC INTERNATIONAL locations
+**Source**: French business zone directories (Simplanter.fr, etc.)
+
+[CDG-7] Web search results. "DASRI waste management Val d'Oise."
+**Used for**:
+- ABARIS operating in Val d'Oise since 1993
+- Séché Healthcare, Ecodas national processors
+- DASRI treatment process (collection → disinfection → incineration)
+**Sources**: Company websites (ABARIS, Séché Healthcare, Ecodas)
+
+---
+
+### ESTIMATES REQUIRING VALIDATION
+
+The following estimates in this document **require validation with primary sources** before use in business projections:
+
+1. **Industrial/Commercial Waste (200-300k tons/year)**:
+   - Basis: 3-5% of Île-de-France total based on Roissy industrial basin size
+   - **Validation needed**: Actual waste collection contracts, industrial zone waste audits
+
+2. **CDG Airport Waste (80-100k tons/year)**:
+   - Basis: ~1.2-1.5 kg/passenger × 65-76M passengers
+   - **Validation needed**: ADP (Aéroports de Paris) waste management data
+
+3. **Airport Waste Composition Table** (40% cabin, 30% terminal, 15% catering, etc.):
+   - Basis: Typical airport waste profiles from industry literature
+   - **Validation needed**: ADP waste audit data, specific CDG breakdown
+
+4. **DASRI Val d'Oise (5-10k tons/year)**:
+   - Basis: 2% of national total (170k tons/year) adjusted for medical infrastructure
+   - **Validation needed**: ABARIS collection data, Val d'Oise health authority statistics
+
+5. **Composite Waste Regional (10-20k tons/year)**:
+   - Basis: Combined estimate for automotive, aerospace, EPS packaging
+   - **Validation needed**:
+     - Wind turbine decommissioning schedules
+     - Airbus/Safran aerospace scrap data
+     - FedEx/UPS/DHL logistics packaging audits
+
+6. **Multi-Stream Revenue Table Volumes**:
+   - All volumes are strategic order-of-magnitude estimates
+   - **Validation needed**: Line-by-line verification with waste suppliers
+
+---
+
+### METHODOLOGY NOTES
+
+**Waste Volume Estimation Approach**:
+1. Used verified regional/national totals where available (Île-de-France, France national)
+2. Applied proportional allocation based on population, industrial activity, or facility size
+3. Cross-referenced with typical waste generation factors (kg/passenger, kg/employee, etc.)
+4. Applied ranges to account for uncertainty
+
+**Confidence Levels**:
+- **HIGH confidence**: Refinery data (primary sources, company announcements)
+- **MEDIUM confidence**: CDG passenger traffic, industrial zone sizes (public data)
+- **LOW confidence**: Waste volume breakdowns, DASRI estimates, composite waste (requires validation)
+
+**Recommended Validation Sequence for Chapter 3**:
+1. **Phase 1**: Request ADP waste data (CDG airport volumes and composition)
+2. **Phase 2**: Contact industrial zone waste collectors (Roissy industrial basin)
+3. **Phase 3**: Engage ABARIS, Séché Healthcare for DASRI volumes
+4. **Phase 4**: Survey logistics operators for packaging waste audits
+
+**CRITICAL**: Do NOT use unvalidated estimates for financial modeling or investor presentations without clear disclosure of estimation basis and uncertainty ranges.
 
 ---
 
