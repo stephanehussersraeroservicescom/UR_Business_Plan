@@ -407,6 +407,158 @@ _**This is a preliminary market sizing estimate only - DO NOT use for financial 
 
 ---
 
+### Treatment Economics: Costs and Product Values
+
+This section details the current market treatment costs for each waste stream and the economic value of Urban Rig products.
+
+---
+
+#### Current Market Treatment Costs by Waste Stream[FR-1]
+
+| Waste Stream | Current Treatment Method | Market Gate Fee | True Operating Cost | Subsidy/Hidden Cost | Source |
+|--------------|-------------------------|----------------|---------------------|-------------------|--------|
+| **MSW** | Incineration (WTE) | €50-90/ton | €120-180/ton | €30-40/ton (energy revenue + TGAP advantage) | [FR-1] |
+| **MSW** | Landfilling | €80-120/ton | €145-205/ton | €65/ton TGAP tax (paid by operator) | [FR-1] |
+| **Airport waste** | Incineration (mandatory destruction) | €100-150/ton 🔴**[VERIFY]** | €150-200/ton 🔴**[VERIFY]** | International waste regulations require destruction | Estimate |
+| **Industrial plastics** | Mechanical recycling | €50-80/ton | €500-900/ton | €200-600/ton EPR payments | [FR-1] |
+| **DASRI** | Sterilization + incineration | €150-250/ton 🔴**[VERIFY]** | €250-400/ton 🔴**[VERIFY]** | Regulatory costs, specialized handling | Estimate |
+| **Composites (wind blades)** | Landfilling | €100-150/ton | €150-300/ton | None (operators pay full cost) | [FR-1] |
+| **Composites (wind blades)** | Cement co-processing | €50-100/ton | €50-150/ton | None | [FR-1] |
+| **EPS/foams** | Landfilling or incineration | €80-120/ton 🔴**[VERIFY]** | €100-150/ton 🔴**[VERIFY]** | Low density = high transport cost | Estimate |
+
+**[FR-1]**: Data from France country module F.11 Competitive Landscape section with citations from ADEME, industry surveys.
+
+**KEY INSIGHT**: Most competing technologies have reported gate fees LOWER than true operating costs. The difference is covered by:
+- Energy sales revenue (incineration)
+- EPR payments from producers (recycling)
+- TGAP tax advantages (incineration vs landfilling)
+- Municipal subsidies
+
+---
+
+#### Urban Rig Processing Economics[FR-2]
+
+**Based on CDG Case Study (70,000 tons/year operation)**[FR-2]:
+
+**Operating Costs** (€/ton):
+- Personnel (15 FTE): €14/ton
+- Maintenance + UR support: €9/ton
+- Utilities: €4/ton (minimal due to energy self-sufficiency)
+- Insurance, admin, compliance: €6/ton
+- **Total OPEX**: **€33/ton**
+
+**Product Yields and Values** (from mixed MSW/airport waste feedstock):
+
+| Product | Yield (% of input) | Quantity (from 70k tons) | Market Value | Revenue (€/ton input) | Notes |
+|---------|-------------------|-------------------------|--------------|---------------------|--------|
+| **Pyrolysis oil** | 30% | 21,000 tons/year | **€500/ton** 🔴**[VERIFY]** | €150/ton | Refinery feedstock, SAF production |
+| **Biochar** | 17% | 12,000 tons/year | **€150/ton** 🔴**[VERIFY]** | €26/ton | Soil amendment, carbon sequestration |
+| **Recovered metals** | 7% | 5,000 tons/year | **€300/ton** 🔴**[VERIFY]** | €21/ton | Ferrous, non-ferrous metals |
+| **Syngas** | ~10% (energy) | - | Internal use | €0 (process energy) | Powers pyrolysis process |
+| **TOTAL PRODUCT VALUE** | | | | **€197/ton** | |
+
+**Economic Summary**:
+- **Gate fee revenue**: €100/ton (competitive with current market)
+- **Product revenue**: €197/ton
+- **Operating costs**: -€33/ton
+- **Net margin**: **€264/ton** (before CAPEX amortization)
+- **EBITDA margin**: ~89%
+
+**[FR-2]**: Data from France country module F.8.2 Financial Projections.
+
+---
+
+#### Product Value Details and Market Validation
+
+**1. Pyrolysis Oil - €500/ton** 🔴**[VERIFY]**
+
+**Market Context**[FR-2]:
+- **Waste-based feedstock premium**: Qualifies for SAF mandates, circular economy credits
+- **TotalEnergies Gonfreville**: Actively purchasing circular feedstocks for SAF production (160,000 tons/year target)
+- **Alternative pricing benchmarks**:
+  - Used cooking oil (UCO): €800-1,200/ton (limited supply, competition)
+  - Tallow/animal fats: €600-900/ton (regulatory constraints)
+  - Plastic pyrolysis oil: €400-600/ton (emerging market)
+
+**Quality Specifications Required**:
+- Low sulfur (<0.5%)
+- Low chlorine (<100 ppm)
+- Suitable for co-processing in refinery crackers/hydrotreaters
+- **Urban Rig oil from MSW/plastics**: Meets these specifications after minimal post-processing
+
+**Validation Needed**:
+- TotalEnergies feedstock qualification testing
+- Long-term offtake agreement price negotiation
+- Quality consistency verification across feedstock variations
+
+---
+
+**2. Biochar - €150/ton** 🔴**[VERIFY]**
+
+**Market Context**[FR-2]:
+- **Soil amendment market**: €100-200/ton (France, agriculture)
+- **Carbon credit potential**: €50-100/ton additional value (permanent carbon sequestration)
+- **Industrial carbon applications**: €200-400/ton (activated carbon, water treatment)
+
+**Quality Specifications**:
+- High carbon content (>70%)
+- Low heavy metals
+- pH neutral to alkaline
+- **Urban Rig biochar**: Requires validation for specific applications (soil amendment vs industrial carbon)
+
+**Market Partners**:
+- LafargeHolcim/Vicat (cement carbon additive)
+- Agricultural cooperatives (soil amendment)
+- Water treatment companies (activated carbon)
+
+**Validation Needed**:
+- Biochar quality testing (carbon content, contaminants)
+- Application-specific certification (agriculture, industrial)
+- Market price negotiation based on quality grade
+
+---
+
+**3. Recovered Metals - €300/ton** 🔴**[VERIFY]**
+
+**Market Context**:
+- **Ferrous scrap**: €150-250/ton (France market, 2024)
+- **Non-ferrous (aluminum, copper)**: €1,500-3,000/ton
+- **Mixed metals from MSW**: €200-400/ton (typical recovery value)
+
+**Recovery Process**:
+- Magnetic separation (ferrous)
+- Eddy current separation (non-ferrous)
+- Manual sorting for high-value streams
+
+**Market Partners**:
+- Scrap metal dealers (local)
+- Veolia/Suez metal recovery divisions
+
+**Validation Needed**:
+- Metal yield verification from specific feedstock mix
+- Contamination levels assessment
+- Local scrap market pricing agreements
+
+---
+
+#### Waste Stream-Specific Economics
+
+**Optimizing Feedstock Mix for Maximum Value**:
+
+| Feedstock Type | Oil Yield | Biochar Yield | Gate Fee | Product Value | Total Revenue/ton |
+|----------------|-----------|---------------|----------|--------------|-------------------|
+| **Plastic-rich (airport/logistics)** | 40-50% | 10-15% | €100-120 | €220-280 | €320-400/ton |
+| **Mixed MSW** | 25-35% | 15-20% | €80-100 | €150-200 | €230-300/ton |
+| **Composites (wind blades)** | 30-40% (resin) | 5-10% | €100-150 | €180-240 | €280-390/ton |
+| **EPS foam** | 45-55% | 5-10% | €80-120 | €250-310 | €330-430/ton |
+| **DASRI (post-sterilized)** | 35-45% | 10-15% | €150-250 | €200-260 | €350-510/ton |
+
+**NOTE**: All yields and product values are ESTIMATES requiring validation with Urban Rig performance data for specific feedstock types. EPS and plastic-rich feedstocks offer highest product value due to high oil yields.
+
+**Strategic Insight**: CDG location provides access to plastic-rich waste streams (airport packaging, logistics, industrial) that maximize product value while maintaining competitive gate fees.
+
+---
+
 ## 3. REFINERY INTEGRATION STRATEGY
 
 ### Recommended Primary Partnership: TotalEnergies Gonfreville
