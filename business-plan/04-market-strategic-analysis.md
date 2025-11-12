@@ -805,4 +805,333 @@
 
 ---
 
+## 4.4 Urban Rig Competitive Advantages
+
+### 4.4.1 Technology Advantages
+
+#### **Continuous vs. Batch Processing**
+
+**Urban Rig's Continuous Process**[Chapter 3.3.2, Chapter 5.2]:
+- **24/7 operation**: No downtime between processing cycles
+- **Automated feed system**: Minimal labor intervention
+- **Consistent product quality**: Steady-state thermal conditions
+- **Energy efficiency**: 85% energy self-sufficient using process-generated syngas[Chapter 3.3.2]
+- **Higher throughput**: 30-40% better economics than batch systems[Chapter 5.2]
+
+**Comparison vs. Batch Competitors**[Chapter 5.2]:
+
+| Factor | Batch Pyrolysis | Urban Rig Continuous |
+|--------|----------------|---------------------|
+| **Throughput** | Lower (downtime between batches) | Higher (24/7 operation) |
+| **Labor** | High (manual loading/unloading) | Low (automated) |
+| **Output Consistency** | Variable batch-to-batch | Consistent quality |
+| **Energy Efficiency** | Heat loss during loading cycles | Stable thermal regime (85% self-sufficient) |
+| **Maintenance Complexity** | High (thermal cycling stress) | Lower (steady-state operation) |
+| **CAPEX Efficiency** | €150-200k per ton/day capacity | €90-120k per ton/day capacity |
+
+**Advantage**: 30-50% better capital efficiency and operationally superior to batch systems.
+
+---
+
+#### **Feedstock Flexibility**
+
+**Urban Rig Accepts Diverse Waste Streams**[Chapter 3.2.2, Chapter 3.3.3]:
+
+| Feedstock Type | Oil Yield | Biochar Yield | Urban Rig Capability |
+|----------------|-----------|---------------|---------------------|
+| **Mixed MSW** | 25-35% | 15-20% | ✅ Standard processing |
+| **Plastic-rich waste** | 40-50% | 10-15% | ✅ Optimized for high-value streams |
+| **Composites (wind blades, aerospace)** | 30-40% | 5-10% | ✅ **Only technology at scale** |
+| **EPS foam** | 45-55% | 5-10% | ✅ Accepts low-density waste |
+| **DASRI (post-sterilized)** | 35-45% | 10-15% | ✅ Potential (requires regulatory approval) |
+
+**Competitive Advantage**[Chapter 4.3.1]:
+- Most chemical recycling competitors accept **plastics only** (Plastic Energy, Quantafuel)
+- Urban Rig processes **mixed MSW + composites + industrial waste**
+- **Wind turbine blades**: Monopolistic opportunity - no competing solution at scale[Chapter 3.2.2]
+
+---
+
+#### **Scale Advantage**
+
+**Urban Rig vs. Competitors**[Chapter 4.3.1]:
+- **Urban Rig CDG**: 70,000 tons/year (2 × 100T/day units)
+- **Plastic Energy**: 5,000-15,000 tons/year per plant (5-14× smaller)
+- **Quantafuel**: 16,000 tons/year (4× smaller)
+- **Fuenix Ecogy**: 20,000 tons/year (3.5× smaller)
+
+**Deployment Track Record**[Chapter 4.3.1]:
+- Urban Rig: **Multiple operational sites** (proven technology)
+- Competitors: Limited deployments, mostly pilot/demonstration scale
+
+---
+
+### 4.4.2 Environmental Advantages
+
+#### **CO₂ Emissions Reduction**
+
+**Quantified Emissions Comparison**[Chapter 6.1]:
+
+| Treatment Method | GHG Emissions (kg CO₂e/ton) | Urban Rig Advantage |
+|------------------|----------------------------|-------------------|
+| **Landfilling** | 400-600 | **80-90% reduction** |
+| **Incineration** | 300-500 | **80-90% reduction** |
+| **Urban Rig** | 50-100 | Baseline |
+
+**Annual Impact** (CDG 73,000 tons/year facility)[Chapter 6.1]:
+- **CO₂ savings**: ~25,000 tons CO₂e per year
+- **Equivalent to**: 5,400 cars removed from roads or 3,100 hectares of forest carbon sequestration
+
+**Sources of CO₂ Reduction**[Chapter 6.1]:
+1. ✅ **Eliminating landfill methane**: No anaerobic decomposition (CH₄ = 25× CO₂ potency)
+2. ✅ **Reducing incineration emissions**: No direct combustion of waste
+3. ✅ **Fossil fuel displacement**: Recovered oil replaces virgin crude oil extraction
+4. ✅ **Biogenic carbon**: CO₂ from biomass is carbon-neutral (short-term carbon cycle)
+
+---
+
+#### **Air Quality Improvements**
+
+**Criteria Pollutants Comparison**[Chapter 3.3.2, Chapter 6.3]:
+
+| Pollutant | Incineration | Urban Rig | Reduction |
+|-----------|--------------|-----------|-----------|
+| **NOx (nitrogen oxides)** | High | <10% of incineration | 90%+ reduction |
+| **SOx (sulfur oxides)** | Significant | <10% of incineration | 90%+ reduction |
+| **Particulate matter (PM)** | Significant | <10% of incineration | 90%+ reduction |
+| **Dioxins and furans** | Trace (regulated) | <10% of incineration | 90%+ reduction |
+
+**Emissions Control Systems**[Chapter 3.3.2, Chapter 6.3]:
+- ✅ **Integrated exhaust gas treatment**: Activated carbon filtration, catalytic oxidation
+- ✅ **Ceramic water filtration**: Closed-loop water recycling
+- ✅ **Continuous emissions monitoring**: Real-time compliance tracking
+- ✅ **No odor**: Enclosed, oxygen-free process (no decomposition)
+
+**Advantage**: Significantly better air quality impact than incineration, especially important in densely populated Île-de-France region.
+
+---
+
+#### **Water and Soil Protection**
+
+**Water Management**[Chapter 6.3]:
+- ✅ **Zero leachate generation**: Unlike landfills (toxic leachate contamination risk)
+- ✅ **Closed-loop water recycling**: Ceramic filtration system, target zero liquid discharge
+- ✅ **Minimal water consumption**: <1% of water use vs. traditional recycling (no washing)
+
+**Soil Benefits**[Chapter 6.3]:
+- ✅ **Landfill space preservation**: 73,000 tons/year diverted
+- ✅ **Biochar soil amendment**: Improves soil structure, nutrient retention, pH buffering
+- ✅ **Carbon sequestration**: Biochar stores carbon in soil for centuries
+
+---
+
+#### **Circular Economy Performance**
+
+**Material Recovery Rate**[Chapter 3.3.2, Chapter 6.2]:
+- **Urban Rig**: 95% material recovery (oil, biochar, metals, syngas)
+- **Incineration**: 10-15% (ash/metals only, 85% destroyed)
+- **Landfilling**: 0% (disposal, no recovery)
+
+**Contribution to France's Recycling Targets**[Chapter 6.2]:
+- **Traditional system**: 42% recycling (France, 2020) → 58% to incineration/landfill
+- **With Urban Rig**: 42% mechanical + 30-35% Urban Rig = **72-77% effective recovery**
+- **EU target**: 65% by 2035 → **Urban Rig helps France meet and exceed target**
+
+---
+
+### 4.4.3 Economic Advantages
+
+#### **Capital Efficiency**
+
+**CAPEX Comparison**[Chapter 3.3.2, Chapter 4.3.2]:
+
+| Treatment Method | Capacity | Total CAPEX | CAPEX per ton/day | Urban Rig Advantage |
+|------------------|----------|-------------|------------------|-------------------|
+| **Incineration (WTE)** | 200,000 tons/year | €120-180M | €600-900/ton capacity | **45-60% lower** |
+| **Urban Rig CDG** | 73,000 tons/year | €24-33M | €340-470/ton capacity | **Baseline** |
+
+**Deployment Speed**[Chapter 4.3.2]:
+- **Incineration**: 5-8 years (planning, permitting, construction)
+- **Urban Rig**: 2-3 years (smaller footprint, easier permitting)
+- **Advantage**: **2-3× faster to deploy**
+
+---
+
+#### **Operating Cost Competitiveness**
+
+**OPEX Structure** (CDG 70,000 tons/year)[Chapter 3.5.2]:
+
+| Cost Category | Annual Cost | Cost per Ton | Notes |
+|---------------|-------------|--------------|-------|
+| **Personnel** (20 FTE @ €65k avg) | €1,300k | €19/ton | Automated operation = low labor |
+| **Maintenance & UR support** | €900k | €13/ton | Scheduled maintenance, Urban Rig technical support |
+| **Utilities** (net after syngas) | €300k | €4/ton | 85% energy self-sufficient |
+| **Insurance, admin, compliance** | €500k | €7/ton | Standard operating costs |
+| **TOTAL OPEX** | **€3.0M/year** | **€43/ton** | Competitive with alternatives |
+
+**Energy Self-Sufficiency Advantage**[Chapter 3.3.2]:
+- ✅ **85% energy self-sufficient**: Using process-generated syngas for heating
+- ✅ **Low utility costs**: €4/ton vs. €15-25/ton for traditional waste treatment
+- ✅ **Energy independence**: Not exposed to natural gas/electricity price volatility
+
+---
+
+#### **Dual Revenue Model**
+
+**Revenue Diversification** (CDG full capacity)[Chapter 3.5.3]:
+
+| Revenue Source | Annual Revenue | % of Total | Resilience |
+|----------------|----------------|-----------|-----------|
+| **Tipping fees** (70k tons @ €100/ton avg) | €7.0M | 30% | Stable (long-term waste supply contracts) |
+| **Pyrolysis oil sales** (23k tons @ €500/ton) | €11.5M | 49% | Premium pricing (SAF feedstock demand) |
+| **Biochar sales** (12k tons @ €150/ton) | €1.8M | 8% | Growing market (soil amendment, carbon sequestration) |
+| **Metal sales** (5k tons @ €300/ton) | €1.5M | 6% | Commodity pricing (ferrous/non-ferrous scrap) |
+| **TOTAL REVENUE** | **€23.45M** | 100% | Diversified, not dependent on single revenue stream |
+
+**Competitive Advantage**:
+- ✅ **Incineration**: Single revenue (gate fees + energy sales) - vulnerable to energy price volatility
+- ✅ **Landfilling**: Single revenue (gate fees only)
+- ✅ **Urban Rig**: **Four revenue streams** - diversified risk, premium product pricing
+
+---
+
+#### **Financial Performance**
+
+**Exceptional Returns**[Chapter 3.5.4]:
+- **IRR**: 50-70%+ (exceptionally strong)
+- **Payback period**: 1.2-1.6 years blended (Phase 1 + Phase 2)
+- **EBITDA margin**: 87% (Phase 2 full operation)
+- **5-year cash generation**: €55.8M net of CAPEX
+
+**Comparison vs. Alternatives**[Chapter 3.5.5]:
+- ✅ **Only technology economically viable without subsidies**
+- ✅ **Incineration**: Requires energy revenue subsidies to break even
+- ✅ **Mechanical recycling**: Requires €200-600/ton EPR payments
+
+---
+
+#### **Cost Advantage vs. Incumbent Treatments**
+
+**Total Cost to Customer**[Chapter 3.5.5, Chapter 4.3.2]:
+
+| Treatment Method | Gate Fee | TGAP Tax (France) | Total Cost to Customer | Urban Rig Advantage |
+|------------------|----------|------------------|----------------------|-------------------|
+| **Incineration** | €50-90/ton | €15/ton (rising) | €65-105/ton | **Comparable** |
+| **Landfilling** | €80-120/ton | €65/ton (2024, rising) | €145-185/ton | **€65-105/ton cheaper** |
+| **Urban Rig** | €80-150/ton | €0 (exempt as recycling) | €80-150/ton | **TGAP exemption = cost advantage** |
+
+**TGAP Tax Advantage**[Chapter 4.2.1]:
+- ✅ **€15/ton saved vs. incineration** (2024, escalating annually)
+- ✅ **€65/ton saved vs. landfilling** (2024, escalating to €75/ton in 2025)
+- ✅ **Regulatory classification**: "Recycling" (Waste Hierarchy Level 3) = TGAP exempt
+
+---
+
+### 4.4.4 Strategic Advantages
+
+#### **Regulatory Positioning**
+
+**EU Waste Hierarchy Classification**[Chapter 4.2.1, Chapter 4.3.2]:
+1. Prevention
+2. Preparing for reuse
+3. **Recycling** ← **Urban Rig** (material recovery to oil, carbon, metals)
+4. Other recovery ← Incineration (energy recovery only)
+5. Disposal ← Landfilling
+
+**Benefits of "Recycling" Classification**[Chapter 4.2.1]:
+- ✅ **TGAP tax exemption**: €15-65/ton cost advantage
+- ✅ **Qualifies for circular economy funding**: ADEME grants (20-80% CAPEX), EIB loans (1.5-2.5% interest), EU Innovation Fund
+- ✅ **Regulatory preference**: Authorities prioritize recycling over energy recovery
+- ✅ **Public perception**: Circular economy storytelling vs. waste disposal
+
+---
+
+#### **SAF Feedstock Qualification**
+
+**Regulatory Compliance**[Chapter 4.2.1]:
+- ✅ **EU RED II (Renewable Energy Directive)**: Pyrolysis oil from waste qualifies as circular economy feedstock
+- ✅ **ReFuelEU Aviation**: Meets "waste and residues" requirement for SAF mandates
+- ✅ **Double counting**: Waste-based SAF receives 2× credit toward mandates (strong incentive for refineries)
+
+**Market Opportunity**[Chapter 4.2.1, Chapter 3.4.1]:
+- 🎯 **2030 EU SAF requirement**: 3.6 million tons/year SAF = 10-12M tons/year circular feedstock needed
+- 🎯 **TotalEnergies Gonfreville**: 160,000 tons/year feedstock need for SAF production
+- 🎯 **Urban Rig CDG**: 20-25k tons/year oil = **12-15% of single refinery need**
+- 🎯 **Premium pricing**: SAF feedstocks command €400-800/ton vs €200-400/ton industrial fuel
+
+---
+
+#### **Strategic Partnerships**
+
+**TotalEnergies SAF Partnership**[Chapter 3.4.1]:
+- ✅ **Gonfreville refinery**: 160,000 tons/year SAF capacity (2025), needs circular feedstock
+- ✅ **Air France-KLM contract**: 10-year agreement (1.5M tons SAF through 2035) = **long-term demand visibility**
+- ✅ **No on-site pyrolysis**: TotalEnergies reliant on external suppliers = **Urban Rig opportunity**
+- ✅ **Circular economy storytelling**: "CDG waste → Gonfreville SAF → CDG Air France jets"
+
+**ADP (Aéroports de Paris) Partnership**[Chapter 3.2.1]:
+- ✅ **Net-zero 2050 commitment**: CDG seeking innovative waste solutions
+- ✅ **High-profile demonstration**: Europe's 2nd busiest airport (76M passengers pre-COVID) = global visibility
+- ✅ **Potential co-investment**: ADP interest in waste-to-SAF value chain
+
+**Air France Partnership Potential**[Chapter 3.4.1]:
+- ✅ **SAF mandate compliance**: Must meet EU targets (2% 2025, 6% 2030, 20% 2035)
+- ✅ **Circular economy credentials**: "Our airport waste becomes our jet fuel" marketing
+- ✅ **Passenger engagement**: "Fly on recycled fuel" communication opportunity
+
+---
+
+#### **First-Mover Advantage in France**
+
+**Market Position**[Chapter 3.1.1]:
+- ✅ **First Urban Rig deployment in France**: Establish brand and regulatory pathway
+- ✅ **Flagship European demonstration**: Proof point for scaling across Europe
+- ✅ **De-risking future deployments**: Each success reduces permitting and financing challenges for next site
+
+**Replication Strategy** (implied from Chapter 3.3.1 analysis):
+- ✅ **CDG pilot**: Demonstrate technology and economics (Years 1-5)
+- ✅ **French expansion**: 5-10 additional sites (Lyon, Marseille, Lille, Toulouse) (Years 5-10)
+- ✅ **European replication**: 50-100 sites across Europe (Years 10-15)
+- ✅ **Standardization**: CDG learnings reduce future CAPEX and deployment time
+
+---
+
+### 4.4.5 Competitive Advantages Summary
+
+**Urban Rig's 6 Competitive Moats**:
+
+1. **Technology Moat**:
+   - Continuous processing (30-40% better economics than batch)
+   - Feedstock flexibility (mixed MSW + composites, not just plastics)
+   - Scale advantage (3-14× larger capacity than competitors)
+
+2. **Environmental Moat**:
+   - 80-90% CO₂ reduction vs. incineration/landfilling
+   - <10% criteria pollutants (NOx, SOx, PM) vs. incineration
+   - 95% material recovery vs. 10-15% (incineration) or 0% (landfilling)
+
+3. **Economic Moat**:
+   - 45-60% lower CAPEX per ton vs. incineration
+   - Dual revenue model (gate fees + premium products)
+   - Economically viable without subsidies (unlike competitors)
+
+4. **Regulatory Moat**:
+   - "Recycling" classification (Waste Hierarchy Level 3) = TGAP exemption (€15-65/ton advantage)
+   - Qualifies for circular economy funding (ADEME, EIB, green bonds)
+   - SAF feedstock qualification (RED II double counting)
+
+5. **Strategic Partnership Moat**:
+   - TotalEnergies SAF demand (160k tons/year feedstock need, 10-year Air France contract)
+   - ADP net-zero commitment (high-profile demonstration site)
+   - Air France SAF mandate compliance (closed-loop waste-to-SAF value chain)
+
+6. **First-Mover Moat**:
+   - First Urban Rig in France (regulatory pathway established)
+   - Flagship European demonstration (proof point for scaling)
+   - CDG success de-risks future deployments (Lyon, Marseille, European replication)
+
+**Overall Assessment**: Urban Rig has **strong, defensible competitive advantages** across technology, environmental performance, economics, regulatory positioning, strategic partnerships, and market timing. These advantages create meaningful barriers to entry and position Urban Rig for sustained market leadership in European chemical recycling.
+
+---
+
 **Previous**: [Project Description](03-project-description.md) | **Next**: [Operations Plan](05-operations-plan.md)
