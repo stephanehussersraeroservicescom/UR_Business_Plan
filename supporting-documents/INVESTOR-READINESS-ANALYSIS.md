@@ -34,12 +34,13 @@
 | ✅ **Métaux non-oxydés** | Principe chimique (milieu anoxique) | Récupération haute qualité vs incinération |
 | ✅ **Process continu 24/7** | Ichimura operational data | Confirmé opérationnel |
 
-### 1.2 Site Opérationnel Existant
+### 1.2 Données Opérationnelles & Tests
 
-| Point | Source | Données |
-|-------|--------|---------|
-| ✅ **Site Ichimura (Japon) opérationnel** | Ichimura Data + KANSO reports | One World Co., Ltd. - données réelles de performance |
-| ✅ **Laboratoire certifié a testé** | KANSO Technos (accrédité ISO 17025) | Reports Dec 2020 |
+| Point | Source | Données | Status |
+|-------|--------|---------|--------|
+| 🟡 **Données techniques Urban Rig** | Ichimura (contact technique) | Taux de conversion, qualité huile | **En attente données import Japon** |
+| ✅ **Laboratoire certifié a testé** | KANSO Technos (accrédité ISO 17025) | Reports Dec 2020 | Validé |
+| 🟡 **Sites opérationnels nommés** | À confirmer | En attente | **Données import Japon requises** |
 
 ---
 
@@ -341,8 +342,8 @@
 
 ### Ce qui est SOLIDE pour un investisseur:
 1. ✅ Technologie validée par laboratoires certifiés (émissions, composition huile)
-2. ✅ Site opérationnel existant (Ichimura, Japon) avec données réelles
-3. ✅ Conversion plastique→huile de 85-95% prouvée
+2. 🟡 Données techniques de performance (via Ichimura) - **en attente données import Japon pour confirmer sites**
+3. ✅ Conversion plastique→huile de 85-95% (chimie validée + données techniques)
 4. ✅ Composition huile compatible SAF (45% C8-C12)
 5. ✅ Logique circular economy cohérente
 

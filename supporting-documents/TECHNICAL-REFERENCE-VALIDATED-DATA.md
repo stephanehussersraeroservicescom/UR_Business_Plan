@@ -55,15 +55,13 @@ The business plan previously presented oil yields as uncertain ranges ("30-40%")
 
 ---
 
-## 2. Ichimura Site Operational Data (Japan) {#2-ichimura-site-data}
+## 2. Urban Rig Operational Data (Japan) {#2-operational-data}
 
-### Source: Ichimura Data Report (Copy of ichimura data 2.pdf)
+### Source: Technical Data from Ichimura (Copy of ichimura data 2.pdf)
 
-**Site Information:**
-- **Location:** Ichimura, Japan
-- **Operator:** One World Co., Ltd. (株式会社ワンワールド)
-- **Status:** Operational facility with real performance data
-- **Technology:** Urban Rig continuous pyrolysis (superheated steam carbonization)
+**Data Provider:** Ichimura (technical contact)
+**Technology:** Urban Rig continuous pyrolysis (superheated steam carbonization)
+**Status:** Performance data from Japanese operations - **awaiting additional import/customs data for site verification**
 
 ### Conversion Rates by Plastic Type (CRITICAL DATA)
 
@@ -95,15 +93,16 @@ The business plan previously presented oil yields as uncertain ranges ("30-40%")
 | **Syngas self-use** | 80-85% of heat needs | Closed loop |
 | **External energy** | Startup + peak demand only | Minimal ongoing |
 
-**Conclusion:** The 85% energy self-sufficiency claim is **VALIDATED** by Ichimura operational data.
+**Conclusion:** The 85% energy self-sufficiency claim is supported by this technical data.
 
-### Significance for CDG Business Plan
+### Status for CDG Business Plan
 
-This is **proof of commercial operation** - not just laboratory tests. Ichimura demonstrates:
-- ✅ Continuous operation is achievable
+This technical data demonstrates:
 - ✅ Conversion rates are predictable based on feedstock
 - ✅ Oil quality meets refinery specifications
-- ✅ Energy self-sufficiency is real
+- ✅ Energy self-sufficiency is achievable
+
+**PENDING:** Japanese import/customs data to verify commercial-scale operations and site locations
 
 ---
 
