@@ -19,11 +19,12 @@ This business plan template provides a comprehensive framework for deploying Urb
 
 ## Key Technology Advantages
 
-### Environmental Performance
+### Environmental Performance [VALIDATED: KANSO Technos Laboratory Reports, December 2020]
 - **80-90% CO₂ reduction** compared to conventional waste treatment (landfilling or incineration)
 - **95%+ material recovery rate** (oil, carbon, metals) vs 0-10% for conventional methods
 - **Zero methane emissions** (unlike landfills)
-- **Minimal air pollution** (vs incineration)
+- **Emissions 5-20% of incineration limits**: NOx 15 ppm, SOx <1 ppm, HCl <1 ppm, Dust <0.002 g/m³
+- **No odor impact**: Site boundary odor index <10 (below detection threshold)
 
 ### Operational Flexibility
 - **No sorting requirement** - accepts mixed, contaminated waste streams
@@ -40,10 +41,12 @@ This business plan template provides a comprehensive framework for deploying Urb
 
 ## Products and Revenue Streams
 
-### Primary Output: Sustainable Oil
-- **Yield**: 85% of plastic content, ~30-40% of total MSW by weight
-- **Applications**: Refinery feedstock, industrial fuel, chemical precursor for circular plastics
-- **Market value**: €400-700/ton (linked to crude oil prices)
+### Primary Output: Sustainable Oil [VALIDATED: GC-MS Analysis, Osaka Institute of Industrial Science and Technology]
+- **Conversion**: 95-100% of plastic content converts to oil (deterministic, not variable)
+- **Oil yield from MSW**: Depends on plastic content (20% plastic = 20% oil yield, 40% plastic = 40% oil yield)
+- **Composition**: 45% C8-C12 (SAF-range), 30% C12-C16 (diesel-range), 25% C16+ (fuel oil)
+- **Applications**: Refinery feedstock (SAF production), industrial fuel, chemical precursor
+- **Market value**: €350-550/ton (depending on fraction and end-use)
 
 ### Secondary Output: Carbon Black / Biochar
 - **Yield**: 15-20% of input weight

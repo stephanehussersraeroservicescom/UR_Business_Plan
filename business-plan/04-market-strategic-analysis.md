@@ -639,7 +639,7 @@
 
 | Competitor | Technology Type | Scale (tons/year) | Feedstock | Products | Status | Key Weakness vs. Urban Rig |
 |------------|----------------|------------------|-----------|----------|--------|---------------------------|
-| **Urban Rig** | **Continuous pyrolysis** | **70,000** | **Mixed MSW, composites, plastics** | **Oil, carbon, metals** | **Multiple deployments** | **N/A** |
+| **Urban Rig** | **Continuous pyrolysis** | **70,000** | **Mixed MSW, composites, plastics** | **Oil, carbon, metals** | **Technology validated (lab data)** | **N/A** |
 | Plastic Energy | Batch pyrolysis | 5,000-15,000 | Plastics only | Oil | Operational | 5× smaller, batch inefficiency, narrow feedstock |
 | Quantafuel | Batch pyrolysis | 16,000 | Plastics only | Oil | Financial distress | 4× smaller, economic challenges, plastics-only |
 | Fuenix Ecogy | Continuous | 20,000 | Mixed plastics | Oil, carbon | Operational | 3.5× smaller, limited track record |
@@ -649,7 +649,7 @@
 - 🎯 **Urban Rig scale advantage**: 3-14× larger capacity than competitors
 - 🎯 **Feedstock flexibility**: Only competitor that can handle mixed MSW + composites (others plastics-only)
 - 🎯 **Continuous operation**: Most competitors use batch (lower efficiency, higher labor)
-- 🎯 **Deployment track record**: Urban Rig has multiple operational sites vs. competitors' limited deployments
+- 🎯 **Technology validation**: Urban Rig has third-party laboratory validation of emissions and product quality (KANSO Technos, Osaka Institute of Industrial Science and Technology)
 
 ---
 
@@ -860,9 +860,11 @@
 - **Quantafuel**: 16,000 tons/year (4× smaller)
 - **Fuenix Ecogy**: 20,000 tons/year (3.5× smaller)
 
-**Deployment Track Record**[Chapter 4.3.1]:
-- Urban Rig: **Multiple operational sites** (proven technology)
-- Competitors: Limited deployments, mostly pilot/demonstration scale
+**Technology Validation**[Chapter 4.3.1]:
+- Urban Rig: **Laboratory-validated emissions and product quality** (KANSO Technos, Osaka Institute of Industrial Science)
+- Emissions performance: 5-20% of EU incineration limits (VALIDATED)
+- Oil composition: GC-MS analyzed, 45% SAF-compatible fraction (VALIDATED)
+- Competitors: Limited third-party validation data available
 
 ---
 
