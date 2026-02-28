@@ -214,4 +214,114 @@
 
 ---
 
+## 📁 SUPPORTING DOCUMENTS REVIEW LOG
+
+**Last Review Session:** 2026-02-28
+
+### Document Review Status
+
+| Document | Status | Compatible BP | Issues Noted |
+|----------|--------|---------------|--------------|
+| Copy of ichimura data 2.pdf | ✅ REVIEWED | ⚠️ PARTIAL | Voir détails ci-dessous |
+| Fuel Output Test-22-5-26&22-6-21.pdf | ⏳ PENDING | - | Fichier non trouvé |
+| Recycled Fuel test report.xlsx | ⏳ PENDING | - | Fichier non trouvé |
+| Urban Rig Demo Operation Test Report.pdf | ⏳ PENDING | - | Fichier non trouvé |
+| Urban Rig Recycling Solutions ENG.pdf | ⚠️ PROBLÈME | - | PDF 32MB non lisible (images scannées, revue manuelle requise) |
+| gaschromatography.pdf | ✅ REVIEWED | ✅ Compatible | Composition huile confirmée (alcènes C7-C20+) |
+| Analysis Results Off-gas Odor Exhaust.pdf | ✅ REVIEWED | ✅ Compatible | Émissions très faibles confirmées (JIS certified) |
+
+---
+
+### 📄 DÉTAIL: Copy of ichimura data 2.pdf
+
+**Source:** Rapport officiel Asada Shokai (Noda Factory, Chiba, Japon)
+**Période test:** Mars 2022 - Septembre 2022
+**Équipement:** Urban Rig - Pyrolyse vapeur surchauffée
+
+#### ✅ Éléments COMPATIBLES avec Business Plan:
+
+| Paramètre | BP Assume | Document | Verdict |
+|-----------|-----------|----------|---------|
+| Rendement huile plastique propre | 70-85% | 73-82% (PE/PP/PS) | ✅ OK |
+| Conformité environnementale | Requis | Confirmé (émissions sous limites) | ✅ OK |
+| Pouvoir calorifique huile | ~46 MJ/kg | 46,000 J/g | ✅ OK |
+| Bruit/vibrations | Sous limites | Confirmé | ✅ OK |
+
+#### ⚠️ Points de VIGILANCE (discuter avant modification BP):
+
+| Point | Valeur Document | Impact BP |
+|-------|-----------------|-----------|
+| Plastique emballage mixte | **41% rendement** | BP utilise 70-85%, surestimé pour déchets réels |
+| Shredder dust | **0% - ÉCHEC** | Huile solidifiée, matériau non viable |
+| Résidu non-combustible | **50% rendement** | Rendement moitié vs plastique propre |
+| Efficacité énergétique mixte | **40-52%** | Chute vs 77-80% plastique propre |
+| PET | Non traité | Identifié comme défi futur |
+
+#### 📋 Recommandations:
+1. **Le BP devrait mentionner** que les rendements varient selon la qualité du tri
+2. **Prévoir** un mix réaliste: ~60% rendement moyen pondéré (pas 85%)
+3. **Exclure** shredder dust des inputs valorisables
+4. **Documenter** que distillation peut être nécessaire pour huile commerciale
+
+---
+
+### 📄 DÉTAIL: gaschromatography.pdf
+
+**Source:** Osaka Institute of Industrial Science and Technology (Izumi Center)
+**Type:** Analyse chromatographie gazeuse huile pyrolyse
+
+#### ✅ Éléments Confirmés:
+
+| Paramètre | Résultat | Impact BP |
+|-----------|----------|-----------|
+| Composition huile | Alcènes C7-C20+ (diméthylheptène 21%, tridécène 7.6%) | ✅ Compatible distillation |
+| Type hydrocarbures | Oléfines linéaires et branchées | ✅ Utilisable raffinerie |
+| Traces silicone | Présentes | ⚠️ Filtration peut être nécessaire |
+
+#### ⚠️ Points de vigilance:
+- Résidu 54% à 350°C/5min → Pyrolyse nécessite T° plus élevée
+- Nombreux pics non identifiés ("不明")
+
+---
+
+### 📄 DÉTAIL: Analysis Results Off-gas Odor Exhaust.pdf
+
+**Source:** KANSO Technos (Laboratoire certifié JIS)
+**Date:** 5 décembre 2020
+**Équipement testé:** Urban Rig (過熱水蒸気炭化装置)
+
+#### ✅ Émissions confirmées SOUS LIMITES:
+
+| Paramètre | Résultat | Limite France | Status |
+|-----------|----------|---------------|--------|
+| HCl | <1 ppm | 10 ppm | ✅ |
+| SOx | <1 ppm | 50 ppm | ✅ |
+| NOx | 15 ppm | 200 ppm | ✅ |
+| Poussières | <0.002 g/m³ | 0.01 g/m³ | ✅ |
+| Odeur limite terrain | <10 | Variable | ✅ |
+
+#### ✅ Syngas composition confirmée:
+
+| Composant | % | Usage |
+|-----------|---|-------|
+| H2 | 12.7% | Combustible |
+| CH4 | 3.2% | Combustible |
+| CO | 0.6% | Combustible |
+| Hydrocarbures légers | ~1.5% | Combustible |
+
+#### ⚠️ Points de vigilance:
+- N2 élevé (65.8%) → Syngas dilué, pouvoir calorifique réduit
+- H2S très faible (<0.5 ppm) → Confirme input propre
+
+---
+
+### 📄 FICHIERS EN ATTENTE (à uploader)
+
+Les fichiers suivants n'ont pas été trouvés dans le dépôt:
+1. **Fuel Output Test-22-5-26&22-6-21.pdf** - À uploader
+2. **Recycled Fuel test report.xlsx** - À uploader
+3. **Urban Rig Demo Operation Test Report.pdf** - À uploader
+
+---
+
 **End of Project Status Log**
