@@ -251,17 +251,43 @@
 
 | Point | Valeur Document | Impact BP |
 |-------|-----------------|-----------|
-| Plastique emballage mixte | **41% rendement** | BP utilise 70-85%, surestimé pour déchets réels |
+| ~~Plastique emballage mixte~~ | ~~41% rendement~~ | **PROBABLE ERREUR** - voir analyse ci-dessous |
 | Shredder dust | **0% - ÉCHEC** | Huile solidifiée, matériau non viable |
-| Résidu non-combustible | **50% rendement** | Rendement moitié vs plastique propre |
-| Efficacité énergétique mixte | **40-52%** | Chute vs 77-80% plastique propre |
+| ~~Résidu non-combustible~~ | ~~50% rendement~~ | **PROBABLE ERREUR** - matériau mal identifié |
+| ~~Efficacité énergétique mixte~~ | ~~40-52%~~ | **PROBABLE ERREUR** |
 | PET | Non traité | Identifié comme défi futur |
 
+#### 🔬 Analyse des résultats "plastique mixte" (41% rendement):
+
+**CONCLUSION: Probable erreur de test ou matériau mal identifié**
+
+Raisons scientifiques:
+1. PE/PP/PS se décomposent à **100%** entre 450-550°C (source: PubMed)
+2. À 600°C (température test Urban Rig), dégradation devrait être quasi-totale
+3. Rendements typiques: PE 89.5%, PP 86.5%, PS 84% (source: Springer)
+4. Le résidu fortement carbonisé visible sur photos suggère contamination non-plastique
+
+**Action recommandée:**
+- Se concentrer sur plastiques purs/identifiés dans un premier temps
+- Demander tests additionnels avec matériaux clairement identifiés
+- Ne pas utiliser ce résultat de 41% dans le BP
+
+#### 💰 Gate fees plastiques purs (recherche 2026):
+
+| Type plastique | Gate fee estimé | Source |
+|----------------|-----------------|--------|
+| Plastique pur pyrolyse | **50-86 €/t** | Break-even pyrolyse |
+| Plastique souillé | **60-100 €/t** | Estimation marché |
+| EPR non-recyclé | **446 €/t** | PRO Europe 2025 |
+
+Note: Les plastiques purs sont une **matière première** pour pyrolyse, donc gate fees plus bas que MSW mixte.
+
 #### 📋 Recommandations:
-1. **Le BP devrait mentionner** que les rendements varient selon la qualité du tri
-2. **Prévoir** un mix réaliste: ~60% rendement moyen pondéré (pas 85%)
-3. **Exclure** shredder dust des inputs valorisables
-4. **Documenter** que distillation peut être nécessaire pour huile commerciale
+1. ~~**Prévoir** un mix réaliste: ~60%~~ → **Maintenir 70-85%** pour plastiques purs (scientifiquement validé)
+2. **Exclure** shredder dust des inputs valorisables (échec confirmé)
+3. **Documenter** que distillation peut être nécessaire pour huile commerciale
+4. **Demander** tests additionnels avec plastiques clairement identifiés
+5. **Phase 1 CDG**: Se concentrer sur plastiques purs/triés (gate fee 50-100€/t)
 
 ---
 
