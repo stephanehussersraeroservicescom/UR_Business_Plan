@@ -104,6 +104,47 @@
 
 ---
 
+### 4.1.3.1 French Plastic Waste Market (2024-2025 Update)
+
+**Critical Finding**: France has the **worst plastic packaging recycling rate in the EU**.
+
+| Metric | France | EU Average | Best (Belgium) | Source |
+|--------|--------|------------|----------------|--------|
+| **Plastic packaging recycling rate** | 25.7% | 42.1% | 59.5% | [Eurostat 2024][17] |
+| **Gap to EU 2030 target (55%)** | 29.3 pts | 12.9 pts | - | Calculation |
+
+**Plastic Waste Treatment (France, 2023)**:
+
+| Destination | % | Volume (Mt/year) | Urban Rig Opportunity |
+|-------------|---|------------------|----------------------|
+| Recycled | 27% | 1.2 | Not target |
+| **Incinerated** | 44% | 2.0 | **Primary target** |
+| **Landfilled** | 27% | 1.2 | **Primary target** |
+| **TOTAL NON-RECYCLED** | **73%** | **3.3** | **Full potential** |
+
+*Source: [Citeo 2023][18], [EEA France 2022][19]*
+
+**Île-de-France Plastic Feedstock Potential**:
+
+| Zone | Plastic Waste (t/year) | Recycled | Available for Pyrolysis |
+|------|------------------------|----------|------------------------|
+| IDF Total | 696,000 | 188,000 (27%) | **~500,000** |
+| Syctom (CDG zone) | 276,000 | 75,000 (27%) | **~200,000** |
+| **CDG Project Need** | - | - | **46,200** |
+| **Surplus Factor** | - | - | **4-10×** |
+
+*Source: [ORDIF 2023][20], [Syctom 2024][21], MODECOM. For detailed analysis see [Annex E](annex-e-french-plastic-analysis.md).*
+
+**Market Opportunity Drivers (2024-2028)**:
+- ❌ IDF incineration capacity: **-9%** (2024)
+- ❌ IDF landfill capacity: **-56%** (by 2028)
+- ↑ Sorting rejects: 137,690 t/year → 96% incinerated
+- ↑ Unsorted recyclables: 86% of plastic bottles not sorted
+
+**Conclusion**: The combination of **declining treatment capacity**, **persistent waste volumes**, and **France's poor recycling performance** creates a **structural market gap** that Urban Rig can fill.
+
+---
+
 ### 4.1.4 Urban Rig Addressable Market
 
 #### **Total Addressable Market (TAM)**
@@ -1133,6 +1174,20 @@
    - CDG success de-risks future deployments (Lyon, Marseille, European replication)
 
 **Overall Assessment**: Urban Rig has **strong, defensible competitive advantages** across technology, environmental performance, economics, regulatory positioning, strategic partnerships, and market timing. These advantages create meaningful barriers to entry and position Urban Rig for sustained market leadership in European chemical recycling.
+
+---
+
+## References (Section 4.1.3.1 - Plastic Waste Market)
+
+[17] Eurostat. (2024). "Packaging waste recycling rates by country." https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20241024-3
+
+[18] Citeo. (2023). "Les chiffres du recyclage en France." https://www.citeo.com/le-mag/les-chiffres-du-recyclage-en-france/
+
+[19] EEA. (2022). "France Country Profile - Plastic Waste." https://www.eea.europa.eu/publications/many-eu-member-states/france
+
+[20] ORDIF. (2023). "Les déchets ménagers et assimilés en Île-de-France." https://www.ordif.fr/nos-ressources/publications/les-dechets-menagers-assimiles-en-ile-de-france/
+
+[21] Syctom. (2024). "La gestion des déchets face à la baisse des capacités." https://www.syctom-paris.fr/actualites/la-gestion-des-dechets-face-a-la-baisse-des-capacites-dincineration-et-denfouissement.html
 
 ---
 
