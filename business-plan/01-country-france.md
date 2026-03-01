@@ -260,6 +260,139 @@ France's high "valorization" rate is misleading - it's heavily dependent on inci
 
 ---
 
+### F.4.4 Contraintes Réglementaires sur les Types de Traitements de Déchets
+
+Cette section présente les contraintes réglementaires qui pèsent sur les différentes filières de traitement des déchets en France. Ces contraintes, principalement issues des directives européennes transposées en droit français, créent une pression croissante sur l'ensemble des acteurs du secteur et redéfinissent profondément le paysage du marché des déchets pour les décennies à venir.
+
+#### Nature et Origine des Contraintes
+
+**Cadre Européen** - La hiérarchie des déchets imposée par la directive-cadre européenne 2008/98/CE (révisée 2018) établit un ordre de priorité légalement contraignant :
+1. **Prévention** (réduction à la source)
+2. **Réemploi et réutilisation**
+3. **Recyclage matière**
+4. **Valorisation énergétique** (dont incinération avec récupération d'énergie)
+5. **Élimination** (mise en décharge)
+
+Cette hiérarchie n'est pas indicative : elle constitue une **obligation légale** avec des objectifs chiffrés et des pénalités en cas de non-conformité.
+
+**Transposition Française** - La France a transposé et parfois durci ces exigences à travers :
+- La **Loi AGEC (2020)** : Anti-Gaspillage pour une Économie Circulaire
+- La **Loi de Transition Énergétique (2015)** : objectifs de réduction du stockage et de l'incinération
+- Le **Code de l'Environnement** : articles L541 et suivants
+- Les **Plans Régionaux de Prévention et de Gestion des Déchets (PRPGD)**
+
+#### Objectifs Chiffrés et Échéances
+
+| Objectif | Échéance | Base légale | Situation actuelle |
+|----------|----------|-------------|-------------------|
+| **Recyclage matière + compostage : 65%** | 2035 | Directive UE 2018/851 | ~43% (2020) |
+| **Mise en décharge : <10%** | 2035 | Directive UE 2018/850 | 18% (2020) |
+| **Réduction enfouissement : -50%** | 2025 (vs 2010) | Loi TECV 2015 | En retard |
+| **Recyclage plastiques : 100%** | 2025 | Loi AGEC | ~27% (très en retard) |
+| **Fin mise en marché plastique à usage unique** | 2040 | Loi AGEC | Progressif |
+| **Tri obligatoire biodéchets** | 2024 | Loi AGEC | En cours de déploiement |
+
+**Point Critique** : L'écart entre les objectifs (65% recyclage) et la réalité (~43%) représente **22 points de pourcentage** à combler en 10 ans, soit une transformation majeure du secteur.
+
+#### Sur Qui la Pression Tombe-t-elle ?
+
+**1. Les Collectivités Locales (EPCI, Syndicats de traitement)**
+
+Les collectivités territoriales portent la **responsabilité première** de la gestion des déchets ménagers et assimilés. La pression sur elles est multiple :
+
+- **Obligation de résultat** : atteindre les objectifs de recyclage sous peine de pénalités
+- **Financement des investissements** : nouvelles infrastructures de tri et valorisation
+- **Tri à la source des biodéchets** (obligatoire depuis janvier 2024) : mise en place de collectes séparées
+- **Extension des consignes de tri** : tous les emballages plastiques dans le bac jaune
+- **PRPGD contraignants** : les plans régionaux imposent des trajectoires précises
+- **Capacités d'incinération et d'enfouissement plafonnées** : impossibilité d'augmenter les capacités existantes
+
+**Impact financier** : Les collectivités font face à une hausse des coûts de traitement (+20 à 40% d'ici 2030 selon l'ADEME) tout en devant financer de nouvelles filières.
+
+**2. Les Opérateurs de Traitement (Incinérateurs, Décharges)**
+
+Les exploitants d'installations de traitement "aval" subissent une **pression économique et réglementaire croissante** :
+
+- **TGAP (Taxe Générale sur les Activités Polluantes)** en hausse continue :
+  - Enfouissement : 65 €/tonne (2023) → prévu 80 €/tonne+ d'ici 2030
+  - Incinération sans performance énergétique : 25 €/tonne (2025)
+  - Recyclage : 0 €/tonne (avantage compétitif)
+
+- **Plafonnement des capacités** : interdiction d'augmenter les capacités d'incinération et d'enfouissement dans les nouveaux PRPGD
+- **Fermetures programmées** : de nombreuses décharges et incinérateurs anciens doivent fermer
+- **Investissements de mise aux normes** : IED (Industrial Emissions Directive), BREF incinération
+- **Baisse des gisements** : le recyclage et la prévention réduisent les volumes disponibles
+
+**Conséquence** : Modèle économique fragilisé pour les opérateurs traditionnels d'élimination et de valorisation énergétique.
+
+**3. Les Éco-Organismes et Producteurs (REP - Responsabilité Élargie du Producteur)**
+
+La France compte **23 filières REP** (parmi les plus nombreuses au monde), avec extension continue :
+
+- **Nouvelles filières REP** : tabac (2021), jouets (2022), articles de sport (2022), articles de bricolage (2022), matériaux de construction (2023)
+- **Objectifs de recyclage renforcés** : les cahiers des charges des éco-organismes fixent des trajectoires ambitieuses
+- **Éco-modulation** : bonus/malus selon la recyclabilité des produits mis sur le marché
+- **Obligation de reprise et collecte** : extension à de nouveaux points de collecte
+
+**Impact** : Hausse des éco-contributions payées par les producteurs, répercutées sur les prix de vente.
+
+**4. Les Professionnels du BTP et Industries**
+
+- **REP Bâtiment (PMCB)** : depuis 2023, obligation de reprendre et recycler les matériaux de construction
+- **Traçabilité renforcée** : bordereau de suivi des déchets (BSD), registre national des déchets
+- **Responsabilité du producteur** : obligation de caractérisation et de recours à des filières agréées
+- **Sanctions renforcées** : contrôles accrus, amendes pour dépôts sauvages ou non-conformités
+
+#### Ampleur des Changements à Venir (2024-2035)
+
+**Transformation Structurelle du Secteur**
+
+Le secteur des déchets en France doit se transformer radicalement en 10 ans :
+
+| Indicateur | 2020 | 2035 | Changement requis |
+|-----------|------|------|-------------------|
+| **Recyclage + compostage** | 43% | 65% | +22 points |
+| **Incinération** | 38% | ~25%* | -13 points |
+| **Enfouissement** | 18% | <10% | -8 points minimum |
+| **Capacités de tri** | 6 Mt | ~10 Mt | +67% |
+| **Biodéchets valorisés** | 15% | >50% | Transformation majeure |
+
+*Estimation basée sur la combinaison des objectifs de recyclage et de réduction de l'enfouissement.
+
+**Investissements Nécessaires**
+
+Selon l'ADEME et les fédérations professionnelles :
+- **Nouvelles capacités de tri et recyclage** : 2-3 milliards € d'ici 2030
+- **Infrastructures de collecte et tri des biodéchets** : 1-2 milliards €
+- **Modernisation des centres de tri existants** : 500 millions - 1 milliard €
+- **Fermeture et réhabilitation de décharges** : 500 millions €
+- **Total estimé** : **4-6 milliards € d'investissements** sur 10 ans
+
+**Opportunité pour les Technologies Innovantes**
+
+Cette pression réglementaire crée un **appel d'air massif** pour les technologies alternatives capables de :
+- ✅ Traiter des flux difficiles (déchets mélangés, contaminés, non recyclables conventionnellement)
+- ✅ Atteindre des taux de valorisation matière élevés (>50%)
+- ✅ Éviter l'enfouissement et l'incinération
+- ✅ Se déployer rapidement (modularité)
+- ✅ S'intégrer dans l'économie circulaire (production de matières premières secondaires)
+
+**Urban Rig répond directement à ce besoin** : en traitant les déchets résiduels (ceux qui ne peuvent pas être recyclés conventionnellement) et en produisant des matières premières (huile de pyrolyse, biochar, métaux), la technologie s'inscrit dans la solution aux contraintes réglementaires, et non dans les filières pénalisées.
+
+#### Synthèse : Implications Stratégiques
+
+| Acteur | Pression principale | Réponse attendue |
+|--------|---------------------|------------------|
+| **Collectivités** | Objectifs de recyclage + coûts | Recherche de solutions innovantes |
+| **Incinérateurs** | Plafonnement + TGAP | Diversification ou fermeture |
+| **Décharges** | Fermetures + réduction volumes | Reconversion des sites |
+| **Éco-organismes** | Objectifs de recyclage | Financement R&D et nouvelles filières |
+| **Industries** | REP + traçabilité | Éco-conception + partenariats |
+
+**Conclusion** : Le cadre réglementaire français, aligné sur les ambitions européennes, impose une réduction drastique de l'enfouissement et de l'incinération au profit du recyclage matière. Cette transformation, chiffrée et assortie d'échéances contraignantes, exerce une pression sans précédent sur l'ensemble des acteurs du secteur. Pour les technologies de valorisation innovantes comme Urban Rig, elle représente une opportunité historique : les collectivités et opérateurs cherchent activement des solutions alternatives pour se conformer aux nouvelles exigences réglementaires.
+
+---
+
 ## F.5 Market Analysis - France
 
 ### F.5.1 Waste Treatment Costs (Tipping Fees)
