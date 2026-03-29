@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Rig - Simulateur Financier</title>
+    <style>
+        :root {
+            --primary: #1a5f2a;
+            --primary-light: #2d8a3e;
+            --secondary: #f5a623;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --info: #17a2b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .card h2 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2 .icon {
+            font-size: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 10px rgba(45,138,62,0.3);
+        }
+
+        .input-group input:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .input-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .fixed-value {
+            background: rgba(0,0,0,0.5);
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .fixed-value .value {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            color: #ccc;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .results-card {
+            background: linear-gradient(135deg, rgba(26,95,42,0.3) 0%, rgba(22,33,62,0.5) 100%);
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .kpi-box {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border-left: 4px solid var(--primary);
+        }
+
+        .kpi-box.highlight {
+            border-left-color: var(--secondary);
+            background: rgba(245,166,35,0.1);
+        }
+
+        .kpi-box.success {
+            border-left-color: var(--success);
+        }
+
+        .kpi-box.warning {
+            border-left-color: var(--warning);
+        }
+
+        .kpi-box .value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .kpi-box .label {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        .kpi-box .target {
+            font-size: 0.7rem;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        .revenue-breakdown {
+            margin-top: 20px;
+        }
+
+        .revenue-bar {
+            height: 30px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .revenue-segment {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: width 0.5s;
+        }
+
+        .seg-gate { background: #3498db; }
+        .seg-oil { background: #e74c3c; }
+        .seg-char { background: #2ecc71; }
+        .seg-metal { background: #9b59b6; }
+        .seg-carbon { background: #f39c12; }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+        }
+
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+        }
+
+        .investor-ratios {
+            margin-top: 30px;
+        }
+
+        .ratio-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .ratio-table th, .ratio-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .ratio-table th {
+            background: rgba(0,0,0,0.3);
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .ratio-table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .status-ok { background: var(--success); color: #fff; }
+        .status-warning { background: var(--warning); color: #000; }
+        .status-danger { background: var(--danger); color: #fff; }
+
+        .summary-section {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(245,166,35,0.1) 0%, rgba(26,95,42,0.2) 100%);
+            border-radius: 15px;
+            border: 2px solid var(--secondary);
+        }
+
+        .summary-section h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-item .big-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .summary-item .big-value.positive {
+            color: var(--success);
+        }
+
+        .summary-item .description {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        .export-btn {
+            background: var(--secondary);
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(245,166,35,0.3);
+        }
+
+        .machine-specs {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .machine-specs h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.85rem;
+        }
+
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            color: #888;
+        }
+
+        .spec-value {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .cashflow-table {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .cashflow-table table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .cashflow-table th, .cashflow-table td {
+            padding: 10px;
+            text-align: right;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+
+        .cashflow-table th {
+            background: rgba(0,0,0,0.4);
+            color: var(--secondary);
+        }
+
+        .cashflow-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .cashflow-table tr.total {
+            background: rgba(245,166,35,0.1);
+            font-weight: bold;
+        }
+
+        .cashflow-table tr.subtotal {
+            background: rgba(26,95,42,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .input-row {
+                grid-template-columns: 1fr;
+            }
+
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>URBAN RIG - Simulateur Financier</h1>
+            <p>Configurez votre installation et visualisez les projections financieres</p>
+        </header>
+
+        <div class="grid">
+            <!-- Configuration Machine -->
+            <div class="card">
+                <h2><span class="icon">&#9881;</span> Configuration Installation</h2>
+
+                <div class="input-group">
+                    <label>Type de Machine</label>
+                    <select id="machineType" onchange="calculate()">
+                        <option value="UR50">UR-50 (50 t/jour)</option>
+                        <option value="UR100">UR-100 (100 t/jour)</option>
+                        <option value="UR200" selected>UR-200 (200 t/jour)</option>
+                        <option value="UR500">UR-500 (500 t/jour)</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Nombre de Machines</label>
+                        <input type="number" id="nbMachines" value="1" min="1" max="10" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Jours d'Operation / An</label>
+                        <input type="number" id="opDays" value="350" min="200" max="365" onchange="calculate()">
+                    </div>
+                </div>
+
+                <!-- Specifications fixes de la machine selectionnee -->
+                <div class="machine-specs">
+                    <h4>Specifications de la machine (fixes)</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Investissement / machine</span>
+                        <span class="spec-value" id="specCapex">10 M EUR</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Rendement huile</span>
+                        <span class="spec-value" id="specYieldOil">30%</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Rendement biochar</span>
+                        <span class="spec-value" id="specYieldChar">18%</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Rendement metaux</span>
+                        <span class="spec-value" id="specYieldMetal">7%</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Personnel / machine</span>
+                        <span class="spec-value" id="specStaff">12 ETP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Maintenance (% CAPEX/an)</span>
+                        <span class="spec-value" id="specMaint">3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAPEX -->
+            <div class="card">
+                <h2><span class="icon">&#128176;</span> Investissement (CAPEX)</h2>
+
+                <div class="input-group">
+                    <label>Equipement (fixe par machine)</label>
+                    <div class="fixed-value">
+                        <span class="value" id="capexEquipDisplay">10 M EUR</span> x <span id="nbMachinesDisplay">1</span> machine(s)
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Genie Civil & Site (M EUR)</label>
+                        <input type="number" id="capexCivil" value="5" step="0.5" min="1" max="15" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Permis & Ingenierie (M EUR)</label>
+                        <input type="number" id="capexPermis" value="2" step="0.5" min="0.5" max="5" onchange="calculate()">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Contingence (%)</label>
+                        <input type="number" id="contingence" value="10" min="0" max="30" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Subventions CAPEX (%)</label>
+                        <input type="number" id="subvCapex" value="0" min="0" max="50" onchange="calculate()">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financement -->
+            <div class="card">
+                <h2><span class="icon">&#127974;</span> Structure de Financement</h2>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Part Dette (%)</label>
+                        <input type="number" id="debtRatio" value="70" min="0" max="90" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Taux d'Interet (%/an)</label>
+                        <input type="number" id="interestRate" value="5" step="0.25" min="2" max="15" onchange="calculate()">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Cout Fonds Propres (%/an)</label>
+                        <input type="number" id="equityCost" value="15" min="8" max="30" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Taux d'Imposition (%)</label>
+                        <input type="number" id="taxRate" value="25" min="0" max="40" onchange="calculate()">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Horizon de Projection</label>
+                    <select id="horizon" onchange="calculate()">
+                        <option value="15">15 ans</option>
+                        <option value="20" selected>20 ans</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Gate Fees & Mix -->
+            <div class="card">
+                <h2><span class="icon">&#128230;</span> Gate Fees & Mix</h2>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Gate Fee (EUR/tonne)</label>
+                        <input type="number" id="gateFee" value="100" min="30" max="300" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Mix plastique dans entree (%)</label>
+                        <input type="number" id="mixPlastique" value="100" min="0" max="100" onchange="calculate()">
+                    </div>
+                </div>
+
+                <div class="machine-specs" style="margin-top: 10px;">
+                    <h4>Rendement huile calcule</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Rendement effectif huile</span>
+                        <span class="spec-value" id="effectiveYieldOil">30%</span>
+                    </div>
+                    <p style="font-size: 0.75rem; color: #666; margin-top: 8px;">
+                        Le rendement en huile depend du mix plastique dans l'entree
+                    </p>
+                </div>
+            </div>
+
+            <!-- Prix des Produits -->
+            <div class="card">
+                <h2><span class="icon">&#128738;</span> Prix de Vente des Produits</h2>
+
+                <div class="input-group">
+                    <label>Prix Huile de Pyrolyse (EUR/tonne)</label>
+                    <input type="number" id="priceOil" value="500" min="200" max="1000" onchange="calculate()">
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Prix Biochar (EUR/tonne)</label>
+                        <input type="number" id="priceChar" value="150" min="50" max="500" onchange="calculate()">
+                    </div>
+                    <div class="input-group">
+                        <label>Prix Metaux Recuperes (EUR/tonne)</label>
+                        <input type="number" id="priceMetal" value="300" min="100" max="800" onchange="calculate()">
+                    </div>
+                </div>
+
+                <div class="machine-specs" style="margin-top: 10px;">
+                    <h4>Rendements (fixes par machine)</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Huile</span>
+                        <span class="spec-value" id="displayYieldOil">30%</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Biochar</span>
+                        <span class="spec-value" id="displayYieldChar">18%</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Metaux</span>
+                        <span class="spec-value" id="displayYieldMetal">7%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credits Carbone -->
+            <div class="card">
+                <h2><span class="icon">&#127793;</span> Credits Carbone</h2>
+
+                <div class="input-group">
+                    <label>Prix CO2 (EUR/tonne CO2e)</label>
+                    <input type="number" id="priceCO2" value="80" min="0" max="200" onchange="calculate()">
+                </div>
+
+                <div class="machine-specs" style="margin-top: 10px;">
+                    <h4>Parametres carbone (fixes)</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">CO2 evite</span>
+                        <span class="spec-value">0.35 tCO2e/t dechets</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Eligibilite credits</span>
+                        <span class="spec-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Couts Operationnels -->
+            <div class="card">
+                <h2><span class="icon">&#128200;</span> Couts Operationnels (OPEX)</h2>
+
+                <div class="machine-specs">
+                    <h4>Couts fixes par machine</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Personnel</span>
+                        <span class="spec-value" id="opexStaffDisplay">12 ETP x 55k EUR = 660k EUR/an</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Maintenance</span>
+                        <span class="spec-value" id="opexMaintDisplay">300k EUR/an</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Assurances</span>
+                        <span class="spec-value">300k EUR/an</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Autres frais</span>
+                        <span class="spec-value">200k EUR/an</span>
+                    </div>
+                </div>
+
+                <div class="checkbox-group" style="margin-top: 15px;">
+                    <input type="checkbox" id="supportUR" checked onchange="calculate()">
+                    <label for="supportUR">Support technique UrbanRic (150k EUR/an)</label>
+                </div>
+
+                <div class="fixed-value" style="margin-top: 10px;">
+                    Total OPEX: <span class="value" id="totalOpexDisplay">1.61 M EUR/an</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULTATS -->
+        <h2 class="section-title">Resultats Financiers</h2>
+
+        <div class="summary-section">
+            <h3>Vue d'Ensemble - Annee de Croisiere</h3>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="big-value" id="totalCapacity">59,500</div>
+                    <div class="description">Capacite Annuelle (tonnes)</div>
+                </div>
+                <div class="summary-item">
+                    <div class="big-value" id="totalCapex">18.7M EUR</div>
+                    <div class="description">CAPEX Total</div>
+                </div>
+                <div class="summary-item">
+                    <div class="big-value positive" id="totalRevenue">17.8M EUR</div>
+                    <div class="description">Revenus Annuels</div>
+                </div>
+                <div class="summary-item">
+                    <div class="big-value positive" id="ebitda">15.5M EUR</div>
+                    <div class="description">EBITDA</div>
+                </div>
+                <div class="summary-item">
+                    <div class="big-value positive" id="ebitdaMargin">87%</div>
+                    <div class="description">Marge EBITDA</div>
+                </div>
+                <div class="summary-item">
+                    <div class="big-value positive" id="netIncome">9.2M EUR</div>
+                    <div class="description">Resultat Net</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" style="margin-top: 30px;">
+            <!-- Revenue Breakdown -->
+            <div class="card results-card">
+                <h2><span class="icon">&#128202;</span> Repartition des Revenus</h2>
+
+                <div class="revenue-breakdown">
+                    <div class="revenue-bar" id="revenueBar"></div>
+
+                    <div class="legend">
+                        <div class="legend-item"><div class="legend-color seg-gate"></div><span id="legGate">Gate Fees: 7.0M EUR (39%)</span></div>
+                        <div class="legend-item"><div class="legend-color seg-oil"></div><span id="legOil">Huile: 9.0M EUR (50%)</span></div>
+                        <div class="legend-item"><div class="legend-color seg-char"></div><span id="legChar">Biochar: 1.6M EUR (9%)</span></div>
+                        <div class="legend-item"><div class="legend-color seg-metal"></div><span id="legMetal">Metaux: 1.3M EUR (7%)</span></div>
+                        <div class="legend-item"><div class="legend-color seg-carbon"></div><span id="legCarbon">Carbone: 0.8M EUR (5%)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPIs Investisseurs -->
+            <div class="card results-card">
+                <h2><span class="icon">&#127919;</span> Ratios Cles Investisseurs</h2>
+
+                <div class="kpi-grid">
+                    <div class="kpi-box highlight" id="kpiIrrProject">
+                        <div class="value">52%</div>
+                        <div class="label">TRI Projet (IRR)</div>
+                        <div class="target">Cible: >15%</div>
+                    </div>
+                    <div class="kpi-box highlight" id="kpiIrrEquity">
+                        <div class="value">78%</div>
+                        <div class="label">TRI Fonds Propres</div>
+                        <div class="target">Cible: >20%</div>
+                    </div>
+                    <div class="kpi-box" id="kpiNpv">
+                        <div class="value">85M EUR</div>
+                        <div class="label">VAN (NPV)</div>
+                        <div class="target">Doit etre >0</div>
+                    </div>
+                    <div class="kpi-box" id="kpiPayback">
+                        <div class="value">1.2 ans</div>
+                        <div class="label">Payback Simple</div>
+                        <div class="target">Cible: <5 ans</div>
+                    </div>
+                    <div class="kpi-box" id="kpiMoic">
+                        <div class="value">15.2x</div>
+                        <div class="label">MOIC</div>
+                        <div class="target">Cible: >2.0x</div>
+                    </div>
+                    <div class="kpi-box" id="kpiRoic">
+                        <div class="value">83%</div>
+                        <div class="label">ROIC</div>
+                        <div class="target">Doit etre >WACC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ratios Bancaires -->
+        <div class="card investor-ratios" style="margin-top: 20px;">
+            <h2><span class="icon">&#127974;</span> Ratios de Couverture Dette (Critiques pour Banques)</h2>
+
+            <table class="ratio-table">
+                <thead>
+                    <tr>
+                        <th>Ratio</th>
+                        <th>Valeur</th>
+                        <th>Minimum Requis</th>
+                        <th>Cible</th>
+                        <th>Statut</th>
+                        <th>Interpretation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSCR Minimum</strong></td>
+                        <td id="dscrMin">5.8x</td>
+                        <td>1.3x</td>
+                        <td>>1.5x</td>
+                        <td><span class="status-badge status-ok" id="dscrStatus">Excellent</span></td>
+                        <td>Capacite a rembourser la dette</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSCR Moyen</strong></td>
+                        <td id="dscrAvg">8.5x</td>
+                        <td>1.5x</td>
+                        <td>>2.0x</td>
+                        <td><span class="status-badge status-ok">Excellent</span></td>
+                        <td>Moyenne sur duree du pret</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLCR</strong></td>
+                        <td id="llcr">12.3x</td>
+                        <td>1.3x</td>
+                        <td>>1.5x</td>
+                        <td><span class="status-badge status-ok">Excellent</span></td>
+                        <td>Loan Life Coverage Ratio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICR</strong></td>
+                        <td id="icr">22.5x</td>
+                        <td>3.0x</td>
+                        <td>>5.0x</td>
+                        <td><span class="status-badge status-ok">Excellent</span></td>
+                        <td>Interest Coverage Ratio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dette/EBITDA</strong></td>
+                        <td id="debtEbitda">0.8x</td>
+                        <td>&lt;4.0x</td>
+                        <td>&lt;3.0x</td>
+                        <td><span class="status-badge status-ok">Excellent</span></td>
+                        <td>Capacite de remboursement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tableau Comparatif par Type d'Investisseur -->
+        <div class="card" style="margin-top: 20px;">
+            <h2><span class="icon">&#128188;</span> Benchmarks par Type d'Investisseur</h2>
+
+            <table class="ratio-table">
+                <thead>
+                    <tr>
+                        <th>Type d'Investisseur</th>
+                        <th>TRI Equity Min</th>
+                        <th>TRI Equity Cible</th>
+                        <th>TRI Ce Projet</th>
+                        <th>Verdict</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fonds Infrastructure (Pension)</td>
+                        <td>8-10%</td>
+                        <td>10-12%</td>
+                        <td id="irrInfra">78%</td>
+                        <td><span class="status-badge status-ok">Tres Attractif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Private Equity Infrastructure</td>
+                        <td>12-15%</td>
+                        <td>15-18%</td>
+                        <td id="irrPE">78%</td>
+                        <td><span class="status-badge status-ok">Tres Attractif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Corporate / Industriel</td>
+                        <td>15-18%</td>
+                        <td>18-25%</td>
+                        <td id="irrCorp">78%</td>
+                        <td><span class="status-badge status-ok">Tres Attractif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Venture / Growth</td>
+                        <td>20-25%</td>
+                        <td>25-35%</td>
+                        <td id="irrVC">78%</td>
+                        <td><span class="status-badge status-ok">Tres Attractif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Family Office</td>
+                        <td>10-15%</td>
+                        <td>15-20%</td>
+                        <td id="irrFO">78%</td>
+                        <td><span class="status-badge status-ok">Tres Attractif</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cash Flow Projection -->
+        <div class="card cashflow-table" style="margin-top: 20px;">
+            <h2><span class="icon">&#128178;</span> Projection Cash Flow (10 premieres annees)</h2>
+
+            <table id="cashflowTable">
+                <thead>
+                    <tr>
+                        <th>Annee</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                    </tr>
+                </thead>
+                <tbody id="cashflowBody">
+                    <!-- Rempli par JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="export-btn" onclick="exportPDF()">Exporter en PDF</button>
+            <button class="export-btn" onclick="exportExcel()" style="margin-left: 10px; background: var(--primary);">Exporter en Excel</button>
+        </div>
+
+        <footer style="text-align: center; padding: 40px 0; color: #666; font-size: 0.9rem;">
+            <p>Urban Rig Financial Simulator 2026 | Donnees indicatives - Non contractuel</p>
+        </footer>
+    </div>
+
+    <script>
+        // Specifications fixes par type de machine
+        const machineSpecs = {
+            UR50: {
+                name: 'UR-50',
+                capacity: 50,           // tonnes/jour
+                capex: 4,               // M EUR
+                yieldOil: 0.30,         // 30%
+                yieldChar: 0.18,        // 18%
+                yieldMetal: 0.07,       // 7%
+                staff: 8,               // ETP
+                staffCost: 55000,       // EUR/an/ETP
+                maintenancePct: 0.03,   // 3% du CAPEX equip
+                insurance: 150000,      // EUR/an
+                otherCosts: 100000      // EUR/an
+            },
+            UR100: {
+                name: 'UR-100',
+                capacity: 100,
+                capex: 7,
+                yieldOil: 0.30,
+                yieldChar: 0.18,
+                yieldMetal: 0.07,
+                staff: 10,
+                staffCost: 55000,
+                maintenancePct: 0.03,
+                insurance: 200000,
+                otherCosts: 150000
+            },
+            UR200: {
+                name: 'UR-200',
+                capacity: 200,
+                capex: 10,
+                yieldOil: 0.30,
+                yieldChar: 0.18,
+                yieldMetal: 0.07,
+                staff: 12,
+                staffCost: 55000,
+                maintenancePct: 0.03,
+                insurance: 300000,
+                otherCosts: 200000
+            },
+            UR500: {
+                name: 'UR-500',
+                capacity: 500,
+                capex: 20,
+                yieldOil: 0.30,
+                yieldChar: 0.18,
+                yieldMetal: 0.07,
+                staff: 18,
+                staffCost: 55000,
+                maintenancePct: 0.03,
+                insurance: 500000,
+                otherCosts: 300000
+            }
+        };
+
+        // Parametres carbone fixes
+        const carbonParams = {
+            co2Avoided: 0.35,       // tCO2e/t dechets
+            co2Eligible: 0.50       // 50%
+        };
+
+        // Support technique UrbanRic
+        const supportURCost = 150000; // EUR/an
+
+        function getMachineSpec() {
+            const machineType = document.getElementById('machineType').value;
+            return machineSpecs[machineType];
+        }
+
+        function getInputs() {
+            const spec = getMachineSpec();
+            const nbMachines = parseInt(document.getElementById('nbMachines').value);
+            const mixPlastique = parseFloat(document.getElementById('mixPlastique').value) / 100;
+
+            // Le rendement huile effectif depend du mix plastique
+            const effectiveYieldOil = spec.yieldOil * mixPlastique;
+
+            return {
+                machineType: spec,
+                nbMachines: nbMachines,
+                opDays: parseInt(document.getElementById('opDays').value),
+                capexEquip: spec.capex * 1000000,
+                capexCivil: parseFloat(document.getElementById('capexCivil').value) * 1000000,
+                capexPermis: parseFloat(document.getElementById('capexPermis').value) * 1000000,
+                contingence: parseFloat(document.getElementById('contingence').value) / 100,
+                subvCapex: parseFloat(document.getElementById('subvCapex').value) / 100,
+                debtRatio: parseFloat(document.getElementById('debtRatio').value) / 100,
+                interestRate: parseFloat(document.getElementById('interestRate').value) / 100,
+                equityCost: parseFloat(document.getElementById('equityCost').value) / 100,
+                taxRate: parseFloat(document.getElementById('taxRate').value) / 100,
+                horizon: parseInt(document.getElementById('horizon').value),
+                gateFee: parseFloat(document.getElementById('gateFee').value),
+                mixPlastique: mixPlastique,
+                effectiveYieldOil: effectiveYieldOil,
+                yieldOil: spec.yieldOil,
+                yieldChar: spec.yieldChar,
+                yieldMetal: spec.yieldMetal,
+                priceOil: parseFloat(document.getElementById('priceOil').value),
+                priceChar: parseFloat(document.getElementById('priceChar').value),
+                priceMetal: parseFloat(document.getElementById('priceMetal').value),
+                priceCO2: parseFloat(document.getElementById('priceCO2').value),
+                supportUR: document.getElementById('supportUR').checked
+            };
+        }
+
+        function formatNumber(num, decimals = 0) {
+            return num.toLocaleString('fr-FR', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+        }
+
+        function formatCurrency(num, showM = true) {
+            if (showM && Math.abs(num) >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M EUR';
+            }
+            return formatNumber(num) + ' EUR';
+        }
+
+        function updateMachineSpecs() {
+            const spec = getMachineSpec();
+            const nbMachines = parseInt(document.getElementById('nbMachines').value);
+            const mixPlastique = parseFloat(document.getElementById('mixPlastique').value) / 100;
+
+            // Mettre a jour l'affichage des specs
+            document.getElementById('specCapex').textContent = spec.capex + ' M EUR';
+            document.getElementById('specYieldOil').textContent = (spec.yieldOil * 100).toFixed(0) + '%';
+            document.getElementById('specYieldChar').textContent = (spec.yieldChar * 100).toFixed(0) + '%';
+            document.getElementById('specYieldMetal').textContent = (spec.yieldMetal * 100).toFixed(0) + '%';
+            document.getElementById('specStaff').textContent = spec.staff + ' ETP';
+            document.getElementById('specMaint').textContent = (spec.maintenancePct * 100).toFixed(0) + '%';
+
+            // CAPEX display
+            document.getElementById('capexEquipDisplay').textContent = spec.capex + ' M EUR';
+            document.getElementById('nbMachinesDisplay').textContent = nbMachines;
+
+            // Rendements dans la section Prix
+            document.getElementById('displayYieldOil').textContent = (spec.yieldOil * 100).toFixed(0) + '%';
+            document.getElementById('displayYieldChar').textContent = (spec.yieldChar * 100).toFixed(0) + '%';
+            document.getElementById('displayYieldMetal').textContent = (spec.yieldMetal * 100).toFixed(0) + '%';
+
+            // Rendement effectif huile
+            const effectiveYield = spec.yieldOil * mixPlastique;
+            document.getElementById('effectiveYieldOil').textContent = (effectiveYield * 100).toFixed(1) + '%';
+
+            // OPEX display
+            const staffCost = spec.staff * spec.staffCost;
+            const maintCost = spec.capex * 1000000 * spec.maintenancePct;
+            document.getElementById('opexStaffDisplay').textContent = spec.staff + ' ETP x ' + (spec.staffCost/1000).toFixed(0) + 'k EUR = ' + (staffCost/1000).toFixed(0) + 'k EUR/an';
+            document.getElementById('opexMaintDisplay').textContent = (maintCost/1000).toFixed(0) + 'k EUR/an';
+
+            // Total OPEX
+            const supportUR = document.getElementById('supportUR').checked;
+            const totalOpex = nbMachines * (staffCost + maintCost) + spec.insurance + spec.otherCosts + (supportUR ? supportURCost : 0);
+            document.getElementById('totalOpexDisplay').textContent = (totalOpex / 1000000).toFixed(2) + ' M EUR/an';
+        }
+
+        function calculate() {
+            updateMachineSpecs();
+
+            const p = getInputs();
+            const spec = p.machineType;
+
+            // Capacite annuelle (taux d'utilisation fixe a 85%)
+            const utilization = 0.85;
+            const capacity = p.nbMachines * spec.capacity * utilization * p.opDays;
+
+            // CAPEX
+            const capexEquipTotal = p.nbMachines * p.capexEquip;
+            const capexBrut = capexEquipTotal + p.capexCivil + p.capexPermis;
+            const capexTotal = capexBrut * (1 + p.contingence) * (1 - p.subvCapex);
+
+            // Financement
+            const debt = capexTotal * p.debtRatio;
+            const equity = capexTotal * (1 - p.debtRatio);
+
+            // Duree pret fixe a 10 ans
+            const loanDuration = 10;
+
+            // Annuite
+            const r = p.interestRate;
+            const n = loanDuration;
+            const annuity = debt > 0 ? debt * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1) : 0;
+
+            // WACC
+            const wacc = (1 - p.debtRatio) * p.equityCost + p.debtRatio * p.interestRate * (1 - p.taxRate);
+
+            // Revenus
+            const revGateFees = capacity * p.gateFee;
+            const revOil = capacity * p.effectiveYieldOil * p.priceOil;
+            const revChar = capacity * p.yieldChar * p.priceChar;
+            const revMetal = capacity * p.yieldMetal * p.priceMetal;
+            const revCarbon = capacity * carbonParams.co2Avoided * carbonParams.co2Eligible * p.priceCO2;
+            const revTotal = revGateFees + revOil + revChar + revMetal + revCarbon;
+
+            // OPEX (fixes par machine)
+            const opexStaff = p.nbMachines * spec.staff * spec.staffCost;
+            const opexMaint = p.nbMachines * p.capexEquip * spec.maintenancePct;
+            const opexInsurance = spec.insurance;
+            const opexOther = spec.otherCosts;
+            const opexSupport = p.supportUR ? supportURCost : 0;
+            const opexTotal = opexStaff + opexMaint + opexInsurance + opexOther + opexSupport;
+
+            // EBITDA
+            const ebitda = revTotal - opexTotal;
+            const ebitdaMargin = revTotal > 0 ? ebitda / revTotal : 0;
+
+            // Amortissement
+            const amortEquip = capexEquipTotal / 10;
+            const amortCivil = p.capexCivil / 20;
+            const amortTotal = amortEquip + amortCivil;
+
+            // EBIT
+            const ebit = ebitda - amortTotal;
+
+            // Interets (annee 1)
+            const interests = debt * p.interestRate;
+
+            // EBT & Impots
+            const ebt = ebit - interests;
+            const taxes = Math.max(0, ebt) * p.taxRate;
+            const netIncome = ebt - taxes;
+
+            // Cash Flow disponible pour dette (CFADS)
+            const cfads = ebitda - taxes;
+
+            // DSCR
+            const dscr = annuity > 0 ? cfads / annuity : 999;
+
+            // Payback simple
+            const payback = ebitda > 0 ? capexTotal / ebitda : 999;
+
+            // Taux actualisation fixe a 10%
+            const discountRate = 0.10;
+
+            // NPV calculation
+            let npv = -capexTotal;
+            const cashflows = [-capexTotal];
+            const fcfYear = ebitda - taxes;
+            const gfGrowth = 0.02; // 2% croissance fixe
+            const residualValue = 0.10; // 10% valeur residuelle
+
+            for (let y = 1; y <= p.horizon; y++) {
+                let fcf = fcfYear * Math.pow(1 + gfGrowth, y - 1);
+                if (y === p.horizon) {
+                    fcf += capexTotal * residualValue;
+                }
+                cashflows.push(fcf);
+                npv += fcf / Math.pow(1 + discountRate, y);
+            }
+
+            // IRR calculation (Newton-Raphson)
+            function calcIRR(cashflows, guess = 0.1) {
+                const maxIter = 100;
+                const tol = 0.0001;
+                let irr = guess;
+
+                for (let i = 0; i < maxIter; i++) {
+                    let npvCalc = 0;
+                    let dnpv = 0;
+                    for (let t = 0; t < cashflows.length; t++) {
+                        npvCalc += cashflows[t] / Math.pow(1 + irr, t);
+                        dnpv -= t * cashflows[t] / Math.pow(1 + irr, t + 1);
+                    }
+                    if (Math.abs(dnpv) < 0.0001) break;
+                    const newIrr = irr - npvCalc / dnpv;
+                    if (Math.abs(newIrr - irr) < tol) {
+                        return newIrr;
+                    }
+                    irr = newIrr;
+                    if (irr < -0.99 || irr > 10) break;
+                }
+                return irr;
+            }
+
+            const irrProject = calcIRR(cashflows, 0.3);
+
+            // IRR Equity (avec effet de levier)
+            const equityCashflows = [-equity];
+            for (let y = 1; y <= p.horizon; y++) {
+                let fcf = fcfYear * Math.pow(1 + gfGrowth, y - 1);
+                let debtService = y <= loanDuration ? annuity : 0;
+                let fcfEquity = fcf - debtService;
+                if (y === p.horizon) {
+                    fcfEquity += capexTotal * residualValue;
+                }
+                equityCashflows.push(fcfEquity);
+            }
+            const irrEquity = equity > 0 ? calcIRR(equityCashflows, 0.5) : 0;
+
+            // MOIC
+            let totalDistrib = 0;
+            for (let y = 1; y < equityCashflows.length; y++) {
+                totalDistrib += equityCashflows[y];
+            }
+            const moic = equity > 0 ? totalDistrib / equity : 0;
+
+            // ROIC
+            const roic = capexTotal > 0 ? ebit * (1 - p.taxRate) / capexTotal : 0;
+
+            // ICR
+            const icr = interests > 0 ? ebit / interests : 999;
+
+            // Debt/EBITDA
+            const debtEbitda = ebitda > 0 ? debt / ebitda : 999;
+
+            // LLCR (simplified)
+            let pvcfads = 0;
+            for (let y = 1; y <= loanDuration; y++) {
+                pvcfads += cfads / Math.pow(1 + discountRate, y);
+            }
+            const llcr = debt > 0 ? pvcfads / debt : 999;
+
+            // Update UI
+            document.getElementById('totalCapacity').textContent = formatNumber(capacity);
+            document.getElementById('totalCapex').textContent = formatCurrency(capexTotal);
+            document.getElementById('totalRevenue').textContent = formatCurrency(revTotal);
+            document.getElementById('ebitda').textContent = formatCurrency(ebitda);
+            document.getElementById('ebitdaMargin').textContent = (ebitdaMargin * 100).toFixed(0) + '%';
+            document.getElementById('netIncome').textContent = formatCurrency(netIncome);
+
+            // Revenue breakdown bar
+            const revBar = document.getElementById('revenueBar');
+            const pctGate = revTotal > 0 ? (revGateFees / revTotal) * 100 : 0;
+            const pctOil = revTotal > 0 ? (revOil / revTotal) * 100 : 0;
+            const pctChar = revTotal > 0 ? (revChar / revTotal) * 100 : 0;
+            const pctMetal = revTotal > 0 ? (revMetal / revTotal) * 100 : 0;
+            const pctCarbon = revTotal > 0 ? (revCarbon / revTotal) * 100 : 0;
+
+            revBar.innerHTML = `
+                <div class="revenue-segment seg-gate" style="width: ${pctGate}%">${pctGate > 10 ? pctGate.toFixed(0) + '%' : ''}</div>
+                <div class="revenue-segment seg-oil" style="width: ${pctOil}%">${pctOil > 10 ? pctOil.toFixed(0) + '%' : ''}</div>
+                <div class="revenue-segment seg-char" style="width: ${pctChar}%">${pctChar > 8 ? pctChar.toFixed(0) + '%' : ''}</div>
+                <div class="revenue-segment seg-metal" style="width: ${pctMetal}%">${pctMetal > 8 ? pctMetal.toFixed(0) + '%' : ''}</div>
+                <div class="revenue-segment seg-carbon" style="width: ${pctCarbon}%">${pctCarbon > 5 ? pctCarbon.toFixed(0) + '%' : ''}</div>
+            `;
+
+            document.getElementById('legGate').textContent = `Gate Fees: ${formatCurrency(revGateFees)} (${pctGate.toFixed(0)}%)`;
+            document.getElementById('legOil').textContent = `Huile: ${formatCurrency(revOil)} (${pctOil.toFixed(0)}%)`;
+            document.getElementById('legChar').textContent = `Biochar: ${formatCurrency(revChar)} (${pctChar.toFixed(0)}%)`;
+            document.getElementById('legMetal').textContent = `Metaux: ${formatCurrency(revMetal)} (${pctMetal.toFixed(0)}%)`;
+            document.getElementById('legCarbon').textContent = `Carbone: ${formatCurrency(revCarbon)} (${pctCarbon.toFixed(0)}%)`;
+
+            // KPIs
+            updateKPI('kpiIrrProject', (irrProject * 100).toFixed(0) + '%', irrProject > 0.15);
+            updateKPI('kpiIrrEquity', (irrEquity * 100).toFixed(0) + '%', irrEquity > 0.20);
+            updateKPI('kpiNpv', formatCurrency(npv), npv > 0);
+            updateKPI('kpiPayback', payback.toFixed(1) + ' ans', payback < 5);
+            updateKPI('kpiMoic', moic.toFixed(1) + 'x', moic > 2);
+            updateKPI('kpiRoic', (roic * 100).toFixed(0) + '%', roic > wacc);
+
+            // Debt ratios
+            document.getElementById('dscrMin').textContent = Math.min(dscr, 99).toFixed(1) + 'x';
+            document.getElementById('dscrAvg').textContent = Math.min(dscr, 99).toFixed(1) + 'x';
+            document.getElementById('llcr').textContent = Math.min(llcr, 99).toFixed(1) + 'x';
+            document.getElementById('icr').textContent = Math.min(icr, 99).toFixed(1) + 'x';
+            document.getElementById('debtEbitda').textContent = debtEbitda.toFixed(1) + 'x';
+
+            updateDSCRStatus(dscr);
+
+            // Update investor comparison
+            const irrPercent = (irrEquity * 100).toFixed(0) + '%';
+            document.getElementById('irrInfra').textContent = irrPercent;
+            document.getElementById('irrPE').textContent = irrPercent;
+            document.getElementById('irrCorp').textContent = irrPercent;
+            document.getElementById('irrVC').textContent = irrPercent;
+            document.getElementById('irrFO').textContent = irrPercent;
+
+            // Update cashflow table
+            updateCashflowTable(p, spec, capexTotal, revTotal, opexTotal, ebitda, taxes, annuity, loanDuration);
+        }
+
+        function updateKPI(id, value, isGood) {
+            const el = document.getElementById(id);
+            el.querySelector('.value').textContent = value;
+            el.className = 'kpi-box ' + (isGood ? 'success' : 'warning');
+        }
+
+        function updateDSCRStatus(dscr) {
+            const statusEl = document.getElementById('dscrStatus');
+            if (dscr >= 2.0) {
+                statusEl.textContent = 'Excellent';
+                statusEl.className = 'status-badge status-ok';
+            } else if (dscr >= 1.3) {
+                statusEl.textContent = 'Acceptable';
+                statusEl.className = 'status-badge status-warning';
+            } else {
+                statusEl.textContent = 'Insuffisant';
+                statusEl.className = 'status-badge status-danger';
+            }
+        }
+
+        function updateCashflowTable(p, spec, capexTotal, revTotal, opexTotal, ebitda, taxes, annuity, loanDuration) {
+            const tbody = document.getElementById('cashflowBody');
+            const gfGrowth = 0.02;
+            const opexInflation = 0.02;
+
+            let html = '';
+
+            const rows = [
+                { label: 'Revenus', class: '', values: [] },
+                { label: 'OPEX', class: '', values: [] },
+                { label: 'EBITDA', class: 'subtotal', values: [] },
+                { label: 'Amortissement', class: '', values: [] },
+                { label: 'EBIT', class: '', values: [] },
+                { label: 'Interets', class: '', values: [] },
+                { label: 'Impots', class: '', values: [] },
+                { label: 'Resultat Net', class: 'subtotal', values: [] },
+                { label: 'Service Dette', class: '', values: [] },
+                { label: 'Free Cash Flow', class: 'total', values: [] }
+            ];
+
+            // Year 0
+            rows[0].values.push(0);
+            rows[1].values.push(0);
+            rows[2].values.push(0);
+            rows[3].values.push(0);
+            rows[4].values.push(0);
+            rows[5].values.push(0);
+            rows[6].values.push(0);
+            rows[7].values.push(0);
+            rows[8].values.push(0);
+            rows[9].values.push(-capexTotal);
+
+            const capexEquipTotal = p.nbMachines * p.capexEquip;
+            const debt = capexTotal * p.debtRatio;
+
+            // Years 1-10
+            for (let y = 1; y <= 10; y++) {
+                const growth = Math.pow(1 + gfGrowth, y - 1);
+                const inflat = Math.pow(1 + opexInflation, y - 1);
+
+                const rev = revTotal * growth;
+                const opex = opexTotal * inflat;
+                const ebitdaY = rev - opex;
+                const amort = capexEquipTotal / 10 + p.capexCivil / 20;
+                const ebitY = ebitdaY - amort;
+                const intY = y <= loanDuration ? debt * p.interestRate * (loanDuration - y + 1) / loanDuration : 0;
+                const ebtY = ebitY - intY;
+                const taxY = Math.max(0, ebtY) * p.taxRate;
+                const netY = ebtY - taxY;
+                const debtServiceY = y <= loanDuration ? annuity : 0;
+                const fcfY = ebitdaY - taxY - debtServiceY;
+
+                rows[0].values.push(rev);
+                rows[1].values.push(-opex);
+                rows[2].values.push(ebitdaY);
+                rows[3].values.push(-amort);
+                rows[4].values.push(ebitY);
+                rows[5].values.push(-intY);
+                rows[6].values.push(-taxY);
+                rows[7].values.push(netY);
+                rows[8].values.push(-debtServiceY);
+                rows[9].values.push(fcfY);
+            }
+
+            // Generate HTML
+            rows.forEach(row => {
+                html += `<tr class="${row.class}"><td>${row.label}</td>`;
+                row.values.forEach(val => {
+                    const formatted = val === 0 ? '-' : (val / 1000000).toFixed(1);
+                    html += `<td>${formatted}</td>`;
+                });
+                html += '</tr>';
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        function exportPDF() {
+            window.print();
+        }
+
+        function exportExcel() {
+            alert('Export Excel - Fonctionnalite a implementer avec une librairie comme SheetJS');
+        }
+
+        // Initial calculation
+        calculate();
+    </script>
+</body>
+</html>

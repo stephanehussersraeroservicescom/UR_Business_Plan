@@ -2,26 +2,33 @@
 
 ## 9.1 Capital Expenditure (CAPEX)
 
-### CAPEX Summary
+### CAPEX Summary (CDG Paris Project - 200 m³/day = 140 tonnes/day)
 
 | Category | Estimated Cost (€M) | % of Total | Notes |
 |----------|---------------------|------------|-------|
-| **Urban Rig Unit** | TBD | 40-50% | Continuous 200-ton system, fully integrated |
-| **Site Acquisition** | TBD | 5-10% | Purchase or long-term lease near CDG |
-| **Civil Works & Buildings** | TBD | 15-20% | Foundations, enclosures, offices, workshop |
-| **Auxiliary Equipment** | TBD | 10-15% | Feed systems, storage, handling, water treatment |
-| **Utilities & Infrastructure** | TBD | 5-10% | Electrical, water, roads, security |
-| **Emissions & Environmental Controls** | TBD | 3-5% | CEMS, exhaust treatment, monitoring |
-| **Engineering & Project Management** | TBD | 5-8% | Design, permitting, oversight |
-| **Commissioning & Startup** | TBD | 2-3% | Training, testing, Urban Rig support |
-| **Contingency** | TBD | 10% | Unforeseen costs, change orders |
-| **TOTAL CAPEX** | **TBD** | **100%** | |
+| **Urban Rig Unit** | ~55 | 87% | Continuous 200 m³ system (~$60M USD) |
+| **Site Acquisition** | ~2 | 3% | Long-term lease near CDG (industrial zone) |
+| **Civil Works & Buildings** | ~3 | 5% | Foundations, enclosures, offices, workshop |
+| **Auxiliary Equipment** | ~1.5 | 2% | Feed systems, storage, handling, water treatment |
+| **Utilities & Infrastructure** | ~0.5 | 1% | Electrical, water, roads, security |
+| **Emissions & Environmental Controls** | ~0.3 | 0.5% | CEMS, exhaust treatment, monitoring |
+| **Engineering & Project Management** | ~0.5 | 1% | Design, permitting, oversight |
+| **Commissioning & Startup** | ~0.2 | 0.3% | Training, testing, Urban Rig support |
+| **Contingency** | TBD | - | Included in equipment cost |
+| **TOTAL CAPEX** | **~€63M** | **100%** | (~$68M USD) |
 
-*Note: Detailed CAPEX will be developed in collaboration with Urban Rig and engineering contractors. Typical range for a 200-ton pyrolysis facility: €15-25 million*
+*Source: [Annex F - Financial Model](../supporting-documents/France%20CDG/UR-Financial-Model-CORRECTED.xlsx), cells E10 (total CAPEX), converted at €0.93/USD*
+
+**Key Parameters from Financial Model**:
+- Capacity: 200 m³/day (cell B2)
+- MSW Density: 0.7 (cell B16)
+- Actual throughput: 140 tonnes/day (cell B17 = B2 × B16)
+- Operating days: 330/year (cell B18)
+- Annual throughput: 46,200 tonnes (cell B19)
 
 ### CAPEX Breakdown Detail
 
-#### 1. Urban Rig Unit (€X million)
+#### 1. Urban Rig Unit (~€55 million / ~$60M USD)
 
 **Includes**:
 - Continuous reactor system (600°C, oxygen-free)

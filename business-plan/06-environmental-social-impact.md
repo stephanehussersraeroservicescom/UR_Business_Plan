@@ -116,13 +116,21 @@ Urban Rig facility processes waste that would otherwise be incinerated.
 - Dioxins and furans
 - Heavy metals volatilization
 
-**Urban Rig Emissions**:
-- Closed-loop system with integrated exhaust gas treatment
-- Continuous emissions monitoring
-- Stack emissions: <10% of incineration levels
-- No odor (enclosed process)
+**Urban Rig Emissions** [VALIDATED: KANSO Technos Laboratory Report 20002610, December 2020]:
 
-**Net Effect**: Significant improvement in regional air quality.
+| Pollutant | Urban Rig Measured | EU Incineration Limit | Comparison |
+|-----------|-------------------|----------------------|------------|
+| **NOx** | 15 ppm | ~100 ppm | **85% lower** |
+| **SOx** | < 1 ppm | ~20 ppm | **>95% lower** |
+| **HCl** | < 1 ppm | ~7 ppm | **>85% lower** |
+| **Dust/PM** | < 0.002 g/m³ | 0.01 g/m³ | **80% lower** |
+| **H₂S** | < 0.5 ppm | N/A | Virtually zero |
+
+**Odor Impact** [VALIDATED: KANSO Technos, November 2020]:
+- Site boundary odor index: **< 10** (below detection threshold)
+- No measurable odor impact on surrounding community
+
+**Net Effect**: Urban Rig emissions are **5-20% of incineration limits** across all pollutants. This is laboratory-validated data, providing significant improvement in regional air quality.
 
 ---
 

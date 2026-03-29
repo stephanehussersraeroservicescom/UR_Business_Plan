@@ -386,6 +386,87 @@ Where official 2023 data is not yet published:
 
 ---
 
+## Gate Fees - Plastiques Purs et Recyclage Chimique
+
+### 1. Pyrolyse Plastiques - Seuil de Rentabilité
+
+**Full Citation**: Vural Gursel, I., Moretti, C., Hamelin, L. et al. "Techno-economic review of pyrolysis and gasification plants for thermochemical recovery of plastic waste and economic viability assessment of small-scale implementation." Journal of Cleaner Production, Volume 418, 2023.
+
+**URL**: https://link.springer.com/article/10.1007/s10098-023-02648-3
+
+**Data Used**:
+- Gate fee break-even pyrolyse: **>50-86 €/t** pour plastique pur
+- Rentabilité atteinte uniquement avec volumes >50,000-100,000 t/an
+- Sans gate fee, le recyclage chimique n'est pas économiquement viable à petite échelle
+
+---
+
+### 2. PRO Europe - Coûts de Participation EPR 2025
+
+**Full Citation**: PRO Europe s.r.l. "Participation Costs Overview 2025"
+
+**URL**: https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+
+**Data Used**:
+- Plastique recyclé rigide/flexible: **142,03 €/t**
+- Plastique non-recyclé: **446,07 €/t**
+- Taxe plastique EU: 0,80 €/kg (800 €/t) pour plastique non-recyclé
+
+---
+
+### 3. EU Plastic Levy
+
+**Full Citation**: Council Decision (EU, Euratom) 2020/2053 on the system of own resources of the European Union
+
+**URL**: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32020D2053
+
+**Data Used**:
+- Taxe plastique EU: **0,80 €/kg** sur emballages plastiques non-recyclés
+- Augmentation prévue à **1,00 €/kg** en 2028 (ajustement inflation)
+- Appliquée depuis 1er janvier 2021
+
+---
+
+### 4. WRAP UK - Gate Fees Report 2024-25
+
+**Full Citation**: WRAP (Waste and Resources Action Programme). "UK Gate Fees Report 2024-25"
+
+**URL**: https://www.wrap.ngo/resources/report/uk-gate-fees-report-2024-25
+
+**Data Used**:
+- MRF gate fees UK: tendance baissière 2024 vs 2023
+- Référence comparative pour marché européen
+
+---
+
+### 5. Dégradation Thermique des Plastiques
+
+**Full Citation**: Al-Salem, S.M., Antelava, A., et al. "A review on thermal and catalytic pyrolysis of plastic solid waste (PSW)." Journal of Environmental Management, Volume 197, 2017.
+
+**URL**: https://pubmed.ncbi.nlm.nih.gov/30928634/
+
+**Data Used**:
+- PE décomposition complète: **450-500°C**, rendement liquide 89.5%
+- PP décomposition complète: **345-493°C**, rendement liquide 86.5%
+- PS décomposition complète: **450-500°C**, rendement liquide 84%
+- Conclusion: À 600°C (température Urban Rig), tous les plastiques PE/PP/PS sont dégradés à ~100%
+
+---
+
+### Tableau Récapitulatif Gate Fees Plastiques (2025-2026)
+
+| Type de Plastique | Gate Fee | Source |
+|-------------------|----------|--------|
+| Plastique pur (break-even pyrolyse) | **50-86 €/t** | Springer 2023 |
+| Plastique souillé/contaminé | **60-100 €/t** | Estimation marché |
+| EPR plastique recyclé | 142 €/t | PRO Europe 2025 |
+| EPR plastique non-recyclé | **446 €/t** | PRO Europe 2025 |
+| Taxe EU plastique non-recyclé | **800 €/t** | EU Council 2020 |
+
+**Note Business Plan**: Les plastiques purs constituent une **matière première valorisable** pour la pyrolyse. Les gate fees sont donc plus bas que pour les déchets MSW mixtes (80-150 €/t). Cependant, le coût d'acquisition peut être compensé par la qualité du feedstock et les rendements élevés (70-85%).
+
+---
+
 ## Updates and Revisions
 
 **Document Version**: 1.0

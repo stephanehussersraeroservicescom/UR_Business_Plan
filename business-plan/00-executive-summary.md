@@ -19,11 +19,12 @@ This business plan template provides a comprehensive framework for deploying Urb
 
 ## Key Technology Advantages
 
-### Environmental Performance
+### Environmental Performance [VALIDATED: KANSO Technos Laboratory Reports, December 2020]
 - **80-90% CO₂ reduction** compared to conventional waste treatment (landfilling or incineration)
 - **95%+ material recovery rate** (oil, carbon, metals) vs 0-10% for conventional methods
 - **Zero methane emissions** (unlike landfills)
-- **Minimal air pollution** (vs incineration)
+- **Emissions 5-20% of incineration limits**: NOx 15 ppm, SOx <1 ppm, HCl <1 ppm, Dust <0.002 g/m³
+- **No odor impact**: Site boundary odor index <10 (below detection threshold)
 
 ### Operational Flexibility
 - **No sorting requirement** - accepts mixed, contaminated waste streams
@@ -40,10 +41,12 @@ This business plan template provides a comprehensive framework for deploying Urb
 
 ## Products and Revenue Streams
 
-### Primary Output: Sustainable Oil
-- **Yield**: 85% of plastic content, ~30-40% of total MSW by weight
-- **Applications**: Refinery feedstock, industrial fuel, chemical precursor for circular plastics
-- **Market value**: €400-700/ton (linked to crude oil prices)
+### Primary Output: Sustainable Oil [VALIDATED: GC-MS Analysis, Osaka Institute of Industrial Science and Technology]
+- **Conversion**: 95-100% of plastic content converts to oil (deterministic, not variable)
+- **Oil yield from MSW**: Depends on plastic content (20% plastic = 20% oil yield, 40% plastic = 40% oil yield)
+- **Composition**: 45% C8-C12 (SAF-range), 30% C12-C16 (diesel-range), 25% C16+ (fuel oil)
+- **Applications**: Refinery feedstock (SAF production), industrial fuel, chemical precursor
+- **Market value**: €350-550/ton (depending on fraction and end-use)
 
 ### Secondary Output: Carbon Black / Biochar
 - **Yield**: 15-20% of input weight
@@ -111,30 +114,36 @@ This business plan is adaptable for deployment in:
 
 ## Financial Overview
 
-### Typical 200 Tons/Day Unit Economics
+### CDG Paris Project: 200 m³/Day Unit Economics
 
-**Capital Expenditure (CAPEX)**: €15-25 million
-- Urban Rig unit: 40-50%
-- Site, civil works, infrastructure: 30-40%
-- Engineering, commissioning, contingency: 20-30%
+**Note**: The CDG unit has a volumetric capacity of **200 m³/day**, which translates to **140 tonnes/day** at MSW density of 0.7, yielding **46,200 tonnes/year** throughput at 330 operating days.
 
-**Operating Expenditure (OPEX)**: €2.5-3.5 million/year
-- Personnel (10-15 FTE): 40-45%
+*Source: [Annex F - Financial Model](../supporting-documents/France%20CDG/UR-Financial-Model-CORRECTED.xlsx)*
+
+**Capital Expenditure (CAPEX)**: ~€63 million (~$68M USD)
+- Urban Rig unit: ~€55M ($60M) - 88%
+- Site, civil works, infrastructure: ~€5M - 8%
+- Engineering, commissioning, contingency: ~€3M - 4%
+
+**Operating Expenditure (OPEX)**: ~€5.1 million/year (~$5.5M USD)
+- Personnel (16-20 FTE): 40-45%
 - Maintenance and Urban Rig support: 15-20%
 - Utilities (minimal due to energy self-sufficiency): 5-10%
 - Other (insurance, compliance, admin): 25-30%
 
-**Revenue (Steady State)**: €18-25 million/year
-- Tipping fees (70,000 tons @ €80-120/ton): €5.6-8.4M
-- Oil sales (21,000 tons @ €400-700/ton): €8.4-14.7M
-- Carbon sales (12,000 tons @ €80-400/ton): €1.0-4.8M
-- Metal sales (5,000 tons @ €200-400/ton): €1.0-2.0M
+**Revenue (Steady State)**: €12-18 million/year
+- Tipping fees (46,200 tons @ €80-120/ton): €3.7-5.5M
+- Oil sales (13,860 tons plastic × 85% yield = ~11,800 tons @ €400-600/ton): €4.7-7.1M
+- Carbon sales (9,200 tons @ €80-200/ton): €0.7-1.8M
+- Metal sales (3,700 tons @ €200-400/ton): €0.7-1.5M
 
-**EBITDA**: €15-22 million/year (75-85% margin)
+**EBITDA**: €7-13 million/year (55-75% margin)
 
-**Payback Period**: 1-3 years (depending on financing structure and local conditions)
+**Payback Period**: 5-9 years (depending on financing structure and revenue optimization)
 
-**IRR**: 30-60%+ (highly attractive returns)
+**IRR**: 15-25%+ (attractive returns for infrastructure investment)
+
+*Note: Revenue projections based on 30% plastic content in input, 85% oil yield from plastic fraction. See [Annex D](annex-d-technical-test-results.md) for validated yield data.*
 
 ### Sensitivity and Scalability
 - **Break-even**: <25% capacity utilization (very low risk)

@@ -285,6 +285,72 @@
 
 ---
 
+### Annex D: Laboratory-Validated Technical Test Results
+
+**Full Document**: [Annex D - Technical Test Results](annex-d-technical-test-results.md)
+
+**Contents**:
+- Testing laboratories and certifications (KANSO Technos, Asada Shokai, NKKK, Osaka Institute)
+- Oil production yields by feedstock type (72-85% for plastics)
+- Atmospheric emissions test results (all parameters <40% of ICPE limits)
+- Off-gas (syngas) composition (H₂ 12.7%, CH₄ 3.2%, CO 0.6%)
+- Product quality specifications (JIS certified)
+- Mass and energy balance calculations
+- Business plan assumption validation
+
+**Key Data Points**:
+- Oil yield: 72-85% from plastic fraction (validated)
+- NOx: 15 ppm (37.5% of limit)
+- SOx: <1 ppm (<5% of limit)
+- Energy self-sufficiency: Confirmed
+- All emissions compliant with French ICPE standards
+
+---
+
+### Annex E: French Plastic Waste Analysis (2024-2025 Data)
+
+**Full Document**: [Annex E - French Plastic Analysis](annex-e-french-plastic-analysis.md)
+
+**Contents**:
+- National plastic waste statistics (4.5 Mt/year)
+- France vs. EU recycling rate comparison (France: 25.7% vs EU: 42.1%)
+- MODECOM 2024 data on MSW composition
+- Fate of non-recycled plastics (73% incinerated/landfilled)
+- Soiled plastics problem and pyrolysis opportunity
+- Île-de-France regional data (500,000 t/year valorizable)
+- Pyrolysis feedstock calculations by zone
+- MSW vs. Pure Plastics comparative analysis
+- Regulatory tailwinds (incineration -9%, landfill -56% by 2028)
+- Business plan assumption validation
+
+**Key Findings**:
+- France has the **worst plastic recycling rate in EU**
+- **3.3 Mt/year** of plastic waste not recycled nationally
+- **~500,000 t/year** available for pyrolysis in IDF alone
+- CDG project requires only **<10%** of available IDF feedstock
+- All BP assumptions validated as conservative
+
+---
+
+### Annex F: Financial Model (Excel)
+
+**Full Document**: [UR-Financial-Model-CORRECTED.xlsx](../supporting-documents/France%20CDG/UR-Financial-Model-CORRECTED.xlsx)
+
+**Key Parameters**:
+- Capacity: 200 m³/day = 140 tonnes/day (density 0.7)
+- Annual throughput: 46,200 tonnes (330 operating days)
+- CAPEX: ~$68M USD (~€63M EUR)
+- OPEX: ~$5.5M/year (~€5.1M EUR)
+- Plastic content assumption: 30%
+- Oil yield assumption: 85% of plastic fraction
+
+**Sheets**:
+- 200T-CORRIGE: Main financial model with corrected parameters
+- Sensitivity analysis
+- Cash flow projections
+
+---
+
 ## 12.11 Glossary of Terms
 
 **ADEME**: Agence de la Transition Écologique (French Environment and Energy Management Agency)
