@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{scrartcl}
+
+% Marges plus respirantes
+\usepackage[
+  left=2.2cm,
+  right=2.2cm,
+  top=2.8cm,
+  bottom=2.8cm
+]{geometry}
+
+
+% Micro-typographie
+\usepackage{microtype}
+
+% Interligne légèrement augmenté
+\usepackage{setspace}
+\setstretch{1.15}
+
+% More breathable paragraphs (institutional memo style)
+\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parindent}{0pt}
+
+
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{8pt}
+\usepackage{calc}
+
+% Graphiques
+\usepackage{graphicx}
+
+% Hyperliens discrets
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+% Police institutionnelle élégante
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+
+
+% Titres plus sobres
+% KOMA heading style (native, conflict-free)
+\setkomafont{section}{\Large\bfseries}
+\setkomafont{subsection}{\large\bfseries}
+\setkomafont{subsubsection}{\normalsize\bfseries}
+\setkomafont{paragraph}{\normalsize\bfseries}
+\setkomafont{subparagraph}{\normalsize\bfseries}
+
+
+% Pandoc emits \real{...} in table width calculations on some setups
+\newcommand{\real}[1]{#1}
+
+% Pandoc list helper
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Variables Pandoc
+$if(title)$
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(date)$
+\date{$date$}
+$endif$
+
+\begin{document}
+
+% --------------------
+% COVER PAGE
+% --------------------
+
+\begin{titlepage}
+\centering
+
+\vspace*{3cm}
+
+{\Huge\bfseries URBAN RIG\par}
+
+\vspace{0.8cm}
+
+{\Large Renewable Energy Recovery \& Carbonization Plant\par}
+
+\vspace{1.5cm}
+
+{\Large\bfseries BUSINESS PLAN\par}
+
+\vspace{1.2cm}
+
+{\large Superheated Steam Decomposition Fuel Recovery Technology\par}
+
+\vspace{1.8cm}
+
+{\large Urban Rig Europe\par}
+
+\vspace{0.5cm}
+
+{\large March 2026 --- Confidential\par}
+
+\vfill
+
+\end{titlepage}
+
+\newpage
+
+% --------------------
+% TABLE OF CONTENTS
+% --------------------
+
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+
+% --------------------
+% MAIN CONTENT
+% --------------------
+
+$body$
+
+\end{document}
