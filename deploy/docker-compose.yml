@@ -1,0 +1,18 @@
+services:
+  ur-app:
+    build:
+      context: ../working-folder
+      dockerfile: Dockerfile
+    image: ur-app:latest
+    container_name: ur_app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8089:5050"
+    environment:
+      - PORT=5050
+    networks:
+      - ur_network
+
+networks:
+  ur_network:
+    driver: bridge

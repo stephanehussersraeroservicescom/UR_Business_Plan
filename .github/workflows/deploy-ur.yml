@@ -1,0 +1,27 @@
+name: Deploy Urban Rig to Hetzner
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "working-folder/**"
+      - "deploy/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HETZNER_HOST }}
+          username: webadmin
+          key: ${{ secrets.HETZNER_SSH_KEY }}
+          script: |
+            set -e
+            cd ~/ur_business_plan
+            git pull origin main
+            cd deploy
+            docker compose up -d --build
+            sleep 3
+            curl -sf http://127.0.0.1:8089/healthz && echo "Deploy OK" || (docker logs ur_app --tail 20 && exit 1)
