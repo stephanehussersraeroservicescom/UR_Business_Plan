@@ -1,0 +1,34 @@
+_domaine: "Composition du gisement"
+
+part_plastique:
+  justification: AFF-PLA-00
+  label: "Part plastique"
+  valeur: 0.30
+  unite: fraction
+  statut: hypothese
+  preuves: [V3-MODEL]
+  bornes: {bas: 0.10, haut: 0.38}
+  note: "La fiche constructeur UR2000-JP calcule son cas de reference a 10% de resine. OMR francaises : 14 a 20%."
+
+part_organique:
+  justification: AFF-COMP-ORG
+  label: "Part organique et cellulose"
+  valeur: 0.47
+  unite: fraction
+  statut: hypothese
+  preuves: [V3-MODEL]
+
+part_metaux:
+  {justification: AFF-COMP-MET, label: "Part metaux", valeur: 0.05, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+part_verre:
+  {justification: AFF-COMP-VER, label: "Part verre", valeur: 0.055, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+part_inertes:
+  {justification: AFF-COMP-INE, label: "Part inertes mineraux", valeur: 0.02, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+part_humidite:
+  {justification: AFF-COMP-HUM, label: "Humidite", valeur: 0.08, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+taux_refus:
+  {justification: AFF-COMP-REF, label: "Taux de refus a l'entree", valeur: 0.02, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+part_ferreux:
+  {justification: AFF-COMP-MET, label: "Part ferreuse des metaux", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+part_alu:
+  {justification: AFF-COMP-MET, label: "Part aluminium des metaux", valeur: 0.15, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}

@@ -1,0 +1,737 @@
+# ---------------------------------------------------------------------------
+# GRAPHE DES JUSTIFICATIONS
+#
+# Chaque parametre du modele pointe vers une affirmation racine (champ
+# "justification" dans les fichiers de parametres). Chaque affirmation
+# s'appuie sur d'autres affirmations et, au bout de la chaine, sur des
+# preuves brutes du registre _evidence.yaml.
+#
+# BASE DE L'AFFIRMATION, ET CONFIANCE PAR DEFAUT
+#   experience_interne ........ 1.00  essai mene par nous ou pour nous
+#   experience_industrielle ... 1.00  pratique etablie, des centaines d'operateurs
+#   loi_physique .............. 1.00  chimie, thermodynamique, geometrie
+#   mesure_certifiee .......... 1.00  rapport de laboratoire tiers
+#   decision_commerciale ...... 1.00  parametre fixe par nous, certain par definition
+#   publication_scientifique .. 0.80  A DISCUTER : reproductibilite, conditions
+#   reglementaire ............. 1.00  texte de loi ou taux officiel
+#   specification_constructeur  0.90  A DISCUTER : 80 a 100 %, le constructeur ne publie rien sans essai
+#   declaration ............... 0.60  A DISCUTER : oral, non documente
+#   hypothese ................. 0.50  choix de modelisation non etaye
+#   calcul .................... herite de ses appuis
+#   inconnu ................... 0.00
+#
+# Un champ "confiance" explicite remplace la valeur par defaut.
+#
+# PROPAGATION
+#   mode: tous       tous les appuis sont necessaires  -> maillon le plus faible
+#   mode: un_suffit  chaque appui suffit seul          -> meilleur appui
+#   La confiance effective ne depasse jamais celle de l'affirmation elle-meme.
+#
+# contre_indications : affichees en rouge, n'entrent pas dans le calcul,
+#   mais doivent etre discutees avant d'accepter le chiffre.
+# ---------------------------------------------------------------------------
+
+
+# =========================================================== MASSE VOLUMIQUE
+AFF-DEN-00:
+  enonce: "Les dechets peuvent etre charges a 0,70 t/m3 dans la benne URC-2000"
+  base: calcul
+  mode: tous
+  appuis: [AFF-DEN-01, AFF-DEN-02]
+  consequence: >
+    Necessite une presse a balles sur site. Equipement supplementaire, non
+    redhibitoire, a porter au CAPEX.
+  pour_passer_a_1: "Un essai de remplissage d'une benne URC-2000 avec des OMR reelles pressees, avec pesee."
+
+AFF-DEN-01:
+  enonce: "Les ordures menageres se compactent industriellement bien au-dela de 0,70 t/m3"
+  base: experience_industrielle
+  appuis: [AFF-DEN-01a, AFF-DEN-01b, AFF-DEN-01c]
+  mode: un_suffit
+  detail: >
+    Mise en balles courante des OMR : 0,59 t/m3 ; fourchette 0,30 a 0,89.
+    Presse haute compression : 0,95 t/m3. Centre de stockage compacte par engin :
+    0,55 a 0,85 t/m3. Des centaines d'operateurs pratiquent ces compactions.
+
+AFF-DEN-01a:
+  enonce: "Mise en balles des OMR : 300 a 890 kg/m3, valeur preferentielle 593 kg/m3"
+  base: experience_industrielle
+  preuves: [BREVETS-BALLES]
+
+AFF-DEN-01b:
+  enonce: "Presse haute compression : environ 950 kg/m3"
+  base: experience_industrielle
+  preuves: [BREVETS-BALLES]
+
+AFF-DEN-01c:
+  enonce: "OMR bien compactees en centre de stockage : 550 a 850 kg/m3"
+  base: experience_industrielle
+  preuves: [LITT-TCHOBANOGLOUS]
+
+AFF-DEN-02:
+  enonce: "La benne URC-2000 accepte jusqu'a 0,927 t/m3"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+  detail: >
+    Benne de 1 x 3 x 1,5 m, soit 4,5 m3, pour un poids maximal de 4,17 t.
+    0,70 t/m3 represente 3,15 t par benne, soit 76% de la charge nominale :
+    la marge est large, meme si le poids maximal etait surestime de 20%.
+  appuis: [AFF-DEN-02a]
+  mode: tous
+
+AFF-DEN-02a:
+  enonce: "Volume d'un parallelepipede : 1 x 3 x 1,5 = 4,5 m3"
+  base: loi_physique
+
+AFF-DEN-03:
+  enonce: "Un camion benne a compaction seul ne depasse pas 0,50 t/m3"
+  base: experience_industrielle
+  preuves: [LITT-TCHOBANOGLOUS]
+  detail: "OMR en vrac 0,10 a 0,30 t/m3 ; en camion a compaction 0,30 a 0,50 t/m3."
+
+AFF-DEN-04:
+  enonce: "La valeur 0,70 t/m3 est celle retenue dans la feuille de calcul Lufthansa"
+  base: specification_constructeur
+  preuves: [LUFTHANSA-WS]
+  detail: "Origine historique du chiffre. Non justifiee par une mesure dans la feuille."
+
+
+# =========================================================== CAPACITE
+AFF-CAP-00:
+  enonce: "La machine traite 200 t par jour au poids maximal de benne"
+  base: calcul
+  mode: tous
+  appuis: [AFF-CAP-01, AFF-DEN-02]
+  detail: "48 bennes x 4,17 t = 200 t. Le chiffre de 200 t/jour est massique."
+
+AFF-CAP-01:
+  enonce: "La cadence est de 48 bennes par 24 heures, 10,5 h de traitement par benne"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+
+
+# =========================================================== JOURS D'EXPLOITATION
+AFF-JRS-00:
+  enonce: "330 jours d'exploitation par an sont une base realiste pour un procede thermique continu"
+  base: experience_industrielle
+  confiance: 0.9
+  mode: un_suffit
+  appuis: [AFF-JRS-01, AFF-JRS-03]
+  contre_indications: [AFF-JRS-02]
+  detail: >
+    Confiance ramenee a 0,9 : la base de conception est etablie par l'industrie,
+    mais un premier exemplaire peut rester en dessous les premieres annees.
+  pour_passer_a_1: "Un engagement contractuel de disponibilite dans l'offre OneWorld."
+
+AFF-JRS-01:
+  enonce: "Une UVE francaise est concue sur 8 000 heures par an, soit 333 jours"
+  base: experience_industrielle
+  preuves: [UVE-DISPONIBILITE]
+
+AFF-JRS-02:
+  enonce: "En pratique, les fours d'UVE francaises realisent 282 a 314 jours par an"
+  base: experience_industrielle
+  preuves: [UVE-DISPONIBILITE]
+  detail: "SITRU 2018 : four 1 a 7 530 h, four 2 a 6 760 h. Ecart entre conception et realisation."
+
+AFF-JRS-03:
+  enonce: "Le constructeur annonce une semaine de maintenance annuelle, soit 358 jours au maximum"
+  base: declaration
+  preuves: [DECLARE-CONSTRUCTEUR-MAINT]
+  detail: "Plafond hors arrets non planifies."
+
+AFF-JRS-04:
+  enonce: "Le stockage sur site ne couvre que 3 jours : tout arret prolonge detourne le gisement"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+  detail: "Plan single : stockage dechets 600 m3, 3 jours. Consequence : un arret coute le gate fee et l'exutoire de secours."
+
+
+# =========================================================== PRIX MACHINE
+AFF-MAC-00:
+  enonce: "Le prix de l'URC-2000 est de 50 MEUR"
+  base: decision_commerciale
+  appuis: [AFF-MAC-01, AFF-MAC-02]
+  mode: un_suffit
+  contre_indications: [AFF-MAC-03]
+
+AFF-MAC-01:
+  enonce: "Cotation OneWorld, prix fixe par le representant commercial"
+  base: decision_commerciale
+  preuves: [ONEWORLD-COTATION]
+
+AFF-MAC-02:
+  enonce: "Prix de transaction de reference : 2 x URC-1000 pour USD 60 M, soit ~30 MEUR pour 100 t/jour"
+  base: experience_industrielle
+  preuves: [HARDIN-LOI]
+  detail: "Seul prix de transaction reel du depot. Coherent avec 50 MEUR pour 200 t/jour."
+
+AFF-MAC-03:
+  enonce: "Le plan d'affaires et les annexes B et C citent 10 a 15 MEUR"
+  base: hypothese
+  detail: "Ecart d'un facteur 4. A aligner dans les documents avant diffusion."
+
+
+# =========================================================== MAINTENANCE
+AFF-MNT-00:
+  enonce: "Maintenance a 1% les quatre premieres annees, montee a 4% en annee 10"
+  base: decision_commerciale
+  preuves: [ONEWORLD-COTATION]
+  detail: "Negociation tarifaire. Une ou deux annees gratuites possibles. Cotation recue a 4 a 5% en regime etabli."
+
+
+# =========================================================== PCI DU GAZ
+AFF-PCI-00:
+  enonce: "Le gaz de procede issu du plastique a un PCI de 37,3 MJ/kg"
+  base: calcul
+  mode: tous
+  appuis: [AFF-PCI-01, AFF-PCI-02, AFF-PCI-03]
+  detail: >
+    Calcul molaire sur la composition chromatographique apres retrait des 78,1% de
+    diluant (azote et air). Le 5,54 MJ/kg du rapport d'essai est celui de
+    l'echantillon dilue.
+  pour_passer_a_1: "Deja a 1 sur le calcul. Reste a verifier la representativite par une mesure sur gaz non dilue en continu."
+
+AFF-PCI-01:
+  enonce: "Composition du gaz : H2 12,7%, CH4 3,2%, C2-C3 1,5%, CO 0,6%, CO2 1,7%, N2 65,8%, O2 12,3%"
+  base: mesure_certifiee
+  preuves: [GC-B2002600]
+
+AFF-PCI-02:
+  enonce: "PCI des gaz purs : H2 241,8 ; CH4 802,3 ; CO 283,0 kJ/mol"
+  base: loi_physique
+  detail: "Constantes thermodynamiques tabulees."
+
+AFF-PCI-03:
+  enonce: "Une charge de PE, PP et PS ne contient que du carbone et de l'hydrogene"
+  base: loi_physique
+  appuis: [AFF-PCI-03a]
+  mode: tous
+  detail: "Donc les 11,7 kg de gaz de l'essai ne peuvent etre ni du CO2 ni de l'eau."
+
+AFF-PCI-03a:
+  enonce: "Bilan matiere de l'essai du 26/05/2022 : 60 kg entrants, 43,1 + 5,2 + 11,7 = 60,0 kg sortants"
+  base: experience_interne
+  preuves: [ICHIMURA-2022]
+
+AFF-PCO-00:
+  enonce: "Le gaz de procede issu de l'organique a un PCI d'environ 11 MJ/kg"
+  base: publication_scientifique
+  preuves: [LITT-CHALMERS]
+  detail: "Pyrolyse de biomasse a 600 degres C. Conditions a comparer avec le procede UR."
+  pour_passer_a_1: "Un essai de pyrolyse UR sur charge organique non plastique, avec mesure de debit et de PCI."
+
+
+# =========================================================== AUTONOMIE ENERGETIQUE
+AFF-NRJ-00:
+  enonce: "Le gaz de procede couvre le besoin thermique a 30% de plastique"
+  base: calcul
+  mode: tous
+  appuis: [AFF-PCI-00, AFF-PCO-00, AFF-NRJ-01]
+
+AFF-NRJ-01:
+  enonce: "Besoin thermique de 2 714 MJ/t, recoupe par un bruleur de 833 kcal/s soit 3,49 MW"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+
+
+# =========================================================== CHLORE ET HUILE
+AFF-CL-00:
+  enonce: "L'huile respecte la specification vapocraqueur en chlore"
+  base: calcul
+  mode: tous
+  appuis: [AFF-CL-01, AFF-CL-02, AFF-CL-03]
+  contre_indications: [AFF-CL-04]
+  pour_passer_a_1: "Analyse des trois fractions separement, sur une charge d'OMR reelles contenant du PVC."
+
+AFF-CL-01:
+  enonce: "Le certificat NKKK mesure 0,0001% de chlore, soit 1 ppm"
+  base: mesure_certifiee
+  preuves: [NKKK-2020]
+
+AFF-CL-02:
+  enonce: "La specification vapocraqueur impose 3 ppm de chlore au plus"
+  base: experience_industrielle
+  preuves: [LITT-CRACKER]
+
+AFF-CL-03:
+  enonce: "Le chlore est capte avant condensation : couche catalytique, puis transformation en HCl dilue par la vapeur"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+  detail: "Deux barrieres decrites par le constructeur, pages 3 et 4 de UR2000-JP."
+
+AFF-CL-04:
+  enonce: "L'echantillon NKKK est peut-etre une fraction legere seulement, charge d'origine non documentee"
+  base: hypothese
+  preuves: [NKKK-2020]
+  detail: "Point eclair <= 40 degres C, viscosite 1,11 mm2/s : produit tres leger."
+
+
+# =========================================================== TRAITEMENT DE L'EAU
+AFF-EAU-00:
+  enonce: "Le chlore passe dans l'eau puis est neutralise et concentre, l'eau est recyclee"
+  base: calcul
+  mode: tous
+  appuis: [AFF-EAU-01, AFF-EAU-02, AFF-EAU-03]
+
+AFF-EAU-01:
+  enonce: "CaCO3 + 2 HCl donne CaCl2 + H2O + CO2 ; le chlorure de calcium est un sel non volatil"
+  base: loi_physique
+  detail: "Neutralisation acide-base. Pratique courante en traitement des eaux depuis des siecles."
+
+AFF-EAU-02:
+  enonce: "Neutraliser avant de decanter augmente la force ionique et ameliore la separation des organiques"
+  base: loi_physique
+  detail: "Relargage salin : la solubilite des organiques baisse quand la salinite monte."
+
+AFF-EAU-03:
+  enonce: "Le SEA CORAL retient 99,9% des chlorures, rendement en eau 78%"
+  base: specification_constructeur
+  preuves: [SEACORAL-JP]
+  detail: "Essai constructeur sur eau de mer : 31 000 -> 31 mg/L. Non encore reproduit sur eau de pyrolyse."
+  pour_passer_a_1: "Une analyse d'eau traitee sur eau de procede reelle."
+
+
+# =========================================================== PART PLASTIQUE
+AFF-PLA-00:
+  enonce: "Le gisement contient 30% de plastique"
+  base: hypothese
+  appuis: [AFF-PLA-01]
+  mode: tous
+  contre_indications: [AFF-PLA-02, AFF-PLA-03]
+  detail: >
+    Defendable uniquement sur un melange enrichi en dechets aeroportuaires et
+    industriels, non contractualise a ce jour.
+  pour_passer_a_1: "Un contrat d'apport precisant la composition, ou une caracterisation MODECOM du gisement reel."
+
+AFF-PLA-01:
+  enonce: "Un melange enrichi en dechets aeroportuaires et industriels depasse la moyenne nationale"
+  base: hypothese
+
+AFF-PLA-02:
+  enonce: "Campagne nationale MODECOM 2017 : 15% de plastique dans les OMR"
+  base: experience_industrielle
+  preuves: [ADEME-MODECOM]
+
+AFF-PLA-03:
+  enonce: "La fiche constructeur UR2000-JP calcule son cas de reference a 10% de resine"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+
+
+# ###########################################################################
+# INSTRUCTION DU 19/09/2026 : PARAMETRES JUSTIFIES PAR LE PLAN D'AFFAIRES
+# ET SES ANNEXES. Chaque affirmation cite l'annexe ou elle a ete trouvee.
+# ###########################################################################
+
+# =========================================================== COMPOSITION
+AFF-COMP-VER:
+  enonce: "Le gisement contient 5,5% de verre"
+  base: experience_industrielle
+  preuves: [ADEME-MODECOM, ANNEXE-05]
+  detail: "MODECOM : verre 5% (50 kg/T) + fragments de verre dans les fines (5 kg/T) = 55 kg/T. Correspond exactement."
+
+AFF-COMP-INE:
+  enonce: "Le gisement contient 2% d'inertes mineraux"
+  base: experience_industrielle
+  preuves: [ADEME-MODECOM, ANNEXE-05]
+  detail: "MODECOM : incombustibles non classes 2% (ceramique, pierres, porcelaine). Correspond exactement."
+
+AFF-COMP-MET:
+  enonce: "Le gisement contient 5% de metaux, dont 80% ferreux et 15% aluminium"
+  base: hypothese
+  appuis: [AFF-PLA-01]
+  mode: tous
+  contre_indications: [AFF-COMP-MET-C]
+  detail: "Valeur du V3. Coherente seulement avec un melange enrichi."
+
+AFF-COMP-MET-C:
+  enonce: "MODECOM et annexe 3 : 3,3% de metaux dans les OMR, repartis 70% ferreux et 30% non ferreux"
+  base: experience_industrielle
+  preuves: [ADEME-MODECOM, ANNEXE-03]
+  detail: "Metaux 3% + fragments metalliques des fines 0,3%. Le V3 surestime de 50% le gisement metallique par rapport aux OMR nationales."
+
+AFF-COMP-ORG:
+  enonce: "Le gisement contient 47% de matiere organique et cellulosique"
+  base: hypothese
+  appuis: [AFF-PLA-01]
+  mode: tous
+  contre_indications: [AFF-COMP-ORG-C]
+
+AFF-COMP-ORG-C:
+  enonce: "Annexe 5 : organique + cellulose = 655 kg par tonne d'OMR, soit 65,5%"
+  base: experience_industrielle
+  preuves: [ANNEXE-05, ADEME-MODECOM]
+  detail: >
+    Decomposition complete MODECOM : putrescibles 270, papier 80, carton 60, cellulose des textiles
+    sanitaires 110, coton 24, carton des composites 22,5, bois 15, organique des fines 55.
+    Le V3 retient 47%, coherent avec les 30% de plastique d'un melange enrichi, pas avec des OMR.
+
+AFF-COMP-HUM:
+  enonce: "Humidite de la charge : 8%"
+  base: hypothese
+  contre_indications: [AFF-COMP-HUM-C]
+
+AFF-COMP-HUM-C:
+  enonce: "L'annexe 2 fait son controle thermodynamique avec environ 20% d'humidite"
+  base: specification_constructeur
+  preuves: [ANNEXE-02]
+  detail: "Section 2.6.1 : chaleur latente d'evaporation calculee pour ~20% d'humidite, soit 67 000 MJ/jour. Incoherence interne a trancher."
+
+AFF-COMP-REF:
+  enonce: "Taux de refus a l'entree : 2%"
+  base: hypothese
+  detail: "Aucune source. Distinct des retraits de verre, metaux et inertes, modelises a part."
+
+AFF-COMP-POL:
+  enonce: "Le melange de polymeres suit la composition europeenne des emballages"
+  base: experience_industrielle
+  preuves: [PLASTICSEUROPE, ANNEXE-05]
+  detail: "LDPE 32%, HDPE 20%, PP 20%, PET 18%, PS 7%, PVC 3%. Polyolefines = 64% de la fraction plastique."
+
+
+# =========================================================== RENDEMENTS
+AFF-RDT-HUI:
+  enonce: "Le rendement en huile de la fraction plastique est de 69,3%"
+  base: calcul
+  mode: tous
+  appuis: [AFF-RDT-HUI-1, AFF-RDT-HUI-2, AFF-COMP-POL]
+  contre_indications: [AFF-RDT-HUI-C]
+  pour_passer_a_1: "Essais UR sur PET et PVC, qui representent 21% de la fraction plastique."
+
+AFF-RDT-HUI-1:
+  enonce: "PE 77%, PP 80%, PS 58% d'huile, mesures sur 9 essais UR avec bilan matiere boucle"
+  base: experience_interne
+  preuves: [ICHIMURA-2022, ANNEXE-02]
+  detail: "Essais Asada Shokai, Noda, 2022. Melange 3P : 71,8% et 82,3%."
+
+AFF-RDT-HUI-2:
+  enonce: "PET 45%, PVC 32%, nylon 45%, SAP 20% d'huile, d'apres la litterature"
+  base: publication_scientifique
+  preuves: [LITT-PET-PVC, ANNEXE-05]
+  detail: "Non testes sur UR. Representent environ 36% de la fraction plastique."
+
+AFF-RDT-HUI-C:
+  enonce: "L'annexe 5 calcule 65,1% sur la fraction plastique complete, textiles et composites inclus"
+  base: calcul
+  preuves: [ANNEXE-05]
+  detail: "Le V3 (69,3%) ne compte pas les fibres de polyester et de nylon issues des textiles. Ecart de 4 points."
+
+AFF-RDT-GAZ:
+  enonce: "Le gaz de procede represente 19,3% de la fraction plastique"
+  base: calcul
+  mode: tous
+  appuis: [AFF-RDT-GAZ-1, AFF-RDT-HUI-2]
+  detail: "Moyenne ponderee : mesures UR sur PE, PP, PS ; litterature pour les autres polymeres."
+
+AFF-RDT-GAZ-1:
+  enonce: "Gaz de procede mesure : PE 21%, PP 17%, PS 12%, par difference de masse"
+  base: experience_interne
+  preuves: [ICHIMURA-2022, ANNEXE-02]
+
+AFF-RDT-RES:
+  enonce: "Le residu solide represente 10,3% de la fraction plastique"
+  base: calcul
+  mode: tous
+  appuis: [AFF-RDT-HUI-1, AFF-RDT-HUI-2]
+  detail: "PE 1,5%, PP 5%, PS 26% mesures ; PET 38%, SAP 50% d'apres litterature."
+
+AFF-RDT-CHA:
+  enonce: "La fraction organique donne 69% de char"
+  base: publication_scientifique
+  preuves: [BRIDGWATER-CHEN, ANNEXE-02, ANNEXE-05]
+  contre_indications: [AFF-RDT-CHA-C]
+  detail: "Cellulose 68%, putrescibles 70%. Parametre non teste sur UR (annexe 2, F3)."
+  pour_passer_a_1: "Essai UR sur charge organique non plastique, pesee du char."
+
+AFF-RDT-CHA-C:
+  enonce: "La reference EUBIA citee par la meme annexe donne 25% de char en pyrolyse rapide"
+  base: publication_scientifique
+  preuves: [EUBIA]
+  detail: >
+    Bridgwater 2012 porte sur la pyrolyse rapide, qui produit peu de char. Un rendement de 68-70%
+    correspond a une carbonisation lente. Le procede UR est une carbonisation a la vapeur, ce qui
+    peut justifier une valeur haute, mais elle n'est pas mesuree. Rappel : ce parametre fixe aussi
+    la quantite de gaz disponible, par difference.
+
+AFF-RDT-DEN:
+  enonce: "La masse volumique de l'huile est de 0,85 kg/L"
+  base: experience_interne
+  preuves: [ANNEXE-02, ANNEXE-05, ICHIMURA-2022]
+  detail: "Mesures Asada Shokai : PE 0,83 ; fractions distillees de 0,756 a 0,900 selon la coupe."
+
+AFF-RDT-TRI:
+  enonce: "Recuperation au tri : ferreux 90%, aluminium 75%, verre 70%"
+  base: experience_industrielle
+  confiance: 0.8
+  preuves: [PRATIQUE-TRI, ANNEXE-05]
+  detail: >
+    Separation magnetique, courants de Foucault et criblage : technologies standard de tous les
+    centres de tri. L'annexe 5 retient une efficacite de tri industrielle standard sans la chiffrer.
+  pour_passer_a_1: "Verser une fiche de performance d'un fournisseur (TOMRA, Pellenc, Machinex) ou un retour d'exploitation."
+
+AFF-RDT-CRI:
+  enonce: "Criblage du char : 85% ; metaux recuperes dans le char : 80%"
+  base: hypothese
+  detail: "Aucune source trouvee dans le depot."
+
+
+# =========================================================== ENERGIE
+AFF-NRJ-FIO:
+  enonce: "Le fioul leger a un PCI de 38 MJ/L"
+  base: experience_interne
+  preuves: [ANNEXE-02, ICHIMURA-2022]
+  detail: "Bilans energetiques Asada Shokai : 9 088 kcal/L = 38,0 MJ/L."
+
+AFF-NRJ-CHO:
+  enonce: "Le char organique a un PCI de 15 MJ/kg"
+  base: publication_scientifique
+  preuves: [FAZIL-RONSSE, ANNEXE-02]
+  detail: "Milieu de la fourchette 8-22 MJ/kg de la litterature pour les chars d'OMR. Non mesure sur UR."
+  pour_passer_a_1: "Bombe calorimetrique sur char UR issu d'OMR."
+
+AFF-NRJ-CHP:
+  enonce: "Le residu plastique a un PCI de 25 MJ/kg"
+  base: publication_scientifique
+  appuis: [AFF-NRJ-CHP-1]
+  mode: un_suffit
+  preuves: [MALINOWSKI-2023, ANNEXE-02]
+  detail: "Fourchette litterature 20-32 MJ/kg. La seule mesure UR donne 32,09 MJ/kg : 25 est prudent."
+
+AFF-NRJ-CHP-1:
+  enonce: "Char UR issu d'urethane mesure a 32,09 MJ/kg en bombe calorimetrique"
+  base: mesure_certifiee
+  preuves: [ISUMI-TECH]
+
+AFF-NRJ-BRU:
+  enonce: "Rendement du bruleur : 85%"
+  base: experience_industrielle
+  confiance: 0.9
+  detail: "Ordre de grandeur usuel des bruleurs industriels a gaz. Source a verser."
+
+AFF-NRJ-ELE:
+  enonce: "Consommation electrique : 3 000 kWh par jour et par unite"
+  base: hypothese
+  confiance: 0.6
+  contre_indications: [AFF-NRJ-ELE-C]
+  detail: >
+    Quatre valeurs dans le depot : 20 kW en continu (UR2000-JP), 600 kW (annexe 9),
+    4 800 kWh/j (V3), 15-20 kWh/T (donnees Ichimura). 3 000 kWh/j = 21 kWh/T, cale sur
+    la seule valeur mesuree.
+  pour_passer_a_1: "Releve de compteur sur un mois de marche continue."
+
+AFF-NRJ-ELE-C:
+  enonce: "L'annexe 2 ecrit 4,3 kWh/T pour 600 kW continus : erreur de division"
+  base: calcul
+  preuves: [ANNEXE-02]
+  detail: "600 kW x 24 h / 140 T = 103 kWh/T. L'annexe a divise 600 par 140 sans multiplier par 24."
+
+
+# =========================================================== PRIX
+AFF-PRX-GAT:
+  enonce: "Le gate fee moyen est de 110 EUR/T"
+  base: experience_industrielle
+  preuves: [GATE-FEES-REF, ANNEXE-03]
+  detail: >
+    SYCTOM 2023 : OMR en incineration 103 EUR/T hors TGAP. ADEME/SINOE : incineration 85-110.
+    Melange CDG de la reference : 35 kT d'OMR a 100, 20 kT aeroport a 130, 10 kT industriel a 90,
+    5 kT composites a 120, soit 109 EUR/T en moyenne.
+  contre_indications: [AFF-PRX-GAT-C]
+
+AFF-PRX-GAT-C:
+  enonce: "La reference suppose la pyrolyse exemptee de TGAP ; le modele ne contient aucune ligne de TGAP"
+  base: hypothese
+  preuves: [GATE-FEES-REF, TGAP-DOUANES]
+  detail: >
+    Si la pyrolyse avec combustion du gaz est requalifiee en traitement thermique, la TGAP
+    s'applique : 16 EUR/T en incineration performante (2026). Parametre cache, a instruire.
+
+AFF-PRX-HUC:
+  enonce: "L'huile en specification craqueur se vend 641 EUR/T"
+  base: calcul
+  mode: tous
+  appuis: [AFF-PRX-HUC-1, AFF-PRX-HUC-2, AFF-CL-00]
+  detail: "0,10 x 600 + 0,80 x 670 + 0,10 x 450 = 641 EUR/T."
+  pour_passer_a_1: "Une lettre d'intention d'un acheteur (TotalEnergies Gonfreville, Esso Fos) sur la fraction gazole."
+
+AFF-PRX-HUC-1:
+  enonce: "Prix de marche : naphta 485-660, spot pyrolyse Pays-Bas ~670, fioul lourd ~415 EUR/T"
+  base: experience_industrielle
+  preuves: [ICIS-PYROLYSE, MARCHES-PETROLIERS, ANNEXE-03]
+
+AFF-PRX-HUC-2:
+  enonce: "Repartition des fractions : 10% legere, 80% gazole, 10% lourde"
+  base: specification_constructeur
+  preuves: [UR2000-JP, ANNEXE-02]
+  detail: "Compatible avec la distillation Asada Shokai, mais jamais mesuree zone par zone sur machine continue."
+
+AFF-PRX-HUF:
+  enonce: "L'huile en qualite combustible se vend 350 EUR/T"
+  base: hypothese
+  contre_indications: [AFF-PRX-HUF-C]
+  detail: "Valeur d'audit, volontairement sous le fioul lourd."
+
+AFF-PRX-HUF-C:
+  enonce: "Le scenario bas de l'annexe 3 est a 480 EUR/T, le fioul lourd a ~415 EUR/T"
+  base: experience_industrielle
+  preuves: [ANNEXE-03, MARCHES-PETROLIERS]
+  detail: "Le 350 EUR/T est sous le plancher de l'annexe elle-meme. A relever a 415-480."
+
+AFF-PRX-CHA:
+  enonce: "Le char se vend 100 EUR/T en granules de combustible industriel"
+  base: hypothese
+  confiance: 0.6
+  preuves: [ANNEXE-03]
+  detail: >
+    Palier 2 de l'annexe 3 (granules industriels). Source citee : benchmarks europeens des
+    combustibles solides, sans reference precise. Necessite une granuleuse (200-500 kEUR).
+  pour_passer_a_1: "Une offre d'un cimentier ou d'un negociant en combustibles solides."
+
+AFF-PRX-MET:
+  enonce: "Ferrailles a 250 EUR/T, aluminium a 1 400 EUR/T, autres non ferreux a 500 EUR/T"
+  base: experience_industrielle
+  preuves: [MARCHES-METAUX, ANNEXE-03]
+  detail: "Ferrailles au bas de la fourchette 250-350 ; aluminium sous le LME, decote de tri. Autres metaux a 500 : sous la fourchette 1 200-2 500 des non ferreux."
+
+AFF-PRX-ELI:
+  enonce: "L'elimination des residus coute 110 EUR/T"
+  base: experience_industrielle
+  preuves: [GATE-FEES-REF, TGAP-DOUANES]
+  detail: "ISDND 50-80 EUR/T hors TGAP + TGAP 65 (2025) ou 69 (2026) = 115-149 EUR/T. 110 est au bas de la fourchette."
+
+AFF-PRX-FIO:
+  enonce: "Le gazole non routier coute 0,95 EUR/L"
+  base: experience_industrielle
+  preuves: [MARCHE-GNR]
+
+AFF-PRX-CO2:
+  enonce: "Prix de reference du carbone : 50 EUR/tCO2"
+  base: experience_industrielle
+  preuves: [ANNEXE-03]
+  detail: "Plancher SEQE retenu par l'annexe 3. Sans objet tant que la recette carbone est a zero."
+
+
+# =========================================================== CARBONE
+AFF-CAR-CPL:
+  enonce: "Les polyolefines contiennent 85,7% de carbone"
+  base: loi_physique
+  preuves: [STOECHIOMETRIE]
+  detail: "Motif (CH2)n : 12 / 14 = 0,857."
+
+AFF-CAR-COR:
+  enonce: "La fraction cellulosique contient 45% de carbone"
+  base: loi_physique
+  preuves: [STOECHIOMETRIE]
+  detail: "Cellulose C6H10O5 : 72 / 162 = 0,444."
+
+AFF-CAR-CHA:
+  enonce: "Le char contient 50% de carbone"
+  base: publication_scientifique
+  preuves: [FAZIL-RONSSE, ANNEXE-03]
+  detail: "Char d'OMR organique 40-50% ; char plastique 60-80% ; moyenne ponderee 42-52%."
+
+AFF-CAR-RES:
+  enonce: "Le residu plastique contient 80% de carbone"
+  base: publication_scientifique
+  preuves: [MALINOWSKI-2023]
+  detail: "Haut de la fourchette 60-80%."
+
+AFF-CAR-HUI:
+  enonce: "Une tonne d'huile brulee emet 3,10 t de CO2"
+  base: loi_physique
+  preuves: [STOECHIOMETRIE]
+  detail: "Hydrocarbure a ~85% de carbone x 3,667 = 3,12."
+
+AFF-CAR-FIO:
+  enonce: "Un litre de gazole brule emet 2,68 kg de CO2"
+  base: loi_physique
+  preuves: [STOECHIOMETRIE]
+
+
+# =========================================================== CHARGES
+AFF-OPX-ETP:
+  enonce: "Une unite emploie 15 personnes au coeur de procede"
+  base: specification_constructeur
+  preuves: [ANNEXE-09, BP-CHAPITRE-5]
+  detail: "Brochure OneWorld : ~15 ETP pour 200 T/jour. Plan d'affaires chapitre 5 : 10 a 13 personnes en 24/7."
+
+AFF-OPX-CET:
+  enonce: "Cout charge par ETP : 56 000 EUR"
+  base: hypothese
+  contre_indications: [AFF-OPX-CET-C]
+
+AFF-OPX-CET-C:
+  enonce: "L'annexe B.8.2 retient 65 000 EUR charges par ETP pour le cas CDG"
+  base: hypothese
+  preuves: [BP-ANNEXE-B]
+  detail: "Ecart de 16%. En Ile-de-France, en 3x8, 65 000 EUR est plus realiste."
+
+AFF-OPX-ASS:
+  enonce: "Assurance : 0,5% du CAPEX par an"
+  base: hypothese
+  detail: "Valeur du V3. L'annexe B.8.2 regroupe assurance, administration et conformite a 450 kEUR/an."
+
+
+# =========================================================== CAPEX
+AFF-CPX-ANN:
+  enonce: "Installation 0,2 MEUR, fret 0,4 MEUR, formation 0,3 MEUR, accessoires 2,0 MEUR"
+  base: decision_commerciale
+  preuves: [ANNEXE-09, ONEWORLD-COTATION]
+  detail: "Annexe 9, CAPEX par secteur : installation, fret, formation 0,9 MEUR ; accessoires, pieces, instrumentation 2,0 MEUR."
+
+AFF-CPX-TRI:
+  enonce: "La ligne de pre-tri coute 1,08 MEUR par unite"
+  base: hypothese
+  contre_indications: [AFF-CPX-TRI-C]
+
+AFF-CPX-TRI-C:
+  enonce: "L'annexe 9 estime la ligne de pre-tri a 3,0 MEUR pour les OMR, 3,5 MEUR pour CDG"
+  base: specification_constructeur
+  preuves: [ANNEXE-09]
+  detail: >
+    Trommel, separateur magnetique, courants de Foucault, broyeur, poste de tri manuel.
+    Ecart de 1,9 a 2,4 MEUR par unite. L'annexe recommande des devis TOMRA, Pellenc, Machinex.
+
+AFF-CPX-SUR:
+  enonce: "Surfaces baties par unite : usine 3 000 m2, stockages 640 et 810 m2, bureaux 200 m2"
+  base: specification_constructeur
+  preuves: [UR2000-JP]
+  detail: "Plans d'implantation 1 unite et 5 unites. Decroissance par unite ajoutee derivee des deux plans."
+
+AFF-CPX-PXB:
+  enonce: "Prix du bati : 900 EUR/m2 usine, 500 EUR/m2 stockage, 1 300 EUR/m2 bureaux"
+  base: experience_industrielle
+  preuves: [MARCHE-BATIMENT-FR]
+  detail: "Atelier de production 500-1 000 EUR/m2 ; hangar 350-450 EUR/m2. Usine en haut de fourchette : 10-12,5 m sous ferme, dalle 5 T/m2."
+
+AFF-CPX-ALE:
+  enonce: "Aleas : 5% de l'equipement et du genie civil"
+  base: hypothese
+  preuves: [ANNEXE-09]
+  detail: "Taux retenu dans l'annexe 9. Bas pour un premier exemplaire europeen, ou 10 a 15% est plus courant."
+
+
+# =========================================================== FINANCEMENT
+AFF-FIN-IS:
+  enonce: "L'impot sur les societes est de 25%"
+  base: reglementaire
+  preuves: [IS-FRANCE]
+
+AFF-FIN-STR:
+  enonce: "Structure de financement : 70% de dette a 12% sur 10 ans"
+  base: decision_commerciale
+  preuves: [V3-MODEL]
+  detail: >
+    Choix de structure. A noter : un preteur qui consent 70% de levier ne facture pas 12%.
+    La structure alternative (100% fonds propres, taux zero) se teste par surcharge.
+
+AFF-FIN-AMO:
+  enonce: "Amortissement sur 15 ans"
+  base: decision_commerciale
+  preuves: [V3-MODEL]
+
+AFF-FIN-MON:
+  enonce: "Montee en charge : 70% en annee 1, 85% en annee 2"
+  base: hypothese
+  preuves: [V3-MODEL]
+  detail: "Aucune source. Le calendrier constructeur annonce 4 mois du contrat a la mise en service."

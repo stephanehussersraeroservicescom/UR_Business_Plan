@@ -1,0 +1,11 @@
+_domaine: "Financement et fiscalite"
+
+part_dette:     {justification: AFF-FIN-STR, label: "Part de dette", valeur: 0.70, unite: fraction, statut: hypothese, preuves: [V3-MODEL], bornes: {bas: 0.0, haut: 0.70}, note: "Mettre 0 pour la structure 100% fonds propres."}
+taux_interet:   {justification: AFF-FIN-STR, label: "Taux d'interet", valeur: 0.12, unite: fraction, statut: hypothese, preuves: [V3-MODEL], note: "12% avec 70% de levier n'est pas coherent. Mettre 0 pour un pret d'associe a taux zero."}
+duree_pret:     {justification: AFF-FIN-STR, label: "Duree du pret", valeur: 10, unite: ans, statut: hypothese, preuves: [V3-MODEL]}
+impot_societes: {justification: AFF-FIN-IS, label: "Impot sur les societes", valeur: 0.25, unite: fraction, statut: reglementaire, preuves: [AUCUNE]}
+duree_amortissement: {justification: AFF-FIN-AMO, label: "Duree d'amortissement", valeur: 15, unite: ans, statut: hypothese, preuves: [V3-MODEL]}
+inflation:      {label: "Inflation", valeur: 0.02, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+charge_an1:     {justification: AFF-FIN-MON, label: "Taux de charge annee 1", valeur: 0.70, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+charge_an2:     {justification: AFF-FIN-MON, label: "Taux de charge annee 2", valeur: 0.85, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+horizon:        {label: "Horizon du modele", valeur: 15, unite: ans, statut: decision, preuves: [AUCUNE]}

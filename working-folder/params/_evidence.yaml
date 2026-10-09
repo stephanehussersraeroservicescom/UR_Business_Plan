@@ -1,0 +1,393 @@
+# ---------------------------------------------------------------------------
+# REGISTRE DES PREUVES
+# Chaque parametre du modele pointe vers une ou plusieurs entrees de ce fichier.
+# fiabilite : certifie_tiers > mesure_interne > constructeur > litterature > aucune
+# ---------------------------------------------------------------------------
+
+NKKK-2020:
+  titre: "Certificat de qualite NKKK (Nippon Kaiji Kentei Kyokai)"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  chemin: "annexe-technique section 2.2"
+  contenu: "PCI 43,27 MJ/kg ; soufre 0,014% ; chlore 0,0001% soit 1 ppm ; point eclair <=40C ; viscosite 1,11 mm2/s a 50C ; cendres 0,005%"
+  reserve: "L'annexe signale que l'echantillon est peut-etre une fraction legere uniquement. Charge d'origine non documentee."
+
+GC-B2002600:
+  titre: "Rapport de chromatographie en phase gazeuse B2002600"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  date: 2020-12-05
+  chemin: "supporting-documents/more/gaschromatography.pdf"
+  contenu: "N2 65,8% ; O2 12,3% ; H2 12,7% ; CH4 3,2% ; CO2 1,7% ; C2-C3 ~1,5% ; CO 0,6% ; H2S <0,5 ppm"
+  reserve: "78,1% de l'echantillon est du diluant. Le PCI doit etre recalcule sur la fraction reelle."
+
+KANSO-20002610:
+  titre: "Rapport d'analyse des emissions KANSO Technos"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  date: 2020-12-05
+  contenu: "HCl, SOx, NOx, poussieres tres inferieurs aux VLE usuelles"
+
+ICHIMURA-2022:
+  titre: "Essais de bilan energetique, usine de Noda, prefecture de Chiba"
+  type: essai
+  fiabilite: mesure_interne
+  date: 2022
+  contenu: "2 essais de 60 kg sur PE/PP/PS. Rendements huile 71,8% et 82,3%. Bilan matiere boucle exactement."
+  reserve: "Plastique pur uniquement. Les 2 essais sur dechet melange de septembre 2022 ont ete ecartes : fraction plastique non mesuree."
+
+UR2000-JP:
+  titre: "Brochure technique URC-2000, Oneworld Corporation"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  chemin: "supporting-documents/UR2000-JP.pdf"
+  contenu: >
+    Plans d'implantation 1 et 5 unites ; fiche SPEC ; bruleur 833 kcal/s ; 20 kW en continu ;
+    zones de temperature ; couche catalytique de retrait du chlore avant condenseur ;
+    delai contrat-mise en service 4 mois ; dalle 5 T/m2.
+    BENNE : 1 x 3 x 1,5 m = 4,5 m3, poids MAX 4,17 t, soit 0,927 t/m3 au maximum.
+    CADENCE : 48 bennes par 24 h ; environ 12 t par jeu de 3 bennes, soit 0,889 t/m3 ;
+    48 x 4,17 t = 200 t/jour. Le "200 t/jour" est donc un chiffre MASSIQUE au poids
+    maximal de benne, pas seulement volumique.
+
+SEACORAL-JP:
+  titre: "Presentation SEACORAL, Oneworld Corporation"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  contenu: "Essai de dessalement : chlorures 31 000 -> 31 mg/L ; sodium 15 000 -> 26 mg/L ; pH 7,2 -> 5,3 ; concentrat a 140 000 mg/L. Energie = ventilateur seul. Brevet WO2016143848 A1."
+
+V3-MODEL:
+  titre: "UR-Financial-Model-Restructured-V3.xlsx"
+  type: modele_interne
+  fiabilite: aucune
+  reserve: "Le compteur d'unites n'agit que sur les gate fees. Plusieurs hypotheses sans source."
+
+LITT-CHALMERS:
+  titre: "Neves et al., Volatile gases from biomass pyrolysis, Chalmers"
+  type: litterature
+  fiabilite: litterature
+  contenu: "PCI du gaz de pyrolyse de biomasse ~11 MJ/kg a 600C, >17 MJ/kg a 950C"
+
+LITT-CRACKER:
+  titre: "Kusenberg et al., Waste Management 2022 ; AIChE"
+  type: litterature
+  fiabilite: litterature
+  contenu: "Specifications vapocraqueur : Cl <=3 ppm ; N <=100 ppm ; O <=100 ppm ; Fe <=0,001 ppm ; Si <=1 ppm"
+
+MARCHE-BATIMENT-FR:
+  titre: "Prix du batiment industriel en France 2026"
+  type: reference_marche
+  fiabilite: litterature
+  contenu: "Hangar charpente metallique 350-450 EUR/m2 ; entrepot logistique 400-600 ; atelier de production 500-1 000"
+
+DECLARE-PETER:
+  titre: "Declaration orale de Peter (OneWorld), non documentee"
+  type: declaration
+  fiabilite: aucune
+  contenu: "Essais brome et fluor realises sur materiaux aeronautiques, efficacite comparable au chlore. Rapport non transmis."
+
+DENSITE-COLLECTE:
+  titre: "Densite des OMR en benne de collecte — releves internes"
+  type: mesure_terrain
+  fiabilite: mesure_interne
+  chemin: "a completer : travail prealable de S. Husser sur la compression en camion"
+  contenu: >
+    Ordres de grandeur usuels : OMR en vrac 0,10 a 0,20 T/m3 ; benne a compaction
+    standard 0,35 a 0,55 T/m3 ; compaction forte 0,60 a 0,80 T/m3. La valeur retenue
+    conditionne directement le tonnage traite, donc toute l'economie du modele.
+  reserve: "Les releves existent mais ne sont pas encore verses au depot."
+
+ONEWORLD-COTATION:
+  titre: "Cotation OneWorld Corporation pour l'URC-2000"
+  type: cotation_commerciale
+  fiabilite: constructeur
+  chemin: "pour-finaliser/ANNEX-09-Equipment-Configuration.md, section 9.1.2"
+  contenu: >
+    Prix de base URC-2000 : 50,0 MEUR, cite comme "OneWorld Corporation pricing".
+    Stephane Husser est le representant commercial et fixe le prix. Parametre sous
+    controle commercial, pas une inconnue.
+  reserve: "Le plan d'affaires (section 8.1) et les annexes B.8.2 et C.8.2 citent 10 a 15 MEUR. Ecart a documenter."
+
+HARDIN-LOI:
+  titre: "Lettre d'intention Hardin, 2 x URC-1000"
+  type: lettre_intention
+  fiabilite: constructeur
+  chemin: "Technical Findings Log section 16.1, cite dans ANNEX-09 section 9.1.3"
+  contenu: "USD 60 M pour 2 x URC-1000, soit environ 30 MEUR par unite de 100 T/jour. Seul prix de transaction reel du depot."
+
+LUFTHANSA-WS:
+  titre: "Worksheet for Lufthansa, 200 MT"
+  type: feuille_de_calcul_constructeur
+  fiabilite: constructeur
+  chemin: "supporting-documents/France  CDG/Copy of Worksheet for Lufthansa-200MT.xlsx"
+  contenu: "Densite de 0,7 T/m3 et debit effectif de 140 T/jour ; fioul 10 000 L/jour. Cite dans ANNEX-09 section 9.1.2."
+  reserve: "La valeur de 0,7 n'y est pas justifiee par une mesure."
+
+LITT-TCHOBANOGLOUS:
+  titre: "Tchobanoglous et al. ; Peavy, Rowe et Tchobanoglous, Environmental Engineering"
+  type: litterature
+  fiabilite: litterature
+  contenu: >
+    Masse volumique des OMR : en vrac, non compactees, 100 a 300 kg/m3 ;
+    en benne de collecte a compaction, 300 a 500 kg/m3 ;
+    en centre de stockage, bien compactees par engin, 550 a 850 kg/m3.
+
+LITT-CLINE-2020:
+  titre: "Cline, Anshassi, Laux, Townsend, Waste Management & Research, 2020"
+  type: litterature
+  fiabilite: litterature
+  contenu: >
+    Masses volumiques par composant sous pression de surcharge simulee : dechets alimentaires,
+    dechets verts et verre de 1 302 a 1 865 kg/m3 ; canettes aluminium 206 kg/m3 et acier 389 kg/m3.
+    La densite d'un melange depend donc fortement de sa composition.
+
+BREVETS-BALLES:
+  titre: "Brevets US 8 834 809 et 7 752 960 (presses a balles pour OMR)"
+  type: brevet
+  fiabilite: litterature
+  contenu: >
+    OMR mises en balles : 500 a 1 500 lb/yd3, valeur preferentielle 1 000 lb/yd3, soit
+    environ 300 a 890 kg/m3 et 593 kg/m3. Presse haute compression : 1 600 lb/yd3,
+    soit environ 950 kg/m3.
+
+LITT-EPS:
+  titre: "Canada Industry Fund, Densification of post-consumer polystyrene ; Gradeall 2026"
+  type: litterature
+  fiabilite: litterature
+  contenu: >
+    PSE en vrac environ 100 kg/m3 contre 300 kg/m3 pour des dechets ordinaires. Le PSE est
+    compose a 96% d'air. La densification thermique (fusion, extrusion en lingots) atteint
+    des masses volumiques bien superieures a la mise en balles a froid.
+
+POLYMERES-DENSITE:
+  titre: "Masses volumiques des polymeres a l'etat solide (donnees physiques standard)"
+  type: donnee_physique
+  fiabilite: litterature
+  contenu: >
+    PE 0,91 a 0,97 ; PP 0,90 a 0,91 ; PS 1,04 a 1,05 ; PET 1,38 ; PVC 1,38 g/cm3.
+    Attention : ce sont des densites de MATIERE. Un dechet plastique en vrac ne pese que
+    quelques dizaines de kg/m3 a cause de l'air qu'il contient.
+
+BP-CHAPITRE-5:
+  titre: "Plan d'affaires, chapitre 5, Technology and Operations, section 5.6"
+  type: plan_affaires
+  fiabilite: aucune
+  chemin: "business-plan/05-technology-operations.md"
+  contenu: >
+    Maintenance majeure annuelle : 1 a 2 semaines. Maintenance planifiee totale 5 a 7% (2 a 3
+    semaines). Indisponibilite non planifiee visee inferieure a 3%. Disponibilite totale 90 a 92%,
+    soit 329 a 336 jours.
+  reserve: "Aucune source citee pour ces taux."
+
+UVE-DISPONIBILITE:
+  titre: "Disponibilite mesuree d'usines d'incineration francaises (DRIEAT)"
+  type: donnee_exploitation
+  fiabilite: mesure_interne
+  contenu: >
+    Unite de Seine-et-Marne : conception sur la base de 8 000 h/an, soit 333 jours.
+    SITRU, 2018 : four 1 a 7 530 h (314 jours), four 2 a 6 760 h (282 jours).
+    Reference pour un procede thermique continu mature, avec deux lignes.
+
+DECLARE-CONSTRUCTEUR-MAINT:
+  titre: "Declaration constructeur relayee par S. Husser : une semaine de maintenance par an"
+  type: declaration
+  fiabilite: constructeur
+  contenu: >
+    Machine concue pour un fonctionnement continu. Le constructeur indique une semaine de
+    maintenance annuelle, soit 358 jours disponibles au maximum. Cette valeur n'inclut pas
+    les arrets non planifies. Pas de stockage d'un mois possible sur site : tout arret
+    impose de detourner le gisement entrant.
+  reserve: "Declaration orale, document constructeur a verser au depot."
+
+ADEME-MODECOM:
+  titre: "ADEME, campagne nationale de caracterisation MODECOM 2017 et premiers resultats 2024"
+  type: etude_nationale
+  fiabilite: certifie_tiers
+  chemin: "Annexe F section 2.1 ; https://www.ademe.fr/presse/communique-national/modecom-2017-ce-que-revelent-les-poubelles-des-francais"
+  contenu: >
+    Composition des OMR 2017 : putrescibles 27%, plastiques 15%, textiles sanitaires 14%,
+    papiers 8%, cartons 6%, verre 5%, metaux 3%, composites 3%, fines et divers 19%.
+    2024 : OMR par habitant 223,5 kg contre 254 kg en 2017 ; biodechets 32%, textile sanitaire 25,5%.
+
+# ------------------------------------------------ Documents du depot (plan d'affaires et annexes)
+ANNEXE-02:
+  titre: "Annexe 2, Technical Evidence (mars 2026)"
+  type: annexe_plan_affaires
+  fiabilite: mesure_interne
+  chemin: "pour-finaliser/ANNEX-02-Technical-Evidence.md"
+  contenu: >
+    Consolide les essais Asada Shokai (9 essais mono-polymere, 2 essais de bilan energetique),
+    les rendements par matiere, l'analyse NKKK, la GC, le bilan energetique et les emissions.
+    Chaque parametre y est classe FACT, HYPOTHESIS ou ASSUMPTION.
+  reserve: >
+    Contient encore les valeurs non corrigees : PCI du gaz a 5,54 MJ/kg, gaz organique a 0,5 MJ/kg.
+    Section 2.8 : electricite continue ecrite 4,3 kWh/T alors que 600 kW x 24 h / 140 T = 103 kWh/T
+    (erreur de division, kW divise par T/jour).
+
+ANNEXE-03:
+  titre: "Annexe 3, Output Markets and Pricing (mars 2026)"
+  type: annexe_plan_affaires
+  fiabilite: litterature
+  chemin: "pour-finaliser/ANNEX-03-Output-Markets-and-Pricing.md"
+  contenu: >
+    Prix de l'huile par fraction (bas 480, moyen 641, haut 895 EUR/T), benchmarks ICIS, naphta,
+    gasoil, HFO. Char en cinq paliers de marche (50 a 350 EUR/T). Metaux : ferreux 250-350,
+    non ferreux 1 200-2 500 EUR/T. Credits carbone.
+
+ANNEXE-05:
+  titre: "Annexe 5, Sector MSW France (mars 2026, session 10)"
+  type: annexe_plan_affaires
+  fiabilite: litterature
+  chemin: "pour-finaliser/ANNEX-05-Sector-MSW-France.md"
+  contenu: >
+    Decomposition complete des 13 categories MODECOM, retrait des materiaux non traitables
+    (109,5 kg/T), repartition par polymere (PlasticsEurope), rendements ponderes :
+    huile 23% sur OMR brute, 65,1% sur fraction plastique ; char 57,5%.
+
+ANNEXE-09:
+  titre: "Annexe 9, Equipment Configuration (mars 2026)"
+  type: annexe_plan_affaires
+  fiabilite: constructeur
+  chemin: "pour-finaliser/ANNEX-09-Equipment-Configuration.md"
+  contenu: >
+    Catalogue OneWorld, prix URC-2000 50 MEUR, ~15 ETP, delai 10 mois, options PRIMO,
+    SEA CORAL, FORCE 9. CAPEX par secteur : pre-tri MSW 3,0 MEUR ; installation, fret,
+    formation 0,9 MEUR ; accessoires 2,0 MEUR ; aleas 5%.
+
+GATE-FEES-REF:
+  titre: "Reference gate fees France et Europe (fevrier 2026)"
+  type: etude_marche_interne
+  fiabilite: litterature
+  chemin: "supporting-documents/GATE-FEES-REFERENCE.md"
+  contenu: >
+    SYCTOM 2023 : OMR incineration 103 EUR/T + TGAP 15. ADEME/SINOE 2022 : incineration
+    85-110 EUR/T ; ISDND 50-80 EUR/T hors TGAP. TGAP 2025 : enfouissement 65, incineration
+    avec valorisation 15-18. Melange CDG : moyenne ponderee 109 EUR/T.
+  reserve: >
+    Affirme que la pyrolyse est exemptee de TGAP au titre de la valorisation matiere.
+    Contredit par l'article 42 de la directive 2010/75/UE : une pyrolyse dont les gaz sont
+    brules est une installation d'incineration. Le modele ne contient AUCUNE ligne de TGAP.
+
+BP-ANNEXE-B:
+  titre: "Plan d'affaires, annexe B, projections financieres cas CDG"
+  type: plan_affaires
+  fiabilite: aucune
+  chemin: "Urban-Rig-Annexes, section B.8.2"
+  contenu: "CAPEX 16-21 MEUR ; personnel 15 ETP a 65 kEUR charges ; maintenance 600 kEUR ; assurance, admin, conformite 450 kEUR."
+
+# ------------------------------------------------ Marches
+ICIS-PYROLYSE:
+  titre: "ICIS, indice des huiles de pyrolyse (depuis 2023) ; IMARC 2025"
+  type: indice_marche
+  fiabilite: litterature
+  contenu: >
+    PPO plastique non valorise : +681 EUR/T sur base pneu (2024). Qualite substitut de naphta :
+    +1 114 EUR/T. Spot Pays-Bas T1 2025 : ~729 USD/T soit ~670 EUR/T.
+
+MARCHES-PETROLIERS:
+  titre: "ChemAnalyst, Intratec, ICE, S&P Global Platts (2025)"
+  type: indice_marche
+  fiabilite: litterature
+  contenu: "Naphta NWE 485-660 EUR/T ; gasoil ICE LS ~820 EUR/T ; fioul lourd 380 cst Rotterdam ~415 EUR/T."
+
+MARCHES-METAUX:
+  titre: "S&P Global Platts, LKAB (ferrailles) ; LME (aluminium, cuivre), 2024-2025"
+  type: indice_marche
+  fiabilite: litterature
+  contenu: "Ferrailles 250-350 EUR/T ; aluminium LME ~2 200 EUR/T ; cuivre ~8 500 EUR/T ; non ferreux melange ~1 800 EUR/T."
+
+MARCHE-GNR:
+  titre: "Prix du gazole non routier livre en France, 2026"
+  type: indice_marche
+  fiabilite: litterature
+  contenu: "0,90 a 1,10 EUR/L hors taxes."
+
+TGAP-DOUANES:
+  titre: "Douanes francaises, taux de TGAP ; loi de finances 2026"
+  type: texte_reglementaire
+  fiabilite: certifie_tiers
+  contenu: "Enfouissement 65 EUR/T (2025), 69 EUR/T (2026). Incineration performante 16 EUR/T (2026)."
+
+IS-FRANCE:
+  titre: "Code general des impots, article 219"
+  type: texte_reglementaire
+  fiabilite: certifie_tiers
+  contenu: "Taux normal de l'impot sur les societes : 25%."
+
+# ------------------------------------------------ Litterature scientifique citee dans les annexes
+BRIDGWATER-CHEN:
+  titre: "Bridgwater, Biomass and Bioenergy 2012 ; Chen et al., Waste Management 2014"
+  type: publication
+  fiabilite: litterature
+  contenu: >
+    Rendements de pyrolyse de la cellulose et des putrescibles : huile 10-12%, gaz 20%,
+    char 68-70% (valeurs retenues dans les annexes 2 et 5).
+  reserve: >
+    La reference EUBIA citee dans la meme annexe donne, pour la pyrolyse rapide, 25% de char
+    seulement. Bridgwater 2012 est une revue de pyrolyse RAPIDE, ou le char est faible.
+    Le 68-70% correspond plutot a une carbonisation lente. A verifier.
+
+EUBIA:
+  titre: "European Biomass Industry Association, fiche Pyrolysis"
+  type: publication
+  fiabilite: litterature
+  contenu: "Pyrolyse rapide : ~65% liquide, ~10% gaz, ~25% char. Au-dela de 700 degres C, jusqu'a 80% de gaz."
+
+FAZIL-RONSSE:
+  titre: "Fazil et al., Energies 2021 ; Ronsse et al., Biomass Conversion and Biorefinery 2020"
+  type: publication
+  fiabilite: litterature
+  contenu: "Char de biomasse d'OMR : PCI 8 a 22 MJ/kg selon teneur en cendres ; carbone 40 a 50%."
+
+MALINOWSKI-2023:
+  titre: "Malinowski et al., Waste-Derived Chars: A Comprehensive Review, 2023"
+  type: publication
+  fiabilite: litterature
+  contenu: "Char d'origine plastique : PCI 20 a 32 MJ/kg ; carbone 60 a 80%."
+
+ISUMI-TECH:
+  titre: "Isumi Tech Co., rapport R35-339439, bombe calorimetrique JIS M 8814"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  contenu: "Char issu d'urethane produit sur equipement UR : 32,09 MJ/kg. Seule mesure de PCI de char UR."
+
+PLASTICSEUROPE:
+  titre: "PlasticsEurope 2017, composition des dechets d'emballages plastiques (via PMC 8162419)"
+  type: publication
+  fiabilite: litterature
+  contenu: "LDPE 32%, HDPE 20%, PP 20%, PET 18%, PS 7%, PVC 3%."
+
+LITT-PET-PVC:
+  titre: "Polymer Degradation and Stability 2022 (PET) ; Science of the Total Environment 2024 et PMC 12096105 (PVC)"
+  type: publication
+  fiabilite: litterature
+  contenu: "PET a 400 degres C : 46,7% huile, 39,7% solide. PVC : 53% de la masse part en HCl ; huile nette ~32%."
+
+BUAH-2022:
+  titre: "Buah et al., 2022, Pyrolysis of mixed plastic waste: predicting the product yields"
+  type: publication
+  fiabilite: litterature
+  contenu: "Modele de superposition lineaire des rendements de melanges plastiques, ecart maximal 8 points."
+
+STOECHIOMETRIE:
+  titre: "Stoechiometrie et thermodynamique de base"
+  type: donnee_physique
+  fiabilite: certifie_tiers
+  contenu: >
+    Polyolefines (CH2)n : carbone 12/14 = 85,7%. Cellulose C6H10O5 : carbone 72/162 = 44,4%.
+    Rapport CO2/C : 44/12 = 3,667. Gazole : 2,68 kg CO2/L (facteur ADEME).
+
+PRATIQUE-TRI:
+  titre: "Pratique industrielle du tri mecanique (separation magnetique, courants de Foucault, criblage)"
+  type: pratique_industrielle
+  fiabilite: litterature
+  contenu: >
+    Technologies deployees dans tous les centres de tri europeens. Fournisseurs cites en
+    annexe 9 : TOMRA, Pellenc ST, Machinex.
+  reserve: "Taux de recuperation de reference a verser (fiches constructeurs ou retours d'exploitation)."
+
+AUCUNE:
+  titre: "Aucune source"
+  type: aucune
+  fiabilite: aucune
+  contenu: "Valeur d'attente posee par l'auditeur, a remplacer."

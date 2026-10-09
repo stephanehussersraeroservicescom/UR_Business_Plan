@@ -1,0 +1,79 @@
+_domaine: "Capacite et disponibilite"
+
+capacite_volumetrique:
+  justification: AFF-CAP-00
+  valeur_v3: 200
+  label: "Capacite nominale par unite"
+  valeur: 200
+  unite: "T/j"
+  statut: constructeur
+  preuves: [UR2000-JP]
+  note: >
+    AMBIGU dans la documentation constructeur elle-meme. Le tableau de marche donne 48 bennes
+    par 24 h, de 4,5 m3 et 4,17 t maximum chacune : 48 x 4,17 = 200 t/jour en masse, mais
+    48 x 4,5 = 216 m3/jour en volume. Le modele V3 lit 200 comme un volume et applique une
+    densite de 0,7, ce qui donne 140 t/jour. A densite de benne maximale, la machine traite
+    200 t/jour.
+
+densite_dechet:
+  justification: AFF-DEN-00
+  valeur_v3: 0.7
+  label: "Masse volumique des dechets en benne"
+  valeur: 0.7
+  unite: "T/m3"
+  statut: mesurable
+  preuves: [LUFTHANSA-WS, LITT-TCHOBANOGLOUS, BREVETS-BALLES, LITT-CLINE-2020, UR2000-JP, DENSITE-COLLECTE]
+  decision: D-010
+  bornes: {bas: 0.30, haut: 0.93}
+  valeurs_reference:
+    - {valeur: 0.40, libelle: "Camion benne, bas"}
+    - {valeur: 0.50, libelle: "Camion benne, haut"}
+    - {valeur: 0.60, libelle: "Mise en balles standard"}
+    - {valeur: 0.70, libelle: "Retenu (Lufthansa)"}
+    - {valeur: 0.89, libelle: "Cadence constructeur"}
+    - {valeur: 0.93, libelle: "Plafond benne"}
+  note: >
+    Parametre le plus structurant du modele. Chaine de preuve : OMR en vrac 0,10-0,30 ;
+    camion a compaction 0,30-0,50 (Tchobanoglous) ; mise en balles 0,30-0,89, valeur
+    courante 0,59 ; presse haute compression 0,95 (brevets US). La benne URC-2000 impose
+    un plafond physique de 0,927 t/m3 (4,17 t pour 4,5 m3). La cadence constructeur,
+    12 t par jeu de 3 bennes, suppose 0,889 t/m3. Atteindre 0,7 exige une compaction
+    superieure a celle d'un camion benne : il faut une presse sur site.
+
+nb_unites:
+  valeur_v3: 1
+  label: "Nombre d'unites URC-2000"
+  valeur: 1
+  unite: "unites"
+  statut: decision
+  preuves: [AUCUNE]
+  bornes: {bas: 1, haut: 10}
+  valeurs_reference:
+    - {valeur: 1, libelle: "1 machine"}
+    - {valeur: 2, libelle: "2 machines"}
+    - {valeur: 5, libelle: "5 machines"}
+    - {valeur: 10, libelle: "10 machines"}
+
+jours_exploitation:
+  justification: AFF-JRS-00
+  valeur_v3: 330
+  label: "Jours d'exploitation par an"
+  valeur: 330
+  unite: "j/an"
+  statut: hypothese
+  preuves: [BP-CHAPITRE-5, UVE-DISPONIBILITE, DECLARE-CONSTRUCTEUR-MAINT]
+  decision: D-011
+  bornes: {bas: 250, haut: 358}
+  valeurs_reference:
+    - {valeur: 282, libelle: "UVE SITRU four 2 (2018)"}
+    - {valeur: 314, libelle: "UVE SITRU four 1 (2018)"}
+    - {valeur: 330, libelle: "Retenu (plan d'affaires 90-92%)"}
+    - {valeur: 333, libelle: "Base de conception UVE (8 000 h)"}
+    - {valeur: 358, libelle: "Constructeur, 1 semaine d'arret"}
+  note: >
+    Machine concue pour fonctionner en continu. Le constructeur annonce une semaine de
+    maintenance par an, soit 358 jours au maximum, mais ce plafond exclut les arrets non
+    planifies. Le plan d'affaires retient 90 a 92% de disponibilite, soit 329 a 336 jours.
+    Les UVE francaises matures sont concues sur 8 000 h (333 jours) et realisent entre
+    282 et 314 jours par four. 330 est coherent avec un parc mature ; un premier exemplaire
+    peut etre en dessous les premieres annees.

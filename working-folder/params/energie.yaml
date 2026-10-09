@@ -1,0 +1,61 @@
+_domaine: "Bilan energetique"
+
+pci_gaz_plastique:
+  justification: AFF-PCI-00
+  label: "PCI du gaz de procede issu du plastique"
+  valeur: 37.3
+  unite: "MJ/kg"
+  statut: calcule
+  preuves: [GC-B2002600]
+  decision: D-001
+  bornes: {bas: 30.0, haut: 48.0}
+  note: "Calcule molairement sur la composition GC apres retrait des 78,1% de diluant."
+
+pci_gaz_organique:
+  justification: AFF-PCO-00
+  label: "PCI du gaz de procede issu de l'organique"
+  valeur: 11.0
+  unite: "MJ/kg"
+  statut: litterature
+  preuves: [LITT-CHALMERS]
+  decision: D-002
+  bornes: {bas: 8.0, haut: 15.0}
+  note: "SEUL PARAMETRE DU BILAN SANS SOURCE INTERNE. A mesurer."
+
+besoin_thermique:
+  justification: AFF-NRJ-01
+  label: "Besoin thermique"
+  valeur: 2714
+  unite: "MJ/T"
+  statut: constructeur
+  preuves: [UR2000-JP]
+  note: "Recoupe par le bruleur de 833 kcal/s, soit 3,49 MW et 301 190 MJ/jour."
+
+rendement_bruleur:
+  {justification: AFF-NRJ-BRU, label: "Rendement du bruleur", valeur: 0.85, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+
+provision_fioul_secours:
+  label: "Provision de fioul de secours"
+  valeur: 0.05
+  unite: "fraction du besoin"
+  statut: hypothese
+  preuves: [AUCUNE]
+  decision: D-003
+  note: "Demarrages, arrets, variations de charge, flamme pilote."
+
+pci_fioul: {justification: AFF-NRJ-FIO, label: "PCI du fioul", valeur: 38, unite: "MJ/L", statut: hypothese, preuves: [V3-MODEL]}
+pci_char:  {justification: AFF-NRJ-CHO, label: "PCI du char organique", valeur: 15, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL]}
+pci_residu_plastique: {justification: AFF-NRJ-CHP, label: "PCI du residu plastique", valeur: 25, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL]}
+
+elec_par_unite:
+  justification: AFF-NRJ-ELE
+  label: "Consommation electrique par unite"
+  valeur: 3000
+  unite: "kWh/j"
+  statut: hypothese
+  preuves: [ICHIMURA-2022, UR2000-JP]
+  bornes: {bas: 480, haut: 14400}
+  note: >
+    QUATRE valeurs incompatibles dans le depot : 20 kW en continu (fiche UR2000-JP),
+    600 kW (annexe 9), 4 800 kWh/j (V3), 15 a 20 kWh/T mesures (Ichimura).
+    3 000 kWh/j se cale sur la seule valeur mesuree. A trancher par un releve d'un mois.

@@ -1,0 +1,54 @@
+_domaine: "Prix de vente et d'achat"
+
+gate_fee:
+  justification: AFF-PRX-GAT
+  label: "Gate fee moyen"
+  valeur: 110
+  unite: "EUR/T"
+  statut: hypothese
+  preuves: [V3-MODEL]
+  bornes: {bas: 80, haut: 800}
+  note: "VARIABLE D'AJUSTEMENT principale. Bareme V3 : OMR 100, DASRI 800."
+
+qualite_huile:
+  justification: AFF-CL-00
+  label: "Qualite d'huile retenue (combustible | craqueur)"
+  valeur: "craqueur"
+  unite: "-"
+  statut: decision
+  preuves: [NKKK-2020, LITT-CRACKER]
+  decision: D-004
+  note: "Le chlore mesure a 1 ppm passe la limite craqueur de 3 ppm. Reserve : fraction et charge d'origine non documentees."
+
+prix_huile_combustible:
+  {justification: AFF-PRX-HUF, label: "Prix huile qualite combustible", valeur: 350, unite: "EUR/T", statut: hypothese, preuves: [AUCUNE]}
+prix_huile_craqueur:
+  {justification: AFF-PRX-HUC, label: "Prix huile specification craqueur", valeur: 641, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+
+prix_char:
+  justification: AFF-PRX-CHA
+  label: "Prix du char"
+  valeur: 100
+  unite: "EUR/T"
+  statut: hypothese
+  preuves: [V3-MODEL]
+  bornes: {bas: 0, haut: 150}
+  note: "Debouche non demontre. IBI, EBC et Puro.earth excluent les OMR melangees."
+
+prix_ferreux: {justification: AFF-PRX-MET, label: "Prix ferreux", valeur: 250, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_alu:     {justification: AFF-PRX-MET, label: "Prix aluminium", valeur: 1400, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_autres_metaux: {justification: AFF-PRX-MET, label: "Prix autres metaux", valeur: 500, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_verre:   {label: "Prix du verre", valeur: 30, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+cout_elimination: {justification: AFF-PRX-ELI, label: "Cout d'elimination des residus", valeur: 110, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_fioul:   {justification: AFF-PRX-FIO, label: "Prix du fioul (GNR)", valeur: 0.95, unite: "EUR/L", statut: hypothese, preuves: [AUCUNE]}
+prix_elec:    {label: "Prix de l'electricite", valeur: 0.15, unite: "EUR/kWh", statut: hypothese, preuves: [V3-MODEL]}
+
+reduction_carbone_certifiee:
+  label: "Reduction carbone certifiee"
+  valeur: 0.0
+  unite: "T CO2/T traitee"
+  statut: decision
+  preuves: [AUCUNE]
+  decision: D-005
+  note: "A ZERO tant qu'aucune certification n'est obtenue. Le V3 retenait 1,04."
+prix_carbone: {justification: AFF-PRX-CO2, label: "Prix du credit carbone", valeur: 50, unite: "EUR/T CO2", statut: hypothese, preuves: [AUCUNE]}

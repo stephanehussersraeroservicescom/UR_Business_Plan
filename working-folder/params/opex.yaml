@@ -1,0 +1,18 @@
+_domaine: "Charges d'exploitation"
+
+etp_coeur_base:  {justification: AFF-OPX-ETP, label: "ETP coeur, premiere unite", valeur: 15, unite: ETP, statut: hypothese, preuves: [V3-MODEL]}
+etp_coeur_step:  {label: "ETP coeur par unite supplementaire", valeur: 3, unite: ETP, statut: decision, preuves: [AUCUNE]}
+etp_tri:         {label: "ETP tri par unite", valeur: 7, unite: ETP, statut: hypothese, preuves: [V3-MODEL]}
+cout_etp:        {justification: AFF-OPX-CET, label: "Cout charge par ETP", valeur: 56000, unite: "EUR/an", statut: hypothese, preuves: [V3-MODEL]}
+
+maintenance_bas:    {justification: AFF-MNT-00, label: "Taux de maintenance, annees 1 a N", valeur: 0.01, unite: fraction, statut: decision_commerciale, preuves: [ONEWORLD-COTATION], decision: D-007, note: "Negociation tarifaire avec OneWorld. Une ou deux annees gratuites possibles, puis 1% jusqu'en annee 4."}
+maintenance_haut:   {justification: AFF-MNT-00, label: "Taux de maintenance en regime etabli", valeur: 0.04, unite: fraction, statut: decision_commerciale, preuves: [ONEWORLD-COTATION], note: "Cotation recue, 4 a 5%. Annexe C.8.2 : 3 a 4% du CAPEX."}
+maintenance_an_bas: {label: "Derniere annee au taux bas", valeur: 4, unite: annee, statut: decision, preuves: [AUCUNE]}
+maintenance_an_haut: {label: "Annee d'atteinte du regime etabli", valeur: 10, unite: annee, statut: decision, preuves: [AUCUNE]}
+
+assurance:  {justification: AFF-OPX-ASS, label: "Assurance", valeur: 0.005, unite: "fraction du CAPEX", statut: hypothese, preuves: [V3-MODEL]}
+provision:  {label: "Provision et divers", valeur: 0.02, unite: "fraction du CAPEX", statut: inconnu, preuves: [V3-MODEL], note: "LIGNE A OUVRIR. Troisieme charge du modele, contenu non decrit."}
+
+couche_catalytique: {label: "Couche catalytique halogenes", valeur: 150000, unite: "EUR/an/unite", statut: inconnu, preuves: [UR2000-JP, DECLARE-PETER], note: "VALEUR D'ATTENTE. C'est de la ceramique, un remplacement annuel est probablement faux."}
+ceramique_seacoral: {label: "Ceramique SEA CORAL", valeur: 15000, unite: "EUR/an/unite", statut: inconnu, preuves: [SEACORAL-JP], note: "VALEUR D'ATTENTE. ~22 modules de 500 L/j par machine."}
+charbon_actif:      {label: "Charbon actif, affinage eau", valeur: 40000, unite: "EUR/an/unite", statut: inconnu, preuves: [AUCUNE], note: "A METTRE A ZERO si l'eau reste en boucle fermee sur site."}

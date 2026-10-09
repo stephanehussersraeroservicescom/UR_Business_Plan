@@ -1,0 +1,10 @@
+_domaine: "Bilan carbone de l'installation"
+
+teneur_c_plastique: {justification: AFF-CAR-CPL, label: "Teneur en carbone des plastiques", valeur: 0.857, unite: fraction, statut: calcule, preuves: [AUCUNE], note: "Polyolefines : C et H uniquement."}
+teneur_c_organique: {justification: AFF-CAR-COR, label: "Teneur en carbone de la fraction organique", valeur: 0.45, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+teneur_c_gaz:       {label: "Teneur en carbone du gaz de procede", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [GC-B2002600]}
+teneur_c_residu:    {justification: AFF-CAR-RES, label: "Teneur en carbone du residu plastique", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+teneur_c_char:      {justification: AFF-CAR-CHA, label: "Teneur en carbone du char", valeur: 0.50, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+co2_huile:          {justification: AFF-CAR-HUI, label: "CO2 par tonne d'huile brulee", valeur: 3.10, unite: "T CO2/T", statut: calcule, preuves: [AUCUNE], note: "Emission de l'utilisateur final, hors perimetre du site."}
+co2_fioul:          {justification: AFF-CAR-FIO, label: "CO2 par litre de fioul", valeur: 2.68, unite: "kg/L", statut: litterature, preuves: [AUCUNE]}
+pci_huile_gj:       {justification: AFF-CL-01, label: "PCI de l'huile", valeur: 43, unite: "GJ/T", statut: certifie, preuves: [NKKK-2020]}

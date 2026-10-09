@@ -1,0 +1,29 @@
+_domaine: "Investissement"
+
+machine:        {justification: AFF-MAC-00, label: "Machine URC-2000", valeur: 50000000, unite: EUR, statut: decision_commerciale, preuves: [ONEWORLD-COTATION, HARDIN-LOI], bornes: {bas: 35000000, haut: 60000000}, note: "Cotation OneWorld, prix fixe par le representant commercial. Reference de transaction : 2 x URC-1000 pour USD 60 M (Hardin). Le plan d'affaires section 8.1 et les annexes B et C citent 10 a 15 MEUR : a aligner.", par_unite: true}
+installation:   {justification: AFF-CPX-ANN, label: "Installation et mise en service", valeur: 200000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
+fret:           {justification: AFF-CPX-ANN, label: "Fret depuis le Japon", valeur: 400000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
+formation:      {justification: AFF-CPX-ANN, label: "Formation", valeur: 300000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
+pieces:         {justification: AFF-CPX-ANN, label: "Accessoires et pieces de rechange", valeur: 2000000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
+pre_tri:        {justification: AFF-CPX-TRI, label: "Ligne de pre-tri", valeur: 1080000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true, note: "Trommel 6 T/h = debit d'une machine. Donc x N."}
+post_tri:       {label: "Ligne de post-tri", valeur: 430000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true}
+atex:           {label: "ATEX et depoussierage", valeur: 650000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true}
+decanteur:      {label: "Cuve de neutralisation et decantation", valeur: 250000, unite: EUR, statut: hypothese, preuves: [AUCUNE], decision: D-008, par_unite: true, note: "Ordre de grandeur, a chiffrer sur devis."}
+
+surface_usine_1:   {justification: AFF-CPX-SUR, label: "Surface usine de traitement, 1re unite", valeur: 3000, unite: m2, statut: constructeur, preuves: [UR2000-JP]}
+surface_usine_d:   {justification: AFF-CPX-SUR, label: "Variation surface usine par unite ajoutee", valeur: -38.5, unite: m2, statut: calcule, preuves: [UR2000-JP], note: "14 230 m2 pour 5 unites"}
+prix_usine:        {justification: AFF-CPX-PXB, label: "Prix usine de traitement", valeur: 900, unite: "EUR/m2", statut: litterature, preuves: [MARCHE-BATIMENT-FR], decision: D-006}
+surface_stock_dechets_1: {justification: AFF-CPX-SUR, label: "Surface stockage dechets, 1re unite", valeur: 640, unite: m2, statut: constructeur, preuves: [UR2000-JP]}
+surface_stock_dechets_d: {justification: AFF-CPX-SUR, label: "Variation surface stockage dechets par unite", valeur: 12.5, unite: m2, statut: calcule, preuves: [UR2000-JP]}
+surface_stock_produits_1: {justification: AFF-CPX-SUR, label: "Surface stockage produits, 1re unite", valeur: 810, unite: m2, statut: constructeur, preuves: [UR2000-JP]}
+surface_stock_produits_d: {justification: AFF-CPX-SUR, label: "Variation surface stockage produits par unite", valeur: -30, unite: m2, statut: calcule, preuves: [UR2000-JP]}
+prix_stockage:     {justification: AFF-CPX-PXB, label: "Prix stockage", valeur: 500, unite: "EUR/m2", statut: litterature, preuves: [MARCHE-BATIMENT-FR]}
+surface_bureaux_1: {justification: AFF-CPX-SUR, label: "Surface bureaux, 1re unite", valeur: 200, unite: m2, statut: constructeur, preuves: [UR2000-JP]}
+surface_bureaux_d: {justification: AFF-CPX-SUR, label: "Variation surface bureaux par unite", valeur: -18, unite: m2, statut: calcule, preuves: [UR2000-JP]}
+prix_bureaux:      {justification: AFF-CPX-PXB, label: "Prix bureaux", valeur: 1300, unite: "EUR/m2", statut: litterature, preuves: [MARCHE-BATIMENT-FR]}
+
+vrd_base:       {label: "VRD, fondations, raccordements, 1re unite", valeur: 1300000, unite: EUR, statut: hypothese, preuves: [UR2000-JP], note: "Dalle 5 T/m2 exigee."}
+vrd_par_unite:  {label: "VRD par unite ajoutee", valeur: 400000, unite: EUR, statut: hypothese, preuves: [AUCUNE]}
+ingenierie_base: {label: "Ingenierie, ICPE, MOE, 1re unite", valeur: 750000, unite: EUR, statut: hypothese, preuves: [V3-MODEL]}
+ingenierie_step: {label: "Majoration ingenierie par unite", valeur: 0.20, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+taux_aleas:     {justification: AFF-CPX-ALE, label: "Taux d'aleas", valeur: 0.05, unite: fraction, statut: hypothese, preuves: [V3-MODEL], bornes: {bas: 0.05, haut: 0.15}}

@@ -1,0 +1,38 @@
+_domaine: "Rendements du procede"
+
+rdt_huile_plastique:
+  justification: AFF-RDT-HUI
+  label: "Rendement huile sur fraction plastique"
+  valeur: 0.69315
+  unite: fraction
+  statut: extrapolation
+  preuves: [ICHIMURA-2022]
+  bornes: {bas: 0.55, haut: 0.82}
+  note: "Moyenne ponderee du mix polymere. Essais sur plastique pur uniquement : 71,8% et 82,3%."
+
+rdt_gaz_plastique:
+  {justification: AFF-RDT-GAZ, label: "Rendement gaz sur plastique", valeur: 0.193, unite: fraction, statut: extrapolation, preuves: [ICHIMURA-2022]}
+rdt_residu_plastique:
+  {justification: AFF-RDT-RES, label: "Rendement residu solide sur plastique", valeur: 0.10325, unite: fraction, statut: extrapolation, preuves: [ICHIMURA-2022]}
+
+rdt_char_organique:
+  justification: AFF-RDT-CHA
+  label: "Rendement char sur fraction organique"
+  valeur: 0.69
+  unite: fraction
+  statut: inconnu
+  preuves: [V3-MODEL]
+  bornes: {bas: 0.25, haut: 0.69}
+  note: >
+    NON VERIFIE. La litterature donne 25 a 30% a 600C. ATTENTION : ce parametre est lie au gaz
+    de procede par le bilan matiere. Plus de char signifie moins de gaz, donc moins d'autonomie.
+    On ne peut pas maximiser les deux.
+
+densite_huile:
+  {justification: AFF-RDT-DEN, label: "Masse volumique de l'huile", valeur: 0.85, unite: "kg/L", statut: hypothese, preuves: [V3-MODEL]}
+
+rec_ferreux: {justification: AFF-RDT-TRI, label: "Recuperation ferreux au pre-tri", valeur: 0.90, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+rec_alu:     {justification: AFF-RDT-TRI, label: "Recuperation aluminium au pre-tri", valeur: 0.75, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+rec_verre:   {justification: AFF-RDT-TRI, label: "Recuperation verre au pre-tri", valeur: 0.70, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+criblage_char: {justification: AFF-RDT-CRI, label: "Criblage du char au post-tri", valeur: 0.85, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+rec_metaux_char: {justification: AFF-RDT-CRI, label: "Metaux recuperes du char", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}

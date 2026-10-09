@@ -1,0 +1,49 @@
+_domaine: "Traitement de l'eau de procede"
+
+conso_carbonate:
+  justification: AFF-EAU-01
+  label: "Carbonate de calcium"
+  valeur: 2.5
+  unite: "kg/T traitee"
+  statut: hypothese
+  preuves: [AUCUNE]
+  decision: D-008
+  note: "CaCO3 + 2 HCl -> CaCl2 + H2O + CO2. Le CaCl2 est non volatil et reste dans le concentrat."
+
+prix_carbonate:  {label: "Prix du carbonate", valeur: 120, unite: "EUR/T", statut: hypothese, preuves: [AUCUNE]}
+
+part_organique_eau:
+  label: "Teneur en phase organique de l'eau"
+  valeur: 0.05
+  unite: fraction
+  statut: inconnu
+  preuves: [AUCUNE]
+  note: "A MESURER. Phase surnageante recuperee au decanteur."
+
+part_organique_recyclee:
+  label: "Part de la phase organique recyclee en benne"
+  valeur: 0.0
+  unite: fraction
+  statut: decision
+  preuves: [AUCUNE]
+  decision: D-008
+  note: "A ZERO par defaut. Les organiques vont DANS LES BENNES, jamais dans le circuit vapeur."
+
+rdt_huile_recyclage: {label: "Rendement huile au recyclage", valeur: 0.60, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
+
+rendement_eau_seacoral:
+  justification: AFF-EAU-03
+  label: "Taux de recuperation d'eau du SEA CORAL"
+  valeur: 0.78
+  unite: fraction
+  statut: calcule
+  preuves: [SEACORAL-JP]
+  note: "Derive de l'essai : chlorures 31 000 -> 140 000 mg/L dans le concentrat."
+
+cout_concentrat:
+  label: "Cout d'elimination du concentrat"
+  valeur: 110
+  unite: "EUR/T"
+  statut: hypothese
+  preuves: [AUCUNE]
+  note: "Apres neutralisation, melange de CaCl2 et CaF2, non acide. Tarif non dangereux. A confirmer (metaux lourds)."

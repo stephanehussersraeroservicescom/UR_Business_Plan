@@ -1,0 +1,155 @@
+# ---------------------------------------------------------------------------
+# JOURNAL DES DECISIONS
+# Toute valeur qui s'ecarte du V3 doit pointer vers une decision datee.
+# ---------------------------------------------------------------------------
+
+D-001:
+  date: 2026-09-19
+  titre: "Correction du PCI du gaz de procede issu du plastique"
+  de: 5.54
+  vers: 37.3
+  unite: MJ/kg
+  motif: >
+    Le 5,54 MJ/kg du rapport d'essai est le PCI de l'echantillon DILUE. La chromatographie
+    montre 78,1% de N2 et O2. Sur les 19,7% de gaz reel, le calcul molaire donne 37,3 MJ/kg.
+    Le bilan matiere le confirme : 60 kg de PE/PP/PS ne contiennent que du carbone et de
+    l'hydrogene, donc les 11,7 kg de gaz ne peuvent etre ni CO2 ni eau.
+  preuves: [GC-B2002600, ICHIMURA-2022]
+  a_verifier: "Chromatographie avec mesure de debit sur gaz non dilue, plus bombe calorimetrique."
+
+D-002:
+  date: 2026-09-19
+  titre: "Correction du PCI du gaz de procede issu de l'organique"
+  de: 0.5
+  vers: 11.0
+  unite: MJ/kg
+  motif: "Un gaz a 0,5 MJ/kg n'existe pas. Valeur de litterature retenue faute de mesure."
+  preuves: [LITT-CHALMERS]
+  a_verifier: "Essai de pyrolyse sur charge organique non plastique, avec mesure de debit et PCI."
+
+D-003:
+  date: 2026-09-19
+  titre: "Suppression du fioul de chauffe en regime normal"
+  de: 7494.7
+  vers: 0
+  unite: L/jour
+  motif: >
+    Avec les PCI corriges, le gaz de procede couvre 115% du besoin thermique a 30% de plastique.
+    Une provision de secours de 5% est maintenue pour les demarrages et la flamme pilote.
+  preuves: [GC-B2002600, LITT-CHALMERS, UR2000-JP]
+
+D-004:
+  date: 2026-09-19
+  titre: "Correction de la teneur en chlore de l'huile"
+  de: 100
+  vers: 1
+  unite: ppm
+  motif: >
+    ERREUR DE RECOPIE dans TECHNICAL-REFERENCE-VALIDATED-DATA.md. Le 100 ppm est un SEUIL
+    de reference cite en commentaire, pas une mesure. Le certificat NKKK mesure 0,0001%.
+    Consequence : l'huile passe la specification vapocraqueur de 3 ppm.
+  preuves: [NKKK-2020, LITT-CRACKER]
+  a_verifier: "Analyse fraction par fraction (legere, gazole, lourde) sur dechet reel avec PVC."
+
+D-005:
+  date: 2026-09-19
+  titre: "Desactivation de la recette credits carbone"
+  de: 2499457
+  vers: 0
+  unite: EUR/an
+  motif: >
+    Le carbone fossile relache est quasi identique entre pyrolyse et incineration : le procede
+    deplace le carbone, il ne le detruit pas. Aucun mecanisme eligible n'existe. Le SEQE ne
+    delivre pas de credits pour emissions evitees ; IBI, EBC et Puro.earth excluent les OMR
+    melangees. La valeur carbone transite par le prix de l'huile, pas par un credit.
+  preuves: [AUCUNE]
+
+D-006:
+  date: 2026-09-19
+  titre: "Passage du batiment au metre carre"
+  de: 5000000
+  vers: "surface x prix par type"
+  motif: >
+    Le 1 075 EUR/m2 d'une version intermediaire etait un calcul inverse a partir du forfait
+    du V3. Remplace par les surfaces des plans et les prix du marche francais.
+  preuves: [UR2000-JP, MARCHE-BATIMENT-FR]
+
+D-007:
+  date: 2026-09-19
+  titre: "Maintenance progressive"
+  de: 0.04
+  vers: "1% jusqu'en annee 4, montee lineaire a 4% en annee 10"
+  motif: "Equipement neuf sous garantie constructeur les premieres annees."
+  preuves: [AUCUNE]
+  a_verifier: "Perimetre et duree exacts de la garantie OneWorld."
+
+D-008:
+  date: 2026-09-19
+  titre: "Ajout de la chaine de traitement de l'eau"
+  de: "absente"
+  vers: "neutralisation calcaire, decantation, SEA CORAL, charbon actif"
+  motif: >
+    Le chlore du PVC part dans l'eau sous forme de HCl dilue. Neutralisation au carbonate de
+    calcium : CaCl2 non volatil reste dans le concentrat. Neutraliser AVANT de decanter augmente
+    la force ionique, donc le relargage salin, donc ameliore la separation des organiques.
+    Les organiques decantes sont reintroduits EN BENNE, jamais dans le circuit vapeur.
+  preuves: [UR2000-JP, SEACORAL-JP]
+
+D-009:
+  date: 2026-09-19
+  titre: "Correction du gate fee d'equilibre dans le tableur V4"
+  de: 116
+  vers: 9.66
+  unite: EUR/T
+  motif: >
+    La formule du tableur comptait les gate fees deux fois. Detecte par le moteur Python, qui
+    donne 9,66 EUR/T sur une machine et une valeur negative a cinq machines. Le tableur a ete
+    corrige. C'est la raison d'etre de ce depot : une erreur de formule dans un tableur est
+    invisible, une erreur dans une fonction Python se teste.
+  preuves: [AUCUNE]
+
+D-010:
+  date: 2026-09-19
+  titre: "Etayage de la masse volumique des dechets"
+  de: "0,7 T/m3 sans source"
+  vers: "0,7 T/m3, fourchette 0,30 a 0,93 documentee"
+  unite: T/m3
+  motif: >
+    La valeur de 0,7 provient de la feuille de calcul Lufthansa, citee en annexe 9. Elle est
+    maintenant encadree par la litterature : camion benne 0,30 a 0,50 ; mise en balles 0,30 a
+    0,89 avec une valeur courante de 0,59 ; compaction forte 0,95. La documentation
+    constructeur fixe un plafond physique : benne de 4,5 m3 limitee a 4,17 t, soit 0,927 t/m3.
+    Sa cadence nominale, 12 t par jeu de 3 bennes, suppose 0,889 t/m3.
+    Consequence operationnelle : la densite n'est pas une donnee subie, c'est un choix
+    d'equipement. Une presse sur site permet de viser 0,7 a 0,9. Un camion benne seul ne
+    depasse pas 0,5.
+  preuves: [LUFTHANSA-WS, LITT-TCHOBANOGLOUS, BREVETS-BALLES, UR2000-JP]
+  a_verifier: "Releves internes de compression a verser. Essai de remplissage d'une benne URC-2000 avec des OMR reelles apres pressage."
+
+D-011:
+  date: 2026-09-19
+  titre: "Etayage des jours d'exploitation"
+  de: "330 jours sans source"
+  vers: "330 jours, fourchette 282 a 358 documentee"
+  unite: j/an
+  motif: >
+    330 jours correspond aux 90 a 92% de disponibilite du plan d'affaires, chapitre 5, et a la
+    base de conception d'une UVE francaise (8 000 h, 333 jours). Le constructeur annonce une
+    semaine de maintenance par an, soit 358 jours au maximum hors arrets non planifies.
+    Les UVE francaises realisent en pratique 282 a 314 jours par four. Pas de stockage
+    possible au-dela de 3 jours sur site : tout arret prolonge impose de detourner le gisement,
+    avec perte de gate fee.
+  preuves: [BP-CHAPITRE-5, UVE-DISPONIBILITE, DECLARE-CONSTRUCTEUR-MAINT]
+  a_verifier: "Engagement contractuel de disponibilite dans l'offre OneWorld."
+
+D-012:
+  date: 2026-09-19
+  titre: "Reclassement du prix machine et de la maintenance en decisions commerciales"
+  de: "inconnu"
+  vers: "decision_commerciale"
+  motif: >
+    Le prix de 50 MEUR est une cotation OneWorld, citee en annexe 9. Stephane Husser en est le
+    representant et fixe le prix. La maintenance releve de la meme negociation. Ce ne sont pas
+    des inconnues mais des parametres sous controle. L'effort de preuve se concentre sur les
+    parametres exogenes : densite, disponibilite, composition, prix de marche, rendements.
+  preuves: [ONEWORLD-COTATION, HARDIN-LOI]
