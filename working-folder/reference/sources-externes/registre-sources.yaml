@@ -1,0 +1,769 @@
+# ---------------------------------------------------------------------------
+# REGISTRE DES SOURCES EXTERNES - Urban Rig
+# Complement de working-folder/params/_evidence.yaml (preuves internes).
+# Toute affirmation chiffree du business plan renvoie a un identifiant ci-dessous.
+#
+# type     : statistique_publique | etude_publique | reglementaire | observatoire
+#            | federation | presse | entreprise | donnees_ouvertes
+# statut   : verifie | verifie-recontrole | secondaire | ancien | non-verifie
+# consulte : date de lecture en ligne
+# ---------------------------------------------------------------------------
+
+# === COMPOSITION ET TONNAGES DMA / OMR =====================================
+
+ADEME-MODECOM-2024-DATA:
+  titre: "Composition OMR et CS - MODECOM 2024 (jeu de donnees omrcs-compo-jdd)"
+  editeur: ADEME
+  date: 2026-01-19
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/omrcs-compo-jdd/lines?format=csv"
+  emplacement: "colonnes pourcentage_OMR, ratio_OMR, tonnage_OMR ; grille : datasets/omrcs-grille"
+  contenu: "Plastiques 15,8 % des OMR, 35,28 kg/hab/an, 2 329 258 t ; total OMR 223,54 kg/hab, 14,75 Mt"
+  statut: verifie-recontrole
+  consulte: 2026-10-10
+
+ADEME-MODECOM-2024-HUM:
+  titre: "Taux d'humidite OMR - MODECOM 2024"
+  editeur: ADEME
+  date: 2026-01
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/omrhum"
+  contenu: "Humidite moyenne des OMR 42,1 % ; films et sacs 35,8 % ; autres plastiques 20,1 %"
+  statut: verifie
+  consulte: 2026-10-10
+
+ADEME-MODECOM-2024:
+  titre: "MODECOM 2024 - Campagne nationale de caracterisation des dechets menagers et assimiles, analyse des resultats (ref. 013089)"
+  editeur: ADEME / ECOGEOS
+  date: 2025-12
+  type: etude_publique
+  url: "https://librairie.ademe.fr/economie-circulaire-et-dechets/8784-modecom-2024-campagne-nationale-de-caracterisation-des-dechets-menagers-et-assimiles.html"
+  statut: non-verifie
+  reserve: "PDF non lu (acces bloque). Chiffres repris depuis les donnees ouvertes ADEME-MODECOM-2024-DATA. A telecharger a la main."
+
+ADEME-CP-2025:
+  titre: "Poubelles des Francais : des progres sur le tri des dechets mais encore des marges importantes d'amelioration"
+  editeur: ADEME
+  date: 2025-12-19
+  type: statistique_publique
+  url: "https://www.ademe.fr/presse/communique-national/poubelles-des-francais-des-progres-sur-le-tri-des-dechets-mais-encore-des-marges-importantes-damelioration/"
+  citation: "les Francais ont produit en moyenne 223,5 kg d'OMR contre 252,7 kg en 2017"
+  statut: verifie
+
+ADEME-ORDIF-2026:
+  titre: "Resultats MODECOM 2024 - Methodologie 2026-2028 (presentation)"
+  editeur: ADEME (journee ORDIF)
+  date: 2026-06-23
+  type: etude_publique
+  url: "https://www.ordif.fr/fileadmin/DataStorageKit/ORDIF/Event/2026_06_23/2026_01.3_ADEME_MODECOM_2024_VF.pdf"
+  contenu: "32 % des OMR sont des biodechets ; 70 % n'y ont pas leur place ; tout-venant de decheterie 18 % de plastiques"
+  statut: verifie
+
+ADEME-MODECOM-2017:
+  titre: "MODECOM 2017 - Campagne nationale de caracterisation des dechets menagers et assimiles (ref. 011318)"
+  editeur: ADEME / PROVADEMSE
+  date: 2021-03
+  type: etude_publique
+  url: "https://medias.amf.asso.fr/upload/files/modecom_2017_analyse_des_resultats_011318.pdf"
+  url_fiche: "https://librairie.ademe.fr/dechets-economie-circulaire/4351-modecom-2017-campagne-nationale-de-caracterisation-des-dechets-menagers-et-assimiles.html"
+  emplacement: "Tableau 2 p.13 ; Tableau 3 p.16-17 ; p.26-27 (humidite) ; Tableau 17 p.40-41"
+  contenu: "Plastiques 14,7 % des OMR, 37,3 kg/hab, 2 410 kt ; humidite 36,9 %"
+  statut: verifie
+
+ADEME-COLLECTE-2023:
+  titre: "La collecte des dechets par le service public en France - Resultats de l'enquete Collecte 2023"
+  editeur: ADEME
+  date: 2025-10
+  type: statistique_publique
+  url: "https://librairie.ademe.fr/economie-circulaire-et-dechets/8644-10426-la-collecte-des-dechets-par-le-service-public-en-france.html"
+  contenu: "37,8 Mt de DMA ; 559 kg/hab"
+  statut: verifie
+
+ADEME-IND-DMA:
+  titre: "Les indicateurs cles des DMA"
+  editeur: ADEME
+  date: 2026
+  type: statistique_publique
+  url: "https://economie-circulaire.ademe.fr/indicateurs-cles-dma"
+  contenu: "OMR 15,2 Mt et 225 kg/hab (2023) ; DMA produits 571 kg/hab ; stockage DNDNI 13,9 Mt (2023)"
+  statut: verifie
+
+ADEME-CC-2024:
+  titre: "Dechets chiffres-cles - L'essentiel, edition 2024 (ref. 012515)"
+  editeur: ADEME
+  date: 2024-08
+  type: statistique_publique
+  url: "https://batisseurs-outremer.com/wp-content/uploads/2025/01/ChiffresclesDechets-Synthese2024-012515.pdf"
+  emplacement: "p.7, 12, 16, 19, 30, 37"
+  reserve: "Copie hebergee par un tiers ; document ADEME original."
+  statut: verifie
+
+ADEME-CC-2023:
+  titre: "Dechets chiffres-cles, edition 2023 (ref. 011982)"
+  editeur: ADEME
+  date: 2023
+  type: statistique_publique
+  url: "https://www.ordeec.org/fileadmin/user_upload/dechets-chiffres-cles-2023_si.pdf"
+  emplacement: "p.23, 25, figure 24 p.27"
+  statut: verifie
+
+ADEME-VE:
+  titre: "Comprendre la valorisation energetique des dechets"
+  editeur: ADEME
+  type: statistique_publique
+  url: "https://economie-circulaire.ademe.fr/valorisation-energetique-dechets"
+  statut: verifie
+
+INSEE-IP2055:
+  titre: "Insee Premiere n. 2055 - Les dechets menagers et assimiles : plus de 600 kg collectes par habitant en 2021"
+  editeur: INSEE
+  date: 2025-06-04
+  type: statistique_publique
+  url: "https://www.insee.fr/fr/statistiques/8574484"
+  emplacement: "figures 2 et 3"
+  citation: "En 2021, 67,9 % des ordures menageres residuelles sont destinees a l'incineration, 23,1 % au stockage, 7,2 % a la valorisation organique"
+  statut: verifie-recontrole
+  consulte: 2026-10-10
+
+SINOE-DEST-DMA:
+  titre: "SINOE - Destination des DMA collectes par type de traitement"
+  editeur: ADEME
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/sinoe-(r)-destination-des-dma-collectes-par-type-de-traitement"
+  statut: verifie
+
+SDES-2022:
+  titre: "Datalab Essentiel - Bilan 2022 de la production de dechets en France"
+  editeur: "SDES (Ministere de la Transition ecologique)"
+  date: 2025-09
+  type: statistique_publique
+  url: "https://www.statistiques.developpement-durable.gouv.fr/media/6908/download?inline"
+  url_page: "https://www.statistiques.developpement-durable.gouv.fr/bilan-2022-de-la-production-de-dechets-en-france-0"
+  emplacement: "Tableaux 1 a 4"
+  contenu: "343 Mt produites en 2022 ; DD 11 391 kt ; dechets plastiques 2 482 kt ; recyclage plastiques 20 %"
+  statut: verifie
+
+SDES-2021:
+  titre: "Indicateurs cles de l'economie circulaire"
+  editeur: SDES
+  date: 2021-04
+  type: statistique_publique
+  url: "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/economie-circulaire/11-evolution-des-tonnages-de-dechetsmis"
+  statut: verifie
+
+EUROSTAT-WASGEN:
+  titre: "Generation of waste by waste category (env_wasgen), France"
+  editeur: Eurostat
+  date: 2025-09-22
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasgen?geo=FR"
+  statut: verifie
+
+EUROSTAT-WASMUN:
+  titre: "Municipal waste by waste management operations (env_wasmun), France"
+  editeur: Eurostat
+  date: 2026-03-30
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?geo=FR"
+  statut: verifie
+
+EUROSTAT-WASPAC:
+  titre: "Packaging waste by waste management operations (env_waspac, cei_wm020), France, plastique"
+  editeur: Eurostat
+  date: 2026-05-11
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_waspac?geo=FR&waste=W150102"
+  contenu: "2023 : 2 428 987 t generees ; 625 275 t recyclees (25,7 %) ; 1 213 829 t valorisees en energie"
+  statut: verifie
+
+OPECST-2023:
+  titre: "Note scientifique n. 39 - Le recyclage des plastiques"
+  editeur: "OPECST (Senat / Assemblee nationale)"
+  date: 2023-06
+  type: etude_publique
+  url: "https://www.senat.fr/rap/r22-808/r22-8081.pdf"
+  contenu: "6,45 Mt consommees ; 3,76 Mt de dechets ; 690 kt recyclees en France (2020)"
+  statut: secondaire
+  reserve: "La note ne cite pas de source primaire pour ces chiffres."
+
+PE-2024:
+  titre: "Communique Plastics Europe France du 19/03/2024"
+  editeur: Plastics Europe
+  date: 2024-03-19
+  type: federation
+  url: "http://plasticseurope.org/fr/2024/03/19/les-chiffres-que-publie-plastics-europe-montrent-que-leconomie-circulaire-des-plastiques-enregistre-des-progres-notables-en-europe-et-en-france-malgre-un-contexte-economique-morose-et-des-fr/"
+  statut: secondaire
+
+CITEO-CEPOM:
+  titre: "OMR & corbeilles de rue : ce qui echappe au geste de tri (etude CEPOM)"
+  editeur: Citeo
+  type: federation
+  url: "https://www.citeo.com/wp-content/uploads/2025/10/20230117_Etude_CEPOM_Citeo.pdf"
+  statut: verifie
+
+CITEO-CC-2023:
+  titre: "Fiche chiffres cles 2023"
+  editeur: Citeo
+  date: 2024-12
+  type: federation
+  url: "https://www.citeo.com/wp-content/uploads/2025/01/241223_CITEO_Fiche_Chiffres_cles-2023_Notre_Impact.pdf"
+  statut: verifie
+
+FNADE-2023:
+  titre: "Orientation des flux de dechets a l'horizon 2050"
+  editeur: FNADE
+  date: 2023-07-12
+  type: federation
+  url: "https://www.fnade.org/ressources/documents/source/1/4866-ANALYSE-PROSPECTIVE-FNADE-D-ORIENTATION-DES-FLUX-DE-DECHETS-A-HORIZON-2050-VDEF.pdf"
+  emplacement: "p.7"
+  statut: verifie
+
+BDT-2025:
+  titre: "Service public de gestion des dechets : une collecte en baisse en 2023"
+  editeur: "Banque des Territoires (Localtis)"
+  date: 2025-11-24
+  type: presse
+  url: "https://www.banquedesterritoires.fr/service-public-de-gestion-des-dechets-une-collecte-en-baisse-en-2023"
+  statut: secondaire
+
+# === GATE FEES DMA ET TGAP ==================================================
+
+ANNMINES-2026:
+  titre: "La valorisation energetique des dechets, Responsabilite & Environnement n. 121"
+  editeur: Annales des Mines
+  date: 2026-01
+  type: etude_publique
+  url: "https://waga-energy.com/wp-content/uploads/2026/03/La-valorisation-energetique.pdf"
+  emplacement: "p.95-99 (citation p.96)"
+  citation: "le cout net median du traitement des DMA en France est de 106 EUR/t pour l'incineration et de 122 EUR/t pour l'enfouissement"
+  statut: secondaire
+  reserve: "Cite le Referentiel des couts ADEME, donnees 2022 : chiffres confirmes dans la source primaire ADEME-REFCOUTS-2022."
+
+ADEME-REFCOUTS-2022:
+  titre: "Referentiel national des couts du service public de gestion des dechets, donnees 2022"
+  editeur: ADEME
+  date: 2025
+  type: etude_publique
+  date: 2025-01
+  url: "https://librairie.ademe.fr/societe-et-politiques-publiques/7932-9578-referentiel-des-couts-du-service-public-de-gestion-des-dechets-en-france-metropolitaine.html"
+  fichier: "pdf/ADEME_Referentiel_Couts_SPGD_Donnees_2022_rapport.pdf ; pdf/Referentiel_donnees_2022_v01.xlsx"
+  emplacement: "p.9 (EUR HT, TGAP comprise) ; Figure 66 p.63 (charges de traitement des OMR par mode, EUR HT/t, medianes)"
+  contenu: "648 matrices 2022. Couts nets medians OMR : incineration 106 (n=342), stockage 122 (n=212), TMB compostage 150 (n=45), TMB methanisation 152 (n=15) ; incineration cout complet 127 (n=118) EUR HT/t, TGAP comprise"
+  citation: "Les couts sont presentes en euros HT (sauf indication contraire) et comprennent la TGAP"
+  statut: verifie
+  consulte: 2026-10-10
+
+ADEME-REFCOUTS-2023:
+  titre: "Referentiel des couts du service public de gestion des dechets en France hexagonale, donnees 2023"
+  editeur: ADEME
+  date: 2025-11
+  type: etude_publique
+  url: "https://librairie.ademe.fr/societe-et-politiques-publiques/8811-10587-referentiel-des-couts-du-service-public-de-gestion-des-dechets-en-france-hexagonale-donnees-2023.html"
+  fichier: "pdf/ADEME-Referentiel-Couts-SPGD-Donnees-2023.pdf ; pdf/ADEME-Referentiel-Couts-SPGD-Donnees_2023-synthese.pdf ; pdf/ADEME-Referentiel-Couts-SPGD-Donnees_2023.xlsx"
+  emplacement: "p.9 (EUR HT, TGAP comprise) ; Figure 33 p.36 (charges de traitement des OMR par mode, EUR HT/t, medianes) ; synthese p.2 (cout aide)"
+  contenu: "597 matrices 2023. Couts nets medians OMR : incineration 107 (n=306), stockage 138 (n=197), TMB compostage 156 (n=44) EUR HT/t, TGAP comprise. Cout aide moyen 127 EUR HT/hab (+11 EUR/hab vs 2022)"
+  citation: "le differentiel entre cout net d'incineration et de stockage (31 euros par tonne) se situe dans le bas de la fourchette du differentiel de TGAP [...] entre 31 et 40 euros la tonne"
+  statut: verifie
+  consulte: 2026-10-10
+
+ADEME-AURA-2022:
+  titre: "Referentiel des couts 2022, Auvergne-Rhone-Alpes (edition 2025)"
+  editeur: ADEME / INDDIGO (ORDEC AURA)
+  date: 2025
+  type: observatoire
+  url: "https://www.ordec-auvergne-rhone-alpes.fr/api/fileadmin/mediatheque_ordec/publications/Referentiel_des_couts_2022_Edition2025.pdf"
+  emplacement: "p.6 (HT, TGAP comprise), p.28 (UVE 119, stockage 118), p.50 (+20 a +25 EUR/t 2022-2025)"
+  statut: verifie
+
+ADEME-PACA-2021:
+  titre: "Referentiel des couts 2021, PACA"
+  editeur: ADEME PACA (ORD&EC)
+  date: 2022
+  type: observatoire
+  url: "https://www.ordeec.org/fileadmin/user_upload/REF_COUTS_PACA_2021.pdf"
+  statut: verifie
+
+ADEME-REF-2016:
+  titre: "Referentiel national des couts du service public de gestion des dechets, annee 2016"
+  editeur: ADEME
+  date: 2019
+  type: etude_publique
+  url: "https://www.ordeec.org/fileadmin/user_upload/rapport-referentiel-cout-service-public-dechets_2019_v1.pdf"
+  emplacement: "p.40"
+  statut: ancien
+
+ORDIF-COUTS-2022:
+  titre: "Notice du referentiel des couts Ile-de-France, donnees 2022"
+  editeur: ORDIF
+  date: 2024-11
+  type: observatoire
+  url: "https://www.ordif.fr/fileadmin/DataStorageKit/ORDIF/Etudes/pdf/Notice_reference_couts_VF.pdf"
+  emplacement: "p.17"
+  statut: verifie
+
+ORDIF-DMA-2022:
+  titre: "Les DMA en Ile-de-France 2022"
+  editeur: ORDIF
+  date: 2023-12
+  type: observatoire
+  url: "https://www.ordif.fr/fileadmin/DataStorage/user_upload/ORDIF_Rapp_DMA_2022_V1b.pdf"
+  statut: verifie
+
+ORDIF-TMB-2022:
+  titre: "Notice TMB 2020-2021"
+  editeur: ORDIF
+  date: 2022-09
+  type: observatoire
+  url: "https://www.ordif.fr/fileadmin/DataStorage/user_upload/ORDIF_Notice_TMB_2020-2021_vf.pdf"
+  statut: verifie
+
+ORDEEC-COUTS:
+  titre: "Couts et financement des DMA"
+  editeur: ORD&EC PACA
+  type: observatoire
+  url: "https://www.ordeec.org/indicateurs/dechets-menagers-et-assimiles-dma/couts-et-financement"
+  statut: secondaire
+
+AMORCE-DT139:
+  titre: "Performances, recettes et couts des unites de traitement thermique des dechets, donnees 2020-2021 (DT139)"
+  editeur: AMORCE / ADEME
+  date: 2023-03
+  type: federation
+  url: "https://amorce.asso.fr/publications/performances-recettes-et-couts-des-unites-de-traitement-thermique-des-dechets-donnees-2020-2021-dt139/download"
+  emplacement: "p.17 (recettes energie), p.33 figure 21 (prix facture)"
+  contenu: "Prix moyen 2021 hors transport : 76 EUR/t clients publics, 133 EUR/t clients prives"
+  statut: verifie
+  reserve: "TGAP incluse ou non : non precise."
+
+AMORCE-DT112:
+  titre: "Equilibre economique des unites de valorisation energetique (DT112)"
+  editeur: AMORCE / ADEME
+  date: 2019-11
+  type: federation
+  url: "https://amorce.asso.fr/publications/equilibre-economique-des-unites-de-valorisation-energetique-dt112/download"
+  emplacement: "p.8"
+  statut: ancien
+
+CITEO-2023:
+  titre: "Couts et performances de la collecte selective"
+  editeur: Citeo
+  date: 2023-02
+  type: federation
+  url: "https://bo.citeo.com/sites/default/files/2023-03/2023_Citeo_Brochure%20co%C3%BBts%20et%20performances.pdf"
+  statut: verifie
+
+CME-BIODECH-2022:
+  titre: "Biodechets des menages - modele economique (synthese)"
+  editeur: "CME / CSF TVD / ADEME"
+  date: 2022-12
+  type: etude_publique
+  url: "https://www.fnade.org/ressources/_pdf/publications/4263/Synthe%CC%80se-biode%CC%81chets-des-m%C3%A9nages.pdf"
+  emplacement: "p.4"
+  statut: verifie
+
+FNADE-CSR-2023:
+  titre: "Synthese de l'etude du modele economique de la filiere CSR"
+  editeur: FNADE / SN2E
+  date: 2023-07
+  type: federation
+  url: "https://www.fnade.org/ressources/documents/source/1/4855-FNADE-SN2E-Synthese-modele-economique-CSR-VDEF.pdf"
+  emplacement: "p.3 (370 kt CSR 2021), p.4 (2 738 kt refus de tri), p.5 (gate fee 40-50 ; ISDND 160 EUR/t en 2025)"
+  statut: verifie
+
+NORMANDIE-CSR-2021:
+  titre: "Info Obs #02 - CSR"
+  editeur: Observatoire regional dechets Normandie
+  date: 2021-06
+  type: observatoire
+  url: "https://neci.normandie.fr/sites/default/files/2024-04/02%20info-dechet%20V1.0.pdf"
+  emplacement: "p.6"
+  statut: verifie
+
+AdlC-20A09:
+  titre: "Avis n. 20-A-09 du 28 octobre 2020 relatif au secteur du stockage des dechets"
+  editeur: Autorite de la concurrence
+  date: 2020-10-28
+  type: reglementaire
+  url: "https://www.autoritedelaconcurrence.fr/sites/default/files/integral_texts/2020-10/20a09.pdf"
+  emplacement: "par. 26, 35, 36, 41"
+  statut: verifie
+
+SINOE-ITOM2012:
+  titre: "ITOM - Installations de traitement des ordures menageres, donnees 2012"
+  editeur: ADEME
+  date: 2015
+  type: statistique_publique
+  url: "https://www.sinoe.org/documents/consult-and-count-doc/doc/1200/rubrique/6"
+  statut: ancien
+
+BOFIP-BAREME-2025:
+  titre: "BOI-BAREME-000039 - Bareme TGAP dechets (version 2025)"
+  editeur: DGFiP
+  date: 2025-07-23
+  type: reglementaire
+  url: "https://bofip.impots.gouv.fr/bofip/12765-PGP.html/identifiant=BOI-BAREME-000039-20250723"
+  emplacement: "par. 40 (stockage), 50 (traitement thermique), 60 (outre-mer et Corse)"
+  statut: verifie-recontrole
+  consulte: 2026-10-10
+
+BOFIP-BAREME-2024:
+  titre: "BOI-BAREME-000039 - Bareme TGAP dechets (version 2024)"
+  editeur: DGFiP
+  date: 2024-02-21
+  type: reglementaire
+  url: "https://bofip.impots.gouv.fr/bofip/12765-PGP.html/identifiant=BOI-BAREME-000039-20240221"
+  statut: verifie
+
+BOFIP-TCA-POLL:
+  titre: "BOI-TCA-POLL-40-30 - TGAP dechets"
+  editeur: DGFiP
+  date: 2025-07-23
+  type: reglementaire
+  url: "https://bofip.impots.gouv.fr/bofip/13305-PGP.html/identifiant=BOI-TCA-POLL-40-30-20250723"
+  emplacement: "par. 230"
+  statut: verifie
+
+BOFIP-RES-259:
+  titre: "BOI-RES-TCA-000259 - Rescrit TGAP (transfert vers le CIBS)"
+  editeur: DGFiP
+  date: 2026-03-11
+  type: reglementaire
+  url: "https://bofip.impots.gouv.fr/bofip/15018-PGP.html/identifiant=BOI-RES-TCA-000259-20260311"
+  statut: verifie
+
+CIBS-TGAP-2026:
+  titre: "Code des impositions sur les biens et services, art. L. 433-57 (stockage) et L. 433-86 (traitement thermique)"
+  editeur: Legifrance
+  date: 2026
+  type: reglementaire
+  url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155"
+  emplacement: "Loi n. 2026-103 du 19/02/2026 de finances pour 2026, article 81 ; CIBS art. L. 433-57 et L. 433-86"
+  fichier: "pdf/joe_20260220_0043_0001.pdf (JORF du 20/02/2026, texte 1 sur 131)"
+  contenu: >
+    L. 433-57 stockage : non dangereux 69 (2026), 73, 77, 81, 85 (2030) ; dangereux 30,36 puis indexation.
+    L. 433-86 traitement thermique : non dangereux, performance 65-100 % : 16, 17, 18, 19, 20 ;
+    performance < 65 % : 29, 33, 37, 41, 45 ; dangereux 15,18 puis indexation.
+    L. 433-90 residus de tri performant (performance >= 70 %) : 8, 8,5, 9, 9,5, 10.
+    L. 433-59 et L. 433-91 : majoration communale possible, 2 EUR/t maximum. Corse -20 %. Indexation inflation a partir de 2027.
+  statut: verifie
+  consulte: 2026-10-10
+
+FNTP-2026:
+  titre: "TGAP 2026 : les montants sont publies"
+  editeur: FNTP
+  date: 2026-02-23
+  type: federation
+  url: "https://www.fntp.fr/tgap-2026-les-montants-sont-publies/"
+  contenu: "ISDND 69 EUR/t en 2026 ; 73, 77, 81, 85 de 2027 a 2030 ; DD thermique 15,18 EUR/t"
+  statut: verifie-recontrole
+  consulte: 2026-10-10
+
+REGENV-2026:
+  titre: "TGAP dechets : trajectoire 2026-2030"
+  editeur: reglementation-environnement.com
+  date: 2026-02-26
+  type: presse
+  url: "https://www.reglementation-environnement.com/tgap-dechets-trajectoire-2026-2030-fiscalite/"
+  statut: secondaire
+
+CPTAONLINE-2026:
+  titre: "La TGAP (taxe generale sur les activites polluantes)"
+  editeur: Compta-Online
+  date: 2026-03-17
+  type: presse
+  url: "https://www.compta-online.com/la-tgap-taxe-generale-sur-les-activites-polluantes-ao3403"
+  statut: secondaire
+
+DI-2026:
+  titre: "TGAP : le calendrier 2026-2030 est fixe"
+  editeur: Dechets Infos
+  date: 2026-02-04
+  type: presse
+  url: "https://dechets-infos.com/tgap-le-calendrier-2026-2030-est-fixe-4933368.html"
+  statut: secondaire
+
+RECY-2026:
+  titre: "TGAP 2026 : enfouissement a 69 euros, bascule vers l'incineration"
+  editeur: recy.net
+  date: 2026-04-28
+  type: presse
+  url: "https://www.recy.net/tgap-2026-enfouissement-69-euros-bascule-incineration/"
+  statut: secondaire
+
+BDT-2024:
+  titre: "TGAP dechets : la surtaxe pour le stockage fixee a cinq euros"
+  editeur: Banque des Territoires
+  date: 2024-10
+  type: presse
+  url: "https://www.banquedesterritoires.fr/tgap-dechets-la-surtaxe-pour-le-stockage-fixee-cinq-euros"
+  statut: secondaire
+
+ORDIF-TGAP-2024:
+  titre: "Pollueur-payeur : pression accrue sur les installations franciliennes"
+  editeur: ORDIF
+  date: 2024-12
+  type: observatoire
+  url: "https://www.ordif.fr/nos-ressources/chroniques/pollueur-payeur-pression-accrue-sur-les-installations-franciliennes/"
+  statut: secondaire
+
+SIOM-2026:
+  titre: "Deliberation n. 6, budget primitif 2026"
+  editeur: SIOM de la Vallee de Chevreuse
+  date: 2026-01-26
+  type: observatoire
+  url: "https://www.siom.fr/wp-content/uploads/2026/02/dl-06-2026.pdf"
+  contenu: "TGAP 2026 : 16 EUR/t incineration, 72 EUR/t enfouissement (cas local) ; 3 300 kEUR pour 44 000 t de professionnels"
+  statut: secondaire
+
+# === FILIERES SPECIALISEES ==================================================
+
+ARS-HDF-2026:
+  titre: "P. Conseil, RETEX DASRI - Audit dechets d'un secteur hospitalier (journee CPIAS)"
+  editeur: ARS Hauts-de-France / CPIAS
+  date: 2026-03-24
+  type: etude_publique
+  url: "https://www.cpias.chu-lille.fr/wp-content/uploads/sites/15/2026/03/4.-Pierre-Conseil-RETEX-DASRI-ARS-journee-CPIAS.pdf"
+  citation: "170 000 tonnes de DASRI (24 %, des dechets hospitaliers) ; 700 000 tonnes dans le secteur hospitalier (2024) ; 500 a 1 000 EUR / tonne"
+  statut: verifie-recontrole
+  reserve: "Le prix reprend un referentiel ADEME 2007-2008 (voir ARS-IDF-2011)."
+  consulte: 2026-10-10
+
+ARS-PACA-DASRI:
+  titre: "Fiche Hotellerie > DASRI"
+  editeur: ARS PACA
+  date: 2024-07
+  type: etude_publique
+  url: "https://paca.ars.sante.fr/system/files/2024-07/DASRI.pdf"
+  emplacement: "p.1, p.3"
+  statut: verifie
+
+ARS-IDF-2011:
+  titre: "Reussir votre politique DASRI"
+  editeur: ARS Ile-de-France / Region
+  date: 2011-12
+  type: etude_publique
+  url: "https://www.iledefrance.ars.sante.fr/media/2853/download"
+  statut: ancien
+
+HCSP-2021:
+  titre: "Avis relatif a l'incineration et au traitement des DASRI"
+  editeur: Haut Conseil de la sante publique
+  date: 2021-04-23
+  type: reglementaire
+  url: "https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20210423_covimodadincietratidesdasr.pdf"
+  emplacement: "p.2"
+  citation: "En 2019, 81 % du tonnage des DASRI ont ete incineres dans 25 unites [...] 19 % [...] pretraites par desinfection"
+  statut: verifie-recontrole
+  consulte: 2026-10-10
+
+DASTRI-2025:
+  titre: "Communique de presse - resultats annuels 2025"
+  editeur: DASTRI
+  date: 2026-06-15
+  type: federation
+  url: "https://www.dastri.fr/wp-content/uploads/2026/06/CP-DASTRI-resultats_annuels_2025.pdf"
+  statut: verifie
+
+PHENIX-2023:
+  titre: "Pourquoi le cout des biodechets et du DIB continue d'augmenter"
+  editeur: Phenix
+  date: 2023
+  type: entreprise
+  url: "https://www.wearephenix.com/pro/etudepourquoi-le-cout-des-biodechets-et-du-dib-continue-daugmenter/"
+  statut: secondaire
+
+POINTFORT-2025:
+  titre: "Tarifs professionnels 2025 (decheteries)"
+  editeur: Point Fort Environnement
+  date: 2024-12
+  type: observatoire
+  url: "https://www.pointfortenvironnement.fr/wp-content/uploads/2024/12/Tarifs-pros-2025.pdf"
+  statut: verifie
+  reserve: "Bareme local, petits apports."
+
+TERREDEAU-2024:
+  titre: "Bareme tarifaire 2024/2025 (decheteries)"
+  editeur: CC Terre d'Eau / SOVODEB
+  date: 2024-04
+  type: observatoire
+  url: "https://www.cc-terredeau.fr/UserFiles/1/File/dechets-menagers/2024-grille-tarifs-public-2024-2025.pdf"
+  statut: verifie
+  reserve: "Bareme local."
+
+STRAT3R-2025:
+  titre: "Strategie 3R - bilan intermediaire"
+  editeur: Ministere de la Transition ecologique
+  date: 2025-06
+  type: etude_publique
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/Bilan%20interm%C3%A9diaire_Strat%C3%A9gie%203R_%20juin%202025.pdf"
+  emplacement: "p.1, p.13"
+  statut: verifie
+
+ADEME-RECYCLAGE-2024:
+  titre: "Plastiques, textiles, metaux : le recyclage progresse en France (Bilan national du recyclage 2012-2021)"
+  editeur: ADEME
+  date: 2024-03-13
+  type: statistique_publique
+  url: "https://www.ademe.fr/presse/communique-national/plastiques-textiles-metaux-le-recyclage-progresse-en-france-au-service-de-lacceleration-de-leconomie-circulaire/"
+  statut: verifie
+
+DOMITIENNE-2023:
+  titre: "Contrat de reprise des plastiques, lot 3 (Paprec)"
+  editeur: CC La Domitienne
+  date: 2023-12-29
+  type: observatoire
+  url: "https://www.ladomitienne.com/wp-content/uploads/2024/02/24.010.3_Annexe_DECH_Contrats_Plastiques_lot_3.pdf"
+  statut: verifie
+  reserve: "Un seul contrat ; prix indexes sur la mercuriale."
+
+ENVMAG-2023:
+  titre: "Matieres plastiques recyclees : des perspectives sombres pour le second semestre 2023"
+  editeur: Environnement Magazine (communique Federec)
+  date: 2023-07-10
+  type: presse
+  url: "https://www.environnement-magazine.fr/recyclage/article/2023/07/10/145056/matieres-plastiques-recyclees-des-perspectives-sombres-pour-second-semestre-2023"
+  statut: secondaire
+
+REUSSIR-2025:
+  titre: "Dechets plastiques agricoles : une collecte historique de 102 000 tonnes pour Adivalor en 2024"
+  editeur: Reussir
+  date: 2025-01-31
+  type: presse
+  url: "https://www.reussir.fr/dechets-plastiques-agricoles-une-collecte-historique-de-102-000-tonnes-pour-adivalor-en-2024"
+  statut: secondaire
+
+ADEME-EY-2014:
+  titre: "Taux d'utilisation et couts des techniques et filieres de traitement des sols et eaux souterraines pollues en France, donnees 2012"
+  editeur: ADEME / Ernst & Young
+  date: 2014-10
+  type: etude_publique
+  url: "https://upds.org/wp-content/uploads/2018/10/Taux-dutilisation-et-cou%CC%82t-des-diffe%CC%81rentes-techniques-et-filie%CC%80res-de-traitement-des-sols-et-des-eaux-souterraines-pollue%CC%81s-en-France-donne%CC%81es-2012-ADEME-2014.pdf"
+  emplacement: "p.33, tableau 8"
+  statut: ancien
+
+SARPI-2022:
+  titre: "Synthese du dossier du maitre d'ouvrage, ISDD des Dieves"
+  editeur: SARPI / CNDP
+  date: 2022-08
+  type: entreprise
+  url: "https://www.debatpublic.fr/sites/default/files/2022-09/ISDD_synth%C3%A8se_du_dossier.pdf"
+  emplacement: "p.6"
+  statut: secondaire
+
+CCFA-2025:
+  titre: "Analyse et statistiques 2025, p.68-69"
+  editeur: CCFA
+  date: 2025-12
+  type: federation
+  url: "https://ccfa.fr/wp-content/uploads/2025/12/CCFA-2025-FR-68-69.pdf"
+  statut: secondaire
+
+ADEME-VHU:
+  titre: "REP VHU - performances cumulees depuis 2018"
+  editeur: ADEME / data.gouv.fr
+  date: 2023-12
+  type: donnees_ouvertes
+  url: "https://www.data.gouv.fr/datasets/rep-vhu-performances-cumulees-depuis-2018"
+  statut: verifie
+
+ECOSYSTEM-2025:
+  titre: "Dossier de presse - Le geste recycler"
+  editeur: ecosystem
+  date: 2025-12
+  type: federation
+  url: "https://www.ecosystem.eco/document/443"
+  statut: verifie
+
+ECOMAISON-2024:
+  titre: "Chiffres cles 2024"
+  editeur: Ecomaison
+  date: 2025-06
+  type: federation
+  url: "https://ecomaison.com/wp-content/uploads/2025/07/250192_plaquette-chiffres-cles-WEB-DEF-1.pdf"
+  statut: verifie
+
+REFASHION-2026:
+  titre: "Webinaire appel d'offres preparation de flux TLC en CSR"
+  editeur: Refashion
+  date: 2026-05-28
+  type: federation
+  url: "https://media-pro.refashion.fr/2026/05/webinaire-ao-csr-1-250912.pdf"
+  emplacement: "diapositive 8"
+  statut: verifie
+
+AMORCE-EAT11:
+  titre: "Gestion des boues urbaines (EAT11)"
+  editeur: AMORCE
+  date: 2022-02
+  type: federation
+  url: "https://amorce.asso.fr/publications/gestion-des-boues-urbaines-quelle-methodologie-pour-elaborer-une-strategie-territoriale-dans-un-contexte-reglementaire-mouvant-eat11/download"
+  emplacement: "p.2"
+  statut: verifie
+
+AMORCE-DT51:
+  titre: "Boues de STEP : techniques de traitement, valorisation et elimination (DT51)"
+  editeur: AMORCE
+  date: 2012-11
+  type: federation
+  url: "https://bdd.pseau.org/outils/ouvrages/amorce_boues_de_step_techniques_de_traitement_valorisation_et_elimination_2012.pdf"
+  emplacement: "p.4, p.26"
+  statut: ancien
+
+ADEME-BIODECH-NM-2022:
+  titre: "Premiere estimation des couts de gestion des dechets alimentaires des producteurs non menagers"
+  editeur: ADEME
+  date: 2022
+  type: etude_publique
+  url: "https://www.ordeec.org/fileadmin/user_upload/couts-biodechets-non-menagers-2022-rapportv3.pdf"
+  emplacement: "p.27, p.46"
+  statut: verifie
+
+ADEME-RA-2011:
+  titre: "Guide dechets alimentaires"
+  editeur: ADEME Rhone-Alpes / DRAAF
+  date: 2011-06
+  type: etude_publique
+  url: "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/IMG/pdf/guide-dechets-alimentaires_cle4a682d.pdf"
+  statut: ancien
+
+MTE-PMCB:
+  titre: "Produits et materiaux de construction du secteur du batiment (PMCB)"
+  editeur: Ministere de la Transition ecologique
+  date: 2024-04-18
+  type: reglementaire
+  url: "https://www.ecologie.gouv.fr/politiques-publiques/produits-materiaux-construction-du-secteur-du-batiment-pmcb"
+  statut: verifie
+
+MTE-HUILES:
+  titre: "Huiles minerales ou synthetiques"
+  editeur: Ministere de la Transition ecologique
+  date: 2022-08-19
+  type: reglementaire
+  url: "https://www.ecologie.gouv.fr/politiques-publiques/huiles-minerales-synthetiques"
+  statut: verifie
+
+UE-1069-2009:
+  titre: "Reglement (CE) n. 1069/2009 - sous-produits animaux"
+  editeur: EUR-Lex
+  date: 2009-10-21
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32009R1069"
+  emplacement: "art. 8 f), art. 12 a) et b)"
+  statut: verifie
+
+PAPREC-2019:
+  titre: "Les coulisses des aeroports de Paris"
+  editeur: Paprec
+  date: 2019-01-15
+  type: entreprise
+  url: "https://www.mypaprecsolutions.com/paprec-aerport-paris/"
+  statut: secondaire
+
+ADP-ACA-2020:
+  titre: "Rapport ACA 2020"
+  editeur: Groupe ADP
+  date: 2021
+  type: entreprise
+  url: "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/rse/rapports-rse/rapport-aca-2020.pdf?sfvrsn=e4c9d8bd_0"
+  emplacement: "p.16"
+  statut: verifie
