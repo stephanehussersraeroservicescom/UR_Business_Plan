@@ -394,3 +394,104 @@ AUCUNE:
   type: aucune
   fiabilite: aucune
   contenu: "Valeur d'attente posee par l'auditeur, a remplacer."
+
+# ------------------------------------------------ Sources externes (session sources-externes 2026-10-10)
+
+ADEME-REFCOUTS-2022:
+  titre: "Referentiel national des couts du service public de gestion des dechets, donnees 2022"
+  type: etude_publique
+  fiabilite: certifie_tiers
+  date: 2025-01
+  chemin: "reference/sources-externes/pdf/ADEME_Referentiel_Couts_SPGD_Donnees_2022_rapport.pdf ; reference/sources-externes/pdf/Referentiel_donnees_2022_v01.xlsx"
+  contenu: >
+    648 matrices 2022. Couts nets medians OMR : incineration 106 (n=342), stockage 122 (n=212),
+    TMB compostage 150 (n=45), TMB methanisation 152 (n=15) ;
+    incineration cout complet 127 (n=118) EUR HT/t, TGAP comprise.
+  reserve: "Les couts sont presentes TGAP comprise, donc non comparables directement a un gate fee prive."
+
+ADEME-REFCOUTS-2023:
+  titre: "Referentiel des couts du service public de gestion des dechets, donnees 2023"
+  type: etude_publique
+  fiabilite: certifie_tiers
+  date: 2025-11
+  chemin: "reference/sources-externes/pdf/ADEME-Referentiel-Couts-SPGD-Donnees-2023.pdf ; reference/sources-externes/pdf/ADEME-Referentiel-Couts-SPGD-Donnees_2023-synthese.pdf ; reference/sources-externes/pdf/ADEME-Referentiel-Couts-SPGD-Donnees_2023.xlsx"
+  contenu: >
+    597 matrices 2023. Couts nets medians OMR : incineration 107 (n=306), stockage 138 (n=197),
+    TMB compostage 156 (n=44) EUR HT/t, TGAP comprise.
+    Cout aide moyen 127 EUR HT/hab (+11 EUR/hab vs 2022).
+    Le differentiel incineration/stockage (31 EUR/t) se situe dans le bas de la fourchette TGAP (31-40 EUR/t).
+  reserve: "Couts collectivites publiques, pas gate fees prives. TGAP comprise."
+
+ADEME-MODECOM-2024-DATA:
+  titre: "Composition OMR et CS - MODECOM 2024 (donnees ouvertes ADEME)"
+  type: donnees_ouvertes
+  fiabilite: certifie_tiers
+  date: 2026-01-19
+  chemin: "https://data.ademe.fr/data-fair/api/v1/datasets/omrcs-compo-jdd/lines?format=csv"
+  contenu: >
+    Plastiques 15,8 % des OMR, 35,28 kg/hab/an, 2 329 258 t.
+    Total OMR 223,54 kg/hab, 14,75 Mt.
+    Mise a jour vs MODECOM-2017 : +1,1 pt de plastique, -30 kg/hab d'OMR.
+  reserve: "Remplace ADEME-MODECOM (2017) pour la composition. Parametre part_plastique du modele a revoir."
+
+ADEME-MODECOM-2024-HUM:
+  titre: "Taux d'humidite OMR - MODECOM 2024"
+  type: donnees_ouvertes
+  fiabilite: certifie_tiers
+  date: 2026-01
+  chemin: "https://data.ademe.fr/data-fair/api/v1/datasets/omrhum"
+  contenu: "Humidite moyenne des OMR 42,1 % ; films et sacs 35,8 % ; autres plastiques 20,1 %"
+  reserve: "Parametre part_humidite du modele actuellement a 0,08 — ecart majeur avec 42,1 % mesure. Decision requise."
+
+CIBS-TGAP-2026:
+  titre: "Loi de finances 2026 - TGAP dechets (CIBS art. L.433-57 et L.433-86)"
+  type: texte_reglementaire
+  fiabilite: certifie_tiers
+  date: 2026-02-20
+  chemin: "reference/sources-externes/pdf/joe_20260220_0043_0001.pdf"
+  contenu: >
+    L.433-57 stockage non dangereux : 69 (2026), 73, 77, 81, 85 EUR/t (2030).
+    L.433-86 traitement thermique non dangereux performance 65-100 % : 16, 17, 18, 19, 20 EUR/t (2026-2030).
+    Performance < 65 % : 29, 33, 37, 41, 45 EUR/t.
+    Residus de tri performant (>= 70 %) : 8 EUR/t en 2026.
+    Majoration communale possible 2 EUR/t max. Indexation inflation a partir de 2027.
+  reserve: >
+    Le modele ne contient aucune ligne de TGAP pour Urban Rig.
+    La qualification du procede (valorisation matiere vs incineration) reste a etablir juridiquement.
+    L'article 42 de la directive 2010/75/UE assimile a l'incineration tout procede dont les gaz sont brules.
+
+ADEME-MODECOM-2017-COMP:
+  titre: "MODECOM 2017 - Composition detaillee OMR (reference historique)"
+  type: etude_publique
+  fiabilite: certifie_tiers
+  date: 2021-03
+  chemin: "https://medias.amf.asso.fr/upload/files/modecom_2017_analyse_des_resultats_011318.pdf"
+  contenu: "Plastiques 14,7 % des OMR, 37,3 kg/hab, 2 410 kt ; humidite 36,9 %"
+  reserve: "Remplace par ADEME-MODECOM-2024-DATA pour la composition courante."
+
+AMORCE-DT139:
+  titre: "Performances, recettes et couts des unites de traitement thermique, donnees 2020-2021 (DT139)"
+  type: federation
+  fiabilite: litterature
+  date: 2023-03
+  chemin: "https://amorce.asso.fr/publications/performances-recettes-et-couts-des-unites-de-traitement-thermique-des-dechets-donnees-2020-2021-dt139/download"
+  contenu: "Prix moyen 2021 hors transport : 76 EUR/t clients publics, 133 EUR/t clients prives"
+  reserve: "TGAP incluse ou non : non precise dans le document."
+
+ARS-HDF-DASRI:
+  titre: "RETEX DASRI - Audit dechets d'un secteur hospitalier (ARS Hauts-de-France / CPIAS, 2026)"
+  type: etude_publique
+  fiabilite: litterature
+  date: 2026-03-24
+  chemin: "https://www.cpias.chu-lille.fr/wp-content/uploads/sites/15/2026/03/4.-Pierre-Conseil-RETEX-DASRI-ARS-journee-CPIAS.pdf"
+  contenu: "170 000 t de DASRI (24 % des dechets hospitaliers) ; 700 000 t secteur hospitalier 2024 ; 500 a 1 000 EUR/t"
+  reserve: "Le prix cite reprend un referentiel ADEME 2007-2008. Aucun appel d'offres recent disponible."
+
+FNADE-CSR-2023:
+  titre: "Synthese modele economique filiere CSR (FNADE / SN2E, 2023)"
+  type: federation
+  fiabilite: litterature
+  date: 2023-07
+  chemin: "https://www.fnade.org/ressources/documents/source/1/4855-FNADE-SN2E-Synthese-modele-economique-CSR-VDEF.pdf"
+  contenu: "370 kt CSR 2021 ; 2 738 kt refus de tri ; gate fee CSR 40-50 EUR/t ; ISDND 160 EUR/t en 2025"
+  reserve: "Les refus de tri sont une cible potentielle pour Urban Rig. Gate fee negatif (prime recue) a confirmer."

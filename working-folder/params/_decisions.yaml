@@ -153,3 +153,49 @@ D-012:
     des inconnues mais des parametres sous controle. L'effort de preuve se concentre sur les
     parametres exogenes : densite, disponibilite, composition, prix de marche, rendements.
   preuves: [ONEWORLD-COTATION, HARDIN-LOI]
+
+D-013:
+  date: 2026-10-10
+  titre: "Ecart part_humidite : modele 8% vs MODECOM 2024 42,1%"
+  de: 0.08
+  vers: "a decider"
+  unite: fraction
+  motif: >
+    MODECOM 2024 mesure 42,1% d'humidite dans les OMR. Le modele utilise 0,08 (8%).
+    L'ecart est majeur et conditionne le bilan energetique : une humidite elevee reduit
+    le PCI effectif de la charge et augmente la consommation energetique de sechage.
+    La valeur de 8% n'a pas de source documentee dans le depot.
+  preuves: [ADEME-MODECOM-2024-HUM]
+  a_verifier: "Determiner si le 8% est un taux apres pre-tri / sechage partiel, ou une erreur."
+
+D-014:
+  date: 2026-10-10
+  titre: "Ecart part_plastique : modele 30% vs MODECOM 2024 15,8%"
+  de: 0.30
+  vers: "a decider"
+  unite: fraction
+  motif: >
+    MODECOM 2024 mesure 15,8% de plastiques dans les OMR brutes.
+    Le modele utilise 0,30 (30%), soit presque le double.
+    Cet ecart affecte directement le rendement en huile et le PCI de la charge.
+    Le 30% pourrait correspondre a une fraction apres pre-tri (enrichissement plastique),
+    mais ce n'est pas documente.
+  preuves: [ADEME-MODECOM-2024-DATA]
+  a_verifier: "Determiner si le 30% est une composition post-pre-tri. Si oui, documenter le taux d'enrichissement."
+
+D-015:
+  date: 2026-10-10
+  titre: "Position du modele sur la TGAP"
+  de: "absence de TGAP dans le modele"
+  vers: "a decider"
+  unite: EUR/t
+  motif: >
+    La loi de finances 2026 fixe la TGAP traitement thermique a 16 EUR/t (performance >= 65%)
+    et le stockage a 69 EUR/t. Le modele ne contient aucune ligne de TGAP pour Urban Rig.
+    La question juridique : Urban Rig est-il une installation d'incineration au sens de la
+    directive 2010/75/UE (art. 42) ? Si les gaz de pyrolyse sont brules dans un bruleur,
+    la reponse est probablement oui, et la TGAP s'applique (16 EUR/t en 2026, 20 EUR/t en 2030).
+    Si la valorisation matiere (huile vendue) est predominante, une exemption est possible.
+    Impact : 16 EUR/t reduirait le gate fee d'equilibre de ~16 EUR/t, soit un effet majeur.
+  preuves: [CIBS-TGAP-2026, TGAP-DOUANES, GATE-FEES-REF]
+  a_verifier: "Avis juridique sur la qualification du procede. Consultation DGFiP ou avocat fiscaliste specialise dechets."
