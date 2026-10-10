@@ -10,6 +10,7 @@ services:
       - "127.0.0.1:8089:5050"
     environment:
       - PORT=5050
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
     networks:
       - ur_network
 
