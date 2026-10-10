@@ -17,13 +17,14 @@ GC-B2002600:
   type: rapport_laboratoire
   fiabilite: certifie_tiers
   date: 2020-12-05
-  chemin: "supporting-documents/more/gaschromatography.pdf"
+  chemin: "reference/preuves/essais-labo/gaschromatography.pdf"
   contenu: "N2 65,8% ; O2 12,3% ; H2 12,7% ; CH4 3,2% ; CO2 1,7% ; C2-C3 ~1,5% ; CO 0,6% ; H2S <0,5 ppm"
   reserve: "78,1% de l'echantillon est du diluant. Le PCI doit etre recalcule sur la fraction reelle."
 
 KANSO-20002610:
   titre: "Rapport d'analyse des emissions KANSO Technos"
   type: rapport_laboratoire
+  chemin: "reference/preuves/gaz-emissions/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
   fiabilite: certifie_tiers
   date: 2020-12-05
   contenu: "HCl, SOx, NOx, poussieres tres inferieurs aux VLE usuelles"
@@ -31,6 +32,7 @@ KANSO-20002610:
 ICHIMURA-2022:
   titre: "Essais de bilan energetique, usine de Noda, prefecture de Chiba"
   type: essai
+  chemin: "reference/preuves/essais-labo/ichimura-data-2.pdf"
   fiabilite: mesure_interne
   date: 2022
   contenu: "2 essais de 60 kg sur PE/PP/PS. Rendements huile 71,8% et 82,3%. Bilan matiere boucle exactement."
@@ -112,14 +114,14 @@ HARDIN-LOI:
   titre: "Lettre d'intention Hardin, 2 x URC-1000"
   type: lettre_intention
   fiabilite: constructeur
-  chemin: "Technical Findings Log section 16.1, cite dans ANNEX-09 section 9.1.3"
+  chemin: "reference/preuves/business-plans/Business-Plan-Hardin.pdf"
   contenu: "USD 60 M pour 2 x URC-1000, soit environ 30 MEUR par unite de 100 T/jour. Seul prix de transaction reel du depot."
 
 LUFTHANSA-WS:
   titre: "Worksheet for Lufthansa, 200 MT"
   type: feuille_de_calcul_constructeur
   fiabilite: constructeur
-  chemin: "supporting-documents/France  CDG/Copy of Worksheet for Lufthansa-200MT.xlsx"
+  chemin: "reference/preuves/marches-prix/CARA-mai-2019-OM-CAD.xlsx"
   contenu: "Densite de 0,7 T/m3 et debit effectif de 140 T/jour ; fioul 10 000 L/jour. Cite dans ANNEX-09 section 9.1.2."
   reserve: "La valeur de 0,7 n'y est pas justifiee par une mesure."
 
@@ -348,6 +350,7 @@ MALINOWSKI-2023:
 ISUMI-TECH:
   titre: "Isumi Tech Co., rapport R35-339439, bombe calorimetrique JIS M 8814"
   type: rapport_laboratoire
+  chemin: "reference/preuves/char-carbon/Calorie-content-UR-Carbide-1.pdf"
   fiabilite: certifie_tiers
   contenu: "Char issu d'urethane produit sur equipement UR : 32,09 MJ/kg. Seule mesure de PCI de char UR."
 

@@ -1,0 +1,37 @@
+server {
+    server_name ur.tapiscrm.xyz;
+    client_max_body_size 10M;
+
+    auth_basic "Urban Rig — acces restreint";
+    auth_basic_user_file /etc/nginx/.htpasswd-ur;
+
+    location / {
+        proxy_pass http://127.0.0.1:8089;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 120;
+    }
+
+    location /healthz {
+        auth_basic off;
+        proxy_pass http://127.0.0.1:8089/healthz;
+    }
+
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/ur.tapiscrm.xyz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ur.tapiscrm.xyz/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
+
+server {
+    if ($host = ur.tapiscrm.xyz) {
+        return 301 https://$host$request_uri;
+    }
+    listen 80;
+    server_name ur.tapiscrm.xyz;
+    return 404;
+}
