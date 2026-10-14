@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------------------
+# LISTE DE RECHERCHE
+# Tout ce que Stephane demande de trouver est inscrit ici. Claude met a jour le
+# statut a chaque session et signale dans sa reponse tout element introuvable.
+#
+# statut :
+#   a_chercher   pas encore cherche
+#   trouve       trouve et inscrit au registre (champ sources obligatoire)
+#   partiel      trouve en partie (sources + ce qui manque dans "manque")
+#   introuvable  cherche sans succes (champ "cherche" obligatoire : ou et comment)
+#   a_demander   n'existe pas en public : a obtenir aupres d'un detenteur (champ "detenteur")
+# ---------------------------------------------------------------------------
+
+R-001:
+  question: "Etude ADEME ref. 5955 (Deloitte 2022), gisements de dechets plastiques pour le recyclage chimique : tonnages par flux"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: a_demander
+  detenteur: "ADEME librairie : telechargement apres saisie d'une adresse e-mail"
+  cherche: "Page produit lue le 10/10/2026 ; le PDF n'est pas accessible sans formulaire"
+  sources: []
+
+R-002:
+  question: "Tonnages Valorplast par flux (films, flux developpement, PS, PET) et leurs debouches"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: introuvable
+  cherche: "Site Valorplast (delai depasse), rapports Citeo ; l'Observatoire de la reprise 2024 donne les flux en graphiques non lisibles en texte (diapositives 42 a 51)"
+  sources: [RP2-025]
+
+R-003:
+  question: "Composition mesuree des refus de tri franciliens (plastique, PCI, chlore, humidite)"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: a_demander
+  detenteur: "Syctom, SIGIDURS, SIREDOM et exploitants (caracterisations NF X30-472, attestations de PCI pour la TGAP reduite)"
+  cherche: "ORDIF, Syctom, ADEME, Citeo : aucune composition publiee ; seule base nationale OCAPEM 2025 (methode non publiee)"
+  sources: [OCAPEM-2025, RP-034]
+
+R-004:
+  question: "Prix de vente d'une huile de pyrolyse de plastiques vendue comme combustible"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: partiel
+  manque: "Aucune cotation publique ; seulement des bornes (fioul lourd)"
+  cherche: "ICIS, Platts et Argus (payants), rapports d'entreprises, DGEC, INSEE"
+  sources: [PRM-DGEC-NPG-2025-12, PRM-INSEE-EACEI-2024]
+
+R-005:
+  question: "Perimetre exact de la cotation OneWorld (Incoterm, montage, ingenierie, formation, pieces)"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Non public"
+  sources: []
+
+R-006:
+  question: "Devis budgetaire d'une ligne de pre-tri de 6 a 9 t/h (ouvre-sacs, trommels, aimant, convoyeurs)"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: a_demander
+  detenteur: "Constructeurs (Doppstadt, Komptech, Steinert)"
+  cherche: "Marches publics BOAMP et annonces : prix partiels seulement"
+  sources: [PRM-BOAMP-SMTD65-TROMMEL-2024]
+
+R-007:
+  question: "Taux d'assurance d'une installation de traitement de dechets en France"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: a_demander
+  detenteur: "Courtier en assurance"
+  cherche: "Aucun taux francais publie ; un exemple americain (2021)"
+  sources: [PRM-PERHAM-INSURANCE-2021]
+
+R-008:
+  question: "Besoin en combustible et fournisseurs de la chaufferie Thermo-sur-Seine (Vitry, 2031)"
+  demande_par: Stephane
+  date: 2026-10-10
+  statut: partiel
+  manque: "Tonnage, specification et prix non publies dans le dossier de concertation"
+  cherche: "Dossier de concertation CNDP (juillet 2026), presse"
+  sources: [RP2-021]

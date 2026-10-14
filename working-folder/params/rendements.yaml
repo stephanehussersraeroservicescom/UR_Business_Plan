@@ -32,7 +32,7 @@ densite_huile:
   {justification: AFF-RDT-DEN, label: "Masse volumique de l'huile", valeur: 0.85, unite: "kg/L", statut: hypothese, preuves: [V3-MODEL]}
 
 rec_ferreux: {justification: AFF-RDT-TRI, label: "Recuperation ferreux au pre-tri", valeur: 0.90, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
-rec_alu:     {justification: AFF-RDT-TRI, label: "Recuperation aluminium au pre-tri", valeur: 0.75, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+rec_alu:     {justification: AFF-RDT-TRI, label: "Recuperation aluminium au pre-tri", valeur: 0.75, unite: fraction, statut: hypothese, preuves: [V3-MODEL, PRM-MONTEJO-2013, PRM-ALLEGRINI-2015, PRM-KUCHTA-CEWEP-2016]}
 rec_verre:   {justification: AFF-RDT-TRI, label: "Recuperation verre au pre-tri", valeur: 0.70, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
-criblage_char: {justification: AFF-RDT-CRI, label: "Criblage du char au post-tri", valeur: 0.85, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
-rec_metaux_char: {justification: AFF-RDT-CRI, label: "Metaux recuperes du char", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [V3-MODEL]}
+criblage_char: {justification: AFF-RDT-CRI, label: "Criblage du char au post-tri", valeur: 0.85, unite: fraction, statut: hypothese, preuves: [V3-MODEL, PRM-TF-SCREENING-ND, PRM-911MET-2016]}
+rec_metaux_char: {justification: AFF-RDT-CRI, label: "Metaux recuperes du char", valeur: 0.80, unite: fraction, statut: hypothese, preuves: [V3-MODEL, PRM-ALLEGRINI-2015, PRM-KUCHTA-CEWEP-2016]}

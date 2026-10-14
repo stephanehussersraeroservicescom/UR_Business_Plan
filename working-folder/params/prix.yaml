@@ -6,7 +6,7 @@ gate_fee:
   valeur: 110
   unite: "EUR/T"
   statut: hypothese
-  preuves: [V3-MODEL]
+  preuves: [V3-MODEL, PRM-SYCTOM-RA-2024, PRM-AMP-TARIFS-2025, PRM-BOFIP-TGAP-2025]
   bornes: {bas: 80, haut: 800}
   note: "VARIABLE D'AJUSTEMENT principale. Bareme V3 : OMR 100, DASRI 800."
 

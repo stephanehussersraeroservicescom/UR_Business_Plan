@@ -2,13 +2,16 @@
 # REGISTRE DES PREUVES
 # Chaque parametre du modele pointe vers une ou plusieurs entrees de ce fichier.
 # fiabilite : certifie_tiers > mesure_interne > constructeur > litterature > aucune
+# Regle 16 (14/10/2026) : une entree dont le chemin est dans ARCHIVE-NON-VERIFIE vaut
+# "aucune", quelle que soit la fiabilite ecrite (le moteur et le controle l'imposent).
 # ---------------------------------------------------------------------------
 
 NKKK-2020:
   titre: "Certificat de qualite NKKK (Nippon Kaiji Kentei Kyokai)"
   type: rapport_laboratoire
   fiabilite: certifie_tiers
-  chemin: "annexe-technique section 2.2"
+  chemin: "ARCHIVE-NON-VERIFIE (ancien renvoi : annexe technique, section 2.2)"
+  a_retrouver: "Certificat NKKK d'origine : non identifie dans reference/preuves au 14/10/2026"
   contenu: "PCI 43,27 MJ/kg ; soufre 0,014% ; chlore 0,0001% soit 1 ppm ; point eclair <=40C ; viscosite 1,11 mm2/s a 50C ; cendres 0,005%"
   reserve: "L'annexe signale que l'echantillon est peut-etre une fraction legere uniquement. Charge d'origine non documentee."
 
@@ -17,14 +20,14 @@ GC-B2002600:
   type: rapport_laboratoire
   fiabilite: certifie_tiers
   date: 2020-12-05
-  chemin: "reference/preuves/essais-labo/gaschromatography.pdf"
+  chemin: "reference/preuves/tests-independants/gaschromatography.pdf"
   contenu: "N2 65,8% ; O2 12,3% ; H2 12,7% ; CH4 3,2% ; CO2 1,7% ; C2-C3 ~1,5% ; CO 0,6% ; H2S <0,5 ppm"
   reserve: "78,1% de l'echantillon est du diluant. Le PCI doit etre recalcule sur la fraction reelle."
 
 KANSO-20002610:
   titre: "Rapport d'analyse des emissions KANSO Technos"
   type: rapport_laboratoire
-  chemin: "reference/preuves/gaz-emissions/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
+  chemin: "reference/preuves/tests-independants/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
   fiabilite: certifie_tiers
   date: 2020-12-05
   contenu: "HCl, SOx, NOx, poussieres tres inferieurs aux VLE usuelles"
@@ -32,7 +35,7 @@ KANSO-20002610:
 ICHIMURA-2022:
   titre: "Essais de bilan energetique, usine de Noda, prefecture de Chiba"
   type: essai
-  chemin: "reference/preuves/essais-labo/ichimura-data-2.pdf"
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
   fiabilite: mesure_interne
   date: 2022
   contenu: "2 essais de 60 kg sur PE/PP/PS. Rendements huile 71,8% et 82,3%. Bilan matiere boucle exactement."
@@ -42,7 +45,7 @@ UR2000-JP:
   titre: "Brochure technique URC-2000, Oneworld Corporation"
   type: documentation_constructeur
   fiabilite: constructeur
-  chemin: "supporting-documents/UR2000-JP.pdf"
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
   contenu: >
     Plans d'implantation 1 et 5 unites ; fiche SPEC ; bruleur 833 kcal/s ; 20 kW en continu ;
     zones de temperature ; couche catalytique de retrait du chlore avant condenseur ;
@@ -103,7 +106,7 @@ ONEWORLD-COTATION:
   titre: "Cotation OneWorld Corporation pour l'URC-2000"
   type: cotation_commerciale
   fiabilite: constructeur
-  chemin: "pour-finaliser/ANNEX-09-Equipment-Configuration.md, section 9.1.2"
+  chemin: "ARCHIVE-NON-VERIFIE/pour-finaliser/ANNEX-09-Equipment-Configuration.md, section 9.1.2"
   contenu: >
     Prix de base URC-2000 : 50,0 MEUR, cite comme "OneWorld Corporation pricing".
     Stephane Husser est le representant commercial et fixe le prix. Parametre sous
@@ -121,7 +124,7 @@ LUFTHANSA-WS:
   titre: "Worksheet for Lufthansa, 200 MT"
   type: feuille_de_calcul_constructeur
   fiabilite: constructeur
-  chemin: "reference/preuves/marches-prix/CARA-mai-2019-OM-CAD.xlsx"
+  chemin: "reference/preuves/documents-constructeur/Worksheet-Lufthansa-200MT.xlsx"
   contenu: "Densite de 0,7 T/m3 et debit effectif de 140 T/jour ; fioul 10 000 L/jour. Cite dans ANNEX-09 section 9.1.2."
   reserve: "La valeur de 0,7 n'y est pas justifiee par une mesure."
 
@@ -174,7 +177,7 @@ BP-CHAPITRE-5:
   titre: "Plan d'affaires, chapitre 5, Technology and Operations, section 5.6"
   type: plan_affaires
   fiabilite: aucune
-  chemin: "business-plan/05-technology-operations.md"
+  chemin: "ARCHIVE-NON-VERIFIE/business-plan/05-technology-operations.md"
   contenu: >
     Maintenance majeure annuelle : 1 a 2 semaines. Maintenance planifiee totale 5 a 7% (2 a 3
     semaines). Indisponibilite non planifiee visee inferieure a 3%. Disponibilite totale 90 a 92%,
@@ -205,7 +208,8 @@ ADEME-MODECOM:
   titre: "ADEME, campagne nationale de caracterisation MODECOM 2017 et premiers resultats 2024"
   type: etude_nationale
   fiabilite: certifie_tiers
-  chemin: "Annexe F section 2.1 ; https://www.ademe.fr/presse/communique-national/modecom-2017-ce-que-revelent-les-poubelles-des-francais"
+  ancien_renvoi: "Annexe F section 2.1 (ancien plan, archive)"
+  chemin: "https://www.ademe.fr/presse/communique-national/modecom-2017-ce-que-revelent-les-poubelles-des-francais"
   contenu: >
     Composition des OMR 2017 : putrescibles 27%, plastiques 15%, textiles sanitaires 14%,
     papiers 8%, cartons 6%, verre 5%, metaux 3%, composites 3%, fines et divers 19%.
@@ -216,7 +220,7 @@ ANNEXE-02:
   titre: "Annexe 2, Technical Evidence (mars 2026)"
   type: annexe_plan_affaires
   fiabilite: mesure_interne
-  chemin: "pour-finaliser/ANNEX-02-Technical-Evidence.md"
+  chemin: "ARCHIVE-NON-VERIFIE/pour-finaliser/ANNEX-02-Technical-Evidence.md"
   contenu: >
     Consolide les essais Asada Shokai (9 essais mono-polymere, 2 essais de bilan energetique),
     les rendements par matiere, l'analyse NKKK, la GC, le bilan energetique et les emissions.
@@ -230,7 +234,7 @@ ANNEXE-03:
   titre: "Annexe 3, Output Markets and Pricing (mars 2026)"
   type: annexe_plan_affaires
   fiabilite: litterature
-  chemin: "pour-finaliser/ANNEX-03-Output-Markets-and-Pricing.md"
+  chemin: "ARCHIVE-NON-VERIFIE/pour-finaliser/ANNEX-03-Output-Markets-and-Pricing.md"
   contenu: >
     Prix de l'huile par fraction (bas 480, moyen 641, haut 895 EUR/T), benchmarks ICIS, naphta,
     gasoil, HFO. Char en cinq paliers de marche (50 a 350 EUR/T). Metaux : ferreux 250-350,
@@ -240,7 +244,7 @@ ANNEXE-05:
   titre: "Annexe 5, Sector MSW France (mars 2026, session 10)"
   type: annexe_plan_affaires
   fiabilite: litterature
-  chemin: "pour-finaliser/ANNEX-05-Sector-MSW-France.md"
+  chemin: "ARCHIVE-NON-VERIFIE/pour-finaliser/ANNEX-05-Sector-MSW-France.md"
   contenu: >
     Decomposition complete des 13 categories MODECOM, retrait des materiaux non traitables
     (109,5 kg/T), repartition par polymere (PlasticsEurope), rendements ponderes :
@@ -250,7 +254,7 @@ ANNEXE-09:
   titre: "Annexe 9, Equipment Configuration (mars 2026)"
   type: annexe_plan_affaires
   fiabilite: constructeur
-  chemin: "pour-finaliser/ANNEX-09-Equipment-Configuration.md"
+  chemin: "ARCHIVE-NON-VERIFIE/pour-finaliser/ANNEX-09-Equipment-Configuration.md"
   contenu: >
     Catalogue OneWorld, prix URC-2000 50 MEUR, ~15 ETP, delai 10 mois, options PRIMO,
     SEA CORAL, FORCE 9. CAPEX par secteur : pre-tri MSW 3,0 MEUR ; installation, fret,
@@ -260,7 +264,7 @@ GATE-FEES-REF:
   titre: "Reference gate fees France et Europe (fevrier 2026)"
   type: etude_marche_interne
   fiabilite: litterature
-  chemin: "supporting-documents/GATE-FEES-REFERENCE.md"
+  chemin: "ARCHIVE-NON-VERIFIE/supporting-documents/GATE-FEES-REFERENCE.md"
   contenu: >
     SYCTOM 2023 : OMR incineration 103 EUR/T + TGAP 15. ADEME/SINOE 2022 : incineration
     85-110 EUR/T ; ISDND 50-80 EUR/T hors TGAP. TGAP 2025 : enfouissement 65, incineration
@@ -274,7 +278,7 @@ BP-ANNEXE-B:
   titre: "Plan d'affaires, annexe B, projections financieres cas CDG"
   type: plan_affaires
   fiabilite: aucune
-  chemin: "Urban-Rig-Annexes, section B.8.2"
+  chemin: "ARCHIVE-NON-VERIFIE : Urban-Rig-Annexes.docx (fichier du projet claude.ai), section B.8.2"
   contenu: "CAPEX 16-21 MEUR ; personnel 15 ETP a 65 kEUR charges ; maintenance 600 kEUR ; assurance, admin, conformite 450 kEUR."
 
 # ------------------------------------------------ Marches
@@ -350,7 +354,7 @@ MALINOWSKI-2023:
 ISUMI-TECH:
   titre: "Isumi Tech Co., rapport R35-339439, bombe calorimetrique JIS M 8814"
   type: rapport_laboratoire
-  chemin: "reference/preuves/char-carbon/Calorie-content-UR-Carbide-1.pdf"
+  chemin: "reference/preuves/documents-constructeur/Calorie-content-UR-Carbide-1.pdf"
   fiabilite: certifie_tiers
   contenu: "Char issu d'urethane produit sur equipement UR : 32,09 MJ/kg. Seule mesure de PCI de char UR."
 

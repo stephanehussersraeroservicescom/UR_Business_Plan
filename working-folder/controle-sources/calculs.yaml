@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# REGISTRE DES CALCULS
+# Tout chiffre d'un livrable qui n'est pas lu tel quel dans une source est un
+# calcul. Il est enregistre ici, avec ses entrees sourcees, et cite dans le
+# texte sous la forme [calc:ID]. verifier_sources.py recalcule chaque entree
+# et signale tout ecart avec le champ "resultat".
+#
+# Format :
+#   ID:
+#     description: ce que represente le resultat
+#     formule: expression arithmetique sur les noms d'entrees (+ - * / ** min max round abs)
+#     entrees:
+#       nom: {valeur: 123, unite: kt, source: ID-DU-REGISTRE, emplacement: "p. 12"}
+#       autre: {calc: AUTRE-ID}          # resultat d'un autre calcul
+#     resultat: valeur annoncee dans le texte
+#     unite: unite du resultat
+#     tolerance: ecart relatif admis (defaut 0,005)
+# ---------------------------------------------------------------------------
+
+CALC-TAUX-RECYCL-PLAST-MENAGER-2025:
+  description: "Taux de recyclage des emballages menagers plastiques en 2025"
+  formule: "recycle / mis_sur_marche"
+  entrees:
+    recycle: {valeur: 346, unite: kt, source: CITEO-RA-2025, emplacement: "p. 29"}
+    mis_sur_marche: {valeur: 1174, unite: kt, source: CITEO-RA-2025, emplacement: "p. 13"}
+  resultat: 0.2947
+  unite: fraction
+
+CALC-ECART-BALLES-RECYCLE-2024:
+  description: "Plastique perdu entre les balles reprises et le tonnage compte comme recycle, 2024"
+  formule: "balles - recycle"
+  entrees:
+    balles: {valeur: 473033, unite: t, source: RP2-025, emplacement: "diapositive 5"}
+    recycle: {valeur: 324000, unite: t, source: CITEO-RA-2025, emplacement: "p. 29"}
+  resultat: 149033
+  unite: t
+
+CALC-FILMS-OMR-2024:
+  description: "Films plastiques dans les OMR (sous-categories 07.01 a 07.03)"
+  formule: "sacs_poubelle + autres_sacs + films_emballage"
+  entrees:
+    sacs_poubelle: {valeur: 496503, unite: t, source: RP2-001, emplacement: "07.01"}
+    autres_sacs: {valeur: 165000, unite: t, source: RP2-001, emplacement: "07.02"}
+    films_emballage: {valeur: 619942, unite: t, source: RP2-001, emplacement: "07.03"}
+  resultat: 1281445
+  unite: t
+
+CALC-PLAST-EMB-REFUS-IDF-2024:
+  description: "Emballages plastiques identifiables dans les refus de tri franciliens (plancher OCAPEM)"
+  formule: "refus_idf * (rigides + souples)"
+  entrees:
+    refus_idf: {valeur: 146368, unite: t, source: RP-034, emplacement: "diapositive 17"}
+    rigides: {valeur: 0.075, unite: fraction, source: OCAPEM-2025, emplacement: "tableau 3"}
+    souples: {valeur: 0.045, unite: fraction, source: OCAPEM-2025, emplacement: "tableau 3"}
+  resultat: 17564
+  unite: t
+  tolerance: 0.001

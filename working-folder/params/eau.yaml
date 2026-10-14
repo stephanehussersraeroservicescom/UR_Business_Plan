@@ -10,7 +10,7 @@ conso_carbonate:
   decision: D-008
   note: "CaCO3 + 2 HCl -> CaCl2 + H2O + CO2. Le CaCl2 est non volatil et reste dans le concentrat."
 
-prix_carbonate:  {label: "Prix du carbonate", valeur: 120, unite: "EUR/T", statut: hypothese, preuves: [AUCUNE]}
+prix_carbonate:  {label: "Prix du carbonate", valeur: 120, unite: "EUR/T", statut: hypothese, preuves: [AUCUNE, PRM-GAB22-AMENDEMENTS-2022, PRM-INTRATEC-CACO3-2025]}
 
 part_organique_eau:
   label: "Teneur en phase organique de l'eau"
@@ -45,5 +45,5 @@ cout_concentrat:
   valeur: 110
   unite: "EUR/T"
   statut: hypothese
-  preuves: [AUCUNE]
+  preuves: [AUCUNE, PRM-GISTRID-TTD-2019]
   note: "Apres neutralisation, melange de CaCl2 et CaF2, non acide. Tarif non dangereux. A confirmer (metaux lourds)."

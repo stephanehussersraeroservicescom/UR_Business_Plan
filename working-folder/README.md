@@ -1,67 +1,37 @@
-# Working Folder — modèle Urban Rig traçable
+# Dossier de travail : sources, contrôle et modèle
 
-Dossier de travail. Rien ici n'est validé tant que ce n'est pas explicitement accepté.
+Mis à jour le 14/10/2026. L'ancien README (septembre 2026) est archivé dans `ARCHIVE-NON-VERIFIE/working-folder/README-septembre-2026.md`.
 
-## État au 19 septembre 2026
+## Contenu
 
-Structure créée. Les fichiers de paramètres, le moteur et le générateur HTML sont
-à déposer depuis l'archive `urmodel.zip` produite en conversation, ou à écrire
-directement ici.
+| Dossier ou fichier | Rôle | Statut |
+|---|---|---|
+| `reference/sources-externes/` | Registre des sources publiques (`registre-sources.yaml`), PDF, index cliquable | Sources |
+| `reference/preuves/` | Documents d'origine : constructeur, essais, rapports remis à la préfecture de Chiba, documents fournis | Sources |
+| `controle-sources/` | Contrôle automatique, calculs enregistrés, liste de recherche, arbitrages des paramètres, prompts de vérification externe, rapports des vérificateurs | Outils |
+| `params/` | Paramètres du modèle (un fichier par domaine), preuves internes, décisions, justifications, arbitrages | Valeurs héritées, à re-sourcer |
+| `engine/`, `run.py`, `rapport.py` | Moteur de calcul et rapport HTML (aucune valeur en dur dans le code) | Outils |
+| `app.py`, `Dockerfile`, `requirements.txt` | Application web du modèle, déployée par `deploy/` | Outils |
+| `METHODE-DE-TRAVAIL.md` | La méthode par briques | Règle |
+| `out/` | Sorties générées, non versionnées | |
 
-## Objectif
+## Les valeurs du modèle
 
-Une présentation HTML, générée par Python, qui montre pour chaque valeur citée :
+Les valeurs de `params/*.yaml` sont héritées de l'ancien modèle. Elles restent en place pour que le moteur tourne, mais aucune n'entre dans le nouveau plan sans l'une de ces trois justifications :
 
-- la valeur retenue et son unité
-- son statut (certifié tiers, mesuré, constructeur, calculé, littérature, hypothèse, inconnu)
-- la décision qui l'a fixée, datée et motivée
-- les documents sources qui l'étayent
-- ce qui reste à vérifier
+1. une source du registre (`[ID]`) ;
+2. un calcul enregistré dans `controle-sources/calculs.yaml` (`[calc:ID]`) ;
+3. une décision datée de Stéphane dans `params/_decisions.yaml` (`[hyp:D-xxx]`).
 
-Autrement dit : cliquer sur un chiffre du compte de résultat et remonter jusqu'au
-rapport de laboratoire.
+Une preuve de `params/_evidence.yaml` dont le document est dans `ARCHIVE-NON-VERIFIE/` vaut « aucune », pour le moteur comme pour le contrôle (règle 16). Une valeur ne change jamais sans une décision datée.
 
-## Arborescence prévue
+## Commandes
+
+Depuis la racine du dépôt :
 
 ```
-working-folder/
-  params/          paramètres en YAML, un fichier par domaine
-    _evidence.yaml    registre des preuves
-    _decisions.yaml   journal des décisions
-    capacite.yaml  composition.yaml  rendements.yaml  energie.yaml
-    eau.yaml       prix.yaml         capex.yaml       opex.yaml
-    carbone.yaml   finance.yaml
-  engine/
-    modele.py      moteur de calcul, aucune valeur numérique
-    rapport.py     générateur HTML
-  run.py
-  out/             sorties générées, non versionnées
+python3 working-folder/controle-sources/verifier_sources.py          # contrôle des documents, registres et paramètres
+python3 working-folder/run.py                                        # calcul du modèle et rapport HTML (out/)
 ```
 
-## Règle de travail
-
-Aucune valeur en dur dans le code. Tout paramètre cite au moins une preuve,
-même `AUCUNE`. Toute valeur qui s'écarte du V3 ouvre une entrée datée dans
-`_decisions.yaml`.
-
-## Corrections déjà actées
-
-| # | Objet | De | Vers |
-|---|---|---|---|
-| D-001 | PCI du gaz de procédé issu du plastique | 5,54 MJ/kg | 37,3 MJ/kg |
-| D-002 | PCI du gaz de procédé issu de l'organique | 0,5 MJ/kg | 11,0 MJ/kg |
-| D-003 | Fioul de chauffe en régime normal | 7 494 L/j | 0, plus provision 5 % |
-| D-004 | Teneur en chlore de l'huile | 100 ppm | 1 ppm (certificat NKKK) |
-| D-005 | Recette crédits carbone | 2 499 457 €/an | 0 |
-| D-006 | Bâtiment | 5 M€ forfaitaires | surfaces des plans × prix marché |
-| D-007 | Maintenance | 4 % dès l'année 1 | 1 % jusqu'en année 4, 4 % en année 10 |
-| D-008 | Traitement de l'eau | absent | neutralisation, décantation, SEA CORAL |
-
-## Erreur corrigée dans le tableur V4
-
-La formule du gate fee d'équilibre comptait les gate fees deux fois. Valeur
-annoncée à tort : 116 €/t. **Valeur réelle : 9,66 €/t** sur une machine, et
-négative à cinq machines. Corrigée le 19 septembre 2026.
-
-C'est la raison d'être de ce dossier : une erreur de formule dans un tableur
-est invisible, une erreur dans une fonction Python se teste.
+Conventions de citation et procédure de relecture : `controle-sources/README.md`.

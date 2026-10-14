@@ -1,0 +1,218 @@
+# ---------------------------------------------------------------------------
+# PARAMETRES A ARBITRER (revue des sources du 10/10/2026)
+# Pour chaque parametre : valeur actuelle, ce que disent les sources, verdict,
+# et la question a trancher par S. Husser. AUCUNE valeur n'a ete modifiee.
+# Les sources sont dans reference/sources-externes/registre-sources.yaml (PRM-xxx).
+# Une fois tranche : modifier la valeur dans le fichier du parametre, ouvrir une
+# entree dans _decisions.yaml, ajouter les sources dans "preuves", puis retirer
+# l'entree d'ici.
+# ---------------------------------------------------------------------------
+
+# ============================================================ PRIX
+prix_huile_combustible:
+  actuel: "350 EUR/t"
+  sources_disent: "Aucune cotation publique d'huile de pyrolyse vendue comme combustible. Bornes : fioul basse teneur en soufre Rotterdam 316-326 EUR/t (nov.-dec. 2025) ; fioul lourd livre a l'industrie francaise 576 EUR/t (2024)."
+  sources: [PRM-DGEC-NPG-2025-12, PRM-INSEE-EACEI-2024, PRM-SDES-PETROLE-2026]
+  verdict: au-dessus de la fourchette de gros
+  question: "Vente en gros (environ 320 EUR/t, au prix du fioul lourd de reference) ou contrat direct avec un industriel (jusqu'a environ 576 EUR/t) ? Un devis d'acheteur trancherait."
+qualite_huile:
+  actuel: "craqueur (641 EUR/t, decision D-004)"
+  sources_disent: "Le prix craqueur suppose une vente a un vapocraqueur. En vente comme combustible, l'huile ne compte pas comme recyclage et vaut le prix du fioul (voir prix_huile_combustible)."
+  sources: [PRM-DGEC-NPG-2025-12]
+  verdict: a confirmer
+  question: "L'huile part-elle en vapocraquage (contrat a obtenir) ou en combustible ? Le choix change le prix d'environ 300 EUR/t."
+prix_char:
+  actuel: "100 EUR/t"
+  sources_disent: "Aucun prix de char de dechets melanges. Plafond en usage combustible : houille 215 EUR/t, coke de petrole 254 EUR/t (2024). Le certificat europeen du biochar exclut ce type de char."
+  sources: [PRM-INSEE-EACEI-2024, PRM-EBC-POSLIST-V10, PRM-EMERTON-RCB-2024]
+  verdict: aucune source
+  question: "Retenir 0 EUR/t (debouche non demontre), voire un cout d'elimination, tant qu'aucun acheteur n'est identifie ?"
+prix_elec:
+  actuel: "0,15 EUR/kWh"
+  sources_disent: "Eurostat, France, 2 a 20 GWh/an, hors TVA : 0,1409 et 0,1446 (2024) ; 0,1296 et 0,1212 (2025)."
+  sources: [PRM-EUROSTAT-NRGPC205-ID-2025, PRM-EUROSTAT-NRGPC205-IE-2026]
+  verdict: au-dessus (prudent)
+  question: "Garder 0,15 par prudence ou passer a 0,125 (moyenne 2025 Eurostat) ?"
+prix_verre:
+  actuel: "30 EUR/t"
+  sources_disent: "Citeo 2024 : 24,7 EUR/t pour du verre propre de collecte separee (plus 9,6 EUR/t d'aide au transport, reservee aux collectivites). Le verre extrait d'OMR est plus sale."
+  sources: [PRM-CITEO-OBSREPRISE-2024]
+  verdict: au-dessus
+  question: "Retenir 0 a 25 EUR/t selon la qualite du verre extrait ?"
+prix_carbone:
+  actuel: "50 EUR/t CO2"
+  sources_disent: "EU ETS : 73,43 EUR/t en moyenne 2025 ; 72,85-73,67 en avril 2026."
+  sources: [PRM-INSTRAT-ETS-2025, PRM-SPGLOBAL-EUA-2026-04]
+  verdict: en dessous
+  question: "Sans effet tant que reduction_carbone_certifiee = 0. Mettre a jour a 73 EUR/t pour coherence ?"
+
+# ============================================================ CAPEX
+pre_tri:
+  actuel: "1 080 000 EUR"
+  sources_disent: "Aucun prix public d'une ligne complete de 6 a 9 t/h. Partiel : 0,40 a 0,81 MEUR installes pour deux trommels et un aimant (marche public SMTD 65 2024, annonces). Ouvre-sacs et convoyeurs non chiffres."
+  sources: [PRM-BOAMP-SMTD65-TROMMEL-2024, PRM-HELLOPRO-MACHINES-CDT-2026, PRM-OU-CHEDESIGN-COSTEST]
+  verdict: aucune source pour le perimetre complet
+  question: "Demander un devis budgetaire a un constructeur (Doppstadt, Komptech, Steinert) pour la ligne complete."
+post_tri:
+  actuel: "430 000 EUR"
+  sources_disent: "0,11 a 0,25 MEUR installes (separateur a courants de Foucault 46-75 kEUR, overband 5,4 kEUR, crible 38-39 kEUR) plus convoyeurs."
+  sources: [PRM-MACHINESEEKER-ECS-2026, PRM-MACHINESEEKER-PUTZ-OVERBAND-2026, PRM-WERKTUIGEN-SCREENBEE-2026, PRM-OU-CHEDESIGN-COSTEST]
+  verdict: au-dessus
+  question: "Ramener a environ 0,25 MEUR ou obtenir un devis ?"
+atex:
+  actuel: "650 000 EUR"
+  sources_disent: "Depoussierage seul : 0,07 a 0,43 MEUR (4 points de captage). Zonage ATEX electrique et gaz non chiffre."
+  sources: [PRM-HELLOPRO-DEPOUSSIEREUR-2026, PRM-CELOSIA-DDAE-VENTILATION-2024]
+  verdict: aucune source pour le perimetre complet
+  question: "Faire chiffrer par un bureau d'etudes a partir du plan de zonage ATEX."
+vrd_par_unite:
+  actuel: "400 000 EUR par unite supplementaire"
+  sources_disent: "Seulement des lots VRD de sites entiers (1,27 et 2,70 MEUR HT, 2024) ; NREL : 10 % du cout des unites de procede."
+  sources: [PRM-BOAMP-SITREVA-DREUX-2024, PRM-COTENTIN-QUAI-TRANSFERT-2024, PRM-NREL-GRIFFIN-CFP-SI-2024]
+  verdict: aucune source par unite
+  question: "Remplacer par un pourcentage du CAPEX de procede (10 %, NREL) ?"
+ingenierie_base:
+  actuel: "750 000 EUR"
+  sources_disent: "Ingenierie 4 a 20 % de l'investissement (Peters et Timmerhaus) ; 15 a 20 % (NETL) ; 20 % plus 10 % demarrage et permis (NREL). 750 kEUR = 5,3 % hors machine, 1,2 % du CAPEX total."
+  sources: [PRM-POLIMI-PT-PLANTECON-2015, PRM-NETL-QGESS-COST-2021, PRM-NREL-GRIFFIN-CFP-SI-2024, PRM-BOAMP-SIECEUTOM-AMO-2024]
+  verdict: confirme seulement si le prix OneWorld inclut l'ingenierie de procede
+  question: "Le prix de 50 MEUR inclut-il l'ingenierie de procede ? Si non, la ligne est sous-estimee."
+ingenierie_step:
+  actuel: "20 %"
+  sources_disent: "Aucune source."
+  sources: []
+  verdict: aucune source
+  question: "Documenter ce choix comme decision, ou le supprimer ?"
+taux_aleas:
+  actuel: "5 %"
+  sources_disent: "5 a 15 % (procede etabli, Peters et Timmerhaus) ; 10 % (NREL, n-ieme usine) ; 15 a 30 % projet plus 5 a 20 % procede (NETL, AACE) pour une premiere de serie."
+  sources: [PRM-POLIMI-PT-PLANTECON-2015, PRM-NREL-GRIFFIN-CFP-SI-2024, PRM-NETL-QGESS-COST-2021, PRM-AACE-18R97-2005]
+  verdict: en dessous
+  question: "Passer a 15 % au moins pour une premiere unite en France ?"
+installation:
+  actuel: "200 000 EUR (0,4 % du prix machine)"
+  sources_disent: "Installation : 22 a 55 % du cout des equipements (manuels de genie chimique) ; facteur 2,2 (NREL)."
+  sources: [PRM-OU-CHEDESIGN-COSTEST, PRM-NREL-GRIFFIN-CFP-SI-2024]
+  verdict: en dessous, sauf si le prix OneWorld inclut le montage
+  question: "La cotation OneWorld inclut-elle le montage ? Preciser l'Incoterm et le perimetre."
+fret:
+  actuel: "400 000 EUR (0,8 %)"
+  sources_disent: "Marges transport et assurance 4,9 a 6,2 % (OCDE, toutes marchandises) ; environ 10 % (manuel)."
+  sources: [PRM-OECD-MIAO-CIFFOB-2017, PRM-POLIMI-PT-PLANTECON-2015]
+  verdict: en dessous
+  question: "Obtenir un devis de transport Japon-France."
+formation:
+  actuel: "300 000 EUR"
+  sources_disent: "Aucune source specifique (NETL : provision de pre-exploitation de 2 % du cout total plus 6 mois de personnel)."
+  sources: [PRM-NETL-QGESS-COST-2021]
+  verdict: aucune source
+  question: "A faire preciser dans la cotation OneWorld."
+pieces:
+  actuel: "2 000 000 EUR (4 %)"
+  sources_disent: "Pieces de rechange initiales : 0,5 % du cout total de l'usine (NETL)."
+  sources: [PRM-NETL-QGESS-COST-2021]
+  verdict: au-dessus
+  question: "A faire preciser dans la cotation OneWorld (lot de pieces inclus ?)."
+
+# ============================================================ OPEX ET FINANCE
+etp_coeur_base:
+  actuel: "15 ETP"
+  sources_disent: "Incinerateur mature mis a l'echelle : environ 20 ETP. Projets de pyrolyse mis a l'echelle de 66 kt/an : 57 a 66 emplois au total."
+  sources: [PRM-BETHUNE-RAD-CVE-2021, PRM-PRUVIA-GENDORF-2025, PRM-QUANTAFUEL-SUNDERLAND-2022]
+  verdict: en dessous
+  question: "Faire valider l'organigramme 5 x 8 par OneWorld ; retenir 20 ETP au minimum ?"
+etp_tri:
+  actuel: "7 ETP"
+  sources_disent: "Centres de tri d'emballages : 21 a 32 emplois a 6-9 t/h (procede plus manuel) ; unite CSR : environ 20 postes pour 30 kt."
+  sources: [PRM-BXM-CENTRETRI-2023, PRM-NORMANTRI-CP-2025, PRM-PAPREC-BRIVE-CSR]
+  verdict: en dessous (repere imparfait)
+  question: "Definir la ligne de pre-tri et son effectif avec le constructeur."
+assurance:
+  actuel: "0,5 % du CAPEX"
+  sources_disent: "Aucun taux francais publie. Un incinerateur americain : 1,1 % de la valeur assuree en 2021 apres une hausse d'environ sept fois. Durcissement du marche documente en France et au Royaume-Uni (incendies)."
+  sources: [PRM-PERHAM-INSURANCE-2021, PRM-FEDEREC-INCENDIES-2025, PRM-SENAT-PPL24-079-2025]
+  verdict: aucune source directe, probablement sous-estime
+  question: "Demander une cotation a un courtier ; en attendant, retenir 1 % ?"
+charbon_actif:
+  actuel: "40 000 EUR/an"
+  sources_disent: "Consommation de reference 0,53 kg/t de dechets (Eastcroft 2019) ; prix 1 621 a 2 414 EUR/t ; soit 56 700 a 84 400 EUR/an pour 66 kt."
+  sources: [PRM-EASTCROFT-APR-2019, PRM-IMARC-AC-PRICE-2026, PRM-INTRATEC-AC-PRICE-2025]
+  verdict: en dessous
+  question: "Garantie de consommation a obtenir du constructeur ; ou mettre a zero si l'eau reste en boucle fermee."
+charge_an1:
+  actuel: "70 %"
+  sources_disent: "Usines traitant des solides : en moyenne moins de 64 % de la capacite en fin de premiere annee (RAND, Merrow) ; plan Quantafuel Skive : 60 %."
+  sources: [PRM-PROCESSING-JJ-2023, PRM-QUANTAFUEL-SKIVE-2022, PRM-RAND-R2569-1981]
+  verdict: optimiste
+  question: "Retenir 50 a 60 % en annee 1 et ajouter un scenario degrade ?"
+charge_an2:
+  actuel: "85 %"
+  sources_disent: "Pas de plage chiffree pour l'annee 2 ; echecs documentes (Brightmark Ashley a 5 %, Fulcrum Sierra arretee)."
+  sources: [PRM-PROCESSING-JJ-2023, PRM-WASTEDIVE-BRIGHTMARK-2025, PRM-WASTEDIVE-FULCRUM-2024]
+  verdict: optimiste
+  question: "Retenir 75 a 80 % en annee 2 ?"
+taux_interet:
+  actuel: "12 % pour 70 % de dette"
+  sources_disent: "Nouveaux credits aux entreprises en France : 3,64 % (juin 2026, Banque de France) ; dette de projet : environ 6,0 a 7,5 % (Euribor prevu a 3 % plus marge de 300 a 450 pb, marge de 2011)."
+  sources: [PRM-BDF-FINENT-2026-06, PRM-BCE-PROJ-2026-09, PRM-IJGLOBAL-WASTE-PFI-2011]
+  verdict: au-dessus, incoherent avec 70 % de dette
+  question: "Quelle structure retenir : dette senior a 6-7,5 % avec moins de levier, ou fonds propres ?"
+
+# ============================================================ TECHNIQUE
+rendement_bruleur:
+  actuel: "0,85"
+  sources_disent: "Reacteur de pyrolyse pilote chauffe par bruleur : 0,53 a 0,56 au global ; 0,60 a 0,68 sans recuperation de chaleur ; 0,85 seulement avec des fumees ramenees vers 300 degres C (rechauffeur d'air)."
+  sources: [PRM-HONUS-2014, PRM-DOE-PHTS10-2006, PRM-HTRI-UKHTC-2024]
+  verdict: au-dessus sauf recuperation de chaleur documentee
+  question: "La URC-2000 recupere-t-elle la chaleur des fumees ? Demander la temperature de sortie des fumees a OneWorld."
+rec_ferreux:
+  actuel: "0,90"
+  sources_disent: "Machefers : 0,84 a 0,87 au mieux ; 8 usines de tri mecano-biologique : 0,35 a 0,84, moyenne 0,61."
+  sources: [PRM-ALLEGRINI-2015, PRM-KUCHTA-CEWEP-2016, PRM-MONTEJO-2013]
+  verdict: optimiste
+  question: "Retenir 0,80 ?"
+rec_verre:
+  actuel: "0,70"
+  sources_disent: "0,684 avec une ligne de tri optique du verre ; 0,05 a 0,49 en tri manuel."
+  sources: [PRM-POLOMKA-2020, PRM-MONTEJO-2013]
+  verdict: confirme seulement avec un tri optique
+  question: "La ligne de pre-tri comprend-elle un tri optique du verre ? Sinon, retenir une valeur basse."
+part_organique_eau:
+  actuel: "0,05"
+  sources_disent: "Aucune donnee pour des dechets melanges ou plastiques. Analogues : eau de pyrolyse du bois 10 a 15 % d'organiques ; boues jusqu'a 23 %."
+  sources: [PRM-PIMENTA-2023, PRM-GILLALAGUNA-2010, PRM-SEYEDI-2019]
+  verdict: aucune source specifique
+  question: "A mesurer lors d'un essai ; en attendant, documenter comme hypothese."
+rdt_huile_recyclage:
+  actuel: "0,6"
+  sources_disent: "Aucune source. Les organiques de l'eau de pyrolyse sont surtout solubles et ne se recuperent pas par decantation."
+  sources: [PRM-GILARDI-2026, PRM-PIMENTA-2023]
+  verdict: aucune source
+  question: "Mettre a zero tant qu'aucun essai ne le montre ?"
+rdt_char_organique:
+  actuel: "0,69"
+  sources_disent: "Pyrolyse de la fraction organique des OMR entre 400 et 700 degres C : 0,21 a 0,46 de char ; valeur centrale environ 0,25 a 0,35."
+  sources: [PRM-HWANG-2007, PRM-BUAH-2016, PRM-ASSUNCAO-2022, PRM-RAO-2026, PRM-OJOLO-2005]
+  verdict: au-dessus
+  question: "Retenir 0,30, ou redefinir le parametre pour inclure les cendres et le verre ?"
+pci_residu_plastique:
+  actuel: "25 MJ/kg"
+  sources_disent: "Residu de pyrolyse de plastiques melanges : 23,9 MJ/kg a 450 degres C, 10,7 a 500, 3,7 a 550 (PCS)."
+  sources: [PRM-MARTINLARA-2021]
+  verdict: au-dessus a la temperature de fonctionnement
+  question: "A quelle temperature fonctionne la URC-2000 ? Retenir la valeur correspondante."
+
+# ============================================================ DECISIONS A DOCUMENTER (pas de source attendue)
+nb_unites: {actuel: "1", question: "Choix de scenario : a inscrire dans _decisions.yaml."}
+horizon: {actuel: "15 ans", question: "Choix de modelisation : a inscrire dans _decisions.yaml."}
+etp_coeur_step: {actuel: "3 ETP par unite supplementaire", question: "Choix a justifier ou a inscrire dans _decisions.yaml."}
+maintenance_an_bas: {actuel: "annee 4", question: "Negociation OneWorld : a inscrire dans _decisions.yaml avec la cotation."}
+maintenance_an_haut: {actuel: "annee 10", question: "Negociation OneWorld : a inscrire dans _decisions.yaml avec la cotation."}
+
+# ============================================================ COMPOSITION (selecteur de gisement prevu)
+composition:
+  actuel: "plastique 0,30 ; organique 0,47 ; metaux 0,05 ; verre 0,055 ; inertes 0,02 ; humidite 0,08 ; refus 0,02"
+  sources_disent: "OMR France 2024 (MODECOM, mesure) : plastiques 0,158 ; putrescibles 0,337 ; papiers-cartons 0,124 ; textiles sanitaires 0,170 ; verre 0,050 ; metaux 0,033 ; humidite 0,421. Refus de tri de collecte selective : 12 % d'emballages plastiques identifies (OCAPEM, methode non publiee)."
+  sources: [ADEME-MODECOM-2024-DATA, ADEME-MODECOM-2024-HUM, OCAPEM-2025]
+  verdict: les valeurs actuelles ne correspondent a aucun gisement source
+  question: "Mettre en place le selecteur de gisement (OMR, refus de tri, dechets d'aeroport) avec une composition sourcee par gisement."

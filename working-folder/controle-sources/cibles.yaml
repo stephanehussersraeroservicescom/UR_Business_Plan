@@ -1,0 +1,14 @@
+# Documents controles par defaut (motifs relatifs a la racine du depot)
+# Depuis le 14/10/2026 : seul le travail neuf est controle par defaut.
+# L'archive (ARCHIVE-NON-VERIFIE/) n'est jamais une cible par defaut ; on peut
+# controler un de ses fichiers a la main, pour inventaire (regle 16).
+inclure:
+  - "nouveau-business-plan/**/*.md"
+  - "working-folder/reference/sources-externes/**/*.md"
+exclure:
+  - "ARCHIVE-NON-VERIFIE/**"
+  - "_to_delete/**"
+  - "**/_to_delete/**"
+  - "**/notes-recherche*/**"
+  - "**/README.md"
+  - "**/PASSATION-*.md"

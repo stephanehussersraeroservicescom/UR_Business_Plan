@@ -44,7 +44,7 @@ provision_fioul_secours:
   note: "Demarrages, arrets, variations de charge, flamme pilote."
 
 pci_fioul: {justification: AFF-NRJ-FIO, label: "PCI du fioul", valeur: 38, unite: "MJ/L", statut: hypothese, preuves: [V3-MODEL]}
-pci_char:  {justification: AFF-NRJ-CHO, label: "PCI du char organique", valeur: 15, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL]}
+pci_char:  {justification: AFF-NRJ-CHO, label: "PCI du char organique", valeur: 15, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL, PRM-HWANG-2007]}
 pci_residu_plastique: {justification: AFF-NRJ-CHP, label: "PCI du residu plastique", valeur: 25, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL]}
 
 elec_par_unite:

@@ -35,12 +35,47 @@ CONFIANCE_PREUVE = {
 }
 
 
+ARCHIVE = "ARCHIVE-NON-VERIFIE"
+
+
+def fiabilite_externe(v):
+    """Traduit le statut du registre externe en niveau de fiabilite du modele."""
+    statut, typ = str(v.get("statut", "")), str(v.get("type", ""))
+    if any(ARCHIVE in str(v.get(c, "")) for c in ("url", "fichier", "chemin")):
+        return "aucune"
+    if statut in ("secondaire", "non-verifie"):
+        return "aucune"
+    if typ in ("statistique_publique", "reglementaire", "donnees_ouvertes") and statut.startswith("verifie"):
+        return "certifie_tiers"
+    return "litterature"
+
+
 class Registre:
     """Charge les parametres et trace chaque lecture."""
 
     def __init__(self, surcharges=None):
         self.params, self.domaines = {}, {}
         self.preuves = yaml.safe_load((PARAMS / "_evidence.yaml").read_text(encoding="utf-8"))
+        # regle 16 : une preuve dont le document est dans l'archive non verifiee ne vaut rien
+        for e in self.preuves.values():
+            if isinstance(e, dict) and ARCHIVE in str(e.get("chemin", "")):
+                e["fiabilite_avant_archive"] = e.get("fiabilite")
+                e["fiabilite"] = "aucune"
+        # registre des sources externes (reference/sources-externes), cite aussi dans les preuves
+        reg_ext = PARAMS.parent / "reference" / "sources-externes" / "registre-sources.yaml"
+        if reg_ext.exists():
+            for k, v in (yaml.safe_load(reg_ext.read_text(encoding="utf-8")) or {}).items():
+                if k in self.preuves or not isinstance(v, dict):
+                    continue
+                e = dict(v)
+                if "fiabilite" in e:
+                    e["fiabilite_registre"] = e["fiabilite"]
+                e["fiabilite"] = fiabilite_externe(v)
+                e.setdefault("type", "source_externe")
+                e.setdefault("titre", k)
+                e.setdefault("chemin", e.get("url", ""))
+                e.setdefault("contenu", v.get("citation", ""))
+                self.preuves[k] = e
         self.decisions = yaml.safe_load((PARAMS / "_decisions.yaml").read_text(encoding="utf-8"))
         fj = PARAMS / "_justifications.yaml"
         self.justifs = yaml.safe_load(fj.read_text(encoding="utf-8")) if fj.exists() else {}
