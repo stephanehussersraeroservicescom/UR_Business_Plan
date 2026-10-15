@@ -158,19 +158,9 @@ Le plan v2 cite aussi des annexes F, G, H et I (modèles de gisement et de prix 
   - 4A.6 Stakeholder Mapping
   - 4A.7 Key Success Factors
   - 4A.8 Deployment Phasing (France)
-- **4B. South Korea**
-  - 4B.1 National Waste Statistics
-  - 4B.2 Volume-Based Waste Fee (VBWF) System
-  - 4B.3 Plastic Waste Situation (R)
-  - 4B.4 Seoul Metropolitan Area
-  - 4B.5 Regulatory Framework: National Waste Policy; Environmental Permitting; Emission Standards
-  - 4B.6 Market Conditions: Gate Fees in the Seoul Metropolitan Area (R); Product Markets
-  - 4B.7 Competition: Incumbent Infrastructure; Emerging Technologies
-  - 4B.8 Stakeholder Mapping
-  - 4B.9 Key Success Factors
-  - 4B.10 Deployment Phasing (Korea)
-- **4C. Country Comparison Summary**
 - **4D. References**
+
+La Corée du Sud (ancienne partie 4B et comparaison 4C) est retirée du périmètre (décision D-017 du 14/10/2026). L'annexe 4 devient l'étude France.
 
 ### Annex 5. Sector: Municipal Solid Waste (France)
 
@@ -247,6 +237,8 @@ Le plan v2 cite aussi des annexes F, G, H et I (modèles de gisement et de prix 
 
 ### Annex 7. Sector: Industrial Residues (France)
 
+Périmètre v3 (décision D-018) : déchets d'activités économiques en mélange. Les flux de plastique seul d'origine industrielle (films, chutes de production) relèvent de l'annexe 8.
+
 - Objective
 - **Part 1. What Goes In: Industrial and Commercial Waste Composition**
   - 1. Industrial and Commercial Waste in Île-de-France: Overview
@@ -285,6 +277,8 @@ Le plan v2 cite aussi des annexes F, G, H et I (modèles de gisement et de prix 
   - 15. Sources
 
 ### Annex 8. Sector: Plastic Sorting Rejects (France)
+
+Périmètre v3 (décision D-018) : toutes les filières du plastique, ménagères et industrielles, en priorité celles qui sont peu ou pas recyclées. Angle de lecture : par filière (famille de résine ou de produit : polystyrène et polystyrène expansé, films, multicouches, PVC, plastiques souillés, refus de tri, plastiques des DEEE, des véhicules hors d'usage, du BTP, etc.), avec pour chacune les tonnages, le taux de recyclage réel, le devenir de ce qui n'est pas recyclé (compactage, export, incinération, stockage) et qui paie quoi. Le cas du polystyrène compacté ou fondu en blocs, sans débouché réel selon Stéphane, est à vérifier. Les structures ci-dessous (v2 de mars, brouillon du 10/10/2026) sont classées par origine ; la v3 les réorganisera par filière.
 
 Structure de la v2 de mars :
 

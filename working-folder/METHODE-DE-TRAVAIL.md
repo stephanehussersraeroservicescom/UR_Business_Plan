@@ -14,7 +14,7 @@ Un chiffre n'existe dans le business plan que s'il remplit l'une de ces trois co
 
 Tout le reste est marqué « inconnu ». Un trou visible vaut mieux qu'un chiffre inventé.
 
-## Les cinq étiquettes
+## Les six étiquettes
 
 | Étiquette | Ce qu'elle veut dire |
 |---|---|
@@ -22,6 +22,7 @@ Tout le reste est marqué « inconnu ». Un trou visible vaut mieux qu'un chiffr
 | **Lu par Claude** | Claude a lu la source, mais personne d'autre ne l'a encore recontrôlée |
 | **Calculé** | Résultat d'un calcul enregistré, dont toutes les entrées sont sourcées |
 | **Décision** | Choix de Stéphane, daté et motivé |
+| **Constructeur** | Déclaration de OneWorld, lue dans un document de OneWorld (brochure, présentation, rapport, courriel) avec la page ou la date. Admise comme base de travail (décision D-016), toujours attribuée dans le texte (« according to OneWorld »), jamais présentée comme vérifiée de façon indépendante. Le rapport de mesure correspondant est demandé à OneWorld |
 | **Inconnu** | Aucune source trouvée. On ne bouche pas le trou |
 
 Le mot « sûr » n'est jamais employé pour un chiffre qui n'est pas « Vérifié ».
@@ -42,16 +43,31 @@ Chaque brique passe par cinq étapes :
 
 Une brique validée est **figée**. On ne la modifie plus sans ouvrir une décision datée.
 
-## L'ordre des briques
+## L'ordre de travail de la version 3 (décidé le 14/10/2026)
 
-On part du bas, comme pour une maison :
+On commence par ce que la machine fait réellement, puis ce qu'on lui donne, puis ce que ça rapporte :
 
-1. Ce qui entre dans la machine : gisements, tonnages, composition.
-2. Ce qui en sort : rendements, mesurés sur la machine quand c'est possible.
-3. Les prix : gate fees, huile, char, métaux, énergie.
-4. Les coûts : CAPEX et OPEX, sur devis plutôt que sur estimation.
-5. Le modèle financier, qui ne lit que des briques validées.
-6. Le texte du business plan et les annexes, en dernier. Ils citent les briques et ne portent aucun chiffre qui leur soit propre.
+1. Annexe 2, preuves techniques : rendements, qualité des produits, émissions, énergie. Première étape : inventaire page par page des documents de `reference/preuves/`.
+2. Annexe 1, procédé.
+3. Annexe 9, équipement et coûts.
+4. Annexes 5 à 8, gisements : ordures ménagères, CDG, déchets d'activités économiques, déchets plastiques.
+5. Annexe 3, marchés et prix des produits.
+6. Annexe 4, France : statistiques, réglementation, marché.
+7. Modèle financier, qui ne lit que des briques validées ; les annexes 10 à 13 (économie par gisement) en sortent.
+8. Plan d'affaires, qui résume les annexes et le modèle, sans chiffre qui lui soit propre.
+9. Présentation interactive (application du modèle sur Hetzner).
+
+Périmètre (décision D-017) : France seule ; la Corée du Sud est retirée.
+
+## Un chat par annexe
+
+- Chaque annexe est traitée dans un chat dédié du projet « business plan ».
+- Le chat commence par lire `nouveau-business-plan/AVANCEMENT.md` et la dernière note de passation de l'annexe, et termine en les mettant à jour. C'est la mémoire commune ; on ne se fie pas à l'historique des conversations.
+- Si le chat devient long, il écrit une note de passation (`nouveau-business-plan/annexes/notes-recherche-annexe-XX/PASSATION-AAAA-MM-JJ.md`) et le travail continue dans un nouveau chat.
+- Une donnée n'est cherchée qu'une fois : avant toute recherche, on consulte le registre et `_evidence.yaml`.
+- Format (décision D-023) : l'annexe se lit et se contre-vérifie en HTML (`annexes/annexe-XX-html/`), généré à partir de sa source Markdown et des registres par `generer_html.py`. On corrige la source, jamais le HTML, puis on régénère. Pas d'anciennes versions dans le dépôt : l'historique git suffit.
+- Un chat d'annexe ne change aucune valeur du modèle. Il propose les changements dans `params/_arbitrages.yaml` ; Stéphane tranche par une décision datée.
+- Les contre-vérifications (Codex, ChatGPT, DeepSeek, Stéphane) sont consignées dans `controle-sources/verifications/registre-verifications.yaml`. Une annexe est « contre-vérifiée » quand chaque chiffre y a un verdict avec citation.
 
 ## Au début de chaque session
 

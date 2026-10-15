@@ -4797,3 +4797,244 @@ PRM-MARTINLARA-2021:
   statut: verifie
   consulte: 2026-10-10
   parametres: [pci_residu_plastique]
+
+# === ANNEXE 2 : NORMES D'EMISSION ET CONVERSIONS (chat 1 v3, 14/10/2026) ====
+
+IED-2010-75-ANX6-P3:
+  titre: "Directive 2010/75/UE relative aux emissions industrielles, annexe VI, partie 3 : valeurs limites d'emission dans l'air des installations d'incineration des dechets"
+  editeur: "Parlement europeen et Conseil (texte adopte, reproduit par legislation.gov.uk)"
+  date: 2010-11-24
+  type: reglementaire
+  url: "https://legislation.gov.uk/eudr/2010/75/annex/VI/part/3/adopted?view=plain"
+  emplacement: "Annexe VI, partie 3, points 1, 1.1, 1.4 et 1.5 ; article 42(1) second alinea"
+  contenu: >
+    Valeurs a 273,15 K, 101,3 kPa, gaz sec, 11 % d'oxygene. Moyennes journalieres (mg/Nm3) : poussieres 10 ;
+    COT 10 ; HCl 10 ; HF 1 ; SO2 50 ; NOx (en NO2) 200 pour les installations neuves ou existantes de plus de
+    6 t/h, 400 pour les existantes de 6 t/h au plus. Dioxines et furannes 0,1 ng/Nm3 sur 6 a 8 h. CO 50 mg/Nm3
+    en moyenne journaliere. Article 42(1) : le chapitre ne s'applique pas a une pyrolyse dont les gaz sont
+    purifies au point de ne plus etre des dechets et n'emettent pas plus que la combustion de gaz naturel.
+  citation: "All emission limit values shall be calculated at a temperature of 273,15 K, a pressure of 101,3 kPa"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Lu sur la reproduction legislation.gov.uk du texte adopte ; a relire sur EUR-Lex (JO L 334 du 17/12/2010)."
+
+BAT-WI-2019-2010:
+  titre: "Decision d'execution (UE) 2019/2010 etablissant les conclusions sur les meilleures techniques disponibles (MTD) pour l'incineration des dechets"
+  editeur: "Commission europeenne (texte reproduit par legislation.gov.uk)"
+  date: 2019-11-12
+  type: reglementaire
+  url: "https://www.legislation.gov.uk/eudn/2019/2010/data.html"
+  emplacement: "Considerations generales (conditions de reference, 11 % d'O2) ; MTD 25 tableau 3 ; MTD 27 tableau 5 ; MTD 29 tableau 6 ; MTD 30 tableau 7"
+  contenu: >
+    NEA-MTD, gaz sec, 273,15 K, 101,3 kPa, 11 % d'O2. Poussieres < 2-5 mg/Nm3 (moyenne journaliere).
+    HCl < 2-6 (neuve), < 2-8 (existante) ; HF < 1 ; SO2 5-30 (neuve), 5-40 (existante). NOx 50-120 (neuve),
+    50-150 (existante) ; CO 10-50 ; NH3 2-10 mg/Nm3. PCDD/F < 0,01-0,04 ng I-TEQ/Nm3 (neuve, moyenne sur la
+    periode d'echantillonnage), < 0,01-0,06 (existante).
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Lu sur la reproduction legislation.gov.uk ; la formule de correction d'O2 y est une image (definitions ER, OR, EM, OM lues)."
+
+WALLONIE-2003-ANX6-O2:
+  titre: "Arrete du Gouvernement wallon du 27 fevrier 2003 (incineration et co-incineration des dechets), annexe VI : formule de correction a la teneur standard en oxygene"
+  editeur: "Gouvernement wallon"
+  date: 2003-02-27
+  type: reglementaire
+  url: "https://wallex.wallonie.be/files/medias/5/2851.pdf"
+  emplacement: "Annexe VI"
+  contenu: "ES = (21 - OS) / (21 - OM) x EM ; ES concentration au pourcentage standard d'oxygene, EM concentration mesuree, OS oxygene standard, OM oxygene mesure."
+  citation: "ES = concentration d'emission calculee au pourcentage standard de la concentration d'oxygene"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Texte de plus de huit ans ; sert uniquement pour la formule de correction, identique dans son principe aux definitions de BAT-WI-2019-2010."
+
+DK-EPA-2002-PPM:
+  titre: "Danish EPA, Guidelines for Air Emission Regulation, section 9.7 : conversion des ppm en mg/Nm3"
+  editeur: "Danish Environmental Protection Agency (Miljostyrelsen)"
+  date: 2002
+  type: etude_publique
+  url: "https://www2.mst.dk/udgiv/publications/2002/87-7972-035-8/html/kap09_eng.htm"
+  emplacement: "section 9.7"
+  contenu: "1 ppm NO2 = 2,05 mg/Nm3 ; 1 ppm SO2 = 2,93 mg/Nm3 ; 1 ppm HCl = 1,63 mg/Nm3 ; 1 ppm CO = 1,25 mg/Nm3, a 0 C et 101,3 kPa."
+  citation: "1 ppm NO2 = 2.05 mg/normal m3 NO2 at 0oC and 101.3 kPa."
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Donnee de plus de huit ans (2002) ; facteurs physiques de conversion."
+
+# === ANNEXE 2 v3 : THERMOCHIMIE, CHLORE, METAUX DU CHAR (14/10/2026) ======
+
+NIST-WEBBOOK-GAZ:
+  valeurs_lues: "Valeurs absolues (kJ/mol) : combustion CH4 890,7 ; C2H6 1560,7 ; C2H4 1411,20 ; C3H8 2219,2 ; C3H6 2057,8. Formation : H2O gaz 241,826 ; H2O liquide 285,830 ; CO 110,53 ; CO2 393,51. Formules brutes : CH4, C2H6, C2H4, C3H8, C3H6 (moles d'eau formees = atomes H / 2 : 2, 3, 2, 4, 3). PCI H2 arrondi 241,8."
+  titre: "NIST Chemistry WebBook (SRD 69) : masses molaires et enthalpies de combustion et de formation des gaz H2, CH4, C2H6, C2H4, C3H8, C3H6, CO, CO2, H2O"
+  editeur: "National Institute of Standards and Technology"
+  type: donnees_ouvertes
+  url: "https://webbook.nist.gov/"
+  emplacement: "Pages Mask=1 : ID=C1333740 (H2), C74828 (CH4), C74840 (C2H6), C74851 (C2H4), C74986 (C3H8), C115071 (C3H6), C630080 (CO), C124389 (CO2) ; C7732185 Mask=1 et Mask=2 (H2O)"
+  contenu: >
+    Masses molaires : H2 2,01588 ; CH4 16,0425 ; C2H6 30,0690 ; C2H4 28,0532 ; C3H8 44,0956 ; C3H6 42,0797 ;
+    CO 28,0101 ; CO2 44,0095 ; H2O 18,0153. Enthalpies de combustion (gaz, kJ/mol) : CH4 -890,7 (Pittam et Pilcher
+    1972) ; C2H6 -1560,7 ; C2H4 -1411,20 (Rossini et Knowlton 1937) ; C3H8 -2219,2 ; C3H6 -2057,8 (Wiberg et
+    Fenoglio 1968). Enthalpies de formation (kJ/mol, CODATA) : H2O gaz -241,826 ; H2O liquide -285,830 ;
+    CO -110,53 ; CO2 -393,51.
+  citation: "-890.7 ± 0.4"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Pas d'enthalpie de combustion listee pour H2 et CO ni de chaleur de vaporisation de l'eau : deduites des enthalpies de formation (calculs CALC-A2-*)."
+
+NIST-SP811-B9:
+  titre: "NIST Special Publication 811, Guide to the SI, Appendix B.9 : facteurs de conversion (energie)"
+  editeur: "National Institute of Standards and Technology"
+  type: reglementaire
+  url: "https://www.nist.gov/node/777661"
+  emplacement: "Appendix B.9, table Energy"
+  contenu: "1 kW.h = 3,6 x 10^6 J ; 1 calorie IT = 4,1868 J."
+  citation: "calorieIT (calIT) | joule (J) | 4.1868 | E+00"
+  statut: verifie
+  consulte: 2026-10-14
+
+KUSENBERG-AICHE-2021:
+  titre: "Kusenberg et al., Challenges and Opportunities for Plastic Waste Pyrolysis Oils As Steam Cracking Feedstock (AIChE Spring Meeting, EPC, 2021)"
+  editeur: "Ghent University / AIChE"
+  date: 2021-04
+  type: etude_publique
+  url: "https://backoffice.biblio.ugent.be/download/8710893/8710894"
+  emplacement: "Tableau 2, specifications d'heteroatomes des charges fossiles de vapocraqueur"
+  contenu: "Chlore : 3 ppm dans les charges de vapocraqueur."
+  citation: "The industrial Cl threshold value of 3 ppm [45, 53] is exceeded substantially."
+  statut: verifie
+  consulte: 2026-10-14
+
+KUSENBERG-WM-2022:
+  titre: "Kusenberg et al., Opportunities and challenges for the application of post-consumer plastic waste pyrolysis oils as steam cracker feedstocks, Waste Management 138 (2022) 83-115"
+  editeur: "Elsevier (acces ouvert, PMC8769047)"
+  date: 2022
+  type: etude_publique
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8769047"
+  emplacement: "Resume, p. 83"
+  contenu: "Huiles de pyrolyse de dechets plastiques post-consommation : chlore d'environ 1 460 ppm contre 3 ppm au plus pour un vapocraqueur."
+  citation: "chlorine (∼1460 vs. 3 ppm max.)"
+  statut: verifie
+  consulte: 2026-10-14
+
+BOREALIS-EP4389855:
+  titre: "Brevet EP 4 389 855 A1, Pyrolysis Oil Purification (Borealis AG)"
+  editeur: "Office europeen des brevets"
+  date: 2024-06-26
+  type: entreprise
+  url: "https://data.epo.org/publication-server/rest/v1.2/patents/EP4389855NWA1/document.html"
+  emplacement: "§ [0004] et § [0021]"
+  contenu: "Charge de vapocraqueur : au plus 3 ppm de chlore ; huile purifiee visee : 10 ppm massiques ou moins."
+  citation: "typically having a chlorine content of 10 ppm by weight or less"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Source commerciale (brevet) : objectif de procede, pas specification d'achat."
+
+ISO8217-2024-UKPI:
+  titre: "UK P&I Club, ISO 8217-2024 - The Marine Fuel Standard has been updated"
+  editeur: "UK P&I Club"
+  date: 2024-06-05
+  type: presse
+  url: "https://www.ukpandi.com/news-and-resources/articles/2024/iso-8217-2024-the-marine-fuel-standard-has-been-updated"
+  emplacement: "paragraphe sur la clause 5.3"
+  contenu: "Combustibles marins ISO 8217:2024 : chlorures organiques 50 ppm au plus (EN 14077)."
+  citation: "Organic chlorides must not exceed 50 ppm, as tested by EN 14077."
+  statut: secondaire
+  consulte: 2026-10-14
+  note: "La norme ISO (payante) n'a pas ete lue ; CTI-Maritec donne la meme valeur mais situe l'exigence en clause 6.17."
+
+IED-2010-75-ART50:
+  titre: "Directive 2010/75/UE, article 50(2) : temperature de combustion des dechets dangereux a plus de 1 % d'organohalogenes"
+  editeur: "Parlement europeen et Conseil"
+  date: 2010-11-24
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010L0075"
+  emplacement: "Article 50(2), troisieme alinea"
+  contenu: "Dechet dangereux contenant plus de 1 % de substances organiques halogenees, exprimees en chlore : temperature d'au moins 1 100 C."
+  citation: "If hazardous waste with a content of more than 1 % of halogenated organic substances, expressed as chlorine,"
+  statut: verifie
+  consulte: 2026-10-14
+
+ARRETE-2910-2018:
+  titre: "Arrete du 3 aout 2018 relatif aux installations de combustion de moins de 50 MW soumises a autorisation (rubriques 2910, 2931, 3110)"
+  editeur: "Ministere de la transition ecologique (reproduction AIDA/INERIS)"
+  date: 2018-08-03
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-030818-relatif-installations-combustion-dune-puissance-thermique-nominale"
+  emplacement: "Article 4 (combustibles)"
+  contenu: "Pas de teneur nationale maximale en chlore : l'arrete prefectoral fixe les combustibles autorises et leurs teneurs maximales."
+  citation: "l'arrêté préfectoral d'autorisation précise la nature des combustibles autorisés"
+  statut: verifie
+  consulte: 2026-10-14
+
+FPR-2019-1009:
+  titre: "Reglement (UE) 2019/1009 (produits fertilisants UE), annexe I partie II, et annexe II CMC 14 (reglement delegue 2021/2088)"
+  editeur: "Parlement europeen et Conseil ; Commission (CMC 14)"
+  date: 2019-06-05
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02019R1009-20230316"
+  emplacement: "Annexe I partie II : PFC 3(A) point 2, PFC 1(A) point 2 ; CMC 14 point 1(a) (CELEX 32021R2088)"
+  contenu: >
+    Amendement organique PFC 3(A) : Cd 2, Cr VI 2, Hg 1, Ni 50, Pb 120, As inorganique 40 mg/kg de matiere seche.
+    Engrais organique PFC 1(A) : Cd 1,5 ; Pb 120 mg/kg MS. CMC 14 (matieres de pyrolyse) : intrants limites a une
+    liste fermee, a l'exclusion des matieres issues des dechets municipaux en melange.
+  citation: "(a) cadmium (Cd): 2 mg/kg dry matter"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Version consolidee du 16/03/2023 (non authentique) ; CMC 14 lu dans CELEX 32021R2088 : 'except materials originating from mixed municipal waste'."
+
+ARRETE-CSR-2016:
+  titre: "Arrete du 23 mai 2016 relatif a la preparation des combustibles solides de recuperation (rubrique 2971)"
+  editeur: "Ministere de l'environnement (reproduction AIDA/INERIS)"
+  date: 2016-05-23
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-230516-relatif-a-preparation-combustibles-solides-recuperation-vue"
+  emplacement: "Article 3 II et annexe"
+  contenu: "CSR : PCI brut d'au moins 12 000 kJ/kg ; mercure 3 mg/kg MS ; chlore 15 000 mg/kg MS ; brome 15 000 ; halogenes totaux 20 000 mg/kg MS. Pas de limite chiffree pour Cd et Pb (caracterisation seulement)."
+  citation: "un PCI brut supérieur ou égal à 12 000 kJ/kg."
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Version en vigueur non confirmee (modifications 2020 et 2025 signalees)."
+
+# === ANNEXE 2 : carbureacteur et SAF (14/10/2026) ===
+
+NIST-WEBBOOK-TEB:
+  titre: 'NIST Chemistry WebBook (SRD 69) : temperatures d''ebullition normales de 1-nonene, 1-undecene, 1-tridecene, n-hexadecane ; 2,4-dimethyl-1-heptene sans donnee'
+  editeur: National Institute of Standards and Technology
+  type: donnees_ouvertes
+  url: https://webbook.nist.gov/cgi/cbook.cgi?Name=1-undecene&Units=SI&cTP=on
+  emplacement: Pages Phase change data, recherche par nom (Units=SI, cTP=on)
+  contenu: 'Tboil : 1-nonene C9H18 419 K (+/- 4, moyenne de 14 valeurs) ; 1-undecene C11H22 466 K (+/- 6, moyenne de 10) ; 1-tridecene C13H26 501 a 507 K (5 valeurs) ; n-hexadecane C16H34 554 K (+/- 10, moyenne de 10). 2,4-dimethyl-1-heptene C9H18 : pas de donnee de changement de phase. 1-octadecene C18H36 : 452 K a 0,020 bar seulement.'
+  statut: lu
+  consulte: '2026-10-14'
+ANCAP-JETA1-2026:
+  titre: ANCAP, specification Jet A-1 (alignee sur la Check List AFQRJOS)
+  editeur: ANCAP (compagnie petroliere publique, Uruguay)
+  type: specification_produit
+  url: https://www.ancap.com.uy/innovaportal/file/1657/1/2026-04-30-jet-a1---ingles.pdf
+  emplacement: Tableau des specifications
+  contenu: Aromatiques max. 25,0 % vol (ASTM D1319) ; aromatiques totaux max. 26,5 (D6379) ; soufre max. 0,30 % masse ; distillation 10 % recuperes max. 205,0 C ; point final max. 300,0 C ; point eclair min. 38,0 C ; masse volumique a 15 C 775,0 a 840,0 kg/m3 ; point de congelation max. -47,0 C ; point de fumee min. 25,0 mm (ou 18,0 avec naphtalenes max. 3,00) ; energie specifique nette min. 42,80 MJ/kg. Pas de limite d'olefines.
+  statut: lu
+  consulte: '2026-10-14'
+  note: 'Document d''un raffineur, pas la norme elle-meme (Def Stan 91-091 et ASTM D1655 non lues). Incoherence de dates : URL 2026-04-30, page datee 30/04/2024, reference AFQRJOS Issue 36 de fevrier 2025 et Issue 35 dans la note 29.'
+REFUELEU-2023-2405:
+  titre: Reglement (UE) 2023/2405 (ReFuelEU Aviation), article 3 et annexe I
+  editeur: Parlement europeen et Conseil (texte reproduit par lawplayer.com)
+  date: '2023-10-18'
+  type: reglementaire
+  url: https://lawplayer.com/eu/act/32023R2405
+  emplacement: Article 3 points 7 et 9 ; annexe I
+  contenu: 'SAF = carburants d''aviation synthetiques, biocarburants d''aviation ou carburants d''aviation a carbone recycle. Carburants a carbone recycle = recycled carbon fuels au sens de la directive (UE) 2018/2001 art. 2 point 35, conformes au seuil de reduction d''emissions de l''art. 29a(2) et certifies selon l''art. 30. Parts minimales de SAF : 6 % en 2030, 20 % en 2035 (dont 5 % synthetiques), 70 % en 2050 (dont 35 % synthetiques).'
+  citation: '''sustainable aviation fuels'' (''SAF'') means aviation fuels that are either: synthetic aviation fuels; aviation biofuels; or recycled carbon aviation fuels'
+  statut: lu
+  consulte: '2026-10-14'
+  note: Lu sur une reproduction (lawplayer), EUR-Lex inaccessible le 14/10/2026. La definition de la directive 2018/2001 et le seuil de l'art. 29a(2) ne sont pas lus (NON TROUVE).
+
+NIST-SP811-CELSIUS:
+  titre: 'NIST Special Publication 811, Guide to the SI, section 4.2.1.1 : degre Celsius'
+  editeur: National Institute of Standards and Technology
+  type: reglementaire
+  url: https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes
+  emplacement: section 4.2.1.1
+  contenu: t = T - T0, avec T0 = 273,15 K par definition.
+  citation: defined by the equation t = T − T0 , where T0 = 273.15 K by definition.
+  statut: lu
+  consulte: '2026-10-14'

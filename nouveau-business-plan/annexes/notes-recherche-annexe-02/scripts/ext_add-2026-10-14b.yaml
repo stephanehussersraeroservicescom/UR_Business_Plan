@@ -1,0 +1,34 @@
+
+# === ANNEXE 2 : carbureacteur et SAF (14/10/2026) ===
+
+NIST-WEBBOOK-TEB:
+  titre: 'NIST Chemistry WebBook (SRD 69) : temperatures d''ebullition normales de 1-nonene, 1-undecene, 1-tridecene, n-hexadecane ; 2,4-dimethyl-1-heptene sans donnee'
+  editeur: National Institute of Standards and Technology
+  type: donnees_ouvertes
+  url: https://webbook.nist.gov/cgi/cbook.cgi?Name=1-undecene&Units=SI&cTP=on
+  emplacement: Pages Phase change data, recherche par nom (Units=SI, cTP=on)
+  contenu: 'Tboil : 1-nonene C9H18 419 K (+/- 4, moyenne de 14 valeurs) ; 1-undecene C11H22 466 K (+/- 6, moyenne de 10) ; 1-tridecene C13H26 501 a 507 K (5 valeurs) ; n-hexadecane C16H34 554 K (+/- 10, moyenne de 10). 2,4-dimethyl-1-heptene C9H18 : pas de donnee de changement de phase. 1-octadecene C18H36 : 452 K a 0,020 bar seulement.'
+  statut: lu
+  consulte: '2026-10-14'
+ANCAP-JETA1-2026:
+  titre: ANCAP, specification Jet A-1 (alignee sur la Check List AFQRJOS)
+  editeur: ANCAP (compagnie petroliere publique, Uruguay)
+  type: specification_produit
+  url: https://www.ancap.com.uy/innovaportal/file/1657/1/2026-04-30-jet-a1---ingles.pdf
+  emplacement: Tableau des specifications
+  contenu: Aromatiques max. 25,0 % vol (ASTM D1319) ; aromatiques totaux max. 26,5 (D6379) ; soufre max. 0,30 % masse ; distillation 10 % recuperes max. 205,0 C ; point final max. 300,0 C ; point eclair min. 38,0 C ; masse volumique a 15 C 775,0 a 840,0 kg/m3 ; point de congelation max. -47,0 C ; point de fumee min. 25,0 mm (ou 18,0 avec naphtalenes max. 3,00) ; energie specifique nette min. 42,80 MJ/kg. Pas de limite d'olefines.
+  statut: lu
+  consulte: '2026-10-14'
+  note: 'Document d''un raffineur, pas la norme elle-meme (Def Stan 91-091 et ASTM D1655 non lues). Incoherence de dates : URL 2026-04-30, page datee 30/04/2024, reference AFQRJOS Issue 36 de fevrier 2025 et Issue 35 dans la note 29.'
+REFUELEU-2023-2405:
+  titre: Reglement (UE) 2023/2405 (ReFuelEU Aviation), article 3 et annexe I
+  editeur: Parlement europeen et Conseil (texte reproduit par lawplayer.com)
+  date: '2023-10-18'
+  type: reglementaire
+  url: https://lawplayer.com/eu/act/32023R2405
+  emplacement: Article 3 points 7 et 9 ; annexe I
+  contenu: 'SAF = carburants d''aviation synthetiques, biocarburants d''aviation ou carburants d''aviation a carbone recycle. Carburants a carbone recycle = recycled carbon fuels au sens de la directive (UE) 2018/2001 art. 2 point 35, conformes au seuil de reduction d''emissions de l''art. 29a(2) et certifies selon l''art. 30. Parts minimales de SAF : 6 % en 2030, 20 % en 2035 (dont 5 % synthetiques), 70 % en 2050 (dont 35 % synthetiques).'
+  citation: '''sustainable aviation fuels'' (''SAF'') means aviation fuels that are either: synthetic aviation fuels; aviation biofuels; or recycled carbon aviation fuels'
+  statut: lu
+  consulte: '2026-10-14'
+  note: Lu sur une reproduction (lawplayer), EUR-Lex inaccessible le 14/10/2026. La definition de la directive 2018/2001 et le seuil de l'art. 29a(2) ne sont pas lus (NON TROUVE).

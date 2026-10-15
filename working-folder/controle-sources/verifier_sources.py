@@ -788,6 +788,27 @@ def controler_recherche(reg: Registres) -> tuple[list[Constat], dict]:
     return out, compte
 
 
+def controler_html_annexes() -> list[Constat]:
+    """Une annexe publiee en HTML est generee a partir de sa source Markdown : le HTML ne doit pas etre
+    plus ancien que sa source ni que son generateur (sinon il ne reflete pas la version controlee)."""
+    out = []
+    for md in sorted((RACINE / "nouveau-business-plan" / "annexes").glob("ANNEX-*.md")):
+        m = re.match(r"ANNEX-(\d+)", md.name)
+        if not m:
+            continue
+        dossier = md.parent / f"annexe-{m.group(1)}-html"
+        index = dossier / "index.html"
+        if not index.exists():
+            continue
+        sources = [md] + sorted((md.parent / f"annexe-{m.group(1)}-preuves").glob("*.md")) + sorted(dossier.glob("*.py"))
+        recent = max(sources, key=lambda f: f.stat().st_mtime)
+        if index.stat().st_mtime + 1 < recent.stat().st_mtime:
+            out.append(Constat("AVERTISSEMENT", str(index.relative_to(RACINE)), 0,
+                               f"HTML plus ancien que sa source ({recent.relative_to(RACINE)}) : relancer le generateur "
+                               f"({', '.join(str(x.relative_to(RACINE)) for x in dossier.glob('*.py'))})"))
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("fichiers", nargs="*", help="documents Markdown a controler (defaut : cibles.yaml)")
@@ -806,6 +827,7 @@ def main() -> int:
     if not a.sans_parametres:
         constats += controler_parametres(reg)
     c_rech, compte_rech = controler_recherche(reg)
+    constats += controler_html_annexes()
     constats += c_rech
     md, hp = ecrire_rapport(constats, stats, resultats, a.strict)
     if a.echantillon and AFFIRMATIONS_SOURCEES:

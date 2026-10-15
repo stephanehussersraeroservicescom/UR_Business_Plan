@@ -1,0 +1,64 @@
+
+# === ANNEXE 2 : questions de Stephane du 14/10/2026 (chlore, catalyseur, eaux, SEA CORAL) ===
+
+CHIBA-PROCEDE-HUILE:
+  titre: 'Rapport Chiba, section 7 : recuperation et mesure de l''huile produite'
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  date: 2022-09
+  chemin: reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf
+  emplacement: PDF p. 29 (impr. 23)
+  citation: 熱分解炉で発生したガスは、触媒反応槽を通過して、コンデンサーで凝縮されドレンポットを通過して油水分離層へ導かれる。
+  citation_mesure: 油水分離層から油水ともポンプでドラム缶に移送し、ドラム缶で静置分離後に検尺棒を使用して油水量を計量した。
+  contenu: Sur l'unite d'essai de Noda, le gaz du four de pyrolyse traverse un reservoir de reaction catalytique (触媒反応槽) avant le condenseur, puis un pot de purge (ドレンポット) et le separateur huile-eau. Huile et eau sont pompees en futs, decantees, puis mesurees au jaugeage (検尺棒) ; l'eau est reperee a la pate de detection d'eau ; huile = volume total moins eau.
+  reserve: Le rapport ne dit ni la fonction du catalyseur (dechloration ou autre), ni sa nature, ni son etat. Le poids d'huile des fiches est le volume jauge multiplie par la densite indiquee sur chaque fiche.
+CHIBA-CONSTATS:
+  titre: 'Rapport Chiba, section 8 : constats de la campagne (exigences, qualite, environnement, bilans, limites)'
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  date: 2022-09
+  chemin: reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf
+  emplacement: PDF p. 39 et 40 (impr. 33 et 34)
+  citation: 本試験装置は、排水処理工程を持たないため、排水処理前の原水の分析結果は水質基準値を超過する結果となっている。これを踏まえて、実用機の排水処理設備に反映する。
+  citation_unite: 本試験研究に使用した熱分解油化装置は、テスト用の装置であるため、その処理能力を充分に発揮することができなかった。
+  citation_dioxines: ダイオキシン類は0.067ng-TEQ/N㎥という測定結果であり、いずれも規制値以下となった。
+  contenu: 'L''unite de Noda est une unite d''essai (テスト用の装置), sans etape de traitement des eaux ; les eaux brutes depassent les normes et le traitement sera prevu sur la machine commerciale. Echantillons d''eau des 9 et 15/09/2022. Dioxines 0,067 ng-TEQ/Nm3 sous la valeur reglementaire. Problemes : capacite, pannes du surchauffeur et du bruleur ; axes : capacite, bilan energetique, melanges contenant du PET, fractionnement.'
+  reserve: Constats de l'exploitant (Asada Shokai), pas d'un laboratoire.
+UR2000-JP-P03-P04-CHLORE:
+  titre: Brochure URC-2000 OneWorld, chlore et couche catalytique
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: reference/preuves/documents-fournis/UR2000-JP.pdf
+  emplacement: p. 3 et p. 4
+  citation: 塩化ビニールなどより発生する塩素も水蒸気により希塩酸になり釜を傷めることはありません。
+  citation_p4: 反応炉にて蒸溜された気体は、塩素やカーボン吸着の触媒層を通過後、コンデンサーで冷却され油などとして液化回収されます。
+  contenu: 'p. 3 : le chlore degage par le PVC devient de l''acide chlorhydrique dilue au contact de la vapeur et n''abime pas le reacteur. p. 4 : les vapeurs traversent une couche catalytique d''adsorption du chlore et du carbone avant le condenseur (schema : 触媒槽・塩素除去).'
+  reserve: CONSTRUCTEUR. Aucune mesure de chlore en sortie de couche catalytique.
+OW-ENG-P13-SEACORAL:
+  titre: Brochure anglaise OneWorld, page SEA CORAL
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: reference/preuves/documents-fournis/Urban Rig Recycling Solutions ENG .pdf
+  emplacement: p. 13
+  citation: SEA CORAL / Specialized ceramic purifier ; OPTION
+  contenu: 'SEA CORAL est presente comme une OPTION : purificateur ceramique qui absorbe l''eau des eaux usees, la vaporise par soufflage d''air et recupere de l''eau pure.'
+  reserve: CONSTRUCTEUR. Aucun essai sur eaux de procede Urban Rig.
+SEACORAL-DETAIL-ENG:
+  titre: OneWorld, SEA CORAL detail (anglais) et presentation SEACORAL (japonais)
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: 'reference/preuves/documents-fournis/SEA CORALdetail.pdf ; doublon probable : reference/preuves/documents-fournis/sea coral presentation japanese.pdf'
+  emplacement: SEA CORALdetail.pdf p. 1 a 8 (essai p. 5) ; presentation japonaise p. 6
+  citation: Seawater desalination Test ; Chloride ion mg/L 31,000 31 140,000
+  contenu: 'Essai de dessalement d''eau de mer (eau brute / eau traitee / eau residuelle) : pH 7,2 / 5,3 / 7,2 ; matieres en suspension 2 / 3 / 270 mg/L ; sodium 15 000 / 26 / 66 000 mg/L ; chlorures 31 000 / 31 / 140 000 mg/L ; durete 170 / 4 / 650 mg/L. Capacite annoncee environ 330 t/jour d''eau avec un ventilateur TAIYO FA-B de 3 500 m3/min (ecart de vapeur saturante 82,8 - 17,2 = 65,6 g/m3 entre 50 et 20 C). Brevet JP 6391698, WO2016143848 A1.'
+  reserve: CONSTRUCTEUR. Ni laboratoire, ni date, ni essai sur eaux de procede de pyrolyse (phenols, cyanures, DBO, pH acide). Le concentrat (140 000 mg/L de chlorures dans l'essai) reste a eliminer.

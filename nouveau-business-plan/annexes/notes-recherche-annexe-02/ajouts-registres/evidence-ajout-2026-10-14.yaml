@@ -1,0 +1,386 @@
+
+# ------------------------------------------------ Inventaire annexe 2 (chat 1 v3, 14/10/2026)
+# Entrees creees par Claude apres lecture des documents d'origine, page par page.
+# Statut : LU (lu par Claude, pas encore recontrole). Releves detailles :
+# nouveau-business-plan/annexes/notes-recherche-annexe-02/releves/
+# Pages : numerotation du fichier PDF ; "impr." = page imprimee (Chiba JP : PDF = impr. + 6).
+# nature : mesure_tiers | mesure_exploitant | declaration_constructeur | emetteur_inconnu
+
+CHIBA-RAPPORT-2023:
+  titre: "Asada Shokai (朝田商会), rapport de fin d'essais de recherche sur dechets industriels remis au gouverneur de Chiba"
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  date: 2023-01-30
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 1 (lettre), p. 3 (couverture), p. 4 (co-realisateurs), p. 7 (machine)"
+  citation: "株式会社ワンワールド：熱分解油化装置メーカー/運転管理 ; ランドブレイン株式会社：各種測定・分析"
+  contenu: >
+    Essais du 02/03/2022 au 30/09/2022 a l'usine de Noda d'Asada Shokai, sur la machine URBAN RIG
+    de OneWorld en lots de 20 a 60 kg. OneWorld : fabricant et conduite. Land Brain : mesures et analyses.
+    Rapport date de septembre 2022, lettre au gouverneur du 30/01/2023. 74 pages.
+  reserve: "Mesures de l'exploitant (OneWorld a la conduite), sauf rapports de laboratoires joints p. 45 a 74. Machine en lots, pas l'URC-2000 continue."
+
+CHIBA-ESSAIS-FICHES:
+  titre: "Rapport Chiba, fiches d'essai de pyrolyse (13 essais) et definitions"
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  date: 2022
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 19 a 26 (impr. 13 a 20) ; definitions p. 27 (impr. 21) ; methode de mesure de l'huile p. 29 (impr. 23)"
+  citation: "オフガス量：投入重量から取出し重量と生成油重量を差し引いた数値。"
+  contenu: >
+    Huile (油化率) : PE granules 74 %, PE chutes 77 %, PS granules 61 %, PS chutes 55 %, PP granules 81 %,
+    PP chutes 80 %, 3P 26/05 72 %, PE bidons 81 %, PP palettes 73 %, PS expanse 73 %, 3P 11/07 82 % ;
+    plastiques d'emballage de Noda 41 % et residus incombustibles 50 % (hors metaux) ; residus de broyage :
+    huile non mesurable (solidifiee). L'off-gas est calcule par difference, pas mesure.
+  reserve: "Masse d'huile probablement deduite du volume jauge et d'une densite. Ecart 250 kg declares / 310 kg sur fiches."
+
+CHIBA-DISTILLATION:
+  titre: "Rapport Chiba, tableau de distillation des huiles de matieres vierges"
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 34 (impr. 28), tableau signe ㈱朝田商会"
+  citation: "プラスチック熱分解生成油蒸留・分析結果"
+  contenu: >
+    200 mL par huile. Fraction 第一石油類 / reste : PE 61 / 139 mL (eclair 18 / 55 C), PP 56 / 114 mL,
+    PS 90 / 110 mL, 3P 96 / 104 mL (16 / 52,5 C). Soufre 19,2 a 147,2 ppm.
+  reserve: "Ni laboratoire, ni methode, ni date. PP : 30 mL non comptes. Unite de densite ecrite mL/g."
+
+CHIBA-BILANS:
+  titre: "Rapport Chiba, bilans matiere et energie de quatre essais"
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  date: 2022
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 41 et 42 (impr. 35 et 36), 資料2 マテリアルバランス/エネルギーバランス"
+  citation: "生成油 43.1kg ; 油化残渣(炭化物) 5.2kg ; オフガス 11.7kg ; 電力 65kwh ; 軽油 66ℓ ; エネルギー収支比率 77.4%"
+  contenu: >
+    Entree 60 / 60 / 50 / 50 kg (26/05 3P, 11/07 3P, 09/09 emballages, 15/09 residus incombustibles).
+    Huile 43,1 / 49,4 / 16,1 / 22,5 kg ; char 5,2 / 9,3 / 10,5 / 11,3 kg ; metaux 0 / 0 / 13,9 / 5,4 kg ;
+    off-gas 11,7 / 1,3 / 9,5 / 10,8 kg. Electricite 65 / 65 / 59 / 65 kWh ; gazole (軽油) 66 / 76 / 61 / 61 L ;
+    eau 85 / 95 / 100 / 100 L. Ratio energetique 77,4 / 80,0 / 40,7 / 52,5 %.
+  reserve: >
+    Energies = volumes x facteurs fixes non sources : 860 kcal/kWh, 9 088 kcal/L, 10 980 kcal/kg huile,
+    1 323,8 kcal/kg off-gas, 5 880 kcal/kg char. Note ※4 : le gazole inclut le groupe electrogene diesel.
+    Bilans boucles a 100 % par construction (off-gas par difference).
+
+CHIBA-SYNTHESE:
+  titre: "Rapport Chiba, points verifies et devenir des produits"
+  type: rapport_essai
+  fiabilite: mesure_interne
+  nature: mesure_exploitant
+  statut: lu
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 39 et 40 (impr. 33 et 34), p. 43 et 44 (impr. 37 et 38)"
+  citation: "試験研究で発生した生成油の総量：407ℓ ; 油化残渣(炭化物)の総量：66.3kg ; 試験研究で発生した排水の総量：931ℓ"
+  contenu: "Huile totale 407 L, char total 66,3 kg, eaux usees 931 L. Synthese des emissions et du critere huile >= 40 %."
+  reserve: "p. 39 affirme une huile >= 40 % pour tous les essais ; le 09/09 donne 32,2 % sur la masse entrante. SOx ecrit en Nm3/h, introuvable dans les rapports du laboratoire."
+
+CHIBA-JLOS-HUILES:
+  titre: "Japan Lubricating Oil Society (潤滑油協会), analyses de deux huiles d'essai, rapports 20221020-003-03 et -04"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2022-10-31
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 45 (impr. 39) et p. 46 (impr. 40)"
+  citation: "塩素分 質量% 0.137 ; 総発熱量（計算） J/g 46000"
+  contenu: >
+    Huile emballages (容リプラ生成油) / huile residus (残渣プラ生成油) : densite 15 C 0,8642 / 0,8762 g/cm3 ;
+    eclair P.M. < 40 C ; viscosite 50 C 1,706 / 1,759 mm2/s ; soufre < 0,05 / 0,06 % ; azote 0,24 / 0,43 % ;
+    chlore 0,137 / 0,526 % masse ; eau 0,13 / 0,20 % ; cendres 0,002 / 0,014 % ;
+    pouvoir calorifique superieur CALCULE 46 000 / 45 000 J/g.
+  reserve: "PCS calcule, pas de PCI. Pas d'accreditation mentionnee. Date de prelevement non indiquee."
+
+CHIBA-OOSUMI-CHAR:
+  titre: "Oosumi (オオスミ), teneurs et lixiviation des chars, rapports F22I0007-1, F22I0008-1, F22I0079-1, F22I0080-1"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2022-09
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 47 a 50 (impr. 41 a 44)"
+  citation: "カドミウム 31 mg/kg ; 鉛 140 mg/kg"
+  contenu: "Char emballages : Cd 31, Pb 140, F 130, B 36 mg/kg ; char residus : Cd 36, Pb 42, B 120 mg/kg (base brute). Lixiviation : chlorures 1 700 et 440 mg/L."
+  reserve: "Pas de PCI ni d'analyse elementaire du char. Enregistrement prefectoral (Kanagawa), pas d'ISO 17025 mentionne."
+
+CHIBA-OOSUMI-EAUX:
+  titre: "Oosumi, eaux de procede brutes avant traitement"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2022-09
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 51 a 54 (impr. 45 a 48)"
+  citation: "水素イオン濃度 0.8 pH (20℃) ; 生物化学的酸素要求量 16000 mg/l"
+  contenu: "Emballages : phenols 740, azote 520, cyanures 14 mg/L. Residus incombustibles : pH 0,8, DBO 16 000, phenols 380, fer dissous 68, chrome 11 mg/L."
+
+CHIBA-OOSUMI-FUMEES:
+  titre: "Oosumi, gaz d'echappement et poussieres, essais du 09/09 et du 15/09/2022 (rapports provisoires)"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2022-10-18
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 55 et 56 (impr. 49 et 50) ; metaux p. 57 et 58"
+  citation: "ダイオキシン類（毒性等量） ng-TEQ/m³ 0.067 ; 窒素酸化物 ppm 10未満 42 43"
+  contenu: >
+    Four a 350 / 450 / 550 C. 09/09 : poussieres 0,003 / 0,002 / 0,003 g/m3 ; SOx < 0,5 ppm ; NOx < 10 / 37 / 30 ppm.
+    15/09 : poussieres 0,004 / 0,002 / 0,002 ; SOx 1,4 / 0,78 / 0,78 ppm ; NOx < 10 / 42 / 43 ppm ;
+    dioxines 0,067 ng-TEQ/m3. Conditions normales 0 C, 101,3 kPa.
+  reserve: "Rapports marques 仮 2022/10/18 (provisoires). Pas d'O2 de reference, pas de CO ni de HCl, point de prelevement non precise."
+
+CHIBA-OOSUMI-ODEURS-BRUIT:
+  titre: "Oosumi et Kazusa, odeurs, substances odorantes, bruit et vibrations, Noda 2022"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2022-12-26
+  chemin: "reference/preuves/tests-independants/prefecture-shiba-test-data-2.pdf"
+  emplacement: "PDF p. 59 a 74 (impr. 53 a 68)"
+  citation: "排出口付近 14:02 19 79"
+  contenu: "Indice d'odeur : limite de site < 10 ; pres de l'exutoire 16, 18, 19. Bruit a 1 m de la machine 76 a 77 dB(A) ; limite de site L5 57 a 59 dB(A)."
+  reserve: "Rapports 0921061-2 et -4 annonces p. 68 mais absents."
+
+CHIBA-ENG-2023:
+  titre: "Traduction anglaise du rapport Chiba (folios 1 a 41)"
+  type: traduction
+  fiabilite: aucune
+  nature: secondaire
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/Chiba prefecture report ENG.pdf"
+  emplacement: "51 pages"
+  contenu: "Traduction sans traducteur nomme. Ne pas citer : citer CHIBA-RAPPORT-2023 et ses sections."
+  reserve: "14 divergences avec l'original : dates (2015, 2014), electricite du 09/09 (65 au lieu de 59 kWh), energies du 15/09 recopiees du 11/07, SOx en g/Nm3, rapport char residus remplace par un doublon."
+
+CHIBA-AUTORISATION-2022:
+  titre: "Prefecture de Chiba, notification 廃第1840号 a Asada Shokai"
+  type: document_officiel
+  fiabilite: certifie_tiers
+  nature: officiel
+  statut: lu
+  date: 2022-03-02
+  chemin: "reference/preuves/documents-fournis/test report 1.pdf"
+  emplacement: "p. 1"
+  contenu: "Autorisation des essais du 02/03/2022 au 30/09/2022, 12 000 kg de dechets au plus. Aucune mesure."
+
+KANSO-B2002600:
+  titre: "KANSO Technos, composition d'un off-gas d'appareil de carbonisation a vapeur surchauffee, rapport B2002600"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2020-12-05
+  chemin: "reference/preuves/tests-independants/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
+  emplacement: "p. 1"
+  citation: "水素 ガスクロマトグラフ法 12.7 % ; 窒素 ガスクロマトグラフ法 65.8 %"
+  contenu: >
+    Preleve le 25/11/2020. CO 0,6 % ; CH4 3,2 % ; CO2 1,7 % ; C2H4 0,2 % ; C2H6 0,7 % ; C3H8 0,3 % ;
+    C3H6 0,3 % ; H2 12,7 % ; O2 12,3 % ; N2 65,8 % ; H2S < 0,5 ppm. Somme 97,8 %.
+  reserve: "Installation caviardee (centre de recyclage d'une societe masquee), pas Asada. Echantillon dilue (N2/O2 = 5,35). Point de prelevement non renseigne. Aucun PCI."
+
+TES-ODEUR-2020:
+  titre: "Total Kankyo System, mesure d'odeur, 2020"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2020-11-27
+  chemin: "reference/preuves/tests-independants/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
+  emplacement: "p. 3"
+  citation: "発生源(排出口) 14 (25)"
+  contenu: "Indice d'odeur 14 (concentration 25) au point de rejet ; < 10 aux limites nord et ouest."
+
+TANABE-2023:
+  titre: "Tanabe Kankyo Kogaku et N.E. Support, fumees et odeurs d'une installation de demonstration de liquefaction de plastiques, 26 et 27/09/2023"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2023-10-25
+  chemin: "reference/preuves/documents-fournis/Exhaust Gas Concentration - Bad Smell - Dioxins  .pdf"
+  emplacement: "p. 1 (環発 第23T271号) et p. 5 (23T272) ; odeurs p. 2 a 4 et 6 a 8"
+  citation: "窒素酸化物濃度 ppm 30"
+  contenu: "NOx 30 ppm les deux jours ; SOx < 0,5 ppm ; HCN < 0,5 ppm ; poussieres < 0,004 et < 0,005 g/m3N ; debit sec 84 et 90 m3N/h. Indice d'odeur 24 et 22 a la sortie."
+  reserve: "Etablissement et machine non nommes (masques). Echantillons d'odeur preleves par le client. Pas d'O2."
+
+DIOXINES-2023:
+  titre: "Kankyo Kogai Bunseki Center, dioxines dans les gaz d'echappement, 26 et 27/09/2023"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2023-10-27
+  chemin: "reference/preuves/documents-fournis/Dioxins .pdf"
+  emplacement: "p. 1 (identique a Exhaust Gas Concentration... p. 9)"
+  citation: "排ガス(9/26) 0.1 0.011 基準値以下 ; 排ガス(9/27) 0.1 0.025 基準値以下"
+  contenu: "Dioxines 0,011 et 0,025 ng-TEQ/m3 pour une valeur de reference de 0,1."
+  reserve: "Sans numero ni methode ni O2. La couche texte porte 速報 (preliminaire) et le destinataire Land Brain, masques sur l'image."
+
+ORIST-GCMS-DRAIN:
+  titre: "Osaka Research Institute of Industrial Science and Technology (centre d'Izumi), GC-MS d'un echantillon 'drain'"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  chemin: "reference/preuves/tests-independants/gaschromatography.pdf ; doublon probable : reference/preuves/documents-fournis/20250317183955.pdf"
+  emplacement: "p. 1 et 2 (lettre), p. 4 et 5 (pics), p. 6 (residu)"
+  citation: "13 9.33 3.50.E+07 21.26 ジメチルヘプテン ; 加熱残量 53.7"
+  contenu: "71 pics, principal dimethylheptene 21,26 % d'aire ; undecene 6,52 % ; residu non volatil 53,7 % apres 5 min a 350 C."
+  reserve: "Liquide, pas un gaz. Non date, echantillon non identifie (machine, matiere), envoi preliminaire avant rapport formel."
+
+NKKK-ZPE8004-2019:
+  titre: "NKKK (日本海事検定協会), Osaka, rapport d'analyse d'un fuel oil, Report No. ZPE8004.1/19"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2019-04-10
+  chemin: "reference/preuves/documents-fournis/Urban Rig Recycling Solutions ENG .pdf"
+  emplacement: "p. 17, reproduction du rapport dans la brochure OneWorld"
+  citation: "9. 総発熱量 J/g 43,270 JIS K 2279 ; 10. 無機塩素分 質量分率% 0.0001"
+  contenu: >
+    Client OneWorld, echantillon 燃料油 fourni par le client. Eclair PMCC <= 40 C ; viscosite 50 C 1,11 mm2/s ;
+    ecoulement -20,0 C ; carbone residuel 0,56 % ; eau 0,40 % vol ; cendres 0,005 % ; soufre 0,014 % ;
+    pouvoir calorifique superieur 43 270 J/g ; chlore inorganique 0,0001 %.
+  reserve: "Lu dans une reproduction inseree dans un document du constructeur : secondaire tant que l'original n'est pas verse. Origine de l'echantillon inconnue. PCS, pas PCI. Chlore inorganique seulement."
+
+IZUMITEC-R35-339439:
+  titre: "Izumitec (イズミテック), pouvoir calorifique d'un char d'urethane, rapport R35-339439"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2023-01-30
+  chemin: "reference/preuves/documents-constructeur/Calorie-content-UR-Carbide-1.pdf"
+  emplacement: "p. 1"
+  citation: "INOウレタン炭 ; 発熱量 32090 J/g ; JIS M 8814 熱量計法準拠"
+  contenu: "Char d'urethane, preleve par le client a Toyohashi le 13/01/2023 : 32 090 J/g."
+  reserve: "Le document ne dit ni que le char vient d'une machine Urban Rig, ni PCS ou PCI, ni base seche ou brute."
+
+IZUMITEC-R35-339440:
+  titre: "Izumitec, pouvoir calorifique d'une huile d'urethane, rapport R35-339440"
+  type: rapport_laboratoire
+  fiabilite: certifie_tiers
+  nature: mesure_tiers
+  statut: lu
+  date: 2023-01-30
+  chemin: "reference/preuves/documents-constructeur/Calorie-content-UR-Carbide-2.pdf"
+  emplacement: "p. 1"
+  citation: "INOウレタン油化物 ; 43600 J/g ; JIS K 2279"
+  contenu: "Huile d'urethane : 43 600 J/g. Malgre le nom du fichier, ce n'est pas un char."
+  reserve: "PCS ou PCI non precise ; origine machine non dite."
+
+UR2000-JP-P05-BILAN:
+  titre: "Brochure URC-2000 OneWorld, bilan annonce sur ordures menageres"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
+  emplacement: "p. 5"
+  citation: "炭化物 25% ; 混合油 ( 軽油・重油 ) 5% (10,000ℓ / 再利用可能 ) ; OFF ガス 5% (10,000ℓ / 再利用 ) ; 樹脂系類含有率 10% で試算"
+  contenu: "Sur 200 t d'ordures a 10 % de resines : char 25 %, huile 5 % (10 000 L), off-gas 5 %, metaux et verre 0 a 5 %."
+  reserve: "CONSTRUCTEUR. 60 a 65 % de l'entree non affectes. Aucune mesure jointe."
+
+UR2000-JP-P08-SPEC:
+  titre: "Brochure URC-2000 OneWorld, fiche de specification"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
+  emplacement: "p. 8 (et p. 4, p. 7)"
+  citation: "処理量 / 日 200 トン / 日 ; 消費電力 ( 連続時 ) 20kw/h ; 水蒸気生成 蒸気ボイラ / 軽油"
+  contenu: "200 t/jour ; 600 C max, 0,2 MPa ; electricite 20 'kw/h' en continu ; chaudiere au gazole ; bruleur 833 kcal/s (p. 4) ; 48 bennes de 4,17 t max par 24 h (p. 7)."
+  reserve: "CONSTRUCTEUR. Electricite contredite par OW-CONSO-ENERGIE (600). Temperatures de zones differentes p. 12 (plan 2014, max 800 C)."
+
+UR2000-JP-P14-EMISSIONS:
+  titre: "Brochure URC-2000 OneWorld, courbes SOx et NOx de l'option PRIMO et affirmation sur les dioxines"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
+  emplacement: "p. 14 (courbes) ; p. 3 (dioxines)"
+  citation: "ダイオキシンなどの有害物は発生しない大気環境対応器です。"
+  contenu: "SOx jusqu'a 3 788 mg/m3, NOx jusqu'a 113 mg/m3 (points 1 a 4). Affirmation : pas de dioxines."
+  reserve: "CONSTRUCTEUR. Sans date, lieu, methode ni O2. Dioxines mesurees non nulles en 2022 et 2023."
+
+OW-ENG-P16-BILAN:
+  titre: "Brochure OneWorld 'Urban Rig' (anglais, oct. 2019), bilan journalier URC-2000"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2019-10-01
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　.pdf ; meme contenu : reference/preuves/documents-fournis/Urban Rig Recycling Solutions ENG .pdf"
+  emplacement: "p. 16"
+  citation: "Gas (Diesel) Oil 61.2 % 62,424ℓ (62.424ton) ; the fuel oil recovery from resin-based waste is about 85% of the input content"
+  contenu: "Entree 200 t, densite 0,6, 90 % de resines : gazole 61,2 %, heating oil 7,65 %, heavy oil 7,65 %, perte 11,5 %, char 5 %, eau 5 %, metaux et verre 2 %."
+  reserve: "CONSTRUCTEUR. Les masses totalisent 102 t et non 200 t ; 1 L compte pour 1 kg."
+
+OW-ENG-P02-P14-AFFIRMATIONS:
+  titre: "Brochure OneWorld anglaise, affirmations sur l'autonomie energetique et les dioxines"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2019-10-01
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　.pdf"
+  emplacement: "p. 2 ; p. 14 ; p. 15 (cadence)"
+  citation: "It is not necessary for fuel for operation except initial startup. ; Dioxin and CO₂ are not generated."
+  contenu: "Autonomie en combustible hors demarrage ; absence de dioxines et de CO2 ; cadence '17 units 51 buckets' par 24 h (p. 15)."
+  reserve: "CONSTRUCTEUR. Aucune mesure jointe. 51 bennes x 4,5 m3 x 0,6 = 138 t/j, pas 200 t/j (CALCULE)."
+
+OW-CONSO-ENERGIE:
+  titre: "Tableau 'UR Energy Consumption' par taille de machine"
+  type: declaration
+  fiabilite: constructeur
+  nature: emetteur_inconnu
+  statut: lu
+  chemin: "reference/preuves/bilan-energie/consommation-electrique-et-fuel.pdf"
+  emplacement: "p. 1, ligne 200t"
+  citation: "10,000L/day(200t) ; 600kW/h ; 56,800kW/day(200t)"
+  contenu: "200t : fioul 10 000 L/jour et 600 'kW/h' en mode mixte, ou 56 800 'kW/day' tout electrique ; essai : 'Plastic 15%. Household trash 80%, Stone/Metal/Glass 5%'."
+  reserve: "Sans emetteur, date ni methode ; unites incoherentes. Attribution a OneWorld a confirmer (R-015)."
+
+OWJ-DEMO-2021:
+  titre: "One World Japan, rapport d'essais de demonstration URT-10 sur dechets plastiques, 01 au 03/12/2021"
+  type: rapport_essai
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2021-12-03
+  chemin: "reference/preuves/documents-fournis/20231114110656.pdf"
+  emplacement: "p. 2, 5, 8"
+  citation: "投入前重量 299.2kg ; 油重量 248.2kg ; 油化率 83% オフガス他 13%"
+  contenu: "Trois lots d'environ 100 kg (PP, PE, PS principalement ; FRP et PVC en petite part) : huile 70, 88 et 91 %, soit 83 % au total ; residu 4 %."
+  reserve: "Mesure du constructeur. Off-gas et eau par difference. L'huile du jour 2 inclurait l'off-gas liquefie du jour 1 (p. 5)."
+
+OWT-DEMO-2020:
+  titre: "One World Techno, essai de demonstration sur pneus, machine 4,8 t, 12/12/2020"
+  type: rapport_essai
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2020-12-12
+  chemin: "reference/preuves/documents-constructeur/Urban-Rig-Demo-Operation-Test-Report.pdf"
+  emplacement: "p. 1 et 3"
+  citation: "The weight of each component after pyrolysis was 111 kg of wire, 133 kg of charcoal, and approximately 180 L of oil."
+  contenu: "450 kg de pneus usages : 111 kg de fil metallique, 133 kg de charbon, environ 180 L d'huile. Fioul lourd A 'approx. 280' (unite coupee)."
+  reserve: "Mesure du constructeur ; electricite et eau non renseignees ; bilan non bouclable."

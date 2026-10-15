@@ -1,0 +1,128 @@
+
+# ------------------------------------------------ Annexe 2, inventaire des preuves (chat 1 v3, 14/10/2026)
+
+R-009:
+  question: "Mesures de rendement (huile, char, off-gas, metaux, eau) sur une URC-2000 continue en service : site, dates, tonnage reel par jour, composition de l'entree, laboratoire"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "29 fichiers de reference/preuves lus le 14/10/2026 : seuls des essais en lots (20 a 100 kg ; 450 kg de pneus) ; pour l'URC-2000, uniquement des declarations (UR2000-JP p. 5, OW-ENG p. 16)"
+  sources: [CHIBA-ESSAIS-FICHES, OWJ-DEMO-2021, UR2000-JP-P05-BILAN, OW-ENG-P16-BILAN]
+
+R-010:
+  question: "Base de calcul des bilans declares : UR2000-JP p. 5 (char 25 %, huile 5 %, off-gas 5 %, 60 a 65 % non affectes) et brochure anglaise p. 16 (masses totalisant 102 t pour 200 t d'entree, 1 L compte pour 1 kg) ; cadence reelle (48 bennes de 4,17 t, ou 51 bennes de 4,5 m3 a 0,6 t/m3)"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "UR2000-JP p. 5 et 7 ; brochure anglaise p. 4, 15 et 16 : contradictions internes, aucune mesure jointe"
+  sources: [UR2000-JP-P05-BILAN, OW-ENG-P16-BILAN, OW-ENG-P02-P14-AFFIRMATIONS]
+
+R-011:
+  question: "Off-gas : mesure directe de la masse ou du debit, composition non diluee, PCI mesure ; origine du facteur 1 323,8 kcal/kg utilise dans les bilans de Chiba ; nature de l'echantillon KANSO B2002600 (65,8 % N2, 12,3 % O2) et site mesure"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation (et Asada Shokai / Land Brain via OneWorld pour les essais de Noda)"
+  cherche: "Rapport Chiba p. 27 (off-gas calcule par difference), p. 41 et 42 (facteur applique) ; KANSO p. 1 (site caviarde)"
+  sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS, KANSO-B2002600]
+
+R-012:
+  question: "Char : PCI mesure (PCS ou PCI, base seche ou brute) sur char de dechets melanges ; origine du facteur 5 880 kcal/kg des bilans de Chiba ; origine du char d'urethane Izumitec R35-339439 (machine Urban Rig ? site de Toyohashi ?) ; analyse elementaire (C, cendres, Cl)"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Rapport Chiba p. 41, 42, 47 a 50 ; Calorie-content-UR-Carbide-1.pdf ; aucun PCI de char de dechets dans les 29 fichiers"
+  sources: [CHIBA-BILANS, CHIBA-OOSUMI-CHAR, IZUMITEC-R35-339439]
+
+R-013:
+  question: "Huile : certificat NKKK ZPE8004.1/19 d'origine et origine de l'echantillon (machine, matiere, date) ; PCI mesure ; chlore total (JLOS mesure 0,137 et 0,526 % sur les huiles de Noda, NKKK ne donne que le chlore inorganique) ; distillation normee ; repartition reelle par zone de l'URC-2000 ; lien du rapport YTS 2014 avec Urban Rig ; source des valeurs du tableau de synthese p. 17 (viscosite 2,28, chlore 100 under) ; rapport formel ORIST et origine de l'echantillon 'drain'"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Brochure anglaise p. 17 (reproduction NKKK et YTS) ; rapport Chiba p. 34, 45, 46 ; Recycled-Fuel-test-report.xlsx (recopie sans en-tete) ; gaschromatography.pdf"
+  sources: [NKKK-ZPE8004-2019, CHIBA-JLOS-HUILES, CHIBA-DISTILLATION, ORIST-GCMS-DRAIN]
+
+R-014:
+  question: "Origine des facteurs energetiques appliques dans les bilans de Chiba : 10 980 kcal/kg pour l'huile, 9 088 kcal/L pour le gazole, 860 kcal/kWh"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation (ou Asada Shokai / Land Brain via OneWorld)"
+  cherche: "Rapport Chiba p. 41 et 42 : facteurs identiques pour les quatre essais, sans source"
+  sources: [CHIBA-BILANS]
+
+R-015:
+  question: "Consommation energetique mesuree d'une URC-2000 : electricite (20 'kw/h' selon UR2000-JP p. 8, 600 'kW/h' selon le tableau UR Energy Consumption), combustible (type et litres par jour), vapeur et eau ; auteur, date et unites du tableau UR Energy Consumption ; unite du bruleur 833 kcal/s ; part du gazole de Chiba consommee par le groupe electrogene ; unite du fioul de l'essai pneus 2020 ('approx. 280')"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "UR2000-JP p. 4 et 8 ; consommation-electrique-et-fuel.pdf ; Worksheet-Lufthansa ; rapport Chiba p. 42 note 4 ; Demo Operation Test Report p. 1"
+  sources: [UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE, CHIBA-BILANS, OWT-DEMO-2020]
+
+R-016:
+  question: "Emissions : rapports definitifs Oosumi (versions 仮 du 18/10/2022) et rapports 0921061-2 et -4 manquants ; rapport dioxines 2023 definitif (version 速報) ; pour chaque campagne : equipement et cheminee mesures, O2 de reference, debit, CO, HCl ; identite des installations mesurees en 2020 (KANSO) et 2023 (Tanabe) ; date, lieu et methode des courbes SOx / NOx de la brochure"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation (et Land Brain pour les rapports 2022 et 2023)"
+  cherche: "Rapport Chiba p. 55 a 70 ; Analysis-Results-Off-gas-Odor-Exhaust.pdf ; Exhaust Gas Concentration - Bad Smell - Dioxins.pdf ; Dioxins.pdf ; UR2000-JP p. 14"
+  sources: [CHIBA-OOSUMI-FUMEES, KANSO-20002610, TANABE-2023, DIOXINES-2023, UR2000-JP-P14-EMISSIONS]
+
+R-017:
+  question: "Eaux de procede : volume par tonne traitee, origine (46 a 90 L par essai de 20 a 60 kg), composition (pH 0,8 et DBO 16 000 mg/L sur residus incombustibles) et traitement prevu sur l'URC-2000"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Rapport Chiba p. 19 a 26, 44, 51 a 54"
+  sources: [CHIBA-ESSAIS-FICHES, CHIBA-OOSUMI-EAUX, CHIBA-SYNTHESE]
+
+R-018:
+  question: "Essais de Chiba : duree et temperature de chaque essai ; masse d'huile pesee ou deduite du volume ; ecarts 250 kg declares / 310 kg sur fiches et 407 L declares / 451 L sur fiches ; off-gas de 19 % puis 2 % sur deux essais 3P de 60 kg ; nature exacte de la matiere du 26/05 (granules ou chutes)"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation (conduite des essais), ou Asada Shokai via OneWorld"
+  cherche: "Rapport Chiba p. 1, 19 a 29, 41 a 44 : donnees absentes ou contradictoires"
+  sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS, CHIBA-SYNTHESE]
+
+R-019:
+  question: "Autonomie energetique annoncee ('not necessary for fuel for operation except initial startup') : mesure sur une machine en service, part de l'huile ou de l'off-gas autoconsommee"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Brochure anglaise p. 2 et 18 ; proposition AEPW p. 7 : affirmations sans mesure ; les essais de Chiba consomment 61 a 76 L de gazole par lot"
+  sources: [OW-ENG-P02-P14-AFFIRMATIONS, CHIBA-BILANS]
+
+R-020:
+  question: "Donnees d'exploitation des sites japonais cites (Toyooka, Fukuroi, Fuji, Setouchi, Tokoname, Okayama, Okinawa) : tonnages, rendements, disponibilite, consommations"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Proposition AEPW p. 10 (liste sans donnees de production)"
+  sources: []
+
+R-021:
+  question: "Essais Urban Rig sur matieres non testees : ordures menageres brutes, papier et carton, bois, dechets alimentaires, textiles, PET, PVC (rendements, char, chlore de l'huile)"
+  demande_par: Stephane
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "29 fichiers lus : seuls des plastiques PE, PP, PS, deux melanges municipaux de Noda, des residus de broyage (echec) et des pneus"
+  sources: [CHIBA-ESSAIS-FICHES, OWJ-DEMO-2021, OWT-DEMO-2020]
+
+R-022:
+  question: "Copie saine de documents-constructeur/Urban-Rig-Recycling-Solutions-ENG.pdf (fichier endommage) et document complet dont les deux Fuel-Output-Test sont les pages 15 et 16"
+  demande_par: Claude
+  date: 2026-10-14
+  statut: a_demander
+  detenteur: "Stephane (copie locale) ou OneWorld Corporation"
+  cherche: "Fichier illisible avec poppler, qpdf et pdfium le 14/10/2026 ; les Fuel-Output-Test correspondent aux pages impr. 15 et 16 du rapport Chiba"
+  sources: []

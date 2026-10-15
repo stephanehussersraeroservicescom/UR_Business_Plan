@@ -28,7 +28,7 @@ Nom de dossier hérité ; l'indépendance de chaque essai reste à établir.
 | Fichier | Nature |
 |---|---|
 | `Urban-Rig-Demo-Operation-Test-Report.pdf` | Rapport d'essai de démonstration |
-| `Urban-Rig-Recycling-Solutions-ENG.pdf` | Présentation technique générale (anglais) |
+| `Urban Rig Recycling Solutions ENG .pdf` | Brochure OneWorld en anglais (oct. 2019) ; versée le 14/10/2026 en remplacement d'une copie endommagée ; identique (md5) à celle de `documents-fournis/` |
 | `Calorie-content-UR-Carbide-1.pdf`, `Calorie-content-UR-Carbide-2.pdf` | Pouvoir calorifique du char |
 | `Worksheet-Lufthansa-200MT.xlsx` | Feuille de calcul du constructeur pour une machine de 200 t (preuve `LUFTHANSA-WS`) ; ajoutée le 14/10/2026 depuis `supporting-documents/France  CDG/` |
 
@@ -59,12 +59,12 @@ Ajouté le 14/10/2026. Documents remis par le constructeur, des partenaires ou d
 |---|---|
 | `UR2000-JP.pdf` | Brochure technique de l'URC-2000, en japonais (preuve `UR2000-JP`) |
 | `Urban RIg ENG　.pdf`, `Urban RIg ENG　 (1).pptx` | Présentation Urban Rig en anglais |
-| `Urban Rig Recycling Solutions ENG .pdf` | Présentation technique ; version différente de celle de `documents-constructeur/` |
+| `Urban Rig Recycling Solutions ENG .pdf` | Brochure OneWorld en anglais ; identique (md5) à celle de `documents-constructeur/` (vérifié le 14/10/2026) |
 | `URC-2000_STEP.zip` | Modèle 3D de la machine (format STEP) |
 | `transport installation and maintenance.pdf` | Transport, installation et maintenance |
 | `patent list.xlsx` | Liste de brevets |
 | `test data 2.docx` | Lu (première page) : rapport de fin d'essai de traitement de déchets industriels remis au préfet de Chiba par Asada Shokai, daté du 30/01/2023, suivi du rapport d'essai de septembre 2022 ; OneWorld (fabricant, conduite) et Land Brain (mesures et analyses) y figurent comme co-exécutants |
-| `Chiba prefecture report ENG.pdf` | Rapport pour la préfecture de Chiba, version anglaise |
+| `Chiba prefecture report ENG.pdf` | Traduction anglaise partielle du rapport de Chiba ; jamais citée (D-019), on cite l'original japonais `tests-independants/prefecture-shiba-test-data-2.pdf` |
 | `Chiba prefecture tables of pyrolysis results.xlsx` | Tableaux de résultats de pyrolyse, préfecture de Chiba |
 | `test report 1.pdf` | Rapport d'essai |
 | `fuel report.xlsx` | Rapport sur l'huile produite |

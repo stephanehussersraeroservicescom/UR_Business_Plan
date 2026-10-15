@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# REGISTRE DES CONTRE-VERIFICATIONS
+# Une entree par chiffre verifie par un agent qui ne l'a pas redige (Codex, ChatGPT,
+# DeepSeek) ou par Stephane. On ajoute a la fin ; on ne modifie ni ne supprime jamais
+# une entree existante. Un verdict sans citation exacte n'est pas inscrit.
+#
+# Champs : date, agent (codex | chatgpt | deepseek | stephane), document, ligne,
+#          source (identifiant du registre ou de _evidence.yaml), valeur, verdict
+#          (CONFIRMÉ | DIFFÉRENT | ABSENT | INACCESSIBLE | NON SOURCÉ | CALCUL FAUX),
+#          nature (tiers | constructeur | publique), citation, emplacement, commentaire
+#
+# Exemple (a ne pas recopier tel quel) :
+#   - date: 2026-10-15
+#     agent: codex
+#     document: nouveau-business-plan/annexes/annexe-02-html/index.html
+#     ligne: "section 2.7.1"   (pour un HTML : section ou fiche)
+#     source: GC-B2002600
+#     valeur: "..."
+#     verdict: CONFIRMÉ
+#     nature: tiers
+#     citation: "texte exact releve dans la source"
+#     emplacement: "p. 2, tableau 1"
+#     commentaire: ""
+# ---------------------------------------------------------------------------
+verifications:

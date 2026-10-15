@@ -1,0 +1,299 @@
+
+# ------------------------------------------------ Annexe 2, version 3 (14/10/2026) : gaz, char, bilan energetique
+
+CALC-A2-VAP-EAU:
+  description: "Chaleur de vaporisation de l'eau a 25 C, difference des enthalpies de formation liquide et gaz"
+  formule: "liq - gaz"
+  entrees:
+    liq: {valeur: 285.83, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=2"}
+    gaz: {valeur: 241.826, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=1"}
+  resultat: 44.004
+  unite: "kJ/mol"
+
+CALC-A2-PCI-CH4:
+  description: "PCI molaire de CH4 : enthalpie de combustion (eau liquide) moins 2 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 890.7, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74828"}
+    n: {valeur: 2, unite: "mol H2O/mol", source: STOECHIOMETRIE, emplacement: "stoechiometrie de combustion"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 802.692
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C2H6:
+  description: "PCI molaire de C2H6 : enthalpie de combustion (eau liquide) moins 3 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 1560.7, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74840"}
+    n: {valeur: 3, unite: "mol H2O/mol", source: STOECHIOMETRIE, emplacement: "stoechiometrie de combustion"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1428.688
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C2H4:
+  description: "PCI molaire de C2H4 : enthalpie de combustion (eau liquide) moins 2 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 1411.2, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74851"}
+    n: {valeur: 2, unite: "mol H2O/mol", source: STOECHIOMETRIE, emplacement: "stoechiometrie de combustion"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1323.192
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C3H8:
+  description: "PCI molaire de C3H8 : enthalpie de combustion (eau liquide) moins 4 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 2219.2, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74986"}
+    n: {valeur: 4, unite: "mol H2O/mol", source: STOECHIOMETRIE, emplacement: "stoechiometrie de combustion"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 2043.184
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C3H6:
+  description: "PCI molaire de C3H6 : enthalpie de combustion (eau liquide) moins 3 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 2057.8, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C115071"}
+    n: {valeur: 3, unite: "mol H2O/mol", source: STOECHIOMETRIE, emplacement: "stoechiometrie de combustion"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1925.788
+  unite: "kJ/mol"
+
+CALC-A2-PCI-CO:
+  description: "PCI molaire de CO : enthalpie de formation de CO2 moins celle de CO"
+  formule: "co2 - co"
+  entrees:
+    co2: {valeur: 393.51, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C124389"}
+    co: {valeur: 110.53, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C630080"}
+  resultat: 282.98
+  unite: "kJ/mol"
+
+CALC-A2-GAZ-PCI:
+  description: "PCI massique du gaz de pyrolyse (composition B2002600 sans O2 ni N2, hypothese D-021)"
+  formule: "(x_h2*p_h2 + x_ch4*p_ch4 + x_c2h6*p_c2h6 + x_c2h4*p_c2h4 + x_c3h8*p_c3h8 + x_c3h6*p_c3h6 + x_co*p_co) / (x_h2*m_h2 + x_ch4*m_ch4 + x_c2h6*m_c2h6 + x_c2h4*m_c2h4 + x_c3h8*m_c3h8 + x_c3h6*m_c3h6 + x_co*m_co + x_co2*m_co2)"
+  entrees:
+    x_h2: {valeur: 12.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_ch4: {valeur: 3.2, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c2h6: {valeur: 0.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c2h4: {valeur: 0.2, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c3h8: {valeur: 0.3, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c3h6: {valeur: 0.3, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_co: {valeur: 0.6, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_co2: {valeur: 1.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    m_h2: {valeur: 2.01588, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C1333740"}
+    m_ch4: {valeur: 16.0425, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74828"}
+    m_c2h6: {valeur: 30.069, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74840"}
+    m_c2h4: {valeur: 28.0532, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74851"}
+    m_c3h8: {valeur: 44.0956, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74986"}
+    m_c3h6: {valeur: 42.0797, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C115071"}
+    m_co: {valeur: 28.0101, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C630080"}
+    m_co2: {valeur: 44.0095, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C124389"}
+    p_h2: {valeur: 241.826, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=1 (formation de l'eau gaz)"}
+    p_ch4: {calc: CALC-A2-PCI-CH4}
+    p_c2h6: {calc: CALC-A2-PCI-C2H6}
+    p_c2h4: {calc: CALC-A2-PCI-C2H4}
+    p_c3h8: {calc: CALC-A2-PCI-C3H8}
+    p_c3h6: {calc: CALC-A2-PCI-C3H6}
+    p_co: {calc: CALC-A2-PCI-CO}
+  resultat: 37.386
+  unite: "MJ/kg"
+
+CALC-A2-GAZ-PART-COMBUSTIBLE:
+  description: "Part des gaz combustibles dans le gaz de pyrolyse hors air (H2 a CO sur H2 a CO2)"
+  formule: "comb / (comb + co2)"
+  entrees:
+    comb: {calc: CALC-A2-GC-COMBUSTIBLES}
+    co2: {valeur: 1.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 0.9137
+  unite: "fraction"
+
+CALC-A2-BRULEUR-MJ-T:
+  description: "Besoin de chaleur du bruleur de surchauffe, par tonne a 200 t/jour (833 kcal/s en continu)"
+  formule: "kcal_s * 86400 * kcal_kj / 1000 / capacite"
+  entrees:
+    kcal_s: {valeur: 833, unite: "kcal/s", source: UR2000-JP-P08-SPEC, emplacement: "p. 4"}
+    kcal_kj: {valeur: 4.1868, unite: "kJ/kcal", source: NIST-SP811-B9, emplacement: "Appendix B.9"}
+    capacite: {valeur: 200, unite: "t/jour", source: UR2000-JP-P08-SPEC, emplacement: "p. 8"}
+  resultat: 1506.65
+  unite: "MJ/t"
+
+CALC-A2-FIOUL-MJ-T:
+  description: "Energie du combustible declare (10 000 L/jour pour 200 t), s'il s'agit de l'huile produite (densite et PCS JLOS)"
+  formule: "litres * densite * pcs / capacite"
+  entrees:
+    litres: {valeur: 10000, unite: "L/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    densite: {valeur: 0.8642, unite: "kg/L", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+    capacite: {valeur: 200, unite: "t/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 1987.66
+  unite: "MJ/t"
+
+CALC-A2-ELEC-MJ-T:
+  description: "Electricite declaree (600 kW en continu, tableau UR Energy Consumption) par tonne a 200 t/jour"
+  formule: "kw * 24 * kwh_mj / capacite"
+  entrees:
+    kw: {valeur: 600, unite: "kW", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    kwh_mj: {valeur: 3.6, unite: "MJ/kWh", source: NIST-SP811-B9, emplacement: "Appendix B.9"}
+    capacite: {valeur: 200, unite: "t/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 259.2
+  unite: "MJ/t"
+
+CALC-A2-NRJ-GAZ-RESINE:
+  description: "Energie du gaz par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.115, unite: "fraction", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 4299.4
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-RESINE:
+  description: "Energie de l'huile par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 0.01 * 1000 * pcs"
+  entrees:
+    part: {calc: CALC-A2-OW16-HUILE-TOTALE}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 35190
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-RESINE:
+  description: "Energie du char par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 1604.5
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-RESINE:
+  description: "Energie du gaz rapportee au besoin du bruleur, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-RESINE}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 2.8536
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-RESINE:
+  description: "Energie du gaz rapportee au combustible declare, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-RESINE}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 2.163
+  unite: "rapport"
+
+CALC-A2-NRJ-GAZ-OM:
+  description: "Energie du gaz par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 1869.3
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-OM:
+  description: "Energie de l'huile par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pcs"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 2300
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-OM:
+  description: "Energie du char par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.25, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 8022.5
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-OM:
+  description: "Energie du gaz rapportee au besoin du bruleur, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-OM}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 1.2407
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-OM:
+  description: "Energie du gaz rapportee au combustible declare, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-OM}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 0.9405
+  unite: "rapport"
+
+CALC-A2-NRJ-GAZ-NODA:
+  description: "Energie du gaz par tonne de matiere convertible, plastiques d'emballage de Noda 2022-09-09"
+  formule: "gaz / (entree - metaux) * 1000 * pci"
+  entrees:
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 8991.8
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-NODA:
+  description: "Energie de l'huile par tonne de matiere convertible, plastiques d'emballage de Noda"
+  formule: "huile / (entree - metaux) * 1000 * pcs"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 18749.4
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-NODA:
+  description: "Energie du char par tonne de matiere convertible, plastiques d'emballage de Noda"
+  formule: "char / (entree - metaux) * 1000 * pci"
+  entrees:
+    char: {valeur: 13.9, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 11292.4
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-NODA:
+  description: "Energie du gaz rapportee au besoin du bruleur, plastiques d'emballage de Noda"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-NODA}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 5.968
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-NODA:
+  description: "Energie du gaz rapportee au combustible declare, plastiques d'emballage de Noda"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-NODA}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 4.524
+  unite: "rapport"
+
+CALC-A2-CL-VAPO-EMB:
+  description: "Chlore de l'huile d'emballages de Noda rapporte au seuil de 3 ppm des vapocraqueurs"
+  formule: "ppm / seuil"
+  entrees:
+    ppm: {calc: CALC-A2-JLOS-CL-EMB-PPM}
+    seuil: {valeur: 3, unite: "ppm", source: KUSENBERG-AICHE-2021, emplacement: "tableau 2"}
+  resultat: 456.7
+  unite: "rapport"
+
+CALC-A2-CL-VAPO-RES:
+  description: "Chlore de l'huile de residus de Noda rapporte au seuil de 3 ppm des vapocraqueurs"
+  formule: "ppm / seuil"
+  entrees:
+    ppm: {calc: CALC-A2-JLOS-CL-RES-PPM}
+    seuil: {valeur: 3, unite: "ppm", source: KUSENBERG-AICHE-2021, emplacement: "tableau 2"}
+  resultat: 1753.3
+  unite: "rapport"

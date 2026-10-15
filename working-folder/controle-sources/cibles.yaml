@@ -12,3 +12,5 @@ exclure:
   - "**/notes-recherche*/**"
   - "**/README.md"
   - "**/PASSATION-*.md"
+  - "nouveau-business-plan/AVANCEMENT.md"      # fichier de pilotage, pas un livrable
+  - "nouveau-business-plan/lancements/**"      # messages de lancement des chats

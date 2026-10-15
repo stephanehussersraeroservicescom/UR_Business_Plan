@@ -1,0 +1,32 @@
+
+CALC-A2-GCMS-TMN:
+  description: 'GC-MS ORIST : part d''aire des pics nommes trimethylnonene (C12)'
+  formule: p41 + p58 + p59 + p60 + p61
+  entrees:
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+  resultat: 9.03
+  unite: '% aire'

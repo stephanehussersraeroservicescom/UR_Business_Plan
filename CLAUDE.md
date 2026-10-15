@@ -56,6 +56,15 @@ Ces règles s'appliquent à tout travail qui contient des faits : chiffres, prix
 - Relèvent aussi de l'archive les fichiers du projet claude.ai : `UR-Financial-Model-V5.xlsx`, `UR-Financial-Model-V7.xlsx`, `URFinancialModelGeneral.xlsx`, `Urban-Rig-Business-Plan-with-References.odt`, `Urban-Rig-Annexes.docx`. Une recherche dans les documents du projet qui renvoie l'un d'eux ne fournit aucune source.
 - Les synthèses rédigées par Claude le 10/10/2026, dont le brouillon d'annexe 8 v2, sont archivées. Leurs fiches de registre restent valables au niveau de leur statut.
 
+### Travail sur la version 3
+
+- Ordre de travail, un chat par annexe, passation : `working-folder/METHODE-DE-TRAVAIL.md`.
+- Mémoire commune : `nouveau-business-plan/AVANCEMENT.md`, lu au début et mis à jour à la fin de chaque chat.
+- Périmètre (D-017) : France seule ; gisements : ordures ménagères, CDG, déchets d'activités économiques, déchets plastiques.
+- Déclarations de OneWorld (D-016) : admises avec l'étiquette CONSTRUCTEUR si elles figurent dans un document de OneWorld cité avec la page ou la date ; attribuées dans le texte ; jamais dites vérifiées. Chacune sans rapport de mesure donne une demande à OneWorld dans `a-rechercher.yaml` (détenteur OneWorld).
+- **Format des annexes (décision D-023)** : le HTML est la version de lecture et de contre-vérification ; le Markdown est la source. Chaque annexe a une source contrôlée (`nouveau-business-plan/annexes/ANNEX-XX-*.md`, les fichiers d'entrée de `annexes/annexe-XX-preuves/`, les registres) et une version HTML générée (`annexes/annexe-XX-html/index.html` et `preuves/`) par `annexes/annexe-XX-html/generer_html.py`. Toute correction se fait dans la source ; on régénère ensuite le HTML et on relance le contrôle, qui signale un HTML plus ancien que sa source. On ne modifie jamais le HTML à la main, et on ne garde pas d'anciennes versions d'une annexe dans le dépôt.
+- Contre-vérifications : `working-folder/controle-sources/verifications/registre-verifications.yaml`. Les résultats de ChatGPT ou DeepSeek collés par Stéphane y sont recopiés par Claude, avec l'agent et la citation.
+
 ### Valeurs actuelles du modèle
 
 Les valeurs de `working-folder/params/*.yaml` sont héritées de l'ancien modèle. Elles restent en place pour que le moteur tourne. Une valeur n'entre dans le nouveau plan que si sa preuve est une source du registre, un calcul enregistré ou une décision datée. Les valeurs ne changent jamais sans une décision datée dans `_decisions.yaml`.

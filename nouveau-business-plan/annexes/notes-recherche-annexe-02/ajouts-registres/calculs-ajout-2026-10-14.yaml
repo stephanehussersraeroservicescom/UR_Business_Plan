@@ -1,0 +1,239 @@
+
+# ------------------------------------------------ Annexe 2 (chat 1 v3, 14/10/2026)
+# Pages : numerotation du fichier PDF (Chiba JP : PDF = impr. + 6).
+
+CALC-A2-RDT-HUILE-0526:
+  description: "Rendement huile sur masse entrante, essai 3P du 2022-05-26 (Chiba)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 43.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.7183
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0711:
+  description: "Rendement huile sur masse entrante, essai 3P du 2022-07-11 (Chiba)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 49.4, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.8233
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0909:
+  description: "Rendement huile sur masse entrante, plastiques d'emballage de Noda, 2022-09-09"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 16.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+    entree: {valeur: 50, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+  resultat: 0.322
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0915:
+  description: "Rendement huile sur masse entrante, residus incombustibles de Noda, 2022-09-15"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 22.5, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+    entree: {valeur: 50, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+  resultat: 0.45
+  unite: fraction
+
+CALC-A2-OFFGAS-0526:
+  description: "Off-gas (par difference) rapporte a la masse entrante, 2022-05-26"
+  formule: "offgas / entree"
+  entrees:
+    offgas: {valeur: 11.7, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.195
+  unite: fraction
+
+CALC-A2-OFFGAS-0711:
+  description: "Off-gas (par difference) rapporte a la masse entrante, 2022-07-11"
+  formule: "offgas / entree"
+  entrees:
+    offgas: {valeur: 1.3, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.02167
+  unite: fraction
+
+CALC-A2-ELEC-T-0526:
+  description: "Electricite par tonne traitee, essai en lot du 2022-05-26"
+  formule: "elec / (entree / 1000)"
+  entrees:
+    elec: {valeur: 65, unite: kWh, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1083.3
+  unite: kWh/t
+
+CALC-A2-GAZOLE-T-0526:
+  description: "Gazole par tonne traitee (groupe electrogene compris), essai en lot du 2022-05-26"
+  formule: "gazole / (entree / 1000)"
+  entrees:
+    gazole: {valeur: 66, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1100
+  unite: L/t
+
+CALC-A2-GAZOLE-T-0711:
+  description: "Gazole par tonne traitee (groupe electrogene compris), essai en lot du 2022-07-11"
+  formule: "gazole / (entree / 1000)"
+  entrees:
+    gazole: {valeur: 76, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1266.7
+  unite: L/t
+
+CALC-A2-FACTEUR-OFFGAS:
+  description: "Facteur energetique implicite applique a l'off-gas dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 15489, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 11.7, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1323.8
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-CHAR:
+  description: "Facteur energetique implicite applique au char dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 30576, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 5.2, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 5880
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-HUILE:
+  description: "Facteur energetique implicite applique a l'huile dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 473238, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 43.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 10980
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-GAZOLE:
+  description: "Facteur energetique implicite applique au gazole dans les bilans de Chiba"
+  formule: "energie / volume"
+  entrees:
+    energie: {valeur: 599808, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    volume: {valeur: 66, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 9088
+  unite: kcal/L
+
+CALC-A2-JLOS-CL-EMB-PPM:
+  description: "Chlore de l'huile des plastiques d'emballage de Noda, en ppm massiques"
+  formule: "chlore * 10000"
+  entrees:
+    chlore: {valeur: 0.137, unite: "% masse", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 1370
+  unite: ppm
+
+CALC-A2-JLOS-CL-RES-PPM:
+  description: "Chlore de l'huile des residus incombustibles de Noda, en ppm massiques"
+  formule: "chlore * 10000"
+  entrees:
+    chlore: {valeur: 0.526, unite: "% masse", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 46"}
+  resultat: 5260
+  unite: ppm
+
+CALC-A2-GC-SOMME:
+  description: "Somme des constituants rapportes dans l'analyse d'off-gas B2002600"
+  formule: "co + ch4 + co2 + c2h4 + c2h6 + c3h8 + c3h6 + h2 + o2 + n2"
+  entrees:
+    co: {valeur: 0.6, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    ch4: {valeur: 3.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    co2: {valeur: 1.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h4: {valeur: 0.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h6: {valeur: 0.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h8: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h6: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    h2: {valeur: 12.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    o2: {valeur: 12.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    n2: {valeur: 65.8, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 97.8
+  unite: "%"
+
+CALC-A2-GC-COMBUSTIBLES:
+  description: "Part des gaz combustibles (CO, CH4, C2, C3, H2) dans l'echantillon B2002600"
+  formule: "co + ch4 + c2h4 + c2h6 + c3h8 + c3h6 + h2"
+  entrees:
+    co: {valeur: 0.6, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    ch4: {valeur: 3.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h4: {valeur: 0.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h6: {valeur: 0.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h8: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h6: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    h2: {valeur: 12.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 18.0
+  unite: "%"
+
+CALC-A2-OW16-SOMME-MASSES:
+  description: "Somme des masses du bilan journalier declare par OneWorld (brochure anglaise p. 16), pour une entree annoncee de 200 t"
+  formule: "gazole + heating + heavy + perte + char + eau + metaux"
+  entrees:
+    gazole: {valeur: 62.424, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heating: {valeur: 7.803, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heavy: {valeur: 7.803, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    perte: {valeur: 11.73, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    char: {valeur: 5.1, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    eau: {valeur: 5.1, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    metaux: {valeur: 2.04, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 102.0
+  unite: t
+
+CALC-A2-OW15-CADENCE:
+  description: "Tonnage journalier implique par la cadence declaree (51 bennes de 4,5 m3 a une densite de 0,6)"
+  formule: "bennes * volume * densite"
+  entrees:
+    bennes: {valeur: 51, unite: "bennes/jour", source: OW-ENG-P02-P14-AFFIRMATIONS, emplacement: "p. 15"}
+    volume: {valeur: 4.5, unite: m3, source: OW-ENG-P02-P14-AFFIRMATIONS, emplacement: "p. 4"}
+    densite: {valeur: 0.6, unite: t/m3, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 137.7
+  unite: t/jour
+
+CALC-A2-UR2000-CADENCE:
+  description: "Tonnage journalier implique par 48 bennes de 4,17 t au plus (UR2000-JP p. 7)"
+  formule: "bennes * masse"
+  entrees:
+    bennes: {valeur: 48, unite: "bennes/jour", source: UR2000-JP-P08-SPEC, emplacement: "p. 7"}
+    masse: {valeur: 4.17, unite: t, source: UR2000-JP-P08-SPEC, emplacement: "p. 7"}
+  resultat: 200.16
+  unite: t/jour
+
+CALC-A2-UR2000-NONAFFECTE-MIN:
+  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 5 %"
+  formule: "1 - char - huile - offgas - metaux"
+  entrees:
+    char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    huile: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    offgas: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    metaux: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+  resultat: 0.60
+  unite: fraction
+
+CALC-A2-UR2000-NONAFFECTE-MAX:
+  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 0 %"
+  formule: "1 - char - huile - offgas"
+  entrees:
+    char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    huile: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    offgas: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+  resultat: 0.65
+  unite: fraction
+
+CALC-A2-FIOUL-T-CONTINU:
+  description: "Fioul par tonne d'apres le tableau non attribue 'UR Energy Consumption', ligne 200t"
+  formule: "fioul / capacite"
+  entrees:
+    fioul: {valeur: 10000, unite: L/jour, source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    capacite: {valeur: 200, unite: t/jour, source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 50
+  unite: L/t
+
+CALC-A2-OWJ-HUILE:
+  description: "Rendement huile cumule des trois lots URT-10 de decembre 2021 (OneWorld Japan)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 248.2, unite: kg, source: OWJ-DEMO-2021, emplacement: "p. 8"}
+    entree: {valeur: 299.2, unite: kg, source: OWJ-DEMO-2021, emplacement: "p. 8"}
+  resultat: 0.8295
+  unite: fraction

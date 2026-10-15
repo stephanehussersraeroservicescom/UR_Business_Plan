@@ -30,3 +30,4 @@ python3 working-folder/controle-sources/verifier_sources.py
 | `CLAUDE.md` | Claude |
 | `AGENTS.md` | Codex et les autres agents de vérification |
 | `ARCHIVE-NON-VERIFIE/README.md` | Quiconque ouvre l'archive |
+| `COMMANDES.md` | Stéphane : les commandes de terminal (contrôle, régénération du HTML, GitHub) |

@@ -1,0 +1,1253 @@
+
+# === ANNEXE 2 : GC-MS ORIST et lecture carbureacteur (14/10/2026) ===
+
+CALC-A2-GCMS-SOMME:
+  description: 'GC-MS ORIST : somme des aires des 71 pics (controle de la transcription)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p18 + p19 + p20 + p21 + p22 + p24 + p25 + p26 + p27 + p30 + p31 + p32 + p33 + p36 + p37 + p39 + p40 + p41 + p42 + p44 + p58 + p59 + p60 + p61 + p62 + p63 + p65 + p67 + p72 + p74 + p75 + p76 + p77 + p78 + p79 + p80 + p81 + p82 + p83 + p86 + p90 + p92 + p94 + p96 + p99 + p100 + p101 + p104 + p105 + p106 + p107 + p108 + p110 + p112 + p116 + p118 + p119 + p120 + p122 + p125 + p128
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p18:
+      valeur: 0.47
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 18
+    p19:
+      valeur: 0.3
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 19
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p22:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 22
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p26:
+      valeur: 0.09
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 26
+    p27:
+      valeur: 0.36
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 27
+    p30:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 30
+    p31:
+      valeur: 0.38
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 31
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+    p37:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 37
+    p39:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 39
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p44:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 44
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p65:
+      valeur: 0.19
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 65
+    p67:
+      valeur: 0.37
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 67
+    p72:
+      valeur: 0.17
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 72
+    p74:
+      valeur: 2.44
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 74
+    p75:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 75
+    p76:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 76
+    p77:
+      valeur: 3.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 77
+    p78:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 78
+    p79:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 79
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p81:
+      valeur: 1.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 81
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p83:
+      valeur: 1.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 83
+    p86:
+      valeur: 0.98
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 86
+    p90:
+      valeur: 1.34
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 90
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+    p99:
+      valeur: 1.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 99
+    p100:
+      valeur: 0.96
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 100
+    p101:
+      valeur: 0.78
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 101
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+    p105:
+      valeur: 0.5
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 105
+    p106:
+      valeur: 0.54
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 106
+    p107:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 107
+    p108:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 108
+    p110:
+      valeur: 2.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 110
+    p112:
+      valeur: 1.31
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 112
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p118:
+      valeur: 0.89
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 118
+    p119:
+      valeur: 2.77
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 119
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+    p122:
+      valeur: 0.74
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 122
+    p125:
+      valeur: 2.35
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 125
+    p128:
+      valeur: 1.55
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 128
+  resultat: 100.02
+  unite: '% aire'
+CALC-A2-GCMS-OLEF:
+  description: 'GC-MS ORIST : part d''aire des olefines (alcenes, cycloalcenes, dienes) identifiees'
+  formule: p7 + p9 + p13 + p15 + p17 + p24 + p25 + p40 + p41 + p42 + p58 + p59 + p60 + p61 + p62 + p63 + p80 + p82 + p92 + p96 + p104
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+  resultat: 57.59
+  unite: '% aire'
+CALC-A2-GCMS-JET:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures nommes de 8 a 16 atomes de carbone (estimes et possibles)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p20 + p21 + p24 + p25 + p32 + p33 + p36 + p40 + p41 + p42 + p58 + p59 + p60 + p61 + p62 + p63 + p82 + p92 + p96
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+  resultat: 58.54
+  unite: '% aire'
+CALC-A2-GCMS-JET-EST:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures de 8 a 16 atomes de carbone identifies avec bonne concordance (colonne estime)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p20 + p21 + p24 + p25 + p42
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+  resultat: 38.2
+  unite: '% aire'
+CALC-A2-GCMS-LOURD:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures nommes de plus de 16 atomes de carbone'
+  formule: p80 + p94 + p104 + p116 + p120
+  entrees:
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+  resultat: 4.92
+  unite: '% aire'
+CALC-A2-GCMS-OXY:
+  description: 'GC-MS ORIST : part d''aire des composes oxygenes possibles (esters, alcools)'
+  formule: p39 + p74 + p77 + p81 + p86 + p99 + p100 + p101 + p108 + p110
+  entrees:
+    p39:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 39
+    p74:
+      valeur: 2.44
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 74
+    p77:
+      valeur: 3.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 77
+    p81:
+      valeur: 1.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 81
+    p86:
+      valeur: 0.98
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 86
+    p99:
+      valeur: 1.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 99
+    p100:
+      valeur: 0.96
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 100
+    p101:
+      valeur: 0.78
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 101
+    p108:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 108
+    p110:
+      valeur: 2.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 110
+  resultat: 15.49
+  unite: '% aire'
+CALC-A2-GCMS-NONID:
+  description: 'GC-MS ORIST : part d''aire des pics non identifies ou seulement ''hydrocarbure aliphatique'''
+  formule: p19 + p22 + p26 + p27 + p30 + p31 + p37 + p44 + p65 + p67 + p72 + p75 + p76 + p78 + p79 + p83 + p90 + p105 + p106 + p107 + p112 + p118 + p119 + p122 + p125 + p128
+  entrees:
+    p19:
+      valeur: 0.3
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 19
+    p22:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 22
+    p26:
+      valeur: 0.09
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 26
+    p27:
+      valeur: 0.36
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 27
+    p30:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 30
+    p31:
+      valeur: 0.38
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 31
+    p37:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 37
+    p44:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 44
+    p65:
+      valeur: 0.19
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 65
+    p67:
+      valeur: 0.37
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 67
+    p72:
+      valeur: 0.17
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 72
+    p75:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 75
+    p76:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 76
+    p78:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 78
+    p79:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 79
+    p83:
+      valeur: 1.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 83
+    p90:
+      valeur: 1.34
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 90
+    p105:
+      valeur: 0.5
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 105
+    p106:
+      valeur: 0.54
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 106
+    p107:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 107
+    p112:
+      valeur: 1.31
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 112
+    p118:
+      valeur: 0.89
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 118
+    p119:
+      valeur: 2.77
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 119
+    p122:
+      valeur: 0.74
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 122
+    p125:
+      valeur: 2.35
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 125
+    p128:
+      valeur: 1.55
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 128
+  resultat: 20.6
+  unite: '% aire'
+CALC-A2-GCMS-C9:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C9'
+  formule: p10 + p12 + p13 + p14 + p15
+  entrees:
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+  resultat: 23.19
+  unite: '% aire'
+CALC-A2-GCMS-C10:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C10'
+  formule: p16 + p17 + p20 + p21 + p24 + p25 + p32 + p33
+  entrees:
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+  resultat: 8.16
+  unite: '% aire'
+CALC-A2-GCMS-C11:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C11'
+  formule: p42
+  entrees:
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+  resultat: 6.52
+  unite: '% aire'
+CALC-A2-GCMS-C12:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C12'
+  formule: p41 + p58 + p59 + p60 + p61 + p82 + p92
+  entrees:
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+  resultat: 9.91
+  unite: '% aire'
+CALC-A2-GCMS-C13:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C13'
+  formule: p40 + p62 + p63 + p96
+  entrees:
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+  resultat: 9.73
+  unite: '% aire'
+CALC-A2-GCMS-NAPHT:
+  description: 'GC-MS ORIST : part d''aire des cycloalcanes (naphtenes) nommes'
+  formule: p10 + p12 + p14 + p32 + p33 + p94 + p116 + p120
+  entrees:
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+  resultat: 3.43
+  unite: '% aire'
+CALC-A2-GCMS-ISOPAR:
+  description: 'GC-MS ORIST : part d''aire des alcanes ramifies nommes'
+  formule: p8 + p16 + p20 + p21 + p36
+  entrees:
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+  resultat: 2.44
+  unite: '% aire'
+CALC-A2-GCMS-VOLAT:
+  description: Part de l'echantillon 'drain' evaporee apres 5 min a 350 C
+  formule: 100 - residu
+  entrees:
+    residu:
+      valeur: 53.7
+      unite: '%'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 6
+  resultat: 46.3
+  unite: '%'
+CALC-A2-TEB-NONENE:
+  description: Temperature d'ebullition normale du 1-nonene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 419
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-nonene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 145.85
+  unite: C
+CALC-A2-TEB-UNDECENE:
+  description: Temperature d'ebullition normale du 1-undecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 466
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-undecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 192.85
+  unite: C
+CALC-A2-TEB-TRIDECENE-BAS:
+  description: Temperature d'ebullition normale du 1-tridecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 501
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-tridecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 227.85
+  unite: C
+CALC-A2-TEB-TRIDECENE-HAUT:
+  description: Temperature d'ebullition normale du 1-tridecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 507
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-tridecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 233.85
+  unite: C
+CALC-A2-TEB-HEXADECANE:
+  description: Temperature d'ebullition normale du n-hexadecane en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 554
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: n-hexadecane
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 280.85
+  unite: C

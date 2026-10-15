@@ -149,7 +149,10 @@ Format : ID du calcul | Résultat recalculé | Résultat annoncé | Écart | Uni
 
 ## Ce qu'on fait des résultats
 
-- Un verdict **CONFIRMÉ avec citation exacte** de ChatGPT ou de DeepSeek vaut contre-vérification. La fiche de la source peut passer en `verifie-recontrole`.
+- Donnez à ChatGPT ou à DeepSeek la version HTML de l'annexe (`annexe-XX-html/index.html` et les fiches utiles de `preuves/`) : c'est la version de référence. Ils ne corrigent rien.
+- Collez la réponse de ChatGPT ou de DeepSeek dans le chat Claude de l'annexe concernée. Claude corrige la source Markdown et régénère le HTML. Claude recopie chaque verdict dans `working-folder/controle-sources/verifications/registre-verifications.yaml` (agent `chatgpt` ou `deepseek`, citation comprise). Codex, lui, l'y inscrit directement.
+- Un verdict **CONFIRMÉ avec citation exacte** vaut contre-vérification. La fiche de la source peut passer en `verifie-recontrole`.
+- Quand la source est un document de OneWorld, CONFIRMÉ veut seulement dire que OneWorld l'écrit (étiquette CONSTRUCTEUR, décision D-016).
 - Un verdict **DIFFÉRENT, ABSENT ou CALCUL FAUX** bloque la brique. On corrige le document, jamais la fiche de la source.
 - Si les deux vérificateurs ne sont pas d'accord, Stéphane ouvre lui-même la source.
 - Un verdict sans citation exacte ne compte pas.

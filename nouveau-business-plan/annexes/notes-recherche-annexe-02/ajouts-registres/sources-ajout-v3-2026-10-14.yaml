@@ -1,0 +1,133 @@
+
+# === ANNEXE 2 v3 : THERMOCHIMIE, CHLORE, METAUX DU CHAR (14/10/2026) ======
+
+NIST-WEBBOOK-GAZ:
+  titre: "NIST Chemistry WebBook (SRD 69) : masses molaires et enthalpies de combustion et de formation des gaz H2, CH4, C2H6, C2H4, C3H8, C3H6, CO, CO2, H2O"
+  editeur: "National Institute of Standards and Technology"
+  type: donnees_ouvertes
+  url: "https://webbook.nist.gov/"
+  emplacement: "Pages Mask=1 : ID=C1333740 (H2), C74828 (CH4), C74840 (C2H6), C74851 (C2H4), C74986 (C3H8), C115071 (C3H6), C630080 (CO), C124389 (CO2) ; C7732185 Mask=1 et Mask=2 (H2O)"
+  contenu: >
+    Masses molaires : H2 2,01588 ; CH4 16,0425 ; C2H6 30,0690 ; C2H4 28,0532 ; C3H8 44,0956 ; C3H6 42,0797 ;
+    CO 28,0101 ; CO2 44,0095 ; H2O 18,0153. Enthalpies de combustion (gaz, kJ/mol) : CH4 -890,7 (Pittam et Pilcher
+    1972) ; C2H6 -1560,7 ; C2H4 -1411,20 (Rossini et Knowlton 1937) ; C3H8 -2219,2 ; C3H6 -2057,8 (Wiberg et
+    Fenoglio 1968). Enthalpies de formation (kJ/mol, CODATA) : H2O gaz -241,826 ; H2O liquide -285,830 ;
+    CO -110,53 ; CO2 -393,51.
+  citation: "-890.7 ± 0.4"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Pas d'enthalpie de combustion listee pour H2 et CO ni de chaleur de vaporisation de l'eau : deduites des enthalpies de formation (calculs CALC-A2-*)."
+
+NIST-SP811-B9:
+  titre: "NIST Special Publication 811, Guide to the SI, Appendix B.9 : facteurs de conversion (energie)"
+  editeur: "National Institute of Standards and Technology"
+  type: reglementaire
+  url: "https://www.nist.gov/node/777661"
+  emplacement: "Appendix B.9, table Energy"
+  contenu: "1 kW.h = 3,6 x 10^6 J ; 1 calorie IT = 4,1868 J."
+  citation: "calorieIT (calIT) | joule (J) | 4.1868 | E+00"
+  statut: verifie
+  consulte: 2026-10-14
+
+KUSENBERG-AICHE-2021:
+  titre: "Kusenberg et al., Challenges and Opportunities for Plastic Waste Pyrolysis Oils As Steam Cracking Feedstock (AIChE Spring Meeting, EPC, 2021)"
+  editeur: "Ghent University / AIChE"
+  date: 2021-04
+  type: etude_publique
+  url: "https://backoffice.biblio.ugent.be/download/8710893/8710894"
+  emplacement: "Tableau 2, specifications d'heteroatomes des charges fossiles de vapocraqueur"
+  contenu: "Chlore : 3 ppm dans les charges de vapocraqueur."
+  citation: "The industrial Cl threshold value of 3 ppm [45, 53] is exceeded substantially."
+  statut: verifie
+  consulte: 2026-10-14
+
+KUSENBERG-WM-2022:
+  titre: "Kusenberg et al., Opportunities and challenges for the application of post-consumer plastic waste pyrolysis oils as steam cracker feedstocks, Waste Management 138 (2022) 83-115"
+  editeur: "Elsevier (acces ouvert, PMC8769047)"
+  date: 2022
+  type: etude_publique
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8769047"
+  emplacement: "Resume, p. 83"
+  contenu: "Huiles de pyrolyse de dechets plastiques post-consommation : chlore d'environ 1 460 ppm contre 3 ppm au plus pour un vapocraqueur."
+  citation: "chlorine (∼1460 vs. 3 ppm max.)"
+  statut: verifie
+  consulte: 2026-10-14
+
+BOREALIS-EP4389855:
+  titre: "Brevet EP 4 389 855 A1, Pyrolysis Oil Purification (Borealis AG)"
+  editeur: "Office europeen des brevets"
+  date: 2024-06-26
+  type: entreprise
+  url: "https://data.epo.org/publication-server/rest/v1.2/patents/EP4389855NWA1/document.html"
+  emplacement: "§ [0004] et § [0021]"
+  contenu: "Charge de vapocraqueur : au plus 3 ppm de chlore ; huile purifiee visee : 10 ppm massiques ou moins."
+  citation: "typically having a chlorine content of 10 ppm by weight or less"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Source commerciale (brevet) : objectif de procede, pas specification d'achat."
+
+ISO8217-2024-UKPI:
+  titre: "UK P&I Club, ISO 8217-2024 - The Marine Fuel Standard has been updated"
+  editeur: "UK P&I Club"
+  date: 2024-06-05
+  type: presse
+  url: "https://www.ukpandi.com/news-and-resources/articles/2024/iso-8217-2024-the-marine-fuel-standard-has-been-updated"
+  emplacement: "paragraphe sur la clause 5.3"
+  contenu: "Combustibles marins ISO 8217:2024 : chlorures organiques 50 ppm au plus (EN 14077)."
+  citation: "Organic chlorides must not exceed 50 ppm, as tested by EN 14077."
+  statut: secondaire
+  consulte: 2026-10-14
+  note: "La norme ISO (payante) n'a pas ete lue ; CTI-Maritec donne la meme valeur mais situe l'exigence en clause 6.17."
+
+IED-2010-75-ART50:
+  titre: "Directive 2010/75/UE, article 50(2) : temperature de combustion des dechets dangereux a plus de 1 % d'organohalogenes"
+  editeur: "Parlement europeen et Conseil"
+  date: 2010-11-24
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010L0075"
+  emplacement: "Article 50(2), troisieme alinea"
+  contenu: "Dechet dangereux contenant plus de 1 % de substances organiques halogenees, exprimees en chlore : temperature d'au moins 1 100 C."
+  citation: "If hazardous waste with a content of more than 1 % of halogenated organic substances, expressed as chlorine,"
+  statut: verifie
+  consulte: 2026-10-14
+
+ARRETE-2910-2018:
+  titre: "Arrete du 3 aout 2018 relatif aux installations de combustion de moins de 50 MW soumises a autorisation (rubriques 2910, 2931, 3110)"
+  editeur: "Ministere de la transition ecologique (reproduction AIDA/INERIS)"
+  date: 2018-08-03
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-030818-relatif-installations-combustion-dune-puissance-thermique-nominale"
+  emplacement: "Article 4 (combustibles)"
+  contenu: "Pas de teneur nationale maximale en chlore : l'arrete prefectoral fixe les combustibles autorises et leurs teneurs maximales."
+  citation: "l'arrêté préfectoral d'autorisation précise la nature des combustibles autorisés"
+  statut: verifie
+  consulte: 2026-10-14
+
+FPR-2019-1009:
+  titre: "Reglement (UE) 2019/1009 (produits fertilisants UE), annexe I partie II, et annexe II CMC 14 (reglement delegue 2021/2088)"
+  editeur: "Parlement europeen et Conseil ; Commission (CMC 14)"
+  date: 2019-06-05
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02019R1009-20230316"
+  emplacement: "Annexe I partie II : PFC 3(A) point 2, PFC 1(A) point 2 ; CMC 14 point 1(a) (CELEX 32021R2088)"
+  contenu: >
+    Amendement organique PFC 3(A) : Cd 2, Cr VI 2, Hg 1, Ni 50, Pb 120, As inorganique 40 mg/kg de matiere seche.
+    Engrais organique PFC 1(A) : Cd 1,5 ; Pb 120 mg/kg MS. CMC 14 (matieres de pyrolyse) : intrants limites a une
+    liste fermee, a l'exclusion des matieres issues des dechets municipaux en melange.
+  citation: "(a) cadmium (Cd): 2 mg/kg dry matter"
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Version consolidee du 16/03/2023 (non authentique) ; CMC 14 lu dans CELEX 32021R2088 : 'except materials originating from mixed municipal waste'."
+
+ARRETE-CSR-2016:
+  titre: "Arrete du 23 mai 2016 relatif a la preparation des combustibles solides de recuperation (rubrique 2971)"
+  editeur: "Ministere de l'environnement (reproduction AIDA/INERIS)"
+  date: 2016-05-23
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-230516-relatif-a-preparation-combustibles-solides-recuperation-vue"
+  emplacement: "Article 3 II et annexe"
+  contenu: "CSR : PCI brut d'au moins 12 000 kJ/kg ; mercure 3 mg/kg MS ; chlore 15 000 mg/kg MS ; brome 15 000 ; halogenes totaux 20 000 mg/kg MS. Pas de limite chiffree pour Cd et Pb (caracterisation seulement)."
+  citation: "un PCI brut supérieur ou égal à 12 000 kJ/kg."
+  statut: verifie
+  consulte: 2026-10-14
+  note: "Version en vigueur non confirmee (modifications 2020 et 2025 signalees)."

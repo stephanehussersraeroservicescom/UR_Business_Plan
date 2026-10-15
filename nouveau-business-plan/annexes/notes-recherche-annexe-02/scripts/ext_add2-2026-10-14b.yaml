@@ -1,0 +1,11 @@
+
+NIST-SP811-CELSIUS:
+  titre: 'NIST Special Publication 811, Guide to the SI, section 4.2.1.1 : degre Celsius'
+  editeur: National Institute of Standards and Technology
+  type: reglementaire
+  url: https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes
+  emplacement: section 4.2.1.1
+  contenu: t = T - T0, avec T0 = 273,15 K par definition.
+  citation: defined by the equation t = T − T0 , where T0 = 273.15 K by definition.
+  statut: lu
+  consulte: '2026-10-14'

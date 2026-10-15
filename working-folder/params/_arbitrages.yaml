@@ -16,12 +16,14 @@ prix_huile_combustible:
   verdict: au-dessus de la fourchette de gros
   question: "Vente en gros (environ 320 EUR/t, au prix du fioul lourd de reference) ou contrat direct avec un industriel (jusqu'a environ 576 EUR/t) ? Un devis d'acheteur trancherait."
 qualite_huile:
+  annexe02: "Annexe 2 (14/10/2026) : chlore total mesure 0,137 et 0,526 % (1 370 et 5 260 ppm) sur les huiles de dechets de Noda (CHIBA-JLOS-HUILES). A integrer dans le choix du debouche et du prix de l'huile (annexe 3)."
   actuel: "craqueur (641 EUR/t, decision D-004)"
   sources_disent: "Le prix craqueur suppose une vente a un vapocraqueur. En vente comme combustible, l'huile ne compte pas comme recyclage et vaut le prix du fioul (voir prix_huile_combustible)."
   sources: [PRM-DGEC-NPG-2025-12]
   verdict: a confirmer
   question: "L'huile part-elle en vapocraquage (contrat a obtenir) ou en combustible ? Le choix change le prix d'environ 300 EUR/t."
 prix_char:
+  annexe02: "Annexe 2 (14/10/2026) : char des essais municipaux de Noda : Cd 31 et 36 mg/kg, Pb 140 et 42 mg/kg (CHIBA-OOSUMI-CHAR). A prendre en compte pour les debouches du char."
   actuel: "100 EUR/t"
   sources_disent: "Aucun prix de char de dechets melanges. Plafond en usage combustible : houille 215 EUR/t, coke de petrole 254 EUR/t (2024). Le certificat europeen du biochar exclut ce type de char."
   sources: [PRM-INSEE-EACEI-2024, PRM-EBC-POSLIST-V10, PRM-EMERTON-RCB-2024]
@@ -190,12 +192,14 @@ rdt_huile_recyclage:
   verdict: aucune source
   question: "Mettre a zero tant qu'aucun essai ne le montre ?"
 rdt_char_organique:
+  annexe02: "Annexe 2 (14/10/2026) : aucun essai Urban Rig sur matiere organique (INCONNU). OneWorld declare 25 % de char sur ordures menageres a 10 % de resines (UR2000-JP-P05-BILAN) et 5 % de char pour une entree a 90 % de resines (OW-ENG-P16-BILAN), CONSTRUCTEUR, bilans incomplets. La valeur 0,69 n'est appuyee par aucun document d'origine."
   actuel: "0,69"
   sources_disent: "Pyrolyse de la fraction organique des OMR entre 400 et 700 degres C : 0,21 a 0,46 de char ; valeur centrale environ 0,25 a 0,35."
   sources: [PRM-HWANG-2007, PRM-BUAH-2016, PRM-ASSUNCAO-2022, PRM-RAO-2026, PRM-OJOLO-2005]
   verdict: au-dessus
   question: "Retenir 0,30, ou redefinir le parametre pour inclure les cendres et le verre ?"
 pci_residu_plastique:
+  annexe02: "Annexe 2 (14/10/2026) : seule mesure, 32 090 J/g sur un char d'urethane d'origine non etablie (IZUMITEC-R35-339439), PCS ou PCI non precise. Les bilans de Chiba appliquent 5 880 kcal/kg sans analyse (calc CALC-A2-FACTEUR-CHAR)."
   actuel: "25 MJ/kg"
   sources_disent: "Residu de pyrolyse de plastiques melanges : 23,9 MJ/kg a 450 degres C, 10,7 a 500, 3,7 a 550 (PCS)."
   sources: [PRM-MARTINLARA-2021]
@@ -216,3 +220,107 @@ composition:
   sources: [ADEME-MODECOM-2024-DATA, ADEME-MODECOM-2024-HUM, OCAPEM-2025]
   verdict: les valeurs actuelles ne correspondent a aucun gisement source
   question: "Mettre en place le selecteur de gisement (OMR, refus de tri, dechets d'aeroport) avec une composition sourcee par gisement."
+
+# ============================================================ ANNEXE 2, PREUVES TECHNIQUES (chat 1 v3, 14/10/2026)
+# Propositions issues de l'inventaire des preuves. AUCUNE valeur n'a ete modifiee.
+
+rdt_huile_plastique:
+  actuel: "0,69315"
+  sources_disent: "Lots de 20 a 60 kg sur PE, PP, PS propres : 55 a 82 % d'huile (LU). Deux lots de 50 kg de dechets municipaux de Noda : 32,2 et 45,0 % sur masse entrante (CALCULE). URC-2000 continue : aucune mesure ; OneWorld declare 'about 85%' sur dechets a base de resines (CONSTRUCTEUR)."
+  sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS, OW-ENG-P16-BILAN]
+  verdict: dans la fourchette des essais en lots sur plastiques propres ; non demontre en continu ni sur dechets melanges
+  question: "Garder 0,69 pour la fraction plastique triee, et prevoir un scenario bas a environ 0,45 (essai sur residus municipaux) tant que R-009 n'est pas obtenu ?"
+
+rdt_gaz_plastique:
+  actuel: "0,193"
+  sources_disent: "L'off-gas n'est jamais mesure : il est calcule par difference (Chiba p. 27). Sur deux lots identiques de 60 kg, 19,5 % puis 2,2 % de la masse entrante."
+  sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS]
+  verdict: aucune mesure ; valeur residuelle d'un bilan
+  question: "Documenter 0,193 comme hypothese (decision datee) en attendant R-011, ou le deduire du bilan huile + char ?"
+
+rdt_residu_plastique:
+  actuel: "0,10325"
+  sources_disent: "Residu retire par lot de plastique propre : de 0,2 kg sur 50 kg (PP) a 15,3 kg sur 40 kg (PS) ; 5,2 et 9,3 kg sur les lots 3P de 60 kg."
+  sources: [CHIBA-ESSAIS-FICHES]
+  verdict: compatible pour un melange riche en PE et PP ; depend fortement de la part de PS
+  question: "Rattacher la valeur a une composition plastique sourcee (annexe 8) ?"
+
+densite_huile:
+  actuel: "0,85 kg/L"
+  sources_disent: "Laboratoire : 0,8642 et 0,8762 g/cm3 a 15 C (huiles de dechets de Noda). Fiches d'essai : 0,81 a 0,89 kg/L."
+  sources: [CHIBA-JLOS-HUILES, CHIBA-ESSAIS-FICHES]
+  verdict: confirme par les mesures en ordre de grandeur
+  question: "Retenir 0,86 a 0,88 pour une huile de dechets, ou garder 0,85 ?"
+
+pci_huile_gj:
+  actuel: "43 GJ/t, statut certifie, preuve NKKK-2020"
+  sources_disent: "Toutes les valeurs disponibles sont des pouvoirs calorifiques SUPERIEURS : 43 270 J/g mesure (NKKK 2019, echantillon d'origine inconnue) ; 46 000 et 45 000 J/g calcules (JLOS 2022, huiles de dechets). Aucun PCI mesure."
+  sources: [NKKK-ZPE8004-2019, CHIBA-JLOS-HUILES]
+  verdict: le statut 'certifie' et le libelle PCI ne correspondent pas aux documents
+  question: "Requalifier en PCS (statut LU) et demander le PCI a OneWorld (R-013) ; quelle valeur provisoire retenir pour le PCI, par decision datee ?"
+  annexe02_v2: "Le 14/10/2026, Stephane a indique qu'on peut retenir 46 000 J/g (46 GJ/t, PCS calcule par JLOS sur l'huile d'emballages de Noda) comme reference de l'annexe. A trancher pour le modele : 46 GJ/t en PCS, ou une valeur de PCI par decision datee."
+
+pci_gaz_plastique:
+  actuel: "37,3 MJ/kg, calcule sur GC-B2002600"
+  sources_disent: "L'echantillon B2002600 vient d'une installation non identifiee (2020), pas des essais sur plastiques ; il est dilue (65,8 % N2, 12,3 % O2) et ne contient que 18,0 % de gaz combustibles. Les bilans de Chiba appliquent 1 323,8 kcal/kg a l'off-gas, sans analyse."
+  sources: [KANSO-B2002600, CHIBA-BILANS]
+  verdict: preuve inadaptee au parametre
+  question: "Passer le statut a hypothese (decision datee) en attendant R-011 ?"
+
+besoin_thermique:
+  actuel: "2 714 MJ/t, constructeur, recoupe par le bruleur de 833 kcal/s"
+  sources_disent: "Bruleur 833 kcal/s (UR2000-JP p. 4, CONSTRUCTEUR). Tableau non attribue : 10 000 L/jour de fioul pour 200 t, soit 50 L/t. Lots de Chiba : 1 100 a 1 267 L de gazole par tonne (groupe electrogene compris)."
+  sources: [UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE, CHIBA-BILANS]
+  verdict: aucune mesure sur machine continue ; sources contradictoires
+  question: "Garder la valeur constructeur avec une sensibilite forte, en attendant R-015 ?"
+
+elec_par_unite:
+  actuel: "3 000 kWh/j ; la note dit '15 a 20 kWh/T mesures (Ichimura)'"
+  sources_disent: "Les bilans de Chiba donnent 59 a 65 kWh par lot de 50 a 60 kg, soit 1 083 kWh/t pour le lot du 2022-05-26 (CALCULE). Aucun document ne donne 15 a 20 kWh/t. Declarations : 20 'kw/h' (UR2000-JP p. 8) et 600 'kW/h' (tableau non attribue)."
+  sources: [CHIBA-BILANS, UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE]
+  verdict: la note du parametre est erronee ; valeur non etablie
+  question: "Corriger la note et documenter la valeur comme hypothese datee en attendant R-015 ?"
+
+pci_fioul:
+  actuel: "38 MJ/L"
+  sources_disent: "Les bilans de Chiba appliquent 9 088 kcal/L au gazole (軽油), sans source."
+  sources: [CHIBA-BILANS]
+  verdict: aucune source d'origine dans les preuves ; a sourcer par une donnee publique (fiche carburant)
+  question: "Sourcer le PCI du combustible retenu (gazole ou fioul domestique) dans une brique dediee ?"
+
+conversion_combustible_plastique:
+  actuel: "pas de parametre ; le modele separe rdt_huile_plastique (0,69315) et rdt_gaz_plastique (0,193), soit 0,886 au total"
+  sources_disent: "Huile + gaz (gaz par difference) : PE 98,2 a 98,8 % ; PP 87,8 a 99,6 % ; melange 3P 84,5 a 91,3 % ; PS 61,8 a 81,0 % ; dechets municipaux de Noda 64,8 et 74,7 % hors metaux et corps etrangers (CALCULE, annexe 2 section 2.2)."
+  sources: [CHIBA-ESSAIS-FICHES]
+  verdict: total actuel (0,886) dans la fourchette des essais PE, PP et 3P
+  question: "Stephane veut reintegrer le gaz comme combustible : faut-il un parametre de conversion totale (huile + gaz) et une valeur energetique du gaz par decision datee, en attendant R-011 ?"
+
+# ---- Annexe 2, version 3 (14/10/2026, decision D-021)
+pci_gaz_plastique_v3:
+  parametre: pci_gaz_plastique
+  actuel: "37,3 MJ/kg"
+  sources_disent: "Calcul annexe 2 (D-021) : 37,4 MJ/kg pour le gaz de composition B2002600 hors air, donnees NIST (CALC-A2-GAZ-PCI)."
+  sources: [KANSO-B2002600, NIST-WEBBOOK-GAZ]
+  verdict: confirme par le calcul (ecart 0,1 MJ/kg)
+  question: "Passer la preuve a CALC-A2-GAZ-PCI et le statut a 'calcule (D-021)' ?"
+pci_char_v3:
+  parametre: pci_char
+  actuel: "15 MJ/kg (char organique) ; pci_residu_plastique 25 MJ/kg"
+  sources_disent: "Decision D-021 : char Urban Rig a 32 090 J/g (IZUMITEC-R35-339439), pour toutes les charges."
+  sources: [IZUMITEC-R35-339439]
+  verdict: au-dessous de la valeur retenue par D-021
+  question: "Aligner pci_char et pci_residu_plastique sur 32,09 MJ/kg ?"
+elec_par_unite_v3:
+  parametre: elec_par_unite
+  actuel: "3 000 kWh/j"
+  sources_disent: "D-021 : 600 kW (tableau UR Energy Consumption), soit 14 400 kWh/j pour 200 t ; la brochure UR2000-JP donne 20 kW en continu (480 kWh/j)."
+  sources: [OW-CONSO-ENERGIE, UR2000-JP-P08-SPEC]
+  verdict: au-dessous de 600 kW, au-dessus de 20 kW
+  question: "Retenir 14 400 kWh/j (600 kW) ou 480 kWh/j (20 kW) ?"
+besoin_thermique_v3:
+  parametre: besoin_thermique
+  actuel: "2 714 MJ/t"
+  sources_disent: "Bruleur 833 kcal/s a 200 t/j : 1 507 MJ/t (CALC-A2-BRULEUR-MJ-T). Combustible declare 10 000 L/j d'huile : 1 988 MJ/t (CALC-A2-FIOUL-MJ-T)."
+  sources: [UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE, NIST-SP811-B9]
+  verdict: au-dessus des deux valeurs constructeur
+  question: "Retenir 1 507 MJ/t (bruleur) en base et 1 988 MJ/t en valeur haute ?"

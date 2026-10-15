@@ -1,0 +1,366 @@
+
+# ------------------------------------------------ Annexe 2, version 2 (14/10/2026, apres retour de Stephane)
+
+CALC-A2-CONV-PE-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE granules 2022-03-02 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 14.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    gaz: {valeur: 4.9, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+  resultat: 0.985
+  unite: "fraction"
+
+CALC-A2-CONV-PE-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE chutes 2022-03-09 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 30.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    gaz: {valeur: 8.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    entree: {valeur: 40, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+  resultat: 0.9875
+  unite: "fraction"
+
+CALC-A2-CONV-PE-BIDONS:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE bidons 2022-06-21 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 40.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    gaz: {valeur: 8.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+  resultat: 0.982
+  unite: "fraction"
+
+CALC-A2-CONV-PP-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP granules 2022-04-08 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 16.2, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    gaz: {valeur: 3.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+  resultat: 0.975
+  unite: "fraction"
+
+CALC-A2-CONV-PP-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP chutes 2022-04-16 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 39.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    gaz: {valeur: 10.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+  resultat: 0.996
+  unite: "fraction"
+
+CALC-A2-CONV-PP-PALETTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP palettes 2022-06-28 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 36.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    gaz: {valeur: 7.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+  resultat: 0.878
+  unite: "fraction"
+
+CALC-A2-CONV-PS-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS granules 2022-03-17 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 12.2, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    gaz: {valeur: 4.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+  resultat: 0.81
+  unite: "fraction"
+
+CALC-A2-CONV-PS-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS chutes 2022-03-31 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 22.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    gaz: {valeur: 2.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    entree: {valeur: 40, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+  resultat: 0.6175
+  unite: "fraction"
+
+CALC-A2-CONV-PS-EXPANSE:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS expanse 2022-07-07 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 36.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    gaz: {valeur: 3.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+  resultat: 0.802
+  unite: "fraction"
+
+CALC-A2-CONV-3P-0526:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, 3P 2022-05-26 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 43.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    gaz: {valeur: 11.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    entree: {valeur: 60, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+  resultat: 0.9133
+  unite: "fraction"
+
+CALC-A2-CONV-3P-0711:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, 3P 2022-07-11 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 49.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    gaz: {valeur: 1.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    entree: {valeur: 60, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+  resultat: 0.845
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0909-TOTAL:
+  description: "Conversion huile + off-gas sur masse entrante totale, plastiques d'emballage de Noda 2022-09-09"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.512
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0909-HORSMETAUX:
+  description: "Conversion huile + off-gas hors metaux et corps etrangers (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "(huile + gaz) / (entree - metaux)"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.6481
+  unite: "fraction"
+
+CALC-A2-HUILE-NODA-0909-HORSMETAUX:
+  description: "Huile hors metaux et corps etrangers (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "huile / (entree - metaux)"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.4076
+  unite: "fraction"
+
+CALC-A2-NONPLAST-NODA-0909:
+  description: "Part de metaux et corps etrangers dans la charge (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "metaux / entree"
+  entrees:
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.21
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0915-TOTAL:
+  description: "Conversion huile + off-gas sur masse entrante totale, residus incombustibles de Noda 2022-09-15"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 10.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.666
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0915-HORSMETAUX:
+  description: "Conversion huile + off-gas hors metaux et corps etrangers (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "(huile + gaz) / (entree - metaux)"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 10.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.7466
+  unite: "fraction"
+
+CALC-A2-HUILE-NODA-0915-HORSMETAUX:
+  description: "Huile hors metaux et corps etrangers (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "huile / (entree - metaux)"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.5045
+  unite: "fraction"
+
+CALC-A2-NONPLAST-NODA-0915:
+  description: "Part de metaux et corps etrangers dans la charge (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "metaux / entree"
+  entrees:
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.108
+  unite: "fraction"
+
+CALC-A2-CONV-BROYAGE-0809:
+  description: "Masse transformee (entree - residu retire) sur residus de broyage, 2022-08-09"
+  formule: "(entree - residu) / entree"
+  entrees:
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    residu: {valeur: 9.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+  resultat: 0.804
+  unite: "fraction"
+
+CALC-A2-OW16-HUILE-TOTALE:
+  description: "Huile totale du bilan de conception OneWorld (gazole + heating oil + heavy oil), part de l'entree"
+  formule: "gazole + heating + heavy"
+  entrees:
+    gazole: {valeur: 61.2, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heating: {valeur: 7.65, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heavy: {valeur: 7.65, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 76.5
+  unite: "%"
+
+CALC-A2-NOX-MG-2022MAX:
+  description: "NOx maximal 2022 (43 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 43, unite: "ppm", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 88.15
+  unite: "mg/Nm3"
+
+CALC-A2-NOX-MG-2023:
+  description: "NOx 2023 (30 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 30, unite: "ppm", source: TANABE-2023, emplacement: "p. 1"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 61.5
+  unite: "mg/Nm3"
+
+CALC-A2-NOX-MG-2020:
+  description: "NOx 2020 (15 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 15, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 30.75
+  unite: "mg/Nm3"
+
+CALC-A2-SO2-MG-2022MAX:
+  description: "SOx maximal 2022 (1,4 ppm) converti en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1.4, unite: "ppm", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 4.102
+  unite: "mg/Nm3"
+
+CALC-A2-HCL-MG-2020:
+  description: "HCl 2020 (limite de rendu 1 ppm) en mg/Nm3, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 1.63, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 1.63
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-MG-2022MAX:
+  description: "Poussieres maximales 2022 (0,004 g/m3) en mg/Nm3"
+  formule: "g * 1000"
+  entrees:
+    g: {valeur: 0.004, unite: "g/m3", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+  resultat: 4
+  unite: "mg/Nm3"
+
+CALC-A2-FACTEUR-O2-2020:
+  description: "Facteur de correction a 11 % d'O2 pour l'echantillon 2020 (O2 mesure 18,5 %)"
+  formule: "(21 - o2ref) / (21 - o2mes)"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    o2mes: {valeur: 18.5, unite: "%", source: KANSO-20002610, emplacement: "p. 2"}
+  resultat: 4.0
+  unite: "facteur"
+
+CALC-A2-NOX-2020-CORRIGE:
+  description: "NOx 2020 corrige a 11 % d'O2"
+  formule: "mg * facteur"
+  entrees:
+    mg: {calc: CALC-A2-NOX-MG-2020}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 123.0
+  unite: "mg/Nm3"
+
+CALC-A2-HCL-2020-CORRIGE:
+  description: "HCl 2020 corrige a 11 % d'O2 (borne superieure, valeur mesuree inferieure a 1 ppm)"
+  formule: "mg * facteur"
+  entrees:
+    mg: {calc: CALC-A2-HCL-MG-2020}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 6.52
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-2020-CORRIGE:
+  description: "Poussieres 2020 corrigees a 11 % d'O2 (borne superieure, mesure inferieure a 0,002 g/m3)"
+  formule: "g * 1000 * facteur"
+  entrees:
+    g: {valeur: 0.002, unite: "g/m3", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 8.0
+  unite: "mg/Nm3"
+
+CALC-A2-O2MAX-NOX-IED:
+  description: "Teneur en O2 mesuree maximale pour que le NOx 2022 (43 ppm) reste sous 200 mg/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mg: {calc: CALC-A2-NOX-MG-2022MAX}
+    limite: {valeur: 200, unite: "mg/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.1"}
+  resultat: 16.59
+  unite: "% O2"
+
+CALC-A2-O2MAX-NOX-BAT:
+  description: "Teneur en O2 mesuree maximale pour que le NOx 2022 reste sous 120 mg/Nm3 (haut de la fourchette MTD, installation neuve)"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: BAT-WI-2019-2010, emplacement: "considerations generales"}
+    mg: {calc: CALC-A2-NOX-MG-2022MAX}
+    limite: {valeur: 120, unite: "mg/Nm3", source: BAT-WI-2019-2010, emplacement: "MTD 29, tableau 6"}
+  resultat: 13.65
+  unite: "% O2"
+
+CALC-A2-O2MAX-DIOX-IED:
+  description: "Teneur en O2 mesuree maximale pour que les dioxines 2022 (0,067) restent sous 0,1 ng/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mesure / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mesure: {valeur: 0.067, unite: "ng-TEQ/m3", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    limite: {valeur: 0.1, unite: "ng/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.4"}
+  resultat: 14.3
+  unite: "% O2"
+
+CALC-A2-O2MAX-POUSS-IED:
+  description: "Teneur en O2 mesuree maximale pour que les poussieres 2022 (4 mg/m3) restent sous 10 mg/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mg: {calc: CALC-A2-POUSS-MG-2022MAX}
+    limite: {valeur: 10, unite: "mg/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.1"}
+  resultat: 17.0
+  unite: "% O2"
+
+CALC-A2-SO2-MG-2020:
+  description: "SOx 2020 (limite de rendu 1 ppm) en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 2.93
+  unite: "mg/Nm3"
+
+CALC-A2-SO2-MG-2023:
+  description: "SOx 2023 (limite de rendu 0,5 ppm) en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 0.5, unite: "ppm", source: TANABE-2023, emplacement: "p. 1"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 1.465
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-MG-2023:
+  description: "Poussieres 2023 (limite de rendu 0,005 g/m3N) en mg/Nm3"
+  formule: "g * 1000"
+  entrees:
+    g: {valeur: 0.005, unite: "g/m3N", source: TANABE-2023, emplacement: "p. 5"}
+  resultat: 5
+  unite: "mg/Nm3"

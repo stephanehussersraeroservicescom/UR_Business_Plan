@@ -199,3 +199,154 @@ D-015:
     Impact : 16 EUR/t reduirait le gate fee d'equilibre de ~16 EUR/t, soit un effet majeur.
   preuves: [CIBS-TGAP-2026, TGAP-DOUANES, GATE-FEES-REF]
   a_verifier: "Avis juridique sur la qualification du procede. Consultation DGFiP ou avocat fiscaliste specialise dechets."
+
+D-016:
+  date: 2026-10-14
+  titre: "Statut des declarations du constructeur (OneWorld)"
+  de: "declaration du constructeur traitee comme non sourcee"
+  vers: "declaration du constructeur admise avec l'etiquette CONSTRUCTEUR"
+  unite: "-"
+  motif: >
+    Stephane fait confiance aux declarations de OneWorld sur l'Urban Rig (par exemple sur les
+    dioxines) et estime leur fiabilite a 95 % : il considere que le constructeur dispose des
+    mesures. Une declaration est admise si elle figure dans un document de OneWorld (brochure,
+    presentation, rapport, courriel), cite avec la page ou la date. Elle porte l'etiquette
+    CONSTRUCTEUR et elle est attribuee dans le texte (according to OneWorld). Elle n'est jamais
+    presentee comme verifiee de facon independante. Une declaration qui n'apparait que dans
+    l'archive ne suffit pas (regle 16). Chaque declaration non appuyee par un rapport de mesure
+    donne lieu a une demande a OneWorld dans a-rechercher.yaml (detenteur OneWorld).
+  preuves: []
+  a_verifier: "Obtenir de OneWorld le rapport de mesure ou le certificat a l'appui de chaque declaration."
+
+D-017:
+  date: 2026-10-14
+  titre: "Perimetre du plan d'affaires v3"
+  de: "France et Coree du Sud ; quatre gisements"
+  vers: "France seule ; ordures menageres, CDG, dechets d'activites economiques, dechets plastiques"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026. La Coree du Sud sort du plan (ancienne annexe 4B).
+    Gisements retenus : ordures menageres residuelles (annexe 5), aeroport CDG (annexe 6),
+    dechets industriels et commerciaux (annexe 7), dechets plastiques (annexe 8).
+    La limite entre les annexes 7 et 8 est a confirmer par Stephane.
+  preuves: []
+  a_verifier: "Confirmer la limite entre les annexes 7 et 8."
+
+D-018:
+  date: 2026-10-14
+  titre: "Perimetre de l'annexe 8 (dechets plastiques) et limite avec l'annexe 7"
+  de: "limite entre les annexes 7 et 8 a confirmer"
+  vers: "annexe 8 = toutes les filieres plastiques, menageres et industrielles ; annexe 7 = dechets d'activites economiques en melange"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026. L'annexe 8 etudie les filieres du plastique, quelle que
+    soit l'origine (menages ou entreprises), en priorite celles qui sont peu ou pas recyclees :
+    tonnages, taux de recyclage reel, devenir de ce qui n'est pas recycle, qui paie quoi.
+    Exemple donne par Stephane, a verifier : le polystyrene, selon sa comprehension, est fondu
+    ou compacte en blocs sans debouche reel de valorisation derriere. Les flux de plastique
+    seul d'origine industrielle (films, chutes) relevent de l'annexe 8, pas de l'annexe 7.
+  preuves: []
+  a_verifier: "Pour chaque filiere plastique, sourcer tonnages, taux de recyclage et devenir des non-recycles."
+
+D-019:
+  date: 2026-10-14
+  titre: "Annexe 2 : rapport de Chiba cite en original seulement ; chemin de GC-B2002600 corrige"
+  de: "version anglaise du rapport de Chiba disponible comme source ; GC-B2002600 pointant vers gaschromatography.pdf"
+  vers: "seul l'original japonais du rapport de Chiba est cite ; GC-B2002600 pointe vers Analysis-Results-Off-gas-Odor-Exhaust.pdf p. 1"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026, apres l'inventaire des preuves de l'annexe 2.
+    La traduction anglaise (documents-fournis/Chiba prefecture report ENG.pdf) contient des
+    divergences avec l'original (dates, electricite du 09/09, energies du 15/09, unite SOx,
+    rapport sur le char remplace) : elle n'est jamais citee ; on cite
+    tests-independants/prefecture-shiba-test-data-2.pdf (CHIBA-RAPPORT-2023 et ses sections).
+    Le chemin de la fiche GC-B2002600 renvoyait a une GC-MS de liquide ; il est remplace par
+    le document qui contient le rapport B2002600. Aucune valeur de parametre n'est modifiee.
+  preuves: [CHIBA-RAPPORT-2023, KANSO-B2002600]
+  a_verifier: "-"
+
+D-020:
+  date: 2026-10-14
+  titre: "Annexe 2 : poids donne a la documentation OneWorld et presentation des performances"
+  de: "documentation OneWorld presentee avec reserve, au meme niveau que les points non demontres"
+  vers: "documentation OneWorld utilisee comme base de conception de l'URC-2000, toujours attribuee et etiquetee CONSTRUCTEUR"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026, apres lecture de la premiere redaction de l'annexe 2.
+    Stephane accorde une grande confiance a la documentation d'Urban Rig et de OneWorld (prolonge D-016).
+    Consignes de presentation : montrer chaque essai dans un tableau ; ajouter au rendement en huile la part
+    transformee en gaz (hydrocarbures et hydrogene, brules comme combustible) ; ne pas resumer les essais par
+    leur valeur la plus basse ; pour les dechets municipaux, montrer la part non plastique et calculer les
+    rendements hors metaux et corps etrangers ; comparer les emissions aux valeurs limites en vigueur et aux
+    niveaux les plus stricts (MTD). Les regles de rigueur restent appliquees : chaque chiffre reste source et
+    etiquete, et les contradictions restent montrees (section des demandes a OneWorld).
+  preuves: []
+  a_verifier: "-"
+
+D-021:
+  date: 2026-10-14
+  titre: "Annexe 2 : valeurs energetiques des produits et base du bilan energetique"
+  de: "gaz et char sans valeur energetique ; bilan energetique tire des essais en lots"
+  vers: "gaz a 37,4 MJ/kg (composition B2002600 hors air) ; char a 32 090 J/g ; huile a 46 000 J/g ; bilan sur les chiffres OneWorld de l'URC-2000"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026. (1) L'off-gas est preleve a la sortie, melange a l'air : l'oxygene et
+    l'azote ne viennent pas du plastique. Tout ce qui ne sort pas en huile, char ou metal est compte comme gaz de
+    la composition B2002600 (hydrogene a dioxyde de carbone) ; son PCI est la moyenne ponderee des PCI de ses
+    composants (donnees NIST). (2) Le char d'Urban Rig est pris a 32 090 J/g (rapport Izumitec R35-339439),
+    pour toutes les charges. (3) L'huile est prise a 46 000 J/g (PCS calcule JLOS). (4) Les essais en lots
+    servent aux coefficients de transformation et a la qualite des produits, pas au bilan energetique : un petit
+    reacteur en lots ne represente pas la consommation d'une machine continue. (5) Le bilan energetique de
+    l'URC-2000 repose sur les chiffres de OneWorld, admis comme justes : bruleur de 833 kcal/s, combustible de
+    10 000 L/jour (valeur haute), electricite de 600 kW. Le choix de 600 kW plutot que 20 kW (brochure) a ete
+    propose par Claude, a confirmer par Stephane.
+  preuves: [KANSO-B2002600, NIST-WEBBOOK-GAZ, IZUMITEC-R35-339439, CHIBA-JLOS-HUILES, UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE]
+  a_verifier: "Electricite de l'URC-2000 : 600 kW ou 20 kW."
+
+D-022:
+  date: 2026-10-14
+  titre: "Annexe 2 : presentation par liens vers des fiches de preuve et taux de confiance"
+  de: "etiquettes LU, CALCULE, CONSTRUCTEUR dans le texte"
+  vers: "lien vers une fiche de preuve (annexe-02-preuves/) et taux de confiance dans le texte ; etiquettes dans les fiches"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 14/10/2026. Chaque argument renvoie par lien hypertexte a un fichier de preuve
+    numerote (Annex 2.1.a, etc.) qui donne le nom exact du fichier source, la page, la citation et les valeurs,
+    ou, pour un calcul, sa base, sa formule et son resultat. Echelle de confiance : 100 % pour les essais
+    externes (rapports d'essai remis aux autorites, laboratoires independants), 95 % pour la documentation du
+    constructeur ; le reste a la discretion de Claude : 100 % pour la reglementation et les donnees de reference,
+    95 % pour la litterature evaluee et les calculs sur donnees a 95 % ou plus, 90 % pour les calculs utilisant
+    une hypothese de travail, un tableau constructeur sans auteur imprime et les brevets, 80 % pour les sources
+    secondaires. Un calcul n'est jamais note au-dessus de son entree la moins fiable ni au-dessus de 95 %.
+  preuves: []
+  a_verifier: "-"
+
+D-023:
+  date: 2026-10-15
+  titre: "Format des annexes : HTML de lecture genere a partir d'une source Markdown"
+  de: "annexe en Markdown, fiches de preuve en Markdown et en HTML"
+  vers: "annexe et fiches lues et contre-verifiees en HTML ; source Markdown et registres ; HTML regenere par generer_html.py"
+  unite: "-"
+  motif: >
+    Stephane a choisi le HTML comme version de lecture de l'annexe 2 et ne veut pas qu'un
+    verificateur travaille sur une autre version. Le HTML est fabrique a partir de
+    ANNEX-02-Technical-Evidence.md, de deux fichiers de annexe-02-preuves/ et des registres ;
+    la regeneration du 15/10/2026 reproduit le HTML existant a l'identique (hors bandeau).
+    Les anciennes versions Markdown (1, 3, 4, sauvegarde v4) et les 32 fiches Markdown, que le
+    generateur ne lit pas, sont effacees le 15/10/2026 a la demande de Stephane. Le Markdown
+    principal est garde : il est la source du HTML et le seul texte que le controle automatique
+    sait lire. Toute correction se fait dans la source, puis on regenere le HTML.
+  preuves: []
+
+D-024:
+  date: 2026-10-15
+  titre: "Annexe 2.4.3 : parts d'aire GC-MS assimilees a des parts en masse pour une fourchette indicative de la fraction kerosene"
+  de: "aucune estimation de la part utilisable en carbureacteur"
+  vers: "fourchette basse et haute = part evaporee a 350 C x part d'aire des hydrocarbures en C8 a C16 (identifies avec bonne concordance, puis tous)"
+  unite: "%"
+  motif: >
+    Demande de Stephane du 15/10/2026 (fourchette basse et haute de ce qui pourrait devenir du carbureacteur).
+    HYPOTHESE posee par Claude le 15/10/2026 : la part d'aire d'un pic GC-MS est prise egale a sa part en masse.
+    Non verifiee : la reponse du detecteur varie selon les composes. Estimation d'ordre de grandeur, avant
+    hydrogenation, coupe de la fraction legere et purification ; craquage de la fraction lourde non compte.
+

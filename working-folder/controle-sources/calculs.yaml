@@ -55,3 +55,2230 @@ CALC-PLAST-EMB-REFUS-IDF-2024:
   resultat: 17564
   unite: t
   tolerance: 0.001
+
+# ------------------------------------------------ Annexe 2 (chat 1 v3, 14/10/2026)
+# Pages : numerotation du fichier PDF (Chiba JP : PDF = impr. + 6).
+
+CALC-A2-RDT-HUILE-0526:
+  description: "Rendement huile sur masse entrante, essai 3P du 2022-05-26 (Chiba)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 43.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.7183
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0711:
+  description: "Rendement huile sur masse entrante, essai 3P du 2022-07-11 (Chiba)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 49.4, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.8233
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0909:
+  description: "Rendement huile sur masse entrante, plastiques d'emballage de Noda, 2022-09-09"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 16.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+    entree: {valeur: 50, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+  resultat: 0.322
+  unite: fraction
+
+CALC-A2-RDT-HUILE-0915:
+  description: "Rendement huile sur masse entrante, residus incombustibles de Noda, 2022-09-15"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 22.5, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+    entree: {valeur: 50, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 42"}
+  resultat: 0.45
+  unite: fraction
+
+CALC-A2-OFFGAS-0526:
+  description: "Off-gas (par difference) rapporte a la masse entrante, 2022-05-26"
+  formule: "offgas / entree"
+  entrees:
+    offgas: {valeur: 11.7, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.195
+  unite: fraction
+
+CALC-A2-OFFGAS-0711:
+  description: "Off-gas (par difference) rapporte a la masse entrante, 2022-07-11"
+  formule: "offgas / entree"
+  entrees:
+    offgas: {valeur: 1.3, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 0.02167
+  unite: fraction
+
+CALC-A2-ELEC-T-0526:
+  description: "Electricite par tonne traitee, essai en lot du 2022-05-26"
+  formule: "elec / (entree / 1000)"
+  entrees:
+    elec: {valeur: 65, unite: kWh, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1083.3
+  unite: kWh/t
+
+CALC-A2-GAZOLE-T-0526:
+  description: "Gazole par tonne traitee (groupe electrogene compris), essai en lot du 2022-05-26"
+  formule: "gazole / (entree / 1000)"
+  entrees:
+    gazole: {valeur: 66, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1100
+  unite: L/t
+
+CALC-A2-GAZOLE-T-0711:
+  description: "Gazole par tonne traitee (groupe electrogene compris), essai en lot du 2022-07-11"
+  formule: "gazole / (entree / 1000)"
+  entrees:
+    gazole: {valeur: 76, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    entree: {valeur: 60, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1266.7
+  unite: L/t
+
+CALC-A2-FACTEUR-OFFGAS:
+  description: "Facteur energetique implicite applique a l'off-gas dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 15489, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 11.7, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 1323.8
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-CHAR:
+  description: "Facteur energetique implicite applique au char dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 30576, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 5.2, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 5880
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-HUILE:
+  description: "Facteur energetique implicite applique a l'huile dans les bilans de Chiba"
+  formule: "energie / masse"
+  entrees:
+    energie: {valeur: 473238, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    masse: {valeur: 43.1, unite: kg, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 10980
+  unite: kcal/kg
+
+CALC-A2-FACTEUR-GAZOLE:
+  description: "Facteur energetique implicite applique au gazole dans les bilans de Chiba"
+  formule: "energie / volume"
+  entrees:
+    energie: {valeur: 599808, unite: kcal, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+    volume: {valeur: 66, unite: L, source: CHIBA-BILANS, emplacement: "PDF p. 41"}
+  resultat: 9088
+  unite: kcal/L
+
+CALC-A2-JLOS-CL-EMB-PPM:
+  description: "Chlore de l'huile des plastiques d'emballage de Noda, en ppm massiques"
+  formule: "chlore * 10000"
+  entrees:
+    chlore: {valeur: 0.137, unite: "% masse", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 1370
+  unite: ppm
+
+CALC-A2-JLOS-CL-RES-PPM:
+  description: "Chlore de l'huile des residus incombustibles de Noda, en ppm massiques"
+  formule: "chlore * 10000"
+  entrees:
+    chlore: {valeur: 0.526, unite: "% masse", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 46"}
+  resultat: 5260
+  unite: ppm
+
+CALC-A2-GC-SOMME:
+  description: "Somme des constituants rapportes dans l'analyse d'off-gas B2002600"
+  formule: "co + ch4 + co2 + c2h4 + c2h6 + c3h8 + c3h6 + h2 + o2 + n2"
+  entrees:
+    co: {valeur: 0.6, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    ch4: {valeur: 3.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    co2: {valeur: 1.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h4: {valeur: 0.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h6: {valeur: 0.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h8: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h6: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    h2: {valeur: 12.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    o2: {valeur: 12.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    n2: {valeur: 65.8, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 97.8
+  unite: "%"
+
+CALC-A2-GC-COMBUSTIBLES:
+  description: "Part des gaz combustibles (CO, CH4, C2, C3, H2) dans l'echantillon B2002600"
+  formule: "co + ch4 + c2h4 + c2h6 + c3h8 + c3h6 + h2"
+  entrees:
+    co: {valeur: 0.6, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    ch4: {valeur: 3.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h4: {valeur: 0.2, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c2h6: {valeur: 0.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h8: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    c3h6: {valeur: 0.3, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+    h2: {valeur: 12.7, unite: "%", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 18.0
+  unite: "%"
+
+CALC-A2-OW16-SOMME-MASSES:
+  description: "Somme des masses du bilan journalier declare par OneWorld (brochure anglaise p. 16), pour une entree annoncee de 200 t"
+  formule: "gazole + heating + heavy + perte + char + eau + metaux"
+  entrees:
+    gazole: {valeur: 62.424, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heating: {valeur: 7.803, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heavy: {valeur: 7.803, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    perte: {valeur: 11.73, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    char: {valeur: 5.1, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    eau: {valeur: 5.1, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    metaux: {valeur: 2.04, unite: t, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 102.0
+  unite: t
+
+CALC-A2-OW15-CADENCE:
+  description: "Tonnage journalier implique par la cadence declaree (51 bennes de 4,5 m3 a une densite de 0,6)"
+  formule: "bennes * volume * densite"
+  entrees:
+    bennes: {valeur: 51, unite: "bennes/jour", source: OW-ENG-P02-P14-AFFIRMATIONS, emplacement: "p. 15"}
+    volume: {valeur: 4.5, unite: m3, source: OW-ENG-P02-P14-AFFIRMATIONS, emplacement: "p. 4"}
+    densite: {valeur: 0.6, unite: t/m3, source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 137.7
+  unite: t/jour
+
+CALC-A2-UR2000-CADENCE:
+  description: "Tonnage journalier implique par 48 bennes de 4,17 t au plus (UR2000-JP p. 7)"
+  formule: "bennes * masse"
+  entrees:
+    bennes: {valeur: 48, unite: "bennes/jour", source: UR2000-JP-P08-SPEC, emplacement: "p. 7"}
+    masse: {valeur: 4.17, unite: t, source: UR2000-JP-P08-SPEC, emplacement: "p. 7"}
+  resultat: 200.16
+  unite: t/jour
+
+CALC-A2-UR2000-NONAFFECTE-MIN:
+  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 5 %"
+  formule: "1 - char - huile - offgas - metaux"
+  entrees:
+    char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    huile: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    offgas: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    metaux: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+  resultat: 0.60
+  unite: fraction
+
+CALC-A2-UR2000-NONAFFECTE-MAX:
+  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 0 %"
+  formule: "1 - char - huile - offgas"
+  entrees:
+    char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    huile: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    offgas: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+  resultat: 0.65
+  unite: fraction
+
+CALC-A2-FIOUL-T-CONTINU:
+  description: "Fioul par tonne d'apres le tableau non attribue 'UR Energy Consumption', ligne 200t"
+  formule: "fioul / capacite"
+  entrees:
+    fioul: {valeur: 10000, unite: L/jour, source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    capacite: {valeur: 200, unite: t/jour, source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 50
+  unite: L/t
+
+CALC-A2-OWJ-HUILE:
+  description: "Rendement huile cumule des trois lots URT-10 de decembre 2021 (OneWorld Japan)"
+  formule: "huile / entree"
+  entrees:
+    huile: {valeur: 248.2, unite: kg, source: OWJ-DEMO-2021, emplacement: "p. 8"}
+    entree: {valeur: 299.2, unite: kg, source: OWJ-DEMO-2021, emplacement: "p. 8"}
+  resultat: 0.8295
+  unite: fraction
+
+CALC-A2-ELEC-ECART:
+  description: "Ecart entre les deux valeurs d'electricite declarees pour une machine de 200 t (600 'kW/h' contre 20 'kw/h')"
+  formule: "tableau / brochure"
+  entrees:
+    tableau: {valeur: 600, unite: "kW/h (sic)", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    brochure: {valeur: 20, unite: "kw/h (sic)", source: UR2000-JP-P08-SPEC, emplacement: "p. 8"}
+  resultat: 30
+  unite: rapport
+
+# ------------------------------------------------ Annexe 2, version 2 (14/10/2026, apres retour de Stephane)
+
+CALC-A2-CONV-PE-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE granules 2022-03-02 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 14.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    gaz: {valeur: 4.9, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+  resultat: 0.985
+  unite: "fraction"
+
+CALC-A2-CONV-PE-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE chutes 2022-03-09 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 30.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    gaz: {valeur: 8.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+    entree: {valeur: 40, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 19"}
+  resultat: 0.9875
+  unite: "fraction"
+
+CALC-A2-CONV-PE-BIDONS:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PE bidons 2022-06-21 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 40.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    gaz: {valeur: 8.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+  resultat: 0.982
+  unite: "fraction"
+
+CALC-A2-CONV-PP-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP granules 2022-04-08 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 16.2, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    gaz: {valeur: 3.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+  resultat: 0.975
+  unite: "fraction"
+
+CALC-A2-CONV-PP-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP chutes 2022-04-16 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 39.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    gaz: {valeur: 10.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 21"}
+  resultat: 0.996
+  unite: "fraction"
+
+CALC-A2-CONV-PP-PALETTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PP palettes 2022-06-28 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 36.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    gaz: {valeur: 7.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+  resultat: 0.878
+  unite: "fraction"
+
+CALC-A2-CONV-PS-GRAN:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS granules 2022-03-17 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 12.2, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    gaz: {valeur: 4.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    entree: {valeur: 20, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+  resultat: 0.81
+  unite: "fraction"
+
+CALC-A2-CONV-PS-CHUTES:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS chutes 2022-03-31 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 22.0, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    gaz: {valeur: 2.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+    entree: {valeur: 40, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 20"}
+  resultat: 0.6175
+  unite: "fraction"
+
+CALC-A2-CONV-PS-EXPANSE:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, PS expanse 2022-07-07 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 36.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    gaz: {valeur: 3.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 23"}
+  resultat: 0.802
+  unite: "fraction"
+
+CALC-A2-CONV-3P-0526:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, 3P 2022-05-26 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 43.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    gaz: {valeur: 11.7, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+    entree: {valeur: 60, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 22"}
+  resultat: 0.9133
+  unite: "fraction"
+
+CALC-A2-CONV-3P-0711:
+  description: "Conversion en combustible (huile + off-gas par difference) sur masse entrante, 3P 2022-07-11 (Chiba)"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 49.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    gaz: {valeur: 1.3, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    entree: {valeur: 60, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+  resultat: 0.845
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0909-TOTAL:
+  description: "Conversion huile + off-gas sur masse entrante totale, plastiques d'emballage de Noda 2022-09-09"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.512
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0909-HORSMETAUX:
+  description: "Conversion huile + off-gas hors metaux et corps etrangers (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "(huile + gaz) / (entree - metaux)"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.6481
+  unite: "fraction"
+
+CALC-A2-HUILE-NODA-0909-HORSMETAUX:
+  description: "Huile hors metaux et corps etrangers (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "huile / (entree - metaux)"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.4076
+  unite: "fraction"
+
+CALC-A2-NONPLAST-NODA-0909:
+  description: "Part de metaux et corps etrangers dans la charge (fiche), plastiques d'emballage de Noda 2022-09-09"
+  formule: "metaux / entree"
+  entrees:
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.21
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0915-TOTAL:
+  description: "Conversion huile + off-gas sur masse entrante totale, residus incombustibles de Noda 2022-09-15"
+  formule: "(huile + gaz) / entree"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 10.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.666
+  unite: "fraction"
+
+CALC-A2-CONV-NODA-0915-HORSMETAUX:
+  description: "Conversion huile + off-gas hors metaux et corps etrangers (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "(huile + gaz) / (entree - metaux)"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    gaz: {valeur: 10.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.7466
+  unite: "fraction"
+
+CALC-A2-HUILE-NODA-0915-HORSMETAUX:
+  description: "Huile hors metaux et corps etrangers (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "huile / (entree - metaux)"
+  entrees:
+    huile: {valeur: 22.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.5045
+  unite: "fraction"
+
+CALC-A2-NONPLAST-NODA-0915:
+  description: "Part de metaux et corps etrangers dans la charge (fiche), residus incombustibles de Noda 2022-09-15"
+  formule: "metaux / entree"
+  entrees:
+    metaux: {valeur: 5.4, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+  resultat: 0.108
+  unite: "fraction"
+
+CALC-A2-CONV-BROYAGE-0809:
+  description: "Masse transformee (entree - residu retire) sur residus de broyage, 2022-08-09"
+  formule: "(entree - residu) / entree"
+  entrees:
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+    residu: {valeur: 9.8, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 24"}
+  resultat: 0.804
+  unite: "fraction"
+
+CALC-A2-OW16-HUILE-TOTALE:
+  description: "Huile totale du bilan de conception OneWorld (gazole + heating oil + heavy oil), part de l'entree"
+  formule: "gazole + heating + heavy"
+  entrees:
+    gazole: {valeur: 61.2, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heating: {valeur: 7.65, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    heavy: {valeur: 7.65, unite: "%", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+  resultat: 76.5
+  unite: "%"
+
+CALC-A2-NOX-MG-2022MAX:
+  description: "NOx maximal 2022 (43 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 43, unite: "ppm", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 88.15
+  unite: "mg/Nm3"
+
+CALC-A2-NOX-MG-2023:
+  description: "NOx 2023 (30 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 30, unite: "ppm", source: TANABE-2023, emplacement: "p. 1"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 61.5
+  unite: "mg/Nm3"
+
+CALC-A2-NOX-MG-2020:
+  description: "NOx 2020 (15 ppm) converti en mg/Nm3 d'NO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 15, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 2.05, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 30.75
+  unite: "mg/Nm3"
+
+CALC-A2-SO2-MG-2022MAX:
+  description: "SOx maximal 2022 (1,4 ppm) converti en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1.4, unite: "ppm", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 4.102
+  unite: "mg/Nm3"
+
+CALC-A2-HCL-MG-2020:
+  description: "HCl 2020 (limite de rendu 1 ppm) en mg/Nm3, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 1.63, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 1.63
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-MG-2022MAX:
+  description: "Poussieres maximales 2022 (0,004 g/m3) en mg/Nm3"
+  formule: "g * 1000"
+  entrees:
+    g: {valeur: 0.004, unite: "g/m3", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+  resultat: 4
+  unite: "mg/Nm3"
+
+CALC-A2-FACTEUR-O2-2020:
+  description: "Facteur de correction a 11 % d'O2 pour l'echantillon 2020 (O2 mesure 18,5 %)"
+  formule: "(21 - o2ref) / (21 - o2mes)"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    o2mes: {valeur: 18.5, unite: "%", source: KANSO-20002610, emplacement: "p. 2"}
+  resultat: 4.0
+  unite: "facteur"
+
+CALC-A2-NOX-2020-CORRIGE:
+  description: "NOx 2020 corrige a 11 % d'O2"
+  formule: "mg * facteur"
+  entrees:
+    mg: {calc: CALC-A2-NOX-MG-2020}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 123.0
+  unite: "mg/Nm3"
+
+CALC-A2-HCL-2020-CORRIGE:
+  description: "HCl 2020 corrige a 11 % d'O2 (borne superieure, valeur mesuree inferieure a 1 ppm)"
+  formule: "mg * facteur"
+  entrees:
+    mg: {calc: CALC-A2-HCL-MG-2020}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 6.52
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-2020-CORRIGE:
+  description: "Poussieres 2020 corrigees a 11 % d'O2 (borne superieure, mesure inferieure a 0,002 g/m3)"
+  formule: "g * 1000 * facteur"
+  entrees:
+    g: {valeur: 0.002, unite: "g/m3", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {calc: CALC-A2-FACTEUR-O2-2020}
+  resultat: 8.0
+  unite: "mg/Nm3"
+
+CALC-A2-O2MAX-NOX-IED:
+  description: "Teneur en O2 mesuree maximale pour que le NOx 2022 (43 ppm) reste sous 200 mg/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mg: {calc: CALC-A2-NOX-MG-2022MAX}
+    limite: {valeur: 200, unite: "mg/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.1"}
+  resultat: 16.59
+  unite: "% O2"
+
+CALC-A2-O2MAX-NOX-BAT:
+  description: "Teneur en O2 mesuree maximale pour que le NOx 2022 reste sous 120 mg/Nm3 (haut de la fourchette MTD, installation neuve)"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: BAT-WI-2019-2010, emplacement: "considerations generales"}
+    mg: {calc: CALC-A2-NOX-MG-2022MAX}
+    limite: {valeur: 120, unite: "mg/Nm3", source: BAT-WI-2019-2010, emplacement: "MTD 29, tableau 6"}
+  resultat: 13.65
+  unite: "% O2"
+
+CALC-A2-O2MAX-DIOX-IED:
+  description: "Teneur en O2 mesuree maximale pour que les dioxines 2022 (0,067) restent sous 0,1 ng/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mesure / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mesure: {valeur: 0.067, unite: "ng-TEQ/m3", source: CHIBA-OOSUMI-FUMEES, emplacement: "PDF p. 56"}
+    limite: {valeur: 0.1, unite: "ng/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.4"}
+  resultat: 14.3
+  unite: "% O2"
+
+CALC-A2-O2MAX-POUSS-IED:
+  description: "Teneur en O2 mesuree maximale pour que les poussieres 2022 (4 mg/m3) restent sous 10 mg/Nm3 a 11 % d'O2"
+  formule: "21 - (21 - o2ref) * mg / limite"
+  entrees:
+    o2ref: {valeur: 11, unite: "%", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1"}
+    mg: {calc: CALC-A2-POUSS-MG-2022MAX}
+    limite: {valeur: 10, unite: "mg/Nm3", source: IED-2010-75-ANX6-P3, emplacement: "Annexe VI, partie 3, point 1.1"}
+  resultat: 17.0
+  unite: "% O2"
+
+CALC-A2-SO2-MG-2020:
+  description: "SOx 2020 (limite de rendu 1 ppm) en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 1, unite: "ppm", source: KANSO-20002610, emplacement: "p. 2"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 2.93
+  unite: "mg/Nm3"
+
+CALC-A2-SO2-MG-2023:
+  description: "SOx 2023 (limite de rendu 0,5 ppm) en mg/Nm3 de SO2, sans correction d'oxygene"
+  formule: "ppm * facteur"
+  entrees:
+    ppm: {valeur: 0.5, unite: "ppm", source: TANABE-2023, emplacement: "p. 1"}
+    facteur: {valeur: 2.93, unite: "mg/Nm3 par ppm", source: DK-EPA-2002-PPM, emplacement: "section 9.7"}
+  resultat: 1.465
+  unite: "mg/Nm3"
+
+CALC-A2-POUSS-MG-2023:
+  description: "Poussieres 2023 (limite de rendu 0,005 g/m3N) en mg/Nm3"
+  formule: "g * 1000"
+  entrees:
+    g: {valeur: 0.005, unite: "g/m3N", source: TANABE-2023, emplacement: "p. 5"}
+  resultat: 5
+  unite: "mg/Nm3"
+
+# ------------------------------------------------ Annexe 2, version 3 (14/10/2026) : gaz, char, bilan energetique
+
+CALC-A2-VAP-EAU:
+  description: "Chaleur de vaporisation de l'eau a 25 C, difference des enthalpies de formation liquide et gaz"
+  formule: "liq - gaz"
+  entrees:
+    liq: {valeur: 285.83, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=2"}
+    gaz: {valeur: 241.826, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=1"}
+  resultat: 44.004
+  unite: "kJ/mol"
+
+CALC-A2-PCI-CH4:
+  description: "PCI molaire de CH4 : enthalpie de combustion (eau liquide) moins 2 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 890.7, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74828"}
+    n: {valeur: 2, unite: "mol H2O/mol", source: NIST-WEBBOOK-GAZ, emplacement: "formule brute : moles d'eau = atomes H / 2"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 802.692
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C2H6:
+  description: "PCI molaire de C2H6 : enthalpie de combustion (eau liquide) moins 3 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 1560.7, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74840"}
+    n: {valeur: 3, unite: "mol H2O/mol", source: NIST-WEBBOOK-GAZ, emplacement: "formule brute : moles d'eau = atomes H / 2"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1428.688
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C2H4:
+  description: "PCI molaire de C2H4 : enthalpie de combustion (eau liquide) moins 2 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 1411.2, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74851"}
+    n: {valeur: 2, unite: "mol H2O/mol", source: NIST-WEBBOOK-GAZ, emplacement: "formule brute : moles d'eau = atomes H / 2"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1323.192
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C3H8:
+  description: "PCI molaire de C3H8 : enthalpie de combustion (eau liquide) moins 4 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 2219.2, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74986"}
+    n: {valeur: 4, unite: "mol H2O/mol", source: NIST-WEBBOOK-GAZ, emplacement: "formule brute : moles d'eau = atomes H / 2"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 2043.184
+  unite: "kJ/mol"
+
+CALC-A2-PCI-C3H6:
+  description: "PCI molaire de C3H6 : enthalpie de combustion (eau liquide) moins 3 moles d'eau vaporisees"
+  formule: "hc - n * vap"
+  entrees:
+    hc: {valeur: 2057.8, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C115071"}
+    n: {valeur: 3, unite: "mol H2O/mol", source: NIST-WEBBOOK-GAZ, emplacement: "formule brute : moles d'eau = atomes H / 2"}
+    vap: {calc: CALC-A2-VAP-EAU}
+  resultat: 1925.788
+  unite: "kJ/mol"
+
+CALC-A2-PCI-CO:
+  description: "PCI molaire de CO : enthalpie de formation de CO2 moins celle de CO"
+  formule: "co2 - co"
+  entrees:
+    co2: {valeur: 393.51, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C124389"}
+    co: {valeur: 110.53, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C630080"}
+  resultat: 282.98
+  unite: "kJ/mol"
+
+CALC-A2-GAZ-PCI:
+  description: "PCI massique du gaz de pyrolyse (composition B2002600 sans O2 ni N2, hypothese D-021)"
+  formule: "(x_h2*p_h2 + x_ch4*p_ch4 + x_c2h6*p_c2h6 + x_c2h4*p_c2h4 + x_c3h8*p_c3h8 + x_c3h6*p_c3h6 + x_co*p_co) / (x_h2*m_h2 + x_ch4*m_ch4 + x_c2h6*m_c2h6 + x_c2h4*m_c2h4 + x_c3h8*m_c3h8 + x_c3h6*m_c3h6 + x_co*m_co + x_co2*m_co2)"
+  entrees:
+    x_h2: {valeur: 12.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_ch4: {valeur: 3.2, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c2h6: {valeur: 0.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c2h4: {valeur: 0.2, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c3h8: {valeur: 0.3, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_c3h6: {valeur: 0.3, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_co: {valeur: 0.6, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    x_co2: {valeur: 1.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    m_h2: {valeur: 2.01588, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C1333740"}
+    m_ch4: {valeur: 16.0425, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74828"}
+    m_c2h6: {valeur: 30.069, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74840"}
+    m_c2h4: {valeur: 28.0532, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74851"}
+    m_c3h8: {valeur: 44.0956, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C74986"}
+    m_c3h6: {valeur: 42.0797, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C115071"}
+    m_co: {valeur: 28.0101, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C630080"}
+    m_co2: {valeur: 44.0095, unite: "g/mol", source: NIST-WEBBOOK-GAZ, emplacement: "C124389"}
+    p_h2: {valeur: 241.826, unite: "kJ/mol", source: NIST-WEBBOOK-GAZ, emplacement: "H2O Mask=1 (formation de l'eau gaz)"}
+    p_ch4: {calc: CALC-A2-PCI-CH4}
+    p_c2h6: {calc: CALC-A2-PCI-C2H6}
+    p_c2h4: {calc: CALC-A2-PCI-C2H4}
+    p_c3h8: {calc: CALC-A2-PCI-C3H8}
+    p_c3h6: {calc: CALC-A2-PCI-C3H6}
+    p_co: {calc: CALC-A2-PCI-CO}
+  resultat: 37.386
+  unite: "MJ/kg"
+
+CALC-A2-GAZ-PART-COMBUSTIBLE:
+  description: "Part des gaz combustibles dans le gaz de pyrolyse hors air (H2 a CO sur H2 a CO2)"
+  formule: "comb / (comb + co2)"
+  entrees:
+    comb: {calc: CALC-A2-GC-COMBUSTIBLES}
+    co2: {valeur: 1.7, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 0.9137
+  unite: "fraction"
+
+CALC-A2-BRULEUR-MJ-T:
+  description: "Besoin de chaleur du bruleur de surchauffe, par tonne a 200 t/jour (833 kcal/s en continu)"
+  formule: "kcal_s * 86400 * kcal_kj / 1000 / capacite"
+  entrees:
+    kcal_s: {valeur: 833, unite: "kcal/s", source: UR2000-JP-P08-SPEC, emplacement: "p. 4"}
+    kcal_kj: {valeur: 4.1868, unite: "kJ/kcal", source: NIST-SP811-B9, emplacement: "Appendix B.9"}
+    capacite: {valeur: 200, unite: "t/jour", source: UR2000-JP-P08-SPEC, emplacement: "p. 8"}
+  resultat: 1506.65
+  unite: "MJ/t"
+
+CALC-A2-FIOUL-MJ-T:
+  description: "Energie du combustible declare (10 000 L/jour pour 200 t), s'il s'agit de l'huile produite (densite et PCS JLOS)"
+  formule: "litres * densite * pcs / capacite"
+  entrees:
+    litres: {valeur: 10000, unite: "L/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    densite: {valeur: 0.8642, unite: "kg/L", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+    capacite: {valeur: 200, unite: "t/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 1987.66
+  unite: "MJ/t"
+
+CALC-A2-ELEC-MJ-T:
+  description: "Electricite declaree (600 kW en continu, tableau UR Energy Consumption) par tonne a 200 t/jour"
+  formule: "kw * 24 * kwh_mj / capacite"
+  entrees:
+    kw: {valeur: 600, unite: "kW", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+    kwh_mj: {valeur: 3.6, unite: "MJ/kWh", source: NIST-SP811-B9, emplacement: "Appendix B.9"}
+    capacite: {valeur: 200, unite: "t/jour", source: OW-CONSO-ENERGIE, emplacement: "p. 1"}
+  resultat: 259.2
+  unite: "MJ/t"
+
+CALC-A2-NRJ-GAZ-RESINE:
+  description: "Energie du gaz par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.115, unite: "fraction", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 4299.4
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-RESINE:
+  description: "Energie de l'huile par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 0.01 * 1000 * pcs"
+  entrees:
+    part: {calc: CALC-A2-OW16-HUILE-TOTALE}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 35190
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-RESINE:
+  description: "Energie du char par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 1604.5
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-RESINE:
+  description: "Energie du gaz rapportee au besoin du bruleur, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-RESINE}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 2.8536
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-RESINE:
+  description: "Energie du gaz rapportee au combustible declare, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-RESINE}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 2.163
+  unite: "rapport"
+
+CALC-A2-NRJ-GAZ-OM:
+  description: "Energie du gaz par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 1869.3
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-OM:
+  description: "Energie de l'huile par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pcs"
+  entrees:
+    part: {valeur: 0.05, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 2300
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-OM:
+  description: "Energie du char par tonne de charge, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "part * 1000 * pci"
+  entrees:
+    part: {valeur: 0.25, unite: "fraction", source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 8022.5
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-OM:
+  description: "Energie du gaz rapportee au besoin du bruleur, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-OM}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 1.2407
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-OM:
+  description: "Energie du gaz rapportee au combustible declare, ordures menageres a 10 % de resines (UR2000-JP p. 5)"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-OM}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 0.9405
+  unite: "rapport"
+
+CALC-A2-NRJ-GAZ-NODA:
+  description: "Energie du gaz par tonne de matiere convertible, plastiques d'emballage de Noda 2022-09-09"
+  formule: "gaz / (entree - metaux) * 1000 * pci"
+  entrees:
+    gaz: {valeur: 9.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pci: {calc: CALC-A2-GAZ-PCI}
+  resultat: 8991.8
+  unite: "MJ/t"
+
+CALC-A2-NRJ-HUILE-NODA:
+  description: "Energie de l'huile par tonne de matiere convertible, plastiques d'emballage de Noda"
+  formule: "huile / (entree - metaux) * 1000 * pcs"
+  entrees:
+    huile: {valeur: 16.1, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pcs: {valeur: 46, unite: "MJ/kg", source: CHIBA-JLOS-HUILES, emplacement: "PDF p. 45"}
+  resultat: 18749.4
+  unite: "MJ/t"
+
+CALC-A2-NRJ-CHAR-NODA:
+  description: "Energie du char par tonne de matiere convertible, plastiques d'emballage de Noda"
+  formule: "char / (entree - metaux) * 1000 * pci"
+  entrees:
+    char: {valeur: 13.9, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    entree: {valeur: 50, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    metaux: {valeur: 10.5, unite: "kg", source: CHIBA-ESSAIS-FICHES, emplacement: "PDF p. 26"}
+    pci: {valeur: 32.09, unite: "MJ/kg", source: IZUMITEC-R35-339439, emplacement: "p. 1"}
+  resultat: 11292.4
+  unite: "MJ/t"
+
+CALC-A2-COUV-BRULEUR-NODA:
+  description: "Energie du gaz rapportee au besoin du bruleur, plastiques d'emballage de Noda"
+  formule: "gaz / besoin"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-NODA}
+    besoin: {calc: CALC-A2-BRULEUR-MJ-T}
+  resultat: 5.968
+  unite: "rapport"
+
+CALC-A2-COUV-FIOUL-NODA:
+  description: "Energie du gaz rapportee au combustible declare, plastiques d'emballage de Noda"
+  formule: "gaz / fioul"
+  entrees:
+    gaz: {calc: CALC-A2-NRJ-GAZ-NODA}
+    fioul: {calc: CALC-A2-FIOUL-MJ-T}
+  resultat: 4.524
+  unite: "rapport"
+
+CALC-A2-CL-VAPO-EMB:
+  description: "Chlore de l'huile d'emballages de Noda rapporte au seuil de 3 ppm des vapocraqueurs"
+  formule: "ppm / seuil"
+  entrees:
+    ppm: {calc: CALC-A2-JLOS-CL-EMB-PPM}
+    seuil: {valeur: 3, unite: "ppm", source: KUSENBERG-AICHE-2021, emplacement: "tableau 2"}
+  resultat: 456.7
+  unite: "rapport"
+
+CALC-A2-CL-VAPO-RES:
+  description: "Chlore de l'huile de residus de Noda rapporte au seuil de 3 ppm des vapocraqueurs"
+  formule: "ppm / seuil"
+  entrees:
+    ppm: {calc: CALC-A2-JLOS-CL-RES-PPM}
+    seuil: {valeur: 3, unite: "ppm", source: KUSENBERG-AICHE-2021, emplacement: "tableau 2"}
+  resultat: 1753.3
+  unite: "rapport"
+
+CALC-A2-GC-SANS-AIR:
+  description: "Somme des huit composants du gaz de pyrolyse hors oxygene et azote (air), % vol"
+  formule: "total - o2 - n2"
+  entrees:
+    total: {calc: CALC-A2-GC-SOMME}
+    o2: {valeur: 12.3, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+    n2: {valeur: 65.8, unite: "% vol", source: KANSO-B2002600, emplacement: "p. 1"}
+  resultat: 19.7
+  unite: "% vol"
+
+# === ANNEXE 2 : GC-MS ORIST et lecture carbureacteur (14/10/2026) ===
+
+CALC-A2-GCMS-SOMME:
+  description: 'GC-MS ORIST : somme des aires des 71 pics (controle de la transcription)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p18 + p19 + p20 + p21 + p22 + p24 + p25 + p26 + p27 + p30 + p31 + p32 + p33 + p36 + p37 + p39 + p40 + p41 + p42 + p44 + p58 + p59 + p60 + p61 + p62 + p63 + p65 + p67 + p72 + p74 + p75 + p76 + p77 + p78 + p79 + p80 + p81 + p82 + p83 + p86 + p90 + p92 + p94 + p96 + p99 + p100 + p101 + p104 + p105 + p106 + p107 + p108 + p110 + p112 + p116 + p118 + p119 + p120 + p122 + p125 + p128
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p18:
+      valeur: 0.47
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 18
+    p19:
+      valeur: 0.3
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 19
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p22:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 22
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p26:
+      valeur: 0.09
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 26
+    p27:
+      valeur: 0.36
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 27
+    p30:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 30
+    p31:
+      valeur: 0.38
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 31
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+    p37:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 37
+    p39:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 39
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p44:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 44
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p65:
+      valeur: 0.19
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 65
+    p67:
+      valeur: 0.37
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 67
+    p72:
+      valeur: 0.17
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 72
+    p74:
+      valeur: 2.44
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 74
+    p75:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 75
+    p76:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 76
+    p77:
+      valeur: 3.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 77
+    p78:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 78
+    p79:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 79
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p81:
+      valeur: 1.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 81
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p83:
+      valeur: 1.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 83
+    p86:
+      valeur: 0.98
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 86
+    p90:
+      valeur: 1.34
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 90
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+    p99:
+      valeur: 1.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 99
+    p100:
+      valeur: 0.96
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 100
+    p101:
+      valeur: 0.78
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 101
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+    p105:
+      valeur: 0.5
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 105
+    p106:
+      valeur: 0.54
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 106
+    p107:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 107
+    p108:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 108
+    p110:
+      valeur: 2.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 110
+    p112:
+      valeur: 1.31
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 112
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p118:
+      valeur: 0.89
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 118
+    p119:
+      valeur: 2.77
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 119
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+    p122:
+      valeur: 0.74
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 122
+    p125:
+      valeur: 2.35
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 125
+    p128:
+      valeur: 1.55
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 128
+  resultat: 100.02
+  unite: '% aire'
+CALC-A2-GCMS-OLEF:
+  description: 'GC-MS ORIST : part d''aire des olefines (alcenes, cycloalcenes, dienes) identifiees'
+  formule: p7 + p9 + p13 + p15 + p17 + p24 + p25 + p40 + p41 + p42 + p58 + p59 + p60 + p61 + p62 + p63 + p80 + p82 + p92 + p96 + p104
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+  resultat: 57.59
+  unite: '% aire'
+CALC-A2-GCMS-JET:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures nommes de 8 a 16 atomes de carbone (estimes et possibles)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p20 + p21 + p24 + p25 + p32 + p33 + p36 + p40 + p41 + p42 + p58 + p59 + p60 + p61 + p62 + p63 + p82 + p92 + p96
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+  resultat: 58.54
+  unite: '% aire'
+CALC-A2-GCMS-JET-EST:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures de 8 a 16 atomes de carbone identifies avec bonne concordance (colonne estime)'
+  formule: p7 + p8 + p9 + p10 + p12 + p13 + p14 + p15 + p16 + p17 + p20 + p21 + p24 + p25 + p42
+  entrees:
+    p7:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 7
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p9:
+      valeur: 0.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 9
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+  resultat: 38.2
+  unite: '% aire'
+CALC-A2-GCMS-LOURD:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures nommes de plus de 16 atomes de carbone'
+  formule: p80 + p94 + p104 + p116 + p120
+  entrees:
+    p80:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 80
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p104:
+      valeur: 2.51
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 104
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+  resultat: 4.92
+  unite: '% aire'
+CALC-A2-GCMS-OXY:
+  description: 'GC-MS ORIST : part d''aire des composes oxygenes possibles (esters, alcools)'
+  formule: p39 + p74 + p77 + p81 + p86 + p99 + p100 + p101 + p108 + p110
+  entrees:
+    p39:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 39
+    p74:
+      valeur: 2.44
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 74
+    p77:
+      valeur: 3.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 77
+    p81:
+      valeur: 1.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 81
+    p86:
+      valeur: 0.98
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 86
+    p99:
+      valeur: 1.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 99
+    p100:
+      valeur: 0.96
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 100
+    p101:
+      valeur: 0.78
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 101
+    p108:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 108
+    p110:
+      valeur: 2.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 110
+  resultat: 15.49
+  unite: '% aire'
+CALC-A2-GCMS-NONID:
+  description: 'GC-MS ORIST : part d''aire des pics non identifies ou seulement ''hydrocarbure aliphatique'''
+  formule: p19 + p22 + p26 + p27 + p30 + p31 + p37 + p44 + p65 + p67 + p72 + p75 + p76 + p78 + p79 + p83 + p90 + p105 + p106 + p107 + p112 + p118 + p119 + p122 + p125 + p128
+  entrees:
+    p19:
+      valeur: 0.3
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 19
+    p22:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 22
+    p26:
+      valeur: 0.09
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 26
+    p27:
+      valeur: 0.36
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 27
+    p30:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 30
+    p31:
+      valeur: 0.38
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 31
+    p37:
+      valeur: 0.13
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 37
+    p44:
+      valeur: 1.1
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 44
+    p65:
+      valeur: 0.19
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 65
+    p67:
+      valeur: 0.37
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 67
+    p72:
+      valeur: 0.17
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 72
+    p75:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 75
+    p76:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 76
+    p78:
+      valeur: 0.71
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 78
+    p79:
+      valeur: 0.66
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 79
+    p83:
+      valeur: 1.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 83
+    p90:
+      valeur: 1.34
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 90
+    p105:
+      valeur: 0.5
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 105
+    p106:
+      valeur: 0.54
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 106
+    p107:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 107
+    p112:
+      valeur: 1.31
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 112
+    p118:
+      valeur: 0.89
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 118
+    p119:
+      valeur: 2.77
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 119
+    p122:
+      valeur: 0.74
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 122
+    p125:
+      valeur: 2.35
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 125
+    p128:
+      valeur: 1.55
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 128
+  resultat: 20.6
+  unite: '% aire'
+CALC-A2-GCMS-C9:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C9'
+  formule: p10 + p12 + p13 + p14 + p15
+  entrees:
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p13:
+      valeur: 21.26
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 13
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p15:
+      valeur: 0.12
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 15
+  resultat: 23.19
+  unite: '% aire'
+CALC-A2-GCMS-C10:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C10'
+  formule: p16 + p17 + p20 + p21 + p24 + p25 + p32 + p33
+  entrees:
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p17:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 17
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p24:
+      valeur: 3.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 24
+    p25:
+      valeur: 2.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 25
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+  resultat: 8.16
+  unite: '% aire'
+CALC-A2-GCMS-C11:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C11'
+  formule: p42
+  entrees:
+    p42:
+      valeur: 6.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 42
+  resultat: 6.52
+  unite: '% aire'
+CALC-A2-GCMS-C12:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C12'
+  formule: p41 + p58 + p59 + p60 + p61 + p82 + p92
+  entrees:
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+    p82:
+      valeur: 0.42
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 82
+    p92:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 92
+  resultat: 9.91
+  unite: '% aire'
+CALC-A2-GCMS-C13:
+  description: 'GC-MS ORIST : part d''aire des hydrocarbures en C13'
+  formule: p40 + p62 + p63 + p96
+  entrees:
+    p40:
+      valeur: 7.6
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 40
+    p62:
+      valeur: 0.67
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 62
+    p63:
+      valeur: 0.18
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 63
+    p96:
+      valeur: 1.28
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 96
+  resultat: 9.73
+  unite: '% aire'
+CALC-A2-GCMS-NAPHT:
+  description: 'GC-MS ORIST : part d''aire des cycloalcanes (naphtenes) nommes'
+  formule: p10 + p12 + p14 + p32 + p33 + p94 + p116 + p120
+  entrees:
+    p10:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 10
+    p12:
+      valeur: 0.48
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 12
+    p14:
+      valeur: 1.08
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 14
+    p32:
+      valeur: 0.25
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 32
+    p33:
+      valeur: 0.24
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 33
+    p94:
+      valeur: 0.16
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 94
+    p116:
+      valeur: 0.45
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 116
+    p120:
+      valeur: 0.52
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 5, pic 120
+  resultat: 3.43
+  unite: '% aire'
+CALC-A2-GCMS-ISOPAR:
+  description: 'GC-MS ORIST : part d''aire des alcanes ramifies nommes'
+  formule: p8 + p16 + p20 + p21 + p36
+  entrees:
+    p8:
+      valeur: 0.59
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 8
+    p16:
+      valeur: 0.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 16
+    p20:
+      valeur: 0.57
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 20
+    p21:
+      valeur: 0.61
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 21
+    p36:
+      valeur: 0.21
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 36
+  resultat: 2.44
+  unite: '% aire'
+CALC-A2-GCMS-VOLAT:
+  description: Part de l'echantillon 'drain' evaporee apres 5 min a 350 C
+  formule: 100 - residu
+  entrees:
+    residu:
+      valeur: 53.7
+      unite: '%'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 6
+  resultat: 46.3
+  unite: '%'
+CALC-A2-TEB-NONENE:
+  description: Temperature d'ebullition normale du 1-nonene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 419
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-nonene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 145.85
+  unite: C
+CALC-A2-TEB-UNDECENE:
+  description: Temperature d'ebullition normale du 1-undecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 466
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-undecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 192.85
+  unite: C
+CALC-A2-TEB-TRIDECENE-BAS:
+  description: Temperature d'ebullition normale du 1-tridecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 501
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-tridecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 227.85
+  unite: C
+CALC-A2-TEB-TRIDECENE-HAUT:
+  description: Temperature d'ebullition normale du 1-tridecene en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 507
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: 1-tridecene
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 233.85
+  unite: C
+CALC-A2-TEB-HEXADECANE:
+  description: Temperature d'ebullition normale du n-hexadecane en degres Celsius
+  formule: t_k - t0
+  entrees:
+    t_k:
+      valeur: 554
+      unite: K
+      source: NIST-WEBBOOK-TEB
+      emplacement: n-hexadecane
+    t0:
+      valeur: 273.15
+      unite: K
+      source: NIST-SP811-CELSIUS
+      emplacement: section 4.2.1.1
+  resultat: 280.85
+  unite: C
+
+CALC-A2-GCMS-TMN:
+  description: 'GC-MS ORIST : part d''aire des pics nommes trimethylnonene (C12)'
+  formule: p41 + p58 + p59 + p60 + p61
+  entrees:
+    p41:
+      valeur: 3.97
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 41
+    p58:
+      valeur: 1.75
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 58
+    p59:
+      valeur: 1.15
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 59
+    p60:
+      valeur: 0.7
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 60
+    p61:
+      valeur: 1.46
+      unite: '% aire'
+      source: ORIST-GCMS-DRAIN
+      emplacement: p. 4, pic 61
+  resultat: 9.03
+  unite: '% aire'
+
+CALC-A2-GCMS-JET-ECH-BAS:
+  description: "Fourchette basse de la part de l'echantillon 'drain' en hydrocarbures C8 a C16 (identifies avec bonne concordance), hypothese D-024"
+  formule: "volat * jet_est / 100"
+  entrees:
+    volat: {calc: CALC-A2-GCMS-VOLAT}
+    jet_est: {calc: CALC-A2-GCMS-JET-EST}
+  resultat: 17.69
+  unite: "%"
+
+CALC-A2-GCMS-JET-ECH-HAUT:
+  description: "Fourchette haute de la part de l'echantillon 'drain' en hydrocarbures C8 a C16 (tous les hydrocarbures nommes), hypothese D-024"
+  formule: "volat * jet / 100"
+  entrees:
+    volat: {calc: CALC-A2-GCMS-VOLAT}
+    jet: {calc: CALC-A2-GCMS-JET}
+  resultat: 27.1
+  unite: "%"
+
