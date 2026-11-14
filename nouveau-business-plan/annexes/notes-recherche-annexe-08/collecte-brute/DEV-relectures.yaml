@@ -1,0 +1,23 @@
+ADEME-VHU:
+  ouvert: "oui (page du jeu de données ; fichiers CSV/XLSX de data.gouv refusés par robots ; mêmes données lues via l'API data.ademe.fr)"
+  emplacement: "en-tête du CSV (API https://data.ademe.fr/data-fair/api/v1/datasets/rep-vhu-performances-cumulees-en-2018/lines)"
+  citation: "\"Code Dept\",\"Code Région\",\" Moyenne TRR (%)\",\"Moyenne TRV (%)\",\"Années\" | Le jeu de données présente les performances cumulées des centres Véhicules hors d'usage (VHU) et broyeurs, depuis 2018"
+  contenu: "Moyennes TRR et TRV par département seulement, années 2018 à 2021, 389 lignes, aucune ligne nationale. Description : « Date de mise à jour des données : décembre 2023 » ; la page affiche une mise à jour au 6 octobre 2026."
+  statut_propose: "lu"
+  note: "URL valide. Inutilisable pour un chiffre national : remplacer par A8-DEV-EUROSTAT-ELV-2023 ou A8-DEV-ADEME-VHU-2023."
+
+ECOSYSTEM-2025:
+  ouvert: "oui"
+  emplacement: "p. 2, 5, 6 et 7"
+  citation: "En 2024, ont été collectées 694814 tonnes d’EEE ménagers soit 142 290 278 unités | c’est le taux de recyclage moyen d’un DEEE ménager sous forme de nouvelles matières premières | 530497 tonnes de matières recyclées | séparer les matières en grandes familles : principalement plastiques, ferrailles, métaux non ferreux, verre"
+  contenu: "Dossier de presse « LE GESTE RECYCLER », ecosystem, décembre 2025 (pas un rapport annuel). Collecte 2024 de DEEE ménagers par ecosystem seulement ; taux de recyclage moyen associé : 79,2 % ; 530 497 t de matières recyclées sans année ni périmètre. Aucun chiffre sur les plastiques."
+  statut_propose: "lu"
+  note: "URL valide. Presse d'éco-organisme. À compléter par A8-DEV-ECOSYSTEM-RA-2025."
+
+RP-049:
+  ouvert: "oui"
+  emplacement: "p. 25 ou 26 selon l'extraction, section 2.1 « Gisement des filières REP »"
+  citation: "L’ensemble des déchets d’équipements électriques et électroniques (EEE) est évalué à 2,3 millions de tonnes, | dont 1,9 million de tonnes de déchets de la filière EEE ménagers."
+  contenu: "ADEME, « Déchets chiffres-clés, Édition 2023 » (IN NUMERI, réf. 011982), miroir Ecologic. Gisement estimé (pas une collecte), donnée 2021 selon l'extraction. Aucun chiffre sur les plastiques des DEEE."
+  statut_propose: "lu"
+  note: "URL valide. Nom de fichier trompeur : ce n'est pas un rapport DEEE. Pertinence faible : ne pas utiliser pour les tonnages de plastiques."

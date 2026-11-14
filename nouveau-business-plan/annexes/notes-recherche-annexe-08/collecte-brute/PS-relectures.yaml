@@ -1,0 +1,28 @@
+RP2-030:
+  ouvert: "oui"
+  emplacement: "page unique, sans pagination"
+  citation: "Le gisement national est estimé à 100 000 tonnes - composé essentiellement de pots de yaourt ou de compote, | de barquettes destinées à la viande ou au poisson. | Les emballages plastiques ménagers en PS qui respectent les critères d’écoconception déterminés par le COTREP | deviendraient donc “recyclables” en 2025 avec les deux usines de recyclage opérationnelles : à leur mise en service, | ce seraient ainsi près de 10 000 tonnes d’emballages PS qui seraient recyclées, | avec Eslava et Indaver, les 2 entreprises lauréates de l’appel d’offres Citeo sur les flux de déchets PS,"
+  contenu: "Communiqué COTREP du 6 septembre 2023. Gisement PS ménager (emballages) France estimé à 100 000 t ; au conditionnel, environ 10 000 t recyclées à la mise en service des usines. Ni localisation des usines ni procédés."
+  statut_propose: "lu"
+  note: "URL valide. Prévision 2023, pas un tonnage recyclé constaté."
+RP-060:
+  ouvert: "oui"
+  emplacement: "PDF p. 2 (art. 1), p. 3 (art. 3), p. 8 (annexe 1) ; tampon préfecture 21/01/2025 ; date de signature vide"
+  citation: "en partenariat avec KNAUF Circular au départ des points d’enlèvement | Faire valoriser en Europe ces plastiques, dans le respect des conditions réglementaires et environnementales en vigueur | est fixé à : 55 € / tonne pour l’année 2025. | Qualité (pureté en poids) 98% | Produits refusés PSE issus de la déconstruction (chantiers, bâtiments…) et PSE colorés | Conditionné dans des sacs transparents de minimum 1 m3 (volume utile) et d’épaisseur supérieure à 40 µm"
+  contenu: "Flux HCS PSE VRAC (calage et caisses de marée en PSE blanc, déchèterie ou activités économiques). Valorplast achète 55 €/t (2025) ; enlèvement Knauf Circular dès 20 m3 ; contrat jusqu'au 31/12/2027 ; valorisation « en Europe » sans pays ni recycleur final."
+  statut_propose: "lu"
+  note: "URL valide. Contrat type annexé à une délibération : prix propre à ce contrat, pas une moyenne nationale."
+PRM-CITEO-OBSREPRISE-2024:
+  ouvert: "oui"
+  emplacement: "diapositive 44, « Plastiques : indicateurs qualité »"
+  citation: "PEHD-PP-PS"
+  contenu: "Observatoire de la reprise 2024 (Citeo/Adelphe, 06/10/2025). Aucun prix, tonnage, repreneur ou destination propre au PS ou au PSE ; le PS n'apparaît que dans ce libellé de catégorie qualité, sans valeur."
+  statut_propose: "lu"
+  note: "URL valide. Non pertinent pour PS/PSE : ne pas citer pour un prix de reprise PS ou PSE."
+CITEO-STANDARDS-2023:
+  ouvert: "oui"
+  emplacement: "section Plastiques, sous-sections « Standard flux développement » et extension de tri en une étape (page non donnée par l'outil)"
+  citation: "• PS : pots et barquettes monocouche ; | …la possibilité d’élargir le flux aux déchets d’emballages ménagers rigides en PS, et 95 %… | …et une teneur maximale en PS précisée dans les Prescriptions Techniques Particulières ;"
+  contenu: "Agrément 2023, liste des standards emballages ménagers à effet au 01/01/2023. Pas de standard PS ou PSE autonome ; PS rigide dans le flux développement (rigides en mélange) et extension optionnelle du flux PEHD/PP ; PSE non mentionné."
+  statut_propose: "lu"
+  note: "URL valide. Numéro de page non obtenu."

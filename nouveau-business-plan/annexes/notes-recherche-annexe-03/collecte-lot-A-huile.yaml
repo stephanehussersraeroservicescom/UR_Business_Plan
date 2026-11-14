@@ -1,0 +1,446 @@
+# Lot A : huile de pyrolyse (débouchés, spécifications, statut réglementaire, acheteurs)
+# Sous-agent de recherche, 15/10/2026. Toutes les pages ont été lues via WebFetch ; les citations sont celles
+# restituées par l'outil (extraits limités à environ 125 caractères par l'outil). Légifrance, EUR-Lex et
+# europarl.europa.eu (PDF) sont inaccessibles depuis cet environnement (blocage robots ou proxy 403) :
+# les textes ont été lus sur AIDA (INERIS), legislation.gov.uk (version UE figée au 31/12/2020) ou des reproductions signalées.
+
+# ---------------------------------------------------------------------------
+# 1. SPÉCIFICATIONS PAR DÉBOUCHÉ
+# ---------------------------------------------------------------------------
+
+A3-ARRETE-FIOULS-LOURDS-2000:
+  titre: "Arrêté du 25 avril 2000 relatif aux caractéristiques des fiouls lourds (NOR ECO10000214A), modifié par arrêtés du 6 novembre 2006 et du 16 novembre 2022"
+  editeur: "Ministère chargé de l'industrie ; texte consolidé reproduit par AIDA (INERIS)"
+  date: "2000-04-25 (dernière modification citée : 2022-11-16)"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-250400-relatif-caracteristiques-fiouls-lourds"
+  emplacement: "Articles 2 (caractéristiques), 3 (classes de soufre), 4 (usage), 5 (méthodes)"
+  contenu: "Fioul lourd vendu en France : distillation moins de 65 % à 250 °C et moins de 85 % à 350 °C ; viscosité supérieure à 9,5 mm²/s à 20 °C et inférieure à 40 mm²/s à 100 °C ; eau inférieure ou égale à 1,5 % en masse ; point d'éclair supérieur ou égal à 70 °C ; soufre : TBTS inférieur ou égal à 1 %, BTS 2 %, HTS 4 % en masse. Aucune limite de densité, de cendres ni de chlore dans le texte. Comparaison : l'huile Urban Rig (point éclair < 40 °C, viscosité 1,7 mm²/s à 50 °C) ne respecte ni le point d'éclair ni la viscosité minimale du fioul lourd."
+  citation: "Supérieure à 9,5 mm²/s à 20 °C ; | Inférieure à 40 mm²/s à 100 °C ; | inférieure ou égale à 1,5 % en masse ; | supérieur ou égal à 70 °C ; | un fioul lourd dont la teneur en soufre est inférieure ou égale à 1 % en masse."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (Légifrance inaccessible). Texte de 2000 (plus de huit ans) mais en vigueur, modifié en 2022. Confirmé par la page AIDA de l'arrêté modificatif du 6/11/2006 (https://aida.ineris.fr/node/28862)."
+  parametres: [spec_fioul_lourd_point_eclair, spec_fioul_lourd_viscosite, spec_fioul_lourd_eau, spec_fioul_lourd_soufre]
+
+A3-ARRETE-GAZOLE-1999-ANNEXE-I:
+  titre: "Arrêté du 23 décembre 1999 relatif aux caractéristiques du gazole et du gazole grand froid, annexe I, version modifiée par l'arrêté du 31 décembre 2014 (impression Légifrance du 3/6/2015)"
+  editeur: "Ministère chargé de l'énergie (Légifrance), document hébergé par l'OCDE (AMIS)"
+  date: "2014-12-31 (version consolidée imprimée le 2015-06-03)"
+  type: reglementaire
+  url: "https://webfs.oecd.org/TADWEB/agriculture/data/AMIS/Indicators/Sources/DEVR1431074A_annexes.pdf"
+  emplacement: "Annexe I, tableau des caractéristiques du gazole"
+  contenu: "Gazole routier France : point d'éclair minimum 55 °C ; soufre maximum 10,0 mg/kg ; masse volumique à 15 °C de 820,0 à 845,0 kg/m³ ; viscosité à 40 °C de 2,00 à 4,50 mm²/s ; eau maximum 200 mg/kg ; cendres maximum 0,01 % m/m. Comparaison : huile Urban Rig, point éclair < 40 °C (non conforme), densité 864 à 876 kg/m³ (au-dessus de 845), soufre < 500 à 600 mg/kg (au-dessus de 10), eau 1 300 à 2 000 mg/kg (au-dessus de 200), cendres 0,002 à 0,014 % (limite 0,01 dépassée pour un échantillon)."
+  citation: "Point d'éclair °C 55 | Teneur en soufre mg/kg 10,0 | kg/m³ 820,0 845,0 | mm2/s 2,00 4,50 | Teneur en eau mg/kg 200 | Teneur en cendre %(m/m) 0,01"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch le 15/10/2026. Version de 2014 : des modifications postérieures (par exemple teneur en EMAG) ne sont pas vérifiées. Légifrance inaccessible pour la version en vigueur. Valeurs identiques à EN 590 (norme payante non lue)."
+  parametres: [spec_gazole_point_eclair, spec_gazole_soufre, spec_gazole_densite, spec_gazole_viscosite, spec_gazole_eau, spec_gazole_cendres]
+
+A3-DIR-98-70-ANNEXE-II:
+  titre: "Directive 98/70/CE concernant la qualité de l'essence et des carburants diesel, annexe II (spécifications environnementales des carburants diesel), texte substitué par la directive 2014/77/UE"
+  editeur: "Union européenne ; texte reproduit par legislation.gov.uk (The National Archives, version UE au 24/12/2018, figée au 31/12/2020)"
+  date: "2018-12-24"
+  type: reglementaire
+  url: "https://www.legislation.gov.uk/eudr/1998/70/annex/II"
+  emplacement: "Annexe II, tableau"
+  contenu: "Diesel (UE) : indice de cétane minimum 51,0 ; masse volumique à 15 °C maximum 845,0 kg/m³ ; 95 % distillé à 360 °C maximum ; HAP maximum 8,0 % m/m ; soufre maximum 10,0 mg/kg ; EMAG maximum 7,0 % v/v. La directive ne fixe pas de point d'éclair (il figure dans EN 590 et dans l'arrêté français de 1999)."
+  citation: "Density at 15 °C kg/m 845,0 | Sulphur content mg/kg 10,0 | Cetane number 51,0 | Polycyclic aromatic hydrocarbons % m/m 8,0"
+  statut: lu
+  consulte: 2026-10-15
+  note: "EUR-Lex refuse WebFetch (robots). Version legislation.gov.uk = texte UE au 24/12/2018 ; aucune modification UE de l'annexe II connue après cette date mais non vérifiée sur EUR-Lex."
+  parametres: [spec_gazole_soufre, spec_gazole_densite]
+
+A3-DIR-2016-802-ART4:
+  titre: "Directive (UE) 2016/802 concernant une réduction de la teneur en soufre de certains combustibles liquides, article 4"
+  editeur: "Union européenne ; reproduit par legislation.gov.uk (version au 31/12/2020)"
+  date: "2016-05-11"
+  type: reglementaire
+  url: "https://www.legislation.gov.uk/eudr/2016/802/article/4"
+  emplacement: "Article 4 « Maximum sulphur content in gas oil »"
+  contenu: "Gasoils (dont fioul domestique) : teneur en soufre maximale 0,10 % en masse (1 000 mg/kg). L'huile Urban Rig (< 0,05 % et 0,06 %) respecte ce plafond."
+  citation: "Member States shall ensure that gas oils are not used within their territory if their sulphur content exceeds 0,10 % by mass."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch (EUR-Lex inaccessible). L'article 2 (définition du gasoil) n'a pas été lu."
+  parametres: [spec_fod_soufre]
+
+A3-FOD-SPEC-CPDP-2010:
+  titre: "Le fioul domestique : une énergie en évolution (fiche technique, édition mars 2011), tableau des spécifications CPDP CSR 443a du 1/9/2010"
+  editeur: "Association Chauffage (fiche hébergée par Xpair) ; tableau du Comité Professionnel du Pétrole"
+  date: "2011-03"
+  type: federation
+  url: "https://media.xpair.com/pdf/chauffage/Fioul-domestique-energie-en-evolution.pdf"
+  emplacement: "Tableau des spécifications du fioul domestique"
+  contenu: "Spécifications administratives du fioul domestique (référence citée : arrêté du 15/07/10, JO du 21/08/10) : soufre 0,10 % m/m maximum ; point d'éclair > 55 °C ; masse volumique à 15 °C de 0,830 à 0,880 kg/l ; viscosité à 20 °C maximum de 3 à 7,5 mm²/s ; eau 200 mg/kg maximum ; eau et sédiments 0,10 % m/m maximum. Pas de limite de cendres ni de chlore."
+  citation: "0,10 % (m/m) Maximum | > 55 °C | de 0,830 à 0,880 kg/l | 200 mg/kg Maximum"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Source professionnelle reprenant l'arrêté, tableau en partie illisible à l'extraction ; données de 2010 (plus de huit ans). L'arrêté du 15 juillet 2010 n'a pas pu être lu (Légifrance bloqué, absent d'AIDA). La version en vigueur peut différer."
+  parametres: [spec_fod_point_eclair, spec_fod_densite, spec_fod_eau, spec_fod_soufre]
+
+A3-ZWE-LEAKY-LOOP-2023:
+  titre: "Leaky Loop « Recycling » : A technical correction on the quality of pyrolysis oil made from plastic waste"
+  editeur: "Zero Waste Europe"
+  date: "2023-10"
+  type: etude_publique
+  url: "https://zerowasteeurope.eu/wp-content/uploads/2023/10/Leaky-Loop-Recycling_-A-Technical-Correction-on-the-Quality-of-Pyrolysis-Oil-made-from-Plastic-Waste-.docx.pdf"
+  emplacement: "Tableau 1 p. 22 ; texte p. 23, 24, 30 ; tableau 2 p. 27"
+  contenu: "Valeurs limites de charge de vapocraqueur compilées : azote 0,01 % (naphta léger) et 0,2 % (naphta lourd) ; oxygène 0,01 % ; chlore 3 ppm ; fluor 2 ppm ; sodium 0,125 ppm ; calcium 0,5 ppm ; plomb 0,05 ppm ; potassium 0,5 ppm ; silicium 0,5 ppm ; oléfines 2 %. Sources primaires citées : Buekens 2006 et Kusenberg 2022 (déjà au registre)."
+  citation: "Steam cracker limit values are shown in square brackets [taken from 48 and 53] | Metal concentrations (in ppmw) in pyrolysis oil derived from various plastic wastes along with steam cracker limit values"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Source militante (ONG opposée au recyclage chimique), compilation de sources tierces dont Buekens 2006 (plus de huit ans). La référence 53 citée ne correspond pas à un document de vapocraquage : à utiliser avec réserve. Les valeurs de chlore et d'oléfines reprennent Kusenberg (déjà au registre)."
+  parametres: [spec_vapocraqueur_azote, spec_vapocraqueur_oxygene, spec_vapocraqueur_metaux, spec_vapocraqueur_olefines]
+
+# ---------------------------------------------------------------------------
+# 2. STATUT RÉGLEMENTAIRE
+# ---------------------------------------------------------------------------
+
+A3-ARRETE-SSD-HUILE-PYROLYSE-2024:
+  titre: "Arrêté du 19 février 2024 fixant les critères de sortie du statut de déchet pour l'huile de pyrolyse issue de la pyrolyse de déchets de matières plastiques, en vue d'une valorisation matière au sein d'une installation pétrochimique relevant de la directive 2010/75/UE, pour un usage dans une unité de vapocraquage ou dans une unité de purification à destination d'une unité de vapocraquage (NOR TREP2403460A)"
+  editeur: "Ministère de la transition écologique ; JO n° 56 du 7 mars 2024 ; texte reproduit par AIDA (INERIS)"
+  date: "2024-02-19"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-190224-fixant-criteres-sortie-statut-dechet-lhuile-pyrolyse-issue-pyrolyse"
+  emplacement: "Notice ; art. 1er (définitions), art. 2 a) à h) ; art. 3 à 7 ; annexe I sections 1.1 à 1.3, 2.1, 3.3 (tableaux A et B), 4.4 ; annexe II"
+  contenu: "Seule voie française de sortie du statut de déchet pour l'huile de pyrolyse de plastiques : usage matière en vapocraqueur (rubrique ICPE 3410) ou purification préalable, avec contrat de cession avec une installation pétrochimique IED (points 1.2 ou 4.1). Production de pyrolyse soumise à autorisation ICPE. Intrants : liste fermée de codes déchets plastiques (dont 15 01 02, 15 01 05, 15 01 06, 19 12 04, 20 01 39 ; pas d'ordures ménagères résiduelles 20 03 01), PE + PP + PS au moins 85 % de la matière sèche, PVC au plus 3 %, PET < 5 %, PU < 5 %, ABS < 10 %, humidité au plus 10 %. Huile, tableau A (sans purification) : soufre 3 000 ppm ; azote 5 000 ppm ; oxygène total 10 000 ppm ; somme Br + Cl + F + I 500 ppm (dont F 10, Br 5) ; somme métaux (Al, Cr, Co, Cu, Mn, Ni, V, Fe, Zn, Ca, Mg, K, Cd, Ti) 500 ppm ; As + Hg + Pb + Sb 10 ppm. Tableau B (avec purification, pour les composés traités) : soufre 5 000 ; azote 10 000 ; oxygène 40 000 ; halogènes 30 000 (dont Br 100, F 100) ; métaux 5 000 ; As + Hg + Pb + Sb 100 ppm. Lot au plus 2 semaines de production, analyses au moins mensuelles, attestation de conformité par lot, conformité REACH et CLP (annexe I, 3.4). La notice précise que la production de combustible n'est pas du recyclage. Comparaison : chlore mesuré 1 370 à 5 260 ppm, supérieur au plafond de 500 ppm du tableau A, inférieur au plafond de 30 000 ppm du tableau B ; intrants ordures ménagères hors champ."
+  citation: "est au moins de 85 % en masse de matière sèche | Somme des halogénés : Br + Cl + F + I | 500 ppm | Somme des halogénés : Br + Cl + F + I | 30 000 ppm | la production de combustible n'est pas considérée comme du recyclage | inférieure ou égale à 3 % en masse de matière sèche en PVC"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch sur AIDA (deux pages concordantes : node/42293 et la page réglementation). Légifrance inaccessible. AIDA n'indique aucune modification ultérieure. Pas de teneur en eau ni de point d'éclair fixés pour l'huile."
+  parametres: [ssd_huile_pyrolyse_criteres, ssd_huile_pyrolyse_halogenes, ssd_huile_pyrolyse_intrants, debouche_vapocraqueur]
+
+A3-ARRETE-SSD-HUILE-THERMOLYSE-PNEUS-2026:
+  titre: "Arrêté du 21 juillet 2026 fixant les critères de sortie du statut de déchet pour l'huile de thermolyse issue de la vapothermolyse ou de la thermolyse de déchets de pneus hors d'usage en vue d'une valorisation matière dans une installation pétrochimique ou chimique (NOR TECP2528362A)"
+  editeur: "Ministère de la transition écologique ; JO n° 179 du 2 août 2026 ; reproduit par AIDA (INERIS)"
+  date: "2026-07-21"
+  type: reglementaire
+  url: "https://aida.ineris.fr/node/46261"
+  emplacement: "Annexe I, sections 1.1, 1.2, 3.3 (tableau), 4.4.2"
+  contenu: "Second arrêté français de sortie du statut de déchet pour une huile de thermolyse : pneus hors d'usage seulement (code 16 01 03, broyés < 250 mm), usage matière en installation pétrochimique ou chimique. Limites : halogènes (Br + Cl + F + I) 1 000 ppm ; soufre 30 000 ppm ; azote 10 000 ppm ; oxygène total 20 000 ppm ; métaux (Al à Ti) 500 ppm ; As + Hg + Pb + Sb 10 ppm. Ne s'applique pas aux déchets municipaux ; montre cependant la logique (usage matière, plafond d'halogènes)."
+  citation: "Somme des halogénés : Br + Cl + F + I | 1000 ppm | Oxygène Total | 20 000 ppm"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch sur AIDA (deux pages concordantes). Texte de 2026."
+  parametres: [ssd_huile_thermolyse_pneus]
+
+A3-CODE-ENV-L541-4-3:
+  titre: "Article L541-4-3 du code de l'environnement (sortie du statut de déchet), reproduction"
+  editeur: "OPPBTP (preventionbtp.fr), reproduction du code de l'environnement, mise à jour du 2 juillet 2026"
+  date: "2026-07-02 (date de mise à jour de la page)"
+  type: reglementaire
+  url: "https://content.preventionbtp.fr/pdf/droit_de_la_prevention/article-l541-4-3-du-code-de-l-environnement-sortie-du-statut-de-dechet.pdf"
+  emplacement: "Article L541-4-3, I, I bis, I ter, III, IV"
+  contenu: "Un déchet cesse d'être un déchet après traitement et valorisation s'il remplit quatre conditions (usage spécifique, demande ou marché, exigences techniques et normes produits, absence d'effets nocifs). I bis : l'autorité administrative définit les critères (arrêtés). I ter : un produit fabriqué dans une installation de production utilisant des déchets n'est pas un déchet s'il est similaire à celui fabriqué sans déchets et satisfait les conditions du I. III : le premier metteur sur le marché d'une matière sortie du statut de déchet respecte la législation sur les substances chimiques et les produits (REACH implicitement)."
+  citation: "Un déchet cesse d'être un déchet après avoir été traité et avoir subi une opération de valorisation, | il existe une demande pour une telle substance ou objet ou elle répond à un marché ; | respecte les exigences pertinentes de la législation applicable sur les substances chimiques"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Reproduction par un organisme (OPPBTP), Légifrance inaccessible ; texte modificatif non indiqué. La portée exacte du I ter pour une huile de pyrolyse n'est pas établie."
+  parametres: [statut_dechet_huile]
+
+A3-DECRET-2012-602-SSD:
+  titre: "Décret n° 2012-602 du 30 avril 2012 relatif à la procédure de sortie du statut de déchet (articles D. 541-12-4 et suivants du code de l'environnement)"
+  editeur: "JO n° 104 du 3 mai 2012 ; reproduit par AIDA (INERIS)"
+  date: "2012-04-30"
+  type: reglementaire
+  url: "https://aida.ineris.fr/node/26415"
+  emplacement: "Article 2 du décret, articles D. 541-12-4, D. 541-12-6, D. 541-12-7, D. 541-12-8, D. 541-12-10, D. 541-12-12"
+  contenu: "Procédure : tout exploitant d'une installation ICPE ou IOTA peut demander la sortie du statut de déchet ; compétence du préfet pour un déchet spécifique dans une installation donnée (avis conforme du ministre), du ministre pour une catégorie de déchets (avis de la commission consultative) ; dossier, analyse critique possible aux frais du demandeur ; critères fixés par arrêté, éventuellement à durée déterminée. Voie à suivre si l'huile Urban Rig (intrants ordures ménagères) sort du champ de l'arrêté du 19/02/2024."
+  citation: "Tout exploitant d'une installation mentionnée aux articles L. 214-1 ou L. 511-1 ou le mandataire de son choix peut demander | L'autorité compétente fixe par arrêté les critères de sortie de statut de déchets"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch sur AIDA. Texte de 2012 (plus de huit ans), modifié en 2026 (voir A3-DECRET-2026-435-SSD)."
+  parametres: [procedure_ssd]
+
+A3-DECRET-2026-435-SSD:
+  titre: "Décret n° 2026-435 du 2 juin 2026 portant diverses dispositions relatives à la sortie du statut de déchet, aux sous-produits et au tri des biodéchets"
+  editeur: "JO n° 129 du 4 juin 2026 ; reproduit par AIDA (INERIS)"
+  date: "2026-06-02"
+  type: reglementaire
+  url: "https://aida.ineris.fr/node/45905"
+  emplacement: "Articles 1 à 5 (D. 541-12-4, D. 541-12-15-1, D. 541-12-15-2)"
+  contenu: "Réorganise la procédure : sous-section intitulée sortie du statut de déchet au titre du I bis de L. 541-4-3 ; nouvelle sous-section pour le I ter : l'exploitant de l'installation de production tient ses justificatifs à disposition de l'inspection ; l'autorité peut demander à tout moment une analyse critique par un organisme extérieur validé."
+  citation: "Les éléments de justification de l'exploitant de l'installation de production visée au I ter de l'article L. 541-4-3 | La décision de l'autorité compétente de demander la production d'une analyse critique peut intervenir à tout moment"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch sur AIDA ; la page donne les modifications, pas le texte consolidé des articles D. 541-12-4 et suivants."
+  parametres: [procedure_ssd]
+
+A3-REACH-ART2-2006:
+  titre: "Règlement (CE) n° 1907/2006 (REACH), article 2, paragraphes 2 et 7 d), texte adopté"
+  editeur: "Union européenne, JO L 396 du 30/12/2006 ; PDF reproduit par legislation.gov.uk"
+  date: "2006-12-18"
+  type: reglementaire
+  url: "https://www.legislation.gov.uk/eur/2006/1907/pdfs/eur_20061907_adopted_en.pdf"
+  emplacement: "Article 2(2), p. L 396/48 ; article 2(7)(d), p. L 396/52 à 53 (pagination indiquée par l'outil)"
+  contenu: "Les déchets ne sont pas des substances, mélanges ou articles au sens de REACH (art. 2(2)). Une substance valorisée est exemptée d'enregistrement seulement si elle est identique à une substance déjà enregistrée et si les informations de sécurité de cette substance sont disponibles pour l'établissement qui valorise (art. 2(7)(d)). Une huile sortie du statut de déchet doit donc être enregistrée par Urban Rig sauf à démontrer l'identité avec une substance enregistrée."
+  citation: "Waste as defined in Directive 2006/12/EC of the European Parliament and of the Council | substances, on their own, in preparations or in articles, which have been registered in accordance with Title II"
+  statut: lu
+  consulte: 2026-10-15
+  note: "EUR-Lex inaccessible ; texte d'origine (2006), la référence à la directive 2006/12 vaut aujourd'hui directive 2008/98. Citations partielles : la suite de l'article 2(7)(d) a été résumée par l'outil, pas citée."
+  parametres: [reach_huile_pyrolyse]
+
+A3-ECHA-GUIDE-DECHETS-2010:
+  titre: "Guide sur les déchets et les substances valorisées, version 2 (ECHA-10-G-07-FR)"
+  editeur: "Agence européenne des produits chimiques (ECHA)"
+  date: "2010-05"
+  type: etude_publique
+  url: "https://echa.europa.eu/documents/10162/2324906/waste_recovered_fr.pdf"
+  emplacement: "Section 1 (introduction, p. 2), sections 2.2.1, 2.2.3.2, 2.2.4"
+  contenu: "Les déchets ne sont pas des substances au sens de REACH ; à la sortie du statut de déchet, les exigences de REACH s'appliquent comme pour tout autre matériau ; exemption de l'art. 2(7)(d) si la substance valorisée est identique à la substance enregistrée et si les fiches (art. 31 ou 32) sont disponibles ; une matière valorisée de composition variable peut être traitée comme UVCB. Le guide ne mentionne pas les huiles de pyrolyse."
+  citation: "ne sont pas une substance, une préparation ou un article au sens de l'article 3 | les exigences de REACH s'appliquent en principe de la même manière que pour un autre matériau | la substance qui résulte du processus de valorisation est identique à la substance qui a été enregistrée"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Document de 2010 (plus de huit ans), traduction de travail ; pas de version plus récente trouvée dans la recherche."
+  parametres: [reach_huile_pyrolyse]
+
+A3-PPWR-2025-40-OEIL:
+  titre: "Résumé de l'acte final : règlement (UE) 2025/40 relatif aux emballages et aux déchets d'emballages (procédure 2022/0396(COD))"
+  editeur: "Parlement européen, Observatoire législatif (OEIL)"
+  date: "2025-01-22"
+  type: reglementaire
+  url: "https://oeil.europarl.europa.eu/oeil/en/procedure-document-summary/pdf?id=1802233"
+  emplacement: "Résumé, passage sur le contenu recyclé minimal"
+  contenu: "Règlement du 22 janvier 2025, en vigueur le 11 février 2025, applicable au 12 août 2026 ; objectifs de contenu recyclé minimal des emballages plastiques pour 2030 et 2040, dont 30 % pour les bouteilles de boisson à usage unique en 2030 et jusqu'à 65 % en 2040. Le résumé ne dit rien du recyclage chimique ni de la méthode de calcul."
+  citation: "The regulation sets targets for 2030 and 2040 for a minimum percentage of recycled content | 30% for single-use plastic beverage bottles by 2030 and up to 65% by 2040"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Résumé officiel du Parlement, pas le texte du JO (EUR-Lex et PDF europarl bloqués ; publications.europa.eu non autorisé). L'article 7 n'a pas été lu."
+  parametres: [ppwr_contenu_recycle]
+
+A3-SUP-DECISION-CONTENU-RECYCLE-2026:
+  titre: "Décision d'exécution de la Commission du 30.6.2026 établissant les règles d'application de la directive (UE) 2019/904 en ce qui concerne le calcul, la vérification et la déclaration du contenu en plastique recyclé des bouteilles pour boissons en plastique à usage unique, et abrogeant la décision d'exécution (UE) 2023/2683 (C(2026) 4381 final)"
+  editeur: "Commission européenne"
+  date: "2026-06-30"
+  type: reglementaire
+  url: "https://environment.ec.europa.eu/document/download/ab321fd6-ba73-4e14-937e-68f443eebf60_en?filename=C_2026_4381_1_EN_ACT_part1_v9.pdf"
+  emplacement: "Considérants 8, 17, 18, 24 ; art. 1(1), 1(11), 7(3), 7(4), 7(5)(c)(ii), 8(5)(e), 8(9), 10, 12"
+  contenu: "Introduit le bilan massique pour le recyclage chimique ; approche « fuel-use excluded » : la part de matière éligible transformée en combustibles ou pertes est déduite (facteur 0), conformément à l'art. 3(17) de la directive 2008/98 ; sorties solides à double usage (char) exclues du calcul ; règles particulières pour une charge liquide dont une partie entre dans un vapocraqueur (art. 7(3) et 7(4)) ; vérification annuelle par site (tous les trois ans pour les PME) ; plastique recyclé de pays OCDE pris en compte à partir du 21 novembre 2027 ; révision au plus tard le 1er janvier 2030 ; entrée en vigueur 20 jours après publication au JO (numéro et date de publication non connus)."
+  citation: "a set of calculation rules used to determine the attributed amount throughout a supply chain | for outputs of the output category 'fuels' and 'losses', the dual-use factor shall be equal to 0 | a share but not all of it enters a steam cracker"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch (texte adopté, version anglaise). Publication au JO non vérifiée. Ne vise que les bouteilles de boisson (directive SUP) ; la méthode PPWR pourrait s'en inspirer (non vérifié)."
+  parametres: [bilan_massique_contenu_recycle]
+
+A3-ISCC-PLUS-COC-2026:
+  titre: "ISCC PLUS Chain of Custody (présentation)"
+  editeur: "ISCC System GmbH"
+  date: "2026"
+  type: entreprise
+  url: "https://iscc-system.org/wp-content/uploads/_legacy/2026/01/ISCC-PLUS_Chain-of-Custody.pdf"
+  emplacement: "p. 8 (bilan massique), p. 11 et 22 (attribution excluant les combustibles), p. 13 et 20 (facteurs de conversion)"
+  contenu: "Bilan massique : aucune entité ne vend plus de produits certifiés qu'elle n'en a achetés, facteurs de conversion appliqués ; option d'attribution « Fuel-Use Excluded » où les sorties combustibles sont exclues de l'attribution ; exemple de facteur de conversion 0,9 t/t."
+  citation: "No entity sells more certified products than sourced (conversion factors applied) | Verification of conversion factors based on operational data and certified volumes"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Présentation, pas le document de système ISCC PLUS (non trouvé, voir NON TROUVÉ). Source privée (organisme de certification)."
+  parametres: [iscc_plus_bilan_massique]
+
+# ---------------------------------------------------------------------------
+# 3. ACHETEURS (sources d'entreprise)
+# ---------------------------------------------------------------------------
+
+A3-PLASTICENERGY-NDG-2021:
+  titre: "Plastic Energy announces Final Investment Decision and start of construction works for advanced recycling plant in France"
+  editeur: "Plastic Energy (communiqué), reproduit aussi par ExxonMobil Chemical"
+  date: "2021-10-19"
+  type: entreprise
+  url: "https://plasticenergy.com/plastic-energy-announces_fid_and_start_of_construction_works_for_advanced_recycling_plant_in_france/"
+  emplacement: "Corps du communiqué"
+  contenu: "Usine de 25 000 t/an de déchets plastiques (extension prévue à 33 000 t) adjacente au complexe pétrochimique ExxonMobil de Notre-Dame-de-Gravenchon ; le TACOIL sera utilisé par ExxonMobil pour des polymères circulaires certifiés (accord d'achat) ; démarrage prévu en 2023. Aucune spécification de qualité publiée."
+  citation: "adjacent to ExxonMobil's Notre Dame de Gravenchon petrochemical complex | 25,000 tonnes of plastic waste per annum | TACOIL (or recycled oils) from this Plastic Energy plant will be used by ExxonMobil | Start-up of the advanced recycling plant is anticipated in 2023."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch (page Plastic Energy et PDF ExxonMobil concordants). Statut actuel du projet inconnu ; voir A3-SENAT-EXXON-NDG-2024 (fermeture d'activités chimiques à Gravenchon annoncée le 11/04/2024)."
+  parametres: [acheteur_huile_pyrolyse_france]
+
+A3-SENAT-EXXON-NDG-2024:
+  titre: "Question d'actualité de Mme Céline Brulin et réponse du ministre délégué chargé de l'industrie sur ExxonMobil Port-Jérôme"
+  editeur: "Sénat"
+  date: "2024-05-01"
+  type: reglementaire
+  url: "https://www.senat.fr/questions/base/2024/qSEQ24050878G.html"
+  emplacement: "Question et réponse"
+  contenu: "ExxonMobil a annoncé le 11 avril 2024 la fermeture de plusieurs activités chimiques à Gravenchon ; la question parlementaire demande la pérennisation du vapocraqueur ; 647 emplois directs en jeu. Incertitude forte sur le débouché vapocraqueur de Notre-Dame-de-Gravenchon pour une huile de pyrolyse."
+  citation: "ExxonMobil a annoncé le 11 avril dernier la fermeture de plusieurs activités chimiques à Gravenchon | Le vapocraqueur doit être pérennisé."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. La réponse ministérielle ne confirme pas explicitement l'arrêt du vapocraqueur ; la presse le dit (non retenue ici). Situation 2026 non vérifiée."
+  parametres: [acheteur_huile_pyrolyse_france]
+
+A3-TOTAL-PLASTICENERGY-SEVILLE-2022:
+  titre: "Plastic Energy and TotalEnergies sign an Agreement for an Advanced Recycling Project in Spain (formulaire 6-K)"
+  editeur: "TotalEnergies SE (dépôt SEC)"
+  date: "2022-01-11"
+  type: entreprise
+  url: "https://www.sec.gov/Archives/edgar/data/879764/000110465922009383/tm224422d1_ex99-2.htm"
+  emplacement: "Corps du communiqué"
+  contenu: "Usine Plastic Energy à Séville, 33 000 t/an de déchets plastiques post-consommation ; TACOIL destiné aux unités européennes de TotalEnergies après essai réussi sur la plateforme pétrochimique d'Anvers ; démarrage prévu début 2025. Rappelle la coentreprise de Grandpuits (15 000 t/an, démarrage prévu en 2023). Volumes achetés et qualité non précisés."
+  citation: "The plant will process and convert 33,000 tons | a successful processing experimentation in TotalEnergies' petrochemical platform in Antwerp | The plant is expected to become operational in early 2025."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Grandpuits déjà au registre (TOTAL-GRANDPUITS-2026)."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+A3-INEOS-LAVERA-2025:
+  titre: "INEOS Olefins & Polymers Europe lance une nouvelle production avancée de plastique recyclé sur son site de Lavéra, dans le sud de la France"
+  editeur: "INEOS (communiqué)"
+  date: "2025-06-11"
+  type: entreprise
+  url: "https://www.ineos.com/fr/Actualites/Actualites-partagees/ineos-olefins-polymers-europe-lance-une-nouvelle-production-avancee-de-plastique-recycle-sur-son-site-de-lavera-dans-le-sud-de-la-france/"
+  emplacement: "Corps du communiqué"
+  contenu: "Le vapocraqueur INEOS de Lavéra, partiellement adapté, reçoit une huile de pyrolyse fabriquée en Europe à partir de déchets d'emballages plastiques post-consommation non recyclables mécaniquement ; premières livraisons reçues ; certification ISCC PLUS par bilan massique. Fournisseur, volumes et spécifications non indiqués."
+  citation: "fabriquée en Europe à partir de déchets d'emballages plastiques post-consommation | Le craqueur d'INEOS à Lavera, en France | le principe du bilan massique"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Acheteur effectif en France (sud). Source d'entreprise."
+  parametres: [acheteur_huile_pyrolyse_france]
+
+A3-BASF-ARCUS-2022:
+  titre: "BASF and ARCUS sign agreement on the production and procurement of pyrolysis oil from mixed plastic waste"
+  editeur: "BASF (communiqué conjoint)"
+  date: "2022-09-05"
+  type: entreprise
+  url: "https://www.basf.com/global/en/media/news-releases/2022/09/p-22-328.html"
+  emplacement: "Corps du communiqué"
+  contenu: "Accord-cadre : achat par BASF d'huile de pyrolyse ARCUS issue de déchets plastiques mélangés non recyclables mécaniquement, jusqu'à 100 000 t/an à terme, pour le site de Ludwigshafen (produits Ccycled, bilan massique audité)."
+  citation: "foresees the take-up to be increased to up to 100,000 tons of pyrolysis oil per year | mixed plastic waste that is not recycled mechanically"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Allemagne. Aucune qualité exigée publiée."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+A3-BASF-NEWENERGY-2020:
+  titre: "BASF signs agreements with New Energy for uptake of pyrolysis oil derived from waste tires"
+  editeur: "BASF (communiqué)"
+  date: "2020-09-01"
+  type: entreprise
+  url: "https://www.basf.com/basf/www/global/en/media/news-releases/2020/09/p-20-287.html"
+  emplacement: "Corps du communiqué"
+  contenu: "Jusqu'à 4 000 t/an d'huile de pyrolyse de pneus usagés (New Energy, Hongrie) pour le site intégré de Ludwigshafen ; bilan massique audité."
+  citation: "up to 4,000 metric tons of pyrolysis oil per year derived from waste tires"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Huile de pneus, pas de déchets municipaux."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+A3-SABIC-PLASTICENERGY-2018:
+  titre: "SABIC signs MoU with Plastic Energy for supply of recycled feedstock"
+  editeur: "SABIC (communiqué)"
+  date: "2018"
+  type: entreprise
+  url: "https://sabic.com/en/news/16043-sabic-signs-mou-with-plastic-energy-for-supply-of-recycled-feedstock"
+  emplacement: "Corps du communiqué"
+  contenu: "Protocole d'accord : construction aux Pays-Bas d'une usine pour raffiner et valoriser le TACOIL issu de déchets plastiques mélangés de faible qualité, destiné aux activités pétrochimiques européennes de SABIC ; production commerciale prévue en 2021. Ni volumes ni spécifications."
+  citation: "intend to build a first commercial plant in the Netherlands to refine and upgrade a valuable feedstock | low quality, mixed plastic waste otherwise destined for incineration or landfill"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch. Date ambiguë (06/12/2018). L'huile doit être raffinée avant usage pétrochimique."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+A3-SHELL-PRYME-2021:
+  titre: "Pryme and Shell sign strategic plastic waste to chemicals cooperation agreement"
+  editeur: "Pryme et Shell (communiqué, PDF hébergé par le Port de Rotterdam)"
+  date: "2021-10-06"
+  type: entreprise
+  url: "https://www.portofrotterdam.com/sites/default/files/2021-11/Pryme_Shell-Press-Release.pdf"
+  emplacement: "Corps du communiqué"
+  contenu: "Shell achètera l'huile de pyrolyse de la première usine Pryme de Rotterdam (60 000 t/an de déchets plastiques, démarrage 2022) pour ses vapocraqueurs de Moerdijk (Pays-Bas) et Rheinland (Allemagne) ; essais d'échantillons pour définir les propriétés optimales pour les vapocraqueurs ; objectif Shell : 1 Mt/an de déchets plastiques recyclés d'ici 2025."
+  citation: "forecast to convert 60,000 tonnes of plastic waste into pyrolysis oil annually | optimal properties of pyrolysis oil for use in chemical crackers | recycle one million tonnes of plastic waste per year in our global chemicals plants by 2025"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+A3-PRYME-SHELL-AVENANT-2024:
+  titre: "Pryme amends the terms of the supply contract with Shell"
+  editeur: "Pryme N.V. (communiqué réglementaire, reproduit par Inderes)"
+  date: "2024-02-01"
+  type: entreprise
+  url: "https://www.inderes.se/en/releases/pryme-pryme-amends-the-terms-of-the-supply-contract-with-shell"
+  emplacement: "Corps du communiqué"
+  contenu: "Contrat révisé pour refléter les conditions de marché de l'huile de pyrolyse ; débouché direct vers l'upgrader de Shell à Moerdijk (unité de purification avant vapocraqueur). Volumes, durée, prix et spécifications non publiés."
+  citation: "provides a direct outlet for Pryme for the pyrolysis oil volumes that will be a feedstock for Shell's Moerdijk Upgrader"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch."
+  parametres: [acheteur_huile_pyrolyse_europe]
+
+# ---------------------------------------------------------------------------
+# 4. CARBURÉACTEUR
+# ---------------------------------------------------------------------------
+
+A3-RCF-2023-1185:
+  titre: "Règlement délégué (UE) 2023/1185 de la Commission du 10 février 2023 (seuil minimal de réduction des émissions de GES des carburants à carbone recyclé et méthode de calcul)"
+  editeur: "Union européenne ; texte reproduit par LawPlayer"
+  date: "2023-02-10"
+  type: reglementaire
+  url: "https://lawplayer.com/eu/act/32023R1185"
+  emplacement: "Article 2 (selon la reproduction) ; annexe partie A, points 1, 2, 9, 10"
+  contenu: "Réduction minimale des émissions des carburants à carbone recyclé : 70 % ; comparateur fossile 94 gCO2eq/MJ ; point 9 : émissions liées au détournement d'intrants rigides de leur usage antérieur ; point 10 : émissions de l'usage ou du devenir existant de l'intrant, sous conditions."
+  citation: "The greenhouse gas emissions savings from the use of recycled carbon fuels shall be at least 70 %. | the total emissions from the fossil fuel comparator shall be 94 gCO 2 eq/MJ."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch sur une reproduction privée (EUR-Lex bloqué). Numéro d'article à vérifier sur EUR-Lex (l'outil indique l'article 2, la mission indiquait le seuil)."
+  parametres: [rcf_seuil_ges]
+
+A3-ASTM-D7566-24:
+  titre: "ASTM D7566-24 Standard Specification for Aviation Turbine Fuel Containing Synthesized Hydrocarbons (page de présentation)"
+  editeur: "ASTM International"
+  date: "2024-04-25"
+  type: norme
+  url: "https://store.astm.org/d7566-24.html"
+  emplacement: "Section 1 Scope, 1.1, 1.3.2, 1.8"
+  contenu: "Annexes A1 à A8 : FT-SPK, HEFA-SPK, SIP, SPK/A, ATJ, CHJ, HC-HEFA SPK, ATJ-SKA. Aucune annexe pour l'huile de pyrolyse de plastiques ; une voie plastique passe aujourd'hui par gazéification puis Fischer-Tropsch (A1), d'après l'intitulé. Version active la plus récente : D7566-26A."
+  citation: "This specification covers the manufacture of aviation turbine fuel | that consists of conventional and synthetic blending components."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Page commerciale du résumé, norme payante non lue ; taux de mélange non lus. L'interprétation sur l'annexe A1 est une déduction, pas une citation."
+  parametres: [jet_astm_voies]
+
+A3-ASTM-IATA-2025:
+  titre: "ASTM Aviation Fuel Subcommittee Update (D02.J0), IATA Aviation Energy Forum, Bakou"
+  editeur: "ASTM D02.J0 (présentation hébergée par IATA)"
+  date: "2025-05"
+  type: norme
+  url: "https://www.iata.org/contentassets/e4f40ac1619c411f8ce5ccf4acffcd42/george-zombanakis_astm-update-iata-may25-gz_approved.pdf"
+  emplacement: "Diapositives 3 et 11"
+  contenu: "Travaux ASTM en cours sur le coprocessing (D1655) d'huile de pyrolyse de pneus, d'huile de polymères plastiques et de déchets plastiques, et sur une voie « Plastics to Jet » (D7566, OMV). Statut (en vote ou adopté) non lisible. En mai 2025, aucune voie plastique ne figure explicitement comme approuvée dans le document lu."
+  citation: "Co-Processing of Plastic Polymer Oil | Co-Processing of Waste Plastics | Plastics to Jet SATF"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu via WebFetch ; l'extraction ne permet pas de savoir si les items sont en cours ou terminés."
+  parametres: [jet_astm_voies]
+
+# ---------------------------------------------------------------------------
+# NON TROUVÉ
+# ---------------------------------------------------------------------------
+# - Arrêté français en vigueur fixant les caractéristiques du fioul domestique (cité « arrêté du 15/07/10 ») : Légifrance
+#   inaccessible (WebFetch CLIENT_ERROR, curl 403) ; absent d'AIDA ; recherches « relatif aux caractéristiques du fioul
+#   domestique arrêté », « arrêté du 10 décembre 2010 fioul domestique », « arrêté du 15 juillet 2010 fioul domestique ».
+#   Seule une source professionnelle de 2011 est disponible (A3-FOD-SPEC-CPDP-2010).
+# - Limite de chlore pour fioul domestique, fioul lourd ou gazole : aucune dans les textes lus (arrêtés de 2000 et 1999,
+#   directives 98/70 et 2016/802).
+# - Version en vigueur (post-2014) de l'arrêté gazole du 23/12/1999 : Légifrance inaccessible.
+# - Norme EN 590 et NF M15-008 (fioul domestique) : payantes (AFNOR), non lues.
+# - Texte EUR-Lex de la directive 98/70, de REACH, du PPWR 2025/40 (art. 7) et du règlement 2023/1185 : eur-lex.europa.eu
+#   refuse WebFetch (ROBOTS_DISALLOWED), europarl.europa.eu PDF idem, publications.europa.eu non autorisé (délai de
+#   permission). Article 7 du PPWR (taux par catégorie, place du recyclage chimique) non lu.
+# - Spécification de charge publiée par un acheteur (vapocraqueur ou raffinerie) pour l'huile de pyrolyse : aucune trouvée
+#   (Plastic Energy, TotalEnergies, BASF, INEOS, SABIC, Shell/Pryme ne publient pas de valeurs). Le rapport Eunomia pour
+#   l'Alliance to End Plastic Waste (« Feedstock quality guidelines for pyrolysis of plastic waste »,
+#   https://eunomia.eco/reports/feedstock-quality-guidelines-for-pyrolysis-of-plastic-waste) exige une inscription : non lu.
+# - Critères d'acceptation de combustibles liquides en cimenterie ou chaudière industrielle (chlore, etc.) : recherche
+#   Géorisques (rapport DREAL Lafarge La Couronne 2007, aucune valeur) ; aucun texte public trouvé.
+# - Page ECHA d'enregistrement REACH d'une huile de pyrolyse de plastiques (CAS 100801-72-7 « Plastics, wastes,
+#   pyrolyzed, pyrolysis oil ») : URL de recherche ECHA trop longue pour WebFetch ; seules des bases privées (NextSDS,
+#   chemradar) répondent. Non vérifié.
+# - Document de système ISCC PLUS (version et date) : page iscc-system.org des documents en erreur ; seule la présentation
+#   Chain of Custody 2026 a été lue.
+# - Numéro et date de publication au JO de la décision d'exécution SUP C(2026) 4381 : non trouvés.
+# - Statut 2026 du projet Plastic Energy de Notre-Dame-de-Gravenchon et du vapocraqueur ExxonMobil : non trouvé en
+#   source primaire (seulement la réponse au Sénat de 2024).
+# - Acheteurs aux vapocraqueurs de Gonfreville (TotalEnergies) et Feyzin : aucun communiqué trouvé mentionnant de l'huile
+#   de pyrolyse de plastiques pour ces sites.
+# - ASTM D7566 et D1655 : texte (taux de mélange, liste des charges de coprocessing) payant, non lu.
+# - Article ReFuelEU sur les carburants d'aviation à carbone recyclé : déjà au registre, non refait.

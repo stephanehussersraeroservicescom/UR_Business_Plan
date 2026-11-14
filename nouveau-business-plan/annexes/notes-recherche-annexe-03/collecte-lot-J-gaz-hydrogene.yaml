@@ -1,0 +1,298 @@
+# Lot J : valeur et débouchés du gaz de pyrolyse excédentaire et de l'hydrogène qu'il contient
+# Sous-agent de recherche, 15/10/2026. Citations copiées du texte des documents (EUR-Lex et AIDA lus dans le navigateur Chrome,
+# WebFetch refusé par robots.txt ou erreur serveur ; PDF ACER et SDES extraits par pdf.js dans le navigateur ; tableur de
+# l'Observatoire européen de l'hydrogène lu par SheetJS dans le navigateur). Espaces multiples réduits à un seul.
+# Déjà au registre, non refait : Banque mondiale (gaz naturel Europe), CRE prix spot électricité 2025, règlement 2023/1185, ReFuelEU.
+
+A3J-UE-DIR-2018-2001-ART2-RCF:
+  titre: "Directive (UE) 2018/2001 relative à la promotion de l'utilisation de l'énergie produite à partir de sources renouvelables (texte consolidé au 16.07.2024, intégrant la directive (UE) 2023/2413)"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-07-16 (version consolidée)"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02018L2001-20240716"
+  emplacement: "article 2, points 24 (biomasse), 35 (carburants à base de carbone recyclé) et 36 (RFNBO)"
+  contenu: "Un combustible gazeux (dont l'hydrogène) produit à partir de déchets solides d'origine non renouvelable (plastiques fossiles) qui ne se prêtent pas à la valorisation matière relève de la catégorie « combustibles ou carburants à base de carbone recyclé » (RCF). Il ne peut pas être un RFNBO, dont l'énergie doit provenir de sources renouvelables autres que la biomasse. La fraction biodégradable des déchets municipaux est de la biomasse : la part du gaz issue de la fraction biogénique des ordures ménagères relève donc des règles biomasse (article 29 et 31), pas des RCF."
+  citation: "35) «combustibles ou carburants à base de carbone recyclé»: les combustibles ou carburants liquides et gazeux qui sont produits à partir de flux de déchets liquides ou solides d'origine non renouvelable ne se prêtant pas à la valorisation de matières conformément à l'article 4 de la directive 2008/98/CE, ou à partir de gaz issus du traitement des déchets et de gaz d'échappement d'origine non renouvelable qui découlent inévitablement et involontairement de processus de production dans des installations industrielles; 36) «carburants renouvelables d'origine non biologique»: les carburants et combustibles liquides et gazeux dont le contenu énergétique provient de sources renouvelables autres que la biomasse; 24) «biomasse»: [...] ainsi que la fraction biodégradable des déchets, notamment les déchets industriels et municipaux d'origine biologique;"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch, robots.txt). Version consolidée du 16.07.2024 ; une consolidation postérieure peut exister. La qualification RCF exige que les déchets « ne se prêtent pas à la valorisation de matières » (hiérarchie des déchets) : à démontrer pour les plastiques entrants."
+  parametres: [statut_h2_dechets_plastiques, definition_rcf]
+
+A3J-UE-DIR-2024-1788-ART2:
+  titre: "Directive (UE) 2024/1788 concernant des règles communes pour les marchés intérieurs du gaz renouvelable, du gaz naturel et de l'hydrogène"
+  editeur: "Union européenne (JO L, 2024/1788)"
+  date: "2024"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202401788"
+  emplacement: "article 2, points 11 (hydrogène bas carbone), 12 (gaz bas carbone) et 13 (carburants bas carbone)"
+  contenu: "Les carburants bas carbone comprennent les RCF au sens de la directive 2018/2001 et l'hydrogène bas carbone, à condition d'atteindre 70 % de réduction des émissions par rapport au combustible fossile de référence des RFNBO (méthode du règlement 2023/1185). Un hydrogène ou un gaz issu de déchets plastiques fossiles peut donc être « gaz bas carbone » s'il est un RCF atteignant 70 %."
+  citation: "11) «hydrogène bas carbone»: l'hydrogène dont la teneur énergétique provient de sources non renouvelables et qui respecte le niveau de réduction des émissions de gaz à effet de serre de 70 % par rapport au combustible fossile de référence pour les carburants renouvelables d'origine non biologique [...] ; 12) «gaz bas carbone»: la part de carburants gazeux présente dans les carburants à base de carbone recyclé, tels qu'ils sont définis à l'article 2, point 35), de la directive (UE) 2018/2001, dans l'hydrogène bas carbone [...] qui respectent le niveau de réduction des émissions de gaz à effet de serre de 70 % [...] ; 13) «carburants bas carbone»: les carburants à base de carbone recyclé, tels qu'ils sont définis à l'article 2, point 35), de la directive (UE) 2018/2001, l'hydrogène bas carbone et les carburants gazeux synthétiques [...] qui respectent le niveau de réduction des émissions de gaz à effet de serre de 70 %"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch). Les règles d'injection d'hydrogène aux points d'interconnexion (seuil de mélange) n'ont pas été recherchées dans ce texte (extraction infructueuse)."
+  parametres: [statut_h2_dechets_plastiques, seuil_reduction_bas_carbone]
+
+A3J-UE-REG-DEL-2025-2359:
+  titre: "Règlement délégué (UE) 2025/2359 de la Commission du 8 juillet 2025 complétant la directive (UE) 2024/1788 en précisant une méthode d'évaluation des réductions des émissions de gaz à effet de serre réalisées grâce aux carburants bas carbone"
+  editeur: "Commission européenne (JO série L, 2025/2359, 21.11.2025)"
+  date: "2025-07-08 (publié 2025-11-21)"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202502359"
+  emplacement: "considérant 2 ; articles 1 et 2 ; annexe, point 2 (formule et combustible de référence) ; annexe (traitement des intrants biogéniques, déchets municipaux en mélange)"
+  contenu: "La méthode « bas carbone » de 2025 EXCLUT les carburants à base de carbone recyclé : pour un hydrogène issu de déchets plastiques fossiles (RCF), c'est le règlement 2023/1185 (déjà au registre) qui s'applique. Seuil 70 %, réduction = (EF - E)/EF, combustible de référence identique à celui des RFNBO du règlement 2023/1185 (94 gCO2e/MJ, valeur déjà au registre). Pour les intrants qui contiennent dès le départ une part biogénique, comme les déchets municipaux en mélange, la part biomasse suit l'article 31 de la directive 2018/2001."
+  citation: "(2) La méthode définie dans le règlement délégué (UE) 2023/1185 s'applique pour déterminer les réductions des émissions de gaz à effet de serre réalisées grâce aux carburants renouvelables d'origine non biologique ainsi qu'aux carburants à base de carbone recyclé, qui constituent une sous-catégorie des carburants bas carbone. Il convient donc d'exclure les carburants à base de carbone recyclé du champ d'application de la méthode définie dans le présent règlement. [...] Article premier : Le présent règlement précise la méthode de calcul des réductions des émissions de gaz à effet de serre réalisées grâce aux carburants bas carbone autres que les carburants à base de carbone recyclé. [...] Réductions = (E F – E) / E F [...] Pour tous les carburants bas carbone, le total des émissions provenant du combustible fossile de référence est égal au combustible fossile de référence pour les carburants renouvelables d'origine non biologique défini dans le règlement délégué (UE) 2023/1185. [...] ou lorsque les matières premières utilisées dans le procédé comprennent déjà une part biogénique dès le départ, comme dans le cas des déchets municipaux en mélange."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch, robots.txt) ; texte FR de 66 791 caractères, passages extraits par recherche de mots clés, lecture non intégrale de l'annexe. Entrée en vigueur indiquée par EUR-Lex : 11.12.2025 (métadonnées lues via WebFetch). Le signe « = » de la formule a été perdu à l'extraction et rétabli."
+  parametres: [statut_h2_dechets_plastiques, methode_bas_carbone_ue, seuil_reduction_bas_carbone]
+
+A3J-FR-ARRETE-2024-07-01-SEUIL-H2:
+  titre: "Arrêté du 1er juillet 2024 précisant le seuil d'émissions de gaz à effet de serre et la méthodologie pour qualifier l'hydrogène comme renouvelable ou bas-carbone (modifié par arrêté du 7 juillet 2026)"
+  editeur: "Ministre de l'économie (JO n° 157 du 4 juillet 2024, NOR ECOR2323734A), version consolidée AIDA/INERIS"
+  date: "2024-07-01, modifié 2026-07-07 (JO n° 171 du 24 juillet 2026)"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-010724-precisant-seuil-demissions-gaz-a-effet-serre-methodologie-qualifier"
+  emplacement: "articles 1er, 2 et 3"
+  contenu: "Seuil de l'article L. 811-1 du code de l'énergie : 3,38 kgCO2éq/kgH2. Méthode pour l'hydrogène renouvelable : annexe du règlement 2023/1185 ; pour l'hydrogène bas-carbone (depuis l'arrêté du 7 juillet 2026) : annexe du règlement délégué 2025/2359, avec certification par un système volontaire reconnu (régime transitoire par le directeur de l'énergie). L'arrêté ne mentionne ni déchets, ni carbone recyclé ; or le règlement 2025/2359 exclut les RCF : le traitement d'un hydrogène issu de déchets plastiques au regard du seuil français n'est donc pas réglé explicitement (lecture de l'agent, à confirmer juridiquement)."
+  citation: "Le seuil d'émissions d'équivalent dioxyde de carbone, exprimé en kilogramme d'équivalent dioxyde de carbone par kilogramme d'hydrogène (kgCO2éq/kgH2), prévu à l'article L. 811-1 du code de l'énergie, est fixé à 3,38 kgCO2éq/kgH2. [...] (Article 3) « Les émissions de gaz à effet de serre [...] d'hydrogène bas-carbone, sont déterminées selon les règles définies pour le calcul des émissions de gaz à effet de serre de l'hydrogène décrites dans l'annexe du règlement délégué (UE) 2025/2359 [...] »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 sur AIDA (INERIS) dans le navigateur Chrome (WebFetch en erreur serveur ; Légifrance bloqué par une vérification anti-robot, non contournée). AIDA est une reprise consolidée, pas le JO."
+  parametres: [seuil_h2_bas_carbone_fr, methode_h2_fr]
+
+A3J-CRE-2025-229-AVIS-CDC-H2:
+  titre: "Délibération n° 2025-229 du 1er octobre 2025 portant avis sur un projet de cahier des charges relatif à une procédure de mise en concurrence avec dialogue concurrentiel portant sur le soutien à la production d'hydrogène renouvelable ou bas-carbone"
+  editeur: "Commission de régulation de l'énergie"
+  date: "2025-10-01"
+  type: reglementaire
+  url: "https://www.cre.fr/fileadmin/Documents/Deliberations/2025/251001_2025-229_Avis_CDC_H2.pdf"
+  emplacement: "page 1 (volume), page 3 (objet, durée, 200 MW, note 2 usages), page 8 (plafond), page 10 (notes 15 et 17)"
+  contenu: "Le mécanisme de soutien français est réservé à l'hydrogène produit par électrolyse de l'eau (article L. 812-1 du code de l'énergie) : un hydrogène issu de pyrolyse de déchets n'y est PAS éligible. Aide au fonctionnement sur 15 ans, prix d'enchère plafonné à 4 EUR/kg, 1 GW sur trois périodes jusqu'en 2027 (200 MW en 1re période), projets de 5 à 100 MW ; usages exclus : chauffage (sauf > 400 °C), injection réseau de gaz, production d'électricité, transports. Seuil 3,38 kgCO2éq/kgH2 présenté comme -70 % par rapport à l'hydrogène fossile. Rappel de L. 811-1 : renouvelable = électrolyse avec électricité renouvelable ou autre technologie utilisant exclusivement des sources renouvelables ; bas-carbone = émissions inférieures ou égales au seuil."
+  citation: "« Conformément à l'article L. 812-1 du code de l'énergie qui indique que le soutien est exclusivement réservé à la production d'hydrogène renouvelable ou bas carbone par électrolyse de l'eau. » ; « Enfin, le prix d'enchère est plafonné à 4 € par kilogramme d'hydrogène produit. » ; « Hydrogène bas-carbone = « l'hydrogène dont le procédé de production engendre des émissions inférieures ou égales au seuil retenu pour la qualification d'hydrogène renouvelable (…). » ; « Fixé à 3,38 kgCO2éq/kgH2, il permet de réduire les émissions de gaz à effet de serre de 70 % par rapport à l'hydrogène fossile. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (citations restituées par l'outil en extraits). Le texte de l'article L. 811-1 est cité ici par la CRE, pas lu sur Légifrance (bloqué) : statut secondaire pour L. 811-1 lui-même. Il s'agit d'un avis sur un PROJET de cahier des charges ; le cahier des charges définitif et les résultats n'ont pas été lus. L'hydrogène carboné (ni renouvelable ni bas-carbone) n'est pas défini dans l'extrait."
+  parametres: [soutien_h2_france, eligibilite_h2_pyrolyse, plafond_aide_h2]
+
+A3J-AIDA-RAPPORT-ORD-2021-167:
+  titre: "Rapport au Président de la République relatif à l'ordonnance n° 2021-167 du 17 février 2021 relative à l'hydrogène"
+  editeur: "Gouvernement (reprise AIDA/INERIS)"
+  date: "2021-02-17"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/rapport-president-republique-relatif-a-lordonnance-ndeg-2021-167-170221-relative-a"
+  emplacement: "corps du rapport, 2e et 3e paragraphes"
+  contenu: "L'ordonnance définit trois types d'hydrogène (renouvelable, bas carbone, carboné) et deux systèmes de traçabilité : garanties d'origine (cessibles séparément) et garanties de traçabilité (cédées avec l'hydrogène), gérées par un organisme indépendant. Ces garanties ne concernent que l'hydrogène renouvelable ou bas-carbone : un hydrogène issu de déchets plastiques qui ne serait ni l'un ni l'autre (hydrogène carboné) n'y aurait pas accès."
+  citation: "La présente ordonnance que nous soumettons à votre approbation définit les différents types d'hydrogènes qui feront l'objet de régimes particuliers, hydrogène renouvelable, bas carbone ou carboné. Il prévoit deux systèmes de traçabilité de l'hydrogène pour que son caractère bas-carbone ou renouvelable puisse être connu de l'acheteur [...] Les garanties d'origine et de traçabilité seront gérées par un organisme indépendant, sur le modèle de celui qui existe déjà pour les garanties d'origine de l'électricité renouvelable."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 sur AIDA dans le navigateur Chrome. Le texte de l'ordonnance (articles L. 811-1, L. 821-1 et suivants) et ses décrets d'application n'ont pas été lus (Légifrance bloqué) ; le projet d'ordonnance soumis à consultation (consultations-publiques.developpement-durable.gouv.fr, 202210113_ordonnance_consultation_v2.pdf) est un projet non daté, non retenu. Organisme gestionnaire désigné et prix des garanties : non trouvés."
+  parametres: [tracabilite_h2_france]
+
+A3J-ACER-H2-MARKETS-2025:
+  titre: "European hydrogen markets, 2025 Monitoring Report"
+  editeur: "ACER (Agence de l'Union européenne pour la coopération des régulateurs de l'énergie)"
+  date: "2025 (données janvier à octobre 2025 ; webinaire 9 décembre 2025)"
+  type: etude_publique
+  url: "https://www.acer.europa.eu/sites/default/files/documents/Publications/ACER-2025-European-hydrogen-markets.pdf"
+  emplacement: "pages 40 et 41 (paragraphes 78 à 80, figure 15, notes 65 et 66)"
+  contenu: "Coûts de production (estimations S&P Global, janv.-oct. 2025) : hydrogène conventionnel par vaporeformage (SMR) un peu plus de 2 EUR/kg ; SMR avec captage 2,8 EUR/kg (hors transport et stockage du CO2) ; électrolyse Pays-Bas environ 7 EUR/kg (oct. 2025) ; RFNBO environ 8 EUR/kg (7 à 10 selon le pays). Prix de marché : indice EEX HYDRIX (hydrogène « vert », pas nécessairement renouvelable, offert en Allemagne) environ 8,2 EUR/kg en moyenne 2025, contre environ 7,8 EUR/kg en 2023 ; indice MIBGAS IBHYX (coût de production RFNBO, Espagne) autour de 6 EUR/kg en 2025 ; HYCLICX (coût marginal Pays-Bas) entre 6 et 8 EUR/kg depuis mi-2025."
+  citation: "in 2025 (January to October), the average cost of conventional hydrogen produced via SMR was a bit higher than 2 EUR/kg, following the price trend of natural gas. Carbon capture brings the average cost of abated hydrogen during the same period to 2.8 EUR/kg, excluding CO 2 transportation and storage costs. [...] Notably, the average cost of RFNBO hydrogen remains significantly higher at around 8 EUR/kg, ranging between 7-10 EUR/kg [...] The market-based HYDRIX index issued by the European Energy Exchange (EEX) for renewable hydrogen has seen a slight increase in 2025, averaging approximately 8.2 EUR/kg up from approximately 7.8 EUR/kg in 2023. [...] EEX HYDRIX is a market-based index that aims to reflect the price for “green”, not necessarily renewable, hydrogen offered in Germany."
+  statut: lu
+  consulte: 2026-10-15
+  note: "PDF lu le 15/10/2026 dans le navigateur Chrome (WebFetch refusé, robots.txt), texte extrait par pdf.js. Les coûts SMR sont des estimations S&P Global (source commerciale) reprises par ACER. Les valeurs HYDRIX sont reprises par ACER : les valeurs publiées par EEX elles-mêmes n'ont pas été lues (statut secondaire pour HYDRIX). Coût SMR de 2025 antérieur à la hausse du gaz de 2026 (Banque mondiale au registre : 25,42 USD/mmbtu en sept. 2026)."
+  parametres: [cout_h2_gris_ue, cout_h2_bas_carbone_ue, cout_h2_renouvelable_ue, prix_hydrix]
+
+A3J-EEX-HYDRIX-FAQ:
+  titre: "HYDRIX FAQ (For calculating HYDRIX: Lower Heating Value (LHV) or Higher Heating Value (HHV)?)"
+  editeur: "EEX Transparency (European Energy Exchange)"
+  date: "consultée 2026-10-15"
+  type: indice_marche
+  url: "https://www.eex-transparency.com/service/hydrix-faq"
+  emplacement: "FAQ"
+  contenu: "HYDRIX : prix moyen de l'hydrogène vert pour les acheteurs en Allemagne, simple indication et non prix de livraison, calculé en EUR/MWh sur la base du PCI, publié chaque mercredi à 16 h depuis le 24 mai 2023. Aucune valeur publiée sur la page."
+  citation: "HYDRIX is an average price for green hydrogen for off-takers in Germany. [...] HYDRIX is calculated in EUR/MWh to make it comparable to power and gas prices, rather than EUR/kg. [...] Our calculations are based on LHV hydrogen."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Valeurs hebdomadaires non lues : la page EEX Transparency « hydrogen » affiche un bandeau de consentement aux cookies et ne livre pas les chiffres au texte (non contourné). Conversion EUR/kg vers EUR/MWh non donnée par EEX."
+  parametres: [prix_hydrix]
+
+A3J-ENERGATE-HYDEX-2025-08:
+  titre: "Marginal costs of green hydrogen almost unchanged (Hydex, energate hydrogen briefing)"
+  editeur: "energate messenger / E-Bridge Consulting"
+  date: "2025-08-26"
+  type: presse
+  url: "https://www.energate-messenger.com/news/255340/marginal-costs-of-green-hydrogen-almost-unchanged"
+  emplacement: "article"
+  contenu: "Indice Hydex (coûts marginaux de production en Allemagne, calculé par E-Bridge Consulting), semaine précédant le 26/08/2025 : Hydex Green 160 EUR/MWh (5,34 EUR/kg) ; Hydex 12 Green 128 EUR/MWh (4,28 EUR/kg) ; Hydex Grey 83 EUR/MWh (2,75 EUR/kg) ; Hydex Blue 94 EUR/MWh (3,12 EUR/kg)."
+  citation: "The Hydex Green averaged 160 €/MWh (5.34 €/kg) for the week [...] 83 €/MWh (2.75 €/kg) for Hydex Grey [...] 94 €/MWh (3.12 €/kg) for Hydex Blue"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Source presse spécialisée, indice d'un cabinet de conseil (commercial) ; coût marginal hebdomadaire, pas un prix de transaction ni un coût complet. Le ratio implicite EUR/MWh / EUR/kg (environ 30 kg/MWh, soit 33,3 kWh/kg) correspond au PCI."
+  parametres: [cout_marginal_h2_gris_de]
+
+A3J-CHO-LCOH-2024-FRANCE:
+  titre: "Hydrogen production costs 2024 (datastream « Cost of hydrogen production »)"
+  editeur: "European Hydrogen Observatory (Clean Hydrogen Partnership, Union européenne)"
+  date: "2025-09 (données 2024)"
+  type: donnees_ouvertes
+  url: "https://observatory.clean-hydrogen.europa.eu/sites/default/files/2025-09/Hydrogen%20production%20costs%202024.xlsx"
+  emplacement: "feuille Sheet1, lignes Country = France, colonnes Technology / Cost / Value (€/kg) / Year"
+  contenu: "Coût actualisé de production de l'hydrogène en France, 2024, EUR/kg, par composante. SMR : CAPEX 0,263 + CO2 0,494 + gaz naturel 2,008 + autres OPEX 0,092 = 2,86 EUR/kg (somme calculée par l'agent). SMR avec captage : 0,430 + 0,866 + 2,172 + 0,131 = 3,60 EUR/kg. Électrolyse réseau : 5,30 EUR/kg (dont CAPEX 2,761, tarifs réseau 0,849, taxes 0,319, électricité de gros 1,179, autres 0,187). Électrolyse raccordée directement à une source renouvelable : 7,35 EUR/kg (somme). Sources des intrants selon la page : Eurostat 2024 (électricité et gaz), IRENA 2024."
+  citation: "[null,\"France\",\"SMR\",\"CAPEX\",0.262847965418017,2024],[null,\"France\",\"SMR\",\"CO2 costs\",0.494033434805036,2024],[null,\"France\",\"SMR\",\"Natural gas costs\",2.007808911778294,2024],[null,\"France\",\"SMR\",\"Other OPEX\",0.09163305555555554,2024] ; en-tête : [\"Country\",\"Technology\",\"Cost\",\"Value (€/kg)\",\"Year\"]"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Tableur lu le 15/10/2026 dans le navigateur Chrome (téléchargement direct refusé par le proxy), analysé par SheetJS. Les totaux par technologie sont des sommes calculées par l'agent. Coût modélisé (LCOH), pas un prix de marché. Page de présentation : https://observatory.clean-hydrogen.europa.eu/index.php/hydrogen-landscape/production-trade-and-cost/cost-hydrogen-production (« Reference years are 2024, 2023 and 2022. »)."
+  parametres: [cout_h2_gris_france, cout_h2_bas_carbone_france, cout_h2_renouvelable_france]
+
+A3J-ISO-14687-2025-PREVIEW:
+  titre: "ISO 14687:2025 Hydrogen fuel quality, Product specification (pages d'aperçu)"
+  editeur: "ISO (aperçu publié par ANSI Webstore)"
+  date: "2025-02 (2e édition)"
+  type: norme
+  url: "https://webstore.ansi.org/preview-pages/ISO/preview_ISO+14687-2025.pdf"
+  emplacement: "avant-propos, introduction, sommaire (clauses 5.1, 6.1, 7.1, annexes E et F)"
+  contenu: "La 2e édition (2025) remplace ISO 14687:2019. Grades D et E : piles PEM des véhicules routiers et des applications stationnaires ; grade A : hydrogène gazeux pour les autres applications ; grades F-1 et F-2 (nouveaux) : moteurs à combustion d'hydrogène. Les tableaux de pureté minimale ne figurent pas dans l'aperçu (norme payante)."
+  citation: "Grade D and grade E in this document are intended to apply to PEM fuel cells for road vehicles [...] This second edition cancels and replaces the first edition (ISO 14687:2019). [...] Grades F-1 and F-2 are newly specified in this edition to apply to hydrogen internal combustion engines"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (extraits restitués par l'outil). Statut ISO 14687:2019 retiré le 12/02/2025 confirmé sur https://www.iso.org/standard/69539.html. Valeur de pureté exigée par grade : NON TROUVÉE dans une source primaire (norme payante)."
+  parametres: [specification_h2_mobilite]
+
+A3J-WESTFALEN-H2-EN17124:
+  titre: "Wasserstoff für Brennstoffzellen (page produit)"
+  editeur: "Westfalen AG (fournisseur de gaz)"
+  date: "consultée 2026-10-15"
+  type: entreprise
+  url: "https://www.westfalen.com/de/en/hydrogen-for-the-energy-transition/hydrogen-as-a-fuel-mobility-of-the-future/hydrogen-for-fuel-cells"
+  emplacement: "page produit"
+  contenu: "Hydrogène pour piles à combustible livré selon DIN EN 17124 avec une pureté de 99,97 %. Limites d'impuretés non données."
+  citation: "Sie erhalten Wasserstoff nach DIN EN 17124 mit einem Reinheitsgrad von 99,97 %."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Source commerciale (fournisseur), pas la norme elle-même : à remplacer par EN 17124 ou ISO 14687 (payantes) si accessibles."
+  parametres: [specification_h2_mobilite]
+
+A3J-LINDE-PSA-H2:
+  titre: "Hydrogen recovery and purification (adsorption and membrane plants)"
+  editeur: "Linde Engineering"
+  date: "consultée 2026-10-15"
+  type: entreprise
+  url: "https://www.linde-engineering.com/en/process-plants/adsorption-and-membrane-plants/hydrogen-recovery-and-purification/"
+  emplacement: "page technologie"
+  contenu: "Les unités PSA de Linde traitent des gaz de synthèse (vaporeformage, gazéification) et des gaz résiduaires de raffinerie et de pétrochimie ; pureté jusqu'à 99,9999 % molaire ; capacités de quelques centaines à plus de 400 000 Nm3/h. Aucun taux de récupération chiffré."
+  citation: "the resulting hydrogen gas meets all purity requirements up to 99.9999 mol-%. [...] from small plants producing a few hundred Nm³/h to large-scale plants that produce more than 400,000 Nm³/h."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Source commerciale du fabricant. Le taux de récupération est seulement qualifié (« the highest recovery rates »)."
+  parametres: [purete_psa]
+
+A3J-MDPI-ENERGIES-2025-PSA:
+  titre: "Performance Evaluation of Pressure Swing Adsorption for Hydrogen Separation from Syngas and Water–Gas Shift Syngas (Krótki et al., Energies 18(8), 1887)"
+  editeur: "MDPI, Energies"
+  date: "2025-04"
+  type: etude_publique
+  url: "https://www.mdpi.com/1996-1073/18/8/1887"
+  emplacement: "sections 2.3 et 3.1 (revue de littérature)"
+  contenu: "Revue : un PSA à 4 lits et 12 étapes sur une charge à 69 % H2 (25 % CO2, 5 % CH4, 1 % CO) a produit un hydrogène pur à 99,9913 % avec 75,5 % de récupération (Abdeljaoued et al.) ; le procédé Lofin atteint jusqu'à 86,3 % de récupération ; de façon générale, PSA : impuretés au niveau ppm, récupération 80 à 95 %. Charge comparable en H2 (69 %) au gaz de pyrolyse (64,5 % hors air) mais sans hydrocarbures C2-C3."
+  citation: "produced hydrogen with 99.9913% purity, achieving 75.5% recovery [...] achieves higher H2 recovery efficiency (up to 86.3%) [...] PSA can remove impurities to ppm levels and achieve recovery rates of 80–95%."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Article lu le 15/10/2026 via WebFetch (DOI 10.3390/en18081887). Les chiffres sont ceux d'études citées par la revue, pas des résultats propres aux auteurs (dont les essais sont décrits comme une démarche) : statut secondaire. Coût d'une unité PSA : non publié dans cet article."
+  parametres: [recuperation_psa, purete_psa]
+
+A3J-NATRAN-SPEC-METHANE-SYNTHESE:
+  titre: "Annexe 4 : Prescriptions techniques de GRTgaz relatives aux caractéristiques physico-chimiques du méthane de synthèse destiné à être injecté dans le réseau"
+  editeur: "GRTgaz (Natran)"
+  date: "fichier mis en ligne 2024-07 (date du document non indiquée)"
+  type: entreprise
+  url: "https://natrangroupe.com/sites/default/files/2024-07/annexe-4-spec-grtgaz-methane-de-synthese-pour-injection.pdf"
+  emplacement: "tableau des caractéristiques physico-chimiques"
+  contenu: "Pour injecter un méthane de synthèse dans le réseau de transport : H2 < 2 % molaire ; CO < 0,1 % ; CO2 < 2,5 % ; O2 < 0,01 % ; PCS gaz H 10,7 à 12,8 kWh/m3(n) ; Wobbe gaz H 13,64 à 15,7 kWh/m3(n). Le gaz de pyrolyse décrit (64,5 % H2, 3,0 % CO, 8,6 % CO2) est très loin de ces prescriptions : injection impossible sans méthanation et épuration complètes (comparaison de l'agent)."
+  citation: "Teneur en H2 < 2 % (molaire) ; Teneur en CO < 0,1 % (molaire) ; Teneur en CO2 < 2,5 % (molaire) ; Teneur en O2 < 0,01% (molaire) ; Gaz de type H(1) : 10,7 à 12,8 kWh/m3(n)"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Document de l'opérateur de transport ; les prescriptions du distributeur GRDF n'ont pas été lues. Le document ne mentionne pas la pyrogazéification."
+  parametres: [specification_injection_reseau]
+
+A3J-ATEE-CLUB-PYRO-2025:
+  titre: "Présentation Club Pyrogazéification, salle gaz renouvelable, BIO360 (5 février 2025)"
+  editeur: "ATEE, Club Pyrogazéification"
+  date: "2025-02-05"
+  type: federation
+  url: "https://atee.fr/system/files/2025-03/2025.02.05_Pr%C3%A9sentation%20Club%20PYRO_salle%20gaz%20renouvelable%20BIO360_VF.pdf"
+  emplacement: "diapositives 3, 7-8, 10, 11, 25, 29, 30 (numérotation issue de l'extraction)"
+  contenu: "Aucun dispositif de soutien pérenne à l'injection de gaz de pyrogazéification n'est en place en France début 2025 : la filière demande des contrats d'expérimentation avec un appel à projets dédié et un « mécanisme de soutien pour la valorisation des déchets non renouvelables ». La loi d'accélération des ENR (mars 2023) a introduit les gaz bas-carbone issus de pyrogazéification d'intrants mixtes ; réfaction de 60 % sur le raccordement, plafonnée à 600 kEUR. Gisement cité : 8 Mt/an de déchets non biogéniques non dangereux admis en stockage. Aucun tarif d'achat ni prix."
+  citation: "« Mettre en place à court terme les contrats d'expérimentation pour la production de biométhane et gaz bas carbone » ; « réfaction de 60% sur le raccordement, plafonnée à 600 k€ » ; « 8 millions de tonnes de déchets non biogéniques non dangereux non inertes admis en installation de stockage »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (extraits restitués par l'outil). Source de fédération professionnelle (position de filière, militante). Les textes eux-mêmes (loi 2023-175, contrats d'expérimentation, arrêtés) non lus (Légifrance bloqué)."
+  parametres: [soutien_injection_pyrogaz]
+
+A3J-CRE-2016-AVIS-CR-UIOM:
+  titre: "Délibération de la CRE du 3 mars 2016 portant avis sur le projet d'arrêté fixant les conditions du complément de rémunération [installations d'incinération de déchets ménagers]"
+  editeur: "Commission de régulation de l'énergie"
+  date: "2016-03-03"
+  type: reglementaire
+  url: "https://www.cre.fr/fileadmin/Documents/Deliberations/import/160303AvisArretesTarifairesIncineration.pdf"
+  emplacement: "pages 1, 3 et 6"
+  contenu: "Projet (2016) de complément de rémunération pour l'électricité des usines d'incinération d'ordures ménagères, remplaçant les contrats d'achat des arrêtés de 2001 et 2006 : tarif de référence 58 EUR/MWh sur 15 ans ; la CRE recommandait 49 EUR/MWh, 20 ans et un plafond de 6 000 heures. Le texte définitif et son applicabilité à une usine de pyrolyse ne sont pas établis."
+  citation: "« établit un mécanisme de soutien sous la forme de complément de rémunération » ; « applicable sur 15 ans » ; tarif de référence « fixé à 58 €/MWh »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Données de 2016 (plus de huit ans) et avis sur un PROJET d'arrêté : l'adoption et la vigueur en 2026 n'ont pas été vérifiées (Légifrance bloqué, page EDF OA en erreur). Ne pas utiliser comme tarif applicable."
+  parametres: [soutien_electricite_dechets]
+
+A3J-SDES-BILAN-2024-PRIX-CHALEUR:
+  titre: "Bilan énergétique de la France pour 2024, partie 1, section 1.8 « Le prix de la chaleur baisse dans l'industrie et se stabilise dans les autres secteurs »"
+  editeur: "SDES, ministère de la Transition écologique"
+  date: "2026-03-04 (données 2024)"
+  type: statistique_publique
+  url: "https://www.statistiques.developpement-durable.gouv.fr/media/9087/download?inline"
+  emplacement: "page 40, section 1.8, figure 1.8.1"
+  contenu: "Prix hors TVA de la chaleur achetée par les consommateurs industriels : 48,5 EUR/MWh en 2024 (-13,9 % par rapport à 2023, après -20,3 % entre 2022 et 2023 ; +85 % par rapport à 2019) ; chaleur distribuée par réseau ou dans une relation exclusive producteur-acheteur unique. Autres secteurs (réseaux) : 120 EUR/MWh TTC, 113 EUR/MWh HTVA en 2024. Source : SDES d'après EARCF et EACEI."
+  citation: "Le prix hors TVA de la chaleur achetée par les consommateurs industriels s'élève à 48,5 €/MWh en 2024 ( figure 1.8.1 ), en baisse, pour la deuxième année consécutive, de 13,9 % par rapport à 2023, après une diminution de 20,3 % entre 2022 et 2023. [...] Cette chaleur peut être distribuée soit via un réseau, soit dans la cadre d'une relation exclusive entre un producteur et un acheteur unique."
+  statut: lu
+  consulte: 2026-10-15
+  note: "PDF lu le 15/10/2026 dans le navigateur Chrome (pdf.js), page de publication https://www.statistiques.developpement-durable.gouv.fr/bilan-energetique-de-la-france-pour-2024. Prix moyen national, toutes formes de chaleur (vapeur et eau chaude non distinguées). Édition précédente (données 2021 : 40 EUR HTVA/MWh) lue aussi, non retenue."
+  parametres: [prix_chaleur_industrie_france]
+
+A3J-EUROSTAT-NRG-PC-203-FR:
+  titre: "Gas prices for non-household consumers, bi-annual data (from 2007 onwards) [nrg_pc_203], France"
+  editeur: "Eurostat"
+  date: "mise à jour 2026-10-13 (données 2024-S1 à 2026-S1)"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_pc_203?format=JSON&lang=en&geo=FR&currency=EUR&unit=KWH&tax=X_VAT&nrg_cons=GJ10000-99999&sinceTimePeriod=2024-S1"
+  emplacement: "API JSON ; dimensions geo=FR, currency=EUR, unit=KWH, tax=X_VAT ou X_TAX, nrg_cons=GJ10000-99999 (I3) ou GJ100000-999999 (I4)"
+  contenu: "Gaz naturel, France, consommateurs non domestiques, EUR/kWh. Hors TVA et taxes récupérables (X_VAT) : bande I3 (10 000 à 99 999 GJ) 2024-S1 0,0695 ; 2024-S2 0,0688 ; 2025-S1 0,0697 ; 2025-S2 0,0629 ; 2026-S1 0,0606. Bande I4 (100 000 à 999 999 GJ) 2024-S1 0,0449 ; 2024-S2 0,0478 ; 2025-S1 0,0505 ; 2025-S2 0,0448 ; 2026-S1 0,0470. Hors toutes taxes (X_TAX) : I3 2025-S1 0,0568 ; 2025-S2 0,0530 ; 2026-S1 0,0483 ; I4 2025-S1 0,0462 ; 2025-S2 0,0411 ; 2026-S1 0,0422. Pour mémoire, bande I2 (1 000 à 9 999 GJ) X_VAT 2026-S1 0,0799. Aucun indicateur de statut."
+  citation: "\"updated\": \"2026-10-13T23:00:00+0200\" ; nrg_cons \"Consumption from 10 000 GJ to 99 999 GJ - band I3\" ; tax \"Excluding VAT and other recoverable taxes and levies\" ; unit \"Kilowatt-hour\" ; 2024-S1 0.0695 ; 2024-S2 0.0688 ; 2025-S1 0.0697 ; 2025-S2 0.0629 ; 2026-S1 0.0606 | \"Consumption from 100 000 GJ to 999 999 GJ - band I4\" : 0.0449 ; 0.0478 ; 0.0505 ; 0.0448 ; 0.0470"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (réponse JSON restituée par l'outil). Requêtes : remplacer nrg_cons par GJ100000-999999 pour I4 et tax par X_TAX pour hors toutes taxes ; une seule valeur de nrg_cons par requête (deux valeurs dans une même URL ont renvoyé une seule bande via WebFetch). Base PCS ou PCI du kWh non vérifiée dans les métadonnées. Le semestre 2026-S1 (janv.-juin) précède la flambée du gaz de sept. 2026 (Banque mondiale, au registre)."
+  parametres: [prix_gaz_industriel_france_i3, prix_gaz_industriel_france_i4]
+
+# NON TROUVÉ
+# - Texte officiel de l'article L. 811-1 du code de l'énergie (définitions renouvelable / bas-carbone / carboné) et de l'ordonnance 2021-167 :
+#   Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043148461) affiche une vérification anti-robot Cloudflare,
+#   non contournée. Définitions obtenues seulement par citation de la CRE (A3J-CRE-2025-229) et par le rapport au Président (AIDA).
+# - Décrets et arrêtés d'application des garanties d'origine et de traçabilité de l'hydrogène (organisme gestionnaire désigné, registre,
+#   prix des garanties) : recherche web « garanties de traçabilité hydrogène décret registre organisme désigné » sans texte primaire lisible.
+# - Traitement explicite, dans le droit français, d'un hydrogène issu de déchets plastiques (RCF) au regard du seuil 3,38 kgCO2e/kgH2 :
+#   l'arrêté du 1/07/2024 modifié renvoie au règlement 2025/2359, qui exclut les RCF ; aucun texte lu ne règle ce cas.
+# - Valeurs EEX HYDRIX publiées par EEX (hebdomadaires, EUR/MWh) : page https://www.eex-transparency.com/hydrogen, bandeau cookies,
+#   chiffres non rendus ; seule la moyenne 2025 citée par ACER (8,2 EUR/kg) est disponible.
+# - Hydrogen Europe « Clean Hydrogen Monitor » 2024-2025 : https://hydrogeneurope.eu/reports/ refusé (autorisation non accordée à temps) ;
+#   remplacé par les données ouvertes de l'Observatoire européen (A3J-CHO-LCOH-2024-FRANCE) et ACER.
+# - Rapports ADEME ou France Hydrogène sur le prix de l'hydrogène industriel en France : non recherchés faute de temps après les sources ci-dessus.
+# - Prix de marché (transaction) de l'hydrogène gris en France : aucun indice public trouvé ; seuls des coûts de production modélisés.
+# - Pureté minimale par grade d'ISO 14687:2025 et d'EN 17124 (99,97 % grade D) dans le texte de la norme : normes payantes (ISO, AFNOR,
+#   iteh.es aperçus sans tableau) ; valeur 99,97 % seulement chez un fournisseur (A3J-WESTFALEN-H2-EN17124).
+# - Coût d'investissement ou d'exploitation d'une unité PSA publié : non trouvé (Linde, revue MDPI ; page Honeywell UOP « Ask the experts »
+#   hydrocarbonengineering.com en erreur WebFetch).
+# - Tarif d'achat ou complément de rémunération EN VIGUEUR pour l'électricité produite à partir de déchets non renouvelables en métropole :
+#   seul l'avis CRE 2016 sur un projet (58 EUR/MWh) a été lu ; arrêté définitif non trouvé (Légifrance bloqué ; https://www.edf-oa.fr/content/arretes-tarifaires-en-vigueur
+#   en erreur WebFetch). Les délibérations CRE trouvées (UTVD Fort-de-France, CSR ABR, ILEVA La Réunion) concernent les zones non interconnectées,
+#   avec tarif fixé au cas par cas par la CRE ; non transposables en métropole.
+# - Prescriptions GRDF (distribution) pour l'injection de gaz de synthèse ou d'hydrogène : non lues ; seules celles de GRTgaz (transport) le sont.
+# - Dispositif de soutien en vigueur à l'injection de gaz de pyrogazéification (appel à projets, contrats d'expérimentation, CPB) et son champ
+#   d'intrants (biogénique seulement ou non) : aucun texte primaire lu ; seulement la position de l'ATEE (fédération).
+# - Prix public de la vapeur industrielle vendue à un voisin : non trouvé ; seul le prix moyen de la chaleur achetée par l'industrie (SDES) est disponible.

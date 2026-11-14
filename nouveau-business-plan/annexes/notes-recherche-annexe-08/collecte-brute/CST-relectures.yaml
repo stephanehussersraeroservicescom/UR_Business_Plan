@@ -1,0 +1,143 @@
+PRM-BOFIP-TGAP-2025:
+  ouvert: "oui"
+  emplacement: "tableaux Stockage des déchets non dangereux et Traitement thermique des déchets non dangereux, colonne 2025"
+  citation: "excepté ceux relatifs aux déchets non dangereux jusqu'en 2025"
+  contenu: "Version BOI-BAREME-000039-20250723 toujours en vigueur. Tarifs 2025 en €/t : ISDND 65 toutes catégories (+5 de majoration au-delà de l'objectif annuel) ; traitement thermique 25 (cas général, ISO 50001, NOx), 15 (rendement ≥ 0,65), 7,5 (rendement ≥ 0,70 avec résidus à haut PCI issus d'un tri performant). Aucune colonne 2026 pour les déchets non dangereux."
+  statut_propose: "ancien"
+  note: "Lu, mais périmé pour 2026 : depuis le 1er mars 2026 la TGAP déchets relève du CIBS (voir A8-CST-BOFIP-RES-2026)."
+
+AMORCE-DT139:
+  ouvert: "oui"
+  emplacement: "PDF p. 33 (prix), p. 30 (coûts)"
+  citation: "est de 76 €/tonne avec un prix minimum de 36 €/tonne et un prix maximum de 128 €/tonne | Pour les clients privés, le prix moyen est de 133 €/tonne | Les coûts aidés globaux hors taxe, hors TGAP et hors amortissements de l'usine"
+  contenu: "Performances, recettes et coûts, Unités de traitement thermique des déchets, Données 2020-2021, série technique DT139, réf. ADEME 012540, mars 2023. Données 2021 : prix moyen de traitement 76 €/t (36 à 128), clients privés 133 €/t."
+  statut_propose: "lu"
+  note: "Accessible sans formulaire. Le document ne dit pas si le prix de 76 €/t inclut la TGAP. Aucune édition AMORCE plus récente trouvée."
+
+RP-056:
+  ouvert: "oui"
+  emplacement: "page unique sans pagination, tableau régional"
+  citation: "Variations de prix en €/t (hors TGAP et hors coût de transport) entre le tarif pratiqué au cours de l'année 2025 | Les variations sont pondérées en fonction des volumes."
+  contenu: "Indice de la variation des coûts de mise en incinération des déchets non dangereux des activités économiques. Variations régionales 2025 vers 2026 de +3,6 €/t (Bourgogne-Franche-Comté) à +10,7 €/t (Normandie) ; Île-de-France +6,2 €/t. Aucun prix absolu."
+  statut_propose: "lu"
+  note: "Fédération professionnelle. Le code Q3050 n'apparaît pas dans le texte."
+
+RP-057:
+  ouvert: "oui"
+  emplacement: "page unique, tableau par exutoire"
+  citation: "entre février 2025 et janvier 2026 | Depuis le premier janvier 2026, la variation est exprimée en % | Cimentier - Pré-calcination 5.3% | Cimentier - Tuyère 12.4% | Chaufferie Bas-PCI (<14 000 kj/kg) 4.6% | Chaufferie Haut-PCI (>14 000 kj/kg) 15.7% | Export 10.9%"
+  contenu: "Indice de variation des redevances CSR en installation de consommation. Redevances versées aux installations consommatrices de CSR : le producteur de CSR paie l'exutoire. Aucun prix absolu."
+  statut_propose: "lu"
+  note: "Fédération professionnelle. Variations en %, pas de niveau de prix."
+
+FNADE-CSR-2023:
+  ouvert: "oui"
+  emplacement: "PDF p. 3 à 6 (pagination approximative)"
+  citation: "le gate-fee calculé est de 50 € pour une chaufferie de 19,9 MW | de 40 € lorsqu'on alimente une chaufferie de 50 MW | des recettes CSR de 50 €/t pour des installations de proximité | 60 000 tonnes par des chaudières dédiées (près de 150 GWh) | 310 000 tonnes par l'industrie cimentière | 1 Mt de CSR haut PCI seront consommées par l'industrie cimentière | un coût de traitement en Installations de Stockage de Déchets Non-Dangereux (ISDND) à horizon 2025 de 160€/t"
+  contenu: "Synthèse de l'étude du modèle économique de la filière des Combustibles Solides de Récupération (CSR), FNADE et SN2E, juillet 2023. Gate fees modélisés de 40 à 50 €/t ; consommation 2021 de 60 kt en chaudières et 310 kt en cimenteries ; ISDND projeté à 160 €/t en 2025."
+  statut_propose: "lu"
+  note: "Fédération, modélisation et non mesure. Absents : coût de préparation des CSR, prix en cimenterie."
+
+RP-033:
+  ouvert: "oui"
+  emplacement: "diapositives 5, 6, 8"
+  citation: "seules 300 000 à 400 000 tonnes sont consommées par an en France | capacité de production installé 600 000 à 800 000 tonnes | PCI >20Mj, CL<0,5%, H2o <15% Ash<15% | 12,5<PCI<15 CL<1,2 % H2o <25%"
+  contenu: "Alternatives Fuels, Les CSR. Consommation française de CSR de 300 à 400 kt/an ; capacité de production de 600 à 800 kt ; spécifications de chlore inférieures à 0,5 % en cimenterie et de 0,8 à 1,2 % en chaudière. Aucun prix."
+  statut_propose: "lu"
+  note: "Support d'entreprise (PAPREC), à signaler comme commercial. Auteur et date non indiqués ; le chemin de l'URL suggère juin 2021 ; données 2018 à 2020."
+
+RP-051:
+  ouvert: "oui"
+  emplacement: "PJ n°51, rapport 132677 version B, p. 3 à 9"
+  citation: "une valorisation en chaleur et en électricité de 35 000 tonnes par an de CSR avec un Pouvoir | l'absence ou du déficit d'exutoire pour les CSR au niveau de ces deux régions"
+  contenu: "DDAE ORGANOM, pôle de la Tienne (Ain), septembre 2025. Chaufferie CSR de 15 MW, 35 000 t/an de CSR. Déficit d'exutoires CSR en Auvergne-Rhône-Alpes et en Bourgogne-Franche-Comté. Aucun prix."
+  statut_propose: "lu"
+  note: "Dossier réglementaire d'un porteur de projet. Les chiffres nationaux ADEME n'y figurent qu'en image."
+
+RP2-032:
+  ouvert: "oui"
+  emplacement: "communiqué"
+  citation: "d'une capacité de 15 000 tonnes par an | notre partenaire Plastic Energy | la poubelle jaune | sur sa plateforme de Grandpuits (Seine et Marne)"
+  contenu: "Plateforme zéro pétrole de Grandpuits : TotalEnergies démarre la 1ère usine en France de recyclage chimique des plastiques, 19 mars 2026. Capacité 15 000 t/an, technologie Plastic Energy, déchets de la poubelle jaune."
+  statut_propose: "lu"
+  note: "Source entreprise."
+
+RP2-033:
+  ouvert: "oui"
+  emplacement: "communiqué"
+  citation: "D'une capacité de traitement de 15 000 tonnes de déchets par an | des déchets plastiques flexibles issus du tri des emballages post-consommation | sera mise en service en 2024"
+  contenu: "Plateforme zéro pétrole de Grandpuits : TotalEnergies et Paprec développent la première filière française de recyclage chimique des films plastiques. Daté du 15/03/2023 d'après l'URL. Capacité 15 000 t/an, plastiques flexibles, mise en service annoncée pour 2024."
+  statut_propose: "ancien"
+  note: "Source entreprise. Ancien calendrier, remplacé par RP2-032."
+
+RP2-034:
+  ouvert: "oui"
+  emplacement: "page web"
+  citation: "spécialisée dans le recyclage et la revalorisation de films plastiques post-ménagers | 36 000 tonnes de déchets | subvention de 400 000 euros"
+  contenu: "Machaon voit son rendement augmenter, 21/04/2021. Machaon (Grand Est) collecte 36 000 t/an de films plastiques post-ménagers et produit 18 000 t de granulés ; subvention France Relance de 400 000 euros."
+  statut_propose: "lu"
+  note: "Source gouvernementale. Machaon fait du recyclage mécanique, pas chimique : à reclasser en concurrence mécanique sur les films."
+
+RP2-039:
+  ouvert: "oui"
+  emplacement: "page événement"
+  citation: "Axens détient la licence du procédé « TAC » développé par Plastic Energy. | Très bientôt, une unité de 15 000 tonnes à Grandpuits en France (TotalEnergies)"
+  contenu: "RDV IFPEN, Recyclage des plastiques : défis et perspectives, 2 juillet 2025. Procédé TAC de Plastic Energy sous licence Axens ; unité d'environ 15 000 t à Grandpuits annoncée."
+  statut_propose: "lu"
+  note: "Organisme public de recherche, page événement."
+
+RP2-061:
+  ouvert: "oui"
+  emplacement: "article de blog"
+  citation: "Mixed plastic waste in June averaged Eur248.81/mt DDP Northwest Europe"
+  contenu: "Pyrolysis oil: A circular solution to plastic waste, Hui Heng, 18 juillet 2025. Balle de plastiques mélangés à 248,81 €/t en moyenne en juin 2025, livrée en Europe du Nord-Ouest : l'usine de pyrolyse achète la matière."
+  statut_propose: "lu"
+  note: "Blog d'un fournisseur de données payant ; chiffre ponctuel de juin 2025 ; matière triée, lavée et broyée (voir A8-CST-PLATTS-SPEC-2025)."
+
+RP-084:
+  ouvert: "oui"
+  emplacement: "article"
+  citation: "we have made the difficult decision to cease our European chemical recycling operations | the sector is not economically viable"
+  contenu: "Viridor: Plastic recycling operations at Quantafuel suspended, 17/07/2026. Arrêt de Skive, Malmö et Oslo ; causes : demande faible, plastique vierge bon marché, incertitude réglementaire."
+  statut_propose: "secondaire"
+  note: "Le communiqué Viridor d'origine a été lu : voir A8-CST-VIRIDOR-2026."
+
+ORDIF-TGAP-2024:
+  ouvert: "oui"
+  emplacement: "chronique web"
+  citation: "le montant de TGAP applicable est passé de 3 à 8 euros par tonne traitée | le montant de TGAP applicable est passé de 17 à 30 euros par tonne traitée"
+  contenu: "Taxe générale sur les activités polluantes majorée : le coefficient régional publié, Chronique de l'économie circulaire n°1, décembre 2024, A. Tupek. TGAP 2019 à 2021 : incinération de 3 à 8 €/t, ISDND de 17 à 30 €/t ; coefficient régional de majoration 52,648545 % ; près de 49 M€ de TGAP sur les déchets ménagers et assimilés franciliens en 2021, près de 95 M€ prévus en 2025."
+  statut_propose: "lu"
+  note: "Observatoire régional. L'URL est valide mais le titre affiché diffère de l'URL."
+
+RP2-011:
+  ouvert: "oui"
+  emplacement: "carte unique"
+  citation: "14 Collectivités à compétence traitement et collecte"
+  contenu: "Les collectivités à compétence traitement, DMA, au 1er janvier 2026. Carte seule, sans chiffre de capacité, de tonnage ou de prix."
+  statut_propose: "lu"
+  note: "Inutile pour Q5."
+
+RP2-019:
+  ouvert: "oui"
+  emplacement: "rapport d'évaluation, p. 13, 23, 28"
+  citation: "Limiter la capacité d'incinération sans valorisation énergétique à 75 % en 2020 et à 50 % en 2025 | le prévisionnel des tonnages exportés aux horizons 2025 et 2031 est estimé en forte diminution | 2 installations de préparation de CSR"
+  contenu: "Rapport d'évaluation 2024 du PRPGD Île-de-France (version CCES du 27/11/2024), pas le plan lui-même. Plafonds ISDND : 1,82 Mt en 2020 et 1,30 Mt en 2025."
+  statut_propose: "lu"
+  note: "Document de planification."
+
+RP2-021:
+  ouvert: "oui"
+  emplacement: "pp. 24, 30-37"
+  citation: "Plus de 2 millions de tonnes de déchets issus de l'activité économique en Île-de-France en 2022, ont été enfouis | le combustible principal pour alimenter la nouvelle chaufferie de Vitry-sur-Seine"
+  contenu: "Projet de création d'une chaufferie à Vitry-sur-Seine (94) et de sa plateforme fluviale à Ris-Orangis (91), maître d'ouvrage SEMOP, concertation du 1/09 au 1/11/2026. 3 lignes de 111 MW ; tous les CSR franciliens sont exportés hors région ; seuils chlore et brome limitant le PVC ; capacité de l'UVE d'Ivry réduite de moitié fin 2026. Aucun prix à la tonne."
+  statut_propose: "lu"
+  note: "Porteur de projet."
+
+RP-034:
+  ouvert: "oui"
+  emplacement: "diapositives 11, 15, 16, 17"
+  citation: "Elles cumulent une capacité autorisée de 4 275 900 tonnes en 2024. | Ces capacités ont été utilisées à 80% pour l'ensemble des flux DMA | ce plafond théorique pourrait être à nouveau dépassé. | Le refus de tri de déchets d'emballages et de papiers collecté en 2024 est de 27% (146 368 t)."
+  contenu: "Les déchets ménagers & assimilés en Île-de-France, données 2024 (ORDIF / L'Institut Paris Region, décembre 2025). 3 419 422 t de déchets ménagers et assimilés incinérées (63,2 %). Capacité autorisée des UIDND de 4 275 900 t en 2024, utilisée à 80 % pour les seuls flux ménagers. Refus de tri des emballages et papiers : 27 % (146 368 t)."
+  statut_propose: "lu"
+  note: "Lu sous l'URL https://www.ordif.fr/fileadmin/DataStorage/user_upload/00-home/Bilan_DMA_2024@.pdf ; l'URL enregistrée dans RP-034 n'est pas connue de moi, à rapprocher. Le taux de 80 % ne compte que les déchets ménagers, pas les DAE."

@@ -12,6 +12,7 @@
 # ---------------------------------------------------------------------------
 
 R-001:
+  complement_2026_10_15_chat4: "Chat 4 annexe 8 : PDF toujours sur formulaire courriel (synthese 1018 Ko, rapport 3,55 Mo), aucun miroir trouve. A telecharger par Stephane ; regroupe avec R-042."
   question: "Etude ADEME ref. 5955 (Deloitte 2022), gisements de dechets plastiques pour le recyclage chimique : tonnages par flux"
   demande_par: Stephane
   date: 2026-10-10
@@ -24,11 +25,13 @@ R-002:
   question: "Tonnages Valorplast par flux (films, flux developpement, PS, PET) et leurs debouches"
   demande_par: Stephane
   date: 2026-10-10
-  statut: introuvable
-  cherche: "Site Valorplast (delai depasse), rapports Citeo ; l'Observatoire de la reprise 2024 donne les flux en graphiques non lisibles en texte (diapositives 42 a 51)"
-  sources: [RP2-025]
+  statut: partiel
+  cherche: "Site Valorplast (delai depasse), rapports Citeo ; l'Observatoire de la reprise 2024 donne les flux en graphiques non lisibles en texte (diapositives 42 a 51). Chat 4 (15/10/2026) : pages valorplast.com Nos missions et Nos engagements (total 2025 seulement), recherche web d'un rapport annuel Valorplast (aucun en ligne), note de calcul DGPR 2026 (tonnes reprises par flux plastique 2024, tous repreneurs confondus)"
+  manque: "Tonnages par flux propres a Valorplast et debouches reels par flux (aucun rapport annuel public). Les tonnes reprises par flux de la note DGPR sont tous repreneurs confondus."
+  sources: [RP2-025, A8-MENA-VALORPLAST-2025, A8-MENA-PRIXREPRISE-2025]
 
 R-003:
+  complement_2026_10_15_chat4: "Chat 4 annexe 8 : recherche refaite (Syctom RA 2024 et 2025, SIGIDURS 2023, SIREDOM, ORDIF DMA 2024, PRPGD) : aucune composition francilienne publiee. Composition nationale moyenne des refus trouvee (OCAPEM-2025, tableau 3 : plastiques rigides 7,5 %, souples 4,5 %). SIGIDURS annonce des caracterisations trimestrielles non publiees (RP-038)."
   question: "Composition mesuree des refus de tri franciliens (plastique, PCI, chlore, humidite)"
   demande_par: Stephane
   date: 2026-10-10
@@ -42,9 +45,9 @@ R-004:
   demande_par: Stephane
   date: 2026-10-10
   statut: partiel
-  manque: "Aucune cotation publique ; seulement des bornes (fioul lourd)"
-  cherche: "ICIS, Platts et Argus (payants), rapports d'entreprises, DGEC, INSEE"
-  sources: [PRM-DGEC-NPG-2025-12, PRM-INSEE-EACEI-2024]
+  manque: "Aucune cotation publique d'huile de pyrolyse de plastiques ; seulement des bornes (fioul lourd, fioul domestique, gazole, carbureacteur : cotations DGEC et Weekly Oil Bulletin). Cotations ICIS et Argus payantes : voir R-037"
+  cherche: "ICIS, Platts et Argus (payants), rapports d'entreprises, DGEC (notes du 19/12/2025 et du 09/10/2026), INSEE, Weekly Oil Bulletin, Banque mondiale (chat 3, 15/10/2026)"
+  sources: [PRM-DGEC-NPG-2025-12, PRM-INSEE-EACEI-2024, A3-DGEC-NPG-2026-10-09-COTATIONS, A3-CE-WOB-2026-10-12, A3-BM-PINKSHEET-2026-10]
 
 R-005:
   question: "Perimetre exact de la cotation OneWorld (Incoterm, montage, ingenierie, formation, pieces)"
@@ -94,6 +97,7 @@ R-009:
   sources: [CHIBA-ESSAIS-FICHES, OWJ-DEMO-2021, UR2000-JP-P05-BILAN, OW-ENG-P16-BILAN]
 
 R-010:
+  complement_2026_10_15_lot1: "15/10/2026 (D-035) : le tableau p. 16 compte une densite de 1 (1 L = 1 kg), erreur deja signalee par Stephane, tableaux non refaits par OneWorld ; corrige par nous dans l'annexe 2, section 2.8 (CALC-A2-OW16C-*). Reste a confirmer : volume journalier 200, 216 (48 bennes) ou 229,5 m3 (51 bennes) et densite par gisement."
   complement_2026_10_14_soir: "Stephane (14/10/2026 soir) : expliquer UR2000-JP p. 5 : sur 200 t (200 m3, 200 000 L) a 10 % de resines, char 25 %, huile 5 % (10 000 L), off-gas 5 % (10 000 L) ; les 5 % d'huile et 5 % d'off-gas viennent-ils des 10 % de resines ? Que deviennent les 60 a 65 % restants (eau evaporee ?) ? Les pourcentages sont-ils en masse ou en volume ?"
   question: "Base de calcul des bilans declares : UR2000-JP p. 5 (char 25 %, huile 5 %, off-gas 5 %, 60 a 65 % non affectes) et brochure anglaise p. 16 (masses totalisant 102 t pour 200 t d'entree, 1 L compte pour 1 kg) ; cadence reelle (48 bennes de 4,17 t, ou 51 bennes de 4,5 m3 a 0,6 t/m3)"
   demande_par: Stephane
@@ -114,6 +118,7 @@ R-011:
   sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS, KANSO-B2002600]
 
 R-012:
+  complement_2026_10_15_lot1: "15/10/2026 (D-038) : char de dechets menagers pris a 32,09 MJ/kg (Izumitec, char d'urethane, HYPOTHESE de Stephane) ; demander une mesure de PCI, cendres et chlore sur char de dechets menagers. Char de residus plastiques : 24,6 MJ/kg, facteur de Chiba d'origine inconnue."
   question: "Char : PCI mesure (PCS ou PCI, base seche ou brute) sur char de dechets melanges ; origine du facteur 5 880 kcal/kg des bilans de Chiba ; origine du char d'urethane Izumitec R35-339439 (machine Urban Rig ? site de Toyohashi ?) ; analyse elementaire (C, cendres, Cl)"
   demande_par: Stephane
   date: 2026-10-14
@@ -171,7 +176,8 @@ R-017:
   sources: [CHIBA-ESSAIS-FICHES, CHIBA-OOSUMI-EAUX, CHIBA-SYNTHESE]
 
 R-018:
-  question: "Essais de Chiba : duree et temperature de chaque essai ; masse d'huile pesee ou deduite du volume ; ecarts 250 kg declares / 310 kg sur fiches et 407 L declares / 451 L sur fiches ; off-gas de 19 % puis 2 % sur deux essais 3P de 60 kg ; nature exacte de la matiere du 26/05 (granules ou chutes)"
+  complement_2026_10_15_lot1: "15/10/2026 (D-033) : point 407 L (p. 43) / 451 L (fiches) explique (44 L des essais de Noda) et retire. Masse d'huile : jaugee (p. 29), valeur imprimee conservee. 250 / 310 kg : non bloquant."
+  question: "Essais de Chiba : duree et temperature de chaque essai ; masse d'huile pesee ou deduite du volume ; ecarts 250 kg declares / 310 kg sur fiches ; off-gas de 19 % puis 2 % sur deux essais 3P de 60 kg ; nature exacte de la matiere du 26/05 (granules ou chutes)"
   demande_par: Stephane
   date: 2026-10-14
   statut: a_demander
@@ -214,3 +220,206 @@ R-022:
   statut: trouve
   cherche: "Stephane a verse le 14/10/2026 documents-constructeur/Urban Rig Recycling Solutions ENG .pdf : meme empreinte md5 (f2f51afa...) que documents-fournis/Urban Rig Recycling Solutions ENG .pdf, deja lu ; le fichier endommage n'est plus dans le dossier. Les Fuel-Output-Test sont les pages impr. 15 et 16 du rapport de Chiba original."
   sources: [OW-ENG-P16-BILAN, CHIBA-ESSAIS-FICHES]
+
+# === Annexe 1 (chat 2, 15/10/2026) : demandes a OneWorld et trous ===
+
+R-023:
+  question: "Pre-tri et preparation exiges par l'URC-2000 : la brochure dit 'No sorting required' (OW-ENG p. 2) et UR2000-JP p. 7 'sans tri ni nettoyage', mais les plans prevoient une tremie avec broyage et une machine de tri (OW-ENG p. 4, 6, 7 ; UR2000-JP p. 9 et 10). Quel pre-traitement pour des ordures menageres francaises (broyage, granulometrie, retrait des inertes, metaux, verre, encombrants) ? Specification de la machine de tri ? Matieres interdites (batteries, bouteilles de gaz, dechets dangereux, DASRI) ? Humidite et part de PVC maximales ?"
+  demande_par: Stephane
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 2, 4, 6, 7, 16 ; UR2000-JP p. 2, 7, 9, 10 ; videos : aucune specification d'acceptation"
+  sources: [OW-ENG-P04-P07-SPEC-PLANS, UR2000-JP-P06-P07-MODULES, UR2000-JP-P09-P13-PLANS, OW-ENG-P02-P14-AFFIRMATIONS]
+
+R-024:
+  question: "Configuration actuelle de l'URC-2000 : nombre de postes (7 selon UR2000-JP p. 6 ; '7 or 4' selon OW-ENG p. 14 ; maquette STEP 'Toyohashi 9 postes') et profil de temperature retenu (150/300/450/600 puis 400/150/60 C en 90 min par poste, brochure 2019 ; 150/250/350/500/350/150/<100 C et 800 C max., plan 2014 ; 250/450/600/350 C en 120 min par palier, animation 2024). Qu'est-ce que la machine continue a 9 postes de Toyohashi (en service ? capacite ? donnees d'exploitation) ?"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 14 et 15 ; UR2000-JP p. 4, 6, 8, 12 ; URC-2000_STEP.zip (noms de pieces) ; cinematics Urban Rig.mp4"
+  sources: [OW-ENG-P14-P15-PROCEDE, UR2000-JP-P08-SPEC, UR2000-JP-P09-P13-PLANS, OW-STEP-TOYOHASHI-9, OW-VIDEO-ANIMATION-2024]
+
+R-025:
+  question: "Devenir de l'off-gas sur l'URC-2000 : brule dans le surchauffeur ou la chaudiere (OW-ENG p. 2 parle d'huile gazeifiee comme combustible), dans une tour de combustion separee (la maquette de Toyohashi relie le separateur gaz-liquide a un 燃焼塔), ou torche ? Point(s) d'emission, traitement avant combustion, et OneWorld revendique-t-il l'exclusion de l'article 42(1) de la directive 2010/75/UE (gaz purifies au point de ne plus etre des dechets) ?"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 2 et 14 ; UR2000-JP p. 4 et 8 ; maquette STEP ; IED art. 3(40) et 42(1)"
+  sources: [OW-ENG-P02-P14-AFFIRMATIONS, OW-STEP-TOYOHASHI-9, IED-2010-75-ART3-42]
+
+R-026:
+  question: "Pilotage et exploitation : systeme de controle ('microcomputer control', 'Valve & sensor'), grandeurs regulees et surveillees (temperatures, pression, vapeur, O2), securites, supervision a distance ; effectif d'exploitation par poste et par jour pour une URC-2000"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 4 a 7 ; UR2000-JP p. 7 et 8 ; transport installation and maintenance.pdf (installation et formation seulement) : aucun effectif d'exploitation, aucune description du controle"
+  sources: [OW-ENG-P04-P07-SPEC-PLANS, OW-TRANSPORT-INSTALLATION]
+
+R-027:
+  question: "Modularite et delais : 7 morceaux par camion (UR2000-JP p. 6) ou 100 conteneurs de 40 pieds (tableau transport) ; 4 mois (UR2000-JP p. 13) ou environ 10 mois (OW-ENG p. 19) du contrat a la mise en service ; peut-on ajouter des postes a une ligne existante ; auteur et date du tableau 'Transportation, Installation and Maintenance'"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "UR2000-JP p. 6 et 13 ; OW-ENG p. 19 ; transport installation and maintenance.pdf"
+  sources: [UR2000-JP-P06-P07-MODULES, UR2000-JP-P09-P13-PLANS, OW-ENG-P03-P19-GAMME-DELAIS, OW-TRANSPORT-INSTALLATION]
+
+R-028:
+  question: "Taux de recuperation d'huile '45%~85%' de l'animation de 2024 : base (masse ou volume), matieres d'entree correspondant a 45 % et a 85 %, essai ou calcul a l'appui"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "cinematics Urban Rig.mp4 vers 158 s ; aucune legende"
+  sources: [OW-VIDEO-ANIMATION-2024]
+
+R-029:
+  question: "Traitement des fumees de l'URC-2000 prevu pour la France : PRIMO est presente comme OPTION (OW-ENG p. 12) ; configuration standard proposee (DeNOx, DeSOx, filtre, charbon actif ?), mesure en continu, temperature et temps de sejour de la combustion de l'off-gas"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 2 et 12 ; UR2000-JP p. 14 ; les mesures elles-memes sont demandees en R-016"
+  sources: [OW-ENG-P03-P19-GAMME-DELAIS, UR2000-JP-P14-EMISSIONS]
+
+R-030:
+  question: "Brevets : copies ou numeros publies des titres couvrant le procede (JP 5778771, 6791577, 6871852, 7007158 ; demandes 2019-033049, 2021-150129 ; PCT JP2022/0315), phase europeenne eventuelle, et droits accordes au projet en France (licence, exclusivite)"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation (One World Japan)"
+  cherche: "patent list.xlsx (liste du 27/12/2022, aucun titre europeen) ; non verifie sur J-PlatPat ni Espacenet"
+  sources: [OW-BREVETS-2022]
+
+R-031:
+  question: "Metaux recuperes : etat (non oxyde, 'non-oxidizing state' selon OW-ENG p. 2), proprete, separation du char, debouche et prix ; verre et inertes : devenir"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "OW-ENG p. 2 et 16 ; UR2000-JP p. 5 ; essai pneus 2020 (111 kg de fil) : aucune analyse des metaux"
+  sources: [OW-ENG-P02-P14-AFFIRMATIONS, UR2000-JP-P05-BILAN, OWT-DEMO-2020]
+
+R-032:
+  question: "Masse de machefers et de residus d'epuration des fumees par tonne de dechets incineres (BREF incineration 2019, section 3.4.1 p. 244), pour la comparaison de l'annexe 1"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: introuvable
+  cherche: "BREF WI 2019 (JRC118637, EUR 29971 EN) : PDF AIDA/INERIS et JRC inaccessibles depuis le terminal (proxy 403) ; WebFetch ne renvoie que la table des matieres (section 3.4.1 'Mass streams of solid residues', p. 244). A lire sur le PDF ou a faire verser dans reference/sources-externes/pdf/"
+  sources: []
+
+# --- Annexe 3 (chat 3, 15/10/2026) ---
+
+R-033:
+  question: "Prix obtenus au Japon pour l'huile, le char et les metaux des Urban Rig en service : prix par produit et par qualite, acheteurs (types ou noms), contrats, specifications exigees par ces acheteurs. UR2000-JP p. 2 annonce un 'huile vendable' equivalente au gazole et un 'char vendable' de substitution au charbon ; la brochure anglaise p. 16 annonce 'Fuel for sale', 'Sale as heating fuel'"
+  demande_par: Stephane
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Brochure anglaise p. 16 ; UR2000-JP p. 2 et 5 ; Business-Plan-Hardin p. 42 et 53 ; proposition AEPW : aucun prix ni acheteur nomme (chat 3, 15/10/2026). Complete R-020 (donnees d'exploitation) et R-031 (metaux)"
+  sources: []
+
+R-034:
+  question: "Char : forme du produit livre (poudre, granules ; 'high-calorie powder coal mixed with heavy oil' selon la brochure anglaise p. 16 : melange ou produit separe ?), granulometrie, humidite, cendres, soufre, chlore, PCI sur char d'ordures menageres ; essai de lixiviation et teneurs permettant de classer le char en 19 01 17* ou 19 01 18 ; base des usages annonces 'briquettes, nano carbon, activated carbon and diamond raw materials' (Business-Plan-Hardin p. 42) ; essais d'acceptation en cimenterie ou en chaufferie au Japon. Complete R-012"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Analyses de char du rapport de Chiba (PDF p. 47 et 49 : metaux) ; Izumitec R35-339439 (PCS) ; aucune donnee de chlore, soufre, cendres ni lixiviation (chat 3, 15/10/2026)"
+  sources: []
+
+R-035:
+  question: "Huile d'un intrant PE, PP et PS (au moins 85 %, PVC au plus 3 %) : analyse complete selon le tableau A de l'arrete du 19/02/2024 (soufre, azote, oxygene total, Br + Cl + F + I, F, Br, somme des metaux, As + Hg + Pb + Sb), pour la sortie du statut de dechet en vapocraquage ; une installation OneWorld a-t-elle une certification ISCC PLUS ou un contrat avec un vapocraqueur ou une raffinerie ? Complete R-013 (chlore)"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Analyses JLOS 2022 (chlore 0,137 et 0,526 %, soufre ; ni azote, ni oxygene, ni metaux) ; NKKK 2019 (chlore inorganique seulement) (chat 3, 15/10/2026)"
+  sources: [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]
+
+R-036:
+  question: "Carbone : base des affirmations 'no harmful substances such as CO2' et 'Carbon Credit scheme : Profit' (Business-Plan-Hardin p. 42 et 53) ; credits obtenus au Japon (J-Credit ou autre), methode et volumes ; emissions de CO2 mesurees ou calculees d'une URC-2000 (combustion de l'off-gas et de l'huile autoconsommee)"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Business-Plan-Hardin p. 42 et 53 ; brochure anglaise p. 2 et 14 ; aucune methode ni credit documente (chat 3, 15/10/2026)"
+  sources: []
+
+R-037:
+  question: "Cotations payantes : huile de pyrolyse de plastiques (ICIS, Argus : qualites 'cracker-grade', 'refinery-grade', 'non-upgraded'), naphta NWE (Platts, Argus), ferrailles et aluminium de recyclage en France (Fastmarkets, EUWID, L'Usine Nouvelle), prix des CSR livres en cimenterie"
+  demande_par: Stephane
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "Abonnement ICIS, Argus, Platts, Fastmarkets ou EUWID (ou extrait fourni par un acheteur ou un courtier)"
+  cherche: "PRM-ICIS-PLASTICSTODAY-2023, PRM-ICIS-MPW-OVERVIEW, PRM-ARGUS-PYRO-2024 (aucune valeur) ; DGEC et Weekly Oil Bulletin (pas de naphta) ; INSEE (series de ferrailles arretees) ; FEDEREC (aucun prix) (chat 3, 15/10/2026)"
+  sources: []
+
+R-038:
+  question: "Conditions et prix d'acceptation d'un char de pyrolyse d'ordures menageres en cimenterie ou en chaufferie CSR en France : specifications (PCI, chlore, soufre, metaux, granulometrie), prix paye ou redevance d'acceptation"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "Cimentiers (France Ciment, Vicat, Holcim, Heidelberg Materials, Calcia) ; exploitants de chaufferies CSR"
+  cherche: "Sources publiques lues : A3-OBS-NORMANDIE-CSR-2021, A3-CALCIA-COUVROT-CSR-2010, A3-VICAT-CRECHY-CARBOR-2008, FNADE-CSR-2023, A3-SIA-PARTNERS-CSR-2018 ; aucune specification publiee par France Ciment (chat 3, 15/10/2026)"
+  sources: [A3-OBS-NORMANDIE-CSR-2021, A3-CALCIA-COUVROT-CSR-2010, A3-VICAT-CRECHY-CARBOR-2008]
+
+# === Annexe 8 (chat 4, 15/10/2026) : demandes et trous ===
+
+R-039:
+  question: "Halogenes autres que le chlore : rapport des essais brome et fluor evoques oralement par Peter (DECLARE-PETER, sans document) ; devenir du brome (huile, char, gaz, eaux) ; teneurs en PBDE et HBCDD de l'huile et du char apres traitement de plastiques ignifuges (DEEE, PSE du batiment). Le procede peut-il etre presente comme destruction ou transformation irreversible des POP au sens de l'article 7 du reglement (UE) 2019/1021 (operations D10 ou R1) ?"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "_evidence.yaml (DECLARE-PETER, fiabilite aucune ; UR2000-JP-P03-P04-CHLORE ne traite que le chlore) ; brochures OneWorld : aucune mention du brome. Complete R-013 (chlore) sans le recouvrir."
+  sources: []
+
+R-040:
+  question: "Essais Urban Rig sur les flux plastiques de l'annexe 8 non encore testes : refus de tri de collecte selective, flux developpement et emballages multicouches avec aluminium, plastiques tries de DEEE (ABS, HIPS, PC/ABS), mousses PU (matelas), PSE densifie en lingots. Rendements huile, gaz, char ; chlore et brome de l'huile. Complete R-021 (PET, PVC, textiles, OM brutes), sans doublon."
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Rapport de Chiba (PE, PP, PS dont PSE dechet, deux flux municipaux de Noda), essais URT-10 2021 et pneus 2020 : aucun de ces flux."
+  sources: [CHIBA-ESSAIS-FICHES, OWJ-DEMO-2021]
+
+R-041:
+  question: "Forme physique acceptee pour une charge de plastique seul : balles (dimensions, liens metalliques), films en vrac, PSE en vrac ou en lingots ; broyage requis ou non ; masse volumique obtenue en benne apres presse pour des films et du PSE (D-035 retient 0,7 t/m3 en moyenne) ; teneur maximale en PVC et en brome par lot. Complete R-023 (pre-tri des ordures menageres)."
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "OneWorld Corporation"
+  cherche: "Brochures OW-ENG et UR2000-JP : benne de 4,5 m3, 4,17 t au plus ; aucune specification de charge plastique."
+  sources: [OW-ENG-P14-P15-PROCEDE]
+
+R-042:
+  question: "PDF ADEME sur formulaire courriel, a telecharger par Stephane : Bilan national du recyclage 2012-2021 (librairie ref. 6959), Equipements electriques et electroniques donnees 2024 (ref. 9400), Vehicules donnees 2023 (ref. 8446), MODECOM 2024 (ref. 8784), bilan PMCB donnees 2024 (ref. 11204, lu sur miroir Novabuild), referentiel des couts donnees 2023 (ref. 8811, deja present dans sources-externes/pdf). Avec R-001 (etude 5955)."
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "Stephane (formulaire librairie.ademe.fr avec adresse electronique)"
+  cherche: "Pages librairie ADEME ouvertes par les sous-agents le 15/10/2026 ; aucun miroir officiel sauf PMCB (Novabuild)."
+  sources: [A8-DEV-ADEME-DEEE-2024, A8-DEV-ADEME-VHU-2023]
+
+R-043:
+  question: "Tarifs 2026 de la TGAP dechets dans le texte officiel : CIBS articles L. 433-57 (mise en decharge) et L. 433-86 (incineration) issus de la loi n 2026-103 du 19/02/2026, tarif reduit des residus de tri performants en 2026, arrete du 27/01/2026"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: trouve
+  cherche: "Trouve le 15/10/2026 (chat 4) dans le PDF local pdf/joe_20260220_0043_0001.pdf (JORF du 20/02/2026), PDF p. 58, 60, 61 ; fiche CIBS-TGAP-2026 deja au registre depuis le 10/10/2026. Avant : Legifrance inaccessible aux outils (verification Cloudflare) ; BOFiP BOI-BAREME-000039 (tarifs 2025 seulement) ; rescrit BOI-RES-TCA-000259 (cadre, sans montant) ; FNTP et Reglementation Environnement (secondaires : 69 EUR/t stockage, 16 et 29 EUR/t incineration en 2026)"
+  manque: "Texte officiel des tarifs 2026 et du tarif reduit des residus de tri performants"
+  sources: [CIBS-TGAP-2026, BOFIP-RES-259, FNTP-2026, REGENV-2026, PRM-BOFIP-TGAP-2025]
+
+R-044:
+  question: "Prix d'elimination factures aux detenteurs de flux plastiques en Ile-de-France en 2026 : tarif du Syctom pour les refus de tri et les dechets d'activites economiques, prix des incinerateurs franciliens pour les DAE, prix des prestataires CSR ; prix d'achat de la matiere par l'unite de Grandpuits"
+  demande_par: Claude
+  date: 2026-10-15
+  statut: a_demander
+  detenteur: "Syctom, SIGIDURS, SIREDOM, exploitants d'UVE franciliennes, TotalEnergies (Grandpuits), courtiers en dechets"
+  cherche: "Syctom BP 2026 (OMR 109,4 EUR/t, dechets ordinaires de tiers 108 EUR/t, CSR 16 ou 84 EUR/t ; aucun tarif refus ni DAE), RA Syctom 2024 et 2025, BOAMP 25-80033, communiques TotalEnergies 2023 et 2026 (aucun prix)"
+  sources: [A8-CST-SYCTOM-BP-2026, RP-036, RP2-017, RP2-032]

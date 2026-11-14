@@ -350,3 +350,343 @@ D-024:
     Non verifiee : la reponse du detecteur varie selon les composes. Estimation d'ordre de grandeur, avant
     hydrogenation, coupe de la fraction legere et purification ; craquage de la fraction lourde non compte.
 
+
+D-025:
+  date: 2026-10-15
+  titre: "Feuille 'Worksheet-Lufthansa-200MT.xlsx' ecartee comme source"
+  de: "feuille Lufthansa fichee comme declaration du constructeur (hypotheses commerciales), citee pour la densite 0,7 et des revenus"
+  vers: "feuille Lufthansa exclue : jamais citee dans le plan v3 ni dans ses annexes"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (chat 2, annexe 1) : aucune confiance dans cette feuille, qui aurait du etre
+    eliminee. Auteur ('Peter') non identifie, coefficients saisis sans source, unites incoherentes (releve du chat 1).
+    Les calculs de revenus seront refaits a partir de zero dans le modele et l'annexe 3. La fiche LUFTHANSA-WS de
+    _evidence.yaml reste en place pour la tracabilite ; aucune valeur de params/ n'est modifiee par cette decision.
+    Les parametres qui la citent comme preuve sont a revoir lors de leur brique.
+  preuves: []
+  a_verifier: "Lister les parametres de params/ dont la preuve est LUFTHANSA-WS, lors de la brique du modele financier."
+
+D-026:
+  date: 2026-10-15
+  titre: "Annexe 1 : choix de redaction (dioxines, char, machine de reference, format)"
+  de: "-"
+  vers: "voir motif"
+  unite: "-"
+  motif: >
+    Decisions de Stephane du 15/10/2026 (chat 2). (1) Dioxines : formulation 'very low', avec les valeurs mesurees
+    0,011 a 0,067 ng-TEQ/m3, sous la limite europeenne de 0,1 ; les valeurs 2023 dans la fourchette MTD des
+    installations neuves. Pas de 'zero dioxins'. (2) Char : combustible solide a fort pouvoir calorifique, associable
+    au coke ou au charbon ; usage fertilisant exclu (reglement 2019/1009) ; prix et specifications d'achat renvoyes a
+    l'annexe 3. (3) Machine de reference : URC-2000 (200 t/jour) ; les autres modeles de la gamme sont presentes, avec
+    leurs plans extraits des brochures ; le nombre de postes depend du modele (lot, 4 ou 7 postes). (4) Autonomie : la
+    chaleur du procede est couverte par le gaz selon les calculs de l'annexe 2 (D-021) ; l'electricite est achetee.
+    (5) PVC : acceptation a confirmer par l'enquete chlore (R-013, R-021). (6) Format : meme schema que l'annexe 2
+    (source Markdown controlee, HTML de lecture avec fiches de preuve et taux de confiance), HTML genere des le depart.
+    (7) L'annexe 1 ne contient aucun calcul de revenus, prix ou couts.
+  preuves: []
+
+D-027:
+  date: 2026-10-15
+  titre: "Le projet est porte par OneWorld : les demandes a OneWorld deviennent internes"
+  de: "OneWorld traite comme un tiers (constructeur) auquel on adresse des demandes"
+  vers: "le porteur du plan est OneWorld ; les donnees de OneWorld sont nos donnees de conception ; les demandes 'detenteur OneWorld' sont des actions internes"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (chat 3, annexe 3) : 'on va arreter d'appeler OneWorld, c'est nous ;
+    on prend l'etiquette de OneWorld, on est OneWorld'. Lecture de Claude, a confirmer : l'etiquette
+    CONSTRUCTEUR reste dans les fiches pour la tracabilite (regle 12 : une donnee de l'entreprise elle-meme
+    n'est pas une verification independante) ; dans le texte des annexes, 'according to OneWorld' peut devenir
+    'OneWorld design data' ; les demandes R-xxx a OneWorld restent ouvertes, comme actions internes.
+    Les annexes 1 et 2 deja redigees ne sont pas modifiees par cette decision tant que la formulation n'est pas confirmee.
+  preuves: []
+  a_verifier: "-"
+  precision: >
+    Confirmation de Stephane du 15/10/2026 (15 h 12) : 'OneWorld n'existe plus, c'est nous'. Dans le texte des annexes,
+    les declarations du constructeur sont marquees 'OneWorld design data' ; l'etiquette CONSTRUCTEUR est conservee dans
+    les fiches. Applique le 15/10/2026 aux sources des annexes 1 et 2 ('according to OneWorld' et 'OneWorld states'
+    remplaces ; paragraphe 'How to Read' complete), HTML regeneres, controle a zero erreur.
+
+D-028:
+  date: 2026-10-15
+  titre: "Annexe 3 : choix de Stephane sur les hypotheses de prix (point d'arret de l'etape 1)"
+  de: "hypotheses H-1 a H-12 ouvertes"
+  vers: "voir motif"
+  unite: "-"
+  motif: >
+    Decisions de Stephane du 15/10/2026. (H-4) Prix differencie par fraction d'huile ; rechercher le maximum
+    d'elements de prix pour chaque fraction. (H-5) Le char est vendu, pour son pouvoir calorifique ; rechercher
+    les debouches, en premier lieu les cimenteries. (H-7, H-8) Prix de l'acier et de l'aluminium a trouver en
+    sources publiques en ligne. (H-9) Verre et inertes : aucun prix. (H-10) Carbone : aucun revenu ; verifier
+    dans les textes qu'un credit carbone n'est pas possible. (H-11) Electricite achetee. (H-12) Combustible :
+    le gaz de pyrolyse recupere couvre le besoin de chaleur (annexe 2, D-021) ; le surplus de gaz, quand le
+    rendement en gaz depasse le seuil d'autosuffisance, peut etre vendu ; etudier la valeur de l'hydrogene
+    qu'il contient. Restent ouverts : H-1 (periode de reference des prix), H-2, H-3, H-6.
+  preuves: []
+  a_verifier: "Annexe 2 : le gaz couvre la demande du bruleur 1,2 a 6,0 fois, mais seulement 0,94 fois la consommation de combustible declaree (10 000 L/jour) sur ordures menageres a 10 % de resines (2.5.d.6)."
+
+D-029:
+  date: 2026-10-15
+  titre: "Gaz issu du plastique pris a 10 % de la masse de plastique entrante ; pas d'autosuffisance energetique affirmee sur dechets menagers ou municipaux"
+  de: "gaz par difference des essais de Chiba presente comme 'conversion to fuel' ; couverture du besoin de chaleur par le gaz affichee pour les ordures menageres a 10 % de resines (1,2 fois) et les plastiques municipaux de Noda (6,0 fois) ; parametre rdt_gaz_plastique a 0,193"
+  vers: "gaz issu du plastique = 10 % de la masse de plastique entrante (HYPOTHESE) ; 'oil + gas by difference (operator definition, Chiba report p. 27)' avec reserve sur l'humidite des essais municipaux ; autosuffisance citee seulement comme declaration de OneWorld, sur son exemple a 90 % de resines ; bilan energetique des dechets menagers renvoye a l'annexe 5"
+  unite: "fraction de la masse de plastique entrante"
+  motif: >
+    Decisions de Stephane du 15/10/2026, apres le point E-1 du controle de Codex (lot 1 de l'annexe 2). Le gaz des
+    essais de Chiba n'est pas mesure : c'est le reste de l'entree apres l'huile et les residus (rapport Chiba, PDF p. 27).
+    Pour un plastique sec, ce reste est essentiellement du gaz ; pour des dechets municipaux, l'humidite de la charge y est
+    comptee. Calcul de reference sur les 11 essais de plastiques purs (CALC-A2-GAZDIFF-MOY-POND) : 14,4 % en moyenne
+    ponderee (66,3 kg sur 460 kg), 15,5 % en moyenne simple, de 2,2 % a 24,5 % ; PE 20,1 %, PP 17,2 %, PS 9,5 %,
+    melange 10,8 %.
+    (1) HYPOTHESE (Stephane, 15/10/2026, choix prudent, proche des valeurs les plus basses observees) : le gaz produit
+    par le plastique est pris a 10 % de la masse de plastique entrante. Raisonnement de Stephane, egalement HYPOTHESE :
+    l'eau se condense dans le separateur ; le gaz sec est reinjecte ; sa composition est supposee proche de celle du gaz
+    analyse (B2002600 hors air, D-021) ; la difficulte porte sur la quantite, pas sur la composition. Ordre de grandeur
+    pour des ordures menageres a 10 % de plastique : environ 1 % de la masse entrante en gaz issu du plastique, plus une
+    part inconnue venant des matieres organiques ; aucun essai Urban Rig sur ces matieres (R-021).
+    (2) L'annexe 2 ne contient plus aucune mention ni hypothese d'autosuffisance energetique par le gaz de procede pour
+    les dechets menagers ou municipaux. L'autonomie annoncee par OneWorld reste citee comme declaration du constructeur,
+    en precisant qu'elle porte sur un exemple a 90 % de resines. Le bilan energetique des dechets menagers sera traite
+    dans l'annexe 5, avec des hypotheses declarees.
+    (3) Point E-1 : 'conversion to fuel' devient 'oil + gas by difference (operator definition, Chiba report p. 27)',
+    avec la reserve sur l'humidite pour les deux essais municipaux, qui portaient sur des emballages plastiques de
+    collecte selective et des residus d'incombustibles, pas sur des ordures menageres brutes.
+    Cette decision modifie la lecture de D-021 (gaz = tout ce qui ne sort pas en huile, char ou metal) pour les dechets
+    menagers et municipaux seulement.
+    Precision de Stephane du 15/10/2026 (14 h 42) : les charges de resine pure gardent leur traitement anterieur (produits
+    connus : huiles, char, gaz ; couverture du besoin de chaleur calculee selon D-021, autosuffisance maintenue). Seule la
+    confiance dans l'autosuffisance sur dechets menagers est retiree. D-026 et D-028 sont conservees ; leur bilan de
+    chaleur sera calcule selon les choix faits sur la charge entrante. Lecture de Claude, a confirmer : l'hypothese de 10 %
+    s'applique a la fraction plastique des dechets melanges, les essais de resine pure gardant leurs valeurs propres.
+  preuves: [CHIBA-ESSAIS-FICHES, KANSO-B2002600]
+  a_verifier: "Points E-2 a E-9 du lot 1 a traiter apres les lots 2 a 5. Parametre rdt_gaz_plastique : arbitrage propose (0,193 vers 0,10)."
+
+D-030:
+  date: 2026-10-15
+  titre: "Annexe 3 et modele : prix les plus recents, avec leur base, modifiables par l'operateur"
+  de: "periode de reference des prix a choisir (H-1)"
+  vers: "chaque prix est la valeur publiee la plus recente, avec sa source, sa date et son perimetre ; l'operateur du modele peut la remplacer ; les prix lies au petrole peuvent etre recalcules pour un Brent choisi (par exemple 80 ou 50 USD/b)"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (chat 3). Le modele doit alimenter un tableau recalcule en temps reel. Valeurs par
+    defaut : les prix publies les plus recents, chacun avec sa base (source, date, perimetre, devise). L'operateur peut
+    changer chaque prix et tester un autre prix du petrole. Mise en oeuvre proposee par Claude, a valider a l'etape 2 :
+    pour chaque fraction d'huile, un rapport au Brent de la meme periode (CALCULE et enregistre), qui permet de recalculer
+    le prix pour un Brent saisi ; les fourchettes historiques (2024, 2025, 2026) sont montrees dans l'annexe.
+  preuves: []
+  a_verifier: "Methode d'indexation des prix au Brent (rapport simple ou ecart) a valider a l'etape 2."
+
+D-031:
+  date: 2026-10-15
+  titre: "Hydrogene : option chiffree, seulement pour une charge de dechets plastiques"
+  de: "valeur de l'hydrogene du gaz excedentaire a etudier (D-028)"
+  vers: "option chiffree de vente d'hydrogene, uniquement quand la charge est du plastique seul ; aucune pour les dechets menagers ou melanges"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (chat 3). Sur charge de plastique seul, le gaz couvre environ trois fois le besoin
+    de chaleur selon les donnees de OneWorld (2,9 fois, annexe 2, 2.5.d.4 ; maintenu par D-029 pour les resines pures) ;
+    une partie de l'hydrogene peut etre recuperee et vendue. Calcul indicatif de Claude (a enregistrer a l'etape 2) :
+    hydrogene = 11,6 % de la masse du gaz et 37 % de son energie ; sur charge riche en resines, environ 13 kg par tonne,
+    l'autosuffisance restant assuree sans lui. Pas d'appellation renouvelable ou bas-carbone etablie (carburant a base
+    de carbone recycle ; soutien public reserve a l'electrolyse) : prix de reference = hydrogene gris, sauf preuve contraire.
+  preuves: [A3J-UE-DIR-2018-2001-ART2-RCF, A3J-UE-REG-DEL-2025-2359, A3J-CRE-2025-229-AVIS-CDC-H2, A3J-ACER-H2-MARKETS-2025]
+  a_verifier: "Cout et rendement d'une purification PSA (annexe 9) ; qualification juridique de l'hydrogene."
+
+
+D-032:
+  date: 2026-10-15
+  titre: "Annexe 3 : base du calcul du CO2 evite par rapport a l'incineration (charge riche en resines)"
+  de: "aucun calcul de CO2 evite"
+  vers: "CO2 evite = substitution du fioul lourd par l'huile a energie egale, moins la substitution d'energie de l'incinerateur, moins l'electricite achetee ; carbone fossile de la charge emis dans les deux voies"
+  unite: "kgCO2e/t de charge"
+  motif: >
+    HYPOTHESE posee par Claude le 15/10/2026 pour repondre a la demande de Stephane (CO2 evite par rapport a
+    l'incineration, avec des facteurs sources). (1) Le carbone fossile de la charge finit en CO2 dans les deux voies :
+    brule dans l'incinerateur, ou brule dans l'usine (gaz) et chez l'acheteur (huile, char). (2) L'huile remplace du
+    fioul lourd a energie egale (facteur GIEC 77,4 tCO2/TJ). (3) L'incinerateur remplace de l'energie : -747 kgCO2e/t
+    pour le PE (ADEME). (4) L'electricite achetee est comptee au mix moyen francais. Non compte : transport, traitement des
+    fumees, char et surplus de gaz vendus, fuites de procede. Valable seulement pour une charge riche en resines ;
+    pour les dechets menagers, aucun calcul faute d'essais (D-029). Ce resultat ne donne lieu a aucun credit (D-028).
+  preuves: [A3-GIEC-2006-V2-CH2-T2-2, A3-ADEME-BC-EMBALLAGES-PLASTIQUES-INCINERATION, A3-ADEME-BC-ELEC-FR-2024]
+  a_verifier: "Hypothese de substitution du fioul lourd par Stephane ; methode ADEME des emissions evitees (non lue)."
+
+D-033:
+  date: 2026-10-15
+  titre: "Annexe 2, ecart E-3 : page 42 du rapport de Chiba retenue pour l'essai du 9/9/2022 et pour l'eau des essais de Noda"
+  de: "fiche d'essai p. 26 : metaux et corps etrangers 10,5 kg, char 13,9 kg ; eau de drainage 52 L"
+  vers: "bilan p. 42 : char (油化残渣) 10,5 kg, metaux et corps etrangers (金属・異物) 13,9 kg, residu total 24,4 kg inchange ; eau : 100 L en entree, 73 L rejetes et 27 L evapores le 9/9, 85 L rejetes et 15 L evapores le 15/9"
+  unite: "kg ; L"
+  motif: >
+    Decision de Stephane du 15/10/2026 (registre ecarts-annexe-02.md, E-3). Motifs de Stephane : la page 42 est un bilan
+    complet (entrees, produits, energie) ; elle attribue une energie au char et decompose l'eau. Les 52 L de 'drainage
+    water' de la page 26 ne sont plus utilises (sens exact inconnu) ; les volumes evapores sont probablement calcules par
+    difference. Objections gardees visibles : le rendement de 41 % imprime page 26 est calcule avec 10,5 kg de metaux ;
+    l'energie du char page 42 vient d'un facteur fixe de 5 880 kcal/kg (R-012). Consequences : base hors metaux 36,1 kg ;
+    huile 44,6 % ; gaz par difference 26,3 % ; huile + gaz 70,9 % ; char 21,0 % de l'entree ; metaux 27,8 % ; sur l'entree
+    brute, rien ne change (huile 32,2 %, gaz 19,0 %). Autres incoherences (16 h 51) : 16,1 kg d'huile conserve, valeur
+    imprimee (la p. 29 decrit un jaugeage apres decantation, pas une pesee) ; 250 ou 310 kg, non bloquant ; PP et PS
+    inverses p. 43, sans effet, non mentionne ; bidons PE, 50 kg conserve. L'encadre 'incoherences de la source' ne garde
+    que les ecarts entre p. 26 et p. 42.
+  preuves: [CHIBA-BILANS, CHIBA-ESSAIS-FICHES]
+
+D-034:
+  date: 2026-10-15
+  titre: "Annexe 2, ecart E-4 : essai 3P du 11/7/2022 ecarte des moyennes ; statistiques des plastiques purs sur 10 essais"
+  de: "11 essais de plastiques purs ; deux essais 3P dits identiques"
+  vers: "10 essais (400 kg) ; essai du 11/7 affiche et marque ecarte ; libelle du rapport (成型端材, chutes de produits moules) cite tel quel, avec la lecture de Stephane"
+  unite: "%"
+  motif: >
+    Decision de Stephane du 15/10/2026 (registre E-4) : matieres differentes les deux jours (photos) ; selon Stephane,
+    dechets plastiques en melange a proportions inconnues de PE, PP et PS, pas des chutes de moulage ; essai du 11/7
+    ecarte des moyennes (reaction probablement incomplete). Motifs verifies par Claude : pieces fibreuses colorees non
+    converties visibles dans le residu (photo p. 24) ; gaz le plus bas des 11 essais (2,2 %, contre 6,8 % au plus bas
+    ailleurs) avec l'huile la plus haute (82,3 %), bilan douteux. Recalcul sur 10 essais : gaz 16,3 % pondere
+    (CALC-A2-GAZDIFF10-MOY-POND), moyenne simple 16,8 %, mediane 18,2 %, de 6,8 a 24,5 % ; huile 73,1 % ; residu 10,7 %.
+    D-029 (10 %) inchangee ; ses statistiques passent de 11 a 10 essais. Les calculs sur 11 essais restent pour la tracabilite.
+  preuves: [CHIBA-ESSAIS-FICHES]
+
+D-035:
+  date: 2026-10-15
+  titre: "Annexe 2, ecarts E-2 et E-6 : capacite volumique 200 m3/jour, charge du reacteur a 0,7 t/m3 (140 t/jour), base hors inertes, tableau OneWorld p. 16 corrige"
+  de: "200 t/jour ; base hors metaux presentee comme rendement apres pre-tri ; tableau p. 16 a densite 1"
+  vers: "capacite du reacteur 200 m3/jour ; masse = volume x 0,7 t/m3 = 140 t/jour (HYPOTHESE de Stephane) ; tonnage recu = tonnage du reacteur / part de masse conservee apres tri ; inertes a rendement nul ; tableau p. 16 recalcule par nous"
+  unite: "m3/jour ; t/m3"
+  motif: >
+    Decisions de Stephane du 15/10/2026 (registre E-2 et E-6). E-2 : la base hors inertes est le bon rendement de la
+    charge du reacteur apres pre-tri ; les inertes ne produisent ni huile ni gaz ; seul effet, la chaleur qu'ils absorbent.
+    Tri imparfait : enterine. Inertes internes au plastique (fibres de verre ou de carbone, certaines charges minerales) :
+    valorisables, non bloquant. Si le tri retire la moitie de la masse (verre, metal), on recoit 280 t/jour au lieu de 140
+    pour remplir le reacteur. Ne pas complexifier : une presse remet la charge triee a 0,7 t/m3. Libelle 'excluding
+    metals and foreign matter recovered after treatment' ; la base brute (32,2 % et 45,0 %) reste affichee.
+    E-6 : masse entrante = 200 m3 par jour x masse volumique de la charge ; valeur moyenne 0,7 t/m3, soit 140 t/jour
+    (HYPOTHESE de Stephane) ; variable dans la simulation. Le tableau p. 16 compte une densite de 1 (1 L = 1 kg) : erreur
+    interne de OneWorld, deja signalee par Stephane ; tableaux non refaits malgre ses demandes ; c'est a nous de corriger.
+    Choix de Stephane du 15/10/2026 (17 h) : refaire le tableau, pourcentages de OneWorld appliques a 200 m3 x 0,6 t/m3
+    (densite de la brochure) = 120 t, volumes d'huile a 0,8642 kg/L (CALC-A2-OW16C-*). Le 0,7 est cite comme hypothese
+    de Stephane, jamais par la feuille Lufthansa (D-025). Volume 200, 216 (48 bennes) ou 229,5 m3 (51 bennes) a confirmer
+    (R-010) ; plafond 4,17 t par benne de 4,5 m3. Les 76,5 % d'huile restent une declaration de OneWorld sur une charge a
+    90 % de resines. Regle les arbitrages capacite_volumetrique_annexe01 et densite_dechet_annexe01.
+  preuves: [OW-ENG-P16-BILAN, UR2000-JP-P08-SPEC, CHIBA-ESSAIS-FICHES]
+
+D-036:
+  date: 2026-10-15
+  titre: "Annexe 2, ecart E-7 : rendements des essais en lots comme hypothese de depart du modele, sans bonus pour le continu"
+  de: "coefficients des lots appliques au continu sans mention"
+  vers: "rendements des lots en hypothese de depart ; phrase attribuee a l'equipe projet sur les essais internes en continu (HYPOTHESE)"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (registre E-7) : tout ce qui a ete observe jusqu'ici en continu a eu un effet
+    positif sur le rendement ; des essais restent a faire sur la meme base de comparaison. Formulation validee :
+    'According to the project team, the internal tests carried out so far in continuous operation have shown higher
+    yields than the batch tests. These data are not yet in this dossier. Tests on the same feed and the same basis of
+    comparison remain to be done.' Le modele part des rendements des lots. Verser les donnees des essais internes quand
+    elles seront disponibles.
+  preuves: []
+
+D-037:
+  date: 2026-10-15
+  titre: "Annexe 2, ecart E-9 : residus de broyage exclus du plan"
+  de: "exclusion rattachee a D-017"
+  vers: "exclusion explicite des residus de broyage, sur le jugement du rapport de Chiba"
+  unite: "-"
+  motif: >
+    Decision de Stephane du 15/10/2026 (registre E-9), recommandations de Claude acceptees : residus de broyage exclus du
+    plan. Rapport de Chiba, PDF p. 1 note ※3 et p. 43 : 生成油の性状が非常に悪く、油化処理には適さないと判断. Memes
+    recommandations : '15 runs, 13 with measured oil' ; odeurs 2020 par Total Kankyo System pour KANSO ; specification
+    '2019 (English brochure); Japanese brochure undated' ; PVC 'no quantified yield data' ; retrait de 'tres inferieurs aux
+    VLE usuelles' (fiche KANSO-20002610).
+  preuves: [CHIBA-RAPPORT-2023, CHIBA-ESSAIS-FICHES]
+
+D-038:
+  date: 2026-10-15
+  titre: "Annexe 2, ecart E-10 : gaz a 37,4 MJ/kg confirme ; char a deux valeurs selon la charge ; couverture du bruleur sur plastique pur en deux lignes"
+  de: "D-021 : char a 32 090 J/g pour toutes les charges ; couverture du bruleur sur le seul exemple OneWorld"
+  vers: "gaz 37,4 MJ/kg ; char de residus plastiques 24,6 MJ/kg (facteur de Chiba, 5 880 kcal/kg) ; char de dechets menagers 32,09 MJ/kg (HYPOTHESE de Stephane) ; couverture du bruleur sur plastique pur : exemple OneWorld a 11,5 % de gaz et hypothese de 15 % de gaz"
+  unite: "MJ/kg"
+  motif: >
+    Decisions de Stephane du 15/10/2026 (registre E-10). Gaz : on garde 37,4 MJ/kg (D-021). Raisonnement de Stephane :
+    l'azote et l'oxygene de l'echantillon KANSO viennent de l'air ajoute au prelevement (pris a la sortie du tuyau, sans
+    protocole) ; ils ne viennent pas de la charge ; en procede ferme, tres peu d'oxygene. Le gaz produit par la charge
+    (masse par difference) porte donc 37,4 MJ/kg ; la dilution ne change pas l'energie par tonne. Valide par Claude, avec
+    deux corrections sans effet sur la conclusion : la dilution de 4 a 5 fois est en volume (en masse, l'echantillon brut
+    vaut 3,4 MJ/kg) ; on ne peut pas dire que l'echantillon de Chiba etait dilue dans les memes proportions. Le facteur de
+    Chiba pour l'off-gas (1 323,8 kcal/kg, 5,5 MJ/kg) n'est pas utilise, origine inconnue (R-011).
+    Char : deux valeurs. Char de residus plastiques : 24,6 MJ/kg (facteur de Chiba, 5 880 kcal/kg, PDF p. 41 et 42,
+    origine inconnue, R-012) ; s'applique aussi aux deux essais de Noda (choix de Stephane du 15/10/2026, 17 h). Char de
+    dechets menagers : 32,09 MJ/kg (Izumitec), HYPOTHESE de Stephane : la matiere organique, videe de son eau, agit en fin
+    de pyrolyse comme une eponge dont les pores se remplissent d'hydrocarbures lourds ; la valeur Izumitec vient d'un char
+    d'urethane ; cendres et mineraux, qui baissent le pouvoir calorifique, restent a mesurer (R-012).
+    Couverture du bruleur (choix de Stephane du 15/10/2026, 17 h) : deux hypotheses a chaque fois, plastique pur et ordures
+    menageres. Plastique pur : deux lignes, l'exemple OneWorld a 11,5 % de gaz (2,9 fois) et une HYPOTHESE de 15 % de gaz,
+    arrondi de Stephane des moyennes mesurees par difference (14,4 % sur 11 essais, 16,3 % sur 10 essais), soit 3,7 fois
+    (CALC-A2-COUV-BRULEUR-PLASTIQUE15). Ordures menageres : pas d'autosuffisance affirmee (D-029), bilan en annexe 5.
+    Modifie D-021.
+  preuves: [KANSO-B2002600, CHIBA-BILANS, IZUMITEC-R35-339439]
+
+
+D-039:
+  date: 2026-10-15
+  titre: "Annexe 8 : gate fee des flux plastiques pris a 100 EUR/t, valeur modifiable par l'operateur"
+  de: "gate fee par filiere a trancher (H8-1)"
+  vers: "100 EUR/t pour les flux plastiques, parametre modifiable sur le site et dans le tableau Excel"
+  unite: "EUR/t"
+  motif: >
+    Decision de Stephane du 15/10/2026 (19 h 03, chat 4, annexe 8) : 'on va prendre 100 euros par tonne' et pouvoir
+    le faire evoluer sur le site et dans le tableau Excel pour recalculer. HYPOTHESE (Stephane). L'annexe 8 montre a
+    cote les fourchettes sourcees : flux payants (refus de tri 121 a 159 EUR/t, refus d'emballages professionnels
+    188 EUR/t) et flux a valeur positive (balles de plastiques melanges achetees environ 249 EUR/t, PSE blanc 55 EUR/t,
+    PEBD souple 151 EUR/t). Aucune valeur de params/ n'est modifiee par cette decision ; proposition dans _arbitrages.yaml a l'etape 2.
+  preuves: []
+  a_verifier: "Confirmer si la meme valeur s'applique a toutes les filieres (question posee le 15/10/2026)."
+
+D-040:
+  date: 2026-10-15
+  titre: "Annexe 8 : reponses de Stephane au point d'arret de l'etape 1 (PVC, flux bromes, filieres, TGAP 2026, statut des fiches)"
+  de: "questions ouvertes du point d'arret (collecte du 15/10/2026)"
+  vers: "voir motif"
+  unite: "-"
+  motif: >
+    Decisions de Stephane du 15/10/2026 (19 h 07, chat 4). (1) Part maximale de PVC dans la charge : laissee ouverte
+    en attendant les essais OneWorld (R-021, R-041) ; l'annexe montre la limite de 3 % de l'arrete du 19/02/2024 sans
+    la retenir. (2) Plastiques bromes (DEEE, PSE du batiment) : en attente d'essais OneWorld (R-039). HYPOTHESE
+    (Stephane, 15/10/2026) : l'elimination du brome doit etre similaire a celle du chlore, une grande partie doit
+    pouvoir etre eliminee ; non documentee, a ne jamais presenter comme un fait. (3) Toutes les filieres de l'annexe 8
+    sont retenues. (4) TGAP 2026 : valeurs utilisees ; elles sont en fait lues dans le texte officiel (loi 2026-103,
+    JORF du 20/02/2026, CIBS L. 433-57, L. 433-86, L. 433-90 ; fiche CIBS-TGAP-2026, PDF local p. 58, 60, 61), donc
+    plus besoin de l'etiquette secondaire. (5) Les fiches relues au chat 4 et marquees « verifie » sans recontrole
+    passent a « lu » (73 fiches, plus CIBS-TGAP-2026) ; les 28 fiches cles recontrolees par un verificateur
+    independant passent a « verifie-recontrole » (champ recontrole_a8). Reste ouverte : le gate fee de 100 EUR/t
+    (D-039) s'applique-t-il aussi aux flux propres qui ont aujourd'hui une valeur positive ?
+  preuves: [CIBS-TGAP-2026]
+
+D-041:
+  date: 2026-10-16
+  titre: "Annexe 8 et modele : prix d'entree pre-rempli selon le flux selectionne, modifiable par l'utilisateur"
+  de: "gate fee unique de 100 EUR/t (D-039)"
+  vers: "prix d'entree par defaut propre a chaque flux, applique automatiquement quand le flux est choisi, toujours modifiable a la main (site et tableau Excel)"
+  unite: "EUR/t (positif = la machine est payee ; negatif = la machine achete la matiere)"
+  motif: >
+    Decision de Stephane du 16/10/2026 (13 h 13, chat 4). Valeurs par defaut donnees par Stephane : plastique trie
+    (balles de plastiques melanges) : achat a 249 EUR/t, soit -249 (source RP2-061, juin 2025, livre Europe du Nord-Ouest,
+    VERIFIE) ; PSE : achat a 55 EUR/t, soit -55 (RP-060, PSE blanc de decheterie, 2025, VERIFIE) ; ordures menageres :
+    +100 EUR/t (D-039, HYPOTHESE de Stephane). Valeurs des autres flux : a proposer par Claude a partir des sources,
+    a confirmer par Stephane. Convention de signe proposee par Claude, a confirmer. Modifie D-039 (le 100 EUR/t devient
+    la valeur par defaut des flux payants, pas une valeur unique).
+  preuves: [RP2-061, RP-060]
+  a_verifier: "Valeurs par defaut des autres flux ; convention de signe."
+
+D-042:
+  date: 2026-10-16
+  titre: "Annexe 8 et modele : prix d'entree par defaut de chaque flux et convention de signe"
+  de: "valeurs des autres flux et convention de signe a confirmer (D-041)"
+  vers: "positif = la machine est payee ; negatif = la machine achete ; valeurs par defaut ci-dessous, modifiables"
+  unite: "EUR/t"
+  motif: >
+    Accord de Stephane du 16/10/2026 (14 h 02, chat 4) sur la proposition de Claude. Valeurs par defaut :
+    plastique trie en balles -249 (RP2-061) ; PSE blanc de decheterie -55 (RP-060) ; ordures menageres +100 (D-039) ;
+    films d'emballages menagers, flux developpement, pots et barquettes PS, PSE menager trie : 0 (prix de reprise nuls,
+    A8-MENA-PRIXREPRISE-2025 ; pour les films et le flux developpement, prix nul suppose par la note) ;
+    refus de tri d'emballages professionnels +188 (A8-PRO-NOTE-SOUTIENS-EPRO-2026) ; refus de tri menagers +100
+    (cout reel du detenteur 159 EUR/t TGAP comprise, A8-MENB-DGPR-COUTSREF-2026) ; plastiques bromes, textiles
+    synthetiques non reutilisables, mousses et plastiques d'ameublement, plastiques du batiment : +100 (HYPOTHESE de
+    Stephane, prix reel NON TROUVE).
+  preuves: [RP2-061, RP-060, A8-MENA-PRIXREPRISE-2025, A8-PRO-NOTE-SOUTIENS-EPRO-2026, A8-MENB-DGPR-COUTSREF-2026]

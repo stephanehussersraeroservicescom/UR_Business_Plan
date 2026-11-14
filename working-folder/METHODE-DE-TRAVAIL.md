@@ -43,16 +43,16 @@ Chaque brique passe par cinq étapes :
 
 Une brique validée est **figée**. On ne la modifie plus sans ouvrir une décision datée.
 
-## L'ordre de travail de la version 3 (décidé le 14/10/2026)
+## L'ordre de travail de la version 3 (décidé le 14/10/2026, révisé le 15/10/2026)
 
-On commence par ce que la machine fait réellement, puis ce qu'on lui donne, puis ce que ça rapporte :
+On commence par ce que la machine fait réellement, puis ce que valent ses produits, puis ce qu'on lui donne, puis ce qu'elle coûte :
 
-1. Annexe 2, preuves techniques : rendements, qualité des produits, émissions, énergie. Première étape : inventaire page par page des documents de `reference/preuves/`.
-2. Annexe 1, procédé.
-3. Annexe 9, équipement et coûts.
-4. Annexes 5 à 8, gisements : ordures ménagères, CDG, déchets d'activités économiques, déchets plastiques.
-5. Annexe 3, marchés et prix des produits.
-6. Annexe 4, France : statistiques, réglementation, marché.
+1. Annexe 2, preuves techniques : rendements, qualité des produits, émissions, énergie (faite le 14/10/2026).
+2. Annexe 1, procédé (faite le 15/10/2026).
+3. Annexe 3, marchés et prix des produits, et prix de l'énergie achetée. Elle ne dépend que des annexes 1 et 2.
+4. Annexes 8, 5, 7 et 6, gisements et gate fees : déchets plastiques, ordures ménagères, déchets d'activités économiques, CDG.
+5. Annexe 9, équipement et coûts, quand la cotation OneWorld (R-005) et un devis de pré-tri (R-006) sont arrivés ; sinon avec des hypothèses déclarées.
+6. Annexe 4, France : réglementation, autorisations, fiscalité, concurrence.
 7. Modèle financier, qui ne lit que des briques validées ; les annexes 10 à 13 (économie par gisement) en sortent.
 8. Plan d'affaires, qui résume les annexes et le modèle, sans chiffre qui lui soit propre.
 9. Présentation interactive (application du modèle sur Hetzner).

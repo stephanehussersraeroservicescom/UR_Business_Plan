@@ -2,32 +2,33 @@
 
 **How the Urban Rig performs: conversion yields, product quality, emissions and energy, from the test reports and the manufacturer's documentation.**
 
-Version 3, draft of 14 October 2026, revision 3. Status: written and checked automatically; independent cross-check pending. <!-- nosrc -->
+Version 3, draft of 15 October 2026, revision 4. Status: checked automatically; external cross-check of Sections 2.1 to 2.3 applied, later sections pending. <!-- nosrc -->
 
 ---
 
 ## Key Messages for Investors
 
 **1. The Urban Rig converts plastics into fuel at high rates.**
-- In 11 batch runs on clean PE, PP and PS filed with the Chiba prefectural government in 2022, 9 runs produced between 72 % and 82 % of their input weight as liquid oil ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
+- In 11 batch runs on PE, PP and PS filed with the Chiba prefectural government in 2022, one mixed-plastic run is excluded from the averages (Section 2.2.1) ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-034] -->. Of the 10 runs retained, 8 produced between 72 % and 81 % of their input weight as liquid oil ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->, with a weighted average of 73.1 % ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-huile10-moy-pond), 95 %)<!-- [calc:CALC-A2-HUILE10-MOY-POND] -->.
 - The two lower results (61 % and 55 %) were both on polystyrene, which leaves more solid residue ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
 - **Polyolefins.** On PE and PP, the dominant plastics in packaging, oil yields ranged from 73 % to 81 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
-- **Oil plus gas.** The process also produces a hydrocarbon gas, which the plant burns as fuel. Counting oil and gas together, 87.8 % to 99.6 % of the PE and PP input was converted into fuel ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-palettes), 95 %)<!-- [calc:CALC-A2-CONV-PP-PALETTES] [calc:CALC-A2-CONV-PP-CHUTES] -->.
+- **Oil plus gas by difference.** The operator counts as gas everything that leaves the reactor neither as oil nor as solid residue (operator definition, Chiba report p. 27) ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. On PE and PP, oil plus gas by difference was 87.8 % to 99.6 % of the input ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-palettes), 95 %)<!-- [calc:CALC-A2-CONV-PP-PALETTES] [calc:CALC-A2-CONV-PP-CHUTES] -->. On the 10 runs retained, the gas by difference averaged 16.3 % of the input, weighted by mass ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-moy-pond), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MOY-POND] -->. For mixed waste, the project takes a prudent 10 % of the plastic input as gas ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->.
 
 **2. The manufacturer's design figures are consistent with the tests.**
-- For a feed of 90 % resin-based waste, OneWorld states a daily output of 76.5 % oil and a further 11.5 % "recovery loss", mainly discharged as flue gas ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] [OW-ENG-P16-BILAN] -->.
-- OneWorld also states an oil recovery of "about 85%" from resin-based waste ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->.
-- OneWorld's 2021 demonstration runs on mixed plastics produced 83 % oil overall ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %)<!-- [calc:CALC-A2-OWJ-HUILE] -->, with a weight reduction of 96 % ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->.
+- For a feed of 90 % resin-based waste, OneWorld design data state a daily output of 76.5 % oil and a further 11.5 % "recovery loss", mainly discharged as flue gas ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] [OW-ENG-P16-BILAN] -->. OneWorld's daily table counts 1 litre as 1 kg; Section 2.8 shows it corrected ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-035] -->.
+- OneWorld design data also state an oil recovery of "about 85%" from resin-based waste ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->.
+- OneWorld's 2021 demonstration runs on mixed plastics produced 83 % oil over three days (70 %, 88 % and 91 % per day) ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %; [Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [calc:CALC-A2-OWJ-HUILE] [OWJ-DEMO-2021] -->; oil plus gas by difference, the weight reduction, reached 96 % ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->. The three days are not independent repetitions (Section 2.3.1).
 
 **3. All three products carry energy.**
-- **Oil.** An independent laboratory measured a gross calorific value of 46,000 J/g on oil from municipal packaging plastics, with a density of 0.8642 g/cm³ and a sulphur content below 0.05 % ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->.
+- **Oil.** A third-party laboratory, the Japan Lubricating Oil Society, commissioned by Asada Shokai, reported a gross calorific value of 46,000 J/g (calculated) on oil from municipal packaging plastics, with a density of 0.8642 g/cm³ and a sulphur content below 0.05 % ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->.
 - **Gas.** From its measured composition, the pyrolysis gas has a net calorific value of 37.4 MJ/kg ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-gaz-pci), 90 %)<!-- [calc:CALC-A2-GAZ-PCI] -->.
-- **Char.** The char has a calorific value of 32,090 J/g ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] -->. This is well above the 12,000 kJ/kg minimum for a French solid recovered fuel ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#arrete-csr-2016), 100 %)<!-- [ARRETE-CSR-2016] -->.
+- **Char.** Two values are used, by feed ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] -->: 24.6 MJ/kg for char from plastic residues, the factor applied in the Chiba mass balances ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-pci-char-plastique), 95 %)<!-- [calc:CALC-A2-PCI-CHAR-PLASTIQUE] -->, and 32.09 MJ/kg for char from household waste, measured on a urethane char ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] -->. Both are well above the 12,000 kJ/kg minimum for a French solid recovered fuel ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#arrete-csr-2016), 100 %)<!-- [ARRETE-CSR-2016] -->.
 
-**4. The continuous plant runs on its own gas.**
+**4. On resin-rich feeds, the continuous plant runs on its own gas.**
 - OneWorld's burner rating corresponds to a heat demand of 1,507 MJ per tonne treated ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-bruleur-mj-t), 90 %)<!-- [calc:CALC-A2-BRULEUR-MJ-T] -->.
-- The gas alone provides 2.9 times this demand on a resin-rich feed ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-resine), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-RESINE] --> and 1.2 times on household waste with 10 % resins ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-om), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-OM] -->.
+- The gas alone provides 2.9 times this demand on OneWorld's resin-rich example, with 11.5 % gas ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-resine), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-RESINE] -->, and 3.7 times on pure plastic with 15 % gas, a rounded value of the measured gas by difference ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-plastique15), 90 %; [Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] [hyp:D-038] -->.
 - The oil and the char remain available for sale.
+- On household and municipal waste, self-sufficiency is not established: the tests did not measure their gas, which includes the moisture of the feed. Their energy balance will be built in Annex 5, according to the feed chosen ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->.
 
 **5. Measured emissions are below the current EU limits for waste incineration.**
 - Every measured value is below the daily limits of Directive 2010/75/EU, on the values as reported ([Annex 2.4.a](annexe-02-preuves/A2-4-a-eu-emission-limits.md#ied-2010-75-anx6-p3), 100 %)<!-- [IED-2010-75-ANX6-P3] -->. This covers nitrogen oxides, sulphur oxides, dust, hydrogen chloride and dioxins.
@@ -35,19 +36,19 @@ Version 3, draft of 14 October 2026, revision 3. Status: written and checked aut
 
 **6. Points to secure with OneWorld before financial close** (Section 2.9.1):
 - performance guarantees for the continuous URC-2000 on the target waste mix;
-- the chlorine level of the oil. The oils made from municipal plastics contain 0.137 % and 0.526 % chlorine ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->, below the 1 % level above which EU rules require waste to be burned at 1,100 °C or more ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#ied-2010-75-art50), 100 %)<!-- [IED-2010-75-ART50] -->. This suits them for combustion in a permitted plant (Section 2.4.1). According to OneWorld, the chlorine comes from PVC and similar materials in the feed ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [UR2000-JP-P03-P04-CHLORE] -->. With a PVC-free feed, or after dechlorination, the oil would open the higher-value outlets as well: chemical recycling, marine fuel and jet fuel. A chlorine measurement on oil from a PVC-free feed is requested to confirm it (R-013).
+- the chlorine level of the oil. The oils made from municipal plastics contain 0.137 % and 0.526 % chlorine ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->, below the 1 % level above which EU rules require waste to be burned at 1,100 °C or more ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#ied-2010-75-art50), 100 %)<!-- [IED-2010-75-ART50] -->. This suits them for combustion in a permitted plant (Section 2.4.1). According to OneWorld design data, the chlorine comes from PVC and similar materials in the feed ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [UR2000-JP-P03-P04-CHLORE] -->. With a PVC-free feed, or after dechlorination, the oil would open the higher-value outlets as well: chemical recycling, marine fuel and jet fuel. A chlorine measurement on oil from a PVC-free feed is requested to confirm it (R-013).
 
 ---
 
 ## How to Read This Annex
 
-Following the project's decisions D-016, D-020 and D-021, the manufacturer's documentation is used as the design basis of the plant. The batch tests provide the conversion coefficients and the product qualities.
+Following the project's decisions D-016, D-020, D-021 and D-029, the manufacturer's documentation is used as the design basis of the plant. OneWorld, the manufacturer, is also the sponsor of this business plan (decision D-027): its documentation is marked "OneWorld design data" and has not been verified by a third party. The batch tests provide the conversion coefficients and the product qualities.
 
-Each argument is followed by a link to its evidence file and a confidence level, for example (Annex 2.1.a, 100 %) [hyp:D-022]. The evidence file gives the exact name of the source document with a link to it, the page, the quotation in the original language and the values read. For a calculation, it gives the inputs, the formula and the result. The full list and the confidence scale are in the [index of evidence files](annexe-02-preuves/README.md).
+Each argument is followed by a link to its evidence file and a confidence level, for example (Annex 2.1.a, 100 %) [hyp:D-022]. The evidence file gives the exact name of the source document with a link to it, the page, the quotation in the original language and the values read. For a calculation, it gives the inputs, the formula and the result. The full list and the confidence scale are in the [index of evidence files](annexe-02-preuves/README.md). The confidence percentage measures the confidence in the reading of each document, not the independence of the test <!-- [hyp:D-022] -->.
 
 | Confidence | Applies to |
 |---|---|
-| 100 % | Tests filed with the authorities, independent laboratory reports, legislation, reference data | <!-- nosrc : echelle D-022 -->
+| 100 % | Tests filed with the authorities, third-party laboratory reports, legislation, reference data | <!-- nosrc : echelle D-022 -->
 | 95 % | Manufacturer documentation (OneWorld); peer-reviewed literature; calculations on data at 95 % or more | <!-- nosrc : echelle D-022 -->
 | 90 % | Calculations using a working assumption ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md)); manufacturer table without printed author; patents | <!-- nosrc : echelle D-022 -->
 | 80 % | Secondary sources | <!-- nosrc : echelle D-022 -->
@@ -56,21 +57,21 @@ Each argument is followed by a link to its evidence file and a confidence level,
 
 ## 2.1 Test Programme Overview
 
-The core evidence is a test programme run in 2022 at the Noda plant of Asada Shokai (朝田商会), Chiba Prefecture, Japan ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %)<!-- [CHIBA-RAPPORT-2023] -->.
+The core evidence is a test programme run by Asada Shokai (朝田商会) at its Noda plant, Chiba Prefecture, Japan (March to September 2022) and reported to the Governor of Chiba Prefecture ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %)<!-- [CHIBA-RAPPORT-2023] -->. The plant was supplied and operated by OneWorld; measurements and analyses were made by Land Brain and third-party laboratories ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %)<!-- [CHIBA-RAPPORT-2023] -->.
 
-- **Machine.** An URBAN RIG batch unit manufactured and operated by OneWorld. Land Brain Co. was responsible for measurements and analyses ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %)<!-- [CHIBA-RAPPORT-2023] -->.
+- **Machine.** An URBAN RIG batch unit, described by the operator as a test unit ([Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-constats), 100 %)<!-- [CHIBA-CONSTATS] -->.
 - **Permit and period.** The tests ran under a prefectural authorisation from 2022-03-02 to 2022-09-30, for up to 12,000 kg of waste ([Annex 2.1.d](annexe-02-preuves/A2-1-d-chiba-permit.md#chiba-autorisation-2022), 100 %)<!-- [CHIBA-AUTORISATION-2022] -->.
 - **Report.** The final report was submitted to the Governor of Chiba on 2023-01-30 ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %)<!-- [CHIBA-RAPPORT-2023] -->.
 
 | Evidence | Date | Equipment | Scale | Measured by | Source |
 |---|---|---|---|---|---|
 | Chiba test programme: yields, mass and energy balances | 2022 | URBAN RIG batch unit | 20 to 60 kg per run | Operator (Asada Shokai, OneWorld operating) | ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %; [Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-ESSAIS-FICHES] [CHIBA-BILANS] --> |
-| Chiba programme: oil, char, water, emissions, odour, noise | 2022 | Same | Same runs | Independent laboratories (Japan Lubricating Oil Society; Oosumi Co.) | ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %; [Annex 2.2.d](annexe-02-preuves/A2-2-d-oosumi-exhaust-2022.md#chiba-oosumi-fumees), 100 %)<!-- [CHIBA-JLOS-HUILES] [CHIBA-OOSUMI-FUMEES] --> |
-| Off-gas composition, stack emissions, odour | 2020 | Superheated steam carbonisation unit | Not stated | KANSO Technos (independent) | ([Annex 2.2.f](annexe-02-preuves/A2-2-f-kanso-gas-analysis-2020.md#kanso-b2002600), 100 %; [Annex 2.2.g](annexe-02-preuves/A2-2-g-kanso-exhaust-odour-2020.md#kanso-20002610), 100 %)<!-- [KANSO-B2002600] [KANSO-20002610] --> |
-| Stack emissions, odour, dioxins | 2023 | Waste plastic oil demonstration facility | Not stated | Tanabe; N.E. Support; Kankyo Kogai Bunseki Center (independent) | ([Annex 2.2.h](annexe-02-preuves/A2-2-h-exhaust-dioxins-2023.md#tanabe-2023), 100 %)<!-- [TANABE-2023] [DIOXINES-2023] --> |
+| Chiba programme: oil, char, water, emissions, odour, noise | 2022 | Same | Same runs | Third-party laboratories: Japan Lubricating Oil Society, commissioned by Asada Shokai; Oosumi Co., commissioned by Land Brain | ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %; [Annex 2.2.d](annexe-02-preuves/A2-2-d-oosumi-exhaust-2022.md#chiba-oosumi-fumees), 100 %)<!-- [CHIBA-JLOS-HUILES] [CHIBA-OOSUMI-FUMEES] --> |
+| Off-gas composition, stack emissions, odour | 2020 | Superheated steam carbonisation unit | Not stated | KANSO Technos, commissioned by OneWorld; odour measured by Total Kankyo System for KANSO | ([Annex 2.2.f](annexe-02-preuves/A2-2-f-kanso-gas-analysis-2020.md#kanso-b2002600), 100 %; [Annex 2.2.g](annexe-02-preuves/A2-2-g-kanso-exhaust-odour-2020.md#kanso-20002610), 100 %; [Annex 2.2.g](annexe-02-preuves/A2-2-g-kanso-exhaust-odour-2020.md#tes-odeur-2020), 100 %)<!-- [KANSO-B2002600] [KANSO-20002610] [TES-ODEUR-2020] --> |
+| Stack emissions, odour, dioxins | 2023 | Waste plastic oil demonstration facility | Not stated | Third-party laboratories: Tanabe Kankyo Kogaku, N.E. Support, Kankyo Kogai Bunseki Center; client name masked | ([Annex 2.2.h](annexe-02-preuves/A2-2-h-exhaust-dioxins-2023.md#tanabe-2023), 100 %)<!-- [TANABE-2023] [DIOXINES-2023] --> |
 | Mixed plastic demonstration, URT-10 truck-mounted unit | 2021 | URT-10 | About 100 kg per day, 3 days | OneWorld Japan | ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] --> |
 | Waste tyre demonstration | 2020 | 4.8 t batch machine | 450 kg | One World Techno | ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owt-demo-2020), 95 %)<!-- [OWT-DEMO-2020] --> |
-| URC-2000 continuous plant specification | 2019 to 2020 | URC-2000 | 200 t per day | OneWorld (design data) | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [UR2000-JP-P08-SPEC] [OW-ENG-P16-BILAN] --> |
+| URC-2000 continuous plant specification | 2019 (English brochure); Japanese brochure undated | URC-2000 | 200 t per day | OneWorld (design data) | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [UR2000-JP-P08-SPEC] [OW-ENG-P16-BILAN] --> |
 
 **Scope of the evidence**
 
@@ -87,9 +88,9 @@ The core evidence is a test programme run in 2022 at the Noda plant of Asada Sho
 Each run in the Chiba report has its own test sheet ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
 - **Oil yield** is reported by the operator as oil weight over input weight.
 - **Gas** is the remainder: input minus oil minus solid residue. It consists of the non-condensable hydrocarbon gas, which the Urban Rig burns as fuel, and any moisture or losses.
-- **Conversion to fuel** adds oil and gas.
+- **Oil + gas by difference** adds the two. It is the operator's balance, not a measured fuel yield.
 
-| Date | Feedstock | Input (kg) | Oil (kg) | Gas (kg) | Solid residue (kg) | Oil yield | Conversion to fuel (oil + gas) |
+| Date | Feedstock | Input (kg) | Oil (kg) | Gas (kg) | Solid residue (kg) | Oil yield | Oil + gas by difference |
 |---|---|---|---|---|---|---|---|
 | 2022-03-02 | PE pellets | 20 | 14.8 | 4.9 | 0.3 | 74 % | 98.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pe-gran), 95 %)<!-- [calc:CALC-A2-CONV-PE-GRAN] --> |
 | 2022-03-09 | PE moulding offcuts | 40 | 30.7 | 8.8 | 0.5 | 77 % | 98.8 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pe-chutes), 95 %)<!-- [calc:CALC-A2-CONV-PE-CHUTES] --> |
@@ -97,30 +98,43 @@ Each run in the Chiba report has its own test sheet ([Annex 2.1.a](annexe-02-pre
 | 2022-04-08 | PP pellets | 20 | 16.2 | 3.3 | 0.5 | 81 % | 97.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-gran), 95 %)<!-- [calc:CALC-A2-CONV-PP-GRAN] --> |
 | 2022-04-16 | PP moulding offcuts | 50 | 39.8 | 10.0 | 0.2 | 80 % | 99.6 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-chutes), 95 %)<!-- [calc:CALC-A2-CONV-PP-CHUTES] --> |
 | 2022-06-28 | PP pallets (waste) | 50 | 36.5 | 7.4 | 6.1 | 73 % | 87.8 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-palettes), 95 %)<!-- [calc:CALC-A2-CONV-PP-PALETTES] --> |
-| 2022-05-26 | PE/PP/PS mix ("3P") offcuts | 60 | 43.1 | 11.7 | 5.2 | 72 % | 91.3 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-3p-0526), 95 %)<!-- [calc:CALC-A2-CONV-3P-0526] --> |
-| 2022-07-11 | PE/PP/PS mix ("3P") offcuts | 60 | 49.4 | 1.3 | 9.3 | 82 % | 84.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-3p-0711), 95 %)<!-- [calc:CALC-A2-CONV-3P-0711] --> |
+| 2022-05-26 | PE/PP/PS mix ("3P"), see note | 60 | 43.1 | 11.7 | 5.2 | 72 % | 91.3 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-3p-0526), 95 %)<!-- [calc:CALC-A2-CONV-3P-0526] --> |
+| 2022-07-11 | PE/PP/PS mix ("3P"), see note; excluded from the averages | 60 | 49.4 | 1.3 | 9.3 | 82 % | 84.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-3p-0711), 95 %)<!-- [calc:CALC-A2-CONV-3P-0711] --> |
 | 2022-07-07 | PS foam (waste) | 50 | 36.3 | 3.8 | 9.9 | 73 % | 80.2 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-ps-expanse), 95 %)<!-- [calc:CALC-A2-CONV-PS-EXPANSE] --> |
 | 2022-03-17 | PS pellets | 20 | 12.2 | 4.0 | 3.8 | 61 % | 81.0 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-ps-gran), 95 %)<!-- [calc:CALC-A2-CONV-PS-GRAN] --> |
 | 2022-03-31 | PS moulding offcuts | 40 | 22.0 | 2.7 | 15.3 | 55 % | 61.8 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-ps-chutes), 95 %)<!-- [calc:CALC-A2-CONV-PS-CHUTES] --> |
 
 Source: ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->, test sheets, PDF p. 19 to 24 (printed p. 13 to 18).
 
+**The two mixed-plastic runs.** Two runs on PE/PP/PS mixtures, described in the report as moulded-product offcuts (成型端材) ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->; according to Stéphane Husser, mixed plastic waste of unknown composition. The run of 2022-07-11 is shown but excluded from the averages ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-034] -->: unconverted pieces are visible in the residue (photo, PDF p. 24), and it has the lowest gas (2.2 %) and the highest oil yield (82.3 %) of the 11 runs ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-offgas-0711), 95 %; [Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-rdt-huile-0711), 95 %)<!-- [calc:CALC-A2-OFFGAS-0711] [calc:CALC-A2-RDT-HUILE-0711] -->, a doubtful balance.
+
 ### 2.2.2 Summary by Polymer Type
 
-| Polymer | Runs | Oil yield | Conversion to fuel (oil + gas) |
+| Polymer | Runs | Oil yield | Oil + gas by difference |
 |---|---|---|---|
 | PE | 3 | 74 % to 81 % | 98.2 % to 98.8 % |
 | PP | 3 | 73 % to 81 % | 87.8 % to 99.6 % |
-| PE/PP/PS mix | 2 | 72 % to 82 % | 84.5 % to 91.3 % |
+| PE/PP/PS mix | 1 retained, 1 excluded | 72 % | 91.3 % |
 | PS | 3 | 55 % to 73 % | 61.8 % to 81.0 % |
 
 Source: Section 2.2.1 ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
 
 **Reading for investors**
 
-- **PE and PP convert almost completely.** Little solid residue remains (Section 2.2.1). Post-consumer PE containers and PP pallets gave 81 % and 73 % oil, in the same range as virgin PE and PP pellets at 74 % and 81 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
+- **PE and PP convert well.** Little solid residue remains on most runs, but the PP pallet run left 6.1 kg of residue from 50 kg ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. Post-consumer PE containers and PP pallets gave 81 % and 73 % oil, in the same range as virgin PE and PP pellets at 74 % and 81 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
 - **Polystyrene leaves more residue.** In the moulding offcuts run, 15.3 kg of the 40 kg input stayed in the reactor ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. This is the only run below 60 % oil yield ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. The PS foam run, which is closer to real PS waste, reached 73 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
-- **The split between oil and gas varies from run to run.** On the two identical mixed-plastic runs, the gas share was 19.5 % in May and 2.2 % in July ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-offgas-0526), 95 %)<!-- [calc:CALC-A2-OFFGAS-0526] [calc:CALC-A2-OFFGAS-0711] -->. The oil yield moved in the opposite direction: 71.8 % and 82.3 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-rdt-huile-0526), 95 %)<!-- [calc:CALC-A2-RDT-HUILE-0526] [calc:CALC-A2-RDT-HUILE-0711] -->. The total conversion to fuel stayed between 84.5 % and 91.3 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-3p-0711), 95 %)<!-- [calc:CALC-A2-CONV-3P-0711] [calc:CALC-A2-CONV-3P-0526] -->.
+- **The split between oil and gas varies from run to run.** On the 10 runs retained, the gas by difference ranges from 6.75 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-min), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MIN] --> to 24.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-max), 95 %)<!-- [calc:CALC-A2-GAZDIFF-MAX] -->.
+- **Batch tests and the continuous plant.** According to the project team, the internal tests carried out so far in continuous operation have shown higher yields than the batch tests. These data are not yet in this dossier. Tests on the same feed and the same basis of comparison remain to be done ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-036] -->. The financial model starts from the batch yields.
+
+**Gas by difference on the pure plastic runs.** On the 10 runs retained ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %; [Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [CHIBA-ESSAIS-FICHES] [hyp:D-034] -->:
+- weighted mean 16.25 % of the input ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-moy-pond), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MOY-POND] -->; simple mean 16.84 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-moy-simple), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MOY-SIMPLE] -->; median 18.15 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-mediane), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MEDIANE] -->;
+- range from 6.75 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-min), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MIN] --> to 24.5 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-max), 95 %)<!-- [calc:CALC-A2-GAZDIFF-MAX] -->;
+- by resin: PE 20.09 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-pe), 95 %)<!-- [calc:CALC-A2-GAZDIFF-PE] -->, PP 17.25 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-pp), 95 %)<!-- [calc:CALC-A2-GAZDIFF-PP] -->, PS 9.55 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-ps), 95 %)<!-- [calc:CALC-A2-GAZDIFF-PS] -->, PE/PP/PS mix 19.5 %, one run ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-offgas-0526), 95 %)<!-- [calc:CALC-A2-OFFGAS-0526] -->;
+- oil 73.07 % ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-huile10-moy-pond), 95 %)<!-- [calc:CALC-A2-HUILE10-MOY-POND] --> and solid residue 10.65 % ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-residu10-moy-pond), 95 %)<!-- [calc:CALC-A2-RESIDU10-MOY-POND] -->, weighted means.
+
+Including the excluded run, the weighted mean of the gas on the 11 runs is 14.41 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff-moy-pond), 95 %)<!-- [calc:CALC-A2-GAZDIFF-MOY-POND] -->.
+
+For a dry plastic, this balance is essentially gas. For pure plastic, the business plan takes the gas at 15 % of the input, a rounded value of the measured means ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] -->. For mixed waste, it takes the gas produced by the plastic fraction at 10 % of the plastic input, a prudent value close to the lowest observations ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->. The composition is taken from the analysed gas without air (Section 2.5.1); the uncertainty lies in the quantity, not the composition ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->.
 
 ### 2.2.3 Municipal Waste and Mixed Feedstock Tests
 
@@ -131,35 +145,43 @@ The Chiba programme also tested three real waste streams ([Annex 2.1.a](annexe-0
 - **Municipal non-combustible residue (不燃物残渣).** The residue of Noda City's non-combustible waste collection. The laboratory names the oil made from it "residue plastic oil" (残渣プラ生成油) ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->.
 - **Industrial shredder residue (シュレッダーダスト).** Supplied by a recycling company in Ibaraki ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
 
+**Not raw household waste.** These two runs were made on plastic packaging collected separately and on the residue of non-combustible waste collection, not on raw household waste.
+
 **Non-plastic content.** The report gives no laboratory composition of these streams.
 - The photographs on the test sheets show mainly plastic films and bags (PDF p. 26).
-- After each run, the operator weighed separately the "metals and foreign matter" (金属・異物) left in the reactor. This weight measures the non-convertible part of the feed.
-  - Packaging plastics: 10.5 kg of the 50 kg input, i.e. 21.0 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-nonplast-noda-0909), 95 %)<!-- [calc:CALC-A2-NONPLAST-NODA-0909] -->.
+- After each run, the operator weighed separately the "metals and foreign matter" (金属・異物) recovered from the reactor after treatment.
+  - Packaging plastics: 13.9 kg of the 50 kg input, i.e. 27.8 %, according to the mass balance (page 42) ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-nonplast-noda-0909), 95 %; [Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [calc:CALC-A2-NONPLAST-NODA-0909] [hyp:D-033] -->; the test sheet (page 26) gives 10.5 kg (see the box below).
   - Non-combustible residue: 5.4 kg, i.e. 10.8 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-nonplast-noda-0915), 95 %)<!-- [calc:CALC-A2-NONPLAST-NODA-0915] -->.
 - The report does not say what the foreign matter consisted of (glass, stones, ceramics or other).
 
-**Yields on the convertible part of the feed.** Metals and foreign matter cannot become oil or gas. The operator therefore reported the oil yield on the input minus that weight, which is the relevant basis for a plant with pre-sorting. Both bases are shown.
+**Yields excluding metals and foreign matter recovered after treatment.** Metals and foreign matter produce neither oil nor gas. The yield on the input minus that weight is the yield of the reactor feed after pre-sorting; the yield on the raw input gives the oil per tonne received. Both bases are shown ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-035] -->.
 
 | | Packaging plastics, 2022-09-09 | Non-combustible residue, 2022-09-15 |
 |---|---|---|
 | Input (kg) | 50 | 50 |
-| Metals and foreign matter (kg) | 10.5 | 5.4 |
+| Metals and foreign matter recovered after treatment (kg) | 13.9 (page 42) | 5.4 |
 | Oil (kg) | 16.1 | 22.5 |
-| Gas (kg) | 9.5 | 10.8 |
-| Char (kg) | 13.9 | 11.3 |
-| Oil yield excluding metals and foreign matter | 40.8 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] --> | 50.4 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] --> |
-| Conversion to fuel (oil + gas) excluding metals and foreign matter | 64.8 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] --> | 74.7 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] --> |
-| Conversion to fuel on total input | 51.2 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-total), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-TOTAL] --> | 66.6 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0915-total), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0915-TOTAL] --> |
+| Gas by difference (kg) | 9.5 | 10.8 |
+| Char (kg) | 10.5 (page 42) | 11.3 |
+| Process water in / discharged / evaporated (L) | 100 / 73 / 27 | 100 / 85 / 15 |
+| Oil yield on raw input | 32.2 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-brut), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-BRUT] --> | 45.0 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-brut), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0915-BRUT] --> |
+| Oil yield excluding metals and foreign matter recovered after treatment | 44.6 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] --> | 50.4 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] --> |
+| Gas by difference, excluding metals and foreign matter | 26.3 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-gaz-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-GAZ-NODA-0909-HORSMETAUX] --> | 24 % (test sheet) ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> |
+| Oil + gas by difference, excluding metals and foreign matter | 70.9 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] --> | 74.7 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] --> |
+| Oil + gas by difference, on total input | 51.2 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-total), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-TOTAL] --> | 66.6 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0915-total), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0915-TOTAL] --> |
 
-Source: ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->, test sheet PDF p. 26 (printed p. 20).
+Source: ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->, test sheet PDF p. 26 (printed p. 20); ([Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-BILANS] -->, mass balance PDF p. 42 (printed p. 36) for the metals, char and water ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-033] -->. The oil mass is the value printed by the operator; the oil was measured by dipstick in drums after settling, not weighed ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-procede-huile), 100 %)<!-- [CHIBA-PROCEDE-HUILE] -->.
 
 **Reading for investors**
 
-- **Lower than clean plastics, as expected for a mixed and soiled stream.** Even so, 64.8 % and 74.7 % of the convertible material became oil or gas ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] -->.
-- **Char is a larger product.** On these two runs, char represents 11.3 to 13.9 kg per 50 kg of input ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. Its value is discussed in Section 2.4.4 and Annex 3.
-- **Shredder residue is not a suitable feedstock.** It lost 80.4 % of its weight in the reactor ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-broyage-0809), 95 %)<!-- [calc:CALC-A2-CONV-BROYAGE-0809] -->. However, the oil solidified and could not be measured, and the operator judged the material unsuitable for oil production ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. Shredder residue is not among the business plan's feedstocks (decision D-017).
+- **Lower than clean plastics, as expected for a mixed and soiled stream.** Oil plus gas by difference was 70.9 % and 74.7 % of the reactor feed after removal of metals and foreign matter ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] -->.
+- **Moisture is counted in the gas.** For these two feeds, the gas by difference also includes the moisture of the waste, which has weight but no energy. The moisture was not measured ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->, so these totals are not fuel yields.
+- **Char is a larger product.** On these two runs, char represents 10.5 to 11.3 kg per 50 kg of input ([Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-BILANS] -->. Its value is discussed in Section 2.4.4 and Annex 3.
+- **Shredder residue is not a suitable feedstock.** It lost 80.4 % of its weight in the reactor ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-broyage-0809), 95 %)<!-- [calc:CALC-A2-CONV-BROYAGE-0809] -->. However, the oil solidified and could not be measured, and the operator judged the material unsuitable for oil production ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. Shredder residue is excluded from the business plan, on the report's judgement (PDF p. 1 note ※3 and p. 43) ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-rapport-2023), 100 %; [Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [CHIBA-RAPPORT-2023] [hyp:D-037] -->.
 
-**One discrepancy to clarify.** The energy balance of the 2022-09-09 run swaps the metal and char weights (13.9 kg of metals, 10.5 kg of char) compared with the test sheet ([Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-BILANS] -->. The test sheet is used here because the operator's reported oil yield of 41 % matches it ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> (request R-018).
+**Inconsistencies in the source (pages 26 and 42).**
+- Metals and char of the 2022-09-09 run: the test sheet (page 26) gives 10.5 kg of metals and foreign matter and 13.9 kg of char; the mass balance (page 42) gives 13.9 kg and 10.5 kg ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %; [Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-ESSAIS-FICHES] [CHIBA-BILANS] -->. Page 42 is used, as a complete balance of inputs, products and energy ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-033] -->. The 41 % oil yield printed on page 26 is calculated with 10.5 kg of metals ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->.
+- Water: page 26 gives 52 L of drainage water for both runs; page 42 gives 100 L of water in, with 73 L discharged and 27 L evaporated on 2022-09-09, and 85 L and 15 L on 2022-09-15 ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %; [Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-ESSAIS-FICHES] [CHIBA-BILANS] -->. Page 42 is used; the evaporated volumes are probably calculated by difference.
 
 ---
 
@@ -167,41 +189,41 @@ Source: ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essai
 
 ### 2.3.1 Materials Tested on Urban Rig Equipment
 
-| Material | Oil yield | Conversion to fuel (oil + gas) | Basis | Evidence |
+| Material | Oil yield | Oil + gas by difference | Basis | Evidence |
 |---|---|---|---|---|
 | PE | 74 % to 81 % | 98.2 % to 98.8 % | Test | ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> |
 | PP | 73 % to 81 % | 87.8 % to 99.6 % | Test | ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> |
 | PS | 55 % to 73 % | 61.8 % to 81.0 % | Test | ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> |
-| Municipal packaging plastics (excluding metals and foreign matter) | 40.8 % | 64.8 % | Calculated | ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] --> |
-| Municipal non-combustible residue (excluding metals and foreign matter) | 50.4 % | 74.7 % | Calculated | ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] --> |
-| Mixed plastics, mainly PP, PE and PS, URT-10 (3 runs, 299.2 kg) | 83 % | 96 % weight reduction | Manufacturer | ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %; [Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %)<!-- [OWJ-DEMO-2021] [calc:CALC-A2-OWJ-HUILE] --> |
+| Municipal packaging plastics (excluding metals and foreign matter recovered after treatment) | 44.6 % | 70.9 % | Calculated | ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %; [Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-conv-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0909-HORSMETAUX] --> |
+| Municipal non-combustible residue (excluding metals and foreign matter recovered after treatment) | 50.4 % | 74.7 % | Calculated | ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] [calc:CALC-A2-CONV-NODA-0915-HORSMETAUX] --> |
+| Mixed plastics, mainly PP, PE and PS, URT-10 (3 runs, 299.2 kg) | 83 % cumulated (70 %, 88 % and 91 % per day) | 96 % (weight reduction) | Manufacturer | ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %; [Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %)<!-- [OWJ-DEMO-2021] [calc:CALC-A2-OWJ-HUILE] --> |
 | Waste tyres (450 kg) | about 180 L of oil, 133 kg of char, 111 kg of steel wire | not stated | Manufacturer | ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owt-demo-2020), 95 %)<!-- [OWT-DEMO-2020] --> |
 
-The 2021 URT-10 report also notes that oil from the second day probably included gas from the first day that condensed overnight ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->.
+**Limits of the 2021 URT-10 runs.** The report notes a leak of off-gas at the catalytic layer on day 1 (p. 2) ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->. On days 2 and 3, the reactor was cooled without steam (p. 5 and 8) ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->. Oil from the second day probably included gas from the first day that condensed overnight, and glass fibre from FRP was found in the day 2 residue ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->. The three days are therefore not independent repetitions; only the cumulative 83 % is used.
 
 ### 2.3.2 Polymers Without Urban Rig Test Data
 
-**PET, PVC, polyamides, superabsorbent polymers: INCONNU** on Urban Rig equipment.
-- According to OneWorld, the Urban Rig can also extract recycled oil from PVC waste ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->.
+**PET, polyamides, superabsorbent polymers: INCONNU** on Urban Rig equipment. **PVC:** no quantified yield data; one observation only (below).
+- According to OneWorld design data, the Urban Rig can also extract recycled oil from PVC waste ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->.
 - In the 2021 URT-10 runs, PVC pipe pieces in the feed stopped at the melting stage ([Annex 2.3.d](annexe-02-preuves/A2-3-d-oneworld-demonstrations.md#owj-demo-2021), 95 %)<!-- [OWJ-DEMO-2021] -->.
 - Test data have been requested from OneWorld (R-021). Published literature will be sourced in a separate brick.
 
 ### 2.3.3 Non-Plastic Materials
 
 **Paper and board, wood, food waste, textiles: INCONNU** on Urban Rig equipment.
-- According to OneWorld, food waste, paper and wood are converted into a char that substitutes for coal ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
-- For household waste containing 10 % resins, OneWorld states 25 % char, 5 % oil and 5 % off-gas ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
+- According to OneWorld design data, food waste, paper and wood are converted into a char that substitutes for coal ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
+- For household waste containing 10 % resins, OneWorld design data state 25 % char, 5 % oil and 5 % off-gas ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
 - Test data on these materials are the main item for the municipal waste scenarios (Annexes 5 and 10; request R-021).
 
 ---
 
 ## 2.4 Oil Quality: Laboratory Analysis
 
-### 2.4.1 Independent Laboratory Analyses of the Oil
+### 2.4.1 Third-Party Laboratory Analyses of the Oil
 
 | Parameter | Oil from municipal packaging plastics (2022) | Oil from municipal non-combustible residue (2022) | Fuel oil sample supplied by OneWorld (2019) |
 |---|---|---|---|
-| Laboratory | Japan Lubricating Oil Society | Japan Lubricating Oil Society | NKKK (Japan Marine Survey Association), Osaka |
+| Laboratory | Japan Lubricating Oil Society, commissioned by Asada Shokai | Japan Lubricating Oil Society, commissioned by Asada Shokai | NKKK (Japan Marine Survey Association), Osaka, commissioned by OneWorld |
 | Gross calorific value (J/g) | 46,000 (calculated by the lab) | 45,000 (calculated by the lab) | 43,270 (measured, JIS K 2279) |
 | Density at 15 °C (g/cm³) | 0.8642 | 0.8762 | not measured |
 | Kinematic viscosity at 50 °C (mm²/s) | 1.706 | 1.759 | 1.11 |
@@ -216,10 +238,10 @@ Source: ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-
 
 **Reading for investors**
 
-- **Energy content.** The oil from municipal packaging plastics reached 46,000 J/g ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->. A second independent laboratory measured 43,600 J/g on an Urban Rig oil made from urethane ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339440), 100 %)<!-- [IZUMITEC-R35-339440] -->. The project uses 46,000 J/g as its reference value for the oil ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->.
+- **Energy content.** The oil from municipal packaging plastics reached 46,000 J/g ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->. A second laboratory, Izumitec, measured 43,600 J/g on an Urban Rig oil made from urethane ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339440), 100 %)<!-- [IZUMITEC-R35-339440] -->. The project uses 46,000 J/g as its reference value for the oil ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->.
 - **Light, low-sulphur product.** The oil is light (density 0.8642 to 0.8762), fluid at 50 °C and low in sulphur and ash ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->.
 - **Chlorine.** The oils made from real municipal waste contain 1,370 and 5,260 ppm of chlorine ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-jlos-cl-emb-ppm), 95 %)<!-- [calc:CALC-A2-JLOS-CL-EMB-PPM] [calc:CALC-A2-JLOS-CL-RES-PPM] -->. This is typical of oils from post-consumer plastic waste: a 2022 review reports about 1,460 ppm ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#kusenberg-wm-2022), 95 %)<!-- [KUSENBERG-WM-2022] -->.
-- **Form of the chlorine.** The reports do not say whether the chlorine is in organic compounds, in dissolved hydrogen chloride or in mineral salts. Both oils have an acidic reaction ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->. According to OneWorld, the chlorine released by PVC turns into dilute hydrochloric acid in the steam ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [UR2000-JP-P03-P04-CHLORE] -->. The 2019 NKKK analysis measured inorganic chlorine only ([Annex 2.2.i](annexe-02-preuves/A2-2-i-nkkk-oil-2019.md#nkkk-zpe8004-2019), 95 %)<!-- [NKKK-ZPE8004-2019] -->. The split between organic and inorganic chlorine is requested (R-013).
+- **Form of the chlorine.** The reports do not say whether the chlorine is in organic compounds, in dissolved hydrogen chloride or in mineral salts. Both oils have an acidic reaction ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->. According to OneWorld design data, the chlorine released by PVC turns into dilute hydrochloric acid in the steam ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [UR2000-JP-P03-P04-CHLORE] -->. The 2019 NKKK analysis measured inorganic chlorine only ([Annex 2.2.i](annexe-02-preuves/A2-2-i-nkkk-oil-2019.md#nkkk-zpe8004-2019), 95 %)<!-- [NKKK-ZPE8004-2019] -->. The split between organic and inorganic chlorine is requested (R-013).
 - **Why the 2019 value is so much lower.** The three results do not measure the same thing on the same oil:
   - in 2019, NKKK measured inorganic chlorine only, by silver nitrate titration, on a "fuel oil" sample supplied by OneWorld, whose machine, feed and treatment are not stated; organic chlorine was not measured ([Annex 2.2.i](annexe-02-preuves/A2-2-i-nkkk-oil-2019.md#nkkk-zpe8004-2019), 95 %)<!-- [NKKK-ZPE8004-2019] -->;
   - in 2022, the laboratory measured the chlorine content of raw oils made from real municipal waste, without stating the method ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->.
@@ -237,15 +259,15 @@ Source: ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-
 | Steam cracker feedstock (industrial threshold, not a legal limit) | 3 ppm | ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#kusenberg-aiche-2021), 95 %)<!-- [KUSENBERG-AICHE-2021] --> | 457 and 1,753 times above ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-cl-vapo-emb), 95 %)<!-- [calc:CALC-A2-CL-VAPO-EMB] [calc:CALC-A2-CL-VAPO-RES] --> |
 
 **What this means.** As produced, the oil from municipal plastics is an industrial fuel for a permitted combustion plant. Selling it as a chemical feedstock (steam cracking) or as a marine fuel requires dechlorination to below 10 ppm ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#borealis-ep4389855), 90 %; [Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#kusenberg-aiche-2021), 95 %)<!-- [BOREALIS-EP4389855] [KUSENBERG-AICHE-2021] -->.
-- According to OneWorld, the URC-2000 removes chlorine with a catalytic layer before condensation ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %; [Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] [UR2000-JP-P03-P04-CHLORE] -->. The Noda test unit also had a catalytic reaction tank between the pyrolysis furnace and the condenser ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-procede-huile), 100 %)<!-- [CHIBA-PROCEDE-HUILE] -->. The report does not state its function, its type or its condition. The chlorine levels above were therefore measured after a catalytic stage, whose relation to the URC-2000 dechlorination layer is to be confirmed (R-013).
+- According to OneWorld design data, the URC-2000 removes chlorine with a catalytic layer before condensation ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %; [Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p03-p04-chlore), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] [UR2000-JP-P03-P04-CHLORE] -->. The Noda test unit also had a catalytic reaction tank between the pyrolysis furnace and the condenser ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-procede-huile), 100 %)<!-- [CHIBA-PROCEDE-HUILE] -->. The report does not state its function, its type or its condition. The chlorine levels above were therefore measured after a catalytic stage, whose relation to the URC-2000 dechlorination layer is to be confirmed (R-013).
 - The oil from clean PE and PP feed, with little PVC, is the natural candidate for the higher-value outlets. Its chlorine content is to be measured.
 - Prices for each outlet are covered in Annex 3.
 
 ### 2.4.2 Oil Fraction Distribution
 
 **OneWorld's design split for the URC-2000.**
-- According to OneWorld, the continuous plant condenses the vapours in zones heated to 150, 300, 450 and 600 °C, giving kerosene, gas oil, heavy oil and asphaltenes ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->.
-- For a 90 % resin feed, OneWorld states the output as 61.2 % gas (diesel) oil, 7.65 % heating oil and 7.65 % heavy oil, as shares of the input ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->. That is 76.5 % oil in total ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] -->, of which the diesel cut is the largest part.
+- According to OneWorld design data, the continuous plant condenses the vapours in zones heated to 150, 300, 450 and 600 °C, giving kerosene, gas oil, heavy oil and asphaltenes ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->.
+- For a 90 % resin feed, OneWorld design data state the output as 61.2 % gas (diesel) oil, 7.65 % heating oil and 7.65 % heavy oil, as shares of the input ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->. That is 76.5 % oil in total ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] -->, of which the diesel cut is the largest part.
 
 **Distillation at Chiba** (operator, on 200 mL of oil from each virgin plastic) ([Annex 2.1.c](annexe-02-preuves/A2-1-c-chiba-distillation.md#chiba-distillation), 100 %)<!-- [CHIBA-DISTILLATION] -->:
 
@@ -278,9 +300,13 @@ These shares are before treatment (reading by Claude, not quantified): hydrogena
 
 ### 2.4.4 Char: Calorific Value and Composition
 
-**Calorific value.** Izumitec Co. measured 32,090 J/g on a urethane char, using the JIS M 8814 calorimeter method ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] -->. The project treats this value as representative of Urban Rig char ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. According to OneWorld, the char from food waste, paper and wood is a coal substitute ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
+**Calorific value: two values, by feed** ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] -->.
+- **Char from plastic residues: 24.6 MJ/kg**, the factor applied to char in the Chiba mass balances (5,880 kcal/kg, PDF p. 41 and 42) ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-pci-char-plastique), 95 %)<!-- [calc:CALC-A2-PCI-CHAR-PLASTIQUE] -->. Its origin is not stated in the report (R-012). It also applies to the two Noda runs.
+- **Char from household waste: 32.09 MJ/kg**, measured by Izumitec Co. on a urethane char with the JIS M 8814 calorimeter method ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] -->. Working assumption of the sponsor: the organic matter, emptied of its water, acts at the end of pyrolysis as a sponge whose pores fill with heavy hydrocarbons ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] -->. Ash and minerals, which lower the calorific value, remain to be measured (R-012).
 
-**Why char matters for municipal waste.** On the two municipal runs, char was 11.3 to 13.9 kg per 50 kg of input ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. In a feed containing paper, wood or food waste, the organic fraction becomes char. At 32,090 J/g, the char from one tonne of plastic packaging (Noda run) carries 11,292 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-noda), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-NODA] -->, about 60 % of the energy in the oil from the same tonne, 18,749 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-noda), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-NODA] -->.
+According to OneWorld design data, the char from food waste, paper and wood is a coal substitute ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->.
+
+**Why char matters for municipal waste.** On the two municipal runs, char was 10.5 to 11.3 kg per 50 kg of input ([Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-bilans), 100 %)<!-- [CHIBA-BILANS] -->. In a feed containing paper, wood or food waste, the organic fraction becomes char. At 24.6 MJ/kg, the char from one tonne of plastic packaging fed to the reactor (Noda run, page 42) carries 7,160 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-noda), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-NODA] -->, about a third of the energy in the oil from the same tonne, 20,515 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-noda), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-NODA] -->.
 
 **Heavy metals compared with European values**
 
@@ -290,9 +316,9 @@ These shares are before treatment (reading by Claude, not quantified): hydrogena
 | Lead (mg/kg) | 140 | 42 | 120 | no numerical limit |
 | Mercury (mg/kg) | 0.06 | below 0.02 | 1 | 3 |
 | Arsenic (mg/kg) | 0.95 | 1.8 | 40 (inorganic) | no numerical limit |
-| Calorific value | 32,090 J/g | 32,090 J/g | not applicable | at least 12,000 kJ/kg |
+| Calorific value | 24.6 MJ/kg (plastic residues) | 24.6 MJ/kg (plastic residues) | not applicable | at least 12,000 kJ/kg |
 
-Source: char analyses ([Annex 2.2.b](annexe-02-preuves/A2-2-b-oosumi-char.md#chiba-oosumi-char), 100 %)<!-- [CHIBA-OOSUMI-CHAR] --> PDF p. 47 and 49, as received; calorific value ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] -->; EU limits ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#fpr-2019-1009), 100 %)<!-- [FPR-2019-1009] -->, per kg of dry matter; French limits ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#arrete-csr-2016), 100 %)<!-- [ARRETE-CSR-2016] -->, per kg of dry matter.
+Source: char analyses ([Annex 2.2.b](annexe-02-preuves/A2-2-b-oosumi-char.md#chiba-oosumi-char), 100 %)<!-- [CHIBA-OOSUMI-CHAR] --> PDF p. 47 and 49, as received; calorific value ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-pci-char-plastique), 95 %)<!-- [calc:CALC-A2-PCI-CHAR-PLASTIQUE] -->; EU limits ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#fpr-2019-1009), 100 %)<!-- [FPR-2019-1009] -->, per kg of dry matter; French limits ([Annex 2.4.c](annexe-02-preuves/A2-4-c-char-outlet-references.md#arrete-csr-2016), 100 %)<!-- [ARRETE-CSR-2016] -->, per kg of dry matter.
 
 **Reading for investors**
 
@@ -326,7 +352,7 @@ KANSO Technos analysed the off-gas of an Urban Rig superheated steam carbonisati
 
 Source: ([Annex 2.2.f](annexe-02-preuves/A2-2-f-kanso-gas-analysis-2020.md#kanso-b2002600), 100 %)<!-- [KANSO-B2002600] -->, p. 1. The second column removes oxygen and nitrogen and rescales the other components to 100 %; it is a direct proportion of the first column ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->.
 
-**Reading.** The off-gas is sampled at the outlet, where it mixes with air. Oxygen and nitrogen do not come from the plastic, so they are excluded from the gas produced by the pyrolysis ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. Without air, 91.4 % of the pyrolysis gas by volume is combustible ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-gaz-part-combustible), 90 %)<!-- [calc:CALC-A2-GAZ-PART-COMBUSTIBLE] -->. The combustible gases are mainly hydrogen and methane, with C2 and C3 hydrocarbons and carbon monoxide.
+**Reading.** The off-gas is sampled at the outlet, where it mixes with air. Oxygen and nitrogen do not come from the plastic, so they are excluded from the gas produced by the pyrolysis ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. Without air, 91.4 % of the pyrolysis gas by volume is combustible ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-gaz-part-combustible), 90 %)<!-- [calc:CALC-A2-GAZ-PART-COMBUSTIBLE] -->. The combustible gases are mainly hydrogen and methane, with C2 and C3 hydrocarbons and carbon monoxide. The sample was taken at the pipe outlet, without a stated protocol, and diluted by the air of the sampling; oxygen and nitrogen are excluded, and this dilution does not change the energy per tonne of the gas produced by the feed ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] -->. The Chiba mass balances apply a factor of 1,323.8 kcal/kg, i.e. 5.5 MJ/kg, to the off-gas ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-facteur-offgas), 95 %; [Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-pci-gaz-chiba), 95 %)<!-- [calc:CALC-A2-FACTEUR-OFFGAS] [calc:CALC-A2-PCI-GAZ-CHIBA] -->; its origin is unknown and it is not used here (R-011).
 
 ### 2.5.2 Off-Gas Calorific Value
 
@@ -352,15 +378,13 @@ Source: ([Annex 2.4.d](annexe-02-preuves/A2-4-d-thermochemical-data.md#nist-webb
 
 ### 2.5.3 Off-Gas Energy per Tonne of Feedstock
 
-The project treats everything that does not leave the reactor as oil, char or metal as pyrolysis gas of this composition ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. The gas mass of each run (Section 2.2.1) then converts into energy:
+OneWorld's daily balance for a feed of 90 % resins gives the off-gas share below ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->. At 37.4 MJ/kg (Section 2.5.2), it converts into energy:
 
 | Feed (source of the coefficients) | Gas, share of feed | Energy in the gas per tonne of feed |
 |---|---|---|
 | Resin-rich waste, OneWorld design | 11.5 % ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] --> | 4,299 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-resine), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-RESINE] --> |
-| Household waste with 10 % resins, OneWorld design | 5 % ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] --> | 1,869 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-om), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-OM] --> |
-| Municipal packaging plastics, Noda test, per tonne of convertible material | 9.5 kg of gas from 39.5 kg ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> | 8,992 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-noda), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-NODA] --> |
 
-Gas shares from OneWorld (first two rows) and from the Noda test (third row).
+For mixed waste, the financial model takes the gas produced by the plastic fraction at 10 % of the plastic input ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->. No figure is given here for household or municipal waste: the tests did not measure their gas, and the balance by difference includes the moisture of the feed (Section 2.2.3). Their energy balance is treated in Annex 5.
 
 ---
 
@@ -368,14 +392,14 @@ Gas shares from OneWorld (first two rows) and from the Noda test (third row).
 
 ### 2.6.1 Basis
 
-The energy balance is built on OneWorld's figures for the continuous URC-2000, taken as correct ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. The batch tests are not used for the energy balance: a small batch reactor heated for each run says nothing about the consumption of a continuous plant. They are used only for the conversion coefficients and product qualities.
+The energy balance is built on OneWorld's figures for the continuous URC-2000, taken as correct ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->. The batch tests are not used for the energy balance: a small batch reactor heated for each run says nothing about the consumption of a continuous plant. They are used only for the conversion coefficients and product qualities. The financial model starts from the batch yields, without a bonus for continuous operation ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-036] -->.
 
-| Item, 200 t/day URC-2000 | According to OneWorld | Per tonne treated |
+| Item, 200 t/day URC-2000 | According to OneWorld design data | Per tonne treated |
 |---|---|---|
 | Superheating burner | 833 kcal/s ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] --> | 1,507 MJ of heat ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-bruleur-mj-t), 90 %)<!-- [calc:CALC-A2-BRULEUR-MJ-T] --> |
 | Fuel for operation | 10,000 L/day ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] --> | 1,988 MJ, if the fuel is the plant's own oil ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-fioul-mj-t), 90 %)<!-- [calc:CALC-A2-FIOUL-MJ-T] --> |
 | Electricity | 600 kW ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] --> | 259 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-elec-mj-t), 90 %)<!-- [calc:CALC-A2-ELEC-MJ-T] --> |
-| Fuel after start-up | own gas and oil: "It is not necessary for fuel for operation except initial startup" ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] --> | |
+| Fuel after start-up | own gas and oil, illustrated by OneWorld on a feed of 90 % resins: "It is not necessary for fuel for operation except initial startup" ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] --> | |
 
 The burner figure gives the heat demand. The 10,000 L/day figure is the fuel consumption stated in OneWorld's consumption table ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] -->; it is used as the upper value. The electricity is bought from the grid.
 
@@ -383,28 +407,25 @@ The burner figure gives the heat demand. The 10,000 L/day figure is the fuel con
 
 | Feed | Energy in the gas (MJ/t) | Covers the burner demand | Covers the stated fuel consumption |
 |---|---|---|---|
-| Resin-rich waste (OneWorld design) | 4,299 ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-resine), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-RESINE] --> | 2.9 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-resine), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-RESINE] --> | 2.2 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-fioul-resine), 90 %)<!-- [calc:CALC-A2-COUV-FIOUL-RESINE] --> |
-| Household waste, 10 % resins (OneWorld design) | 1,869 ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-om), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-OM] --> | 1.2 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-om), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-OM] --> | 0.94 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-fioul-om), 90 %)<!-- [calc:CALC-A2-COUV-FIOUL-OM] --> |
-| Municipal packaging plastics (Noda coefficients) | 8,992 ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-noda), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-NODA] --> | 6.0 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-noda), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-NODA] --> | 4.5 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-fioul-noda), 90 %)<!-- [calc:CALC-A2-COUV-FIOUL-NODA] --> |
+| Resin-rich waste (OneWorld design, 11.5 % gas) | 4,299 ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-resine), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-RESINE] --> | 2.9 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-resine), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-RESINE] --> | 2.2 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-fioul-resine), 90 %)<!-- [calc:CALC-A2-COUV-FIOUL-RESINE] --> |
+| Pure plastic, 15 % gas (working assumption) | 5,608 ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-plastique15), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-PLASTIQUE15] --> | 3.7 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-plastique15), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] --> | not calculated |
 
-All values calculated with the assumptions of decision D-021 ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->.
+All values calculated with the assumptions of decisions D-021 and D-038 ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] [hyp:D-038] -->.
 
 **Reading for investors**
 
-- **Feeds with a meaningful plastic content.** For plastic packaging and resin-rich feeds, the gas alone covers the heat demand several times over. This is consistent with OneWorld's statement that the plant needs no external fuel after start-up. The surplus gas can produce steam or electricity on site.
-- **Household waste with only 10 % resins.** The gas covers the burner demand on its own ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-om), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-OM] --> and almost all of the stated fuel consumption ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-fioul-om), 90 %)<!-- [calc:CALC-A2-COUV-FIOUL-OM] -->. The large char output provides the margin (Section 2.6.3).
+- **Resin-rich feeds.** For a feed of pure resins, the gas alone covers the heat demand several times over: 2.9 times on OneWorld's resin-rich design (11.5 % gas) and 3.7 times with 15 % gas. This is consistent with OneWorld's statement that the plant needs no external fuel after start-up ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] [OW-ENG-P16-BILAN] -->. The surplus gas can produce steam or electricity on site.
+- **Household and municipal waste: not assessed here.** The tests did not measure the gas of these feeds, and the balance by difference includes their moisture. Self-sufficiency is therefore not claimed for them; their energy balance will be built in Annex 5, according to the feed chosen ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-029] -->.
 
-### 2.6.3 Energy in the Three Products per Tonne of Feed
+### 2.6.3 Energy in the Three Products per Tonne of Feed (OneWorld's Resin-Rich Example)
 
 | Feed | Oil | Gas | Char |
 |---|---|---|---|
-| Resin-rich waste (OneWorld design) | 35,190 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-resine), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-RESINE] --> | 4,299 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-resine), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-RESINE] --> | 1,605 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-resine), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-RESINE] --> |
-| Household waste, 10 % resins (OneWorld design) | 2,300 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-om), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-OM] --> | 1,869 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-om), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-OM] --> | 8,023 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-om), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-OM] --> |
-| Municipal packaging plastics, per tonne of convertible material (Noda coefficients) | 18,749 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-noda), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-NODA] --> | 8,992 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-noda), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-NODA] --> | 11,292 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-noda), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-NODA] --> |
+| Resin-rich waste (OneWorld design) | 35,190 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-huile-resine), 90 %)<!-- [calc:CALC-A2-NRJ-HUILE-RESINE] --> | 4,299 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-gaz-resine), 90 %)<!-- [calc:CALC-A2-NRJ-GAZ-RESINE] --> | 1,231 MJ ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-nrj-char-resine), 90 %)<!-- [calc:CALC-A2-NRJ-CHAR-RESINE] --> |
 
-All values calculated with oil at 46,000 J/g, gas at 37.4 MJ/kg and char at 32,090 J/g ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] -->.
+All values calculated with oil at 46,000 J/g, gas at 37.4 MJ/kg and char from plastic residues at 24.6 MJ/kg ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] [hyp:D-038] -->.
 
-Against a heat demand of 1,507 MJ per tonne ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-bruleur-mj-t), 90 %)<!-- [calc:CALC-A2-BRULEUR-MJ-T] -->, each feed yields far more energy in its products than the process consumes. The energy sold is mainly oil for plastic-rich feeds and mainly char for household waste.
+Against a heat demand of 1,507 MJ per tonne ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-bruleur-mj-t), 90 %)<!-- [calc:CALC-A2-BRULEUR-MJ-T] -->, the resin-rich feed yields far more energy in its products than the process consumes, mainly as oil.
 
 ### 2.6.4 Sensitivity
 
@@ -477,7 +498,7 @@ Source: measurements ([Annex 2.2.g](annexe-02-preuves/A2-2-g-kanso-exhaust-odour
   - final rather than provisional reports, since the 2022 Oosumi reports are marked provisional and the 2023 dioxin report preliminary ([Annex 2.2.d](annexe-02-preuves/A2-2-d-oosumi-exhaust-2022.md#chiba-oosumi-fumees), 100 %; [Annex 2.2.h](annexe-02-preuves/A2-2-h-exhaust-dioxins-2023.md#dioxines-2023), 100 %)<!-- [CHIBA-OOSUMI-FUMEES] [DIOXINES-2023] -->.
 
   These are requested from OneWorld (R-016). The French permitting framework is covered in Annex 4.
-- **On the "no dioxins" statement.** According to OneWorld, the reactor is oxygen-free, so dioxins and CO₂ are not generated inside it ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->. The exhaust, which comes from the steam boiler, superheaters and temperature control heaters ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->, showed low dioxin concentrations in the measurements above.
+- **On the "no dioxins" statement.** According to OneWorld design data, the reactor is oxygen-free, so dioxins and CO₂ are not generated inside it ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->. The exhaust, which comes from the steam boiler, superheaters and temperature control heaters ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->, showed low dioxin concentrations in the measurements above.
 - **On the dioxin unit.** The Japanese reports give dioxins as toxic equivalents (TEQ) without stating the scheme; the BAT levels use I-TEQ. The comparison is therefore indicative.
 - **Why the 2022 and 2023 dioxin results differ.** They do not measure the same thing, so they do not contradict each other:
   - 2022: one value of 0.067 ng-TEQ/m³ on the Noda test unit, during the run on non-combustible municipal residue of 2022-09-15, over the three furnace stages (350, 450 and 550 °C), in a provisional report ([Annex 2.2.d](annexe-02-preuves/A2-2-d-oosumi-exhaust-2022.md#chiba-oosumi-fumees), 100 %; [Annex 2.1.b](annexe-02-preuves/A2-1-b-chiba-mass-energy-balances.md#chiba-constats), 100 %)<!-- [CHIBA-OOSUMI-FUMEES] [CHIBA-CONSTATS] -->;
@@ -507,25 +528,60 @@ The Noda unit was a test unit without a wastewater treatment step. The operator 
 
 OneWorld offers the SEA CORAL ceramic purifier as an option ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p13-seacoral), 95 %)<!-- [OW-ENG-P13-SEACORAL] -->. Its documentation reports a seawater desalination test (chloride ion from 31,000 to 31 mg/L) and a capacity of about 330 t of water per day per blower ([Annex 2.3.e](annexe-02-preuves/A2-3-e-oneworld-sea-coral.md#seacoral-detail-eng), 95 %)<!-- [SEACORAL-DETAIL-ENG] -->. It contains no test on pyrolysis process water, which carries phenols, cyanide and a very acidic pH (see above), and no laboratory or date ([Annex 2.3.e](annexe-02-preuves/A2-3-e-oneworld-sea-coral.md#seacoral-detail-eng), 95 %)<!-- [SEACORAL-DETAIL-ENG] -->. The residual brine (140,000 mg/L of chloride ion in the desalination test ([Annex 2.3.e](annexe-02-preuves/A2-3-e-oneworld-sea-coral.md#seacoral-detail-eng), 95 %)<!-- [SEACORAL-DETAIL-ENG] -->) would also need disposal.
 
-According to OneWorld, part of the purified water is reused in the steam boiler ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->. The volume per tonne on a continuous plant and the treatment cost are to be confirmed (R-017) and costed in Annex 9.
+According to OneWorld design data, part of the purified water is reused in the steam boiler ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] -->. The volume per tonne on a continuous plant and the treatment cost are to be confirmed (R-017) and costed in Annex 9.
 
 ---
 
 ## 2.8 Batch-to-Continuous Scaling: the URC-2000 Design Basis
 
-The URC-2000 links several batch reactor units in a continuous line. According to OneWorld, it has the following characteristics:
+The URC-2000 links several batch reactor units in a continuous line. According to OneWorld design data, it has the following characteristics:
 
-| Item | URC-2000, according to OneWorld | Source |
+| Item | URC-2000, according to OneWorld design data | Source |
 |---|---|---|
 | Throughput | 200 t per day | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] --> |
+| Reactor capacity used in the business plan | 200 m³ per day; 140 t per day at 0.7 t/m³ after sorting and pressing (working assumption) | ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-035] --> |
 | Configuration | 48 buckets per day, up to 4.17 t each, i.e. 200.16 t | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->; ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ur2000-cadence), 95 %)<!-- [calc:CALC-A2-UR2000-CADENCE] --> |
 | Process temperatures | zones from 150 to 600 °C | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] --> |
 | Oil from a 90 % resin feed | 76.5 % of input | ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] --> |
 | Oil from resin-based waste | about 85 % | ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] --> |
 | Outputs from household waste with 10 % resins | char 25 %, oil 5 %, off-gas 5 %, metals and glass 0 to 5 % | ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] --> |
-| Fuel for operation | own gas and oil after start-up | ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] --> |
+| Fuel for operation | own gas and oil after start-up, illustrated on a feed of 90 % resins | ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p02-p14-affirmations), 95 %)<!-- [OW-ENG-P02-P14-AFFIRMATIONS] --> |
 
-**Consistency with the tests.** OneWorld's 76.5 % oil for a resin-rich feed sits within the 72 % to 82 % measured on PE, PP and mixed plastic batches ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] -->. Its "about 85%" oil recovery matches the 83 % of the 2021 URT-10 runs ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %)<!-- [calc:CALC-A2-OWJ-HUILE] -->. The batch tests therefore support OneWorld's design figures for plastic-rich feeds.
+**Consistency with the tests.** OneWorld's 76.5 % oil for a resin-rich feed is close to the 72 % to 81 % measured on 8 of the 10 batch runs retained, and to their weighted average of 73.1 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %; [Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-huile10-moy-pond), 95 %)<!-- [CHIBA-ESSAIS-FICHES] [calc:CALC-A2-HUILE10-MOY-POND] -->. Its "about 85%" oil recovery matches the 83 % of the 2021 URT-10 runs ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-owj-huile), 95 %)<!-- [calc:CALC-A2-OWJ-HUILE] -->. The batch tests therefore support OneWorld's design figures for plastic-rich feeds. According to the project team, internal tests in continuous operation have shown higher yields; these data are not yet in this dossier ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-036] -->.
+
+**OneWorld's daily table (English brochure p. 16), as printed.** Input "200Mt", specific gravity 0.6, 90 % resins ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->:
+
+| Product | Share | Quantity as printed |
+|---|---|---|
+| Gas (diesel) oil | 61.2 % | 62,424 L (62.424 t) |
+| Heating oil | 7.65 % | 7,803 L (7.803 t) |
+| Heavy oil | 7.65 % | 7,803 L (7.803 t) |
+| Recovery loss | 11.5 % | 11,730 L (11.73 t) |
+| Carbide (char) | 5 % | 5.1 m³ (5.1 t) |
+| Water | 5 % | 5,100 L (5.1 t) |
+| Metals and glass | 2 % | 2.04 m³ (2.04 t) |
+
+Source: ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->. The shares add up to 100 %, but the printed quantities add up to 102 t for an input of 200 t and count 1 litre as 1 kg ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-somme-masses), 95 %; [Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [calc:CALC-A2-OW16-SOMME-MASSES] [OW-ENG-P16-BILAN] -->.
+
+**Corrected version (calculated).** OneWorld's shares applied to 200 m³ per day at OneWorld's specific gravity of 0.6, i.e. 120 t per day ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-entree), 95 %; [Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [calc:CALC-A2-OW16C-ENTREE] [hyp:D-035] -->; oil volumes at 0.8642 kg/L ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->:
+
+| Product | Share | t per day | L per day |
+|---|---|---|---|
+| Gas (diesel) oil | 61.2 % | 73.44 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-gazole-t), 95 %)<!-- [calc:CALC-A2-OW16C-GAZOLE-T] --> | 84,980 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-gazole-l), 95 %)<!-- [calc:CALC-A2-OW16C-GAZOLE-L] --> |
+| Heating oil | 7.65 % | 9.18 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-heating-t), 95 %)<!-- [calc:CALC-A2-OW16C-HEATING-T] --> | 10,623 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-heating-l), 95 %)<!-- [calc:CALC-A2-OW16C-HEATING-L] --> |
+| Heavy oil | 7.65 % | 9.18 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-heavy-t), 95 %)<!-- [calc:CALC-A2-OW16C-HEAVY-T] --> | 10,623 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-heavy-l), 95 %)<!-- [calc:CALC-A2-OW16C-HEAVY-L] --> |
+| Total oil | 76.5 % | 91.8 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-huile-t), 95 %)<!-- [calc:CALC-A2-OW16C-HUILE-T] --> | 106,225 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-huile-l), 95 %)<!-- [calc:CALC-A2-OW16C-HUILE-L] --> |
+| Recovery loss | 11.5 % | 13.8 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-perte-t), 95 %)<!-- [calc:CALC-A2-OW16C-PERTE-T] --> | |
+| Carbide (char) | 5 % | 6.0 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-char-t), 95 %)<!-- [calc:CALC-A2-OW16C-CHAR-T] --> | |
+| Water | 5 % | 6.0 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-eau-t), 95 %)<!-- [calc:CALC-A2-OW16C-EAU-T] --> | |
+| Metals and glass | 2 % | 2.4 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-metaux-t), 95 %)<!-- [calc:CALC-A2-OW16C-METAUX-T] --> | |
+| Total | 100 % | 120 ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16c-somme), 95 %)<!-- [calc:CALC-A2-OW16C-SOMME] --> | |
+
+Notes on the correction:
+- The 76.5 % oil remains a statement by OneWorld on a feed with 90 % resins ([Annex 2.3.b](annexe-02-preuves/A2-3-b-oneworld-english-brochure.md#ow-eng-p16-bilan), 95 %)<!-- [OW-ENG-P16-BILAN] -->.
+- The brochure writes "200Mt". Reading it as 200 m³ per day follows the Japanese brochure ("200ton ▶ 200m3") ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] --> and the bucket schedule ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->.
+- The density of 0.8642 kg/L is that of the oil from Noda packaging plastics ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->; no density is given for each OneWorld fraction.
+- The business plan uses 0.7 t/m³ (140 t per day), a working assumption of the sponsor: a press brings the sorted feed back to 0.7 t/m³ ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-035] -->.
 
 ---
 
@@ -534,26 +590,28 @@ The URC-2000 links several batch reactor units in a continuous line. According t
 | Parameter | Value | Basis | To secure |
 |---|---|---|---|
 | Oil yield, PE and PP | 73 % to 81 % ([Annex 2.1.a](annexe-02-preuves/A2-1-a-chiba-test-sheets.md#chiba-essais-fiches), 100 %)<!-- [CHIBA-ESSAIS-FICHES] --> | Test | Performance guarantee on the continuous plant (R-009) |
-| Conversion to fuel, PE and PP | 87.8 % to 99.6 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-palettes), 95 %)<!-- [calc:CALC-A2-CONV-PP-PALETTES] [calc:CALC-A2-CONV-PP-CHUTES] --> | Calculated | Gas measured separately (R-011) |
-| Oil yield, municipal plastics, excluding metals | 40.8 % and 50.4 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] --> | Calculated | Tests on the French target mix (R-021) |
+| Oil + gas by difference, PE and PP | 87.8 % to 99.6 % ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-conv-pp-palettes), 95 %)<!-- [calc:CALC-A2-CONV-PP-PALETTES] [calc:CALC-A2-CONV-PP-CHUTES] --> | Calculated (gas not measured) | Gas measured separately (R-011) |
+| Gas by difference, pure plastics | 16.25 %, weighted mean of 10 runs ([Annex 2.5.a](annexe-02-preuves/A2-5-a-calc-conversion-to-fuel.md#calc-a2-gazdiff10-moy-pond), 95 %)<!-- [calc:CALC-A2-GAZDIFF10-MOY-POND] --> | Calculated (gas not measured) | Gas measured separately (R-011) |
+| Reactor throughput | 200 m³ per day; 140 t per day at 0.7 t/m³ | Assumption ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-035] --> | Volume per day and density by feed (R-010) |
+| Oil yield, municipal plastics, excluding metals and foreign matter recovered after treatment | 44.6 % and 50.4 % ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-horsmetaux), 95 %; [Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-horsmetaux), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-HORSMETAUX] [calc:CALC-A2-HUILE-NODA-0915-HORSMETAUX] -->; 32.2 % and 45.0 % on raw input ([Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0909-brut), 95 %; [Annex 2.5.b](annexe-02-preuves/A2-5-b-calc-municipal-waste.md#calc-a2-huile-noda-0915-brut), 95 %)<!-- [calc:CALC-A2-HUILE-NODA-0909-BRUT] [calc:CALC-A2-HUILE-NODA-0915-BRUT] --> | Calculated | Tests on the French target mix (R-021) |
 | Oil yield, resin-rich feed, URC-2000 | 76.5 % ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-huile-totale), 95 %)<!-- [calc:CALC-A2-OW16-HUILE-TOTALE] --> | Manufacturer | Guarantee (R-009, R-010) |
 | Yields on paper, wood, food waste, PET, PVC | none | Not available | Tests (R-021) |
 | Oil gross calorific value | 45,000 to 46,000 J/g ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] --> | Test | Net value (R-013) |
 | Oil chlorine, municipal feed | 0.137 % and 0.526 % ([Annex 2.2.a](annexe-02-preuves/A2-2-a-jlos-oil-analyses.md#chiba-jlos-huiles), 100 %)<!-- [CHIBA-JLOS-HUILES] -->, against 3 ppm for steam crackers ([Annex 2.4.b](annexe-02-preuves/A2-4-b-chlorine-references.md#kusenberg-aiche-2021), 95 %)<!-- [KUSENBERG-AICHE-2021] --> | Test | Chlorine after the catalytic stage on the URC-2000; organic or inorganic form (R-013) |
 | Gas net calorific value | 37.4 MJ/kg ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-gaz-pci), 90 %)<!-- [calc:CALC-A2-GAZ-PCI] --> | Calculated | Confirmation on undiluted gas (R-011) |
-| Char calorific value | 32,090 J/g ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] --> | Test, assumption ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-021] --> | Confirmation on char from the target feed (R-012) |
+| Char calorific value | 24.6 MJ/kg for plastic residues ([Annex 2.5.c](annexe-02-preuves/A2-5-c-calc-gas-calorific-value.md#calc-a2-pci-char-plastique), 95 %)<!-- [calc:CALC-A2-PCI-CHAR-PLASTIQUE] -->; 32.09 MJ/kg for household waste ([Annex 2.2.j](annexe-02-preuves/A2-2-j-izumitec-char-oil.md#izumitec-r35-339439), 100 %)<!-- [IZUMITEC-R35-339439] --> | Factor of unknown origin; assumption ([Annex 2.5.0](annexe-02-preuves/A2-5-0-working-assumptions.md), assumption)<!-- [hyp:D-038] --> | Measurement on char from the target feed (R-012) |
 | Emissions against EU limits | pass on reported values (Section 2.7.2) | Test | Values at 11 % O₂ ([Annex 2.4.a](annexe-02-preuves/A2-4-a-eu-emission-limits.md#ied-2010-75-anx6-p3), 100 %)<!-- [IED-2010-75-ANX6-P3] -->, CO, final reports (R-016) |
-| Energy self-sufficiency | gas covers the burner demand 1.2 to 6.0 times ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-om), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-OM] [calc:CALC-A2-COUV-BRULEUR-NODA] --> | Calculated | Consumption guarantee (R-015, R-019) |
+| Energy self-sufficiency, pure plastic | gas covers the burner demand 2.9 times (OneWorld, 11.5 % gas) ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-resine), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-RESINE] --> and 3.7 times (15 % gas) ([Annex 2.5.d](annexe-02-preuves/A2-5-d-calc-energy-balance.md#calc-a2-couv-bruleur-plastique15), 90 %)<!-- [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] --> | Calculated | Consumption guarantee (R-015, R-019); household waste in Annex 5 |
 
 ### 2.9.1 Priority Requests to OneWorld
 
 These items are requested from OneWorld. They can also be written into the supply contract as performance guarantees.
 
 1. **Yield and throughput (R-009, R-010).** Yield and throughput guarantees for the URC-2000 on the French target feed. Clarify the basis of the stated daily balance and the bucket schedule:
-   - the brochure's output table sums to 102.0 t for 200 t of input ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-somme-masses), 95 %)<!-- [calc:CALC-A2-OW16-SOMME-MASSES] -->;
+   - the brochure's output table sums to 102.0 t for 200 t of input, counting 1 L as 1 kg (corrected in Section 2.8) ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow16-somme-masses), 95 %)<!-- [calc:CALC-A2-OW16-SOMME-MASSES] -->;
    - 51 buckets of 4.5 m³ at a density of 0.6 give 137.7 t ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ow15-cadence), 95 %)<!-- [calc:CALC-A2-OW15-CADENCE] -->;
    - the household waste balance allocates char, oil, off-gas and metals, leaving 60 % to 65 % of the input unallocated, presumably water ([Annex 2.5.f](annexe-02-preuves/A2-5-f-calc-other.md#calc-a2-ur2000-nonaffecte-min), 95 %)<!-- [calc:CALC-A2-UR2000-NONAFFECTE-MIN] [calc:CALC-A2-UR2000-NONAFFECTE-MAX] -->.
-2. **Fuel and electricity (R-015, R-019).** Guaranteed consumption, including which electricity figure applies to the URC-2000: 600 kW in the consumption table ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] -->, 20 kW in the brochure ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->. On household waste with 10 % resins, OneWorld states an oil output of 10,000 L per day ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->, equal to the 10,000 L per day of fuel in the consumption table ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] -->.
+2. **Fuel and electricity (R-015, R-019).** Guaranteed consumption, including which electricity figure applies to the URC-2000: 600 kW in the consumption table ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] -->, 20 kW in the brochure ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p08-spec), 95 %)<!-- [UR2000-JP-P08-SPEC] -->. On household waste with 10 % resins, OneWorld design data state an oil output of 10,000 L per day ([Annex 2.3.a](annexe-02-preuves/A2-3-a-oneworld-urc2000-brochure.md#ur2000-jp-p05-bilan), 95 %)<!-- [UR2000-JP-P05-BILAN] -->, equal to the 10,000 L per day of fuel in the consumption table ([Annex 2.3.c](annexe-02-preuves/A2-3-c-oneworld-energy-table.md#ow-conso-energie), 90 %)<!-- [OW-CONSO-ENERGIE] -->.
 3. **Chlorine and oil quality (R-013).** Chlorine content, split between organic and inorganic chlorine, and net calorific value of the oil leaving the URC-2000, with the catalytic dechlorination stage in operation; role of the catalytic tank of the Noda unit; origin of the GC-MS "drain" sample and a mass-based analysis with a jet fuel distillation.
 4. **Emissions (R-016).** Emission report at 11 % reference oxygen ([Annex 2.4.a](annexe-02-preuves/A2-4-a-eu-emission-limits.md#ied-2010-75-anx6-p3), 100 %)<!-- [IED-2010-75-ANX6-P3] -->, including carbon monoxide and hydrogen chloride, and final versions of the 2022 and 2023 reports.
 5. **Gas and char (R-011, R-012).** Gas flow and composition on the URC-2000; char analysis (calorific value, chlorine) on the target feed, to confirm the values used here.

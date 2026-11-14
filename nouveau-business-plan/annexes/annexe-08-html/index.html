@@ -1,0 +1,543 @@
+<!doctype html>
+<!-- Fichier genere par generer_html.py a partir de ANNEX-08-Plastic-Waste-Streams.md et des registres. Ne pas modifier a la main : corriger la source, puis regenerer. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Annex 8. Plastic Waste Streams</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#dedbd2;--accent:#1f5f8b;--box:#f1eee6;--good:#2e6b3f;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-top:.6em;border-top:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.6em 0 .4em}
+p,li{max-width:72ch}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font:14px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--box)}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--box);padding:10px 12px;border-radius:6px;overflow-x:auto}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.ev{white-space:nowrap}
+.ev a{display:inline-block;font:600 11px/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:9px;padding:2px 6px;margin-left:3px;vertical-align:2px;opacity:.85}
+.ev a:hover{opacity:1;background:var(--accent);color:var(--bg)}
+.crumb{font:14px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted)}
+.cards{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin:18px 0 26px}
+@media (max-width:640px){.cards{grid-template-columns:1fr}}
+.card{background:var(--box);border-radius:10px;padding:14px 16px}
+.card h4{margin:0 0 6px;font:600 12px/1.2 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card p{margin:0}
+.conf{font:700 2.4rem/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--good);margin:4px 0 6px}
+.small{font-size:.9rem;color:var(--muted)}
+.result{font-size:1.15rem;background:var(--box);border-left:4px solid var(--good);padding:10px 14px;border-radius:6px}
+
+figure{margin:1.6em 0;padding:0}
+figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+.key{background:var(--box);border-radius:10px;padding:4px 18px;margin:1em 0}
+</style></head>
+<body><main><h1>Annex 8. Plastic Waste Streams (France)</h1>
+<p>This annex describes the plastic waste streams of France, stream by stream: how much exists, how much is really recycled, what happens to the rest, who pays for it today, and which streams could feed an Urban Rig. It covers household and industrial plastics alike, with priority to the streams that are little or not recycled<span class="ev"><a href="preuves/A8-D.html#D-018" title="Decision D-018">D-018</a></span>. Residual household waste as a whole is covered by Annex 5, mixed commercial and industrial waste by Annex 7 and the CDG airport by Annex 6. Shredder residues are excluded from the plan<span class="ev"><a href="preuves/A8-D.html#D-037" title="Decision D-037">D-037</a></span>.</p>
+<h2>How to Read This Annex</h2>
+<p>OneWorld, the manufacturer of the Urban Rig, is the sponsor of this business plan<span class="ev"><a href="preuves/A8-D.html#D-027" title="Decision D-027">D-027</a></span>. Its documentation is marked "OneWorld design data"; these are the company's own figures and have not been verified independently.</p>
+<p>Each figure or fact is followed by a small link. It opens the evidence sheet: what the evidence shows, its confidence, the source document and its location, or the calculation. Sheets numbered 8.x belong to this annex; sheets numbered 1.x, 2.x and 3.x are those of Annexes 1 to 3. All sheets are listed in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<p><strong>Recycling rates are never collection or sorting rates.</strong> Each rate below states its scope (household or not, packaging or all plastics, year) and its definition.</p>
+<p><strong>Entry prices are inputs that the operator of the model can change</strong><span class="ev"><a href="preuves/A8-D.html#D-041" title="Decision D-041">D-041</a></span>. When a stream is selected, its default entry price is applied; the operator can overwrite it. A positive price means the plant is paid to take the waste; a negative price means the plant buys it<span class="ev"><a href="preuves/A8-D.html#D-042" title="Decision D-042">D-042</a></span>. Section 8.6 gives the defaults and their basis.</p>
+<p><strong>Reading of the sources.</strong> Most documents were read online by research sub-agents in October 2026, with short quotations. The key figures of this annex were then re-opened by an independent checker, who found them all in the documents; their sheets say so.</p>
+<h2>Key Messages</h2>
+<ul>
+<li><strong>France recycles about a quarter of its plastic packaging.</strong> In 2023, 625,275 t of the 2,428,987 t of plastic packaging waste were recycled, 25.7 %; 1,213,829 t went to energy recovery<span class="ev"><a href="preuves/A8-P-a.html" title="EUROSTAT-WASPAC">8.P.a</a></span>. The EU average was 41.7 %<span class="ev"><a href="preuves/A8-P-b.html" title="A8-CAD-EUROSTAT-WASPAC-UE-2023">8.P.b</a></span>. About 49 % of the tonnage counted as recycled was recycled outside France<span class="ev"><a href="preuves/A8-C-a.html" title="CALC-A8-EMB-RECY-HORS-FRANCE">8.C.a</a></span>.</li>
+<li><strong>Clean plastic has a price; dirty plastic has a cost.</strong> Sorted, washed and shredded mixed plastic bales sold at 248.81 EUR/t delivered in North-West Europe in June 2025<span class="ev"><a href="preuves/A8-L-a.html" title="RP2-061">8.L.a</a></span>, and clean white expanded polystyrene is bought from waste centres at 55 EUR/t<span class="ev"><a href="preuves/A8-L-b.html" title="RP-060">8.L.b</a></span>. Holders pay 121 to 159 EUR/t to dispose of household sorting rejects<span class="ev"><a href="preuves/A8-L-c.html" title="RP2-051">8.L.c</a><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span>, but these rejects contain only about 12 % plastic<span class="ev"><a href="preuves/A8-C-b.html" title="CALC-A8-REFUS-PART-PLASTIQUE">8.C.b</a></span>.</li>
+<li><strong>A large intermediate group is taken back at a price of zero.</strong> In 2024, 164,879 t of household plastic packaging, 37 % of the tonnage taken back, had a take-back price of zero: films, the mixed "development" stream, polystyrene pots and trays, expanded polystyrene<span class="ev"><a href="preuves/A8-C-c.html" title="CALC-A8-PRIXNUL-T">8.C.c</a><a href="preuves/A8-C-d.html" title="CALC-A8-PRIXNUL-PART">8.C.d</a></span>.</li>
+<li><strong>Polystyrene is very little recycled.</strong> Of the 60,000 t of polystyrene pots placed on the market each year<span class="ev"><a href="preuves/A8-L-d.html" title="A8-PS-CITEOAO-2022">8.L.d</a></span>, about 5,000 t reach a sorting centre according to Citeo, as reported by the press<span class="ev"><a href="preuves/A8-L-e.html" title="A8-PS-QUECHOISIR-2025">8.L.e</a></span>. Household expanded polystyrene, about 15,000 t, is sorted at 1,200 t per year and has no outlet of its own after sorting<span class="ev"><a href="preuves/A8-L-f.html" title="A8-PS-CITEOPSE-2025">8.L.f</a></span>.</li>
+<li><strong>Disposal costs rise.</strong> In 2026 the landfill tax is 69 EUR/t and the incineration tax 16 or 29 EUR/t, rising to 85 and 20 or 45 EUR/t in 2030<span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html" title="CIBS-TGAP-2026">3.M.c</a></span>. In Ile-de-France, incineration prices for commercial waste rose by about 18.6 EUR/t, excluding tax, between 2023 and 2026<span class="ev"><a href="preuves/A8-C-e.html" title="CALC-A8-INCIN-IDF-HAUSSE-2024-2026">8.C.e</a></span>.</li>
+<li><strong>Chlorine and bromine set the limits.</strong> The oil can leave waste status for a steam cracker only from plastic waste with at least 85 % of PE, PP and PS and at most 3 % of PVC<span class="ev"><a href="../annexe-03-html/preuves/A3-R-a.html" title="A3-ARRETE-SSD-HUILE-PYROLYSE-2024">3.R.a</a></span>. PVC has not been tested on the Urban Rig beyond its melting stage<span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>, and no OneWorld document covers bromine (requests R-021, R-039).</li>
+</ul>
+<h2>8.1 The French Plastic Waste Picture</h2>
+<h3>8.1.1 Tonnages</h3>
+<p>The official statistics count 2,482 kt of plastic waste in France in 2022, of which 380 kt from households<span class="ev"><a href="preuves/A8-P-c.html" title="SDES-2022">8.P.c</a></span>. This total covers only plastic collected as such: plastic collected in mixed waste is counted elsewhere<span class="ev"><a href="preuves/A8-P-d.html" title="A8-CAD-EUROSTAT-META-W074">8.P.d</a></span>. It is not the full amount of plastic discarded.</p>
+<p>The plastics industry federation estimates that 4,160 kt of post-consumer plastic waste were collected in France in 2024, by application<span class="ev"><a href="preuves/A8-L-g.html" title="A8-CAD-PLASTICSEUROPE-NATINFO-FR-2024">8.L.g</a></span>:</p>
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Collected (kt, 2024)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Packaging</td>
+<td>2,410</td>
+</tr>
+<tr>
+<td>Building and construction</td>
+<td>326</td>
+</tr>
+<tr>
+<td>Electrical and electronic equipment</td>
+<td>285</td>
+</tr>
+<tr>
+<td>Household, leisure and sports</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Automotive</td>
+<td>185</td>
+</tr>
+<tr>
+<td>Agriculture</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Others</td>
+<td>569</td>
+</tr>
+</tbody>
+</table>
+<p>Source of the table:<span class="ev"><a href="preuves/A8-L-g.html" title="A8-CAD-PLASTICSEUROPE-NATINFO-FR-2024">8.L.g</a></span>, an industry federation; the figures are rounded estimates.</p>
+<p>No public French source gives this breakdown. The ADEME study of the plastic waste that chemical recycling could treat is available only through a registration form and has not been read (request R-001).</p>
+<h3>8.1.2 Recycling Rates</h3>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Rate</th>
+<th>Year</th>
+<th>Definition</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All plastic packaging, France</td>
+<td>25.7 %</td>
+<td>2023</td>
+<td>Recycled tonnage over generated tonnage, EU method</td>
+<td><span class="ev"><a href="preuves/A8-P-a.html" title="EUROSTAT-WASPAC">8.P.a</a></span></td>
+</tr>
+<tr>
+<td>All plastic packaging, EU</td>
+<td>41.7 %</td>
+<td>2023</td>
+<td>Same</td>
+<td><span class="ev"><a href="preuves/A8-P-b.html" title="A8-CAD-EUROSTAT-WASPAC-UE-2023">8.P.b</a></span></td>
+</tr>
+<tr>
+<td>Household plastic packaging, France</td>
+<td>30 %</td>
+<td>2025</td>
+<td>Citeo estimate for the scheme</td>
+<td><span class="ev"><a href="preuves/A8-L-h.html" title="A8-MENA-CITEOMAG-2026">8.L.h</a></span></td>
+</tr>
+<tr>
+<td>Plastic waste collected as such</td>
+<td>20 %</td>
+<td>2022</td>
+<td>Not defined in the source</td>
+<td><span class="ev"><a href="preuves/A8-P-c.html" title="SDES-2022">8.P.c</a></span></td>
+</tr>
+<tr>
+<td>Post-consumer plastic waste</td>
+<td>23.1 %</td>
+<td>2024</td>
+<td>Industry federation estimate</td>
+<td><span class="ev"><a href="preuves/A8-L-g.html" title="A8-CAD-PLASTICSEUROPE-NATINFO-FR-2024">8.L.g</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>Under the EU method, plastic packaging counts as recycled when, sorted by polymer, it enters pelletising, extrusion or moulding<span class="ev"><a href="preuves/A8-R-b.html" title="A8-CAD-UE-DEC-2019-665">8.R.b</a></span>. Fuel production is not recycling<span class="ev"><a href="preuves/A8-R-c.html" title="A8-CAD-UE-PPWR-2025">8.R.c</a></span>.</p>
+<p>The targets are 50 % for plastic packaging by end 2025 and 55 % by end 2030<span class="ev"><a href="preuves/A8-R-c.html" title="A8-CAD-UE-PPWR-2025">8.R.c</a></span>. The French law aimed to tend towards 100 % recycled plastic by 1 January 2025<span class="ev"><a href="preuves/A8-R-d.html" title="A8-CAD-AGEC-LOI-2020">8.R.d</a></span>. The government's interim review found that 19 % of single-use plastic packaging had no recycling route<span class="ev"><a href="preuves/A8-L-i.html" title="STRAT3R-2025">8.L.i</a></span>.</p>
+<h3>8.1.3 What Happens to the Rest</h3>
+<ul>
+<li><strong>Energy recovery</strong> takes about half of plastic packaging waste: 1,213,829 t in 2023<span class="ev"><a href="preuves/A8-P-a.html" title="EUROSTAT-WASPAC">8.P.a</a></span>.</li>
+<li><strong>For all post-consumer plastics,</strong> the federation estimates incineration at 49.2 % and landfill at 27.6 % in 2024<span class="ev"><a href="preuves/A8-L-g.html" title="A8-CAD-PLASTICSEUROPE-NATINFO-FR-2024">8.L.g</a></span>.</li>
+<li><strong>Exports</strong> of plastic waste, scraps and parings reached about 404,000 t in 2025<span class="ev"><a href="preuves/A8-C-f.html" title="CALC-A8-EXPORT-3915-T">8.C.f</a></span>, mostly to other EU countries, first Spain, Germany and Belgium<span class="ev"><a href="preuves/A8-P-e.html" title="A8-CAD-COMEXT-3915-2025">8.P.e</a></span>.</li>
+</ul>
+<h3>8.1.4 The EU Contribution on Non-Recycled Plastic Packaging</h3>
+<p>Each Member State pays the EU 0.80 EUR per kilogram of non-recycled plastic packaging waste<span class="ev"><a href="preuves/A8-L-j.html" title="RP2-055">8.L.j</a></span>. For France this was 1.564 billion EUR in 2023<span class="ev"><a href="preuves/A8-L-k.html" title="RP2-056">8.L.k</a></span>. It is paid from the State budget and is not a tax charged to households or companies<span class="ev"><a href="preuves/A8-L-k.html" title="RP2-056">8.L.k</a></span>. A tax to pass it on, proposed in the 2026 budget bill, was removed by Parliament<span class="ev"><a href="preuves/A8-L-l.html" title="RP2-057">8.L.l</a></span>. It therefore creates no direct payment for a waste holder today.</p>
+<h2>8.2 What Disposal Costs Today</h2>
+<p>These are the costs that a holder of plastic waste avoids if an Urban Rig takes it. The prices found are of different kinds (price charged or cost, gross or net, with or without tax); each line states its basis.</p>
+<table>
+<thead>
+<tr>
+<th>Basis</th>
+<th>Value</th>
+<th>Year</th>
+<th>Tax included</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incineration, average price to private clients, France</td>
+<td>120 EUR/t excl. VAT</td>
+<td>2023</td>
+<td>Not stated</td>
+<td><span class="ev"><a href="preuves/A8-L-m.html" title="A8-PRIX-AMORCE-DT156-2023">8.L.m</a></span></td>
+</tr>
+<tr>
+<td>Incineration, average price to local authorities, France</td>
+<td>95 EUR/t excl. VAT</td>
+<td>2023</td>
+<td>Not stated</td>
+<td><span class="ev"><a href="preuves/A8-L-m.html" title="A8-PRIX-AMORCE-DT156-2023">8.L.m</a></span></td>
+</tr>
+<tr>
+<td>Same survey, earlier year: private clients and local authorities</td>
+<td>133 and 76 EUR/t</td>
+<td>2021</td>
+<td>Not stated</td>
+<td><span class="ev"><a href="preuves/A8-M-a.html" title="AMORCE-DT139">8.M.a</a></span></td>
+</tr>
+<tr>
+<td>Incineration of household waste, Ile-de-France, net cost</td>
+<td>46 to 115 EUR/t</td>
+<td>2023</td>
+<td>Yes</td>
+<td><span class="ev"><a href="preuves/A8-L-n.html" title="A8-PRIX-ORDIF-REF-2023">8.L.n</a></span></td>
+</tr>
+<tr>
+<td>Syctom, waste of third parties incinerated</td>
+<td>108 EUR/t</td>
+<td>2026</td>
+<td>Not stated</td>
+<td><span class="ev"><a href="preuves/A8-L-o.html" title="A8-CST-SYCTOM-BP-2026">8.L.o</a></span></td>
+</tr>
+<tr>
+<td>Landfill, private operators, transport included</td>
+<td>143 EUR/t</td>
+<td>2021</td>
+<td>Yes</td>
+<td><span class="ev"><a href="preuves/A8-L-p.html" title="A8-PRIX-AMORCE-DT141-2021">8.L.p</a></span></td>
+</tr>
+<tr>
+<td>Household sorting rejects, incineration and transport</td>
+<td>159 EUR/t</td>
+<td>2023</td>
+<td>Yes</td>
+<td><span class="ev"><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span></td>
+</tr>
+<tr>
+<td>Rejects of commercial packaging, energy recovery</td>
+<td>188 EUR/t</td>
+<td>2024</td>
+<td>Not stated</td>
+<td><span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>No average price for 2024, 2025 or 2026 was found. Two surveys four years apart do not use the same sample, and neither states whether the tax is included; they cannot be read as a trend.</p>
+<p><strong>Trend.</strong> The price indices of the recycling federation give yearly changes, excluding tax and transport. For incineration of commercial waste in Ile-de-France: plus 9.5 EUR/t at 1 January 2024 and plus 2.9 EUR/t at 1 January 2025<span class="ev"><a href="preuves/A8-L-r.html" title="A8-PRIX-PROFRECYCLEUR-INDICES-2023-2025">8.L.r</a></span>, then plus 6.2 EUR/t at 1 January 2026<span class="ev"><a href="preuves/A8-L-s.html" title="RP-056">8.L.s</a></span>, about 18.6 EUR/t in three years<span class="ev"><a href="preuves/A8-C-e.html" title="CALC-A8-INCIN-IDF-HAUSSE-2024-2026">8.C.e</a></span>. For landfill in Ile-de-France, the 2026 change was plus 1.8 EUR/t<span class="ev"><a href="preuves/A8-L-t.html" title="FEDEREC-Q3000-2026">8.L.t</a></span>. A trade press article expects the inclusion of incineration in the EU emissions trading system to raise its cost by 30 to 40 % by 2028<span class="ev"><a href="preuves/A8-L-u.html" title="A8-PRIX-DECHETSINFOS-ETS-2023">8.L.u</a></span>.</p>
+<p><strong>Waste tax (TGAP), now in the tax code</strong><span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html" title="CIBS-TGAP-2026">3.M.c</a></span>:</p>
+<table>
+<thead>
+<tr>
+<th>Tax per tonne of non-hazardous waste</th>
+<th>2026</th>
+<th>2027</th>
+<th>2028</th>
+<th>2029</th>
+<th>2030</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landfill</td>
+<td>69</td>
+<td>73</td>
+<td>77</td>
+<td>81</td>
+<td>85</td>
+</tr>
+<tr>
+<td>Incineration, energy performance 65 % or more</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Incineration, below 65 %</td>
+<td>29</td>
+<td>33</td>
+<td>37</td>
+<td>41</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Residues of efficient sorting, plant performance 70 % or more</td>
+<td>8</td>
+<td>8.5</td>
+<td>9</td>
+<td>9.5</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Source of the table:<span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html" title="CIBS-TGAP-2026">3.M.c</a></span>.</p>
+<p><strong>Solid recovered fuel.</strong> A producer of solid recovered fuel pays the boiler that burns it: a modelled 40 to 50 EUR/t<span class="ev"><a href="../annexe-03-html/preuves/A3-M-b.html" title="FNADE-CSR-2023">3.M.b</a></span>. Cement plants covered 52 % of their heat with alternative fuels and aim at 80 % in 2030<span class="ev"><a href="preuves/A8-L-v.html" title="A8-CST-FRANCECIMENT-2025">8.L.v</a></span>.</p>
+<p><strong>Ile-de-France.</strong> The 18 incinerators of the region had an authorised capacity of 4,270,900 t per year in 2023 and burned 3,810,761 t in 2022, 93 % of the technical capacity of their furnaces<span class="ev"><a href="preuves/A8-P-f.html" title="A8-CST-ORDIF-UIDND-2023">8.P.f</a></span>.</p>
+<h2>8.3 Stream by Stream</h2>
+<h3>8.3.1 Household Plastic Packaging, Overall</h3>
+<ul>
+<li><strong>Placed on the market:</strong> 1,165 kt in 2024 and 1,174 kt in 2025; recycled 324 kt and 346 kt<span class="ev"><a href="preuves/A8-L-w.html" title="CITEO-RA-2025">8.L.w</a></span>. The scheme estimates the plastic recycling rate at 30 % in 2025<span class="ev"><a href="preuves/A8-L-h.html" title="A8-MENA-CITEOMAG-2026">8.L.h</a></span>.</li>
+<li><strong>Who pays.</strong> Producers pay Citeo per kilogram placed on the market. In 2026: 70.00 cents for clear PET bottles, 77.01 for rigid PE, 80.51 for rigid PS including expanded PS, 140.01 for complex packaging and 210.01 for PVC<span class="ev"><a href="preuves/A8-L-x.html" title="RP2-045">8.L.x</a></span>. Local authorities receive a support of 776 EUR per tonne of plastic sorted and recycled<span class="ev"><a href="preuves/A8-L-y.html" title="RP2-047">8.L.y</a></span>, plus the take-back price.</li>
+<li><strong>Take-back prices in 2024</strong>: clear PET bottles 347 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>; PE/PP mixed 53 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>; PE/PP/PS mixed 39 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>; films, the development stream, PS pots and trays and expanded PS 0 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>; weighted average 140 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>. For films and the development stream, the zero price is an assumption of the source, no price having been observed.</li>
+<li><strong>Main buyer.</strong> Valorplast took back 120,500 t of household plastic packaging in 2025, 76 % recycled in France<span class="ev"><a href="preuves/A8-L-z.html" title="A8-MENA-VALORPLAST-2025">8.L.z</a></span>. Its guaranteed floor price is 0 EUR/t for PS and the mixed streams<span class="ev"><a href="preuves/A8-P-h.html" title="VALORPLAST-G-2024">8.P.h</a></span>.</li>
+<li><strong>No recycling route.</strong> In 2021, 66 % of household plastic packaging was considered recyclable and 17 % was PVC, complex packaging or other resins without a recycling route<span class="ev"><a href="preuves/A8-L-aa.html" title="RP2-036">8.L.aa</a></span>.</li>
+</ul>
+<h3>8.3.2 Household Films and the "Development" Stream</h3>
+<ul>
+<li><strong>Tonnage:</strong> 97,379 t of household films were taken back in 2024<span class="ev"><a href="preuves/A8-C-g.html" title="CALC-A8-FILMS-REPRIS-T">8.C.g</a></span>, and 66,005 t of the development stream, rigid mixed plastics including multilayer trays<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>.</li>
+<li><strong>Recycling rate:</strong> not published for France. In Europe, 18 % of flexible films placed on the market were used as input by recyclers in 2020<span class="ev"><a href="preuves/A8-L-ab.html" title="PRE-FILMS-2023">8.L.ab</a></span>.</li>
+<li><strong>Price:</strong> 0 EUR/t taken back (assumed by the source)<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>.</li>
+<li><strong>Urban Rig:</strong> PE and PP were tested; soiled films were not (Section 8.4).</li>
+<li><strong>Competition:</strong> over-sorting centres and the Grandpuits chemical recycling plant (Section 8.5).</li>
+</ul>
+<h3>8.3.3 Sorting Rejects of Separate Collection</h3>
+<ul>
+<li><strong>Tonnage:</strong> 800,000 t in 2022, 23.0 % of the input of sorting centres<span class="ev"><a href="preuves/A8-L-ac.html" title="CITEO-CAHIER-CS-2024">8.L.ac</a></span>; 750,000 t in another Citeo study<span class="ev"><a href="preuves/A8-L-ad.html" title="OCAPEM-2025">8.L.ad</a></span>; 496 kt in the government cost model<span class="ev"><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span>. In Ile-de-France, 146,368 t in 2024, 27 % of the separate collection, 98 % of it incinerated<span class="ev"><a href="preuves/A8-L-ae.html" title="RP-034">8.L.ae</a></span>.</li>
+<li><strong>Composition:</strong> rigid plastics 7.5 % and flexible plastics 4.5 % on average in France<span class="ev"><a href="preuves/A8-L-ad.html" title="OCAPEM-2025">8.L.ad</a></span>, about 12 % in total<span class="ev"><a href="preuves/A8-C-b.html" title="CALC-A8-REFUS-PART-PLASTIQUE">8.C.b</a></span>. No composition is published for Ile-de-France (request R-003); calorific value and chlorine were not found.</li>
+<li><strong>Who pays:</strong> the local authority, 159 EUR/t including tax<span class="ev"><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span>, or 121 EUR/t excluding tax in one 2024 contract<span class="ev"><a href="preuves/A8-L-c.html" title="RP2-051">8.L.c</a></span>. The 2026 incineration tax falls to 8 EUR/t for residues of efficient sorting<span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html" title="CIBS-TGAP-2026">3.M.c</a></span>, which need a calorific value of at least 9 MJ/kg<span class="ev"><a href="preuves/A8-L-af.html" title="RP-071">8.L.af</a></span>.</li>
+<li><strong>Over-sorting:</strong> four centres of 30,000, 25,000, 15,000 and 30,000 t per year, the last one, at Thiverval-Grignon, due to open at the end of 2026<span class="ev"><a href="preuves/A8-L-ag.html" title="RP-021">8.L.ag</a></span>.</li>
+<li><strong>Urban Rig:</strong> these rejects are a mixed waste, not a plastic stream; not tested (request R-040).</li>
+</ul>
+<h3>8.3.4 Polystyrene (Compact)</h3>
+<ul>
+<li><strong>Tonnage:</strong> 100,000 t of household polystyrene packaging placed on the market each year, of which 60,000 t of pots<span class="ev"><a href="preuves/A8-L-d.html" title="A8-PS-CITEOAO-2022">8.L.d</a></span>.</li>
+<li><strong>Real recycling:</strong> about 5,000 t reach a sorting centre according to Citeo, as reported by the press<span class="ev"><a href="preuves/A8-L-e.html" title="A8-PS-QUECHOISIR-2025">8.L.e</a></span>, about 8 % of the pots<span class="ev"><a href="preuves/A8-C-h.html" title="CALC-A8-PS-PART-TRIE">8.C.h</a></span>. Sorted pots were recycled in Spain into flower pots and hangers<span class="ev"><a href="preuves/A8-L-ah.html" title="A8-PS-CITEOMAP-2024">8.L.ah</a></span>. Since September 2025, 80 % of the sorted tonnage goes to the Indaver plant in Antwerp, which turns it back into styrene, and 20 % to mechanical recycling in Spain<span class="ev"><a href="preuves/A8-L-ai.html" title="A8-PS-CITEOINDAVER-2025">8.L.ai</a></span>. No recycled tonnage has been published.</li>
+<li><strong>Rest:</strong> the household pots not sorted end in residual waste (Annex 5).</li>
+<li><strong>Price:</strong> taken back at 0 EUR/t<span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span>; producers pay 80.51 cents per kilogram<span class="ev"><a href="preuves/A8-L-x.html" title="RP2-045">8.L.x</a></span>.</li>
+<li><strong>Urban Rig:</strong> PS tested, with an oil yield of 55 % to 73 %<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>.</li>
+</ul>
+<h3>8.3.5 Expanded Polystyrene</h3>
+<ul>
+<li><strong>Household packaging:</strong> about 15,000 t placed on the market; 1,200 t per year come out of sorting, and this degraded material has no outlet of its own; recyclers accept it only in very small proportions<span class="ev"><a href="preuves/A8-L-f.html" title="A8-PS-CITEOPSE-2025">8.L.f</a></span>.</li>
+<li><strong>Waste centres:</strong> 15 % of French waste centres collect expanded polystyrene<span class="ev"><a href="preuves/A8-R-e.html" title="A8-PS-AN14052-2026">8.R.e</a></span>; more than 600 t were collected at 200 sites<span class="ev"><a href="preuves/A8-L-f.html" title="A8-PS-CITEOPSE-2025">8.L.f</a></span>. Clean white material is bought at 55 EUR/t<span class="ev"><a href="preuves/A8-L-b.html" title="RP-060">8.L.b</a></span>; one service provider charges a local authority 8 EUR per cubic metre instead<span class="ev"><a href="preuves/A8-R-f.html" title="A8-PS-POITOU-2025">8.R.f</a></span>.</li>
+<li><strong>Commercial packaging:</strong> 71 kt placed on the market; taken back at 284 EUR/t in April 2024<span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span>. A study for the fisheries authority quotes recycling rates of 33 % for all expanded polystyrene packaging and 50 % for commercial packaging, figures from the industry federation<span class="ev"><a href="preuves/A8-L-aj.html" title="A8-PS-FAM-2023">8.L.aj</a></span>.</li>
+<li><strong>Building insulation:</strong> above the limit set by the EU regulation on persistent organic pollutants, insulation containing the flame retardant HBCDD must be destroyed and cannot be recycled. The limit, 1,000 mg/kg in the 2019 text<span class="ev"><a href="preuves/A8-R-g.html" title="A8-PS-POP2019-2019">8.R.g</a></span>, was lowered to 500 mg/kg, with 200 mg/kg planned after a review<span class="ev"><a href="preuves/A8-R-h.html" title="A8-PS-OEIL2400-2022">8.R.h</a></span>.</li>
+<li><strong>Urban Rig:</strong> expanded polystyrene waste tested, with 73 % oil<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>. Bromine is not documented (request R-039).</li>
+</ul>
+<p><strong>The project sponsor's understanding, checked.</strong> "Very little recycled": confirmed for household PS and expanded PS. "Compacted or melted into blocks": compactors and thermal densifiers are described<span class="ev"><a href="preuves/A8-L-aj.html" title="A8-PS-FAM-2023">8.L.aj</a></span>, but no French tonnage was found. "No real outlet": confirmed for sorted household expanded PS; contradicted for clean white expanded PS, which has a buyer, and for compact PS, recycled into styrene since 2025.</p>
+<h3>8.3.6 Commercial and Industrial Packaging</h3>
+<ul>
+<li><strong>Tonnage:</strong> 1,074 kt of non-hazardous plastic packaging placed on the market, of which 307 kt of flexible LDPE (stretch and shrink films)<span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span>. In Ile-de-France, 260,000 t per year of plastic waste from businesses, of which 17 % recycled; half of the commercial share is pallet stretch film<span class="ev"><a href="preuves/A8-L-ak.html" title="A8-PRO-IDF-LIVRET-2023">8.L.ak</a></span>.</li>
+<li><strong>Recycling rate:</strong> 26 % in 2023<span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span>.</li>
+<li><strong>Who pays:</strong> an extended producer responsibility scheme starts for this packaging, with targets of 50 % in 2028 and 55 % in 2030 for plastic<span class="ev"><a href="preuves/A8-R-i.html" title="A8-PRO-CDC-EPRO-2025">8.R.i</a></span>; its start has been postponed by a draft order<span class="ev"><a href="preuves/A8-R-j.html" title="A8-PRO-REPORT-EPRO-2026">8.R.j</a></span>. Clear flexible LDPE was taken back at 151 EUR/t in April 2024; sorting rejects cost 188 EUR/t in energy recovery<span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span>.</li>
+<li><strong>Urban Rig:</strong> PE and PP tested (Section 8.4).</li>
+</ul>
+<h3>8.3.7 Agricultural Films and Plastics</h3>
+<ul>
+<li><strong>Tonnage:</strong> 84,500 t of agricultural plastics collected in 2025, a collection rate of 75 %<span class="ev"><a href="preuves/A8-P-i.html" title="A8-PRO-ADIVALOR-RA-2025">8.P.i</a></span>. Used films to collect are estimated at 70,000 to 85,000 t per year<span class="ev"><a href="preuves/A8-P-j.html" title="A8-PRO-ADIVALOR-RA-2024">8.P.j</a></span>.</li>
+<li><strong>Recycling:</strong> 90 % of what is collected<span class="ev"><a href="preuves/A8-P-i.html" title="A8-PRO-ADIVALOR-RA-2025">8.P.i</a></span>.</li>
+<li><strong>Who pays:</strong> a contribution included in the product price<span class="ev"><a href="preuves/A8-P-i.html" title="A8-PRO-ADIVALOR-RA-2025">8.P.i</a></span>.</li>
+<li><strong>Urban Rig:</strong> PE tested. Little of this stream is in Ile-de-France.</li>
+</ul>
+<h3>8.3.8 Production Scrap</h3>
+<p>No source gives the tonnage, fate or price of plastic production scrap in France: NOT FOUND (searched: recycling federation, plastics processors' federation, ADEME). The recycling federation reports 1,024,000 t of plastics collected and recycled in 2024, 69 % of industrial origin<span class="ev"><a href="preuves/A8-L-al.html" title="RP2-041">8.L.al</a></span>. Clean scrap is resold directly and is not a likely feed.</p>
+<h3>8.3.9 Plastics from Electrical and Electronic Equipment</h3>
+<p>Sorted plastics are in scope; shredder residues are excluded<span class="ev"><a href="preuves/A8-D.html#D-037" title="Decision D-037">D-037</a></span>.</p>
+<ul>
+<li><strong>Tonnage:</strong> 1,215,345 t of equipment collected in France in 2024<span class="ev"><a href="preuves/A8-P-k.html" title="A8-DEV-EUROSTAT-WEEE-2024">8.P.k</a></span>. One producer scheme estimated the plastic in its household equipment at about 315,000 t, 17 % of the mass<span class="ev"><a href="preuves/A8-L-am.html" title="A8-DEV-ECOSYSTEM-RECYCHIM-2020">8.L.am</a></span>.</li>
+<li><strong>Brominated plastics:</strong> 39,301.93 t of plastics containing brominated flame retardants were extracted by that scheme in 2025<span class="ev"><a href="preuves/A8-P-l.html" title="A8-DEV-ECOSYSTEM-RA-2025">8.P.l</a></span>. Plastics are sorted at 2,000 ppm of bromine<span class="ev"><a href="preuves/A8-L-an.html" title="A8-DEV-INERIS-BROME-2020">8.L.an</a></span>; the brominated fraction goes to hazardous waste incineration, at a cost the scheme calls very significant but does not quantify<span class="ev"><a href="preuves/A8-L-am.html" title="A8-DEV-ECOSYSTEM-RECYCHIM-2020">8.L.am</a></span>. The EU waste limit for the sum of these flame retardants is 500 mg/kg, lowered to 350 mg/kg from 30 December 2025 and 200 mg/kg from 30 December 2027<span class="ev"><a href="preuves/A8-R-k.html" title="A8-DEV-POP-PBDE-2025">8.R.k</a></span>.</li>
+<li><strong>Urban Rig:</strong> the polymers (ABS, HIPS) are not tested; bromine is not documented<span class="ev"><a href="preuves/A8-D.html#D-040" title="Decision D-040">D-040</a></span>.</li>
+</ul>
+<h3>8.3.10 Plastics from End-of-Life Vehicles</h3>
+<ul>
+<li><strong>Tonnage:</strong> 1,189,994 t of end-of-life vehicles in 2023; reuse and recycling 89 %, reuse and recovery 96.7 %<span class="ev"><a href="preuves/A8-P-m.html" title="A8-DEV-EUROSTAT-ELV-2023">8.P.m</a></span>.</li>
+<li><strong>Dismantled plastic parts:</strong> 5,203 t recycled and 9,834 t reused in 2023<span class="ev"><a href="preuves/A8-P-m.html" title="A8-DEV-EUROSTAT-ELV-2023">8.P.m</a></span>. Shredder residues are excluded<span class="ev"><a href="preuves/A8-D.html#D-037" title="Decision D-037">D-037</a></span>.</li>
+<li><strong>Polymers:</strong> PP 37 %, PU 15 %, PA 12 %, PVC about 3 % of the plastics of current end-of-life vehicles<span class="ev"><a href="preuves/A8-L-ao.html" title="A8-DEV-JRC-PLASTICS-VEHICLES-2023">8.L.ao</a></span>.</li>
+<li><strong>Rules:</strong> French target of 65 % recovery of PP and PE from 2026 and 70 % from 2028<span class="ev"><a href="preuves/A8-R-l.html" title="A8-DEV-ARRETE-CDC-VHU-2023">8.R.l</a></span>. The new EU regulation sets 15 % of recycled plastic in new vehicles after 72 months and 25 % after 120 months<span class="ev"><a href="preuves/A8-R-m.html" title="A8-DEV-ELV-COUNCIL-6180-2026">8.R.m</a></span>, of which 20 % from end-of-life vehicles, and allows chemical recycling<span class="ev"><a href="preuves/A8-R-n.html" title="A8-DEV-ELV-REG-2026-1738">8.R.n</a></span>.</li>
+<li><strong>Urban Rig:</strong> PP tested.</li>
+</ul>
+<h3>8.3.11 Building Plastics and PVC</h3>
+<ul>
+<li><strong>Recycling:</strong> 20,282 t of plastic from building products and materials were recycled in 2024, a rate of 7.0 % against a target of 17 %; plastic is 8 % of the products placed on the market in this category<span class="ev"><a href="preuves/A8-P-n.html" title="A8-BTX-ADEMEPMCB-2024">8.P.n</a></span>. No breakdown by polymer and no share of PVC were found.</li>
+<li><strong>PVC:</strong> the polymer is 56.7 % chlorine<span class="ev"><a href="preuves/A8-L-ap.html" title="A8-BTX-INRSPVC-2026">8.L.ap</a></span>. Europe recycled 765,972 t of PVC in 2025<span class="ev"><a href="preuves/A8-L-aq.html" title="A8-BTX-VINYLPLUS-2026">8.L.aq</a></span>. EU rules on lead limit the recycling of old rigid PVC<span class="ev"><a href="preuves/A8-R-o.html" title="A8-BTX-REACHPLOMB-2023">8.R.o</a></span>.</li>
+<li><strong>Urban Rig:</strong> PVC not tested beyond melting<span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>; the share of PVC accepted in the feed is open until OneWorld tests<span class="ev"><a href="preuves/A8-D.html#D-040" title="Decision D-040">D-040</a></span>.</li>
+</ul>
+<h3>8.3.12 Textiles</h3>
+<ul>
+<li><strong>Tonnage:</strong> 917,604 t of clothing, linen and footwear placed on the market in 2025, 272,479 t collected and 216,264 t sorted<span class="ev"><a href="preuves/A8-P-o.html" title="A8-BTX-REFASHIONKPI-2025">8.P.o</a></span>.</li>
+<li><strong>Fate of the sorted tonnage:</strong> 54.47 % reused, 25.31 % sent to recycling, 11.03 % wiping cloths and 8.4 % solid recovered fuel<span class="ev"><a href="preuves/A8-P-o.html" title="A8-BTX-REFASHIONKPI-2025">8.P.o</a></span>, about 18,000 t<span class="ev"><a href="preuves/A8-C-i.html" title="CALC-A8-TEXTILES-CSR-T">8.C.i</a></span>.</li>
+<li><strong>Polymers:</strong> in non-reusable textiles, polyester 19 % and acrylic 12 %<span class="ev"><a href="preuves/A8-L-ar.html" title="A8-BTX-REFASHIONCARAC-2023">8.L.ar</a></span>.</li>
+<li><strong>Fibre-to-fibre recycling</strong> is below 1 % in Europe, a secondary figure<span class="ev"><a href="preuves/A8-L-as.html" title="A8-BTX-EEATEXTILES-2022">8.L.as</a></span>.</li>
+<li><strong>Who pays:</strong> producers, 173.61 EUR per tonne placed on the market<span class="ev"><a href="preuves/A8-P-o.html" title="A8-BTX-REFASHIONKPI-2025">8.P.o</a></span>.</li>
+<li><strong>Urban Rig:</strong> not tested (request R-021).</li>
+</ul>
+<h3>8.3.13 Furniture and Other Producer Schemes</h3>
+<ul>
+<li><strong>Furniture and household goods:</strong> 1,974 kt collected in 2025 by the main scheme; across all its streams, 46 % recycled and 47 % recovered as energy; outputs included 407 kt of solid recovered fuel, 45 kt of foams and 13 kt of plastics<span class="ev"><a href="preuves/A8-P-p.html" title="A8-BTX-ECOMAISON-2025">8.P.p</a></span>.</li>
+<li><strong>Urban Rig:</strong> foams (PU) are not tested.</li>
+</ul>
+<h3>8.3.14 Plastic in Residual Household Waste</h3>
+<p>Plastics make up 15.8 % of residual household waste, 2,329,258 t<span class="ev"><a href="preuves/A8-M-b.html" title="ADEME-MODECOM-2024-DATA">8.M.b</a></span>. This stream is treated in Annex 5.</p>
+<h2>8.4 Suitability for the Urban Rig</h2>
+<table>
+<thead>
+<tr>
+<th>Polymer or stream</th>
+<th>Tested on Urban Rig equipment</th>
+<th>Result</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE and PP</td>
+<td>Yes</td>
+<td>Oil 73 % to 81 % of the input</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span></td>
+</tr>
+<tr>
+<td>PS, including expanded PS waste</td>
+<td>Yes</td>
+<td>Oil 55 % to 73 %</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span></td>
+</tr>
+<tr>
+<td>Mixed plastics with some PVC and FRP</td>
+<td>Yes, 2021</td>
+<td>PVC stopped at the melting stage</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span></td>
+</tr>
+<tr>
+<td>PET, PA, PU, textiles, PVC alone</td>
+<td>No</td>
+<td>Request R-021</td>
+<td></td>
+</tr>
+<tr>
+<td>Sorting rejects, multilayer packaging, sorted electronic plastics</td>
+<td>No</td>
+<td>Request R-040</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Source of the table:<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>; details in Annex 2.</p>
+<ul>
+<li><strong>Chlorine.</strong> According to OneWorld design data, the chlorine of PVC turns into dilute hydrochloric acid in the steam and is captured by a catalytic layer<span class="ev"><a href="../annexe-02-html/preuves/A2-3-h.html" title="UR2000-JP-P03-P04-CHLORE">2.3.h</a></span>. The oils made from municipal plastics contained 0.137 % and 0.526 % chlorine<span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html" title="CHIBA-JLOS-HUILES">2.2.a</a></span>.</li>
+<li><strong>Outlet of the oil.</strong> To leave waste status for a steam cracker, the oil must come from plastic waste with at least 85 % of PE, PP and PS and at most 3 % of PVC, and contain at most 500 ppm of halogens without purification<span class="ev"><a href="../annexe-03-html/preuves/A3-R-a.html" title="A3-ARRETE-SSD-HUILE-PYROLYSE-2024">3.R.a</a></span>. Otherwise the oil is a fuel for a permitted plant (Annex 3).</li>
+<li><strong>Bromine.</strong> No OneWorld document covers bromine. The project sponsor's working assumption is that bromine is removed largely as chlorine is; it is not documented and awaits tests<span class="ev"><a href="preuves/A8-D.html#D-040" title="Decision D-040">D-040</a></span>.</li>
+</ul>
+<h2>8.5 Competition for the Feedstock</h2>
+<ul>
+<li><strong>Mechanical recycling:</strong> French and European recyclers take back the valuable streams (8.3.1).</li>
+<li><strong>Chemical recycling in France:</strong> the Grandpuits plant of TotalEnergies, 15,000 t per year, started in March 2026<span class="ev"><a href="preuves/A8-L-at.html" title="RP2-032">8.L.at</a></span> and is now wholly owned by TotalEnergies<span class="ev"><a href="preuves/A8-L-au.html" title="A8-CST-TTE-RACHAT-2026">8.L.au</a></span>. Its technology partner went into administration in the United Kingdom in April 2026<span class="ev"><a href="preuves/A8-R-p.html" title="A8-CST-GAZETTE-PE-2026">8.R.p</a></span>. The Eastman polyester project in Normandy, more than 110,000 t per year in a first phase, is paused<span class="ev"><a href="preuves/A8-L-av.html" title="A8-CST-EASTMAN-2026">8.L.av</a></span>.</li>
+<li><strong>Chemical recycling in Europe:</strong> Viridor closed its three plastic pyrolysis plants in 2026, citing weak demand and cheaper virgin plastic<span class="ev"><a href="preuves/A8-L-aw.html" title="A8-CST-VIRIDOR-2026">8.L.aw</a></span>.</li>
+<li><strong>Buyers of pyrolysis feed:</strong> they buy sorted, washed and shredded bales with at least 86 % polyolefins and at most 1 % PVC<span class="ev"><a href="preuves/A8-L-ax.html" title="RP2-062">8.L.ax</a></span>, at 248.81 EUR/t in June 2025<span class="ev"><a href="preuves/A8-L-a.html" title="RP2-061">8.L.a</a></span>.</li>
+<li><strong>Solid recovered fuel and cement plants:</strong> see Section 8.2.</li>
+<li><strong>Incineration:</strong> the default outlet, nearly saturated in Ile-de-France (Section 8.2).</li>
+</ul>
+<h2>8.6 Default Entry Prices for the Model</h2>
+<p>In the model, a price paid to the plant is positive and a purchase is negative. Every value can be changed by the operator<span class="ev"><a href="preuves/A8-D.html#D-041" title="Decision D-041">D-041</a><a href="preuves/A8-D.html#D-042" title="Decision D-042">D-042</a></span>.</p>
+<table>
+<thead>
+<tr>
+<th>Stream</th>
+<th>Default</th>
+<th>Basis</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sorted plastic in bales</td>
+<td>Buy at 249 EUR/t</td>
+<td>Market price of mixed plastic bales, June 2025</td>
+<td><span class="ev"><a href="preuves/A8-L-a.html" title="RP2-061">8.L.a</a></span></td>
+</tr>
+<tr>
+<td>Clean white expanded PS from waste centres</td>
+<td>Buy at 55 EUR/t</td>
+<td>Buyer's price, 2025</td>
+<td><span class="ev"><a href="preuves/A8-L-b.html" title="RP-060">8.L.b</a></span></td>
+</tr>
+<tr>
+<td>Household films, development stream, PS pots and trays, sorted household expanded PS</td>
+<td>0 EUR/t</td>
+<td>Take-back price 2024</td>
+<td><span class="ev"><a href="preuves/A8-P-g.html" title="A8-MENA-PRIXREPRISE-2025">8.P.g</a></span></td>
+</tr>
+<tr>
+<td>Rejects of commercial packaging</td>
+<td>Paid 188 EUR/t</td>
+<td>Energy recovery cost</td>
+<td><span class="ev"><a href="preuves/A8-L-q.html" title="A8-PRO-NOTE-SOUTIENS-EPRO-2026">8.L.q</a></span></td>
+</tr>
+<tr>
+<td>Household sorting rejects</td>
+<td>Paid 100 EUR/t</td>
+<td>Sponsor's choice; holder's cost 159</td>
+<td><span class="ev"><a href="preuves/A8-D.html#D-042" title="Decision D-042">D-042</a><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span></td>
+</tr>
+<tr>
+<td>Residual household waste</td>
+<td>Paid 100 EUR/t</td>
+<td>Sponsor's assumption</td>
+<td><span class="ev"><a href="preuves/A8-D.html#D-039" title="Decision D-039">D-039</a></span></td>
+</tr>
+<tr>
+<td>Brominated plastics, synthetic textiles, furniture foams and plastics, building plastics</td>
+<td>Paid 100 EUR/t</td>
+<td>Sponsor's assumption; real price not found</td>
+<td><span class="ev"><a href="preuves/A8-D.html#D-042" title="Decision D-042">D-042</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2>8.7 Conflicts Between Sources</h2>
+<ul>
+<li><strong>National sorting rejects:</strong> 800,000 t<span class="ev"><a href="preuves/A8-L-ac.html" title="CITEO-CAHIER-CS-2024">8.L.ac</a></span>, 750,000 t<span class="ev"><a href="preuves/A8-L-ad.html" title="OCAPEM-2025">8.L.ad</a></span> or 496 kt<span class="ev"><a href="preuves/A8-R-a.html" title="A8-MENB-DGPR-COUTSREF-2026">8.R.a</a></span>.</li>
+<li><strong>Incineration price surveys:</strong> 133 and 76 EUR/t in 2021<span class="ev"><a href="preuves/A8-M-a.html" title="AMORCE-DT139">8.M.a</a></span>, 120 and 95 EUR/t in 2023<span class="ev"><a href="preuves/A8-L-m.html" title="A8-PRIX-AMORCE-DT156-2023">8.L.m</a></span>. Different samples; not a trend.</li>
+<li><strong>HBCDD limit:</strong> 1,000 mg/kg in the 2019 text<span class="ev"><a href="preuves/A8-R-g.html" title="A8-PS-POP2019-2019">8.R.g</a></span>; 500 mg/kg in the amended text, read only in a summary<span class="ev"><a href="preuves/A8-R-h.html" title="A8-PS-OEIL2400-2022">8.R.h</a></span>.</li>
+<li><strong>Plastic packaging recycling 2022:</strong> 25.2 % in the government review<span class="ev"><a href="preuves/A8-L-i.html" title="STRAT3R-2025">8.L.i</a></span>; Eurostat gives 25.4 % for the same year<span class="ev"><a href="preuves/A8-P-a.html" title="EUROSTAT-WASPAC">8.P.a</a></span>.</li>
+</ul>
+<h2>8.8 Open Points</h2>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Subject</th>
+<th>Held by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-001, R-042</td>
+<td>ADEME reports available only on registration</td>
+<td>Project sponsor</td>
+</tr>
+<tr>
+<td>R-003</td>
+<td>Composition of sorting rejects in Ile-de-France</td>
+<td>Local authorities</td>
+</tr>
+<tr>
+<td>R-021, R-040</td>
+<td>Tests on PET, PVC, textiles, rejects, multilayer, electronic plastics, foams</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-039</td>
+<td>Bromine and persistent pollutants</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-041</td>
+<td>Physical form of a plastic feed, maximum PVC and bromine</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-044</td>
+<td>Disposal prices in Ile-de-France, purchase price at Grandpuits</td>
+<td>Operators</td>
+</tr>
+</tbody>
+</table>
+<h2>8.9 References</h2>
+<p>Documents cited in this annex, with their location and confidence. The full list of sheets is in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<table><tr><th>Sheet</th><th>Document</th><th>Location</th><th>Confidence</th></tr><tr><td><span class="ev"><a href="preuves/A8-P-a.html">8.P.a</a></span></td><td>Packaging waste by waste management operations (env_waspac, cei_wm020), France, plastique</td><td></td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-b.html">8.P.b</a></span></td><td>env_waspac, Plastic packaging W150102, EU27_2020</td><td>JSON-stat, unit PC</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-a.html">8.L.a</a></span></td><td>S&amp;P Global, pyrolysis oil and mixed plastic waste, 18/07/2025</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-b.html">8.L.b</a></span></td><td>Valorplast, contrat HCS PSE (Ambert Livradois Forez)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-c.html">8.L.c</a></span></td><td>SITOM Nord-Isère, refus treatment convention</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-a.html">8.R.a</a></span></td><td>Actualisation pour 2026 des enveloppes de soutien dans le cadre d&#x27;un service optimisé de collecte et de tri des déchets d&#x27;emballages ménagers et de papiers graphiques : note de calcul métropole</td><td>§1.3 p. 5 ; annexe 3 (Tri) p. 24-25 ; annexe 6 p. 28 ; §10.2 p. 12 (pages déduites de l&#x27;extraction) ; url_2 : p. 4 et p. 11</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-d.html">8.L.d</a></span></td><td>Citeo donne le coup d&#x27;envoi de la filière de recyclage à grande échelle (communiqué PS, titre complet plus long)</td><td>PDF, encadré « Le PS en France » et corps du texte (page non donnée par l&#x27;outil)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-e.html">8.L.e</a></span></td><td>Pots de yaourt : enfin recyclés ?</td><td>article</td><td>90 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-f.html">8.L.f</a></span></td><td>Développer le recyclage des emballages ménagers en PSE (feuille de route)</td><td>PDF p. 2, 3, 4, 5</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html">3.M.c</a></span></td><td>Loi de finances 2026 - TGAP dechets (CIBS art. L.433-57 et L.433-86)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-03-html/preuves/A3-R-a.html">3.R.a</a></span></td><td>Arrêté du 19 février 2024 fixant les critères de sortie du statut de déchet pour l&#x27;huile de pyrolyse issue de la pyrolyse de déchets de matières plastiques, en vue d&#x27;une valorisation matière au sein d&#x27;une installation pétrochimique relevant de la directive 2010/75/UE, pour un usage dans une unité de vapocraquage ou dans une unité de purification à destination d&#x27;une unité de vapocraquage (NOR TREP2403460A)</td><td>Notice ; art. 1er (définitions), art. 2 a) à h) ; art. 3 à 7 ; annexe I sections 1.1 à 1.3, 2.1, 3.3 (tableaux A et B), 4.4 ; annexe II</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html">2.3.f</a></span></td><td>One World Japan, rapport d&#x27;essais de demonstration URT-10 sur dechets plastiques, 01 au 03/12/2021</td><td>p. 2, 5, 8</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-c.html">8.P.c</a></span></td><td>Datalab Essentiel - Bilan 2022 de la production de dechets en France</td><td>Tableaux 1 a 4</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-d.html">8.P.d</a></span></td><td>Waste statistics (env_wasgt), métadonnées ESMS</td><td>section 15.3 Coherence - cross domain</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-g.html">8.L.g</a></span></td><td>National infographics, Circular Economy for Plastics 2026 (France)</td><td>section France, panneaux 1 à 7 (n° de page PDF non déterminé)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-h.html">8.L.h</a></span></td><td>Les chiffres du recyclage en France</td><td>page web, liste Taux de recyclage par matériau</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-b.html">8.R.b</a></span></td><td>Décision d&#x27;exécution (UE) 2019/665 de la Commission du 17 avril 2019 modifiant la décision 2005/270/CE</td><td>annexe II (point de calcul) ; art. 6 septies §1 ; art. 4 §1</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-c.html">8.R.c</a></span></td><td>Règlement (UE) 2025/40 du Parlement européen et du Conseil relatif aux emballages et aux déchets d&#x27;emballages</td><td>art. 3 point 40 ; art. 7 §1, §2, §8, §9 ; art. 52 §1 ; article final (date d&#x27;application) ; considérant 48</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-d.html">8.R.d</a></span></td><td>Loi n° 2020-105 du 10 février 2020 relative à la lutte contre le gaspillage et à l&#x27;économie circulaire</td><td>art. 5 (4° bis du I de l&#x27;art. L. 541-1 C. env.) ; art. 7 (art. L. 541-10-17 C. env.)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-i.html">8.L.i</a></span></td><td>Strategie 3R - bilan intermediaire</td><td>p.1, p.13</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-e.html">8.P.e</a></span></td><td>EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), déclarant FR, produit 3915, flux export, quantité</td><td>JSON-stat, dimension partner</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-j.html">8.L.j</a></span></td><td>Council Decision (EU, Euratom) 2020/2053</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-k.html">8.L.k</a></span></td><td>Sénat, note on the European affairs mission, PLF 2025</td><td>p. 6 et tableau p. 20</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-l.html">8.L.l</a></span></td><td>Sénat, amendment I-80, PLF 2026</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-m.html">8.L.m</a></span></td><td>Recettes de vente d&#x27;electricite et de chaleur des Unites de Valorisation Energetique des dechets - donnees 2023 (DT156)</td><td>p. 23, section 3.1.3 &#x27;Des ventes remuneratrices&#x27;</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-M-a.html">8.M.a</a></span></td><td>Performances, recettes et couts des unites de traitement thermique, donnees 2020-2021 (DT139)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-n.html">8.L.n</a></span></td><td>Notice de reference couts 2023 - Cout du service public des dechets : 104 EUR par Francilien en 2023</td><td>p. 17 (OMR), p. 19 (graphique couts d&#x27;incineration), p. 32 (definitions)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-o.html">8.L.o</a></span></td><td>Budget primitif 2026</td><td>p. 5, 6, 9, 11, 12, 13</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-p.html">8.L.p</a></span></td><td>Observatoire couts de stockage - Donnees 2020-2021 (DT141)</td><td>p. 11 (conventions), p. 16 Figure 8, p. 23 Figure 14, p. 28 Tableau 3</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-q.html">8.L.q</a></span></td><td>NOTE D&#x27;EVALUATION DU MONTANT DES SOUTIENS APPORTES PAR LA REP EMBALLAGES PROFESSIONNELS</td><td>p. 2 (tableau des mises sur le marché par résine), p. 3, p. 12 et 13 (coûts, prix de reprise)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-r.html">8.L.r</a></span></td><td>Recycleur l&#x27;Officiel des Dechets / Profession Recycleur n.1565 (semaine 45) - tableaux indices Federrec</td><td>p. 8, tableau &#x27;Mise en incineration des dechets non dangereux des activites economiques&#x27; et bloc &#x27;enfouissement des refus de tri en ISDND&#x27;</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-s.html">8.L.s</a></span></td><td>FEDEREC et RYDGE, indice Q3050 incinération (janvier 2026)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-t.html">8.L.t</a></span></td><td>Indice Q3000 enfouissement, janvier 2026 (synthese)</td><td></td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-u.html">8.L.u</a></span></td><td>Incineration : les quotas de CO2 pourraient faire grimper les couts</td><td>chapo (article reserve aux abonnes)</td><td>80 %</td></tr><tr><td><span class="ev"><a href="../annexe-03-html/preuves/A3-M-b.html">3.M.b</a></span></td><td>Synthese modele economique filiere CSR (FNADE / SN2E, 2023)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-v.html">8.L.v</a></span></td><td>Feuille de route de décarbonation : L&#x27;industrie cimentière tient ses objectifs et entend poursuivre ses actions</td><td>communiqué</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-f.html">8.P.f</a></span></td><td>L&#x27;incinération des déchets non dangereux en Île-de-France, données 2022-2023</td><td>p. 3, 7, 8</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-w.html">8.L.w</a></span></td><td>Rapport d&#x27;activite 2025</td><td>p.5 (taux de recyclage par materiau 2025, objectif 2030) ; p.13 (mises sur le marche) ; p.29 (tonnes recyclees)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-x.html">8.L.x</a></span></td><td>Citeo, tariff guide 2026</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-y.html">8.L.y</a></span></td><td>GPSEO, Citeo contract amendment 2024</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-g.html">8.P.g</a></span></td><td>Actualisation pour 2026 des enveloppes de soutien dans le cadre d&#x27;un service optimisé de collecte et de tri des déchets d&#x27;emballages ménagers et de papiers graphiques (note de calcul métropole)</td><td>p. 15, p. 16, p. 26, p. 27 (tableau « Sous-calcul prix de reprise Plastiques »)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-z.html">8.L.z</a></span></td><td>Nos missions (section Chiffres 2025)</td><td>section Chiffres 2025</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-h.html">8.P.h</a></span></td><td>Projet - Contrat type Option de Reprise Filiere Plastiques - V0 - Bareme G (annexe a une decision de Grand Chambery du 30/05/2024)</td><td>Article 7 (duree jusqu&#x27;au 31/12/2029) ; Article 11 (prix planchers)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-aa.html">8.L.aa</a></span></td><td>ADEME, 3R decree indicators, synthesis</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ab.html">8.L.ab</a></span></td><td>2023 Flexible Films Market in Europe - State of Play (donnees 2020)</td><td>p.19 ; p.24-25</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ac.html">8.L.ac</a></span></td><td>Cahier Collecte selective</td><td>p.19 (taux de refus 2018-2022, 800 kt) ; p.14 (plastiques recycles 2012-2022) ; p.21-25 (cas locaux, cout par mode de collecte)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ad.html">8.L.ad</a></span></td><td>Etude pour l&#x27;amelioration du tri des petits emballages, synthese (V1)</td><td>Tableau 3 p.5 (composition des refus) ; Tableau 4 p.6 (captage par granulometrie) ; Tableau 5 p.7 (750 000 t)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ae.html">8.L.ae</a></span></td><td>ORDIF, Bilan DMA 2024 (diaporama)</td><td>slides 3 et 17 a 20</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-af.html">8.L.af</a></span></td><td>Arrêté du 20/02/2023, TGAP réduite des résidus de tri performants (AIDA)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ag.html">8.L.ag</a></span></td><td>Citeo, Observatoire de la qualité 2025</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ah.html">8.L.ah</a></span></td><td>Mise au point : les pots de yaourt pourront bien être recyclés en de nouveaux pots de yaourt en 2025</td><td>PDF p. 1</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ai.html">8.L.ai</a></span></td><td>Le pot de yaourt redevient un pot de yaourt : Lancement de la nouvelle filière de recyclage européenne du polystyrène avec l’usine Indaver</td><td>PDF, page unique</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html">2.1.b</a></span></td><td>Rapport Chiba, fiches d&#x27;essai de pyrolyse (15 essais, dont 13 avec huile mesuree) et definitions</td><td>PDF p. 19 a 26 (impr. 13 a 20) ; definitions p. 27 (impr. 21) ; methode de mesure de l&#x27;huile p. 29 (impr. 23)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-e.html">8.R.e</a></span></td><td>Question écrite n° 14052 : Prise en compte du polystyrène expansé dans les filières REP (réponse ministérielle)</td><td>réponse ministérielle</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-f.html">8.R.f</a></span></td><td>Convention de collecte et traitement de déchets de polystyrène</td><td>PDF p. 2 (art. 4), p. 4 (art. 10.1)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-aj.html">8.L.aj</a></span></td><td>Étude sur les contenants en polystyrène dans la filière des produits aquatiques</td><td>PDF p. 14, 23 (tableau 2), 37-44</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-g.html">8.R.g</a></span></td><td>Règlement (UE) 2019/1021 concernant les polluants organiques persistants (texte initial)</td><td>annexe IV, ligne HBCDD (FR) ; annexe V partie 2 (EN, url_2) ; article 7</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-h.html">8.R.h</a></span></td><td>Résumé de l&#x27;acte final : règlement (UE) 2022/2400 modifiant les annexes IV et V du règlement 2019/1021</td><td>résumé, passage HBCDD</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ak.html">8.L.ak</a></span></td><td>Économie circulaire et plastique en Île-de-France : les dynamiques de réemploi et de recyclage</td><td>p. 39, 40, 41</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-i.html">8.R.i</a></span></td><td>Arrêté du 02/12/25 portant cahier des charges des éco-organismes, des systèmes individuels et des organismes coordonnateurs de la filière à responsabilité élargie des producteurs d&#x27;emballages servant à commercialiser des produits consommés ou utilisés par des professionnels</td><td>article 4 ; annexe I, § 5.1.1 (tableau des objectifs) ; § 3.2.1 a) (réemploi) ; § 4.1.2 a)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-j.html">8.R.j</a></span></td><td>Projet d&#x27;arrêté modifiant l&#x27;arrêté du 2 décembre 2025 portant cahier des charges (...) emballages servant à commercialiser des produits consommés ou utilisés par des professionnels (TECP2620919A)</td><td>article 1er ; article 2, 1° (annexe I, 3.2.2)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-i.html">8.P.i</a></span></td><td>2025 Rapport d&#x27;activité (édition des 25 ans)</td><td>p. 3 (édito), p. 7 (chiffres clés), p. 19 et 21, p. 23, p. 35</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-j.html">8.P.j</a></span></td><td>Rapport d&#x27;activité A.D.I.VALOR 2024 (titre de couverture non extrait)</td><td>p. 9 (chiffres clés), p. 33 (films), p. 35 (filets), p. 44 (financement), p. 45</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-al.html">8.L.al</a></span></td><td>FEDEREC, key figures 2024</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-k.html">8.P.k</a></span></td><td>Waste electrical and electronic equipment (WEEE) by waste management operations - open scope, 6 product categories (from 2018 onwards) [env_waseleeos]</td><td>API JSON-stat, waste=EE6 (total 6 catégories), geo=FR, unité tonne</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-am.html">8.L.am</a></span></td><td>Recyclage chimique des plastiques : Application aux plastiques issus des DEEE</td><td>p. 4-6 (pyrolyse), p. 14 (gisement), p. 23-24 (tableau 5, part ignifugée), p. 29 (gate fee)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-l.html">8.P.l</a></span></td><td>6 défis pour faire avancer la circularité, Rapport annuel 2025</td><td>p. 10 (taux de recyclage) ; p. 34-35 (collecte) ; p. 39, tableau « Substances réglementées et dangereuses extraites des EEE et des lampes En tonnes »</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-an.html">8.L.an</a></span></td><td>Campagne d&#x27;analyse sur la teneur en brome et composés bromés dans les plastiques du broyage de déchets d&#x27;équipements électriques et électroniques (DEEE)</td><td>p. 5 (résumé), p. 8 note 3, p. 9-10 (§1.2.5), p. 13 (§1.3), p. 24, p. 29 tableau 11</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-k.html">8.R.k</a></span></td><td>Règlement délégué de la Commission du 24.7.2025 modifiant le règlement (UE) 2019/1021 en ce qui concerne ... tétraBDE, pentaBDE, hexaBDE, heptaBDE et décaBDE, C(2025) 4797 final (doc. Conseil 12184/25)</td><td>exposé des motifs p. FR 1-2 ; considérants p. FR 4-6</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-m.html">8.P.m</a></span></td><td>End-of-life vehicles - reuse, recycling and recovery, totals [env_waselvt] ; End-of-life vehicles by waste management operations - detailed data [env_waselv]</td><td>API JSON-stat ; env_waselvt (unit=PC, unit=NR) et env_waselv (unit=T), geo=FR</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ao.html">8.L.ao</a></span></td><td>Towards recycled plastic content targets in new passenger cars and light commercial vehicles (EUR 31047 EN, JRC129008)</td><td>résumé p. 5 ; §1.1.1 p. 12 ; §1.1.3 et §1.2.1 p. 15 ; §2.1.2-2.1.3 p. 22-25, tableau 4</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-l.html">8.R.l</a></span></td><td>Arrêté du 20/11/23 portant cahiers des charges des éco-organismes ... de la filière REP des voitures particulières, camionnettes, ... (NOR TREP2224149A), version consolidée (arrêtés du 23/12/2025 et du 13/01/2026)</td><td>annexe I, §3.2.1.1, §3.2.1.2, §3.4.1 (tableau) ; §3.4.2 abrogé</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-m.html">8.R.m</a></span></td><td>Note 6180/26, dossier 2023/0284(COD) : Analysis of the final compromise text with a view to agreement</td><td>§11 p. 4 ; §13 p. 5 ; considérant 19 p. 23-24</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-n.html">8.R.n</a></span></td><td>Règlement (UE) 2026/1738 du 8 juillet 2026 relatif aux exigences de circularité pour la conception des véhicules et à la gestion des véhicules hors d&#x27;usage (PE-CONS 13/1/26 REV 1 ; procédure 2023/0284(COD))</td><td>PE-CONS : considérant 29 p. 27-28, considérant 82 p. 71 ; OEIL : tableau des événements</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-n.html">8.P.n</a></span></td><td>Filière des Produits et matériaux de construction du bâtiment : données 2024, Bilan annuel</td><td>p. 7-8 (mises sur le marché), p. 15-16 tableau 4 (collecte), p. 23 (définition du taux), p. 24 tableau 7 (recyclage par famille, catégorie 2), p. 26 tableau 8</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ap.html">8.L.ap</a></span></td><td>Polychlorure de vinyle (PVC), fiche Plastiques, Risque et Analyse ThermIQue</td><td>p. 1 (teneur en chlore), p. 3 (dégradation thermique)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-aq.html">8.L.aq</a></span></td><td>VinylPlus Progress Report 2026</td><td>p. imprimées 20-22 (tonnages, graphique par région), 27-29 et 33 (plomb, additifs historiques, pyrolyse), 52 (tableau par application)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-o.html">8.R.o</a></span></td><td>Règlement (UE) 2023/923 de la Commission du 3 mai 2023 modifiant l&#x27;annexe XVII du règlement (CE) n° 1907/2006 en ce qui concerne le plomb et ses composés dans le PVC</td><td>annexe, entrée 63 de l&#x27;annexe XVII, paragraphes 15 à 20</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-o.html">8.P.o</a></span></td><td>Les indicateurs clés de performance de la Filière Textile d&#x27;habillement, Linge de maison et Chaussures, Rapport d&#x27;activité 2025</td><td>PDF 1 page (tableau d&#x27;indicateurs)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ar.html">8.L.ar</a></span></td><td>Étude de caractérisation des flux entrants et sortants de centres de tri (synthèse)</td><td>synthèse p. 4, 8, 13, 14, 15, 17 (pagination imprimée &#x27;Synthèse N&#x27;)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-as.html">8.L.as</a></span></td><td>Textiles and the environment: the role of design in Europe&#x27;s circular economy (Briefing no 01/2022)</td><td>page web, sections recyclage et collecte</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-P-p.html">8.P.p</a></span></td><td>Rapport annuel 2025 Ecomaison</td><td>p. 46-47 environ (performance de la collecte), p. 14 (polyol), p. 35-36 (bois) ; pagination approximative</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-M-b.html">8.M.b</a></span></td><td>Composition OMR et CS - MODECOM 2024 (donnees ouvertes ADEME)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-h.html">2.3.h</a></span></td><td>Brochure URC-2000 OneWorld, chlore et couche catalytique</td><td>p. 3 et p. 4</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html">2.2.a</a></span></td><td>Japan Lubricating Oil Society (潤滑油協会), analyses de deux huiles d&#x27;essai, rapports 20221020-003-03 et -04</td><td>PDF p. 45 (impr. 39) et p. 46 (impr. 40)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-at.html">8.L.at</a></span></td><td>TotalEnergies, Grandpuits start-up, 19/03/2026</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-au.html">8.L.au</a></span></td><td>Recyclage des plastiques (actualité TotalEnergies, Grandpuits)</td><td>actualité web</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-R-p.html">8.R.p</a></span></td><td>Appointment of Administrators, Plastic Energy Finco Ltd</td><td>avis n° 5124202</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-av.html">8.L.av</a></span></td><td>Eastman France site (page projet de recyclage moléculaire)</td><td>page web</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-aw.html">8.L.aw</a></span></td><td>Viridor to close European chemical recycling operations</td><td>communiqué</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A8-L-ax.html">8.L.ax</a></span></td><td>S&amp;P Global Platts, mixed plastic waste assessment methodology, 12/03/2025</td><td></td><td>95 %</td></tr></table></main></body></html>

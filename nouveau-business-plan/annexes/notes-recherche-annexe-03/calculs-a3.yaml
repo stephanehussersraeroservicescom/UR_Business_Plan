@@ -1,0 +1,712 @@
+
+# === ANNEXE 3 : prix, char, metaux, gaz et hydrogene, energie, carbone (chat 3 v3, 15/10/2026) ===
+
+CALC-A3-GAZOLE-EUR-T:
+  description: Gazole Rotterdam, semaine au 09/10/2026, converti en EUR/t au taux de la meme note DGEC
+  formule: usd / taux
+  entrees:
+    usd:
+      valeur: 1406
+      unite: USD/t
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 3, tableau des cotations, semaine au 9 oct. 2026
+    taux:
+      valeur: 1.121
+      unite: USD/EUR
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 2, euro/dollar
+  unite: EUR/t
+  resultat: 1254.24
+
+CALC-A3-FOD-EUR-T:
+  description: Fioul domestique Rotterdam, semaine au 09/10/2026, en EUR/t
+  formule: usd / taux
+  entrees:
+    usd:
+      valeur: 1372
+      unite: USD/t
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 3, tableau des cotations, semaine au 9 oct. 2026
+    taux:
+      valeur: 1.121
+      unite: USD/EUR
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 2, euro/dollar
+  unite: EUR/t
+  resultat: 1223.91
+
+CALC-A3-JET-EUR-T:
+  description: Carbureacteur (Jet) Rotterdam, semaine au 09/10/2026, en EUR/t
+  formule: usd / taux
+  entrees:
+    usd:
+      valeur: 1574
+      unite: USD/t
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 3, tableau des cotations, semaine au 9 oct. 2026
+    taux:
+      valeur: 1.121
+      unite: USD/EUR
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 2, euro/dollar
+  unite: EUR/t
+  resultat: 1404.1
+
+CALC-A3-RATIO-LEGERE:
+  description: 'Fraction legere : naphta NWE (Insee, aout 2026) rapporte au Brent du meme mois (Banque mondiale), EUR/t par USD/b'
+  formule: naphta / brent
+  entrees:
+    naphta:
+      valeur: 636.8
+      unite: EUR/t
+      source: A3F-INSEE-NAPHTA-NWE-010002082
+      emplacement: serie 010002082, aout 2026
+    brent:
+      valeur: 90.9
+      unite: USD/b
+      source: A3-BM-PINKSHEET-2026-10
+      emplacement: page 1, Crude oil Brent, aout 2026
+  unite: EUR/t par USD/b
+  resultat: 7.0055
+
+CALC-A3-RATIO-GAZOLE:
+  description: 'Gazole : cotation Rotterdam semaine au 09/10/2026 en EUR/t rapportee au Brent de la meme semaine, EUR/t par USD/b'
+  formule: gazole / brent
+  entrees:
+    gazole:
+      calc: CALC-A3-GAZOLE-EUR-T
+    brent:
+      valeur: 128.53
+      unite: USD/b
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 2, Brent date, moyenne hebdomadaire au 9 oct. 2026
+  unite: EUR/t par USD/b
+  resultat: 9.75832
+
+CALC-A3-RATIO-LOURDE:
+  description: 'Fraction lourde : fioul lourd TBTS (< 1 % S) Rotterdam semaine au 09/10/2026 (EUR/t) rapporte au Brent de la meme semaine'
+  formule: hfo / brent
+  entrees:
+    hfo:
+      valeur: 541
+      unite: EUR/t
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 3, tableau des cotations, semaine au 9 oct. 2026, ligne en EUR/t
+    brent:
+      valeur: 128.53
+      unite: USD/b
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 2, Brent date
+  unite: EUR/t par USD/b
+  resultat: 4.20913
+
+CALC-A3-LEGERE-BRENT80:
+  description: Prix de reference de la fraction legere recalcule pour un Brent de 80 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-LEGERE
+    brent:
+      valeur: 80
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 560.44
+
+CALC-A3-LEGERE-BRENT50:
+  description: Prix de reference de la fraction legere recalcule pour un Brent de 50 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-LEGERE
+    brent:
+      valeur: 50
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 350.275
+
+CALC-A3-GAZOLE-BRENT80:
+  description: Prix de reference de la fraction gazole recalcule pour un Brent de 80 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-GAZOLE
+    brent:
+      valeur: 80
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 780.666
+
+CALC-A3-GAZOLE-BRENT50:
+  description: Prix de reference de la fraction gazole recalcule pour un Brent de 50 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-GAZOLE
+    brent:
+      valeur: 50
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 487.916
+
+CALC-A3-LOURDE-BRENT80:
+  description: Prix de reference de la fraction lourde recalcule pour un Brent de 80 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-LOURDE
+    brent:
+      valeur: 80
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 336.731
+
+CALC-A3-LOURDE-BRENT50:
+  description: Prix de reference de la fraction lourde recalcule pour un Brent de 50 USD/b (rapport constant, hypothese D-030)
+  formule: ratio * brent
+  entrees:
+    ratio:
+      calc: CALC-A3-RATIO-LOURDE
+    brent:
+      valeur: 50
+      unite: USD/b
+      source: D-030
+      emplacement: exemple de Stephane du 15/10/2026
+  unite: EUR/t
+  resultat: 210.457
+
+CALC-A3-HUILE-MOY-REF:
+  description: Prix de reference pondere de l huile (fractions 10/80/10 de conception OneWorld) aux prix les plus recents, avant facteur de qualite
+  formule: (part_l * legere + part_g * gazole + part_h * lourde) / 100
+  entrees:
+    part_l:
+      calc: CALC-A1-OW16-PART-HEATING
+    legere:
+      valeur: 636.8
+      unite: EUR/t
+      source: A3F-INSEE-NAPHTA-NWE-010002082
+      emplacement: aout 2026
+    part_g:
+      calc: CALC-A1-OW16-PART-GAZOLE
+    gazole:
+      calc: CALC-A3-GAZOLE-EUR-T
+    part_h:
+      calc: CALC-A1-OW16-PART-HEAVY
+    lourde:
+      valeur: 541
+      unite: EUR/t
+      source: A3-DGEC-NPG-2026-10-09-COTATIONS
+      emplacement: page 3, tableau des cotations, semaine au 9 oct. 2026
+  unite: EUR/t
+  resultat: 1121.17
+
+CALC-A3-HUILE-MOY-BRENT80:
+  description: Prix de reference pondere de l huile pour un Brent de 80 USD/b
+  formule: (part_l * legere + part_g * gazole + part_h * lourde) / 100
+  entrees:
+    part_l:
+      calc: CALC-A1-OW16-PART-HEATING
+    legere:
+      calc: CALC-A3-LEGERE-BRENT80
+    part_g:
+      calc: CALC-A1-OW16-PART-GAZOLE
+    gazole:
+      calc: CALC-A3-GAZOLE-BRENT80
+    part_h:
+      calc: CALC-A1-OW16-PART-HEAVY
+    lourde:
+      calc: CALC-A3-LOURDE-BRENT80
+  unite: EUR/t
+  resultat: 714.25
+
+CALC-A3-HUILE-MOY-BRENT50:
+  description: Prix de reference pondere de l huile pour un Brent de 50 USD/b
+  formule: (part_l * legere + part_g * gazole + part_h * lourde) / 100
+  entrees:
+    part_l:
+      calc: CALC-A1-OW16-PART-HEATING
+    legere:
+      calc: CALC-A3-LEGERE-BRENT50
+    part_g:
+      calc: CALC-A1-OW16-PART-GAZOLE
+    gazole:
+      calc: CALC-A3-GAZOLE-BRENT50
+    part_h:
+      calc: CALC-A1-OW16-PART-HEAVY
+    lourde:
+      calc: CALC-A3-LOURDE-BRENT50
+  unite: EUR/t
+  resultat: 446.406
+
+CALC-A3-CHLORE-TABA-BAS:
+  description: Chlore de l huile de plastiques d emballage de Noda rapporte a la limite de 500 ppm d halogenes du tableau A (arrete du 19/02/2024)
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 1370
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 45 (0,137 %)
+    limite:
+      valeur: 500
+      unite: ppm
+      source: A3-ARRETE-SSD-HUILE-PYROLYSE-2024
+      emplacement: annexe I, tableau A
+  unite: fois
+  resultat: 2.74
+
+CALC-A3-CHLORE-TABA-HAUT:
+  description: Chlore de l huile de residus incombustibles de Noda rapporte a la limite de 500 ppm du tableau A
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 5260
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 46 (0,526 %)
+    limite:
+      valeur: 500
+      unite: ppm
+      source: A3-ARRETE-SSD-HUILE-PYROLYSE-2024
+      emplacement: annexe I, tableau A
+  unite: fois
+  resultat: 10.52
+
+CALC-A3-SOUFRE-GAZOLE:
+  description: Soufre de l huile de residus incombustibles (0,06 % = 600 mg/kg) rapporte a la limite du gazole (10 mg/kg)
+  formule: s / limite
+  entrees:
+    s:
+      valeur: 600
+      unite: mg/kg
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 46 (0,06 %)
+    limite:
+      valeur: 10
+      unite: mg/kg
+      source: A3-ARRETE-GAZOLE-1999-ANNEXE-I
+      emplacement: annexe I, soufre
+  unite: fois
+  resultat: 60.0
+
+CALC-A3-CHAR-PARITE-PETCOKE:
+  description: 'Valeur du char a parite energetique avec le coke de petrole importe en France (Comext, S1 2026), sur le PCS mesure du char (borne
+    haute : PCS et non PCI)'
+  formule: pcs * prix
+  entrees:
+    pcs:
+      valeur: 32.09
+      unite: GJ/t
+      source: IZUMITEC-R35-339439
+      emplacement: p. 1 (32 090 J/g)
+    prix:
+      valeur: 3.84
+      unite: EUR/GJ
+      source: A3G-COMEXT-PETCOKE-NC27131100-FR
+      emplacement: NC 2713 11 00, import France, janv.-juin 2026
+  unite: EUR/t
+  resultat: 123.226
+
+CALC-A3-CHAR-PARITE-CHARBON:
+  description: Valeur du char a parite energetique avec le charbon-vapeur importe en France (Comext, S1 2026), sur le PCS mesure du char
+  formule: pcs * prix
+  entrees:
+    pcs:
+      valeur: 32.09
+      unite: GJ/t
+      source: IZUMITEC-R35-339439
+      emplacement: p. 1
+    prix:
+      valeur: 6.32
+      unite: EUR/GJ
+      source: A3G-COMEXT-CHARBON-NC27011290-FR
+      emplacement: NC 2701 12 90, import France, janv.-juin 2026
+  unite: EUR/t
+  resultat: 202.809
+
+CALC-A3-PETCOKE-INSEE-GJ:
+  description: Prix moyen du coke de petrole paye par l industrie en France en 2024 (Insee EACEI), en EUR/GJ au PCI SDES
+  formule: prix / pci
+  entrees:
+    prix:
+      valeur: 254
+      unite: EUR/t
+      source: PRM-INSEE-EACEI-2024
+      emplacement: tableau, coke de petrole 2024
+    pci:
+      valeur: 32
+      unite: GJ/t
+      source: A3-SDES-CCE-2026-EQUIVALENCES
+      emplacement: coke de petrole
+  unite: EUR/GJ
+  resultat: 7.9375
+
+CALC-A3-CHAR-PARITE-INSEE:
+  description: Valeur du char a parite energetique avec le prix d achat industriel du coke de petrole (Insee 2024)
+  formule: pcs * prix
+  entrees:
+    pcs:
+      valeur: 32.09
+      unite: GJ/t
+      source: IZUMITEC-R35-339439
+      emplacement: p. 1
+    prix:
+      calc: CALC-A3-PETCOKE-INSEE-GJ
+  unite: EUR/t
+  resultat: 254.714
+
+CALC-A3-ACIER-OMR-MACHEFERS:
+  description: Rapport du prix de reprise de l acier extrait d OMR a celui de l acier de machefers, option filiere, 2023 (Citeo)
+  formule: omr / machefers
+  entrees:
+    omr:
+      valeur: 172.5
+      unite: EUR/t
+      source: A3-CITEO-OBSREPRISE-2023-METAUX
+      emplacement: p. 8 et fiches metaux hors CS
+    machefers:
+      valeur: 94.2
+      unite: EUR/t
+      source: A3-CITEO-OBSREPRISE-2023-METAUX
+      emplacement: p. 8
+  unite: rapport
+  resultat: 1.83121
+
+CALC-A3-ACIER-MACHEFERS-CS-2024:
+  description: Prix de reprise de l acier de machefers en part de celui de l acier de collecte separee, option filiere, 2024 (Citeo)
+  formule: machefers / cs * 100
+  entrees:
+    machefers:
+      valeur: 93.7
+      unite: EUR/t
+      source: A3-CITEO-OBSREPRISE-2024-ACIER-MACHEFERS
+      emplacement: p. 8
+    cs:
+      valeur: 196.7
+      unite: EUR/t
+      source: A3-CITEO-OBSREPRISE-2024-ACIER-CS
+      emplacement: p. 8
+  unite: '%'
+  resultat: 47.636
+
+CALC-A3-H2-PART-MASSE:
+  description: Part massique de l hydrogene dans le gaz de pyrolyse (composition B2002600 hors air, hypothese D-021)
+  formule: x_h2*m_h2 / (x_h2*m_h2 + x_ch4*m_ch4 + x_c2h6*m_c2h6 + x_c2h4*m_c2h4 + x_c3h8*m_c3h8 + x_c3h6*m_c3h6 + x_co*m_co + x_co2*m_co2) * 100
+  entrees:
+    x_h2:
+      valeur: 12.7
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_ch4:
+      valeur: 3.2
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_c2h6:
+      valeur: 0.7
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_c2h4:
+      valeur: 0.2
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_c3h8:
+      valeur: 0.3
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_c3h6:
+      valeur: 0.3
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_co:
+      valeur: 0.6
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    x_co2:
+      valeur: 1.7
+      unite: '% vol'
+      source: KANSO-B2002600
+      emplacement: p. 1
+    m_h2:
+      valeur: 2.01588
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C1333740
+    m_ch4:
+      valeur: 16.0425
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C74828
+    m_c2h6:
+      valeur: 30.069
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C74840
+    m_c2h4:
+      valeur: 28.0532
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C74851
+    m_c3h8:
+      valeur: 44.0956
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C74986
+    m_c3h6:
+      valeur: 42.0797
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C115071
+    m_co:
+      valeur: 28.0101
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C630080
+    m_co2:
+      valeur: 44.0095
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C124389
+  unite: '% masse'
+  resultat: 11.5807
+
+CALC-A3-H2-PART-ENERGIE:
+  description: Part de l energie (PCI) du gaz de pyrolyse portee par l hydrogene
+  formule: w / 100 * (p_h2 / m_h2) / pci * 100
+  entrees:
+    w:
+      calc: CALC-A3-H2-PART-MASSE
+    p_h2:
+      valeur: 241.826
+      unite: kJ/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: H2O Mask=1
+    m_h2:
+      valeur: 2.01588
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: C1333740
+    pci:
+      calc: CALC-A2-GAZ-PCI
+  unite: '%'
+  resultat: 37.1591
+
+CALC-A3-H2-KG-T-RESINE:
+  description: Hydrogene contenu dans le gaz par tonne de charge riche en resines (gaz 11,5 % de l entree, conception OneWorld), avant purification
+  formule: part * 1000 * w / 100
+  entrees:
+    part:
+      valeur: 0.115
+      unite: fraction
+      source: OW-ENG-P16-BILAN
+      emplacement: p. 16
+    w:
+      calc: CALC-A3-H2-PART-MASSE
+  unite: kg/t
+  resultat: 13.3178
+
+CALC-A3-GAZ-SANS-H2-RESINE:
+  description: Energie du gaz restant par tonne de charge riche en resines si tout l hydrogene est retire
+  formule: gaz * (1 - e / 100)
+  entrees:
+    gaz:
+      calc: CALC-A2-NRJ-GAZ-RESINE
+    e:
+      calc: CALC-A3-H2-PART-ENERGIE
+  unite: MJ/t
+  resultat: 2701.78
+
+CALC-A3-COUV-SANS-H2-RESINE:
+  description: Couverture du besoin du bruleur par le gaz sans hydrogene, charge riche en resines
+  formule: reste / bruleur
+  entrees:
+    reste:
+      calc: CALC-A3-GAZ-SANS-H2-RESINE
+    bruleur:
+      calc: CALC-A2-BRULEUR-MJ-T
+  unite: rapport
+  resultat: 1.79324
+
+CALC-A3-H2-VAL-GRIS:
+  description: Valeur brute de l hydrogene par tonne de charge riche en resines au cout de l hydrogene gris (un peu plus de 2 EUR/kg, ACER 2025),
+    avant pertes de purification
+  formule: kg * prix
+  entrees:
+    kg:
+      calc: CALC-A3-H2-KG-T-RESINE
+    prix:
+      valeur: 2
+      unite: EUR/kg
+      source: A3J-ACER-H2-MARKETS-2025
+      emplacement: chapitre couts de production, SMR
+  unite: EUR/t
+  resultat: 26.6357
+
+CALC-A3-H2-VAL-HYDRIX:
+  description: Valeur brute de l hydrogene par tonne de charge riche en resines a l indice HYDRIX (8,2 EUR/kg en moyenne 2025), avant pertes de
+    purification
+  formule: kg * prix
+  entrees:
+    kg:
+      calc: CALC-A3-H2-KG-T-RESINE
+    prix:
+      valeur: 8.2
+      unite: EUR/kg
+      source: A3J-ACER-H2-MARKETS-2025
+      emplacement: indice EEX HYDRIX, moyenne 2025
+  unite: EUR/t
+  resultat: 109.206
+
+CALC-A3-GAZ-SURPLUS-RESINE:
+  description: Surplus d energie du gaz par tonne de charge riche en resines (gaz moins besoin du bruleur)
+  formule: gaz - bruleur
+  entrees:
+    gaz:
+      calc: CALC-A2-NRJ-GAZ-RESINE
+    bruleur:
+      calc: CALC-A2-BRULEUR-MJ-T
+  unite: MJ/t
+  resultat: 2792.75
+
+CALC-A3-GAZ-SURPLUS-VAL:
+  description: Valeur du surplus de gaz vendu comme combustible au prix du gaz naturel industriel (bande I4, 2026-S1, hors TVA), par tonne de
+    charge riche en resines
+  formule: mj / mj_kwh * prix
+  entrees:
+    mj:
+      calc: CALC-A3-GAZ-SURPLUS-RESINE
+    mj_kwh:
+      valeur: 3.6
+      unite: MJ/kWh
+      source: NIST-SP811-B9
+      emplacement: Appendix B.9
+    prix:
+      valeur: 0.047
+      unite: EUR/kWh
+      source: A3J-EUROSTAT-NRG-PC-203-FR
+      emplacement: bande I4, X_VAT, 2026-S1
+  unite: EUR/t
+  resultat: 36.4609
+
+CALC-A3-ELEC-MWH-AN:
+  description: Consommation electrique annuelle a 600 kW en continu (365 jours), pour situer la bande de consommation Eurostat
+  formule: kw * 24 * 365 / 1000
+  entrees:
+    kw:
+      valeur: 600
+      unite: kW
+      source: OW-CONSO-ENERGIE
+      emplacement: p. 1, ligne 200t
+  unite: MWh/an
+  resultat: 5256.0
+
+CALC-A3-ELEC-KWH-T:
+  description: Electricite par tonne traitee (600 kW, 200 t/jour)
+  formule: mj / mj_kwh
+  entrees:
+    mj:
+      calc: CALC-A2-ELEC-MJ-T
+    mj_kwh:
+      valeur: 3.6
+      unite: MJ/kWh
+      source: NIST-SP811-B9
+      emplacement: Appendix B.9
+  unite: kWh/t
+  resultat: 72.0
+
+CALC-A3-ELEC-EUR-T:
+  description: Cout de l electricite par tonne traitee au prix Eurostat bande ID, 2025-S2, hors TVA
+  formule: kwh * prix
+  entrees:
+    kwh:
+      calc: CALC-A3-ELEC-KWH-T
+    prix:
+      valeur: 0.1212
+      unite: EUR/kWh
+      source: PRM-EUROSTAT-NRGPC205-ID-2025
+      emplacement: bande ID, X_VAT, 2025-S2
+  unite: EUR/t
+  resultat: 8.7264
+
+CALC-A3-CO2-PLASTIQUE-GIEC:
+  description: CO2 fossile emis par tonne de plastique brulee (75 % de carbone, 100 % fossile, oxydation 100 %, GIEC 2006)
+  formule: c * fossile * ox * 44 / 12 * 1000
+  entrees:
+    c:
+      valeur: 0.75
+      unite: fraction
+      source: A3-GIEC-2006-V5-CH2-T2-4
+      emplacement: tableau 2.4, plastiques
+    fossile:
+      valeur: 1
+      unite: fraction
+      source: A3-GIEC-2006-V5-CH2-T2-4
+      emplacement: tableau 2.4
+    ox:
+      valeur: 1
+      unite: fraction
+      source: A3-GIEC-2006-V5-CH5-T5-2
+      emplacement: tableau 5.2
+  unite: kgCO2/t
+  resultat: 2750.0
+
+CALC-A3-CO2-SUBST-HUILE:
+  description: CO2 evite par tonne de charge riche en resines si l huile remplace du fioul lourd a energie egale (hypothese D-032)
+  formule: mj / 1000 * fe
+  entrees:
+    mj:
+      calc: CALC-A2-NRJ-HUILE-RESINE
+    fe:
+      valeur: 77.4
+      unite: kgCO2/GJ
+      source: A3-GIEC-2006-V2-CH2-T2-2
+      emplacement: tableau 2.2, Residual Fuel Oil
+  unite: kgCO2/t
+  resultat: 2723.71
+
+CALC-A3-CO2-ELEC-UR:
+  description: CO2 de l electricite achetee par tonne traitee (mix moyen France 2024)
+  formule: kwh * fe
+  entrees:
+    kwh:
+      calc: CALC-A3-ELEC-KWH-T
+    fe:
+      valeur: 0.0519
+      unite: kgCO2e/kWh
+      source: A3-ADEME-BC-ELEC-FR-2024
+      emplacement: mix moyen 2024
+  unite: kgCO2e/t
+  resultat: 3.7368
+
+CALC-A3-CO2-NET-VS-INCIN:
+  description: 'CO2 evite par rapport a l incineration, par tonne de charge riche en resines : substitution du fioul par l huile, moins la substitution
+    d energie de l incinerateur (PE, ADEME), moins l electricite achetee ; carbone fossile de la charge emis dans les deux voies (hypothese D-032)'
+  formule: subst - incin - elec
+  entrees:
+    subst:
+      calc: CALC-A3-CO2-SUBST-HUILE
+    incin:
+      valeur: 747
+      unite: kgCO2e/t
+      source: A3-ADEME-BC-EMBALLAGES-PLASTIQUES-INCINERATION
+      emplacement: PE, emissions evitees -747
+    elec:
+      calc: CALC-A3-CO2-ELEC-UR
+  unite: kgCO2e/t
+  resultat: 1972.97
+

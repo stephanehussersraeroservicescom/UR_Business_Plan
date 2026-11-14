@@ -1,0 +1,177 @@
+CITEO-RA-2025:
+  ouvert: "oui"
+  emplacement: "p. 5, p. 7, p. 13, p. 14, p. 28, p. 29"
+  citation: "73% | de taux de recyclage des emballages ménagers en 2025(2), soit +9 points depuis | 2020. | (2) Estimation du taux de recyclage à l'échelle de la filière Emballages Ménagers et Papiers | Plastique 1 165 1 174 0,8 | Plastiques 324 346 7% | TOTAL CONTRIBUTIONS 1 190 1 460 22,7% | Contributions emballages au poids 898 1 119 24,6% | Malus 10% 0,7 7,0 849% | Malus 100% 15,1 12,5 –17% | Total malus – Emballages 15,8 19,7 24% | Bonus – Intégration de MPR(1) 24,3 26,0 6,9% | Total soutiens emballages ménagers 890,9 971,6 9% | TOTAL DES SOUTIENS VERSÉS 952 1 035 9% | 99% du recyclage des emballages et papiers est réalisé en France et en Europe."
+  contenu: "Taux de recyclage tous matériaux 73 % en 2025 (estimation de filière, emballages ménagers et papiers graphiques, à l'arrêté des comptes). Plastiques : gisement 1 165 kt (2024) et 1 174 kt (2025) ; tonnes recyclées 324 kt (2024) et 346 kt (2025). Tableau p. 5 « Taux de recyclage par matériau 2025 Objectifs réglementaires 2030 », fragment « 55% Plastique 30% » (colonnes non confirmées par cette seule page ; A8-MENA-CITEOMAG-2026 confirme 30 % en 2025). Contributions totales 1 190 M€ (2024) et 1 460 M€ (2025) ; soutiens emballages ménagers 890,9 et 971,6 M€. Pas de ventilation par matériau des contributions ni des soutiens ; rien sur le recyclage chimique."
+  statut_propose: "lu"
+  note: "Pages selon extraction WebFetch, non vérifiées (PDF ou imprimée)."
+
+CITEO-CC-2023:
+  ouvert: "oui"
+  url_corrigee: "https://v2.citeo.com/wp-content/uploads/2025/01/241223_CITEO_Fiche_Chiffres_cles-2023_Notre_Impact.pdf"
+  emplacement: "section Emballages ménagers, note 3 ; pas de pagination"
+  citation: "Ce calcul prend en compte non pas les quantités acceptées par les recycleurs à l'entrée du process"
+  contenu: "Taux global 67 % en 2023 ; 4 Mt recyclées. Taux plastique non rattachable (valeurs 37, 69, 27, 86, 86 dans le désordre). Définition : méthode harmonisée UE 2022, quantités effectivement recyclées."
+  statut_propose: "lu"
+  note: "URL d'origine valide ; url_corrigee = miroir v2.citeo.com. Incomplet pour le plastique."
+
+RP-001:
+  ouvert: "oui"
+  emplacement: "page unique, pas de pagination"
+  citation: "taux de refus de tri en France des emballages | recyclés le sont dans des usines en France ou en Europe"
+  contenu: "Seulement 24 % de refus de tri (autre lot) et 99 % recyclés en France ou en Europe, sans année. Pas de taux plastique."
+  statut_propose: "lu"
+  note: "Hors sujet pour Q1."
+
+RP2-027:
+  ouvert: "oui"
+  emplacement: "page unique, note 2"
+  citation: "NON RELEVÉE mot pour mot (extraction résumée)"
+  contenu: "Données 2022 : taux global 65,5 % ; plastique 24,5 % ; 3,6 Mt recyclées. Définition (note 2) : méthode UE 2022, quantités effectivement recyclées et non plus acceptées à l'entrée."
+  statut_propose: "lu"
+  note: "Citation à recontrôler."
+
+CITEO-STANDARDS-2023:
+  ouvert: "oui"
+  emplacement: "section PLASTIQUES ; pas de pagination"
+  citation: "AGREMENT 2023 – LISTE DES STANDARDS EMBALLAGES MENAGERS | ne seront plus applicables au 1er janvier 2024 | Barquettes multicouches, emballages rigides complexes en plastiques | PET foncé, PEHD, PP, PS, PVC, complexes et barquettes PET clair | teneur minimale de 90% de films et sacs | Flux PEHD, PP et PS"
+  contenu: "Standards à effet au 01/01/2023 : 3 flux bouteilles et flacons (PEHD+PP, PET clair, PET foncé, 98 %) ; modèle à un standard (films PE 95 %, PET clair et PET foncé avec option barquettes monocouches, PEHD/PP/PS) ; deux standards hors flux développement (PET clair 98 %, PEHD-PP 95 %) ; flux développement (films PE/PP 90 %, rigides en mélange 90 %) ; modèles transitoires ; standard simplifié suivi d'un surtri (rigides à trier 95 %, tolérance 90 %)."
+  statut_propose: "lu"
+  note: "Liste plus récente non trouvée ; la liste opérationnelle 2024-2029 des flux 1 à 17 est dans le contrat Valorplast (RP2-050)."
+
+PRM-CITEO-OBSREPRISE-2024:
+  ouvert: "oui"
+  emplacement: "diapos 2, 5, 6, 45"
+  citation: "7. Plastiques 473 033 t + 8,8 % 1 224 kt | Hors films et flux à trier 203,4 235,3 Non représentatif | Aide au transport | 10,4 €/t | Plastiques : 26,2 % | Plastiques : 0,004 % | Plastiques : 73,8 %"
+  contenu: "Données 2024 (OSCAR au 1er septembre 2025) : plastiques 473 033 t, gisement ARC 2024 1 224 kt (EMA inclus). Prix moyen hors films et flux à trier : filière 203,4 €/t, fédérations 235,3 €/t, individuelle non représentatif ; aide au transport 10,4 €/t. Destinations (attribution déduite, non lue) : France 73,8 %, Europe 26,2 %, Asie et reste du monde 0,004 %."
+  statut_propose: "lu"
+  note: "Même document que RP2-025. Partiel : tonnages et prix par standard, répartition par option, destinations par standard dans des graphiques illisibles (diapos 42 à 51). Attribution des zones à vérifier sur le PDF."
+
+RP2-025:
+  ouvert: "oui"
+  emplacement: "voir PRM-CITEO-OBSREPRISE-2024 (même document)"
+  citation: "7. Plastiques 473 033 t + 8,8 % 1 224 kt | Hors films et flux à trier 203,4 235,3 Non représentatif"
+  contenu: "Identique à PRM-CITEO-OBSREPRISE-2024."
+  statut_propose: "lu"
+  note: "Doublon de PRM-CITEO-OBSREPRISE-2024."
+
+RP2-026:
+  ouvert: "oui"
+  emplacement: "diapos 2, 5, 6, 8, 41, 44"
+  citation: "Plastiques 434 580 t + 12,4 %"
+  contenu: "Données 2023 (OSCAR au 2 septembre 2024) : plastiques 434 580 t ; gisement ARC 2023 1 190 kt. Prix : filière 180,5 €/t, fédérations 171,6 €/t ; aide au transport 11,3 €/t. Destinations : France 67,1 %, Europe 32,9 %, grand export 0,01 % (rattachement déduit, à vérifier)."
+  statut_propose: "lu"
+  note: "Partiel : tonnages par standard absents (graphiques)."
+
+VALORPLAST-G-2024:
+  ouvert: "oui"
+  emplacement: "p. 3, p. 14, p. 26"
+  citation: "au prix minimum de 0€ / Tonne (zéro euro | un prix de reprise positif ou nul | Prix mois = Prix mois-1 + ∆ | VALORPLAST s'engage à indiquer annuellement les destinations et applications des produits repris"
+  contenu: "Projet de contrat type option filière plastiques, barème G 2024-2029, non daté. Planchers annuels (€/t) : 1 BF PEHD+PP 80 ; 2 BF PET clair 160 ; 3 BF PET foncé 90 ; 4 souples 0 ; 5 MIX PET clair 140 ; 6 MIX PET foncé 70 ; 7 MIX PE/PP/PS 0 ; 8 EMB MIX PE/PP 20 ; 9 PE 80 ; 10 PP 60 ; 11 PS 0 ; 12 PE et pots-barquettes 0 ; 13 EMB PET clair 160 ; 14 PET foncé 60 ; 15 PET opaque 0 ; 16, 16 bis, 17 pots-barquettes PET clair 0."
+  statut_propose: "lu"
+  note: "Aucun tonnage, aucun prix mensuel (publiés sur e-VALORPLAST), aucun débouché chiffré."
+
+RP-059:
+  ouvert: "oui"
+  emplacement: "p. 1, p. 34-35"
+  citation: "Un prix de reprise mensuel est défini par VALORPLAST pour chacun des flux | un prix de reprise positif ou nul"
+  contenu: "Avenant au contrat type de reprise option filière plastiques, barème F, année 2023 (reçu en préfecture le 20/03/2023), jusqu'au 31/12/2023. Planchers 2023 (€/t) : BF PEHD+PP 80 ; BF PET clair 120 ; BF PET foncé 40 ; MIX PET clair 85 ; MIX PET foncé 30 ; EMB PET clair 120 ; EMB PET foncé 60 ; souples, PS, PET opaque, pots-barquettes 0."
+  statut_propose: "lu"
+  note: ""
+
+RP2-049:
+  ouvert: "oui"
+  emplacement: "p. 3, p. 9, p. 24, annexe 2 p. 34"
+  citation: "Flux 13 « EMB PET clair » = 160 euros la tonne | Flux 8 « EMB MIX PE/PP » = 20 euros la tonne | au prix minimum de 0€ / Tonne (zéro euro par tonne) | jusqu'au 31 décembre 2029"
+  contenu: "Contrat type option de reprise filière plastiques barème aval 2024-2029 signé à Clisson le 12/03/2024 (décision du 4 mars 2024). Standard 4, deux flux rigides (13 PET clair, 8 PE/PP), centre de tri PAPREC Grand Ouest, 58 299 habitants. Planchers alignés sur VALORPLAST-G-2024."
+  statut_propose: "lu"
+  note: ""
+
+RP2-050:
+  ouvert: "oui"
+  emplacement: "p. 2, art. 3 p. 6, art. 10, annexe 1 p. 32"
+  citation: "la reprise et le recyclage au prix minimum de 0€ / Tonne (zéro euro par tonne) départ du centre de tri | la Société Agréée CITEO/ADELPHE garantit à la Collectivité une reprise à prix nul | les tonnes recyclées en dehors de l’Union Européenne ne sont prises en compte que lorsque | les nom et adresse du destinataire final sont transmises tous les trimestres"
+  contenu: "Projet de janvier 2024 hébergé par Citeo ; montants des planchers vides. Liste des flux 1 à 17 (art. 10). Garantie de reprise à prix nul ; traçabilité trimestrielle du destinataire final ; conditions pour le recyclage hors UE."
+  statut_propose: "lu"
+  note: ""
+
+RP2-044:
+  ouvert: "oui"
+  emplacement: "p. 1, p. 22, p. 24, p. 26, p. 37"
+  citation: "LE TARIF D’ÉCOCONCEPTION 2025 | 6.1 Bouteille ou flacon PET clair 53,52 | 6.2.3 Bouteille ou flacon PET foncé / coloré 56,19 | 6.3.1 Emballage rigide PE 58,87 | 6.3.2 Emballage rigide PP 58,87 | 6.5 Emballage rigide PS (dont XPS et PSE) 64,22 | 6.6.2 Emballage complexe ou autres résines hors PVC 107,03 | 6.7 Emballage contenant du PVC 160,55 | la 1ère année, lors de la création du malus, il est faible (10%) | Bouteilles, flacons et autres emballages en PET opaque (charge minérale > 4 %) | Bouteilles et flacons en PVC | plastiques rigides sombres non détectables par tri optique"
+  contenu: "Tarif 2025 (ct€/kg) des emballages plastiques et malus 2025 (PET opaque, PVC, plastiques sombres à 100 %)."
+  statut_propose: "lu"
+  note: "PE souple, PP souple et PET rigide (58,87, 64,22 et 64,22 selon le résumé) non relevés mot pour mot."
+
+RP2-045:
+  ouvert: "oui"
+  url_corrigee: "https://clients-cms.citeo.com/uploads/guide_du_tarif_des_emballages_menagers_2026_f9e4c5b4e6.pdf"
+  emplacement: "p. 1, p. 10, p. 28, p. 31"
+  citation: "Actualisé le 22 juin 2026 | TARIF 6.1 Bouteille ou flacon PET clair 70,00 ct €/kg | 6.2.3 … PET foncé/coloré 73,51 | 6.3.1 Emballage rigide PE 77,01 | 6.4 Emballage souple PE 77,01 | 6.5 Emballage rigide PS (dont XPS et PSE) 80,51 | 6.6.2 Emballage complexe ou autres résines hors PVC 140,01 | 6.7 210,01 ct €/kg | Ainsi, un malus de 10 % est amené à évoluer vers un malus de 25 %, puis 50 % et enfin 100 % au fil des années. | Devenu redondant : le tarif des emballages en PVC à lui seul fait office de malus. | Evolution du recyclage ne justifiant plus le malus. | Plus un emballage est difficile à recycler, plus le tarif appliqué à son matériau est élevé."
+  contenu: "Tarif 2026 (ct€/kg) des emballages plastiques. Malus 2026 (taux résumés) : 100 % PET associé à l'aluminium, au PVC ou au silicone, et plastiques sombres non détectables ; 50 % densité non conforme, plastique de densité supérieure à 1 sur du PET, manchon PETg/PLA/PS ; 25 % petits formats de boisson et lots. Malus PVC et PET opaque supprimés en 2026."
+  statut_propose: "lu"
+  note: "Redirection 302 de l'URL d'origine vers url_corrigee. Montants de la prime MPR absents (renvoi à un nouvel arrêté)."
+
+RP2-046:
+  ouvert: "oui"
+  emplacement: "p. 2"
+  citation: "Plastiques 725 €/t Plastiques 776 €/t | Mix PET clair 149 kt 252 €/t 38 M€ | 189 kt 379 €/t 72 M€ | Mix PE PP 113 kt 151 €/t 17 M€ | 143 kt 194 €/t 28 M€ | Autres emb. plastiques 233 kt 0 €/t 0 M€ | 295 kt 0 €/t 0 M€ | Coût net emb. légers 574 €/t | 643 €/t | Coût complet emb. légers CS 658 €/t | 763 €/t"
+  contenu: "« Proposition d'évolution des barèmes de soutien emballages ménagers et papiers graphiques », août 2023, Direction de la Supervision des filières REP ; porte sur 2024 seulement. TUS plastiques 725 €/t (2023) et 776 €/t (2024). Prix de reprise de référence et tonnages par flux plastique ; coûts complet et net des emballages légers."
+  statut_propose: "lu"
+  note: "Les colonnes 2023 et 2024 sont des années de barème ; l'année de mesure des tonnages et prix n'est pas précisée. Pas le barème 2024-2029 complet."
+
+RP2-047:
+  ouvert: "oui"
+  emplacement: "p. 6, p. 7, p. 10"
+  citation: "Plastique : 776 | Soutien à la performance du recyclage (€) = TUS (€) x % coefficient de majoration | Majoration des soutiens unitaires à la collecte sélective et au tri précités : 3 %"
+  contenu: "CAP avenant 2024 Citeo / CU Grand Paris Seine & Oise, signé par Citeo le 22/12/2023. TUS plastique 776 €/t en 2024 ; majoration 3 %."
+  statut_propose: "lu"
+  note: "Montants 2025-2029 absents."
+
+RP2-048:
+  ouvert: "oui"
+  emplacement: "exposé des motifs ; pas de pagination"
+  citation: "PAPREC pour la reprise des plastiques ; | 55% pour les plastiques ;"
+  contenu: "Décision du Bureau d'Aix-Marseille-Provence du 3/04/2025. 2,7 M€ HT de rachats 2024 toutes matières en option fédérations, sans ventilation. Ni prix ni tonnage plastique."
+  statut_propose: "lu"
+  note: "Peu utile."
+
+RP2-028:
+  ouvert: "oui"
+  emplacement: "p. 1, p. 4, sections 9 et 10"
+  citation: "Les tonnages de l'AO | 35 44 48 50 52 52 52 52 52 | 21 28 33 34 34 34 34 34 34 | 12 15 17 18 19 19 19 19 19 | 4 6 7 10 10 10 10 10 10 | 1,5 3 3 4 4 4 4 4 4 | Technologie opérationnelle et exploitée par le candidat en Europe | 3, 6 ou 9 ans"
+  contenu: "« AO recyclage – éléments clés – Q&R », 5/04/2022. Volumes en kt 2023 à 2031 : FD20 films, FD10 BF PET coloré et opaque coloré, FD12 Mix PB PET, FD4 PS, FD11 PET opaque blanc (lignes dans cet ordre dans la citation)."
+  statut_propose: "lu"
+  note: "Aucune occurrence de « chimique »."
+
+RP2-029:
+  ouvert: "oui"
+  emplacement: "communiqué, page unique"
+  citation: "108 000 tonnes d’emballages en plastique recyclées en 2025 | Mise en œuvre du recyclage chimique (pyrolyse) pour une partie du flux | Le groupement Paprec / TotalEnergies prendra en charge 30 % des volumes | une technologie de recyclage chimique par dépolymérisation | Indaver prendra en charge 20 % des tonnes dans son usine d’Anvers | Des contrats établis sur des durées de 6 ou 9 ans pour plus de visibilité"
+  contenu: "Communiqué Citeo du 10 mars 2023 : au moins 3 000 t/an PET opaque blanc, 33 000 t PET coloré, 50 000 t films, 10 000 t PS."
+  statut_propose: "lu"
+  note: ""
+
+RP-022:
+  ouvert: "oui"
+  emplacement: "p. 20, p. 21"
+  citation: "stabilisé autour de 12 000 tonnes | 90 % des bouteilles et flacons en PET opaque | En 2021, le recyclage chimique n'est pas encore une voie industrielle"
+  contenu: "« Écoconception et recyclage des emballages en PET opaque », mai 2022. Mise en marché PET opaque stabilisée autour de 12 000 t ; 90 % laissés en mélange avec le PET coloré."
+  statut_propose: "ancien"
+  note: "Données de 2017 à 2022."
+
+CITEO-2023:
+  ouvert: "oui"
+  emplacement: "p. 4, p. 17, p. 31"
+  citation: "NON RELEVÉE mot pour mot"
+  contenu: "Brochure coûts et performances, février 2023, données 2020. Coûts en €/t triée multimatériaux, sans ventilation par matériau. Pas de coût net, pas de recettes, pas de taux de couverture. 43,6 kg triés/hab avec extension des consignes contre 38,1 kg sans."
+  statut_propose: "ancien"
+  note: "Peu utile ; citation à recontrôler."
+
+COTREP-TRI-FR:
+  ouvert: "oui"
+  emplacement: "page web (modifiée le 5/10/2026)"
+  citation: "By 2025, 99 % of the French population will be able to sort all plastic packaging. | France has moved from 260 centres – some of which were dilapidated – to 115 modern centres | mechanical recycling is the predominant method in Europe"
+  contenu: "Qualitatif ; aucun tonnage ni taux."
+  statut_propose: "lu"
+  note: ""

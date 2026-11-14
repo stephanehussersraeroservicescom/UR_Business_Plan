@@ -1,0 +1,234 @@
+# Lot B : prix publiés des produits pétroliers comparables à l'huile de pyrolyse et prix de l'énergie achetée en France
+# Sous-agent de recherche, 15/10/2026. Citations copiées du texte extrait des documents (extraction PDF par pdf.js ou lecture de la page) ;
+# les espaces multiples produits par l'extraction PDF ont été réduits à un seul espace, sans autre modification.
+
+A3-DGEC-NPG-2026-10-09-COTATIONS:
+  titre: "Cours, prix et marges des produits pétroliers en France et dans l'Union Européenne (NPG-2026.10.09)"
+  editeur: "Ministère de la Transition écologique, DGEC"
+  date: "2026-10-09"
+  type: statistique_publique
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/NPG-2026.10.09.pdf"
+  emplacement: "page 3, tableau « Cours du Brent daté et cotations des produits pétroliers (en $/t) » ; page 2, cours hebdomadaire du Brent"
+  contenu: "Cotations internationales (marché de Rotterdam, Europe du Nord-Ouest, source DGEC-Reuters), en $/t. Semaine au 9 oct. 2026 / moyenne mensuelle oct. 2026 provisoire / sept. 2026 : gazole 1 406 / 1 414 / 1 470 $/t ; fioul domestique 1 372 / 1 379 / 1 459 $/t ; carburéacteur (Jet) 1 574 / 1 582 / 1 547 $/t ; eurosuper 1 280 / 1 298 / 1 338 $/t ; fioul lourd TBTS (< 1 % S) 607 / 609 / 598 $/t, soit 541 / 543 / 520 EUR/t ; Brent daté 964 / 951 / 856 $/t. Brent daté moyenne hebdomadaire au 9 oct. 2026 : 128,53 $/b (114,63 EUR/b), euro/dollar 1,121. Marge brute de raffinage oct. 2026 (prov.) 111 EUR/t, sept. 2026 235 EUR/t, moyenne 2026 150 EUR/t. Le naphta n'est pas coté dans cette note."
+  citation: "Gazole 1 406 1 434 -28 1 414 1 470 -56 | Fioul domestique 1 372 1 439 -67 1 379 1 459 -80 | Jet 1 574 1 552 21 1 582 1 547 35 | Fioul lourd TBTS (< 1%) 607 609 -2 609 598 11 | Fioul lourd TBTS (< 1%) (en €/t) 541 536 5 543 520 23 | Brent (en $/b) 128,53 116,13 12,39"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 (PDF ouvert dans le navigateur, texte extrait par pdf.js). La base « Rotterdam » est indiquée par la DGEC (note « Mode de calcul de la marge brute de raffinage sur Brent » : « Les cotations de référence de l'ensemble des produits finis sont issues des cotations moyennes du marché de Rotterdam ») ; la note ne précise pas CIF/FOB ni cargo/barge. Prix de crise : Brent à 128 $/b début octobre 2026 contre 69,10 $/b en moyenne 2025 (même page web DGEC). Plus récent que la note DGEC du 19/12/2025 déjà au registre."
+  parametres: [prix_gazole_nwe, prix_fioul_domestique_nwe, prix_carbureacteur_nwe, prix_fioul_lourd_btbs_nwe, prix_brent]
+
+A3-DGEC-NPG-2026-10-09-PRIX-FRANCE:
+  titre: "Cours, prix et marges des produits pétroliers en France et dans l'Union Européenne (NPG-2026.10.09)"
+  editeur: "Ministère de la Transition écologique, DGEC"
+  date: "2026-10-09"
+  type: statistique_publique
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/NPG-2026.10.09.pdf"
+  emplacement: "page 5 (prix hors toutes taxes, hebdomadaires et mensuels), page 6 (prix TTC), page 7 (décomposition des prix HTT), page 4 (cotations Rotterdam en c€/l)"
+  contenu: "Prix moyens nationaux à la consommation, France métropolitaine hors Corse, en c€/l. Semaine du 9 oct. 2026, HTT : gazole 133,27 ; GNR (livraisons < 5 m3) 134,05 ; fioul domestique 2 à 5 m3 141,05 ; fioul domestique > 27 m3 132,67. TTC : gazole 232,83 ; GNR 205,00 ; FOD 2 à 5 m3 189,26 ; FOD > 27 m3 179,20. Moyennes mensuelles HTT sept. 2026 : gazole 133,04 ; GNR 133,03 ; FOD 2-5 m3 140,02 ; FOD > 27 m3 128,74 ; TTC sept. 2026 : gazole 232,55 ; GNR 203,78 ; FOD 2-5 m3 188,02 ; FOD > 27 m3 174,48. Pour comparaison avant la hausse, HTT oct. 2025 : gazole 72,47 ; GNR 66,94 ; FOD 2-5 m3 77,43 ; FOD > 27 m3 71,15 ; HTT janv. 2026 : gazole 75,45 ; GNR 67,77 ; FOD > 27 m3 76,18. Décomposition HTT au 9 oct. 2026 : GNR = 106,0 cotation + 28,1 transport-distribution = 134,0 ; FOD (tarif C1) = 103,4 + 37,6 = 141,1. Cotation Rotterdam moyenne oct. 2026 : gazole 106,46 c€/l, FOD 103,84 c€/l."
+  citation: "9-oct 74,20 115,33 111,14 114,64 133,27 134,05 141,05 132,67 [HTT, colonnes gpl_c, sp95-e5, sp95-e10, sp98, gazole, gazole non routier (livraisons < 5 m3), fioul domestique livraisons > 2 m3 et < 5 m3, livraisons > 27 m3] ; TTC : 9-oct 102,89 221,22 213,80 220,39 232,83 205,00 189,26 179,20 ; GNR (gazole non routier) 106,0 28,1 134,0"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (pdf.js). Les en-têtes de colonnes sont reconstitués à partir du texte extrait de la page 5 (ordre : gpl_c, sp95-e5, sp95-e10, sp98, gazole, gazole non routier, fioul domestique 2-5 m3, fioul domestique > 27 m3) ; la cohérence a été vérifiée avec le Weekly Oil Bulletin (A3-CE-WOB-2026-10-12). Méthodologie DGEC : prix du vendredi, moyennes pondérées par les volumes, prix réellement acquittés. Écart TTC/HTT implicite (calcul, pas une donnée publiée) : GNR environ 36,8 c€/l d'accise hors TVA en sept. 2026 (203,78/1,2 - 133,03) ; FOD environ 16,7 c€/l."
+  parametres: [prix_gnr_france_ht, prix_gnr_france_ttc, prix_fod_france_ht, prix_fod_france_ttc, prix_gazole_france_ht]
+
+A3-DGEC-PRIX-HTT-TTC-2025:
+  titre: "Prix HTT et TTC depuis janvier 2020 (fichier xlsx)"
+  editeur: "Ministère de la Transition écologique, DGEC"
+  date: "2026-09"
+  type: donnees_ouvertes
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/Prix%20HTT%20et%20TTC%20depuis%20janvier%202020_0.xlsx"
+  emplacement: "feuilles « Carburants non routiers » et « Combustibles », lignes « MOYENNES ANNUELLES » 2024 et 2025"
+  contenu: "Moyennes annuelles, France métropolitaine, EUR/l. GNR (livraisons < 5 000 l) : 2024 HTT 0,7720, TTC 1,2242 ; 2025 HTT 0,6855, TTC 1,1922. Fioul domestique 2 000 à 4 999 l : 2024 HTT 0,8442, TTC 1,2004 ; 2025 HTT 0,7883, TTC 1,1325. Fioul domestique > 27 000 l : 2024 HTT 0,7778, TTC 1,1208 ; 2025 HTT 0,7221, TTC 1,0529. Fioul lourd (S <= 1 %) : 2024 HTT 566,15 EUR/t, HTVA 705,65 EUR/t ; 2025 vide (série non renseignée). Gazole routier 2025 HTT 0,7396, TTC 1,6186. Dernière donnée mensuelle : septembre 2026."
+  citation: "Gazole non routier (livraisons inférieures à 5 000 litres) | 2025 | 0.6855 | 1.1922 ; Fioul domestique (livraisons de plus de 27 000 l.) en euro par litre | 2025 | 0.7221 | 1.0529 ; Fioul lourd (teneur en soufre <= 1%) en euro par tonne | 2024 | 566.1462"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Fichier lu le 15/10/2026 dans le navigateur (SheetJS) ; valeurs arrondies à 4 décimales depuis les cellules. Le fioul lourd 2024 (566 EUR/t HTT) diffère légèrement de l'INSEE EACEI 2024 (576 EUR/t, déjà au registre) : périmètres différents (prix de vente déclaré DGEC contre prix payé par les établissements industriels)."
+  parametres: [prix_gnr_france_ht, prix_gnr_france_ttc, prix_fod_france_ht, prix_fod_france_ttc, prix_fioul_lourd_france_ht]
+
+A3-DGEC-MARGE-RAFFINAGE-METHODE:
+  titre: "Mode de calcul de la marge brute de raffinage sur Brent"
+  editeur: "Ministère de la Transition écologique, DGEC (avec IFPEN)"
+  date: "non datée (consultée 2026)"
+  type: statistique_publique
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/Mode%20de%20calcul%20de%20la%20marge%20brute%20de%20raffinage%20sur%20brent.pdf"
+  emplacement: "page 1, point 2 ; annexe 1, table 1 « Rendements massiques »"
+  contenu: "Les cotations de produits finis utilisées par la DGEC sont les cotations moyennes du marché de Rotterdam (Europe du Nord). Rendements massiques de la raffinerie type sur Brent : naphta 8,2 %, gazole 34,0 %, FOD 8,2 %, fioul lourd 1 % S 8,8 %, carburéacteur 8,3 %."
+  citation: "Les cotations de référence de l'ensemble des produits finis sont issues des cotations moyennes du marché de Rotterdam, marché de référence pour la zone nord de l'Europe"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (pdf.js). Sert à qualifier la base des cotations A3-DGEC-NPG-2026-10-09-COTATIONS."
+  parametres: [base_cotations_nwe]
+
+A3-CE-WOB-2026-10-12:
+  titre: "Weekly Oil Bulletin, Weekly prices without taxes / with taxes (fichiers xlsx)"
+  editeur: "Commission européenne, DG Énergie"
+  date: "2026-10-12"
+  type: statistique_publique
+  url: "https://energy.ec.europa.eu/document/download/78311f92-68f8-4b82-b5cf-1293beeaae77_en (sans taxes) ; https://energy.ec.europa.eu/document/download/264c2d0f-f161-4ea3-a777-78faae59bea0_en (avec taxes)"
+  emplacement: "feuille Sheet1, ligne France et ligne « CE/EC/EG EUR27_2020 (IV) Moyenne pondérée »"
+  contenu: "Prix à la consommation, date de bulletin 12/10/2026 (cellule 46307). Sans taxes, France : euro-super 95 1 153,32 EUR/1000 l ; gazole automobile 1 332,71 EUR/1000 l ; gazole de chauffage (fioul domestique) 1 410,54 EUR/1000 l ; fioul lourd : non renseigné pour la France. UE27 moyenne pondérée sans taxes : gazole 1 331,86 EUR/1000 l, gazole de chauffage 1 251,60 EUR/1000 l, fioul lourd soufre <= 1 % 639,53 EUR/t, fioul lourd soufre > 1 % 639,68 EUR/t ; Belgique fioul lourd 582,49 EUR/t. Avec taxes, France : gazole 2 328,25 ; gazole de chauffage 1 892,57 EUR/1000 l."
+  citation: "[\"France\",1153.3166666666666,1332.7083333333333,1410.5416666666665,null,null,741.9833333333332] ; en-têtes : \"Gas oil automobile Automotive gas oil Dieselkraftstoff (I)\",\" Gas oil de chauffage Heating gas oil Heizöl (II)\",\" Fuel oil - Schweres Heizöl (III) Soufre \" ; unités \"1000 l\",\"1000 l\",\"1000 l\",\"t\",\"t\",\"1000 l\""
+  statut: lu
+  consulte: 2026-10-15
+  note: "Fichiers lus le 15/10/2026 dans le navigateur (SheetJS). Le nom de fichier publié par la Commission porte une date ancienne (2024-02-19) mais le contenu est daté 12/10/2026 ; à vérifier. L'en-tête de la colonne fioul lourd basse teneur est tronqué dans le fichier (« Soufre »). Les prix France concordent avec la DGEC (gazole 133,27 c€/l, FOD 141,05 c€/l au 9 oct.)."
+  parametres: [prix_gazole_france_ht, prix_fod_france_ht, prix_fioul_lourd_ue_ht]
+
+A3-BM-PINKSHEET-2026-10:
+  titre: "World Bank Commodities Price Data (The Pink Sheet), October 2026"
+  editeur: "Banque mondiale"
+  date: "2026-10-02"
+  type: statistique_publique
+  url: "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf"
+  emplacement: "page 1, tableau des prix mensuels, lignes Crude oil Brent, Coal Australia, Coal South Africa, Natural gas Europe"
+  contenu: "Brent ($/bbl) : moyenne 2024 80,7 ; 2025 69,0 ; T1 2026 80,5 ; T2 2026 104,4 ; T3 2026 97,1 ; juil. 2026 83,4 ; août 90,9 ; sept. 116,8. Charbon Afrique du Sud (FOB Richards Bay, 6 000 kcal/kg) $/t : 2025 94,9 ; sept. 2026 98,2. Charbon Australie $/t : 2025 108,4 ; sept. 2026 147,1. Gaz naturel Europe $/mmbtu : 2025 11,96 ; sept. 2026 25,42."
+  citation: "Crude oil, Brent $/bbl a/ 82.6 80.7 69.0 69.0 63.7 80.5 104.4 97.1 83.4 90.9 116.8 ; Coal, South Africa ** $/mt 119.1 105.8 94.9 93.1 91.3 91.9 95.6 97.1 96.3 96.8 98.2"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch ; les lignes ont été restituées par l'outil d'extraction (vérification croisée : la moyenne T3 2026 97,1 correspond à la moyenne de juil.-sept.). Données non françaises (marchés internationaux). Brent 2025 (69,0) concorde avec DGEC (69,10 $/b) et SDES."
+  parametres: [prix_brent, prix_charbon]
+
+A3-BOFIP-RES-EAT-000240-2025-12-31:
+  titre: "BOI-RES-EAT-000240 : Modalités pratiques d'application des tarifs d'accise sur l'électricité et les combustibles à compter du 1er janvier 2026 en l'absence d'adoption de la loi de finances pour 2026"
+  editeur: "DGFiP, Bulletin officiel des finances publiques (BOFiP-Impôts)"
+  date: "2025-12-31"
+  type: reglementaire
+  url: "https://bofip.impots.gouv.fr/bofip/14903-PGP.html/identifiant=BOI-RES-EAT-000240-20251231"
+  emplacement: "réponse, points 1/ (électricité) et 3/ (combustibles)"
+  contenu: "Accise sur l'électricité, tarifs normaux au 1er février 2026 : catégories « PME » et « haute puissance » 20,92 EUR/MWh avant majoration ZNI, 26,58 EUR/MWh après majoration ZNI (janvier 2026 : 20,90 EUR/MWh avant majoration). Ménages 30,85 EUR/MWh après majoration. Tarifs réduits industriels (art. L. 312-48, L. 312-64, L. 312-65 CIBS) de 0 à 12 EUR/MWh ; grille industrielle ramenée de sept à quatre tarifs au 1er janvier 2026. Accise sur les combustibles (charbons, fiouls lourds, fiouls domestiques, gaz naturel) au 1er février 2026 : 10,73 EUR/MWh avant majoration ZNI, 16,39 EUR/MWh après."
+  citation: "Les tarifs normaux, après application de la majoration ZNI susmentionnée, s'établiront alors comme suit : 30,85 €/MWh pour la catégorie « ménages et assimilés » ; 26,58 €/MWh pour la catégorie « PME » ; 26,58 €/MWh pour la catégorie « haute puissance »."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur. Rescrit publié avant l'adoption de la loi de finances pour 2026 : les montants sont « sous réserve des modifications législatives » (combustibles). Une baisse des tarifs pleins au 1er août 2026 est signalée par EDF (A3-EDF-TAXES-ELEC-2026), non vérifiée dans un texte officiel. Un site de 600 kW relève de la catégorie « haute puissance » (> 250 kVA) ; l'éligibilité à un tarif réduit industriel (0 à 12 EUR/MWh) n'est pas établie."
+  parametres: [accise_electricite_2026, accise_combustibles_2026]
+
+A3-EDF-TAXES-ELEC-2026:
+  titre: "Taxes et contributions électricité : évolutions 2026 pour les collectivités"
+  editeur: "EDF (EDF pour les Collectivités)"
+  date: "2026 (page postérieure au 1er août 2026, date exacte non affichée)"
+  type: entreprise
+  url: "https://www.edf.fr/collectivites/decryptages/normes-et-reglementations/taxes-et-contributions-electricite-evolutions-2026-pour-les-collectivites"
+  emplacement: "sections « Évolutions des taxes et contributions en 2026 », « CTA » et tableau des tarifs pleins d'accise"
+  contenu: "Accise sur l'électricité, catégorie « Entreprises et assimilés » (activités économiques, puissance > 36 kVA) : 2,658 c€/kWh (26,58 EUR/MWh) au 1er février 2026, 2,635 c€/kWh (26,35 EUR/MWh) au 1er août 2026. CTA au 1er février 2026 : 5 % pour les sites raccordés à RTE, 15 % pour les sites raccordés à Enedis (sur la part fixe du TURPE). TVA 20 %."
+  citation: "Entreprises et assimilés Activités économiques Supérieure à 36 kVA 2,658 2,635 ; pour les sites raccordés au réseau public de distribution (Enedis), le taux de CTA est fixé à 15%."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (l'URL de recherche redirige vers cette page). Source d'entreprise (fournisseur), non réglementaire ; la valeur au 1er février 2026 concorde avec le BOFiP. La valeur au 1er août 2026 (26,35 EUR/MWh) n'a pas été vérifiée dans la loi de finances pour 2026 (Légifrance inaccessible, contrôle anti-robot)."
+  parametres: [accise_electricite_2026, cta_electricite_2026]
+
+A3-CRE-TURPE7-HTA-2026-105:
+  titre: "Délibération n°2026-105 du 21 mai 2026 portant évolution de la grille tarifaire du TURPE 7 HTA-BT au 1er août 2026"
+  editeur: "Commission de régulation de l'énergie (CRE)"
+  date: "2026-05-21"
+  type: reglementaire
+  url: "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260521_2026-105_Evolution_TURPE_7_HTA-BT.pdf"
+  emplacement: "partie évolution (+3,04 %) ; annexe, page 24 (comptage HTA), page 25 (soutirage HTA 5 plages, pointe fixe)"
+  contenu: "TURPE 7 HTA-BT d'Enedis : +3,04 % au 1er août 2026. Composante de comptage HTA : 387,84 EUR/an. Soutirage HTA 5 plages à pointe fixe, au 1er août 2026 : courte utilisation, b = 14,85 / 14,85 / 14,85 / 12,93 / 11,56 EUR/kW/an et c = 5,91 / 4,36 / 2,05 / 1,04 / 0,71 c€/kWh ; longue utilisation, b = 36,40 / 33,28 / 21,01 / 14,77 / 11,91 EUR/kW/an et c = 2,73 / 2,16 / 1,51 / 0,95 / 0,70 c€/kWh (pointe, pleines et creuses saison haute, pleines et creuses saison basse)."
+  citation: "Ainsi, le tarif TURPE 7 HTA-BT d'Enedis évolue au 1 er août 2026 de +3,04 % ; Tarif HTA à 5 plages temporelles à pointe fixe applicable au 1 er août 2026 – longue utilisation ... b ₁ = 36,40 b ₂ = 33,28 b ₃ = 21,01 b ₄ = 14,77 b ₅ = 11,91 ... c ₁ = 2,73 c ₂ = 2,16 c ₃ = 1,51 c ₄ = 0,95 c ₅ = 0,70"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (pdf.js) ; « 1 er » et « ₁ » sont des artefacts d'extraction (exposant/indice). Le tiret entre la date et « longue utilisation » est un demi-cadratin dans l'original. La CRE ne publie pas dans ce texte un coût moyen en EUR/MWh pour un profil donné ; tout coût moyen serait un calcul. Composante de gestion HTA lue seulement via WebFetch (264,96 EUR/an hors Rf et Ccard), non vérifiée."
+  parametres: [turpe_hta_2026]
+
+A3-CRE-SURVEILLANCE-2025-CP:
+  titre: "La Commission de régulation de l'énergie publie son rapport de surveillance des marchés de gros 2025 (communiqué de presse)"
+  editeur: "Commission de régulation de l'énergie (CRE)"
+  date: "2026-06-25"
+  type: observatoire
+  url: "https://www.cre.fr/fileadmin/Documents/Communiques_de_presse/2026/260625_CP_Rapport_surveillance_marches_de_gros.pdf"
+  emplacement: "page 1 à 2, tableau électricité"
+  contenu: "Électricité, France : prix moyen journalier (spot) 61 EUR/MWh en 2025 (58 en 2024, 97 en 2023, 41 sur 2014-2019) ; prix moyen pour livraison en base l'année suivante (CAL+1) 61 EUR/MWh en 2025 (77 en 2024, 163 en 2023). 513 heures à prix négatifs en 2025 ; 21 % des heures au-dessus de 100 EUR/MWh."
+  citation: "2014-2019 2023 2024 2025 Prix moyen 41 €/MWh 97 €/MWh 58 €/MWh 61 €/MWh journalier Prix moyen pour 42 €/MWh 163 €/MWh 77 €/MWh 61 €/MWh livraison en base l'année suivante (CAL+1)"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (pdf.js). Le rapport complet (https://www.cre.fr/fileadmin/Documents/Rapports_et_etudes/2026/Rapport_de_surveillance_2025.pdf) n'a pas été lu. Le prix spot journalier correspond au marché day-ahead (EPEX SPOT France) mais la source primaire EPEX n'a pas été consultée. Prix de gros 2025 : ne reflète pas la hausse des prix énergétiques de 2026 (gaz Europe 25,42 $/mmbtu en sept. 2026, Banque mondiale)."
+  parametres: [prix_gros_electricite_2025]
+
+A3-CRE-VNU-2026-52:
+  titre: "Délibération n°2026-52 du 26 février 2026 portant proposition de tarif unitaire de la minoration du versement nucléaire universel pour la période d'application 2026"
+  editeur: "Commission de régulation de l'énergie (CRE)"
+  date: "2026-02-26"
+  type: reglementaire
+  url: "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260226_2026-52_Tarif_unitaire_minoration_du_vnu_2026.pdf"
+  emplacement: "partie 2, « Proposition du tarif unitaire de la minoration des prix de l'électricité pour la période d'application 2026 »"
+  contenu: "Dispositif post-ARENH (loi de finances pour 2025, art. 17) : taxe sur l'utilisation de combustible nucléaire et versement nucléaire universel (VNU). Revenus nucléaires estimés pour 2026 : 66,08 EUR/MWh, inférieurs aux seuils de taxation et d'écrêtement fixés par le Gouvernement (78 et 110 EUR/MWh) ; recettes de la taxe estimées nulles ; la CRE propose un tarif unitaire de minoration (VNU) nul pour 2026."
+  citation: "L a CRE propose un tarif unitaire de la minoration nul pour l'année 2026."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur (pdf.js) ; « L a » est un artefact d'extraction. Il s'agit d'une proposition de la CRE ; l'arrêté fixant le tarif n'a pas été lu. Conséquence : pas de réduction VNU sur la facture 2026."
+  parametres: [vnu_2026]
+
+A3-SENAT-QE-07357-2026:
+  titre: "Question écrite n°07357 (17e législature) : Compensation de la hausse du gazole non-routier dans le secteur du bâtiment et des travaux publics et évolution du dispositif de suramortissement, et réponse ministérielle"
+  editeur: "Sénat (JO Sénat), réponse du ministère délégué chargé de l'énergie"
+  date: "2026-05-28"
+  type: reglementaire
+  url: "https://www.senat.fr/questions/base/2026/qSEQ260107357.html"
+  emplacement: "texte de la question (JO Sénat 22/01/2026 p. 218) et réponse (JO Sénat 28/05/2026 p. 2610)"
+  contenu: "Réponse ministérielle : la loi de finances pour 2024 prévoit l'alignement progressif, à échéance 2030, du tarif réduit du GNR sur le tarif normal du gazole routier ; aide de 5,99 c€/l pour les entreprises de moins de 15 salariés au titre de 2024. La question (parlementaire, non gouvernementale) chiffre l'écart de tarif GNR BTP / agricole à 14,96 EUR/hl en 2023, 26,94 EUR/hl en 2025 et jusqu'à 56,89 EUR/hl en 2030."
+  citation: "L'alignement progressif à échéance 2030 du tarif réduit de GNR sur le tarif normal appliqué au gazole routier prévu par la loi de finances pour 2024 et concerté avec les organisations représentatives du secteur du bâtiment et des travaux publics constitue une solution équilibrée"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur. Ne donne pas les tarifs annuels d'accise du GNR. Les montants d'écart sont ceux de la sénatrice, pas du Gouvernement."
+  parametres: [fiscalite_gnr_2026]
+
+A3-DOUANE-GNR-PAGE:
+  titre: "Gazole non routier (GNR)"
+  editeur: "Direction générale des douanes et droits indirects (DGDDI)"
+  date: "non datée (mentionne des mesures de juillet 2025)"
+  type: reglementaire
+  url: "https://www.douane.gouv.fr/professionnels/energie/gazole-non-routier-gnr"
+  emplacement: "texte principal"
+  contenu: "Le GNR est taxé, dans la majorité des cas, au tarif d'accise de droit commun prévu au dernier alinéa de l'article L. 312-35 du CIBS ; tarif réduit agricole et forestier 3,86 EUR/hl ; tarif réduit transport guidé depuis juillet 2025 (art. L. 312-48 et L. 312-49 CIBS). Un usage industriel fixe (groupe électrogène d'une usine) n'est pas cité comme bénéficiaire d'un tarif réduit."
+  citation: "si le GNR, carburant coloré en rouge et destiné à des usages spécifiques, est taxé, dans la majorité des cas, au tarif d'accise de droit commun prévu au dernier alinéa de l'article L. 312-35 du code des impositions sur les biens et services, les volumes utilisés à des fins agricoles et/ou forestières bénéficient d'un tarif réduit."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur. Le montant 2026 du tarif de droit commun du GNR (dernier alinéa de L. 312-35) n'est pas donné sur la page ; voir NON TROUVÉ."
+  parametres: [fiscalite_gnr_2026]
+
+A3-SDES-CCE-2026-EQUIVALENCES:
+  titre: "Chiffres clés de l'énergie, édition 2026 : Méthodologie - définitions (équivalences énergétiques)"
+  editeur: "SDES, ministère de la Transition écologique"
+  date: "2026"
+  type: statistique_publique
+  url: "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-energie/21-methodologie---definitions-.php"
+  emplacement: "tableau « Équivalences énergétiques », rubrique Produits raffinés"
+  contenu: "PCI par tonne : gazole et fioul domestique 42,6 GJ/t (11,8333 MWh/t, 1,0175 tep/t) ; fioul lourd 40 GJ/t (11,1111 MWh/t) ; naphta 44 GJ/t ; kérosène 43 GJ/t ; coke de pétrole 32 GJ/t ; pétrole brut 42,78 GJ/t ; charbon-vapeur 26 GJ/t. Aucune densité (kg/l) n'est donnée."
+  citation: "Gazole, fioul domestique 1 t 42,6 11,8333 1,0175 ; Fioul lourd 1 t 40 11,1111 0,9554 ; Naphta 1 t 44 12,2222 1,0509"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via le navigateur. Utile pour comparer l'huile de pyrolyse (PCS 45-46 MJ/kg mesuré, PCI non mesuré) aux produits pétroliers en EUR/MWh."
+  parametres: [pci_gazole_fod, pci_fioul_lourd, pci_naphta]
+
+A3-EUROSTAT-NRG-CONS-CODELIST:
+  titre: "Codelist ESTAT:NRG_CONS (Energy consumption), version 3.0"
+  editeur: "Eurostat"
+  date: "consultée 2026-10-15 (version 3.0)"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/codelist/ESTAT/NRG_CONS"
+  emplacement: "codes MWH2000-19999 et MWH20000-69999"
+  contenu: "Bande ID : consommation de 2 000 à 19 999 MWh/an ; bande IE : 20 000 à 69 999 MWh/an ; bande IC : 500 à 1 999 MWh/an. Pour l'URC-2000 : 600 kW x 24 h = 14,4 MWh/jour, soit environ 4 750 à 5 260 MWh/an selon 330 à 365 jours (calcul, hypothèse de puissance appelée constante) : la bande ID s'applique, pas la bande IE."
+  citation: "MWH2000-19999: \"Consumption from 2 000 MWh to 19 999 MWh - band ID\" ; MWH20000-69999: \"Consumption from 20 000 MWh to 69 999 MWh - band IE\""
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (libellés restitués par l'outil). La page de métadonnées nrg_pc_204_sims lue via WebFetch donne la même définition (« ID: customers consuming 2000 MWh or more but less than 20000 MWh. », mise à jour indiquée 1 février 2024) mais la même URL renvoie 404 dans le navigateur ; la page nrg_pc_205_sims renvoie une erreur ou 404. La bande ID est donc la bonne pour 4,7 à 5,3 GWh/an ; les valeurs IE déjà au registre ne correspondent pas au profil de l'usine."
+  parametres: [bande_eurostat_electricite]
+
+# NON TROUVÉ
+# - Cotation du naphta en Europe du Nord-Ouest (CIF NWE ou autre) : absente des notes DGEC NPG (cherché dans NPG-2026.10.09, pages 2 à 13 :
+#   aucune occurrence de « naphta »), absente du Weekly Oil Bulletin et du Pink Sheet de la Banque mondiale. Seules sources : Platts, Argus,
+#   ICIS (payantes). Recherche web « cotation naphta Rotterdam €/t 2026 statistiques développement durable » : seulement des notes NPG. Rien estimé.
+# - Base exacte des cotations DGEC (CIF ou FOB, cargo ou barge) : la DGEC indique seulement « marché de Rotterdam » et « DGEC-REUTERS ».
+# - Gazole 10 ppm NWE en EUR/t : la DGEC publie en $/t (1 406 $/t) et en c€/l ; aucune valeur en EUR/t publiée pour le gazole.
+# - Montant 2026 de l'accise sur le gazole non routier (tarif de droit commun, dernier alinéa de l'art. L. 312-35 CIBS) et calendrier annuel
+#   2026-2030 du tarif BTP : Légifrance inaccessible (page de vérification anti-robot, non contournée) ; circulaire DGDDI du 30/09/2026
+#   « Droits et taxes applicables aux produits énergétiques à compter du 1er octobre 2026 »
+#   (https://www.douane.gouv.fr/sites/default/files/ba_files/da/2026-09/BOD%20DetT%20octobre%202026.pdf) : texte non extractible
+#   (polices encodées) et lecture WebFetch tronquée avant les lignes 2710 19 43 ; page douane GNR et réponse Sénat sans montant.
+#   Indication non sourcée en tant que tarif : l'écart TTC/1,2 - HTT de la DGEC donne environ 36,8 c€/l en sept. 2026 et 30,8 c€/l en 2025 (calcul).
+# - Loi de finances pour 2026 (texte) : non lue (Légifrance bloqué) ; la baisse de l'accise électricité au 1er août 2026 (26,35 EUR/MWh)
+#   repose seulement sur EDF.
+# - Densité officielle du fioul domestique et du GNR (kg/l) : non trouvée dans SDES Chiffres clés 2026 (équivalences données par tonne
+#   seulement), ni dans la méthodologie DGEC des prix moyens. Rien estimé.
+# - Fioul lourd HT France 2025 et 2026 : colonne vide dans le fichier DGEC pour 2025 et dans le Weekly Oil Bulletin pour la France.
+# - Prix EPEX SPOT France moyen 2025 publié par EPEX : non consulté (source primaire) ; prix spot moyen 2025 pris dans le communiqué CRE.
+# - Ordre de grandeur publié par la CRE d'un coût TURPE HTA en EUR/MWh pour un site de 5 GWh/an : non trouvé ; seule la grille est publiée.
+# - Métadonnées Eurostat nrg_pc_205 (page _sims) : 404 dans le navigateur ; définition des bandes obtenue par la codelist NRG_CONS.

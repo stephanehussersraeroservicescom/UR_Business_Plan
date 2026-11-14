@@ -1,0 +1,368 @@
+<!doctype html>
+<!-- Fichier genere par generer_html.py a partir de ANNEX-01-Process-and-Technology.md et des registres. Ne pas modifier a la main : corriger la source, puis regenerer. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Annex 1. Process and Technology</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#dedbd2;--accent:#1f5f8b;--box:#f1eee6;--good:#2e6b3f;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-top:.6em;border-top:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.6em 0 .4em}
+p,li{max-width:72ch}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font:14px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--box)}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--box);padding:10px 12px;border-radius:6px;overflow-x:auto}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.ev{white-space:nowrap}
+.ev a{display:inline-block;font:600 11px/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:9px;padding:2px 6px;margin-left:3px;vertical-align:2px;opacity:.85}
+.ev a:hover{opacity:1;background:var(--accent);color:var(--bg)}
+.crumb{font:14px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted)}
+.cards{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin:18px 0 26px}
+@media (max-width:640px){.cards{grid-template-columns:1fr}}
+.card{background:var(--box);border-radius:10px;padding:14px 16px}
+.card h4{margin:0 0 6px;font:600 12px/1.2 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card p{margin:0}
+.conf{font:700 2.4rem/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--good);margin:4px 0 6px}
+.small{font-size:.9rem;color:var(--muted)}
+.result{font-size:1.15rem;background:var(--box);border-left:4px solid var(--good);padding:10px 14px;border-radius:6px}
+
+figure{margin:1.6em 0;padding:0}
+figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+.key{background:var(--box);border-radius:10px;padding:4px 18px;margin:1em 0}
+</style></head>
+<body><main><h1>Annex 1. Process and Technology</h1>
+<p>This annex describes what the Urban Rig is, how it works, what it produces and how it compares with other waste treatment routes. It describes; Annex 2 proves the performance. Where a figure is already proven in Annex 2, this annex links to the Annex 2 evidence sheet.</p>
+<h2>How to Read This Annex</h2>
+<p>The Urban Rig is designed, built and documented by OneWorld Corporation (Osaka), the sponsor of this business plan (decision D-027). Its documentation is the design basis of the project (decisions D-016 and D-020). Every statement taken from it is marked "OneWorld design data" and rated 95 % or 90 % confidence<span class="ev"><a href="preuves/A1-D.html#D-022" title="Decision D-022">D-022</a></span>; these are the company's own figures and have not been verified independently.</p>
+<p>Each figure or fact is followed by a small link. It opens the evidence sheet: what the evidence shows, its confidence, the source document and page, or the calculation. Sheets numbered 1.M, 1.R and 1.C belong to this annex (manufacturer documents, regulations and references, calculations); sheets numbered 2.x link to Annex 2. All sheets are listed in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<p>This annex contains no revenue, price or cost figures. Prices are in Annex 3, costs in Annex 9 and revenues in the financial model.</p>
+<h2>Key Messages</h2>
+<ul>
+<li><strong>Waste in, fuels and char out.</strong> According to OneWorld design data, the Urban Rig heats waste with superheated steam in an oxygen-free reactor and recovers fuel oil, char, metals and a combustible gas<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>.</li>
+<li><strong>A line of reactors, not a single kiln.</strong> The reference plant, the URC-2000, treats 200 t per day<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>. According to OneWorld design data, buckets of waste move through a line of 7 heated and cooled units<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>.</li>
+<li><strong>The process heat comes from the waste on resin-rich feeds.</strong> The measured gas, once air is removed, covers the burner heat demand 2.9 times on OneWorld's resin-rich example, with 11.5 % gas<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-3.html" title="CALC-A2-COUV-BRULEUR-RESINE">2.5.d.3</a></span>, and 3.7 times on pure plastic with 15 % gas, a rounded value of the measured gas by difference<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-2.html" title="CALC-A2-COUV-BRULEUR-PLASTIQUE15">2.5.d.2</a><a href="preuves/A1-D.html#D-038" title="Decision D-038">D-038</a></span>. On household and municipal waste, self-sufficiency is not established; their energy balance is built in Annex 5, according to the feed chosen<span class="ev"><a href="preuves/A1-D.html#D-029" title="Decision D-029">D-029</a></span>. Electricity is bought from the grid<span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html" title="OW-CONSO-ENERGIE">2.3.e</a></span>.</li>
+<li><strong>Very low dioxin levels.</strong> Measured dioxins were 0.011 and 0.025 ng-TEQ/m³ in 2023<span class="ev"><a href="../annexe-02-html/preuves/A2-2-j.html" title="DIOXINES-2023">2.2.j</a></span> and 0.067 ng-TEQ/m³ in 2022<span class="ev"><a href="../annexe-02-html/preuves/A2-2-d.html" title="CHIBA-OOSUMI-FUMEES">2.2.d</a></span>, below the EU limit of 0.1<span class="ev"><a href="../annexe-02-html/preuves/A2-4-a.html" title="IED-2010-75-ANX6-P3">2.4.a</a></span>.</li>
+<li><strong>Three points to secure with OneWorld:</strong> the pre-treatment actually required (the plant layouts include a crusher and a sorting machine), the route of the off-gas in the plant, and the acceptance of PVC-rich waste (Section 1.6).</li>
+</ul>
+<h2>1.1 What the Urban Rig Does</h2>
+<p>According to OneWorld design data, the Urban Rig makes the inside of the reactor hot and oxygen-free with superheated steam, and recovers fuel oil from resin-based mixed waste, including waste mixed with food residue and mud<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. The organic part that does not become oil or gas leaves as char; metals leave in a non-oxidised state, according to the same source<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>.</p>
+<p>The plant proposed for the project is the <strong>URC-2000</strong>, a continuous plant rated at 200 t per day<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>. OneWorld designed it for household waste with a high moisture content, such as food residue, sludge and soil<span class="ev"><a href="preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span>.</p>
+<h3>The OneWorld range</h3>
+<p>OneWorld offers batch units and continuous lines<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Type</th>
+<th>Capacity</th>
+<th>Units in line</th>
+<th>Bucket</th>
+<th>Processing unit (W x D x H)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URC-2000</td>
+<td>Continuous, household waste</td>
+<td>200 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>7 processes<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>4.5 m³, 3 per batch<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>66 x 7 x 7 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URC-1000</td>
+<td>Continuous, household waste</td>
+<td>100 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>4 processes<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>4.5 m³, 2 per batch<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>20 x 7 x 7 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URC-400</td>
+<td>Continuous, resin waste</td>
+<td>40 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>seven processes<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>1 m³, 3 per batch<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>41 x 7 x 7 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URC-150</td>
+<td>Continuous, household waste</td>
+<td>15 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>7 processes<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>1 or 2 m³<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>22 x 6.5 x 6 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URB-50</td>
+<td>Batch, resin waste</td>
+<td>5 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>one reactor</td>
+<td></td>
+<td>10 x 5 x 7 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URT-10</td>
+<td>Batch, mobile on a 10 t truck</td>
+<td>1 t per day<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>one reactor</td>
+<td></td>
+<td>9 x 2.5 x 2.3 m<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URB-10</td>
+<td>Batch, organic waste sterilisation</td>
+<td>1 t<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+<td>one reactor</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<figure><img src="images/ow-eng-p03.jpg" alt="The OneWorld range: batch units and continuous lines (OneWorld brochure, English, 2019, p. 3; manufacturer illustration)" loading="lazy"><figcaption>The OneWorld range: batch units and continuous lines (OneWorld brochure, English, 2019, p. 3; manufacturer illustration)</figcaption></figure>
+
+<figure><img src="images/ow-eng-p04.jpg" alt="URC-2000 specification and site layout (OneWorld brochure, English, 2019, p. 4; manufacturer illustration)" loading="lazy"><figcaption>URC-2000 specification and site layout (OneWorld brochure, English, 2019, p. 4; manufacturer illustration)</figcaption></figure>
+
+<p>Specification sheets of the other models, as published by OneWorld:</p>
+<figure><img src="images/ow-eng-p06.jpg" alt="URC-1000, continuous, 100 t per day, 4 processes (OneWorld brochure, English, 2019, p. 6; manufacturer illustration)" loading="lazy"><figcaption>URC-1000, continuous, 100 t per day, 4 processes (OneWorld brochure, English, 2019, p. 6; manufacturer illustration)</figcaption></figure>
+
+<figure><img src="images/ow-eng-p05.jpg" alt="URC-400, continuous, 40 t per day, for resin waste (OneWorld brochure, English, 2019, p. 5; manufacturer illustration)" loading="lazy"><figcaption>URC-400, continuous, 40 t per day, for resin waste (OneWorld brochure, English, 2019, p. 5; manufacturer illustration)</figcaption></figure>
+
+<figure><img src="images/ow-eng-p07.jpg" alt="URC-150, continuous, 15 t per day (OneWorld brochure, English, 2019, p. 7; manufacturer illustration)" loading="lazy"><figcaption>URC-150, continuous, 15 t per day (OneWorld brochure, English, 2019, p. 7; manufacturer illustration)</figcaption></figure>
+
+<figure><img src="images/ow-eng-p08.jpg" alt="URB-50, batch, 5 t per day (OneWorld brochure, English, 2019, p. 8; manufacturer illustration)" loading="lazy"><figcaption>URB-50, batch, 5 t per day (OneWorld brochure, English, 2019, p. 8; manufacturer illustration)</figcaption></figure>
+
+<figure><img src="images/ow-eng-p09.jpg" alt="URT-10 mobile unit and URB-10 batch unit, 1 t (OneWorld brochure, English, 2019, p. 9; manufacturer illustration)" loading="lazy"><figcaption>URT-10 mobile unit and URB-10 batch unit, 1 t (OneWorld brochure, English, 2019, p. 9; manufacturer illustration)</figcaption></figure>
+
+<p>The tests reported in Annex 2 were run on batch units: the Noda test unit in 2022 and the truck-mounted URT-10 in 2021<span class="ev"><a href="../annexe-02-html/preuves/A2-1-a.html" title="CHIBA-RAPPORT-2023">2.1.a</a><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>.</p>
+<h2>1.2 How It Works</h2>
+<h3>1.2.1 Reactor Design and Temperature Zones</h3>
+<p>According to OneWorld design data, a continuous plant is a line of batch-type reactor units, installed at 7 or 4 places depending on the purpose, each held at its own temperature<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. The waste stays in its bucket; the buckets move from one unit to the next<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>.</p>
+<p>For the URC-2000, OneWorld design data state:</p>
+<ul>
+<li>7 units of about 12 t, built in series in the factory<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>;</li>
+<li>buckets of 4.5 m³, moved 3 at a time, every 90 minutes<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>;</li>
+<li>a total time of 10.5 hours from inlet to outlet<span class="ev"><a href="preuves/A1-C-a.html" title="CALC-A1-UR2000-TEMPS-TOTAL">1.C.a</a></span>;</li>
+<li>48 buckets per 24 hours, each of at most 4.17 t, which gives 200.16 t per day<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a><a href="../annexe-02-html/preuves/A2-5-f-29.html" title="CALC-A2-UR2000-CADENCE">2.5.f.29</a></span>;</li>
+<li>a heating zone at 150, 300, 450 and 600 °C, then a cooling zone at 400, 150 and 60 °C<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>;</li>
+<li>a decomposition temperature of 600 °C at most, at a pressure below 0.2 MPa<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>.</li>
+</ul>
+<p>The number of units and the temperature steps depend on the machine. Other OneWorld documents show a 2014 drawing with a maximum zone temperature of 500 °C<span class="ev"><a href="preuves/A1-M-e.html" title="UR2000-JP-P09-P13-PLANS">1.M.e</a></span>, a 2024 animation with steps at 250, 450, 600 and 350 °C<span class="ev"><a href="preuves/A1-M-g.html" title="OW-VIDEO-ANIMATION-2024">1.M.g</a></span>, and a 9-unit continuous machine at Toyohashi<span class="ev"><a href="preuves/A1-M-f.html" title="OW-STEP-TOYOHASHI-9">1.M.f</a></span>. The configuration to be delivered is to be confirmed with OneWorld (R-024).</p>
+<figure><img src="images/ow-eng-p15.jpg" alt="Temperature of each unit and bucket timetable of a 7-unit continuous line (OneWorld brochure, English, 2019, p. 15; manufacturer illustration)" loading="lazy"><figcaption>Temperature of each unit and bucket timetable of a 7-unit continuous line (OneWorld brochure, English, 2019, p. 15; manufacturer illustration)</figcaption></figure>
+
+<h3>1.2.2 Superheated Steam Environment</h3>
+<p>According to OneWorld design data, a steam boiler (165 °C at most) feeds a superheated steam generator (600 °C at most), heated by a burner; the steam at 600 °C is injected into the reactor, where it displaces oxygen<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. In this oxygen-free, reducing atmosphere the waste is not burned: its oil fraction is distilled and vaporised, and the rest carbonises<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>.</p>
+<p>The vapours then follow this path, according to OneWorld design data<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>:</p>
+<ol>
+<li>a catalytic layer that adsorbs chlorine;</li>
+<li>a condenser that liquefies the vapours;</li>
+<li>a solenoid valve that separates gas oil and heavy oil according to the temperature of the vapour;</li>
+<li>an oil and water separation tank, then a filtration tank.</li>
+</ol>
+<p>The Noda test unit had the same sequence: the gas from the pyrolysis furnace passed through a catalytic reaction tank before the condenser<span class="ev"><a href="../annexe-02-html/preuves/A2-1-g.html" title="CHIBA-PROCEDE-HUILE">2.1.g</a></span>. OneWorld design data also state that chlorine from PVC becomes dilute hydrochloric acid in the steam and does not damage the reactor<span class="ev"><a href="../annexe-02-html/preuves/A2-3-h.html" title="UR2000-JP-P03-P04-CHLORE">2.3.h</a></span>.</p>
+<figure><img src="images/ow-eng-p14.jpg" alt="Fuel recovery mechanism (OneWorld brochure, English, 2019, p. 14; shown on a URB-50 batch unit; manufacturer illustration)" loading="lazy"><figcaption>Fuel recovery mechanism (OneWorld brochure, English, 2019, p. 14; shown on a URB-50 batch unit; manufacturer illustration)</figcaption></figure>
+
+<h3>1.2.3 Off-Gas Recycling</h3>
+<p>The gas that does not condense is a fuel. The only analysis available shows hydrogen, methane, ethane, ethylene, propane, propylene and carbon monoxide, diluted with air at the sampling point<span class="ev"><a href="../annexe-02-html/preuves/A2-2-f.html" title="KANSO-B2002600">2.2.f</a></span>. Once oxygen and nitrogen are removed, 91.4 % of it is combustible<span class="ev"><a href="../annexe-02-html/preuves/A2-5-c-11.html" title="CALC-A2-GAZ-PART-COMBUSTIBLE">2.5.c.11</a></span> and its net calorific value is 37.4 MJ/kg<span class="ev"><a href="../annexe-02-html/preuves/A2-5-c-12.html" title="CALC-A2-GAZ-PCI">2.5.c.12</a></span>.</p>
+<p>According to OneWorld design data, the plant burns its own recovered fuel in the boiler and the superheater<span class="ev"><a href="../annexe-02-html/preuves/A2-3-d.html" title="OW-ENG-P02-P14-AFFIRMATIONS">2.3.d</a></span>. How the off-gas is routed in a URC-2000 (to the superheater burner, to the boiler, or to a separate combustion stage) is not described in the documents read; the parts list of the Toyohashi machine includes a combustion tower connected to the gas-liquid separator<span class="ev"><a href="preuves/A1-M-f.html" title="OW-STEP-TOYOHASHI-9">1.M.f</a></span>. This is to be confirmed with OneWorld (R-025), because it also decides how the plant is permitted (Section 1.5).</p>
+<h3>1.2.4 Continuous Operation</h3>
+<p>In a continuous line, every unit holds a bucket at all times. Each step, the buckets advance by one unit: a bucket of fresh waste enters and a bucket of char and metals leaves<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. After a cold start, the first 8 batches give no output while the line fills<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. Each unit stays at a constant temperature, which, according to OneWorld design data, keeps the vapour stable and avoids the heating and cooling losses of a batch reactor<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>.</p>
+<h2>1.3 What Comes Out</h2>
+<table>
+<thead>
+<tr>
+<th>Output</th>
+<th>What it is</th>
+<th>OneWorld design data</th>
+<th>Measured quality (Annex 2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oils</td>
+<td>Light (heating) oil, gas (diesel) oil and heavy oil; asphaltenes remain at the hottest step<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span></td>
+<td>76.5 % of input on a resin-rich feed<span class="ev"><a href="../annexe-02-html/preuves/A2-5-f-11.html" title="CALC-A2-OW16-HUILE-TOTALE">2.5.f.11</a></span>; 5 % on household waste with 10 % resins<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span></td>
+<td>Gross calorific value 45,000 to 46,000 J/g<span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html" title="CHIBA-JLOS-HUILES">2.2.a</a></span></td>
+</tr>
+<tr>
+<td>Char</td>
+<td>Carbon-rich solid residue<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span></td>
+<td>5 % of input on a resin-rich feed<span class="ev"><a href="../annexe-02-html/preuves/A2-3-c.html" title="OW-ENG-P16-BILAN">2.3.c</a></span>; 25 % on household waste with 10 % resins<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span></td>
+<td>24.6 MJ/kg for char from plastic residues<span class="ev"><a href="../annexe-02-html/preuves/A2-5-f-1.html" title="CALC-A2-PCI-CHAR-PLASTIQUE">2.5.f.1</a></span>; 32,090 J/g for char from household waste, measured on a urethane char<span class="ev"><a href="../annexe-02-html/preuves/A2-2-l.html" title="IZUMITEC-R35-339439">2.2.l</a><a href="preuves/A1-D.html#D-038" title="Decision D-038">D-038</a></span></td>
+</tr>
+<tr>
+<td>Metals and glass</td>
+<td>Separated from the char; metals not oxidised, according to OneWorld design data<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span></td>
+<td>2 % on a resin-rich feed<span class="ev"><a href="../annexe-02-html/preuves/A2-3-c.html" title="OW-ENG-P16-BILAN">2.3.c</a></span>; 0 to 5 % on household waste<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span></td>
+<td>not analysed (R-031)</td>
+</tr>
+<tr>
+<td>Gas</td>
+<td>Non-condensable gas, used as process fuel (Section 1.2.3)</td>
+<td>5 % on household waste with 10 % resins<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span></td>
+<td>37.4 MJ/kg<span class="ev"><a href="../annexe-02-html/preuves/A2-5-c-12.html" title="CALC-A2-GAZ-PCI">2.5.c.12</a></span></td>
+</tr>
+<tr>
+<td>Water</td>
+<td>Condensed steam and moisture of the waste</td>
+<td>5 % on a resin-rich feed, reused in the boiler<span class="ev"><a href="../annexe-02-html/preuves/A2-3-c.html" title="OW-ENG-P16-BILAN">2.3.c</a></span></td>
+<td>untreated water above discharge standards; treatment to be designed<span class="ev"><a href="../annexe-02-html/preuves/A2-1-h.html" title="CHIBA-CONSTATS">2.1.h</a></span></td>
+</tr>
+</tbody>
+</table>
+<h3>1.3.1 Pyrolysis Oil and Its Fractions</h3>
+<p>In OneWorld's design balance for a resin-rich feed, gas oil makes up 80 % of the oil, heating oil 10 % and heavy oil 10 %<span class="ev"><a href="preuves/A1-C-b.html" title="CALC-A1-OW16-PART-GAZOLE">1.C.b</a><a href="preuves/A1-C-c.html" title="CALC-A1-OW16-PART-HEATING">1.C.c</a><a href="preuves/A1-C-d.html" title="CALC-A1-OW16-PART-HEAVY">1.C.d</a></span>. These shares are design figures; the output of each unit of a continuous line has not been measured (R-013). The measured oils are described in Annex 2: calorific value, density, sulphur, and chlorine of 0.137 % and 0.526 % in the oils made from municipal waste<span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html" title="CHIBA-JLOS-HUILES">2.2.a</a></span>.</p>
+<h3>1.3.2 Char (Biochar, Carbide)</h3>
+<p>Two calorific values are used for the char, by feed<span class="ev"><a href="preuves/A1-D.html#D-038" title="Decision D-038">D-038</a></span>: 24.6 MJ/kg for char from plastic residues, the factor applied in the Chiba mass balances<span class="ev"><a href="../annexe-02-html/preuves/A2-5-f-1.html" title="CALC-A2-PCI-CHAR-PLASTIQUE">2.5.f.1</a></span>, and 32,090 J/g for char from household waste, measured on a urethane char<span class="ev"><a href="../annexe-02-html/preuves/A2-2-l.html" title="IZUMITEC-R35-339439">2.2.l</a></span>. Both are well above the 12,000 kJ/kg minimum of a French solid recovered fuel<span class="ev"><a href="../annexe-02-html/preuves/A2-4-l.html" title="ARRETE-CSR-2016">2.4.l</a></span>. Its intended outlet is as a solid fuel, for example blended with coke or coal<span class="ev"><a href="preuves/A1-D.html#D-026" title="Decision D-026">D-026</a></span>; specifications and prices are in Annex 3. It is not intended as a fertiliser: EU rules on pyrolysis materials in fertilising products exclude inputs from mixed municipal waste<span class="ev"><a href="../annexe-02-html/preuves/A2-4-k.html" title="FPR-2019-1009">2.4.k</a></span>.</p>
+<h3>1.3.3 Recovered Metals</h3>
+<p>According to OneWorld design data, metals are extracted in a non-oxidised state, because the reactor contains no oxygen<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. In the 2020 tyre test, the steel wire was recovered and weighed separately (111 kg from 450 kg of tyres)<span class="ev"><a href="../annexe-02-html/preuves/A2-3-g.html" title="OWT-DEMO-2020">2.3.g</a></span>. The cleanliness and outlet of the metals are to be documented (R-031).</p>
+<h3>1.3.4 Off-Gas</h3>
+<p>See Section 1.2.3. On the household waste case, OneWorld's design gives 5 % of the input as off-gas<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>; the gas of the Chiba runs is calculated by difference and, for municipal feeds, includes the moisture of the waste; for mixed waste, the project takes the gas produced by the plastic fraction at 10 % of the plastic input<span class="ev"><a href="preuves/A1-D.html#D-029" title="Decision D-029">D-029</a></span>.</p>
+<h2>1.4 Key Characteristics</h2>
+<h3>1.4.1 Feedstock Acceptance and Pre-Sorting Needs</h3>
+<p><strong>What OneWorld design data state.</strong> The Urban Rig does not require waste to be sorted or cleaned: plastics with mud, residues, metals or pesticides can be loaded after one day of storage to remove moisture<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. The buckets take the waste as it is<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>.</p>
+<p><strong>What the plant layouts show.</strong> The site layouts of the same documents include an input throat with a crushing function and a sorting machine<span class="ev"><a href="preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a><a href="preuves/A1-M-e.html" title="UR2000-JP-P09-P13-PLANS">1.M.e</a></span>. A pre-treatment step is therefore part of the plant. Its specification (size, removal of inerts, bulky items and hazardous objects) is to be obtained from OneWorld (R-023) and costed in Annex 9.</p>
+<p><strong>What has been tested</strong> (Annex 2):</p>
+<ul>
+<li>PE, PP and PS, alone and mixed, and two municipal waste streams from Noda (packaging plastics and non-combustible residue)<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>;</li>
+<li>mixed plastics including some PVC pipe and FRP, on the URT-10<span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>;</li>
+<li>waste tyres<span class="ev"><a href="../annexe-02-html/preuves/A2-3-g.html" title="OWT-DEMO-2020">2.3.g</a></span>;</li>
+<li>shredder residue, which gave an oil that could not be measured<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>.</li>
+</ul>
+<p><strong>PVC.</strong> In the 2021 runs, the PVC stopped at the melting stage<span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html" title="OWJ-DEMO-2021">2.3.f</a></span>. PVC also brings chlorine into the oil. Its acceptance will be settled with the chlorine investigation (R-013, R-021)<span class="ev"><a href="preuves/A1-D.html#D-026" title="Decision D-026">D-026</a></span>.</p>
+<p><strong>Not yet tested:</strong> raw household waste, paper and board, wood, food waste, textiles and PET (R-021).</p>
+<h3>1.4.2 Emissions, Including Dioxins</h3>
+<p><strong>Dioxin levels are very low.</strong> The measurements gave 0.011 and 0.025 ng-TEQ/m³ in 2023<span class="ev"><a href="../annexe-02-html/preuves/A2-2-j.html" title="DIOXINES-2023">2.2.j</a></span> and 0.067 ng-TEQ/m³ in 2022<span class="ev"><a href="../annexe-02-html/preuves/A2-2-d.html" title="CHIBA-OOSUMI-FUMEES">2.2.d</a></span>. All are below the EU limit for waste incineration of 0.1 ng/Nm³<span class="ev"><a href="../annexe-02-html/preuves/A2-4-a.html" title="IED-2010-75-ANX6-P3">2.4.a</a></span>. The 2023 values are within the best-available-technique range for new plants, below 0.01 to 0.04 ng I-TEQ/Nm³<span class="ev"><a href="../annexe-02-html/preuves/A2-4-b.html" title="BAT-WI-2019-2010">2.4.b</a></span>.</p>
+<p>OneWorld explains this by the absence of oxygen in the reactor, where dioxins cannot form<span class="ev"><a href="../annexe-02-html/preuves/A2-3-d.html" title="OW-ENG-P02-P14-AFFIRMATIONS">2.3.d</a></span>. The stack gas comes from the boiler, superheaters and heaters<span class="ev"><a href="../annexe-02-html/preuves/A2-3-d.html" title="OW-ENG-P02-P14-AFFIRMATIONS">2.3.d</a></span>, so the plant does emit combustion gas.</p>
+<p><strong>Other pollutants.</strong> Nitrogen oxides, sulphur oxides, dust and hydrogen chloride were all below the EU daily limits on the values as reported (Annex 2, Section 2.7). The values are not yet corrected to the EU reference of 11 % oxygen<span class="ev"><a href="../annexe-02-html/preuves/A2-4-a.html" title="IED-2010-75-ANX6-P3">2.4.a</a></span>, and the 2022 and 2023 reports are provisional; final reports are requested (R-016).</p>
+<p><strong>Flue gas treatment.</strong> OneWorld sells a flue gas treatment unit, PRIMO (removal of nitrogen oxides, sulphur oxides, dust and odour), as an option<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>. The configuration for a French plant is to be specified (R-029).</p>
+<h3>1.4.3 Fractional Oil Separation</h3>
+<p>Each unit of a continuous line is held at its own temperature, so each releases a different cut of vapour: according to OneWorld design data, kerosene-type oil, gas oil, heavy oil and asphaltenes from the coolest to the hottest step<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>. A solenoid valve then separates gas oil and heavy oil according to the vapour temperature<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. The plant therefore delivers more than one oil grade, not a single crude oil.</p>
+<p>The measured composition of an oil sample is analysed in Annex 2, Section 2.4.3. The share of each grade on a continuous line has not been measured (R-013).</p>
+<h3>1.4.4 Process Control and Automation</h3>
+<p>According to OneWorld design data, the continuous plants are controlled by microcomputer, from the loading slot to the unloading slot, with valves and sensors as safety devices<span class="ev"><a href="preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span>. The documents do not describe the parameters controlled, the safety interlocks, remote supervision or the operating staff (R-026).</p>
+<h3>1.4.5 Energy Requirements and Fuel Input</h3>
+<p>Annex 2 (Section 2.6) builds the energy balance on OneWorld's figures<span class="ev"><a href="../annexe-02-html/preuves/A2-5-0.html" title="Working assumption D-021">2.5.0</a><a href="preuves/A1-D.html#D-038" title="Decision D-038">D-038</a></span>:</p>
+<ul>
+<li><strong>Heat.</strong> The superheating burner corresponds to 1,507 MJ per tonne treated<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-1.html" title="CALC-A2-BRULEUR-MJ-T">2.5.d.1</a></span>. The gas covers this demand 2.9 times on OneWorld's resin-rich example, with 11.5 % gas<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-3.html" title="CALC-A2-COUV-BRULEUR-RESINE">2.5.d.3</a></span>, and 3.7 times on pure plastic with 15 % gas<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-2.html" title="CALC-A2-COUV-BRULEUR-PLASTIQUE15">2.5.d.2</a><a href="preuves/A1-D.html#D-038" title="Decision D-038">D-038</a></span>. This supports OneWorld's statement that no fuel is needed after start-up<span class="ev"><a href="../annexe-02-html/preuves/A2-3-d.html" title="OW-ENG-P02-P14-AFFIRMATIONS">2.3.d</a></span>. On household and municipal waste, self-sufficiency is not established: their gas was not measured and includes the moisture of the feed; their energy balance is built in Annex 5, according to the feed chosen<span class="ev"><a href="preuves/A1-D.html#D-029" title="Decision D-029">D-029</a></span>. A start-up fuel is needed.</li>
+<li><strong>Electricity.</strong> Bought from the grid: 600 kW for a 200 t plant according to OneWorld's consumption table<span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html" title="OW-CONSO-ENERGIE">2.3.e</a></span>, or 259 MJ per tonne<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-5.html" title="CALC-A2-ELEC-MJ-T">2.5.d.5</a></span>. The brochure gives 20 kW<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>; the gap is an open point of Annex 2 (R-015).</li>
+</ul>
+<p>The batch tests at Noda used gas oil for heating and for a diesel generator<span class="ev"><a href="../annexe-02-html/preuves/A2-1-c.html" title="CHIBA-BILANS">2.1.c</a></span>. A small batch reactor heated for each run does not represent the consumption of a continuous plant<span class="ev"><a href="../annexe-02-html/preuves/A2-5-0.html" title="Working assumption D-021">2.5.0</a></span>.</p>
+<h3>1.4.6 Modularity and Scalability</h3>
+<p>According to OneWorld design data<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>:</p>
+<ul>
+<li>the URC-2000 is made of 7 units of about 12 t, produced in series<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>;</li>
+<li>the machine is split into 7 parts, carried by truck and assembled on site<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>;</li>
+<li>larger capacities are reached by combining several 200 t plants<span class="ev"><a href="preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>. A 1,000 t per day layout uses 5 URC-2000 lines<span class="ev"><a href="preuves/A1-M-e.html" title="UR2000-JP-P09-P13-PLANS">1.M.e</a></span>.</li>
+</ul>
+<p>Delivery and installation, according to OneWorld documents: about 10 months of manufacturing for a continuous plant<span class="ev"><a href="preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>, or 4 months from contract to test run<span class="ev"><a href="preuves/A1-M-e.html" title="UR2000-JP-P09-P13-PLANS">1.M.e</a></span>; 30 days of installation on site and maintenance of 3 days every 3 months for a 200 t plant<span class="ev"><a href="preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span>. These figures differ between documents and are to be confirmed (R-027).</p>
+<h3>1.4.7 Revenue Streams</h3>
+<p>The plant can earn from five sources. This annex names them only; amounts are set in Annexes 3 and 5 to 8 and in the financial model.</p>
+<ol>
+<li><strong>Treatment fee</strong> paid by the holders of the waste (Annexes 5 to 8).</li>
+<li><strong>Oils:</strong> light oil, gas oil and heavy oil, sold separately<span class="ev"><a href="../annexe-02-html/preuves/A2-3-c.html" title="OW-ENG-P16-BILAN">2.3.c</a></span>.</li>
+<li><strong>Char,</strong> as a high-calorific solid fuel, for example blended with coke or coal; not as a fertiliser<span class="ev"><a href="preuves/A1-D.html#D-026" title="Decision D-026">D-026</a></span>.</li>
+<li><strong>Metals and glass,</strong> sold for recycling according to OneWorld design data<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>.</li>
+<li><strong>Surplus gas,</strong> where the gas exceeds the process heat demand; OneWorld lists the off-gas among the saleable resources<span class="ev"><a href="preuves/A1-M-i.html" title="IGES-AEPW-PROPOSITION">1.M.i</a></span>.</li>
+</ol>
+<h2>1.5 Comparison with Other Treatment Routes</h2>
+<p><strong>The EU waste hierarchy</strong> ranks, in order: prevention, preparing for re-use, recycling, other recovery (for example energy recovery), and disposal<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span>. Recycling excludes the reprocessing of waste into materials to be used as fuels<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span>.</p>
+<p><strong>Consequence for the Urban Rig.</strong> Oil sold as fuel counts as recovery, not recycling. Oil sold as a raw material, for example to a steam cracker, would count as recycling; steam crackers accept about 3 ppm of chlorine<span class="ev"><a href="../annexe-02-html/preuves/A2-4-e.html" title="KUSENBERG-AICHE-2021">2.4.e</a></span>, far below the oils measured so far<span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html" title="CHIBA-JLOS-HUILES">2.2.a</a></span>.</p>
+<p><strong>Permitting.</strong> Under the Industrial Emissions Directive, a pyrolysis or gasification plant is a waste incineration plant when the substances it produces are then incinerated<span class="ev"><a href="preuves/A1-R-b.html" title="IED-2010-75-ART3-42">1.R.b</a></span>. The incineration chapter does not apply if the gases are purified until they are no longer waste and emit no more than natural gas<span class="ev"><a href="preuves/A1-R-b.html" title="IED-2010-75-ART3-42">1.R.b</a></span>. How the off-gas is treated and burned (R-025) therefore decides the permitting route; Annex 2 already compares the measured emissions with the incineration limits.</p>
+<p><strong>Recycling against energy recovery.</strong> The European Commission's Joint Research Centre found recycling, whether mechanical, physical or chemical, preferable to energy recovery in all the pathways it analysed, and could not establish a clear ranking between mechanical and chemical recycling<span class="ev"><a href="preuves/A1-R-c.html" title="JRC-2023-PLASTIC-RECYCLING">1.R.c</a></span>.</p>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>What happens to the waste</th>
+<th>Status in the EU waste hierarchy</th>
+<th>Status under the Industrial Emissions Directive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incineration with energy recovery</td>
+<td>Burned with oxygen; heat recovered as steam, electricity or heat</td>
+<td>Other recovery<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span></td>
+<td>Waste incineration plant<span class="ev"><a href="preuves/A1-R-b.html" title="IED-2010-75-ART3-42">1.R.b</a></span></td>
+</tr>
+<tr>
+<td>Gasification</td>
+<td>Converted into a synthesis gas of small molecules<span class="ev"><a href="preuves/A1-R-c.html" title="JRC-2023-PLASTIC-RECYCLING">1.R.c</a></span></td>
+<td>Recycling if the product is a material; recovery if it is burned<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span></td>
+<td>Incineration plant if the products are incinerated, unless the gas is purified<span class="ev"><a href="preuves/A1-R-b.html" title="IED-2010-75-ART3-42">1.R.b</a></span></td>
+</tr>
+<tr>
+<td>Mechanical recycling</td>
+<td>Plastics reprocessed into plastic material</td>
+<td>Recycling<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span></td>
+<td>Not a thermal treatment</td>
+</tr>
+<tr>
+<td>Pyrolysis, including the Urban Rig</td>
+<td>Heated without oxygen into oil, gas and char<span class="ev"><a href="preuves/A1-R-c.html" title="JRC-2023-PLASTIC-RECYCLING">1.R.c</a></span></td>
+<td>Recycling if the oil is a material; recovery if it is burned<span class="ev"><a href="preuves/A1-R-a.html" title="WFD-2008-98-ART3-4">1.R.a</a></span></td>
+<td>Incineration plant if the products are incinerated, unless the gas is purified<span class="ev"><a href="preuves/A1-R-b.html" title="IED-2010-75-ART3-42">1.R.b</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>What sets the Urban Rig apart from other pyrolysis plants, according to OneWorld design data:</strong> superheated steam as heat carrier and oxygen barrier, a line of units at fixed temperatures that separates oil grades, and mixed waste as feed rather than sorted plastics<span class="ev"><a href="preuves/A1-M-a.html" title="OW-ENG-P14-P15-PROCEDE">1.M.a</a></span>. These features are the manufacturer's; no independent comparison of pyrolysis technologies was found.</p>
+<p><strong>Not included here.</strong> The quantities of residues from incineration (bottom ash and flue gas residues) were not found in a document read (R-032). Costs are compared in Annex 9.</p>
+<h2>1.6 Open Points with OneWorld</h2>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-023</td>
+<td>Pre-treatment required: crusher, sorting machine, banned materials</td>
+</tr>
+<tr>
+<td>R-024</td>
+<td>Configuration delivered: number of units, temperature steps</td>
+</tr>
+<tr>
+<td>R-025</td>
+<td>Route and treatment of the off-gas; permitting status</td>
+</tr>
+<tr>
+<td>R-026</td>
+<td>Control system, safety and operating staff</td>
+</tr>
+<tr>
+<td>R-027</td>
+<td>Transport, installation and delivery time</td>
+</tr>
+<tr>
+<td>R-028</td>
+<td>Basis of the 45 % to 85 % oil recovery rate shown in the 2024 animation<span class="ev"><a href="preuves/A1-M-g.html" title="OW-VIDEO-ANIMATION-2024">1.M.g</a></span></td>
+</tr>
+<tr>
+<td>R-029</td>
+<td>Flue gas treatment for a French plant</td>
+</tr>
+<tr>
+<td>R-030</td>
+<td>Patents and rights for France</td>
+</tr>
+<tr>
+<td>R-031</td>
+<td>Quality and outlet of the metals</td>
+</tr>
+</tbody>
+</table>
+<p>The open points of Annex 2 (R-009 to R-022) also apply, in particular performance guarantees (R-009) and the chlorine of the oil (R-013).</p>
+<h2>1.7 References</h2>
+<p>Documents cited in this annex, with their location and confidence. The full list of sheets is in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<table><tr><th>Sheet</th><th>Document</th><th>Location</th><th>Confidence</th></tr><tr><td><span class="ev"><a href="preuves/A1-M-a.html">1.M.a</a></span></td><td>Brochure OneWorld anglaise (oct. 2019), mecanisme de recuperation de l&#x27;huile et procede continu</td><td>p. 2, p. 14 et p. 15</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html">2.3.b</a></span></td><td>Brochure URC-2000 OneWorld, fiche de specification</td><td>p. 8 (et p. 4, p. 7)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-d.html">1.M.d</a></span></td><td>Brochure URC-2000 OneWorld (japonais), construction modulaire et chargement des bennes</td><td>p. 6 et p. 7</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html">2.3.e</a></span></td><td>Tableau &#x27;UR Energy Consumption&#x27; par taille de machine</td><td>p. 1, ligne 200t</td><td>90 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-j.html">2.2.j</a></span></td><td>Kankyo Kogai Bunseki Center, dioxines dans les gaz d&#x27;echappement, 26 et 27/09/2023</td><td>p. 1 (identique a Exhaust Gas Concentration... p. 9)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-d.html">2.2.d</a></span></td><td>Oosumi, gaz d&#x27;echappement et poussieres, essais du 09/09 et du 15/09/2022 (rapports provisoires)</td><td>PDF p. 55 et 56 (impr. 49 et 50) ; metaux p. 57 et 58</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-4-a.html">2.4.a</a></span></td><td>Directive 2010/75/UE relative aux emissions industrielles, annexe VI, partie 3 : valeurs limites d&#x27;emission dans l&#x27;air des installations d&#x27;incineration des dechets</td><td>Annexe VI, partie 3, points 1, 1.1, 1.4 et 1.5 ; article 42(1) second alinea</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-b.html">1.M.b</a></span></td><td>Brochure OneWorld anglaise (oct. 2019), fiches SPEC et plans d&#x27;implantation URC-2000, URC-1000, URC-150</td><td>p. 4 (URC-2000), p. 6 (URC-1000), p. 7 (URC-150)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-c.html">1.M.c</a></span></td><td>Brochure OneWorld anglaise (oct. 2019), gamme de machines, options PRIMO et FORCE 9, delais de fabrication</td><td>p. 3 a 9 (gamme et fiches SPEC), 11, 12, 18, 19</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-a.html">2.1.a</a></span></td><td>Asada Shokai (朝田商会), rapport de fin d&#x27;essais de recherche sur dechets industriels remis au gouverneur de Chiba</td><td>PDF p. 1 (lettre), p. 3 (couverture), p. 4 (co-realisateurs), p. 7 (machine)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-f.html">2.3.f</a></span></td><td>One World Japan, rapport d&#x27;essais de demonstration URT-10 sur dechets plastiques, 01 au 03/12/2021</td><td>p. 2, 5, 8</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-e.html">1.M.e</a></span></td><td>Brochure URC-2000 OneWorld (japonais), plans d&#x27;implantation 200 t et 1 000 t/jour, plan d&#x27;ensemble 2014 et calendrier</td><td>p. 9, 10, 12 et 13</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-g.html">1.M.g</a></span></td><td>Video d&#x27;animation &#x27;URBAN RIG&#x27; (One World Inc., realisation K3K Design &amp; Engineering)</td><td>178 s ; images extraites toutes les 1 a 3 s (notes-recherche-annexe-01/images-videos/cine-planche.jpg et cine-zones-1s.jpg) ; taux d&#x27;huile vers 158 s (cine-158-taux-huile.jpg)</td><td>90 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-f.html">1.M.f</a></span></td><td>Modele 3D STEP &#x27;Toyohashi 9-unit continuous machine, general assembly&#x27; (fichier nomme URC-2000_STEP.zip)</td><td>nom du fichier contenu ; en-tete FILE_NAME ; entites PRODUCT (739 noms de pieces)</td><td>90 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-g.html">2.1.g</a></span></td><td>Rapport Chiba, section 7 : recuperation et mesure de l&#x27;huile produite</td><td>PDF p. 29 (impr. 23)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-h.html">2.3.h</a></span></td><td>Brochure URC-2000 OneWorld, chlore et couche catalytique</td><td>p. 3 et p. 4</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-f.html">2.2.f</a></span></td><td>KANSO Technos, composition d&#x27;un off-gas d&#x27;appareil de carbonisation a vapeur surchauffee, rapport B2002600</td><td>p. 1</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-d.html">2.3.d</a></span></td><td>Brochure OneWorld anglaise, affirmations sur l&#x27;autonomie energetique et les dioxines</td><td>p. 2 ; p. 14 ; p. 15 (cadence)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html">2.3.a</a></span></td><td>Brochure URC-2000 OneWorld, bilan annonce sur ordures menageres</td><td>p. 5</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html">2.2.a</a></span></td><td>Japan Lubricating Oil Society (潤滑油協会), analyses de deux huiles d&#x27;essai, rapports 20221020-003-03 et -04</td><td>PDF p. 45 (impr. 39) et p. 46 (impr. 40)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-c.html">2.3.c</a></span></td><td>Brochure OneWorld &#x27;Urban Rig&#x27; (anglais, oct. 2019), bilan journalier URC-2000</td><td>p. 16</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-l.html">2.2.l</a></span></td><td>Izumitec (イズミテック), pouvoir calorifique d&#x27;un char d&#x27;urethane, rapport R35-339439</td><td>p. 1</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-h.html">2.1.h</a></span></td><td>Rapport Chiba, section 8 : constats de la campagne (exigences, qualite, environnement, bilans, limites)</td><td>PDF p. 39 et 40 (impr. 33 et 34)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-4-l.html">2.4.l</a></span></td><td>Arrete du 23 mai 2016 relatif a la preparation des combustibles solides de recuperation (rubrique 2971)</td><td>Article 3 II et annexe</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-4-k.html">2.4.k</a></span></td><td>Reglement (UE) 2019/1009 (produits fertilisants UE), annexe I partie II, et annexe II CMC 14 (reglement delegue 2021/2088)</td><td>Annexe I partie II : PFC 3(A) point 2, PFC 1(A) point 2 ; CMC 14 point 1(a) (CELEX 32021R2088)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-g.html">2.3.g</a></span></td><td>One World Techno, essai de demonstration sur pneus, machine 4,8 t, 12/12/2020</td><td>p. 1 et 3</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html">2.1.b</a></span></td><td>Rapport Chiba, fiches d&#x27;essai de pyrolyse (15 essais, dont 13 avec huile mesuree) et definitions</td><td>PDF p. 19 a 26 (impr. 13 a 20) ; definitions p. 27 (impr. 21) ; methode de mesure de l&#x27;huile p. 29 (impr. 23)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-4-b.html">2.4.b</a></span></td><td>Decision d&#x27;execution (UE) 2019/2010 etablissant les conclusions sur les meilleures techniques disponibles (MTD) pour l&#x27;incineration des dechets</td><td>Considerations generales (conditions de reference, 11 % d&#x27;O2) ; MTD 25 tableau 3 ; MTD 27 tableau 5 ; MTD 29 tableau 6 ; MTD 30 tableau 7</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-c.html">2.1.c</a></span></td><td>Rapport Chiba, bilans matiere et energie de quatre essais</td><td>PDF p. 41 et 42 (impr. 35 et 36), 資料2 マテリアルバランス/エネルギーバランス</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-h.html">1.M.h</a></span></td><td>Tableau &#x27;Transportation, Installation and Maintenance&#x27; (1t, 100t, 200t)</td><td>p. 1 (lu sur image par le chat 1, releves/energie-ur2000-divers.md section 6)</td><td>90 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-M-i.html">1.M.i</a></span></td><td>Proposition &#x27;Zero Plastic Island&#x27; a l&#x27;AEPW (IGES, technologie One World), version anglaise</td><td>p. 4, 5 et 10 (lu sur image par le chat 1, releves/presentations-oneworld.md, document 3)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-R-a.html">1.R.a</a></span></td><td>Directive 2008/98/CE relative aux dechets (version consolidee du 05/07/2018), article 3 points 15 et 17, article 4(1)</td><td>Article 3, points (15) et (17) ; article 4(1) (a) a (e)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-4-e.html">2.4.e</a></span></td><td>Kusenberg et al., Challenges and Opportunities for Plastic Waste Pyrolysis Oils As Steam Cracking Feedstock (AIChE Spring Meeting, EPC, 2021)</td><td>Tableau 2, specifications d&#x27;heteroatomes des charges fossiles de vapocraqueur</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-R-b.html">1.R.b</a></span></td><td>Directive 2010/75/UE, article 3 points 40 et 41 (installations d&#x27;incineration et de co-incineration) et article 42(1) (exclusion de la pyrolyse et de la gazeification sous conditions)</td><td>Article 3 points (40) et (41) ; article 42(1) second alinea</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A1-R-c.html">1.R.c</a></span></td><td>Garcia-Gutierrez P. et al., Environmental and economic assessment of plastic waste recycling: a comparison of mechanical, physical, chemical recycling and energy recovery of plastic waste (JRC132067, EUR 31423 EN)</td><td>Resume (p. 5 selon l&#x27;extraction) ; definitions (p. 8) ; pages a confirmer sur le PDF</td><td>90 %</td></tr></table></main></body></html>

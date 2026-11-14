@@ -324,3 +324,189 @@ besoin_thermique_v3:
   sources: [UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE, NIST-SP811-B9]
   verdict: au-dessus des deux valeurs constructeur
   question: "Retenir 1 507 MJ/t (bruleur) en base et 1 988 MJ/t en valeur haute ?"
+
+# ============================================================ ANNEXE 1 (chat 2, 15/10/2026)
+# Parametres que l'annexe 1 confirme ou contredit. AUCUNE valeur modifiee. Stephane tranche.
+capacite_volumetrique_annexe01:
+  statut: "CLOS le 15/10/2026 par D-035 : capacite du reacteur 200 m3/jour ; masse = volume x 0,7 t/m3 = 140 t/jour (HYPOTHESE de Stephane : une presse remet la charge triee a 0,7) ; variable dans le modele ; LUFTHANSA-WS non utilisee (D-025). Valeurs de params/ a aligner lors de la brique du modele."
+  parametre: capacite_volumetrique
+  actuel: "200 T/j, lu par le modele V3 comme un volume (140 t/j a 0,7 t/m3)"
+  sources_disent: "OneWorld donne 200 t par jour (UR2000-JP p. 8) et 48 bennes de 4,17 t au plus par 24 h (p. 7), soit 200,16 t/jour en masse (CALC-A2-UR2000-CADENCE). La brochure anglaise donne 51 bennes de 4,5 m3 a 0,6 t/m3 (p. 15 et 16), soit environ 138 t/jour (contradiction interne, R-010)."
+  sources: [UR2000-JP-P08-SPEC, OW-ENG-P14-P15-PROCEDE, OW-ENG-P16-BILAN]
+  verdict: "l'annexe 1 ecrit 200 t par jour, en masse, selon OneWorld"
+  question: "Le modele doit-il lire 200 t/jour en masse (cadence constructeur), ou garder 200 m3 x densite ?"
+densite_dechet_annexe01:
+  statut: "CLOS le 15/10/2026 par D-035 : capacite du reacteur 200 m3/jour ; masse = volume x 0,7 t/m3 = 140 t/jour (HYPOTHESE de Stephane : une presse remet la charge triee a 0,7) ; variable dans le modele ; LUFTHANSA-WS non utilisee (D-025). Valeurs de params/ a aligner lors de la brique du modele."
+  parametre: densite_dechet
+  actuel: "0,7 t/m3 (preuves : LUFTHANSA-WS, ...)"
+  sources_disent: "Decision D-025 : la feuille Lufthansa est ecartee comme source. Restent : plafond benne 0,927 t/m3 (4,17 t pour 4,5 m3) et 0,6 t/m3 dans la brochure anglaise p. 16."
+  sources: [UR2000-JP-P08-SPEC, OW-ENG-P16-BILAN]
+  verdict: "preuve LUFTHANSA-WS a retirer ; valeur a refonder"
+  question: "Quelle densite retenir sans la feuille Lufthansa (mesure sur OMR francaises compactees, ou cadence constructeur) ?"
+part_char_annexe01:
+  parametre: "rendement en char (parametre de rendement du modele)"
+  actuel: "voir params/ (valeur heritee)"
+  sources_disent: "OneWorld : char 25 % de l'entree sur ordures menageres a 10 % de resines (UR2000-JP p. 5) ; 5 % sur une charge a 90 % de resines (OW-ENG p. 16). Usage fertilisant exclu (FPR-2019-1009, D-026) ; debouche combustible."
+  sources: [UR2000-JP-P05-BILAN, OW-ENG-P16-BILAN, FPR-2019-1009]
+  verdict: "a rapprocher des arbitrages de l'annexe 2"
+  question: "Le prix du char (annexe 3) doit-il etre celui d'un combustible solide (charbon, coke) ?"
+repartition_huiles_annexe01:
+  parametre: "repartition de l'huile entre fractions (si le modele la porte)"
+  actuel: "voir params/ (valeur heritee)"
+  sources_disent: "Bilan de conception OneWorld : gazole 80 %, fioul de chauffage 10 %, huile lourde 10 % de l'huile (CALC-A1-OW16-PART-*). Aucune mesure par poste (R-013)."
+  sources: [OW-ENG-P16-BILAN]
+  verdict: "CONSTRUCTEUR, a utiliser seulement comme hypothese de conception"
+  question: "Le modele doit-il vendre l'huile en trois fractions (80/10/10) ou en une seule huile ?"
+electricite_annexe01:
+  parametre: "consommation electrique"
+  actuel: "voir arbitrages de l'annexe 2 (600 kW ou 20 kW)"
+  sources_disent: "Inchange par l'annexe 1 : 600 kW (OW-CONSO-ENERGIE) contre 20 kW (UR2000-JP p. 8). L'annexe 1 ecrit que l'electricite est achetee au reseau."
+  sources: [OW-CONSO-ENERGIE, UR2000-JP-P08-SPEC]
+  verdict: "deja a trancher (annexe 2)"
+  question: "-"
+
+# ============================================================ ANNEXE 2, point E-1 de Codex (chat 1, 15/10/2026, decision D-029)
+# AUCUNE valeur modifiee. Stephane tranche.
+rdt_gaz_plastique_v4:
+  parametre: rdt_gaz_plastique
+  actuel: "0,193 (statut extrapolation, preuve ICHIMURA-2022)"
+  sources_disent: "Gaz par difference des 11 essais de plastiques purs de Chiba (PDF p. 19 a 24) : 14,41 % en moyenne ponderee, 66,3 kg sur 460 kg (CALC-A2-GAZDIFF-MOY-POND) ; 15,51 % en moyenne simple ; de 2,17 % a 24,5 % ; PE 20,09 %, PP 17,25 %, PS 9,55 %, melange 10,83 %. Decision D-029 : HYPOTHESE prudente de Stephane, 10 % de la masse de plastique entrante."
+  sources: [CHIBA-ESSAIS-FICHES]
+  verdict: "0,193 est au-dessus de la moyenne mesuree par difference (0,144) et de l'hypothese D-029 (0,10)"
+  question: "Passer rdt_gaz_plastique a 0,10 (statut hypothese, decision D-029), avec 0,144 en valeur haute ?"
+autosuffisance_om_v4:
+  parametre: "provision_fioul_secours, besoin_thermique, pci_gaz_organique, rdt_char_organique (bilan energetique des dechets menagers)"
+  actuel: "provision_fioul_secours 0,05 du besoin (hypothese D-003), qui suppose une quasi-autonomie ; pci_gaz_organique 11 MJ/kg (LITT-CHALMERS, D-002) ; aucun parametre de rendement en gaz de la matiere organique"
+  sources_disent: "Decision D-029 : aucune autosuffisance par le gaz de procede n'est affirmee pour les dechets menagers ou municipaux ; ordre de grandeur pour des ordures a 10 % de plastique : environ 1 % de la masse entrante en gaz issu du plastique, plus une part inconnue venant de l'organique (aucun essai, R-021). L'humidite de la charge est comptee dans le gaz par difference des essais municipaux."
+  sources: [CHIBA-ESSAIS-FICHES, OW-ENG-P02-P14-AFFIRMATIONS, OW-ENG-P16-BILAN]
+  verdict: "la provision de 5 % ne repose plus sur aucune base pour les dechets menagers"
+  question: "Construire le bilan energetique des dechets menagers dans l'annexe 5 (achat de combustible, gaz de l'organique, humidite) avant de fixer provision_fioul_secours ; quelle valeur provisoire d'ici la ?"
+gaz_hypothese_composition_v4:
+  parametre: "pci_gaz_plastique (deja propose : pci_gaz_plastique_v3)"
+  actuel: "37,3 MJ/kg"
+  sources_disent: "D-029 confirme la composition B2002600 hors air (D-021) pour le gaz issu du plastique ; l'incertitude porte sur la quantite. Le gaz des dechets menagers (organique, humidite) n'a pas de composition mesuree."
+  sources: [KANSO-B2002600]
+  verdict: "inchange pour le plastique ; pas de valeur pour le gaz de l'organique"
+  question: "Garder pci_gaz_organique a 11 MJ/kg (litterature) en attendant R-021 ?"
+
+# ============================================================ ANNEXE 3 (chat 3, 15/10/2026, decisions D-028, D-030, D-031)
+# AUCUNE valeur modifiee. Stephane tranche. Valeurs par defaut = prix publies les plus recents (D-030), modifiables par l'operateur.
+prix_huile_fractions_a3:
+  parametre: "prix_huile_combustible, prix_huile_craqueur (a remplacer par trois prix par fraction et un facteur de qualite)"
+  actuel: "prix_huile_combustible 350 EUR/t (hypothese, aucune preuve) ; prix_huile_craqueur 641 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Prix de reference les plus recents : legere (naphta NWE, aout 2026) 636,8 EUR/t ; gazole (Rotterdam, semaine au 09/10/2026) 1 254 EUR/t ; lourde (fioul TBTS, meme semaine) 541 EUR/t ; moyenne ponderee 10/80/10 : 1 121 EUR/t. Au Brent de 80 USD/b : 714 EUR/t ; a 50 USD/b : 446 EUR/t. Moyennes 2025 : naphta 505, gazole CAF 603,1 EUR/t. Precedent Sapporo (2009) : 80 a 90 % du prix du fioul. Huile entiere Pryme 2025 : environ 1 300 EUR/t (qualite craqueur, plastiques tries)."
+  sources: [A3F-INSEE-NAPHTA-NWE-010002082, A3-DGEC-NPG-2026-10-09-COTATIONS, A3F-INSEE-GAZOLE-CAF-010002076, A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS, A3F-PRYME-RAPPORT-ANNUEL-2025]
+  calculs: [CALC-A3-HUILE-MOY-REF, CALC-A3-HUILE-MOY-BRENT80, CALC-A3-HUILE-MOY-BRENT50, CALC-A3-RATIO-LEGERE, CALC-A3-RATIO-GAZOLE, CALC-A3-RATIO-LOURDE]
+  verdict: "350 EUR/t est sous toutes les references (fioul lourd le plus bas : 316 EUR/t fin 2025) ; 641 EUR/t n'a pas de source (ancienne annexe 3, archive). Huile de dechets municipaux hors specification : facteur de qualite non source."
+  question: "Remplacer les deux parametres par prix_huile_legere, prix_huile_gazole, prix_huile_lourde (references ci-dessus, avec rapport au Brent) et facteur_qualite_huile (par fraction ; valeur a choisir, precedent 0,8 a 0,9) ? Reserver le prix craqueur aux charges de plastique seul ?"
+prix_char_a3:
+  parametre: prix_char
+  actuel: "100 EUR/t (hypothese, V3-MODEL), bornes 0 a 150"
+  sources_disent: "Parite energetique (PCS du char) : 123 EUR/t (coke de petrole importe, S1 2026), 203 EUR/t (charbon importe), 255 EUR/t (coke paye par l'industrie, 2024). Pratique des CSR : vente 0 a 50 EUR/t en cimenterie (Normandie 2021) ou redevance payee par le producteur 40 a 50 EUR/t (FNADE 2023), 50 EUR/t (ALBA, Allemagne). Aucun prix de char vendu trouve. Decision D-028 : le char est vendu."
+  sources: [A3G-COMEXT-PETCOKE-NC27131100-FR, A3G-COMEXT-CHARBON-NC27011290-FR, PRM-INSEE-EACEI-2024, A3-OBS-NORMANDIE-CSR-2021, FNADE-CSR-2023, A3G-ALBA-EBS-HINTERGRUND-2023]
+  calculs: [CALC-A3-CHAR-PARITE-PETCOKE, CALC-A3-CHAR-PARITE-CHARBON, CALC-A3-CHAR-PARITE-INSEE]
+  verdict: "100 EUR/t est dans la fourchette (-50 a 123 EUR/t), sous la parite petcoke ; chlore du char inconnu (R-012, R-034)"
+  question: "Garder 100 EUR/t ou choisir une valeur entre -50 et 123 EUR/t ? Bornes proposees : -50 (redevance) et 123 (parite petcoke)."
+prix_ferreux_a3:
+  parametre: prix_ferreux
+  actuel: "250 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Ferraille broyee, export France : 316,4 EUR/t (S1 2026), 311,1 (2025) ; Derichebourg 305,4 EUR/t (S1 2025-2026) ; acier d'emballages Citeo : 196,7 (collecte separee 2024), 172,5 (extrait d'OMR 2023), 93,7 (machefers 2024)."
+  sources: [A3H-COMEXT-MENSUEL-2025-2026, A3H-COMEXT-FR-ACIER-ANNUEL-2024-2025, A3H-DERICHEBOURG-S1-2025-2026, A3-CITEO-OBSREPRISE-2024-ACIER-CS, A3-CITEO-OBSREPRISE-2023-METAUX]
+  verdict: "250 EUR/t est entre le prix Citeo des OMR (172,5) et le prix de la ferraille preparee (316,4)"
+  question: "Passer a 316,4 EUR/t (prix public le plus recent, D-030), ou retenir le prix Citeo des metaux d'OMR (172,5 EUR/t) tant que la proprete n'est pas analysee (R-031) ?"
+prix_alu_a3:
+  parametre: prix_alu
+  actuel: "1 400 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Debris d'aluminium (7602 00 90), export France : 1 723 EUR/t (S1 2026), 1 456 (2025), 1 380 (2024) ; aluminium rigide d'emballages Citeo 639,5 a 831,9 EUR/t (2024) ; machefers 893,6 EUR/t."
+  sources: [A3H-COMEXT-MENSUEL-2025-2026, A3H-COMEXT-FR-ALU-ANNUEL-2024-2025, A3-CITEO-OBSREPRISE-2024-ALU-CS, A3-CITEO-OBSREPRISE-2024-ALU-MACHEFERS]
+  verdict: "1 400 EUR/t proche de la valeur 2024 ; sous le prix le plus recent"
+  question: "Passer a 1 723 EUR/t (D-030) ?"
+prix_autres_metaux_a3:
+  parametre: prix_autres_metaux
+  actuel: "500 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Aucune source lue pour des metaux non ferreux autres que l'aluminium extraits d'OMR."
+  sources: []
+  verdict: "INCONNU"
+  question: "Mettre a 0 (aucune source) ?"
+prix_verre_a3:
+  parametre: prix_verre
+  actuel: "30 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Decision D-028 : verre et inertes sans prix. Verre de collecte separee 24,7 EUR/t (Citeo 2024), sans rapport avec un verre de residu."
+  sources: [PRM-CITEO-OBSREPRISE-2024]
+  verdict: "contredit par D-028"
+  question: "Passer a 0 (D-028) ?"
+cout_elimination_a3:
+  parametre: cout_elimination
+  actuel: "110 EUR/t (hypothese, V3-MODEL)"
+  sources_disent: "Traitement des dechets assimiles aux OMR : 159 EUR HT/t hors TGAP (Aix-Marseille 2025) ; TGAP stockage 69 EUR/t (2026) ; inertes 6 a 8 EUR/t (donnees 2013-2014) ; ISDD et ISDI recents NON TROUVES."
+  sources: [A3-AMP-TARIFS-TRAITEMENT-2025, CIBS-TGAP-2026, A3-NA-DECHETS-INERTES-BTP-ETAT-DES-LIEUX]
+  verdict: "110 EUR/t sous le seul prix recent trouve pour des dechets non dangereux (159 + TGAP)"
+  question: "A traiter avec les gisements (annexes 5 a 8) ; separer inertes (sans prix, D-028) et char non vendu ?"
+prix_carbone_a3:
+  parametre: "prix_carbone, reduction_carbone_certifiee"
+  actuel: "prix_carbone 50 EUR/t CO2 (hypothese) ; reduction_carbone_certifiee 0 (decision D-005)"
+  sources_disent: "Aucun mecanisme de credit applicable (SEQE, CRCF, label bas-carbone, article 6, Verra, Gold Standard, Puro). EUA 74 EUR/t en moyenne 2025 (ESMA), pour reference seulement. CO2 evite par rapport a l'incineration : 1 973 kgCO2e/t de charge riche en resines (information, D-032)."
+  sources: [A3I-UE-DIR-2003-87-ANNEXE-I, A3I-UE-REG-2024-3012-ART1-CONSID10, A3I-FR-LBC-METHODES-SITE-2025, A3I-VERRA-VCS-STANDARD-V5, A3-ESMA-CARBON-MARKETS-2026]
+  calculs: [CALC-A3-CO2-NET-VS-INCIN]
+  verdict: "confirme D-005 et D-028 : aucun revenu"
+  question: "Garder reduction_carbone_certifiee a 0 ; mettre prix_carbone a 0 ou le garder comme simple sensibilite ?"
+prix_hydrogene_a3:
+  parametre: "nouveaux : prix_hydrogene, h2_kg_par_t_plastique, rendement_psa (charge de plastique seul, D-031)"
+  actuel: "aucun"
+  sources_disent: "Hydrogene contenu : 13,3 kg/t de charge riche en resines ; autosuffisance conservee sans lui (1,8 fois). Hydrogene conventionnel un peu plus de 2 EUR/kg (2025), HYDRIX 8,2 EUR/kg. Recuperation PSA 75,5 % a 95 % (source secondaire). Surplus vendu comme gaz combustible : 36,5 EUR/t (gaz naturel bande I4, 0,047 EUR/kWh)."
+  sources: [A3J-ACER-H2-MARKETS-2025, A3J-MDPI-ENERGIES-2025-PSA, A3J-EUROSTAT-NRG-PC-203-FR]
+  calculs: [CALC-A3-H2-KG-T-RESINE, CALC-A3-COUV-SANS-H2-RESINE, CALC-A3-H2-VAL-GRIS, CALC-A3-GAZ-SURPLUS-VAL]
+  verdict: "option nouvelle, plastique seul"
+  question: "Creer les parametres avec 2 EUR/kg et une recuperation de 0,8 (hypothese) ; option alternative : vente du surplus de gaz a 0,047 EUR/kWh ?"
+prix_elec_a3:
+  parametre: prix_elec
+  actuel: "0,15 EUR/kWh (hypothese, V3-MODEL)"
+  sources_disent: "Eurostat bande ID (2 a 20 GWh/an ; l'usine consomme 5 256 MWh/an a 600 kW), hors TVA : 0,1212 EUR/kWh (2025-S2), 0,1296 (2025-S1)."
+  sources: [PRM-EUROSTAT-NRGPC205-ID-2025, A3-EUROSTAT-NRG-CONS-CODELIST]
+  calculs: [CALC-A3-ELEC-MWH-AN, CALC-A3-ELEC-EUR-T]
+  verdict: "0,15 au-dessus de la valeur la plus recente"
+  question: "Passer a 0,1212 EUR/kWh (D-030) ?"
+prix_fioul_a3:
+  parametre: prix_fioul
+  actuel: "0,95 EUR/L (hypothese, aucune preuve)"
+  sources_disent: "GNR hors toutes taxes : 1,3405 EUR/L semaine au 09/10/2026, 0,6855 EUR/L moyenne 2025 ; TTC : 2,0500 et 1,1922. Fioul domestique > 27 m3 HT : 1,3267 et 0,7221 EUR/L. Taxe GNR 2026 NON TROUVEE."
+  sources: [A3-DGEC-NPG-2026-10-09-PRIX-FRANCE, A3-DGEC-PRIX-HTT-TTC-2025]
+  verdict: "0,95 EUR/L entre la moyenne 2025 et le prix d'octobre 2026"
+  question: "Passer a 1,3405 EUR/L hors taxes (D-030), avec la taxe en ligne separee une fois trouvee ?"
+
+# ============================================================ ANNEXE 8 (chat 4, 16/10/2026, decisions D-039 a D-042)
+# AUCUNE valeur modifiee. Stephane tranche. Prix d'entree par flux, modifiables par l'operateur (D-041) ; positif = paye, negatif = achat (D-042).
+prix_entree_par_flux_a8:
+  parametre: "gate_fee (a remplacer par un prix d'entree par flux, pre-rempli selon le flux selectionne)"
+  actuel: "gate_fee 110 EUR/T unique (hypothese, V3-MODEL), bornes 80 a 800"
+  sources_disent: "Defauts D-042 : plastique trie en balles -249 (RP2-061, juin 2025) ; PSE blanc de decheterie -55 (RP-060) ; films menagers, flux developpement, PS, PSE menager trie 0 (A8-MENA-PRIXREPRISE-2025) ; refus d'emballages professionnels +188 (A8-PRO-NOTE-SOUTIENS-EPRO-2026) ; refus de tri menagers +100 (cout reel 159 EUR/t TGAP comprise, A8-MENB-DGPR-COUTSREF-2026) ; ordures menageres +100 (D-039) ; plastiques bromes, textiles synthetiques, mousses et plastiques d'ameublement, plastiques du batiment +100 (hypothese, prix reel non trouve)."
+  sources: [RP2-061, RP-060, A8-MENA-PRIXREPRISE-2025, A8-PRO-NOTE-SOUTIENS-EPRO-2026, A8-MENB-DGPR-COUTSREF-2026]
+  verdict: "Un prix unique de 110 EUR/t ne correspond a aucun flux plastique propre (qui s'achete) ; il reste proche du cout des flux sales."
+  question: "Remplacer gate_fee par une table prix_entree_flux (cle = flux, valeur par defaut D-042, modifiable), selectionnee par le flux choisi ?"
+cout_elimination_reference_a8:
+  parametre: "nouveau : cout_elimination_reference (ce que paie le detenteur aujourd'hui, pour comparaison)"
+  actuel: "absent"
+  sources_disent: "Incineration, prix moyen 2023 : 120 EUR HT/t clients prives, 95 EUR HT/t collectivites (A8-PRIX-AMORCE-DT156-2023) ; Syctom 2026 : 108 EUR/t tiers (A8-CST-SYCTOM-BP-2026) ; refus de tri menagers 159 EUR/t TGAP comprise (2023) ; hausse IdF de l'incineration des DAE environ +18,6 EUR/t de 2023 a 2026 hors taxe (CALC-A8-INCIN-IDF-HAUSSE-2024-2026)."
+  sources: [A8-PRIX-AMORCE-DT156-2023, A8-CST-SYCTOM-BP-2026, A8-MENB-DGPR-COUTSREF-2026, RP-056]
+  calculs: [CALC-A8-INCIN-IDF-HAUSSE-2024-2026]
+  question: "Ajouter un parametre d'affichage (pas un revenu) pour montrer au detenteur son economie ?"
+tgap_2026_a8:
+  parametre: "tgap (interrupteur deja decide ; valeurs)"
+  actuel: "aucune ligne de TGAP dans le modele (justification AFF-PRX-GAT)"
+  sources_disent: "CIBS L. 433-57 et L. 433-86 (loi 2026-103) : stockage 69 EUR/t (2026) a 85 (2030) ; incineration 16 (performance 65 % et plus) ou 29 EUR/t (2026), 20 ou 45 (2030) ; residus de tri performant 8 EUR/t (2026)."
+  sources: [CIBS-TGAP-2026]
+  question: "Valeurs de la TGAP incineration a appliquer quand l'interrupteur est sur 'oui' : 16 ou 29 EUR/t en 2026, trajectoire jusqu'en 2030 ?"
+part_pvc_charge_a8:
+  parametre: "nouveau : part_pvc_max_charge"
+  actuel: "absent"
+  sources_disent: "Arrete du 19/02/2024 : PVC au plus 3 % pour la sortie du statut de dechet en vapocraqueur (A3-ARRETE-SSD-HUILE-PYROLYSE-2024) ; acheteurs de balles : PVC 1 % max (RP2-062) ; PVC jamais teste au-dela de la fusion (OWJ-DEMO-2021)."
+  sources: [A3-ARRETE-SSD-HUILE-PYROLYSE-2024, RP2-062, OWJ-DEMO-2021]
+  verdict: "Ouvert en attendant les essais OneWorld (D-040)."
+  question: "Aucune a ce stade (D-040)."
+volumes_accessibles_a8:
+  parametre: "nouveau : volume accessible par flux (t/an)"
+  actuel: "absent"
+  sources_disent: "Capacite de la machine : 51 100 t/an a 140 t/jour sur 365 jours (CALC-A8-CAPACITE-AN, D-035). Gisements : refus de tri IdF 146 368 t (RP-034) ; dechets plastiques d'activite IdF 260 000 t (A8-PRO-IDF-LIVRET-2023) ; PSE menager France 15 000 t (A8-PS-CITEOPSE-2025) ; films menagers repris 97 379 t (CALC-A8-FILMS-REPRIS-T)."
+  sources: [RP-034, A8-PRO-IDF-LIVRET-2023, A8-PS-CITEOPSE-2025]
+  calculs: [CALC-A8-CAPACITE-AN, CALC-A8-FILMS-REPRIS-T]
+  question: "Le modele doit-il plafonner chaque flux a un volume accessible, ou seulement afficher le gisement ?"

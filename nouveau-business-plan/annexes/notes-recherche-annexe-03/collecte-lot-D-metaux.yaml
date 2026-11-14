@@ -1,0 +1,247 @@
+# Lot D : métaux récupérés et verre (débouchés, spécifications, statut, prix, coût d'élimination des inertes)
+# Recherche du 15/10/2026. Lecture par WebFetch (curl direct vers citeo.com refusé par le proxy).
+# Les citations sont des extraits du texte brut des PDF renvoyés par WebFetch (longueur limitée à ~125 caractères par extrait).
+
+A3-CITEO-OBSREPRISE-2024-ACIER-CS:
+  titre: "Observatoire de la Reprise 2024 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2025-10-06"
+  type: observatoire
+  url: "https://www.citeo.com/wp-content/uploads/2026/03/20251006_Observatoire_reprise_2024_VDEF.pdf"
+  emplacement: "p. 8 (tableau Prix de reprise moyen 2024), p. 15 (fiche Acier de CS), p. 5 (bilan matière)"
+  contenu: "Acier issu de collecte sélective (emballages ménagers), France, prix de reprise moyen 2024 en EUR/t : option filière 196,7 ; option fédérations 130,6 (intervalle 34 à 225) ; option individuelle 166,5 (intervalle 88 à 255). Aide au transport 18,7 EUR/t. Sources du document : filière et étude ADEME/AMORCE 2024. Tonnage 2024 : 120 644 t (+5,0 % sur 2023). Base de prix (départ centre de tri, HT) non précisée dans le document."
+  citation: "Acier de CS 196,7 130,6 166,5 ; [Intervalle] - [34 – 225] [88 – 255] ; Sources : filière et étude ADEME/AMORCE 2024 ; 18,7 €/t"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Même document que PRM-CITEO-OBSREPRISE-2024 (relu pour les lignes métaux). Une copie identique existe à https://www.citeo.com/wp-content/uploads/2025/11/20251006_Observatoire_reprise_2024_VDEF.pdf."
+  parametres: [prix_acier_collecte_separee_2024]
+
+A3-CITEO-OBSREPRISE-2024-ALU-CS:
+  titre: "Observatoire de la Reprise 2024 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2025-10-06"
+  type: observatoire
+  url: "https://www.citeo.com/wp-content/uploads/2026/03/20251006_Observatoire_reprise_2024_VDEF.pdf"
+  emplacement: "p. 8 (tableau Prix de reprise moyen 2024), p. 19 (fiche Aluminium de CS), p. 5"
+  contenu: "Aluminium de collecte sélective, France, prix de reprise moyen 2024 en EUR/t. Alu rigides : filière 639,5 ; fédérations 659,5 (intervalle 324 à 870) ; individuelle 831,9 (intervalle 628 à 1041). Alu souples : filière 130,4 ; fédérations -3,7 (intervalle -60 à 30) ; individuelle 80,2 (intervalle 0 à 95). Aide au transport (rigides + souples) 38,8 EUR/t. Tonnage 2024 : 30 156 t dont 8 325 t d'alu souples."
+  citation: "Alu de CS rigides 639,5 659,5 831,9 ; [Intervalle] - [324 – 870] [628 – 1041] ; Alu de CS souples 130,4 -3,7 80,2 ; [Intervalle] - [-60 – 30] [0 – 95]"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Base HT / départ non précisée."
+  parametres: [prix_aluminium_collecte_separee_2024]
+
+A3-CITEO-OBSREPRISE-2024-ACIER-MACHEFERS:
+  titre: "Observatoire de la Reprise 2024 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2025-10-06"
+  type: observatoire
+  url: "https://www.citeo.com/wp-content/uploads/2026/03/20251006_Observatoire_reprise_2024_VDEF.pdf"
+  emplacement: "p. 8 (tableau Prix de reprise moyen 2024, ligne Acier de Mâchefers), p. 57 (fiche Acier issu de Mâchefers), p. 5 (ligne 9), p. 6 (destinations)"
+  contenu: "Acier extrait des mâchefers d'incinération, France, prix de reprise 2024 en EUR/t : filière 93,7 ; fédérations non représentatif ; individuelle 68,8 (intervalle 39 à 199 ; échantillon 10 % de la population en reprise option individuelle). Aide au transport 14,8 EUR/t. Tonnage 2024 : 210 630 t (+2,8 %). Destinations (p. 6) : deux valeurs 3,6 % et 96,4 % (attribution France / export non étiquetée dans le texte extrait, lecture probable 3,6 % France). Aucun standard de qualité défini dans le document."
+  citation: "Acier de Mâchefers 93,7 Non représentatif 68,8 ; Non représentatif [39 – 199] ; 10% de la pop. en ROI ; 14,8 €/t ; 9. Acier issus de Mâchefers 210 630 t + 2,8 %"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Donnée Citeo-Traitement (modalités de déclaration différentes, p. 2). Ecart calculé par le sous-agent (non publié par la source) : filière 93,7 contre 196,7 pour l'acier de CS, soit environ 48 % du prix CS ; option individuelle 68,8 contre 166,5, soit environ 41 %."
+  parametres: [prix_acier_machefers_2024, decote_metaux_machefers]
+
+A3-CITEO-OBSREPRISE-2024-ALU-MACHEFERS:
+  titre: "Observatoire de la Reprise 2024 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2025-10-06"
+  type: observatoire
+  url: "https://www.citeo.com/wp-content/uploads/2026/03/20251006_Observatoire_reprise_2024_VDEF.pdf"
+  emplacement: "p. 8 (ligne Alu de Mâchefers), p. 59 (fiche Aluminium issu de Mâchefers), p. 5 (ligne 10), p. 6"
+  contenu: "Aluminium extrait des mâchefers, France, prix de reprise 2024 : 893,6 EUR/t en option fédérations (intervalle 552 à 1107 ; échantillon 8 % de la population en reprise option fédérations) ; filière sans valeur ; individuelle non représentatif. Source : étude ADEME/AMORCE 2024 seule. Tonnage 2024 : 46 031 t (+12,3 %). Destinations p. 6 : 27,4 % et 72,6 % (attribution non étiquetée)."
+  citation: "Alu de Mâchefers - 893,6 Non représentatif ; [Intervalle] - [552 – 1107] Non représentatif ; Échantillon : 8% de la pop. en ROFED ; Source : étude ADEME/AMORCE 2024"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Echantillon faible (8 %). Le prix de l'alu de mâchefers (893,6) est SUPERIEUR à celui de l'alu rigide de CS en option fédérations (659,5) : la qualité (teneur en métal) des deux flux n'est pas définie dans le document, comparaison à manier avec prudence."
+  parametres: [prix_aluminium_machefers_2024, decote_metaux_machefers]
+
+A3-CITEO-OBSREPRISE-2024-METAUX-OMR:
+  titre: "Observatoire de la Reprise 2024 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2025-10-06"
+  type: observatoire
+  url: "https://www.citeo.com/wp-content/uploads/2026/03/20251006_Observatoire_reprise_2024_VDEF.pdf"
+  emplacement: "p. 2, p. 5 (lignes 11 et 12), p. 6, p. 9, p. 58 (Acier issu d'OMR), p. 60 (Alu issu d'OMR)"
+  contenu: "Métaux extraits des ordures ménagères résiduelles (OMR, tri mécanique ou TMB), France 2024 : acier 19 681 t (+52,4 %), aluminium 3 318 t (+38,1 %). AUCUN prix 2024 publié : fiches marquées non intégrées à l'étude ADEME/AMORCE 2024. Les métaux extraits sur OMR sont exclus de l'estimation des recettes (p. 9). Destinations p. 6 : acier OMR 25,7 % et 74,3 % ; alu OMR 100 % (attribution non étiquetée)."
+  citation: "11. Acier issus d'OMR 19 681 t + 52,4 % ; 12. Alu issus d'OMR 3 318 t + 38,1 % ; Non intégré à l'étude ADEME/AMORCE 2024 ; Les données relatives aux métaux hors collecte sélective sont issues de Citeo-Traitement"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le terme métaux extraits sur OMR n'est pas défini dans le document."
+  parametres: [prix_metaux_omr_2024, tonnage_metaux_omr]
+
+A3-CITEO-OBSREPRISE-2023-METAUX:
+  titre: "Observatoire de la Reprise 2023 (Citeo / Adelphe, Direction Recyclage)"
+  editeur: "Citeo"
+  date: "2024-09-30"
+  type: observatoire
+  url: "https://bo.citeo.com/sites/default/files/2024-10/20240930_Observatoire_reprise_2023_VDEF.pdf"
+  emplacement: "p. 8 (tableau Prix de reprise moyen 2023), p. 5 (bilan matière), p. 6, p. 18, p. 56 à 59 (fiches métaux hors CS)"
+  contenu: "Prix de reprise 2023, France, EUR/t. Acier de CS : filière 199,6 ; fédérations 127,6 ; individuelle 156,9. Acier de mâchefers : filière 94,2 ; fédérations 75,2 (intervalle 63 à 87, échantillon 17 %) ; individuelle non représentatif ; aide au transport 17,2. Acier issu d'OMR : filière 172,5 ; aide au transport 16,9. Alu de CS rigides : filière 591,9 ; fédérations 613,3 ; individuelle 466,8. Alu souples (p. 18) : 174,3. Alu de mâchefers : non représentatif. Aluminium issu d'OMR (p. 59) : valeurs 580,3 et 59 et aide au transport 41,3 (affectation des colonnes non claire). Tonnages 2023 : acier mâchefers 204 825 t, alu mâchefers 40 989 t, acier OMR 12 914 t, alu OMR 2 403 t."
+  citation: "Acier de CS 199,6 127,6 156,9 ; Acier de Mâchefers 94,2 75,2 Non représentatif ; [63 – 87] ; Acier issu d'OMr ... FILIERE €/t ... 172,5 ; 16,9 €/t ; Alu de CS rigides 591,9 613,3 466,8"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Variation 2023 à 2024 calculée par le sous-agent : acier CS filière 199,6 vers 196,7 ; acier mâchefers filière 94,2 vers 93,7 ; alu rigides filière 591,9 vers 639,5. Point clé : en 2023, l'acier issu d'OMR (172,5 filière) était valorisé près de 1,8 fois l'acier de mâchefers (94,2) et à 86 % de l'acier de CS (199,6) ; c'est le seul prix public trouvé pour un métal extrait d'OMR non incinéré, mais une seule valeur, sans échantillon indiqué."
+  parametres: [prix_acier_omr_2023, prix_acier_machefers_2023, prix_aluminium_omr_2023, decote_metaux_machefers]
+
+A3-CITEO-GUIDE-ODQ-2024-STANDARDS:
+  titre: "Guide de l'Observatoire de la Qualité 2024 (Citeo)"
+  editeur: "Citeo"
+  date: "2025-06-16"
+  type: observatoire
+  url: "https://bo.citeo.com/sites/default/files/2025-06/250616_CITEO_Guide_ODQ_2024_FR.pdf"
+  emplacement: "p. 11 (standard Acier), p. 13 (standard Aluminium rigide), p. 14-15 (petits aluminiums et souples)"
+  contenu: "Standards des matériaux d'emballages issus de collecte sélective. Acier : minimum 95 % d'emballages en acier mis en paquet, soit au minimum 88 % de métal magnétique ; humidité maximum 5 %. Aluminium rigide : minimum 65 % d'emballages en aluminium mis en balle, soit au minimum 45 % d'aluminium ; polymère au maximum 5 % ; humidité maximum 10 %. Aucun standard publié pour l'aluminium souple, ni pour l'acier ou l'aluminium issus de mâchefers ou d'OMR (le mot mâchefers n'apparaît pas)."
+  citation: "Minimum 95 % d'emballages en acier mis en paquet*, soit au minimum 88 % de teneur en métal magnétique ; Maximum 5 % d'humidité ; Minimum 65 % d'emballages en aluminium mis en balle*, soit au minimum 45 % de teneur en aluminium ; Maximum 10 % d'humidité"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Fiches standard distinctes (PDF dédiés acier / aluminium) non trouvées ; ce guide reprend les exigences."
+  parametres: [standard_acier_citeo, standard_aluminium_citeo]
+
+A3-UE-REG-333-2011:
+  titre: "Règlement (UE) n° 333/2011 du Conseil du 31 mars 2011 établissant les critères permettant de déterminer à quel moment certains types de débris métalliques cessent d'être des déchets au sens de la directive 2008/98/CE"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2011-03-31"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32011R0333"
+  emplacement: "Articles 3 et 4 ; annexe I points 1.1 à 1.7 et 2 (fer et acier) ; annexe II points 1.2 à 1.7 et 2 (aluminium)"
+  contenu: "Fin du statut de déchet. Fer et acier : classement selon une spécification client, industrie ou norme ; corps étrangers (stériles) au plus 2 % en poids ; pas d'oxyde de fer en excès (hormis quantités usuelles du stockage extérieur) ; pas d'huiles, émulsions, lubrifiants ou graisses visibles ; certificat de radioactivité par expédition ; pas de propriétés dangereuses ni de conteneurs sous pression. Aluminium : corps étrangers au plus 5 % en poids OU rendement en métal au moins 90 % ; pas de PVC ; pas d'huiles visibles. Intrants : déchets contenant du fer, de l'acier ou de l'aluminium valorisables ; déchets dangereux admis seulement après traitement supprimant les propriétés dangereuses ; exclusion des copeaux huileux et fûts ayant contenu huiles ou peintures. Le texte lu ne mentionne ni mâchefers, ni incinération, ni pyrolyse."
+  citation: "Les débris sont classés selon une spécification du client, une spécification de l'industrie ou une norme [...] ; La quantité totale de corps étrangers (stériles) est inférieure ou égale à 2 % en poids. ; Les débris ne contiennent pas d'oxyde de fer en excès sous aucune forme, [...] ; Les débris sont exempts d'huiles, émulsions huileuses, lubrifiants ou graisses visibles, [...] ; (annexe II) La quantité totale de corps étrangers est inférieure ou égale à 5 % en poids [...] le rendement en métal est supérieur ou égal à 90 %."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (version initiale, CELEX 32011R0333). Les métaux mêlés au char (cendres, carbone, huile de pyrolyse résiduelle possible) devront satisfaire les critères stériles 2 % / 5 % et absence d'huile visible : point à vérifier sur échantillon."
+  parametres: [statut_fin_de_dechet_metaux]
+
+A3-FR-R541-8-LISTE-DECHETS:
+  titre: "Annexe II de l'article R541-8 du code de l'environnement, Liste de déchets"
+  editeur: "Ministère chargé de l'environnement (plateforme PEMD)"
+  date: "non indiquée"
+  type: reglementaire
+  url: "https://plateformepemd.developpement-durable.gouv.fr/download/codes-dechets-annexe-article-r541-8.pdf"
+  emplacement: "p. 28/34 (17 01 07), p. 29/34 (rubrique 19 01), p. 33/34 (20 01 40)"
+  contenu: "La rubrique 19 01 couvre explicitement l'incinération ET la pyrolyse de déchets. Codes pertinents : 19 01 02 déchets de déferraillage des mâchefers ; 19 01 11* / 19 01 12 mâchefers ; 19 01 17* / 19 01 18 déchets de pyrolyse (dangereux / non dangereux) ; 17 01 07 mélanges de béton, briques, tuiles et céramiques ; 20 01 40 métaux. Les codes 19 12 02 (métaux ferreux) et 19 12 03 (métaux non ferreux) n'ont pas pu être lus (pages 30 à 32 non restituées)."
+  citation: "19 01 Déchets de l'incinération ou de la pyrolyse de déchets. ; 19 01 02 Déchets de déferraillage des mâchefers. ; 19 01 17* Déchets de pyrolyse contenant des substances dangereuses. ; 19 01 18 Déchets de pyrolyse autres que ceux visés à la rubrique 19 01 17. ; 17 01 07 Mélanges de béton, briques, tuiles et céramiques autres que ceux visés à la rubrique 17 01 06."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Date du document non indiquée. Le code applicable aux métaux séparés du char de pyrolyse n'est pas tranché par le texte (19 01 02 vise les mâchefers ; 19 01 18 vise les déchets de pyrolyse) : HYPOTHESE à faire valider par la DREAL ou un juriste."
+  parametres: [codes_dechets_metaux, codes_dechets_inertes]
+
+A3-BM-PINKSHEET-2026-10:
+  titre: "World Bank Commodity Price Data (The Pink Sheet), October 2026"
+  editeur: "Banque mondiale"
+  date: "2026-10-02"
+  type: indice_marche
+  url: "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf"
+  emplacement: "tableau des moyennes annuelles, trimestrielles et mensuelles, lignes Aluminum, Copper, Iron ore ; notes de définition"
+  contenu: "Métal primaire (LME), USD/t, pas la ferraille. Aluminium : 2023 2 256 ; 2024 2 419 ; 2025 2 632 ; T3 2026 3 232 ; juillet 2026 3 161 ; août 3 251 ; septembre 3 283. Cuivre : 2024 9 142 ; 2025 9 947 ; septembre 2026 14 474. Minerai de fer (USD/tonne sèche) : 2024 109,4 ; 2025 100,2 ; septembre 2026 97,7. Aucune série acier ni ferraille."
+  citation: "Aluminum $/mt b/ 2,256 2,419 2,632 2,619 2,829 3,193 3,568 3,232 3,161 3,251 3,283 ; Copper $/mt b/ 8,490 9,142 9,947 9,808 11,112 12,831 13,349 14,114 13,543 14,326 14,474 ; Aluminum (LME) London Metal Exchange, unalloyed primary ingots, standard high grade, physical settlement."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Colonnes : 2023, 2024, 2025, T3 2025, T4 2025, T1 2026, T2 2026, T3 2026, juillet, août, septembre 2026. Prix du lingot primaire en dollars ; la ferraille d'aluminium issue de déchets se négocie avec une décote non publiée ici."
+  parametres: [prix_aluminium_primaire_lme, prix_cuivre_lme]
+
+A3-INSEE-BDM-MATIERES-PREMIERES:
+  titre: "Plan du site, séries de la famille Indices de prix et cours des matières premières (Insee, BDM)"
+  editeur: "Insee"
+  date: "2026"
+  type: statistique_publique
+  url: "https://www.insee.fr/fr/plan-du-site/famille-bdm/105299226"
+  emplacement: "liste des séries : 010002041 (aluminium), 010761828 et 010002036 (ferrailles), 010002103 (métaux ferreux)"
+  contenu: "L'Insee publie une série active de cours de l'aluminium 99,7 % LME en USD/t (idbank 010002041) et un indice métaux ferreux en euros base 2010 (010002103). Les deux séries ferrailles (HMS 1 Chicago, idbank 010761828 ; débris de fer et d'acier HWWI Hambourg, idbank 010002036) sont ARRETEES. Valeurs non lisibles par WebFetch (page dynamique)."
+  citation: "Cours des matières premières importées - Ferraille, No. 1 Heavy Melting (HMS 1) - Prix au comptant, Marché de Chicago - Prix en dollars US pour 10 tonnes ; Source : Commodity Research Bureau - Série arrêtée"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Seuls les intitulés ont été lus ; aucune valeur chiffrée obtenue (voir NON TROUVÉ)."
+  parametres: [prix_ferraille_france]
+
+A3-FEDEREC-MARCHE-RECYCLAGE-2024:
+  titre: "Le marché du recyclage 2024 (chiffres clés)"
+  editeur: "FEDEREC"
+  date: "2025"
+  type: federation
+  url: "https://federrec.com/FEDEREC/documents/Chiffresclesdumarchedurecyclage202410263.pdf"
+  emplacement: "p. 8-9 (métaux ferreux), p. 10-11 (métaux non ferreux), pagination approximative"
+  contenu: "France 2024. Métaux ferreux : 11 230 000 t collectées (+0,84 %) ; ventes 10 612 000 t (+1,1 %) ; chiffre d'affaires environ 2,178 milliards EUR (-0,6 %) malgré la baisse des prix. Aucun prix en EUR/t publié (calcul du sous-agent : chiffre d'affaires / tonnes vendues, environ 205 EUR/t en moyenne, valeur implicite tous grades, non publiée par la source). Métaux non ferreux : ventes de 1,780 à 1,828 Mt (+2,7 %), hausse sensible pour l'aluminium (+45,5 kt) ; cours LME en baisse au premier semestre ; aucun prix publié."
+  citation: "En 2024, ils représentent 11 230 000 tonnes, soit une très légère augmentation de 0,84% par rapport à 2023. ; autour de 2,178 milliards d'euros, soit une diminution de 0,6% par rapport à 2023. ; la baisse des prix a entraîné un chiffre d'affaires quasi stable"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Date de publication non indiquée dans le document. Source fédération professionnelle (commerciale). Le ratio chiffre d'affaires / tonnage est un calcul, pas une donnée publiée."
+  parametres: [marche_ferrailles_france, prix_ferraille_france]
+
+A3-UIMM-REXECODE-PRIX-METAUX-2025-10:
+  titre: "Observatoire des prix des métaux industriels, cuivre, nickel, acier (octobre 2025)"
+  editeur: "UIMM / Rexecode"
+  date: "2025-10"
+  type: etude_publique
+  url: "https://uimm.lafabriquedelavenir.fr/wp-content/uploads/2025/10/UIMM-Rexecode-Observatoire-des-prix-des-metaux-industriel-Cuivre-Nickel-Acier-Octobre-2025.pdf"
+  emplacement: "p. 20, 21, 23, 26"
+  contenu: "Produits sidérurgiques européens (pas la ferraille) : prix moyen pondéré 642 EUR/t au T3 2025, panier stabilisé autour de 640 EUR/t ; projection de 635 EUR/t (octobre 2025) à près de 720 EUR/t (été 2026). La ferraille n'est citée que qualitativement (correction de prix), sans niveau chiffré. Aucune donnée aluminium."
+  citation: "642€/t Prix moyen pondéré des produits sidérurgiques européens au troisième trimestre 2025 ; porté par la correction de la ferraille et une relative stabilisation du prix de l'électricité"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Donnée de contexte seulement (prix de l'acier fini, sortie usine), ne pas utiliser comme prix de la ferraille."
+  parametres: [contexte_prix_acier]
+
+A3-PORNIC-TARIFS-DECHETERIES-PRO-2025:
+  titre: "Tarifs 2025, apports des professionnels en déchèteries (Pornic Agglo Pays de Retz)"
+  editeur: "Pornic Agglo Pays de Retz"
+  date: "2025-01-01"
+  type: entreprise
+  url: "https://pornicagglo.fr/wp-content/uploads/2025/02/DecheteriesPro-tarifs2025.pdf"
+  emplacement: "grille tarifaire, ligne Gravats / inertes"
+  contenu: "Tarif public d'apport de gravats et inertes par les professionnels en déchèterie : 25 EUR/m3 (base HT ou TTC non précisée). Ce n'est pas un tarif d'ISDI mais un ordre de grandeur local d'élimination des inertes en petites quantités."
+  citation: "Gravats / inertes hors filière REP : 25€/m3"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Collectivité (Loire-Atlantique), tarif de déchèterie et non d'ISDI ; unité en m3, aucune densité dans la source, ne pas convertir en EUR/t sans source."
+  parametres: [cout_elimination_inertes]
+
+A3-NA-DECHETS-INERTES-BTP-ETAT-DES-LIEUX:
+  titre: "Les déchets inertes du BTP en Nouvelle-Aquitaine, état des lieux"
+  editeur: "Région Nouvelle-Aquitaine"
+  date: "2017-04"
+  type: etude_publique
+  url: "https://nouvelle-aquitaine.fr/sites/default/files/2020-06/Les%20de%CC%81chets%20inertes%20du%20BTP%20en%20Nouvelle-Aquitaine_Etat_des_lieux.pdf"
+  emplacement: "p. 33 (verbatim d'acteurs)"
+  contenu: "Avis d'acteurs (entretiens 2013-2014, Aquitaine) : mise en décharge des inertes 6 à 8 EUR/t, jugée trop chère par les intéressés. Pas un tarif officiel d'ISDI."
+  citation: "Le prix élevé des mises en décharge est trop élevé (6 à 8 euros / tonne pour les inertes)"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Données 2013-2014 (plus de huit ans), anecdotiques ; à ne pas utiliser seules."
+  parametres: [cout_elimination_inertes]
+
+# NON TROUVÉ
+# 1. Prix 2024 des métaux extraits d'OMR (acier, aluminium) : Citeo Observatoire 2024 p. 58 et p. 60 indiquent
+#    "Non intégré à l'étude ADEME/AMORCE 2024". Seul prix public : acier OMR 2023 = 172,5 EUR/t (A3-CITEO-OBSREPRISE-2023-METAUX).
+#    Prix 2024 de l'acier de mâchefers en option fédérations et de l'alu de mâchefers en option individuelle : "Non représentatif".
+# 2. Standard Citeo pour l'acier ou l'aluminium issus de mâchefers ou d'OMR, et fiches standard PDF dédiées acier / aluminium :
+#    non trouvés (recherches web "Citeo standard expérimental aluminium issu de mâchefers fiche standard",
+#    "Citeo standard matériau acier aluminium mâchefers pdf") ; le Guide ODQ 2024 ne mentionne pas les mâchefers.
+#    Standard pour l'aluminium souple : absent du Guide ODQ 2024.
+# 3. Prix publics de la ferraille en EUR/t en France ou en Europe 2025-2026 : NON TROUVÉ.
+#    Insee : séries ferrailles 010761828 (HMS 1 Chicago) et 010002036 (HWWI Hambourg) arrêtées ; pages séries Insee
+#    (https://www.insee.fr/fr/statistiques/serie/010002041 et .../010761828) non lisibles par WebFetch (aucune valeur) ;
+#    https://www.insee.fr/fr/statistiques/serie/010002084 bloquée (permission non accordée).
+#    FEDEREC 2024 : aucun prix EUR/t. Banque mondiale : pas de série ferraille ni acier.
+#    Cotations Platts, Fastmarkets, LME payant, EUWID, Statista (Stahlschrottpreise), BDSV : payantes ou non lues, NON TROUVÉ.
+#    Article Eurometal (https://eurometal.net/eu-shredded-ferrous-scrap-prices-soften-for-october-contracts/) lu mais daté
+#    d'octobre 2021 et reprenant Platts (secondaire, ancien) : non retenu.
+# 4. Prix publics de l'aluminium en EUR/t (Insee 010002093, indice euros base 2010) : valeurs non obtenues.
+#    Commission européenne / Eurostat (indicateurs de prix des matières secondaires) : non cherché faute de temps, NON TROUVÉ.
+# 5. Codes déchets 19 12 02 (métaux ferreux) et 19 12 03 (métaux non ferreux) : citation non obtenue.
+#    EUR-Lex CELEX:02000D0532-20150601 et CELEX:32014D0955 (HTML tronqué par WebFetch avant le chapitre 19 ; PDF refusé par robots.txt) ;
+#    plateforme PEMD : pages 30 à 32 non restituées.
+# 6. Décote chiffrée des métaux de mâchefers par rapport aux métaux propres, publiée par ADEME, CEWEP ou une étude :
+#    NON TROUVÉ (recherches "incineration bottom ash ferrous scrap price lower than shredded scrap", "aluminium recovered from
+#    incinerator bottom ash sold price percentage of LME"). Seul le calcul à partir de Citeo est possible (environ 41 à 48 % du prix
+#    de l'acier de CS ; aluminium de mâchefers au-dessus de l'aluminium rigide de CS en option fédérations).
+#    L'étude ADEME/AMORCE 2024 sur les prix de reprise (source de Citeo) n'a pas été trouvée en accès direct.
+# 7. Coût d'élimination en ISDI (tarif d'accueil EUR/t) en France 2024-2026 : NON TROUVÉ sous forme de tarif ISDI public ou de
+#    moyenne nationale. Recherches : "coût stockage ISDI €/t déchets inertes France 2024 étude ADEME CERC prix moyen",
+#    "ISDI tarif € HT / tonne inertes 2025", grilles de déchèteries (Chartres : 50,14 EUR/t "Réception et traitement" sans catégorie
+#    identifiée, non retenu ; Orléans 2026 : pas de ligne inertes ; Morlaix 2025 : gravats refusés). FFB : pas de prix.
+#    Régime TGAP des ISDI : non vérifié.
+# 8. Prix de reprise du verre issu d'un tri d'OMR ou de mâchefers : NON TROUVÉ ; Citeo Observatoire 2024 ne publie que le verre de
+#    collecte séparée (p. 53) et des tonnages DROM-COM (p. 64).

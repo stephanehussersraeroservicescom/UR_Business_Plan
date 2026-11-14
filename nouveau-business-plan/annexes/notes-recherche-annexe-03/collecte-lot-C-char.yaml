@@ -1,0 +1,349 @@
+# Lot C : char de pyrolyse de déchets mélangés (débouchés, spécifications, statut, prix, coût d'élimination, crédits carbone)
+# Annexe 3, Urban Rig, sous-agent de recherche, 15/10/2026.
+# Toutes les citations sont copiées des documents ouverts via WebFetch (l'outil limite chaque extrait verbatim à environ 125 caractères ;
+# les citations longues sont donc données en plusieurs segments consécutifs séparés par « [...] »).
+
+# ---------------------------------------------------------------
+# 2. STATUT DU CHAR : codes déchets, classement dangereux, sortie du statut de déchet
+# ---------------------------------------------------------------
+
+A3-LISTE-DECHETS-R541-8-19-01:
+  titre: "LISTE DE DÉCHETS (Article Annexe II de l'article R541-8 du code de l'environnement)"
+  editeur: "Ministère chargé de l'environnement (plateforme PEMD, developpement-durable.gouv.fr)"
+  date: "non datée (reproduction de l'annexe II de l'article R541-8)"
+  type: reglementaire
+  url: "https://plateformepemd.developpement-durable.gouv.fr/download/codes-dechets-annexe-article-r541-8.pdf"
+  emplacement: "page 29/34, chapitre 19, sous-rubrique 19 01"
+  contenu: "La sous-rubrique 19 01 couvre les déchets de l'incinération ou de la pyrolyse de déchets. Le résidu solide de pyrolyse relève de 19 01 17* (déchet dangereux, s'il contient des substances dangereuses) ou de 19 01 18 (non dangereux, autres). Entrée miroir : le classement dépend de l'évaluation des propriétés dangereuses HP."
+  citation: "« Déchets de l'incinération ou de la pyrolyse de déchets. » [...] « 19 01 17* Déchets de pyrolyse contenant des substances dangereuses. » [...] « 19 01 18 Déchets de pyrolyse autres que ceux visés à la rubrique 19 01 17. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Document de plateforme ministérielle non daté ; le texte de référence est la décision 2000/532/CE consolidée (EUR-Lex, version 2023-12-06), dont la page HTML n'a pas pu être lue jusqu'au chapitre 19 (troncature de l'outil). Les pages 30 à 32 (dont 19 12) n'ont pas été extraites de ce PDF."
+  parametres: [char_code_dechet, char_statut_dechet]
+
+A3-DEC2000-532-CONSOLIDEE-2023:
+  titre: "Décision de la Commission du 3 mai 2000 remplaçant la décision 94/3/CE établissant une liste de déchets [...] (texte consolidé)"
+  editeur: "Commission européenne (EUR-Lex)"
+  date: "2023-12-06 (version consolidée)"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02000D0532-20231206"
+  emplacement: "Annexe, section « Évaluation et classement », règles générales"
+  contenu: "Tout déchet marqué d'un astérisque est un déchet dangereux. Lorsqu'un déchet peut recevoir un code dangereux ou non dangereux (entrée miroir, cas de 19 01 17*/19 01 18), il n'est classé dangereux que s'il contient des substances dangereuses lui conférant une ou plusieurs propriétés HP 1 à HP 8 et HP 10 à HP 15."
+  citation: "« Tout déchet marqué d'un astérisque (*) sur la liste des déchets est considéré comme un déchet dangereux »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Seule la phrase sur l'astérisque a été obtenue verbatim ; la règle sur les entrées miroirs est une reformulation de l'outil (citation non obtenue). Le chapitre 19 de cette page n'a pas pu être atteint (page tronquée par l'outil après le chapitre 10)."
+  parametres: [char_statut_dechet, char_classement_dangereux]
+
+A3-LISTE-DECHETS-19-12-10-REPRO-DE:
+  titre: "Verordnung (EG) Nr. 1013/2006 über die Verbringung von Abfällen, Anhang (Abfallverzeichnis, Kapitel 19 und 20), reproduction umwelt-online"
+  editeur: "umwelt-online.de (reproduction privée d'un texte de l'UE)"
+  date: "non indiquée"
+  type: reglementaire
+  url: "https://umwelt-online.de/recht/eu/05_09/06_1013i.htm"
+  emplacement: "liste des déchets, chapitre 19, rubriques 19 01 et 19 12"
+  contenu: "Libellés allemands : 19 01 17* déchets de pyrolyse contenant des substances dangereuses ; 19 01 18 autres déchets de pyrolyse ; 19 12 10 déchets combustibles (combustible issu de déchets, code usuel des CSR) relevant de la sous-rubrique 19 12 « déchets provenant du traitement mécanique des déchets ». Le char de pyrolyse étant issu d'un traitement thermique et non mécanique, son code naturel est 19 01 17*/19 01 18 et non 19 12 10 (déduction, non écrite dans la source)."
+  citation: "« Abfälle aus der mechanischen Behandlung von Abfällen (z.B. Sortieren, Zerkleinern, Verdichten, Pelletieren) a. n. g. » [...] « 19 12 10 brennbare Abfälle (Brennstoffe aus Abfällen) » [...] « 19 01 17* Pyrolyseabfälle, die gefährliche Stoffe enthalten » [...] « 19 01 18 Pyrolyseabfälle mit Ausnahme derjenigen, die unter 19 01 17 fallen »"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Reproduction non officielle (site privé allemand) ; le libellé français officiel de 19 12 10 n'a pas été obtenu (pages 30-32 du PDF ministériel non extraites, EUR-Lex tronqué). La déduction sur le code applicable au char est celle du sous-agent."
+  parametres: [char_code_dechet]
+
+A3-REG1357-2014-HP7:
+  titre: "Règlement (UE) n° 1357/2014 de la Commission du 18 décembre 2014 remplaçant l'annexe III de la directive 2008/98/CE (propriétés qui rendent les déchets dangereux)"
+  editeur: "Commission européenne (EUR-Lex)"
+  date: "2014-12-18"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32014R1357"
+  emplacement: "Annexe, HP 7 « Cancérogène », tableau 6"
+  contenu: "Un déchet est dangereux HP 7 s'il contient une substance cancérogène Carc. 1A ou 1B à 0,1 % ou plus, ou Carc. 2 à 1,0 % ou plus. Calcul du sous-agent (non écrit dans la source) : Cd 31 à 36 mg/kg = 0,0031 à 0,0036 % en cadmium élément, très en dessous de 0,1 % même si tout le cadmium était sous forme d'un composé Carc. 1B ; cela ne suffit pas à conclure sur le classement (autres propriétés HP, notamment HP 14, non évaluées ; spéciation et hydrocarbures du char non mesurés)."
+  citation: "« Lorsqu'un déchet contient une substance classée au moyen de l'un des codes des classes et catégories de danger » [...] « est atteinte ou dépassée, le déchet est classé comme déchet dangereux de type HP 7. » [...] « Carc. 1A H350 0,1 % » [...] « Carc. 2 H351 1,0 % »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch, version initiale du règlement. HP 14 (écotoxique) a été modifié depuis par le règlement (UE) 2017/997, non lu ici. Âge : texte de 2014 toujours en vigueur (HP 7 inchangé à notre connaissance, non vérifié)."
+  parametres: [char_classement_dangereux]
+
+A3-MTE-CATEGORIES-DECHETS-SSD-2024:
+  titre: "Les différentes catégories de déchets (page sortie du statut de déchet)"
+  editeur: "Ministère de la Transition écologique (ecologie.gouv.fr)"
+  date: "2024-06-20 (mise à jour)"
+  type: reglementaire
+  url: "https://www.ecologie.gouv.fr/politiques-publiques/differentes-categories-dechets"
+  emplacement: "section Sortie du statut de déchet ; liste des arrêtés français ; tableau des États membres"
+  contenu: "Quatre conditions cumulatives de sortie du statut de déchet ; procédure nationale (articles D. 541-12-4 et suivants, CERFA 14831, arrêté du 3 octobre 2012) si aucun critère européen. Onze arrêtés français existants (2014 à 2024), dont deux pour un usage combustible : broyats d'emballages en bois (combustion biomasse, 2014) et combustible en installation 2910-B (2016) ; la liste mentionne aussi l'huile de pyrolyse. Aucun arrêté de sortie du statut de déchet pour un char ou un CSR en France ; l'Italie a un texte 2012 pour les CSR."
+  citation: "« Les modalités d'application de l'article L. 541-4-3 sont fixées dans les articles D. 541-12-4 et suivants » [...] « pour un usage en tant que combustible dans une installation de combustion classée sous la rubrique 2910-B » [...] « Combustibles Solides de Récupération (CSR) »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Page mise à jour en juin 2024 : un arrêté postérieur n'y figurerait pas. L'absence d'arrêté pour le char est constatée sur cette liste, pas sur Légifrance (inaccessible à l'outil)."
+  parametres: [char_sortie_statut_dechet]
+
+A3-CE-L541-4-3-REPRO:
+  titre: "Article L541-4-3 du code de l'environnement (sortie du statut de déchet), reproduction"
+  editeur: "OPPBTP (preventionbtp.fr), reproduction du code de l'environnement"
+  date: "2026-07-02 (mise à jour de la page)"
+  type: reglementaire
+  url: "https://content.preventionbtp.fr/pdf/droit_de_la_prevention/article-l541-4-3-du-code-de-l-environnement-sortie-du-statut-de-dechet.pdf"
+  emplacement: "article L541-4-3, I"
+  contenu: "Un déchet cesse d'être un déchet s'il remplit l'ensemble de quatre conditions (usage spécifique, demande ou marché, exigences techniques et normes produits, absence d'effets globaux nocifs). Tant que ces conditions ne sont pas reconnues par une procédure, le char reste un déchet et sa combustion relève de la co-incinération."
+  citation: "« l'ensemble des conditions suivantes » [...] « la substance ou l'objet est utilisé à des fins spécifiques ; » [...] « il existe une demande pour une telle substance ou objet ou elle répond à un marché ; » [...] « son utilisation n'aura pas d'effets globaux nocifs pour l'environnement ou la santé humaine. »"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Reproduction par un organisme professionnel ; Légifrance n'a pas pu être lu (erreur de récupération). La phrase sur la co-incinération est une déduction du sous-agent."
+  parametres: [char_sortie_statut_dechet]
+
+# ---------------------------------------------------------------
+# 1. DÉBOUCHÉS ET SPÉCIFICATIONS
+# ---------------------------------------------------------------
+
+A3-AIDA-AM-23052016-COMBUSTION-CSR:
+  titre: "Arrêté du 23/05/16 relatif aux installations de production de chaleur et/ou d'électricité à partir de déchets non dangereux préparés sous forme de combustibles solides de récupération dans des installations prévues à cet effet [...] (rubrique 2971)"
+  editeur: "INERIS (AIDA), texte du ministère chargé de l'environnement"
+  date: "2016-05-23 (JO du 25/05/2016), modifié en 2017, 2020, 01/12/2025 et 04/06/2026"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-230516-relatif-installations-production-chaleur-etou-delectricite-a-partir"
+  emplacement: "articles 1, 2, 7, 8, 17, 18 ; rubrique Texte modifié par"
+  contenu: "Champ : installations de co-incinération soumises à autorisation sous la rubrique 2971. Le CSR y est défini comme un combustible préparé dans une installation de préparation des CSR ; les combustibles doivent avoir une qualité constante en PCI ; contrôle visuel de chaque lot, analyse annuelle par fournisseur des paramètres de l'article 5 de l'arrêté préparation ; refus immédiat d'un lot non conforme. Les valeurs limites d'émission sont en annexe I (non reproduite sur la page). Dernière modification : arrêté du 4 juin 2026 (JO n° 141 du 18/06/2026)."
+  citation: "« Le présent arrêté fixe les prescriptions applicables aux installations de co-incinération soumises à autorisation » [...] « un combustible préparé dans une installation de préparation des CSR » [...] « Les combustibles utilisés présentent une qualité constante dans le temps en matière de PCI. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Réserve importante : un char de pyrolyse n'est pas un CSR « préparé dans une installation de préparation des CSR » au sens de la définition ; son admission dans une chaufferie 2971 n'est donc pas acquise (point à faire trancher par la DREAL ; aucune source lue ne traite ce cas). L'annexe I n'est pas lisible sur AIDA."
+  parametres: [char_debouche_chaufferie_csr]
+
+A3-AM-2971-COMBUSTION-VERSION-CONSULTATION:
+  titre: "Arrêté du 23 mai 2016 relatif aux installations de production de chaleur et/ou d'électricité à partir de CSR (rubrique 2971), version consolidée mise en consultation publique"
+  editeur: "Ministère de la Transition écologique (consultations-publiques.developpement-durable.gouv.fr)"
+  date: "2020 (document de consultation ; texte initial du 23/05/2016)"
+  type: reglementaire
+  url: "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/e_bpgd-20-0xx_am_consolid_-_installations_combustion_csr_30-07.pdf"
+  emplacement: "annexe I, valeurs Cinc"
+  contenu: "Valeurs limites d'émission pour la part CSR (Cinc), normalisées à 11 % d'O2 : poussières 10 mg/Nm3 ; COT 10 ; HCl 10 ; HF 1 ; SO2 50 ; NOx 200 ; CO 50 ; Cd+Tl 0,05 ; Hg 0,05 ; Sb+As+Pb+Cr+Co+Cu+Mn+Ni+V 0,5 mg/Nm3 ; dioxines et furanes 0,1 ng/Nm3. Référence 10 % d'O2 pour les cimenteries."
+  citation: "« Poussières totales 10 mg/Nm3 » [...] « Chlorure d'hydrogène (HCl) 10 mg/Nm3 » [...] « Fluorure d'hydrogène (HF) 1 mg/Nm3 » [...] « Dioxyde de soufre (SO2) 50 mg/Nm3 » [...] « Elles sont normalisées pour une teneur en oxygène des gaz résiduaires de 11 %. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Document de consultation de 2020, pas la version en vigueur : les arrêtés de décembre 2025 et juin 2026 ont pu modifier l'annexe I (non vérifié, Légifrance et l'annexe AIDA inaccessibles). Seules les VLE poussières, HCl, HF, SO2 et l'O2 ont une citation verbatim ; les autres valeurs sont lues par l'outil sans citation (à revérifier). Le document ne fixe pas de teneur maximale en chlore du combustible (renvoi à l'arrêté préparation, déjà au registre)."
+  parametres: [char_debouche_chaufferie_csr, vle_2971]
+
+A3-BDT-ARRETE-CSR-2025:
+  titre: "Valorisation énergétique des déchets : plusieurs simplifications introduites pour relancer la filière CSR"
+  editeur: "Banque des Territoires (Localtis)"
+  date: "2025-12-17 (mis à jour 2026-01-06)"
+  type: presse
+  url: "https://www.banquedesterritoires.fr/valorisation-energetique-des-dechets-plusieurs-simplifications-introduites-pour-relancer-la-filiere"
+  emplacement: "corps de l'article"
+  contenu: "L'arrêté du 1er décembre 2025 (JO du 17/12/2025) modifie les deux arrêtés du 23 mai 2016 (rubrique 2971 : combustion et préparation des CSR) : rendement évalué par période et par ligne, conditionnement par lots non obligatoire si préparation et chaufferie sur le même site, préparation de CSR autorisée à partir de refus de tri d'OMR et de biodéchets. La SNBC 3 table sur la valorisation énergétique de 4 Mt de CSR. Rien sur le chlore ni le PCI."
+  citation: "« table ainsi sur la valorisation énergétique de 4 Mt de CSR »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Presse institutionnelle ; texte de l'arrêté lui-même non lu. Aucune disposition sur les chars de pyrolyse."
+  parametres: [char_debouche_chaufferie_csr]
+
+A3-VICAT-CRECHY-CARBOR-2008:
+  titre: "Arrêté complémentaire n° 3024/08 : société VICAT, cimenterie de Créchy, essais de co-incinération de CARBOR (sous-produit de thermolyse de déchets ménagers)"
+  editeur: "Préfecture de l'Allier (Géorisques)"
+  date: "2008-07-18"
+  type: reglementaire
+  url: "https://www.georisques.gouv.fr/webappReport/ws/installations/document/7df387be6a874d93986d17325ce350fc"
+  emplacement: "article 3.2 (caractéristiques du CARBOR) ; article 7 (déchets admis)"
+  contenu: "Précédent direct d'un char de thermolyse d'ordures ménagères (CARBOR, site Arthelyse de Saint-Laurent-Blangy) en cimenterie : essais de 6 mois autorisés ; caractéristiques maximales du CARBOR : PCI sur sec 2 800 à 3 600 kcal/kg (environ 11,7 à 15,1 MJ/kg, conversion du sous-agent), chlore total 0,2 à 0,5 %, soufre total 0,3 à 0,5 % ; au plus 20 % de CARBOR dans le mélange. Critères généraux du site : refus des déchets dangereux à plus de 10 mg/kg de Hg, plus de 100 mg/kg de Cd+Tl+Hg, plus de 10 000 mg/kg de métaux lourds ; refus des déchets à plus de 4 % de chlore ; déchets non dangereux limités à 4 % de soufre."
+  citation: "« PCI sur sec Kcal/kg 2 800 3 600 » [...] « Chlore total % 0,2 0,5 » [...] « Soufre total % 0,3 0,5 » [...] « avec une proportion maximale de CARBOR® de 20% dans le mélange » [...] « les déchets dangereux contenant plus de 100 mg/kg de cadmium, thallium, mercure et leurs composés » [...] « les déchets à teneur en chlore supérieure à 4 % »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Donnée de 2008 (plus de huit ans) ; autorisation d'essai propre à un site, pas une spécification générale. Le char Urban Rig (PCS 32 MJ/kg sur char d'uréthane) aurait un PCI bien supérieur au CARBOR ; Cd 31-36 mg/kg compatible avec le seuil 100 mg/kg (Cd+Tl+Hg) ; chlore non mesuré, donc conformité au seuil 0,5 % inconnue."
+  parametres: [char_debouche_cimenterie, char_spec_cimenterie]
+
+A3-CALCIA-COUVROT-CSR-2010:
+  titre: "Rapport de l'inspection des installations classées : Ciments Calcia, usine de Couvrot, demande d'utilisation de combustibles solides de récupération"
+  editeur: "DREAL Champagne-Ardenne, unité territoriale de la Marne (Géorisques)"
+  date: "2010-01-29"
+  type: reglementaire
+  url: "https://georisques.gouv.fr/webappReport/ws/installations/document/6207c06ffaa849a195e98c3710803e2d"
+  emplacement: "page 2, tableau « Critères d'admission prescrits dans l'arrêté d'autorisation »"
+  contenu: "Critères d'admission des déchets combustibles en cimenterie : chlore total inférieur à 1 % au précalcinateur et à 2 % à la tuyère ; soufre inférieur à 6 % ; mercure inférieur à 10 mg/kg ; Cd+Hg+Tl inférieur à 100 mg/kg ; Sb+As+Pb+Cr+Co+Ni+V+Sn+Te+Se inférieur à 2 500 mg/kg (3 500 mg/kg avec Cu) ; PCB/PCT inférieur à 50 ppm. Pas de PCI minimal."
+  citation: "« Introduction au précalcinateur : < 1% » [...] « Introduction à la tuyère : < 2 % » [...] « Soufre < 6 % » [...] « Mercure < 10 mg/kg » [...] « Cd + Hg + Ti < 100 mg/kg » [...] « Sb + As + Pb + Cr + Co + Ni + V + Sn + Te + Se » « < 2500 mg/kg »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Donnée de 2010 (plus de huit ans), propre à un site. Le document écrit « Ti » au lieu de « Tl » (coquille probable). Comparaison du sous-agent : Cd 31-36, Pb 42-140, As 0,95-1,8, Hg 0,06 et < 0,02 mg/kg du char sont sous ces seuils ; chlore du char non mesuré."
+  parametres: [char_spec_cimenterie]
+
+A3-OBS-NORMANDIE-CSR-2021:
+  titre: "Les combustibles solides de récupération (CSR), INFO OBS #02"
+  editeur: "Observatoire des déchets, de la ressource et de l'économie circulaire de Normandie (animé par Biomasse Normandie)"
+  date: "2021-06"
+  type: observatoire
+  url: "https://neci.normandie.fr/sites/default/files/2024-04/02%20info-dechet%20V1.0.pdf"
+  emplacement: "page 2 (qualités, consommation cimenterie) ; page 6 (coûts et prix)"
+  contenu: "CSR qualité cimentière : PCI supérieur à 18 MJ/kg et chlore inférieur à 0,5 % ; bonne qualité (chaudières dédiées) : PCI 12 à 18 MJ/kg, chlore inférieur à 1,5 %. Cimenteries françaises : 450 kt de CSR consommés en 2015, objectif 1 Mt/an en 2025. Prix : cimenteries, vente du CSR entre 0 et 50 EUR/t ; chaufferies rémunérées par un prix d'accueil de 10 à 30 EUR/t (le producteur paie) ; coût de production du CSR 85 à 115 EUR/t ; transport environ 10 EUR/t pour 50 km ; coût médian d'élimination des refus et déchets résiduels 88 à 132 EUR/t selon la voie (source ADEME, référentiel des coûts, édition 2019)."
+  citation: "« Les cimenteries vont utiliser des CSR de très haute qualité (vente du CSR entre 0 et 50 €/t). » [...] « rémunérées pour les utiliser dans leur procédé (prix d'accueil de 10 à 30 €/t). » [...] « Le coût médian varie de 88 à 132 €/t selon la voie d'élimination choisie. » [...] « Les CSR de haute qualité (ou « qualité cimentière »)… ont un PCI > 18 MJ/kg »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le sens du prix cimenterie (0 à 50 EUR/t) est formulé « vente du CSR » : le producteur serait payé ou cèderait gratuitement ; cela contredit FNADE/SN2E 2023 (déjà au registre, gate fee CSR 40-50 EUR/t payé par le producteur) et Sia Partners 2018 (prix négatif -30 EUR/t). Les coûts d'élimination 88-132 EUR/t sont repris de l'ADEME (statut secondaire pour ce chiffre, données 2016 ou 2017 probables, année non précisée dans l'extrait)."
+  parametres: [char_spec_cimenterie, char_prix_csr_cimenterie, char_gate_fee_chaufferie, cout_elimination_dechets_residuels]
+
+A3-SIA-PARTNERS-CSR-2018:
+  titre: "Les combustibles solides de récupération : entre engagement et ..."
+  editeur: "Sia Partners (cabinet de conseil)"
+  date: "2018-03-15"
+  type: entreprise
+  url: "https://www.sia-partners.com/fr/publications/publications-de-nos-experts/les-combustibles-solides-de-recuperations-entre-engagement"
+  emplacement: "corps de l'article et infographie"
+  contenu: "Modèle économique du CSR : coût de production 40 EUR/t (refus de tri de DAE, cas favorable) à environ 70 EUR/t (OMR prétriées) ; transport 10 EUR/t pour 50 km ; prix de vente du CSR représenté par un prix négatif de 30 EUR/t (le producteur paie l'utilisateur). Consommation de CSR environ 260 000 t en 2016."
+  citation: "« Le prix de vente du CSR est ici représenté par un prix négatif de 30€/t. » [...] « un cout de production d'environ 70€/t »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale (cabinet de conseil), données 2018 ; les chiffres de l'infographie ne sont rattachés à aucune source précise (ADEME 2015 et FNADE 2016 cités en bas de page). Le titre exact complet n'a pas été obtenu."
+  parametres: [char_prix_csr_cimenterie]
+
+A3-ALIAPUR-POWERGOM-B-2023:
+  titre: "Fiche produit POWERGOM B, cimenterie"
+  editeur: "Aliapur (éco-organisme pneumatiques)"
+  date: "2023-05"
+  type: entreprise
+  url: "https://aliapur.fr/uploads/pdfs/aliapur-fiche-powergom-b-cimenterie-vd.pdf"
+  emplacement: "fiche technique, tableau des caractéristiques"
+  contenu: "Combustible de substitution livré aux cimenteries (broyats de pneus) : PCI 28,5 MJ/kg brut ; chlore 0,007 à 0,01 % sec ; soufre 1,4 à 1,8 % sec ; somme des métaux lourds 1 153 à 2 482 mg/kg sec ; Hg < 0,1 mg/kg sec ; cendres 25,84 % sec ; granulométrie 35-110 mm ; fraction biomasse 28 % ; classe EN 15359 « PCI 1, Cl 1, Hg 1 ». Aucun prix publié."
+  citation: "« Chlore (Cl) % sec 0,007 - 0,01 » [...] « Soufre (S) % sec 1,4 - 1,8 » [...] « Σ des métaux lourds mg/kg sec 1153 - 2482 » [...] « Code de classe : PCI 1, Cl 1, Hg 1 »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source d'entreprise ; donne l'ordre de grandeur d'un combustible solide de déchets effectivement accepté en cimenterie (comparable au char par le PCI). Le PCI 28,5 MJ/kg cité est noté « ar »."
+  parametres: [char_spec_cimenterie]
+
+A3-IEACCC-PCI-PLASTIQUES-2010:
+  titre: "Injection of coal and waste plastics in blast furnaces (CCC/166)"
+  editeur: "IEA Clean Coal Centre (Anne M. Carpenter)"
+  date: "2010-03"
+  type: etude_publique
+  url: "https://usea.org/sites/default/files/032010_Injection%20of%20coal%20and%20waste%20plastics%20in%20blast%20furnaces_ccc166.pdf"
+  emplacement: "pages 13-14 (qualité du charbon d'injection) ; pages 18-19 et tableau 6 (plastiques)"
+  contenu: "Charbon d'injection au haut fourneau : cendres de préférence inférieures à 10 % ; soufre typiquement inférieur à 0,8 % ; phosphore inférieur à 0,05 % ; Na2O+K2O inférieur à 0,1 % ; chlore typiquement 0,05 % (base air sec). Plastiques injectés : Kobe Steel chlorures 0,4 % au plus ; Stahlwerke Bremen chlore inférieur à 1,5 % ; voestalpine inférieur à 2 %."
+  citation: "« An ash content of less than 10% is normally preferred because: » [...] « The limit for coal sulphur is typically below 0.8%. » [...] « The limit for coal chlorine is typically 0.05% ad. » [...] « Chlorine content at the Stahlwerke Bremen furnace is limited to below 1.5%, that is, about 3% PVC »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Donnée de 2010 (plus de huit ans), hors France. Pagination à vérifier sur le PDF. Le char Urban Rig (cendres non mesurées dans les données fournies, métaux lourds, chlore inconnu) est a priori éloigné de ces exigences ; aucune spécification d'un sidérurgiste français trouvée."
+  parametres: [char_debouche_siderurgie]
+
+# ---------------------------------------------------------------
+# 3. PRIX DES COMBUSTIBLES COMPARABLES
+# ---------------------------------------------------------------
+
+A3-BM-PINKSHEET-2026-10:
+  titre: "World Bank Commodities Price Data (The Pink Sheet), October 2026"
+  editeur: "Banque mondiale"
+  date: "2026-10-02"
+  type: indice_marche
+  url: "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf"
+  emplacement: "page 1 (tableau des prix, ligne Coal) ; page 3 (Description of Price Series)"
+  contenu: "Charbon vapeur, USD/t : Australie (FOB Newcastle, 6 000 kcal/kg) moyenne 2024 136,1 ; moyenne 2025 108,4 ; juillet 2026 131,9 ; août 2026 135,2 ; septembre 2026 147,1. Afrique du Sud (FOB Richards Bay, NAR 6 000 kcal/kg, soufre < 1 %) moyenne 2024 105,8 ; moyenne 2025 94,9 ; septembre 2026 98,2. Pas de série API2 (Rotterdam) ni de coke de pétrole."
+  citation: "« Coal, Australia ** $/mt a/ 172.8 136.1 108.4 110.5 109.3 122.3 135.4 138.1 131.9 135.2 147.1 » [...] « Coal, South Africa ** $/mt 119.1 105.8 94.9 93.1 91.3 91.9 95.6 97.1 96.3 96.8 98.2 » [...] « Coal (South Africa), f.o.b. Richards Bay, NAR, 6,000 kcal/kg, sulfur less than 1%, forward month 1. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Colonnes, selon l'outil : annuel 2023, 2024, 2025 ; trimestres T3 2025 à T3 2026 ; mois juillet, août, septembre 2026 (ordre des colonnes à vérifier sur le PDF). Prix FOB origine, hors fret et hors taxe carbone ; pour comparer au char, ramener au contenu énergétique (6 000 kcal/kg = 25,1 MJ/kg, conversion du sous-agent)."
+  parametres: [prix_charbon_australie, prix_charbon_afrique_sud]
+
+# ---------------------------------------------------------------
+# 4. COÛT D'ÉLIMINATION SI NON VENDABLE
+# ---------------------------------------------------------------
+
+A3-AMP-TARIFS-TRAITEMENT-2025:
+  titre: "Tarifs 2025 de la Métropole Aix-Marseille-Provence, annexes 1 à 6 (délibération du 5 décembre 2024)"
+  editeur: "Métropole Aix-Marseille-Provence"
+  date: "2024-12-05 (tarifs applicables en 2025)"
+  type: reglementaire
+  url: "https://deliberations.ampmetropole.fr/documents/metropole/deliberations/2024/12/05/ANNEXE/109242_109242_annexes1_2_3_4_5 Delibs.pdf"
+  emplacement: "annexe 4, tarifs de traitement 2025"
+  contenu: "Tarif 2025 de traitement des encombrants et déchets assimilables aux OMR dans les installations métropolitaines : 159 EUR HT/t, hors TVA et hors TGAP. Le mode de traitement (stockage ou incinération) n'est pas précisé."
+  citation: "« Encombrants & Déchets assimilables aux OMR : 159 » [...] « Les tarifs s'entendent hors toutes taxes (TVA + TGAP). »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Tarif public d'une collectivité, pas un prix de marché ISDND ; le char n'est pas un déchet assimilé aux OMR et pourrait être refusé ou tarifé différemment."
+  parametres: [cout_elimination_char_isdnd]
+
+A3-AURILLAC-COUTS-OMR-2025:
+  titre: "Convention de mutualisation des services C&G et CABA, avenant n° 3, annexe 2 « Détermination des coûts estimés » (délibération 2025-011, annexe 3)"
+  editeur: "Communauté d'agglomération du Bassin d'Aurillac"
+  date: "2025"
+  type: reglementaire
+  url: "https://eservices.aurillacagglo.fr/fr/media/del-2025-011-annexe-3"
+  emplacement: "annexe 2, coûts de traitement des OMr 2025"
+  contenu: "OMR, transfert, transport et traitement en 2025 : 228,53 EUR TTC/t vers DRIMM ; 233,77 EUR TTC/t vers le VALTOM. Montants toutes taxes comprises (TGAP et TVA incluses) et transport inclus."
+  citation: "« OMr transfert/transport à DRIMM et traitement pour 2025 : 228,53 €TTC / tonne » [...] « OMr transfert/transport au VALTOM et traitement pour 2025 : 233,77 €TTC / tonne »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le document ne précise pas la nature des installations (stockage ou incinération) ni la part transport/TGAP ; ordre de grandeur seulement, non utilisable comme prix hors TGAP."
+  parametres: [cout_elimination_char_isdnd, cout_elimination_char_incineration]
+
+# ---------------------------------------------------------------
+# 5. CRÉDITS CARBONE
+# ---------------------------------------------------------------
+
+A3-PURO-BIOCHAR-METHODOLOGIE-2025-V2:
+  titre: "Puro.earth Certification Framework, Biochar, Edition 2025, v. 2"
+  editeur: "Puro.earth"
+  date: "2025-11-27 (approbation)"
+  type: norme
+  url: "https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/Puro%20Biochar%20Methodology%20-%20Edition%202025%20(version%202)%20-%20For%20Publication.pdf"
+  emplacement: "glossaire ; sections 3.1.1, 3.4.4, 3.4.5 (catégories A et J non admises), 3.4.8, 3.4.16, 3.4.24, 3.4.26"
+  contenu: "La biomasse est la matière organique d'origine récente ; toute part de matière non démontrée éligible rend le biochar inéligible. Les déchets municipaux en mélange et assimilés (catégorie A) ne sont pas admis, même après tri post-collecte d'une fraction organique. Plastiques non volatilisables, composites et caoutchoucs synthétiques interdits ; thermoplastiques ajoutés limités à 5 % m/m sec ; carbone fossile du gisement estimé et considéré comme intégralement réémis. Conclusion du sous-agent : un char de déchets municipaux et plastiques mélangés n'est pas éligible aux CORC Puro."
+  citation: "« Mixed municipal solid waste (MSW) and assimilated waste. » [...] « Any share of biomass feedstock which cannot be demonstrated to be eligible will lead to the resulting biochar not being eligible. » [...] « The inclusion of non-volatilizing plastics, composite materials or synthetic rubbers » [...] « the total plastic content must not exceed 5% w/w (dry basis). » [...] « Biomass is not allowed to be mixed and co-fired with fossil coal nor fossil oil. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Norme privée d'un registre de crédits volontaires. Les limites de métaux lourds du biochar (section 3.5 et suivantes) n'ont pas été lues (troncature)."
+  parametres: [char_credit_carbone_eligibilite]
+
+A3-UE-REG-2024-3012-CRCF:
+  titre: "Règlement (UE) 2024/3012 du Parlement européen et du Conseil établissant un cadre de certification de l'Union relatif aux absorptions permanentes de carbone, à l'agriculture carbonée et au stockage du carbone dans des produits"
+  editeur: "Parlement européen et Conseil (EUR-Lex)"
+  date: "2024-11-27"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202403012"
+  emplacement: "article 2, points 1 et 9 ; considérant 9"
+  contenu: "Une absorption de carbone est le retrait anthropique de carbone de l'atmosphère et son stockage durable ; une absorption permanente capte et stocke du carbone atmosphérique ou biogénique pendant plusieurs siècles. Le carbone fossile d'un plastique n'est ni atmosphérique ni biogénique (déduction du sous-agent)."
+  citation: "« ‘carbon removal’ means the anthropogenic removal of carbon from the atmosphere » [...] « captures and stores atmospheric or biogenic carbon for several centuries, »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch, version anglaise (la version française n'a pas été lue). Date du règlement de mémoire (27/11/2024), non lue dans l'extrait : à vérifier. Seuls les 100 000 premiers caractères ont été lus."
+  parametres: [char_credit_carbone_eligibilite]
+
+A3-UE-REG-DELEGUE-2026-285-CRCF:
+  titre: "Commission Delegated Regulation (EU) 2026/285 of 3 February 2026 supplementing Regulation (EU) 2024/3012 by establishing the certification methodologies for permanent carbon removals activities"
+  editeur: "Commission européenne (EUR-Lex)"
+  date: "2026-02-03 (JO L du 17/04/2026)"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R0285"
+  emplacement: "considérant 10 ; annexe, section 2.2.3 (définition de Qbiochar) ; section 2.2.5.2(e)"
+  contenu: "Lorsque le biochar est le produit principal (50 % ou plus des sorties d'énergie), l'activité BCR ne peut utiliser que des déchets ou résidus au sens de la directive (UE) 2018/2001. La masse de biochar créditée exclut toute fraction issue de matière non biogénique co-traitée ; si plus de 2 % du carbone du gisement peut être non biogénique, la fraction biogénique doit être mesurée par le carbone 14. Le biochar doit respecter les seuils de substances limitées des sections 4.4.1 à 4.4.3 (non lues). Conclusion du sous-agent : seule la fraction biogénique (mesurée au 14C) d'un char de déchets mélangés pourrait au mieux être comptée, sous réserve de l'éligibilité du gisement (section 4, non lue) et des seuils de contaminants."
+  citation: "« can only use feedstocks coming from waste or residue as defined in Article 2, points (23) and (43), » [...] « The mass of biochar shall exclude any fraction from non-biogenic material also processed in the biochar production process. » [...] « If the biochar feedstock may be expected to contain a fraction of non-biogenic carbon greater than 2 % » [...] « shall be identified by carbon 14 (14C) testing; »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Les sections 4.1 à 4.4 de l'annexe (durabilité, gisements admis, seuils de contaminants) n'ont pas pu être atteintes (page EUR-Lex tronquée, document du Conseil ST 6272/26 ADD 1 aussi tronqué). Le projet de 2025 (koda.ee) indiquait que le char co-traité avec de la matière non biogénique ne peut pas être appliqué aux sols ; cette mention n'a pas été retrouvée dans le texte adopté lu (citation non obtenue)."
+  parametres: [char_credit_carbone_eligibilite]
+
+# ---------------------------------------------------------------
+# NON TROUVÉ
+# ---------------------------------------------------------------
+# - Spécifications publiées par France Ciment ou par un cimentier (Vicat, Holcim/Lafarge, Heidelberg/Calcia) pour les combustibles
+#   de substitution (PCI, chlore, soufre, métaux) : aucune fiche publique trouvée. Requêtes : « cimenterie combustibles de substitution
+#   critères d'acceptation PCI chlore soufre métaux lourds CSR spécifications France Ciment », « France Ciment taux de substitution
+#   combustibles alternatifs 2023 2024 CSR tonnes », « arrêté préfectoral complémentaire 2022 OR 2023 OR 2024 cimenterie CSR teneur en chlore ».
+#   Seuls des arrêtés ou rapports d'inspection anciens (2008, 2010) ont été lus. Arrêté Calcia (Indre-et-Loire) et rapport IED Calcia
+#   Beaucaire (gard.gouv.fr) : lecture refusée (robots). Compte rendu CSS Vicat La Grave de Peille 2023 lu : pas de critères chiffrés.
+# - Annexe I en vigueur (après arrêtés du 01/12/2025 et du 04/06/2026) de l'arrêté combustion CSR 2971 : Légifrance inaccessible
+#   (erreur de récupération sur LEGIARTI000053038116), annexe absente des pages AIDA (aida.ineris.fr/node/35740 et page texte).
+# - Spécifications sidérurgiques françaises (ArcelorMittal Dunkerque/Fos) pour charbon d'injection ou substitut carboné : non trouvées ;
+#   seule une revue IEA CCC de 2010 a été lue.
+# - Spécification publique du noir de carbone récupéré (ASTM D8178 payante) : non cherchée au-delà d'Emerton 2024 déjà au registre.
+# - Prix charbon API2 CIF ARA (Rotterdam) : absent du Pink Sheet ; source ICE/Argus payante. NON TROUVÉ.
+# - Coke de pétrole : pas de série publique autre que INSEE EACEI (déjà au registre) ; absent du Pink Sheet.
+# - Prix du charbon de bois ou des briquettes : seulement des agrégateurs commerciaux de données Eurostat (allthatstats, trendeconomy) ;
+#   source primaire Eurostat Comext non consultée. NON TROUVÉ.
+# - Prix ou gate fee récent (2024-2026) des CSR livrés en cimenterie en France publié par ADEME ou AMORCE : non trouvé ; seules
+#   Normandie 2021 et Sia Partners 2018 lues (FNADE/SN2E 2023 déjà au registre).
+# - Prix de stockage en ISDND hors TGAP récent (ADEME référentiel des coûts, AMORCE) : non trouvé. Consultés sans chiffre utile :
+#   avis Autorité de la concurrence 20-A-09 (2020, aucun prix réel, seulement un exemple « 80 euros » au § 78), rapport IGF/IGEDD
+#   mars 2026 (seulement TGAP 65 EUR/t), DREAL Pays de la Loire 2024 (majoration TGAP 5-10 EUR/t), Weka 2013 et Banque des territoires
+#   2013 (données 2010), Reporterre (79 EUR/t, données ADEME 2012, trop ancien), rapports annuels Saint-Quentinois 2025 et Miribel 2023
+#   (pas de coût unitaire), référentiel Corse des coûts 2019 (pas de coût unitaire), décret 2021-838 (mécanisme sans montant).
+# - Prix de stockage en ISDD (déchets dangereux) : NON TROUVÉ. Requête « prix de traitement installation de stockage de déchets dangereux
+#   ISDD €/tonne France tarif 2025 » ; rapport de concertation ISDD des Dièves (SARPI, 2025) lu : seulement l'investissement de 80 MEUR HT.
+# - Coût d'incinération hors TGAP récent : non trouvé au-delà de ADEME-REFCOUTS (déjà au registre).
+# - Annexe CRCF (règlement délégué 2026/285), sections 4.1 à 4.4 (gisements admis, seuils de contaminants du biochar) : non atteintes.
+# - Teneur en chlore et en cendres du char Urban Rig : donnée d'entrée manquante (non mesurée), indispensable pour tout débouché combustible.

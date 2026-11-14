@@ -1,0 +1,354 @@
+# Lot I, carbone : vérification dans les textes de droit qu'une pyrolyse de déchets en France ne peut pas obtenir de crédit carbone vendable
+# Sous-agent de recherche, 15/10/2026. Complète lot-E-carbone.yaml (fiches déjà faites non refaites : considérant 98 dir. 2023/959,
+# COM(2026) 616, décret 2018-1043, arrêté LBC 05/09/2025 (articles 2, 3, 6, 8, 15, 19 déjà cités), plaquette DREAL, Verra plastiques,
+# VMR0007, GS 448, Puro, et dans lot-C-char.yaml : CRCF 2024/3012 art. 2 points 1 et 9, règlement délégué 2026/285).
+# Méthode : EUR-Lex lu en texte intégral dans le navigateur Chrome de l'utilisateur (nouvel onglet, lecture seule, extraction du texte par
+# script dans la page, onglet refermé) car WebFetch tronque les textes au-delà de 100 000 à 120 000 caractères. Verra VCS Standard v5.0 lu
+# de la même façon (PDF décodé par pdf.js dans la page verra.org). Autres textes par WebFetch.
+
+# ---------------------------------------------------------------
+# 1. Directive 2003/87/CE (SEQE-UE), version consolidée
+# ---------------------------------------------------------------
+
+A3I-UE-DIR-2003-87-ANNEXE-I:
+  titre: "Directive 2003/87/CE établissant un système d'échange de quotas d'émission de gaz à effet de serre dans l'Union, version consolidée au 01/03/2024 (CELEX 02003L0087-20240301), article 2(1), article 3(t), annexe I"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-03-01 (dernière version consolidée listée par EUR-Lex le 15/10/2026)"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301"
+  emplacement: "Article 2(1) ; article 3, point (t) ; annexe I, point 5 et ligne « Combustion of fuels »"
+  contenu: "Le SEQE s'applique aux activités de l'annexe I. La combustion est toute oxydation de combustibles, quel que soit l'usage de l'énergie produite. L'activité « combustion » vise les installations de puissance thermique nominale totale > 20 MW, sauf les installations d'incinération de déchets dangereux ou municipaux ; depuis le 01/01/2024, l'incinération de déchets municipaux > 20 MW est seulement soumise à surveillance et déclaration (articles 14 et 15), sans restitution. Le SEQE est un système de quotas (obligation de restituer), il ne crée aucun crédit pour une installation qui réduit ou évite des émissions. Conséquence pour Urban Rig (lecture du sous-agent) : si la combustion du gaz de pyrolyse sur site dépasse 20 MW thermiques et que l'installation n'est pas une installation d'incinération de déchets municipaux, elle pourrait entrer dans le SEQE comme émetteur (coût), jamais comme générateur de crédits. Puissance thermique du brûleur Urban Rig : non connue du sous-agent, non estimée."
+  citation: "This Directive shall apply to the activities listed in Annexes I and III ; ‘combustion’ means any oxidation of fuels, regardless of the way in which the heat, electrical or mechanical energy produced by this process is used ; Combustion of fuels in installations with a total rated thermal input exceeding 20 MW (except in installations for the incineration of hazardous or municipal waste) From 1 January 2024, combustion of fuels in installations for the incineration of municipal waste with a total rated thermal input exceeding 20 MW, for the purposes of Articles 14 and 15."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome de l'utilisateur (EUR-Lex, texte intégral, lecture seule) car WebFetch tronque la page à 119 000 caractères. Version anglaise. Le point 5 de l'annexe I dit aussi : « all units in which fuels are combusted, other than units for the incineration of hazardous or municipal waste, shall be included ». Remplace la fiche secondaire A3-ZWE-SEQE-ART30-2024 pour l'annexe I."
+  parametres: [seqe_perimetre_pyrolyse, credit_carbone_seqe]
+
+A3I-UE-DIR-2003-87-ART11A:
+  titre: "Directive 2003/87/CE consolidée au 01/03/2024, article 11a « Use of CERs and ERUs from project activities in the EU ETS before the entry into force of an international agreement on climate change »"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-03-01"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301"
+  emplacement: "Article 11a, paragraphes 1 à 4 (modifié par M14, directive (UE) 2023/958)"
+  contenu: "Dans la version en vigueur, l'article 11a ne permet plus l'usage de crédits internationaux qu'aux exploitants d'aéronefs (unités de l'article 6(4) de l'accord de Paris, programmes CORSIA, accords bilatéraux, et « crédits délivrés pour des projets de niveau Union au titre de l'article 24a »). Les paragraphes sur les installations fixes ne visent que les projets MOC/MDP jusqu'au 31/12/2012. Aucune disposition ne permet à une installation fixe d'utiliser ou de générer des crédits ; aucune ne permet de créer des crédits pour un projet situé en France."
+  citation: "aircraft operators that hold an air operator certificate issued by a Member State [...] shall be able to use the following units [...] (d) credits issued in respect of Union level projects pursuant to Article 24a. ; Until 31 December 2012, for JI and CDM project activities which reduce or limit directly the emissions of an installation falling within the scope of this Directive, ERUs and CERs may be issued only if an equal number of allowances is cancelled"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral). Les [...] marquent des coupures du sous-agent. Le texte ne contient pas de date « fin d'usage après 2020 » pour les installations ; la fin de l'usage par les installations résulte de l'absence de toute disposition en ce sens dans la version en vigueur (lecture, pas citation)."
+  parametres: [credit_carbone_seqe, credits_internationaux_seqe]
+
+A3I-UE-DIR-2003-87-ART24A:
+  titre: "Directive 2003/87/CE consolidée au 01/03/2024, article 24a « Harmonised rules for projects that reduce emissions »"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-03-01"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301"
+  emplacement: "Article 24a, paragraphes 1 et 3 (paragraphe 2 supprimé)"
+  contenu: "La Commission PEUT adopter des mesures (actes délégués) pour délivrer des quotas ou crédits pour des projets gérés par les États membres réduisant des émissions hors SEQE, sans double comptage. C'est une faculté. Le paragraphe 3 permet à un État membre de refuser des crédits pour certains types de projets sur son territoire. Aucun acte délégué établissant cette procédure n'a été trouvé (voir NON TROUVÉ) : l'article est donc inopérant à ce jour. Le considérant 20 du règlement (UE) 2018/842 (répartition de l'effort) mentionne la possibilité de partenariats public-privé pour ces projets."
+  citation: "the Commission may adopt measures for issuing allowances or credits in respect of projects administered by Member States that reduce greenhouse gas emissions not covered by the EU ETS ; Any such measures shall not result in the double-counting of emission reductions ; A Member State can refuse to issue allowances or credits in respect of certain types of projects that reduce greenhouse gas emissions on its own territory."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral). L'absence d'acte délégué est un constat de recherche (EUR-Lex), pas une citation d'un texte qui l'affirmerait."
+  parametres: [credit_carbone_seqe, seqe_article_24a]
+
+A3I-UE-DIR-2003-87-ART30-7:
+  titre: "Directive 2003/87/CE consolidée au 01/03/2024, article 30, paragraphe 7 (incinération des déchets municipaux)"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-03-01"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301"
+  emplacement: "Article 30, paragraphe 7"
+  contenu: "Rapport de la Commission au plus tard le 31/07/2026 sur la faisabilité d'inclure les installations d'incinération de déchets municipaux dans le SEQE, en vue d'une inclusion à partir de 2028, avec option de retrait jusqu'au 31/12/2030. Texte primaire qui confirme la fiche secondaire A3-ZWE-SEQE-ART30-2024. Une inclusion future ferait payer l'incinération (scénario de référence plus cher), sans créer de crédit pour une pyrolyse ; elle n'ouvre aucun mécanisme de crédit."
+  citation: "By 31 July 2026, the Commission shall present a report to the European Parliament and to the Council in which it shall assess the feasibility of including municipal waste incineration installations in the EU ETS, including with a view to their inclusion from 2028 and with an assessment of the potential need for an option for a Member State to opt out until 31 December 2030."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral)."
+  parametres: [seqe_incineration_calendrier_2023]
+
+# ---------------------------------------------------------------
+# 2. CRCF, règlement (UE) 2024/3012 (complément à A3-UE-REG-2024-3012-CRCF du lot C)
+# ---------------------------------------------------------------
+
+A3I-UE-REG-2024-3012-ART1-CONSID10:
+  titre: "Règlement (UE) 2024/3012 du Parlement européen et du Conseil du 27 novembre 2024 établissant un cadre de certification de l'Union relatif aux absorptions permanentes de carbone, à l'agriculture carbonée et au stockage du carbone dans des produits"
+  editeur: "Parlement européen et Conseil (EUR-Lex)"
+  date: "2024-11-27"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R3012"
+  emplacement: "Article 1(1) ; article 2, points (2) et (11) ; article 3 ; considérant (10)"
+  contenu: "Le CRCF ne certifie que deux choses : des absorptions de carbone et des réductions d'émissions des SOLS (pools de carbone biogénique, sols agricoles). Le considérant 10 exclut expressément les activités qui ne produisent ni absorption ni réduction d'émissions des sols, en citant les projets d'énergie renouvelable. Le stockage dans des produits exige du carbone atmosphérique ou biogénique stocké au moins 35 ans. Une réduction d'émissions industrielle, un CO2 évité par substitution de combustible ou par détournement de l'incinération n'entrent pas dans le champ. Le carbone fossile de l'huile ou du char d'Urban Rig n'est ni atmosphérique ni biogénique. Date du règlement vérifiée (27/11/2024), ce qui lève le doute noté dans la fiche du lot C."
+  citation: "this Regulation establishes a voluntary Union framework for the certification of carbon removals and soil emission reductions ; ‘soil emission reduction’ means the reduction of net greenhouse gas emissions from biogenic carbon pools ; ‘carbon storage in products’ means any practice or process that captures and stores atmospheric or biogenic carbon for at least 35 years in long-lasting products ; activities which do not result in either carbon removals or soil emission reductions, such as avoided deforestation projects or renewable energy projects, should not be included in the scope of the Union certification framework."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral, version anglaise). Article 3 : seules les absorptions et réductions d'émissions des sols sont éligibles à la certification."
+  parametres: [crcf_champ, credit_carbone_crcf]
+
+# ---------------------------------------------------------------
+# 3. Label bas-carbone : liste officielle des méthodes
+# ---------------------------------------------------------------
+
+A3I-FR-LBC-METHODES-SITE-2025:
+  titre: "Présentation des méthodes du Label bas carbone (site officiel du Label bas-carbone)"
+  editeur: "Ministère de la transition écologique, DGEC"
+  date: "2025-10-06 (mise à jour de la page)"
+  type: reglementaire
+  url: "https://label-bas-carbone.ecologie.gouv.fr/presentation-des-methodes-du-label-bas-carbone"
+  emplacement: "Rubriques « Les méthodes approuvées » et « Le label bas-carbone ne s'applique pas... »"
+  contenu: "Liste nominative officielle : forêt (Boisement, Reconstitution de peuplements forestiers dégradés, Balivage, Gestion forestière à stock continu) ; agriculture (CarbonAgri, Haies, Plantation de vergers, SOBAC'ECO TMM, Ecométhane, Grandes cultures) ; bâtiment (Rénovation, Bâtiment neuf biosourcé) ; transport (Tiers-lieux) ; marin (Herbiers de Posidonie, Restauration de mangroves ou forêts marécageuses) ; urbain (Ville arborée) ; plus Restauration hydraulique des tourbières dégradées (lien de la page d'accueil). Aucune méthode déchets, recyclage, plastiques, pyrolyse ou industrie. La page cite le secteur « déchet » parmi les secteurs diffus visés, exclut les émissions directement soumises au SEQE, mais admet que des réductions INDIRECTES puissent être reconnues pour ces quantités."
+  citation: "Un projet ne peut être labellisé que s’il est mis en œuvre conformément à une méthode approuvée ; Le Label bas-carbone vise à susciter le développement de projets dans tous les secteurs diffus : agriculture, forêt, écosystèmes marins, transports, bâtiment, déchet, etc. ; le Label bas-carbone ne s’applique pas aux émissions de GES directement soumises au système d'échange de quotas d'émissions de l'Union européenne (SEQE-UE). ; Des réductions d'émissions indirectes peuvent toutefois être reconnues par le label bas-carbone pour ce type de quantités de GES."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (mtect.fr/714 redirige vers label-bas-carbone.ecologie.gouv.fr ; texte extrait par script, lecture seule). Le décompte (forêt « trois méthodes » mais quatre noms listés) est celui de la page. Les arrêtés d'approbation de chaque méthode au JO n'ont pas été lus (Légifrance bloqué)."
+  parametres: [label_bas_carbone_methodes]
+
+A3I-FR-LBC-PROJETS-METHODES-2025-10:
+  titre: "Liste des projets de méthode, publique, octobre 2025"
+  editeur: "Ministère de la transition écologique, DGEC (site du Label bas-carbone)"
+  date: "2025-10"
+  type: reglementaire
+  url: "https://label-bas-carbone.ecologie.gouv.fr/sites/default/files/2025-10/Liste%20projets%20de%20m%C3%A9thode_publique%20Octobre%202025.pdf"
+  emplacement: "Tableau unique"
+  contenu: "Quatorze projets de méthodes en cours (forêt, espaces naturels, agriculture). Aucun projet sur les déchets, le recyclage, la pyrolyse, le biochar, l'industrie ou la valorisation énergétique. Le seul terme proche est un projet agricole d'algues produisant des bioplastiques."
+  citation: "Production d’algues pour substitution d’engrais ammonitrés et production de bioplastiques"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Liste « non exhaustive » selon la page de présentation ; restitution du tableau par l'outil (une ligne a pu être omise)."
+  parametres: [label_bas_carbone_methodes]
+
+A3I-FR-ARRETE-LBC-2025-ART2-3:
+  titre: "Arrêté du 5 septembre 2025 définissant le référentiel du Label bas carbone, articles 2 et 3 (complément à A3-FR-ARRETE-LBC-2025)"
+  editeur: "Ministère chargé de l'écologie (texte reproduit par INERIS, AIDA)"
+  date: "2025-09-05"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-050925-definissant-referentiel-label-bas-carbone"
+  emplacement: "Article 2 (définitions : crédits directs, indirects, additionnalité) ; article 3 (usages) ; articles 4 et 21 (préfet de région, commune du projet)"
+  contenu: "Ajout par rapport au lot E : l'arrêté définit des crédits INDIRECTS (scope 2 et 3), qui couvrent notamment l'utilisation ultérieure des produits vendus. Une méthode future pourrait donc en théorie reconnaître des réductions indirectes d'une huile ou d'un char se substituant à un combustible fossile chez un client. Usages : contribution ou compensation, sur notification au ministère ; exclus de la CDN et des restitutions SEQE. Le texte ne mentionne ni l'article 6 de l'accord de Paris, ni l'ajustement correspondant, ni le transfert international. La localisation en France n'est pas écrite mais découle de la compétence du préfet de région et de la notification de la commune du projet (le décret 2018-1043 vise le territoire français, voir A3-FR-DECRET-2018-1043)."
+  citation: "Les crédits carbone indirects sont les réductions d'émissions liées à la production de l'énergie importée par les activités ; couvertes par le projet (déplacement des salariés, production des matières premières, ; transport amont ou aval des marchandises, utilisation ultérieure des produits vendus, etc.). ; Les crédits carbone peuvent être utilisés à des fins de contribution carbone tout comme à des fins de compensation"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (Légifrance inaccessible). Citation en segments restitués par l'outil (125 caractères max). La phrase verbatim excluant la CDN n'a pas été obtenue (seulement l'extrait « les contributions déterminées au niveau national prévues par l'accord de Paris »)."
+  parametres: [label_bas_carbone_conditions]
+
+# ---------------------------------------------------------------
+# 4. Accord de Paris, article 6, et cible de l'UE
+# ---------------------------------------------------------------
+
+A3I-ACCORD-PARIS-ART6:
+  titre: "Accord de Paris (JO UE L 282 du 19/10/2016), article 6"
+  editeur: "Nations unies, publié par l'Union européenne (EUR-Lex)"
+  date: "2015-12-12"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:22016A1019(01)"
+  emplacement: "Article 6, paragraphes 2, 3 et 5"
+  contenu: "Un transfert international de résultats d'atténuation (ITMO) suppose l'autorisation des Parties et une comptabilité évitant le double comptage ; une réduction issue du mécanisme 6.4 ne peut pas compter à la fois pour l'hôte et pour l'acquéreur. Un crédit issu d'une réduction en France vendu à un autre pays exigerait une autorisation de la France (et de l'UE, dont la CDN est commune) et un ajustement correspondant."
+  citation: "shall apply robust accounting to ensure, inter alia, the avoidance of double counting ; The use of internationally transferred mitigation outcomes to achieve nationally determined contributions under this Agreement shall be voluntary and authorized by participating Parties. ; shall not be used to demonstrate achievement of the host Party's nationally determined contribution if used by another Party"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex). Texte de 2015 toujours en vigueur. unfccc.int refusé par WebFetch."
+  parametres: [article6_paris]
+
+A3I-UE-REG-2021-1119-ART4:
+  titre: "Règlement (UE) 2021/1119 (loi européenne sur le climat), article 4(1)"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2021-06-30"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1119"
+  emplacement: "Article 4, paragraphe 1, premier alinéa"
+  contenu: "La cible 2030 de l'UE est une réduction INTÉRIEURE nette d'au moins 55 % par rapport à 1990. Les réductions faites en France comptent dans cette cible commune ; aucun texte lu ne prévoit d'autoriser leur transfert à d'autres pays. Le texte lu ne mentionne pas les crédits internationaux."
+  citation: "the binding Union 2030 climate target shall be a domestic reduction of net greenhouse gas emissions ; (emissions after deduction of removals) by at least 55 % compared to 1990 levels by 2030."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (version de base 2021, non consolidée ; la modification pour la cible 2040 n'a pas été lue)."
+  parametres: [article6_paris, double_comptage_inventaire]
+
+A3I-CONSEIL-UE-NDC-2025:
+  titre: "Préparation du Conseil Environnement du 4 novembre 2025 : soumission par l'UE d'une CDN actualisée à la CCNUCC, approbation (doc. 14319/25)"
+  editeur: "Conseil de l'Union européenne"
+  date: "2025-10-29"
+  type: reglementaire
+  url: "https://data.consilium.europa.eu/doc/document/ST-14319-2025-INIT/en/pdf"
+  emplacement: "Note, point 10 ; annexe, section I point 6, points 12 et 13, section IV"
+  contenu: "Projet de CDN de l'UE : cible 2030 décrite comme réduction intérieure nette ; pour 2040, possible contribution limitée de crédits internationaux de haute qualité au titre de l'article 6 (texte entre crochets, document de travail). Le document ne contient aucune déclaration d'autorisation par l'UE de transferts d'ITMO vers d'autres pays. Il traite l'UE comme acheteuse potentielle de crédits, pas comme vendeuse."
+  citation: "a net domestic reduction of at least 55% in GHG emissions by 2030 compared to 1990 ; includes a possible limited adequate contribution of high-quality international credits under Article 6 of the Paris Agreement"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Document LIMITE de travail (texte entre crochets), pas la CDN déposée ; statut secondaire pour cette raison. La CDN finale déposée à la CCNUCC n'a pas été lue."
+  parametres: [article6_paris]
+
+# ---------------------------------------------------------------
+# 5. Droit des allégations
+# ---------------------------------------------------------------
+
+A3I-FR-DECRET-2022-539:
+  titre: "Décret n° 2022-539 du 13 avril 2022 relatif à la compensation carbone et aux allégations de neutralité carbone dans la publicité (articles D. 229-106 à D. 229-109 du code de l'environnement)"
+  editeur: "République française (texte reproduit par INERIS, AIDA)"
+  date: "2022-04-13 (en vigueur au 01/01/2023)"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/decret-ndeg-2022-539-130422-relatif-a-compensation-carbone-allegations-neutralite"
+  emplacement: "Articles D. 229-106 (champ), D. 229-107 (bilan), D. 229-108 (rapport, annexe 3), D. 229-109 (projets de compensation)"
+  contenu: "Le décret encadre les allégations « neutre en carbone » et équivalentes d'un ANNONCEUR (bilan cycle de vie ISO 14067, trajectoire de réduction, compensation des émissions résiduelles sans double comptage). Les projets reconnus par le Label bas-carbone sont réputés conformes. Il ne crée aucun crédit et ne reconnaît pas le « CO2 évité » comme unité ; la seule occurrence de « évitées » est la hiérarchie éviter, réduire, compenser. Urban Rig ne pourrait au mieux qu'apparaître comme projet de compensation d'un annonceur s'il disposait de crédits issus d'un standard reconnu, ce qui renvoie aux fiches label et standards."
+  citation: "prioritairement évitées, puis réduites, et enfin compensées ; « Compensation réalisée en France »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (Légifrance inaccessible) ; l'outil a refusé de reproduire les articles en entier, extraits courts seulement. État « en vigueur » selon AIDA, sans date de mise à jour : abrogation éventuelle par la transposition de la directive 2024/825 non vérifiée (voir A3I-KPMG-ECGT-2026)."
+  parametres: [allegations_neutralite_carbone]
+
+A3I-FR-L229-68-CMS:
+  titre: "France: carbon neutrality claims (CMS Green Globe)"
+  editeur: "CMS (cabinet d'avocats)"
+  date: "2023-08-28"
+  type: entreprise
+  url: "https://cms.law/en/int/publication/cms-green-globe/news-in-sustainability-claims/france-carbon-neutrality-claims"
+  emplacement: "Corps de l'article"
+  contenu: "L'article L. 229-68 du code de l'environnement interdit d'affirmer dans une publicité qu'un produit ou service est neutre en carbone sauf mise à disposition d'un bilan d'émissions directes et indirectes, d'une trajectoire de réduction et des modalités de compensation ; amende de 100 000 EUR pour une personne morale (L. 229-69), pouvant aller jusqu'au montant de la dépense publicitaire. Rien sur le « CO2 évité »."
+  citation: "it is forbidden to state in an advertisement that a product or service is carbon neutral ; A greenhouse gas emissions report that includes both direct and indirect emissions from the product or service; ; a fine of €100,000 for a legal entity"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale (cabinet) citant la loi ; le texte de L. 229-68 n'a pas pu être lu sur Légifrance (vérification anti-robot que le sous-agent ne peut pas franchir) ni sur AIDA (page du décret 2022-538 qui ne le reproduit pas)."
+  parametres: [allegations_neutralite_carbone]
+
+A3I-UE-DIR-2024-825-ANNEXE-4C:
+  titre: "Directive (UE) 2024/825 du 28 février 2024 (donner aux consommateurs les moyens d'agir en faveur de la transition verte), annexe I point 4 quater et article 4"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2024-02-28"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L0825"
+  emplacement: "Annexe I, point 4c (pratiques commerciales réputées déloyales) ; article 4(1)"
+  contenu: "À partir du 27/09/2026, est interdite en toutes circonstances l'allégation qu'un produit a un impact neutre, réduit ou positif en termes d'émissions sur la base d'une compensation. Cela réduit le débouché « compensation produit » de crédits volontaires auprès des annonceurs. Le texte ne vise pas l'usage du CO2 évité dans une communication d'entreprise hors produit (non tranché)."
+  citation: "Claiming, based on the offsetting of greenhouse gas emissions, ; shall apply those measures from 27 September 2026."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (citation restituée en deux extraits par l'outil)."
+  parametres: [allegations_neutralite_carbone]
+
+A3I-KPMG-ECGT-2026:
+  titre: "Transposition de la directive Empowering Consumers"
+  editeur: "KPMG Avocats"
+  date: "2026-01-20"
+  type: entreprise
+  url: "https://kpmg.com/av/fr/avocats/eclairages/2026/01/transposition-de-la-directive-empowering-consumers.html"
+  emplacement: "Corps de l'article"
+  contenu: "Selon le cabinet, le projet de loi d'adaptation au droit de l'UE en matière économique (ECOM2524721L, déposé au Sénat) transpose la directive 2024/825 pour une application au 27/09/2026, abroge les dispositions correspondantes du code de l'environnement et inscrit l'allégation de neutralité fondée sur la compensation dans la liste des pratiques commerciales trompeuses per se du code de la consommation. Adoption définitive non vérifiée."
+  citation: "Ces nouvelles dispositions devraient entrer en application le 27 septembre 2026. ; prévoit l'abrogation des dispositions correspondantes du code de l'environnement"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale ; projet de loi, pas loi promulguée."
+  parametres: [allegations_neutralite_carbone]
+
+# ---------------------------------------------------------------
+# 6. Dispositifs voisins (pas des crédits carbone)
+# ---------------------------------------------------------------
+
+A3I-FR-CODE-ENERGIE-L221-7-CEE:
+  titre: "Code de l'énergie, partie législative relative aux certificats d'économies d'énergie (compilation ministérielle), article L. 221-7"
+  editeur: "Ministère de la transition écologique"
+  date: "non datée (cite la loi n° 2025-391 du 30/04/2025 comme dernière modification)"
+  type: reglementaire
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/Code%20de%20l%27%C3%A9nergie%20-%20Partie%20l%C3%A9gislative%20CEE_0.pdf"
+  emplacement: "Article L. 221-7"
+  contenu: "Les économies d'énergie réalisées dans des installations soumises au SEQE peuvent donner lieu à CEE dans des conditions fixées par décret ; la substitution d'une énergie non renouvelable par une source renouvelable ou de récupération pour la production de chaleur peut donner lieu à CEE. Les CEE rémunèrent des kWh cumac économisés, pas des tonnes de CO2."
+  citation: "Les actions d'économies d'énergie réalisées dans les installations classées pour la protection de l'environnement ; mentionnées à l'article L. 229-5 du code de l'environnement peuvent donner lieu à la délivrance ; une source d'énergie renouvelable ou de récupération pour la production de chaleur"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (compilation du ministère, pas Légifrance). Le décret d'application sur les installations SEQE n'a pas été lu."
+  parametres: [cee_dispositif]
+
+A3I-FR-CEE-IND-UT-137:
+  titre: "Fiche d'opération standardisée IND-UT-137 (vA84-3 à compter du 25/05/2026) : Système de pompe(s) à chaleur en rehausse de température de chaleur fatale récupérée"
+  editeur: "Ministère de la transition écologique"
+  date: "2026-05-25"
+  type: reglementaire
+  url: "https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-137%20vA84-3%20%C3%A0%20compter%20du%2025-05-2026.pdf"
+  emplacement: "Sections 1 (secteur), 2 (dénomination), 3 (conditions), 4 (montant)"
+  contenu: "Seule fiche standardisée industrie lue qui valorise de la chaleur fatale d'un procédé du même site, y compris sur un site neuf, via des pompes à chaleur électriques (≤ 5 MW) ; montant 10,986 × (Q – Eélec) kWh cumac. Liste des 34 fiches industrie de la page ministérielle relevée : récupération de chaleur sur compresseur d'air (IND-UT-103), économiseur et condenseur sur fumées de chaudière vapeur (IND-UT-104, 130), brûleur avec récupération sur four (IND-UT-118), conversion de chaleur fatale en électricité ou air comprimé (IND-UT-138), stockage de chaleur fatale (IND-UT-139). Aucune fiche ne vise la valorisation d'un gaz de procédé ou de pyrolyse en combustible. Hors fiche, la voie est l'opération spécifique (non lue)."
+  citation: "L'opération peut concerner un site existant, un nouveau site, une extension d'un site ; La chaleur fatale valorisée est issue d'un process industriel situé sur le site où l'opération est réalisée."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; liste des fiches relevée dans le navigateur Chrome sur https://www.ecologie.gouv.fr/politiques-publiques/operations-standardisees-deconomies-denergie (lecture seule). Fiche IND-UT-138 complète non lue (seule la partie A, attestation, a été lue)."
+  parametres: [cee_dispositif]
+
+A3I-UE-DIR-2018-2001-ART2-GO:
+  titre: "Directive (UE) 2018/2001 relative à la promotion de l'utilisation de l'énergie produite à partir de sources renouvelables, consolidée au 20/11/2023, article 2"
+  editeur: "Union européenne (EUR-Lex)"
+  date: "2023-11-20"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02018L2001-20231120"
+  emplacement: "Article 2, second alinéa, points (1), (12) et (24)"
+  contenu: "La garantie d'origine de la directive prouve une énergie produite à partir de sources renouvelables, non fossiles. La biomasse inclut seulement la fraction biodégradable des déchets d'origine biologique. Une énergie issue des plastiques (fossiles) n'ouvre pas de garantie d'origine renouvelable ; seule la fraction biogénique des ordures ménagères pourrait y prétendre, et Urban Rig ne produit pas d'électricité selon les consignes (gaz brûlé sur place). L'article 19 (régime des garanties d'origine) n'a pas été atteint par l'outil."
+  citation: "energy from renewable non-fossil sources ; ‘guarantee of origin’ means an electronic document which has the sole function of providing evidence to a final customer ; that a given share or quantity of energy was produced from renewable sources; ; as well as the biodegradable fraction of waste, including industrial and municipal waste of biological origin;"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (100 000 premiers caractères). Les garanties d'origine françaises pour l'hydrogène bas-carbone (code de l'énergie) et pour le gaz n'ont pas été lues (Légifrance bloqué)."
+  parametres: [garanties_origine]
+
+# ---------------------------------------------------------------
+# 7. Standards volontaires et J-Credit : règles d'éligibilité
+# ---------------------------------------------------------------
+
+A3I-VERRA-VCS-STANDARD-V5:
+  titre: "VCS Standard, v5.0"
+  editeur: "Verra"
+  date: "2025-12-16"
+  type: norme
+  url: "https://verra.org/wp-content/uploads/2025/12/VCS-Standard-v5.0.pdf"
+  emplacement: "Section 2.1.1, tableau 1 (p. 9 à 10 du document, pages 10-11 du PDF) ; section 3.22, règles 3.22.1 à 3.22.6 et notes 91 à 94 (p. 71 à 73)"
+  contenu: "Aucune exclusion des pays de l'UE ni de l'annexe I : les unités sans étiquette article 6 peuvent servir au marché volontaire, y compris entre pays de l'annexe I « sauf réglementation contraire de ces pays ». Le tableau 1 réserve aux pays les moins avancés la substitution d'un combustible fossile par un autre moins carboné, MAIS exclut de cette restriction les déchets contenant des produits pétroliers usagés (plastiques usagés, huiles). Interdiction de créditer une réduction déjà couverte par un système d'échange ou une limite contraignante, sauf preuve (lettre de l'administrateur) d'absence de recouvrement ou d'annulation des unités. Interdiction du double crédit avec un autre certificat environnemental lié aux GES. Une méthodologie approuvée applicable reste nécessaire : les deux projets de méthodologies Verra proches (M0417 dépolymérisation de plastiques en produits chimiques, M0173 substitution de plastique vierge) ont été rejetés le 29/03/2026."
+  citation: "This applies to all voluntary carbon market transactions globally, including within or between United Nations Framework Convention on Climate Change (UNFCCC) Annex I countries (unless otherwise regulated by those countries). ; Activities involving the following are not restricted to the default eligibility: • Captured flare or vent gas • Waste containing previously used petroleum products (e.g., used plastics, oils, lubricants) ; 3.22.3 Project proponents shall not seek credit for the same GHG emission reduction or carbon dioxide removal with the VCS Program and an emissions trading program or binding emission limit."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 : PDF bloqué pour WebFetch (robots) et page HTML tronquée ; texte décodé par pdf.js dans un onglet verra.org du navigateur Chrome de l'utilisateur (lecture seule, onglet refermé). v4.7 reste active jusqu'au 01/01/2027. Pages M0417 et M0173 lues via WebFetch : https://verra.org/methodologies/methodology-for-the-production-of-chemical-products-from-raw-materials-derived-from-waste-plastic-depolymerization/ et https://verra.org/methodologies/methodology-for-the-displacement-of-virgin-petroleum-based-plastic-production/ (« Rejected on March 29, 2026 »). Aucune méthodologie VCS active couvrant la pyrolyse de déchets en combustible n'a été trouvée (recherche non exhaustive)."
+  parametres: [credits_carbone_vcs_dechets, vcs_eligibilite_ue]
+
+A3I-GS-501-V3-2-2025:
+  titre: "GHG Emissions Reduction & Sequestration Product Requirements, version 3.2 (501)"
+  editeur: "The Gold Standard Foundation"
+  date: "2025-12-12"
+  type: norme
+  url: "https://globalgoals.goldstandard.org/standards/501_V3.2_PR_GHG-Emissions-Reductions-Sequestration.pdf"
+  emplacement: "Sections 3.1.1, 5.1.1, 14.3.2, 14.3.6, 15.1.2, 15.1.3, 15.1.7 ; annexe A"
+  contenu: "Pas de liste de pays exclus pour les GSVER, mais si le pays hôte a un dispositif obligatoire de réduction, le projet doit prouver l'absence de double comptage ou faire annuler un nombre équivalent d'unités éligibles avant chaque émission. Types éligibles limités : énergie renouvelable (sources non fossiles), efficacité énergétique, traitement et élimination des déchets, terres et forêts, retrait de CO2 avec méthodologie approuvée. Aucune méthodologie Gold Standard pour la pyrolyse de plastiques n'a été trouvée (voir A3-GS-448-2025, limitée aux métaux)."
+  citation: "where host countries or states have mandatory operational schemes to reduce GHG emissions in any form ; demonstrate with documentary evidence that no double counting can occur ; the project owner shall demonstrate that Eligible Cancellation Units are cancelled by or on behalf of the project. ; non-fossil and renewable energy sources"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (extraits restitués par l'outil)."
+  parametres: [credits_carbone_gold_standard]
+
+A3I-IEA-JCREDIT:
+  titre: "J-Credit Scheme (base de données des politiques de l'AIE)"
+  editeur: "Agence internationale de l'énergie"
+  date: "2017-11-05 (dernière mise à jour de la fiche)"
+  type: etude_publique
+  url: "https://www.iea.org/policies/1777-j-credit-scheme"
+  emplacement: "Description de la politique"
+  contenu: "Le J-Credit certifie, par le gouvernement japonais, des réductions et absorptions réalisées au Japon. Une usine en France n'est pas éligible, même si le constructeur (OneWorld) est japonais."
+  citation: "The J-Credit Scheme is designed to certify the amount of greenhouse gas emissions reduced and removed by sinks within Japan."
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Fiche AIE de 2017 (plus de huit ans) qui décrit le dispositif ; le site officiel https://japancredit.go.jp/english/ n'a pas pu être lu (permission d'accès non accordée dans le délai)."
+  parametres: [jcredit_eligibilite]
+
+# ===============================================================
+# NON TROUVÉ
+# ===============================================================
+# - Acte délégué de la Commission adopté au titre de l'article 24a de la directive 2003/87/CE : aucun trouvé. Recherches EUR-Lex (rapide,
+#   sous-domaine LEGISLATION) : « "pursuant to Article 24a" "2003/87/EC" » (résultats : règlement 2018/842, directive 2023/958, décision
+#   406/2009, règlement délégué 2019/1124 sur le registre) et « "Union level projects" "Article 24a" » (directive 2023/958 seulement) ;
+#   recherche web « EU ETS "Article 24a" domestic offset ... ». Aucun texte officiel affirmant explicitement qu'aucun acte n'a été adopté.
+# - Version consolidée de la directive 2003/87/CE postérieure au 01/03/2024 : aucune listée par EUR-Lex (page eli/dir/2003/87/oj et page
+#   ALL) le 15/10/2026 ; d'éventuelles modifications de 2025-2026 non intégrées n'ont pas été vérifiées.
+# - Texte de l'article L. 229-68 et L. 229-69 du code de l'environnement en source primaire : Légifrance (recherche par numéro d'article et
+#   JORFARTI000043956989) bloqué par une vérification anti-robot ; AIDA ne reproduit pas l'article. Cité seulement via CMS (secondaire).
+# - Loi française de transposition de la directive 2024/825 (adoption, date, numéro) : non trouvée ; seul le projet ECOM2524721L (KPMG).
+# - Position officielle de la France sur l'autorisation (ou le refus) de transferts article 6 de réductions réalisées en France : aucun texte
+#   officiel trouvé (recherche « France autorisation article 6.2 accord de Paris transfert résultats d'atténuation projets situés en
+#   France ajustement correspondant ministère »). La CDN de l'UE finale déposée à la CCNUCC n'a pas été lue (seul le projet du Conseil).
+# - Arrêtés d'approbation de chaque méthode du Label bas-carbone au JO : non lus (Légifrance bloqué) ; liste lue sur le site officiel.
+# - Fiche CEE ou programme couvrant la valorisation d'un gaz de procédé : aucune fiche standardisée trouvée parmi les 34 fiches industrie ;
+#   opérations spécifiques et programmes CEE non examinés. Décret d'application de L. 221-7 (installations SEQE) non lu.
+# - Garanties d'origine françaises (code de l'énergie, hydrogène renouvelable ou bas-carbone, gaz) pour une énergie issue de déchets non
+#   biogéniques : articles non lus (Légifrance bloqué). Article 19 de la directive 2018/2001 non atteint (troncature WebFetch).
+# - Site officiel J-Credit (japancredit.go.jp) : non lu (accès non accordé).
+# - Méthodologie VCS ou Gold Standard ACTIVE couvrant la pyrolyse de déchets mélangés en combustible : non trouvée (recherche
+#   « Verra VCS methodology plastic waste pyrolysis fuel substitution ... » ; seules des méthodologies rejetées M0417, M0173 et les
+#   méthodologies plastiques ou recyclage matière déjà fichées au lot E).

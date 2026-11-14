@@ -1,0 +1,270 @@
+# Fiches A8 PRIX : prix d'elimination des dechets non dangereux (UVE / ISDND), France et Ile-de-France
+# Consultation : 2026-10-15. Lecture via outil de recuperation web (extraction texte des PDF) ; citations = extraits courts mot pour mot.
+# Convention : "lu" = document primaire ouvert et lu ; "secondaire" = chiffre lu dans une reprise (presse) d'une source primaire non ouverte ;
+# "non-verifie" = chiffre lu mais non source ou non recoupe.
+
+- id: A8-PRIX-AMORCE-DT156-2023
+  titre: "Recettes de vente d'electricite et de chaleur des Unites de Valorisation Energetique des dechets - donnees 2023 (DT156)"
+  editeur: "AMORCE, avec le soutien de l'ADEME (ref. ADEME 012805)"
+  date: "2025-05 (mise en ligne 2025-06-04)"
+  annee_donnees: 2023
+  type: "enquete associative (association de collectivites)"
+  url: "https://amorce.asso.fr/publications/recettes-de-vente-d-electricite-et-de-chaleur-des-unites-de-valorisation-energetique-des-dechets-donnees-2023-dt156/download"
+  emplacement: "p. 23, section 3.1.3 'Des ventes remuneratrices'"
+  contenu: "Prix moyen par tonne traitee en UVE en 2023 : 120 EUR HT/t pour les clients prives ; 95 EUR HT/t pour les collectivites adherentes au syndicat de traitement."
+  citation: "En 2023, le prix moyen par tonne traitée était de 120 € HT pour les clients privés, contre 95 € HT pour les collectivités adhérentes au syndicat de traitement des déchets."
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Successeur de DT139. HT explicite. TGAP incluse ou non : NON PRECISE dans la phrase (la Figure 18 voisine est 'hors taxes et hors TGAP' mais porte sur des recettes en MEUR). Transport : non precise. Echantillon : 59 questionnaires exploites (117 sollicites), 40 reponses pour la Figure 18 ; taille exacte pour ce prix non precisee. Contexte : paragraphe sur les ventes de vides de four (3e poste de recettes). Contradiction avec DT139 (2021 : 76 EUR/t collectivites, 133 EUR/t prives) : prive en baisse (133 -> 120), collectivites en hausse (76 -> 95) ; echantillons et definitions differents (DT139 : 'hors couts de transport', HT/TGAP non precises), donc evolution non interpretable directement."
+
+- id: A8-PRIX-AMORCE-DT139-2021
+  titre: "Performances, recettes et couts des unites de traitement thermique des dechets (donnees 2020-2021) (DT139)"
+  editeur: "AMORCE / ADEME"
+  date: "non relevee"
+  annee_donnees: 2021
+  type: "enquete associative"
+  url: "https://amorce.asso.fr/publications/performances-recettes-et-couts-des-unites-de-traitement-thermique-des-dechets-donnees-2020-2021-dt139/download"
+  emplacement: "p. 33, section 4.4.1, Figure 21"
+  contenu: "2021 : prix moyen facture aux collectivites adherentes 76 EUR/t (hors transport) ; clients prives 133 EUR/t. Echantillon : 32 installations (collectivites), 26 (prives)."
+  citation: "Pour les clients privés, le prix moyen est de 133 €/tonne"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Donnee de reference deja connue, reverifiee pour comparer avec DT156. HT et TGAP non precises dans la phrase. Autre extrait : 'hors coûts de transport, facturé aux délégataires et/ou propriétaires (collectivités adhérentes au syndicat)'."
+
+- id: A8-PRIX-AMORCE-DT141-2021
+  titre: "Observatoire couts de stockage - Donnees 2020-2021 (DT141)"
+  editeur: "AMORCE / ADEME"
+  date: "2023-03 (fiche web 2024-05-20)"
+  annee_donnees: "2020 et 2021"
+  type: "enquete associative"
+  url: "https://amorce.asso.fr/publications/observatoire-couts-de-stockage-donnees-2020-2021-dt141/download"
+  emplacement: "p. 11 (conventions), p. 16 Figure 8, p. 23 Figure 14, p. 28 Tableau 3"
+  contenu: "Collectivites sous marche de prestation, stockage seul hors transport, EUR HT/t TGAP incluse : moyenne 95 (2020) et 109 (2021), n=30 ; stockage + transport : moyenne 120 (2020) et 135 (2021), n=20. Exploitants prives TGAP et transport inclus : moyenne 124 (2020) et 143 (2021), n=17. Proprietaires d'ISDND hors TGAP : 72-127 (2020), 83-128 (2021)."
+  citation: "TGAP incluse"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Donnees 2021, plus recentes que rien sur le stockage cote collectivites. Echantillon faible, resultats 'a titre informatif' selon le rapport. Ile-de-France : 5 repondants, aucune valeur regionale publiee. Incoherence interne : medianes texte/tableau ecart de 1 EUR/t ; fourchette '75 % entre 79 et 150' (texte) differente du P25-P75 79-107 (tableau). Clients = collectivites (dechets menagers), pas DAE."
+
+- id: A8-PRIX-RYDGE-INCIN-2026
+  titre: "Indice de la variation des couts de mise en incineration des dechets non dangereux des activites economiques (Q3050) - janvier 2026"
+  editeur: "RYDGE Conseil pour FEDERREC (ex-FEDEREC)"
+  date: "2026-01 (page web datee 30/01/2026)"
+  annee_donnees: "tarifs 2025 vs conditions au 1er janvier 2026"
+  type: "indice professionnel (federation des entreprises du recyclage)"
+  url: "https://www.rydge.fr/hubfs/federec/variation-couts-incineration-dechets-non-dangereux/indice-Q3050-incineration-janvier-2026-synthese.pdf"
+  emplacement: "synthese PDF, tableau unique par region"
+  contenu: "Variations ponderees en EUR/t, hors TGAP, hors transport : ARA +6,6 ; BFC +3,6 ; Bretagne +7,2 ; CVL +9,1 ; Grand Est +6,8 ; HdF +9,4 ; Ile-de-France +6,2 ; Normandie +10,7 ; N-Aquitaine +5,7 ; Occitanie +5,1 ; PdL +9,1 ; PACA +6,6."
+  citation: "entre le tarif pratiqué au cours de l'année 2025 et les conditions tarifaires applicables à partir du 1er janvier 2026"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Aucun prix absolu, aucune valeur France entiere, aucun %. Clients = entreprises du recyclage (refus de tri / DAE). Perimetre : 'hors TGAP', 'hors coût de transport'. Variations ponderees par les volumes."
+
+- id: A8-PRIX-RYDGE-ENFOUIS-2026
+  titre: "Indice de variation du cout de l'enfouissement des refus de tri en installations de stockage de dechets non dangereux (Q3000) - janvier 2026"
+  editeur: "RYDGE Conseil pour FEDERREC"
+  date: "2026-01"
+  annee_donnees: "tarifs 2025 vs conditions au 1er janvier 2026"
+  type: "indice professionnel"
+  url: "https://www.rydge.fr/hubfs/federec/refus-de-tri-dechets-non-dangereux/indice-Q3000-enfouissement-janvier-2026-synthese.pdf"
+  emplacement: "synthese PDF, tableau par region"
+  contenu: "Variations ponderees EUR/t hors TGAP hors transport : ARA +6,0 ; BFC +4,5 ; Bretagne +4,4 ; CVL +3,4 ; Grand Est +2,4 ; HdF +3,0 ; Ile-de-France +1,8 ; Normandie +2,5 ; N-Aquitaine +4,9 ; Occitanie +2,1 ; PdL +5,7 ; PACA +5,7."
+  citation: "Indice de variation du coût de l'enfouissement des refus de tri en installations de stockage de déchets non dangereux"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Contrats pluriannuels exclus. Ponderation par volumes stockes par les entreprises de recyclage. Aucun prix absolu."
+
+- id: A8-PRIX-RYDGE-ENFOUIS-2025
+  titre: "Indice de variation du cout de l'enfouissement des refus de tri en ISDND - edition janvier 2025 (fichier 'decembre-2024')"
+  editeur: "RYDGE Conseil pour FEDERREC"
+  date: "2024-12 / 2025-01"
+  annee_donnees: "tarifs 2024 vs conditions au 1er janvier 2025"
+  type: "indice professionnel"
+  url: "https://www.rydge.fr/hubfs/federec/refus-de-tri-dechets-non-dangereux/indice-q3000-refus-de-tri-decembre-2024-synthese.pdf"
+  emplacement: "synthese PDF, tableau par region"
+  contenu: "Variations ponderees EUR/t, hors TGAP, hors majoration de TGAP, hors transport : ARA +7,7 ; BFC +6,4 ; Bretagne +9,7 ; CVL +7,5 ; Grand Est +9,1 ; HdF +1,6 ; Ile-de-France +2,3 ; Normandie +5,0 ; N-Aquitaine +8,3 ; Occitanie +6,4 ; PdL +9,0 ; PACA +7,4."
+  citation: "Ile de France +2,3"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Le fichier d'archive est libelle 'janvier 2025' sur la page RYDGE mais nomme 'decembre-2024'. Aucune autre archive en ligne sur rydge.fr ; editions 2023-2024 de l'incineration et 2023-2024 de l'enfouissement non accessibles directement (cf. fiche Profession Recycleur)."
+
+- id: A8-PRIX-PROFRECYCLEUR-INDICES-2023-2025
+  titre: "Recycleur l'Officiel des Dechets / Profession Recycleur n.1565 (semaine 45) - tableaux indices Federrec"
+  editeur: "Profession Recycleur (presse specialisee), PDF heberge par groupesurplus.com"
+  date: "2025-11-05"
+  annee_donnees: "variations au 1er janvier 2023, 2024, 2025"
+  type: "presse specialisee reprenant l'indice FEDERREC"
+  url: "https://www.groupesurplus.com/sites/default/files/2025-11/Profession%20Recycleur%2020251105.pdf"
+  emplacement: "p. 8, tableau 'Mise en incineration des dechets non dangereux des activites economiques' et bloc 'enfouissement des refus de tri en ISDND'"
+  contenu: "Incineration DAE, variation ponderee EUR/t hors TGAP et transport, Ile-de-France : +9,5 au 1er janv. 2024 (vs 2023), +2,9 au 1er janv. 2025 (vs 2024). Bloc de trois colonnes (1er janv. 2023, 2024, 2025), Ile-de-France : +4,3 ; +1,0 ; +2,3. Autres regions disponibles (ex. ARA incineration +9,0 / +9,0 ; enfouissement +21,4 / +7,3 / +7,7)."
+  citation: "Variation pondérée en €/t (hors TGAP et coûts de transport)"
+  statut: secondaire
+  consulte: "2026-10-15"
+  note: "Mise en page extraite de facon degradee. Attribution du bloc de trois colonnes a l'ENFOUISSEMENT = DEDUCTION : sa colonne 2025 est identique, region par region, a l'indice RYDGE enfouissement janvier 2025 (ex. IDF +2,3, Grand Est +9,1, HdF +1,6). La source est attribuee a 'KPMG mandate par Federrec' alors que RYDGE produit les indices 2025-2026 : CONTRADICTION de producteur a signaler. Incineration au 1er janv. 2023 : NON TROUVE dans ce tableau. 'Nc' = non communique (non explique)."
+
+- id: A8-PRIX-ORDIF-REF-2023
+  titre: "Notice de reference couts 2023 - Cout du service public des dechets : 104 EUR par Francilien en 2023"
+  editeur: "ORDIF (Observatoire regional des dechets d'Ile-de-France)"
+  date: "2026-05-28"
+  annee_donnees: 2023
+  type: "observatoire regional (public)"
+  url: "https://www.ordif.fr/fileadmin/DataStorage/user_upload/00-home/Notice_reference_couts_2023_VF.pdf"
+  emplacement: "p. 17 (OMR), p. 19 (graphique couts d'incineration), p. 32 (definitions)"
+  contenu: "Ile-de-France 2023, dechets menagers (OMR) : cout moyen de traitement 124 EUR/t ; couts complets d'incineration de 87 a 152 EUR/t ; couts nets 46 a 115 EUR/t y compris TGAP."
+  citation: "le 1er poste de dépense est le traitement avec un coût moyen de 124 € par tonne"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Couts pour les collectivites (matrice des couts), montants HT selon la page de presentation. Autres extraits : 'Si les coûts complets d'incinérations vont de 87 € à 152 € par tonne' ; 'les coûts nets vont de 46 € à 115 € par tonne (y compris TGAP)'. Cout net = probablement apres deduction des recettes energie (non defini explicitement). Nombre d'installations non indique. Stockage : absent du document. Pas de valeur 2022 en EUR/t."
+
+- id: A8-PRIX-ORDIF-NR989-2021
+  titre: "Hausse du cout du service public des dechets en Ile-de-France : quelles perspectives ? (Note rapide n.989)"
+  editeur: "ORDIF"
+  date: "2023-09-25"
+  annee_donnees: "2019 et 2021"
+  type: "observatoire regional"
+  url: "https://www.ordif.fr/fileadmin/NewEtudes/000pack4/Etude_2972/NR_989_web.pdf"
+  emplacement: "p. 4"
+  contenu: "2021 : 80 % des territoires de l'echantillon ont un cout de traitement des OMR entre 90 et 140 EUR/t ; hausse de 20 % du cout de traitement des OMR entre 2019 et 2021 ; TGAP incineration (categorie G) de 3 a 8 EUR/t et stockage (categorie D) de 17 a 30 EUR/t entre 2019 et 2021."
+  citation: "80% des territoires de l'échantillon possèdent un coût de traitement des OMR compris entre 90 et 140€ par tonne en 2021"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Echantillon : 10 collectivites (29 % de la population hors Paris). HT/TTC et TGAP non precises pour le EUR/t (hausse attribuee a la TGAP, donc TGAP vraisemblablement incluse : non confirme)."
+
+- id: A8-PRIX-ORDEC-ARA-2022
+  titre: "Referentiel des couts des matrices 2022 sur la region Auvergne-Rhone-Alpes (edition 2025)"
+  editeur: "ORDEC Auvergne-Rhone-Alpes"
+  date: "2025"
+  annee_donnees: 2022
+  type: "observatoire regional"
+  url: "https://www.ordec-auvergne-rhone-alpes.fr/api/fileadmin/mediatheque_ordec/publications/Referentiel_des_couts_2022_Edition2025.pdf"
+  emplacement: "p. 6 (conventions), p. 28 section 4.2, p. 29 section 4.4, p. 51 section 9.1, annexe p. 53"
+  contenu: "OMR 2022, couts collectivites EUR HT/t TGAP comprise : mediane traitement 132 (113-170) ; incineration 119 ; stockage 118. Evolution 2019 -> 2022 : incineration 118 -> 119 ; stockage 101 -> 118. Prospective 2022 -> 2025 : +20 a +25 EUR/t stockage, +3 a +11 EUR/t incineration."
+  citation: "Les coûts sont présentés en euros HT (sauf indication contraire) et comprennent la TGAP"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Hors Ile-de-France ; utile comme reference recente par mode de traitement. Hausse stockage attribuee 'en grande majorité à la TGAP'. La prospective est une projection, pas une observation."
+
+- id: A8-PRIX-ADEME-REF-2022
+  titre: "Referentiel des couts du service public de gestion des dechets en France metropolitaine - donnees 2022"
+  editeur: "ADEME"
+  date: "2025-01-28"
+  annee_donnees: 2022
+  type: "referentiel public"
+  url: "https://librairie.ademe.fr/societe-et-politiques-publiques/7932-referentiel-des-couts-du-service-public-de-gestion-des-dechets-en-france-metropolitaine.html"
+  emplacement: "fiche librairie seulement ; PDF derriere formulaire d'inscription"
+  contenu: "648 matrices 2022. Couts en EUR/hab et EUR/t par flux. Aucun chiffre de traitement visible sur la fiche."
+  citation: "Données 2022"
+  statut: non-verifie
+  consulte: "2026-10-15"
+  note: "PDF NON OUVERT (telechargement soumis a formulaire). Chiffre national indirect lu chez ORD&EC PACA (https://www.ordeec.org/indicateurs/dechets-menagers-et-assimiles-dma/couts-et-financement) : cout complet national 266 EUR/t et 144 EUR/hab (ADEME, donnees 2022) ; il s'agit du cout complet collecte + traitement, pas du traitement seul. Donnees 2023 ADEME nationales : NON TROUVE."
+
+- id: A8-PRIX-SYCTOM-BP-2026
+  titre: "Budget primitif 2026 du Syctom"
+  editeur: "Syctom, l'agence metropolitaine des dechets menagers"
+  date: "2026 (DOB du 6 fevrier 2026)"
+  annee_donnees: "2025-2026"
+  type: "document budgetaire de collectivite"
+  url: "https://www.syctom-paris.fr/fileadmin/mediatheque/Budget/2026/BP26_.pdf"
+  emplacement: "p. 5 (tarifs), p. 6-7 (tableaux), p. 9 (vides de fours)"
+  contenu: "Tarif OMr facture aux membres : 109,4 EUR/t en 2024, 2025 et 2026 (plus 6,3 EUR/hab part population). Objets encombrants 'classique' 145 EUR/t (2025), 146 EUR/t (2026). Vides de fours 2026 : 60 kt de dechets 'ordinaires' de tiers factures 108 EUR/t ; CSR 16 ou 84 EUR/t."
+  citation: "L'accueil de 60 kt supplémentaires de déchets « ordinaires » incinérés dans les UIOM, facturés 108 €/t ;"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "HT et TGAP NON PRECISES. Le tarif OMr est une redevance d'equilibre budgetaire (recettes energie deduites, part population a cote), pas un prix de marche. Le 108 EUR/t est un prix previsionnel de vente de capacite a des tiers (acheteurs non identifies : prives ou syndicats). Autre extrait p. 5 : '109,4 €/t pour le tarif des OMr et 25,4 €/t pour le tarif des CS et des DA.'"
+
+- id: A8-PRIX-SYCTOM-DOB-2024
+  titre: "Debat d'orientations budgetaires 2024 du Syctom"
+  editeur: "Syctom"
+  date: "2024"
+  annee_donnees: "2023-2024"
+  type: "document budgetaire de collectivite"
+  url: "https://www.syctom-paris.fr/fileadmin/mediatheque/Budget/2024/DOB2024.pdf"
+  emplacement: "p. 23-25"
+  contenu: "Tarif OM/OE : 103 EUR/t (2023) puis 109,4 EUR/t (2024) ; tonne marginale traitee a l'exterieur a plus de 160 EUR/t."
+  citation: "la tonne marginale sera traitée à plus de 160 €/t"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "HT/TGAP non precises. Le 160 EUR/t concerne le traitement externalise (exutoires exterieurs) du Syctom ; annee exacte non precisee (contexte 2024). Hausse 2023 -> 2024 : +6,2 % (calcul : 109,4/103), coherent avec '+6,9 %' cite par le RPQS 2024 de Paris Est Marne et Bois (https://www.parisestmarnebois.fr/sites/default/files/2025-08/RPQS%202024.pdf, p. 35) : ecart de 0,7 point non explique (perimetre different possible)."
+
+- id: A8-PRIX-SMITOMN77-2024
+  titre: "Rapport technique et financier 2024 (et 2023) du SMITOM Nord Seine-et-Marne"
+  editeur: "SMITOM du Nord Seine-et-Marne"
+  date: "2025-10 (rapport 2024) ; 2024-09 (rapport 2023)"
+  annee_donnees: "2023 et 2024"
+  type: "rapport annuel de syndicat (Ile-de-France)"
+  url: "https://www.smitom-nord77.fr/wp-content/uploads/2025/10/rapport-annuel-2024-cahier-technique-planches.pdf"
+  emplacement: "rapport 2024 p. 19 ; rapport 2023 p. 16"
+  contenu: "Part variable a la tonne incineree (UVE de Monthyon) : 195,4330 EUR/t en 2023 (0 % vs 2022) ; 205,2047 EUR/t en 2024 (+5 %). Rapport 2023 : apports exterieurs SMDO 90,66 EUR/t hors TGAP (avenant 3, revision annuelle) ; Valor'Aisne 78,86 EUR/t hors TGAP base avril 2020 (+ part investissement 14,57 EUR/t)."
+  citation: "Part variable à la tonne incinérée (1) 205,2047 € 9,77 € 5 %"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "La part variable finance transport, transit et traitement (note 1) : ce n'est pas un prix de porte UVE. HT/TGAP non precises. Rapport 2023 : https://www.smitom-nord77.fr/wp-content/uploads/2024/09/rapport-annuel-2023-cahier-technique-v2.pdf ; citations : 'L'avenant 3 prévoit un coût de traitement de 90,66 € / t hors TGAP avec une révision annuelle.' et 'La convention prévoit un coût de traitement de 78,86 € / t au mois d'avril 2020 hors TGAP.' Tarifs collectivites a collectivites, pas DAE."
+
+- id: A8-PRIX-BOFIP-TGAP-2025
+  titre: "BOI-BAREME-000039-20241218 - TGAP, bareme"
+  editeur: "Direction generale des finances publiques (BOFiP)"
+  date: "2024-12-18"
+  annee_donnees: "2024-2025"
+  type: "texte officiel"
+  url: "https://bofip.impots.gouv.fr/bofip/12765-PGP.html/identifiant=BOI-BAREME-000039-20241218"
+  emplacement: "IV § 40 (stockage), IV § 50 (traitement thermique)"
+  contenu: "TGAP ISDND 'Autres installations autorisees' : 63 EUR/t (2024), 65 EUR/t (2025). Traitement thermique 'Autres installations' : 24 (2024), 25 (2025) ; rendement energetique >= 0,65 : 14 (2024), 15 (2025)."
+  citation: "Autres installations autorisées"
+  statut: lu
+  consulte: "2026-10-15"
+  note: "Permet de convertir un prix hors TGAP en prix TGAP comprise. Majoration 2025 de 5 EUR/t pour depassement de l'objectif de reduction en ISDND (ORDIF, dec. 2024 : https://www.ordif.fr/nos-ressources/chroniques/pollueur-payeur-pression-accrue-sur-les-installations-franciliennes/ ; coefficient IDF 2025 : 52,648545 %)."
+
+- id: A8-PRIX-RECYNET-TGAP-2026
+  titre: "TGAP 2026 : 69 EUR/t enfouissement, vraie bascule UVE ?"
+  editeur: "Recy.net (site d'information, auteur 'Guillaume P.')"
+  date: "2026-04-28"
+  annee_donnees: "2026-2030"
+  type: "presse en ligne / blog"
+  url: "https://www.recy.net/tgap-2026-enfouissement-69-euros-bascule-incineration/"
+  emplacement: "tableau des taux"
+  contenu: "TGAP ISDND 65 (2025), 69 (2026), puis 73, 77, 81, 85 (2030). UVE performante 15 (2025), 16 (2026), +1/an jusqu'a 20 (2030). Incineration non performante 29 (2026)."
+  citation: "Source : tableaux complets publiés par reglementation-environnement.com et FNTP."
+  statut: secondaire
+  consulte: "2026-10-15"
+  note: "Bareme 2026 non verifie sur le texte officiel (loi n. 2026-103 citee, non ouverte). Coherent avec Banque des Territoires 27/01/2026 (TGAP incineration 'de 15 à 20 €/t' sur cinq ans, scenario FNADE) : https://www.banquedesterritoires.fr/les-professionnels-des-dechets-tablent-sur-une-hausse-de-lincineration. Taxe seulement, pas un prix de traitement."
+
+- id: A8-PRIX-SENAT-LOUAULT-2026
+  titre: "Compte rendu de la commission des affaires europeennes du Senat (SEQE et incineration)"
+  editeur: "Senat"
+  date: "2026-04-16"
+  annee_donnees: 2026
+  type: "debat parlementaire (propos oral)"
+  url: "https://www.senat.fr/compte-rendu-commissions/20260413/euro.html"
+  emplacement: "intervention de M. Vincent Louault"
+  contenu: "Ordre de grandeur oral : 150 EUR/t supplementaires pour l'incineration ou l'enfouissement apres tri ; transport de dechets legers 100 a 150 EUR/t. Rapporteur Kern : SEQE = hausse 'de près de 45 %' du cout de l'incineration (700 a 800 MEUR/an)."
+  citation: "un coût supplémentaire de 150 euros la tonne"
+  statut: non-verifie
+  consulte: "2026-10-15"
+  note: "Propos oral d'un elu, sans source. A ne pas utiliser comme prix moyen."
+
+- id: A8-PRIX-DECHETSINFOS-ETS-2023
+  titre: "Incineration : les quotas de CO2 pourraient faire grimper les couts"
+  editeur: "Dechets Infos (O. Guichardaz)"
+  date: "2023-12-06"
+  annee_donnees: "projection 2028"
+  type: "presse specialisee"
+  url: "https://dechets-infos.com/incineration-les-quotas-de-co2-pourraient-faire-grimper-les-couts-4930373.html"
+  emplacement: "chapo (article reserve aux abonnes)"
+  contenu: "Inclusion de l'incineration dans le SEQE : hausse possible du cout a la tonne de 30 a 40 % a l'horizon 2028."
+  citation: "pourrait faire augmenter le coût de traitement à la tonne de 30 à 40 %"
+  statut: secondaire
+  consulte: "2026-10-15"
+  note: "Presse. Projection, pas observation. Aucun prix actuel en EUR/t dans la partie visible."
+
+- id: A8-PRIX-FRANCEENV-DAE-2025
+  titre: "Quel est le cout moyen par tonne pour le traitement des DAE en ISDND par rapport a une UVE ?"
+  editeur: "FranceEnvironnement (plateforme commerciale)"
+  date: "2025-02-08"
+  annee_donnees: "non precisee"
+  type: "page commerciale question/reponse"
+  url: "https://www.franceenvironnement.com/question/quel-est-le-cout-moyen-par-tonne-pour-le-traitement-des-dechets-activites-economiques-dae-en-installation-de-stockage-des-dechets-non-dangereux-isdnd-par-rapport-a-une-unite-de-valorisation-energetique-uve"
+  emplacement: "texte de la reponse"
+  contenu: "ISDND 70 a 100 EUR/t (TGAP citee parmi les frais) ; UVE 90 a 150 EUR/t."
+  citation: "En ISDND, le coût est généralement estimé entre 70 et 100 euros par tonne"
+  statut: non-verifie
+  consulte: "2026-10-15"
+  note: "SOURCE COMMERCIALE, AUCUNE SOURCE CITEE. Fourchette ISDND difficilement compatible avec une TGAP 2025 de 65 EUR/t incluse (laisserait 5 a 35 EUR/t de prix hors taxe, tres en dessous des 83-128 EUR/t hors TGAP releves par AMORCE en 2021) : CONTRADICTION. A ne pas utiliser."

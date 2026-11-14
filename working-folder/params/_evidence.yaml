@@ -36,7 +36,7 @@ KANSO-20002610:
   chemin: "reference/preuves/tests-independants/Analysis-Results-Off-gas-Odor-Exhaust.pdf"
   fiabilite: certifie_tiers
   date: 2020-12-05
-  contenu: "HCl, SOx, NOx, poussieres tres inferieurs aux VLE usuelles"
+  contenu: "HCl < 1 ppm, SOx < 1 ppm, NOx 15 ppm, poussieres < 0,002 g/m3, O2 18,5 % (p. 2). Aucune comparaison aux valeurs limites dans le document (E-9, D-037)."
 
 ICHIMURA-2022:
   note_inventaire_2026_10_14: "Inventaire annexe 2 (14/10/2026) : document lu en entier ; voir CHIBA-RAPPORT-2023 et ses sections (CHIBA-ESSAIS-FICHES, CHIBA-BILANS, CHIBA-JLOS-HUILES, CHIBA-OOSUMI-*). Le combustible est du gazole (軽油), groupe electrogene compris. L'off-gas est calcule par difference."
@@ -544,7 +544,7 @@ CHIBA-ESSAIS-FICHES:
     2022-09-09 emballages 50 / 16,1 / 18 / 24,4 / 9,5 / 41 % ; 2022-09-15 residus 50 / 22,5 / 26 / 16,7 / 10,8 / 50 %.
     Lots de 20 a 60 kg.
   citation_p29: "熱分解炉で発生したガスは、触媒反応槽を通過して、コンデンサーで凝縮されドレンポットを通過して油水分離層へ導かれる。"
-  titre: "Rapport Chiba, fiches d'essai de pyrolyse (13 essais) et definitions"
+  titre: "Rapport Chiba, fiches d'essai de pyrolyse (15 essais, dont 13 avec huile mesuree) et definitions"
   type: rapport_essai
   fiabilite: mesure_interne
   nature: mesure_exploitant
@@ -576,6 +576,7 @@ CHIBA-DISTILLATION:
   reserve: "Ni laboratoire, ni methode, ni date. PP : 30 mL non comptes. Unite de densite ecrite mL/g."
 
 CHIBA-BILANS:
+  valeurs_lues_facteurs: "Facteurs implicites (energie / masse) : off-gas 15 489 kcal / 11,7 kg = 1 323,8 kcal/kg ; char 30 576 kcal / 5,2 kg = 5 880 kcal/kg (p. 41). Origine non indiquee dans le rapport (R-011, R-012)."
   valeurs_lues: "Energies (kcal) 26/05 : electricite 55 900, gazole 599 808, off-gas 15 489, huile 473 238, char 30 576. Charges 60,0 / 60,0 / 50,0 / 50,0 kg ; electricite 59 a 65 kWh ; gazole 61 a 76 L par lot."
   titre: "Rapport Chiba, bilans matiere et energie de quatre essais"
   type: rapport_essai
@@ -899,6 +900,9 @@ OW-CONSO-ENERGIE:
   reserve: "Sans emetteur, date ni methode ; unites incoherentes. Attribution a OneWorld a confirmer (R-015)."
 
 OWJ-DEMO-2021:
+  citation_p2: "残りの25%がオフガスもしくは水分と考えられる。触媒層からオフガスの漏れがあったため、改良する必要あり。"
+  citation_p5: "尚、今回冷却は蒸気を出さずに行った。 ; 中にはFRP素材と見られるガラス繊維も混在されていた。"
+  citation_p8: "3日目も2日目同様に冷却は蒸気を出さずに行った。 ; 油重量 248.2kg 油化率 83% オフガス他 13%"
   valeurs_lues: "p. 8 : 減量率 96% ; 残渣率 4% ; 油化率 83% ; par jour : huile 70 / 88 / 91 %, reduction 95 / 96 / 96 %. p. 8 : 塩ビに関しては融点で止まっている (PVC arrete au stade de la fusion)."
   titre: "One World Japan, rapport d'essais de demonstration URT-10 sur dechets plastiques, 01 au 03/12/2021"
   type: rapport_essai
@@ -988,3 +992,204 @@ SEACORAL-DETAIL-ENG:
   citation: Seawater desalination Test ; Chloride ion mg/L 31,000 31 140,000
   contenu: 'Essai de dessalement d''eau de mer (eau brute / eau traitee / eau residuelle) : pH 7,2 / 5,3 / 7,2 ; matieres en suspension 2 / 3 / 270 mg/L ; sodium 15 000 / 26 / 66 000 mg/L ; chlorures 31 000 / 31 / 140 000 mg/L ; durete 170 / 4 / 650 mg/L. Capacite annoncee environ 330 t/jour d''eau avec un ventilateur TAIYO FA-B de 3 500 m3/min (ecart de vapeur saturante 82,8 - 17,2 = 65,6 g/m3 entre 50 et 20 C). Brevet JP 6391698, WO2016143848 A1.'
   reserve: CONSTRUCTEUR. Ni laboratoire, ni date, ni essai sur eaux de procede de pyrolyse (phenols, cyanures, DBO, pH acide). Le concentrat (140 000 mg/L de chlorures dans l'essai) reste a eliminer.
+
+# === ANNEXE 1 : collecte du chat 2 (15/10/2026) ===========================
+# Documents de reference/preuves/ non exploites par le chat 1, et pages des brochures
+# utiles a la description du procede. Aucune valeur de parametre modifiee.
+
+OW-ENG-P14-P15-PROCEDE:
+  titre: "Brochure OneWorld anglaise (oct. 2019), mecanisme de recuperation de l'huile et procede continu"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2019-10-01
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　.pdf ; meme texte : reference/preuves/documents-fournis/Urban Rig Recycling Solutions ENG .pdf"
+  emplacement: "p. 2, p. 14 et p. 15"
+  citation: "Inject high-temperature oxygen-free steam(further superheated) at 600 °C into the cracking furnace. ; The vaporized gas is treated with chlorine catalyst and liquefied by a cooling condenser. ; Segregate gas-oil and heavy-oil by the temperature difference of vaporized gas through a solenoid valve. ; Water is separated in an oil/water separation tank, remove impurities in a filtration tank, and recover recycled oil."
+  citation_p2: "URBAN RIG makes inside the rector high temperature and oxygen free by superheated steam and recover the fuel oil from the resin-based mixed waste c/w food residue and mud. ; URBAN RIG does not require to sort waste for processing and able to vaporize and carbonize the waste by superheated super-fine particles steam. Furthermore, metals can be extracted in a non-oxidizing state. ; This machine does not require clean such contami- nation and able to input after one-day storage to remove moisture."
+  citation_p14_continu: "In the continuous process type, the single batch type structures are installed at 7 or 4 places with the specifications suitable for the purpose."
+  citation_p15: "The continuous unit process has a temperature setting for each unit. ; 7-continuous process, 90 minutes ; 3 bucket movement in 90 minutes ; 24 hours throughput: 17 units 51 buckets"
+  valeurs_lues: "p. 14 : vapeur surchauffee 600 C ; chaudiere max. 165 C ; four de decomposition environ 14 m3 et environ 600 C (image URB-50) ; bruleur 833 kcal/s. p. 15 : zone de chauffe 150, 300, 450, 600 C ; zone de refroidissement 400, 150, 60 C ; 90 a 630 min ; produits Heating Oil, Gas (Diesel) Oil, Heavy Oil, Asphaltenes ; perte de demarrage sur les 8 premiers lots."
+  contenu: "Sequence du procede selon OneWorld : vapeur surchauffee sans oxygene a 600 C, vaporisation de la fraction huileuse, couche catalytique d'adsorption du chlore, condenseur, separation gazole / huile lourde par electrovanne selon la temperature, separation huile-eau, filtration. Version continue : 7 ou 4 unites de type lot en ligne, temperature fixe par unite."
+  reserve: "CONSTRUCTEUR. Schema p. 14 illustre sur un URB-50 en lots. Aucune mesure de la repartition des fractions. Voir aussi OW-ENG-P02-P14-AFFIRMATIONS (dioxines, autonomie)."
+
+OW-ENG-P04-P07-SPEC-PLANS:
+  titre: "Brochure OneWorld anglaise (oct. 2019), fiches SPEC et plans d'implantation URC-2000, URC-1000, URC-150"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2019-10-01
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　.pdf"
+  emplacement: "p. 4 (URC-2000), p. 6 (URC-1000), p. 7 (URC-150)"
+  citation: "URC-2000 is designed for carbonizing waste with high moisture content such as food residue, waste with sludge and soil, etc., which is represented by general household waste. Input to the process, 3 buckets as 1 batch and automatically operated by microcomputer from the loading slot through 7 processes such as drying, heating, carbonization extraction, and cooling to the unloading slot."
+  citation_spec: "Process System Continuous type ; Steam Generation Steam boiler ; Superheating type Heating burner ; Control System microcomputer control ; Safety device Valve & sensor"
+  citation_plans: "Input throat (with crushing function) ; Sorting machine"
+  valeurs_lues: "p. 4 : 200 ton / day ; MAX 600 C, 0.2 MPa under ; unite 66 x 7 x 7 m ; benne 4,5 m3 ; batiment 4 650 m2. Les plans p. 4, 6 et 7 portent 'Input throat (with crushing function)' et 'Sorting machine' (texte du PDF, verifie par page)."
+  contenu: "Le URC-2000 est decrit pour les ordures menageres a forte humidite, en continu, pilote par micro-ordinateur a travers 7 etapes (sechage, chauffe, carbonisation et extraction, refroidissement). Les plans d'implantation prevoient une tremie d'entree avec broyage et une machine de tri."
+  reserve: "CONSTRUCTEUR. Les plans contredisent 'No sorting required' (p. 2) : ils prevoient un broyage et une machine de tri, sans specification."
+
+UR2000-JP-P06-P07-MODULES:
+  titre: "Brochure URC-2000 OneWorld (japonais), construction modulaire et chargement des bennes"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
+  emplacement: "p. 6 et p. 7"
+  citation: "本機処理プラント (200T) は 7 ユニットで構成。 ; 約 12 トン処理機 ( 1 ユニット ) を工場量産するため大幅なコストダウンを実現。 ; 処理機本体を７分割しトラック搬送して現地組立方式を採用。 ; 大量処理の大規模プラントは、200 トンの処理プラントを複数構成して対応可能。"
+  citation_p7: "搬送バケットはゴミをそのまま搭載する事ができ、分別処理や汚れ落とし作業の必要はありません。"
+  traduction_claude: "p. 6 : la plante de 200 t se compose de 7 unites ; machines d'environ 12 t (1 unite) produites en serie en usine, d'ou une forte baisse de cout ; corps divise en 7 pour transport par camion et assemblage sur site ; les grandes capacites s'obtiennent en combinant plusieurs plantes de 200 t. p. 7 : les bennes peuvent recevoir les dechets tels quels, sans tri ni nettoyage [trad. Claude]."
+  contenu: "Modularite selon OneWorld : 7 unites d'environ 12 t, fabriquees en serie, transportees en 7 morceaux, assemblees sur site ; multiplication des plantes de 200 t pour les grandes capacites. Chargement des bennes sans tri ni nettoyage."
+  reserve: "CONSTRUCTEUR. Les plans du meme document (p. 9 et 10 : 破砕機能付 投入スロート, 選別機) prevoient un broyage et une machine de tri. Voir UR2000-JP-P09-P13-PLANS."
+
+UR2000-JP-P09-P13-PLANS:
+  titre: "Brochure URC-2000 OneWorld (japonais), plans d'implantation 200 t et 1 000 t/jour, plan d'ensemble 2014 et calendrier"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/UR2000-JP.pdf"
+  emplacement: "p. 9, 10, 12 et 13"
+  citation: "投入スロート 破砕機能付 (p. 9 et 10) ; 選別機 (p. 10) ; 減容ゾーン (max. 150℃ 加熱) ; No. 3 ゾーン (max. 500℃ 加熱) ; 処理能力 12m3 (4バケット)/ 時間 ; 処理温度 max. 800℃ 蒸気加熱 (p. 12)"
+  traduction_claude: "tremie d'entree avec fonction de broyage ; machine de tri ; zone de reduction de volume (chauffe max. 150 C) ; zone n. 3 (chauffe max. 500 C) ; capacite 12 m3 (4 bennes) par heure ; temperature de traitement max. 800 C, chauffage a la vapeur [trad. Claude]"
+  valeurs_lues: "p. 12, plan date 2014.05.22 : zones 150 / 250 / 350 / 500 / 350 / 150 / <100 C ; 4 surchauffeurs et 4 chaudieres ; fluides 圧縮空気, 精製水, 灯油 (kerosene), AC200V, 排水. p. 10 : plan 1 000 t/jour = 5 x URC-2000, terrain 28 900 m2. p. 13 : contrat a mise en service en 4 mois ; fondation de 5 t/m2 au moins."
+  contenu: "Les plans prevoient broyage a l'entree et machine de tri. Le plan d'ensemble de 2014 donne un autre profil de temperature (max. 500 C en zone, 800 C max. au total) que les p. 4 et 8 (150 a 600 C)."
+  reserve: "CONSTRUCTEUR. Contradictions internes deja relevees par le chat 1 (releves/energie-ur2000-divers.md) : zones, capacite horaire, longueur, combustible (gazole p. 8, kerosene p. 12)."
+
+OW-ENG-P03-P19-GAMME-DELAIS:
+  titre: "Brochure OneWorld anglaise (oct. 2019), gamme de machines, options PRIMO et FORCE 9, delais de fabrication"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2019-10-01
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　.pdf"
+  emplacement: "p. 3 a 9 (gamme et fiches SPEC), 11, 12, 18, 19"
+  citation: "200 ton 7 Continuous Process URC-2000 (p. 3) ; OPTION PRIMO /Exhaust Gas Purification Facility ; PRIMO type 6 : URC-2000・URC-1000 URC-400・URC-150 (p. 12) ; Continuous type = about 10 months · Batch type = about 6 months (p. 19)"
+  citation_p18: "the recovery rate and the recovery material component may change depending on the waste. Please contact us for a suitable system."
+  valeurs_gamme: "Fiches SPEC (texte du PDF, confirme par le PowerPoint source) : URC-2000 200 ton / day, continu, 3 bennes de 4,5 m3 par lot, 7 etapes, unite 66 x 7 x 7 m (p. 4) ; URC-400 40ton / day, continu, 3 bennes de 1 m3, sept etapes, unite 41 x 7 x 7 m, pour dechets de resines (p. 5) ; URC-1000 100 ton / day, continu, 2 bennes de 4,5 m3 par lot, 4 etapes, unite 20 x 7 x 7 m (p. 6) ; URC-150 15 ton / day, continu, 7 etapes, bennes de 1 ou 2 m3, unite 22 x 6,5 x 6 m (p. 7) ; URB-50 5 ton / day, Batch type, 10 x 5 x 7 m (p. 8) ; URT-10 1 ton / day, Mobile Plant sur camion de 10 t, 9 x 2,5 x 2,3 m ; URB-10 1 ton, lot, dechets organiques, sterilisation et reduction de volume (p. 9). Decomposition MAX 600 C, 0.2MPa under pour les modeles continus."
+  valeurs_lues: "p. 3 : URC-2000 200 t, URC-1000 100 t, URC-400 40 t, URB-50 5 t, URB-10 et URT-10 1 t. p. 12 : PRIMO = DeNOx, DeSOx, poussieres, desodorisation ; type 4 : condenseur, 'Cold air machine', 'Scrubber', 'E P'. p. 11 : FORCE 9, stabilisation catalytique des residus a environ 400 C. p. 19 : environ 10 mois (continu), 6 mois (lots) ; fondation 5 t/m2."
+  contenu: "Gamme de 1 a 200 t/jour ; traitement des fumees PRIMO presente comme OPTION ; FORCE 9 pour les residus ; delai de fabrication d'environ 10 mois en continu."
+  reserve: "CONSTRUCTEUR. Delai : 10 mois ici, 4 mois dans UR2000-JP p. 13. PRIMO est une option : la configuration de traitement des fumees retenue pour la France n'est pas documentee."
+
+OW-ENG-PPTX-SOURCE:
+  titre: "Fichier PowerPoint source de la brochure OneWorld anglaise"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/Urban RIg ENG　 (1).pptx"
+  emplacement: "diapositives 1 a 20 ; notes vides"
+  citation: "Up date: 1. OCTOBER. 2019 (diapositive 1)"
+  contenu: "Meme texte que le PDF 'Urban RIg ENG　.pdf', diapositive par diapositive (texte extrait le 15/10/2026). Pas de note d'orateur. Metadonnee de creation 2023-08-17."
+  reserve: "Doublon de format : on cite le PDF (OW-ENG-*), pas ce fichier."
+
+OW-BREVETS-2022:
+  titre: "Liste des brevets One World Japan ('Registration List', 18 dossiers, 27/12/2022)"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2022-12-27
+  chemin: "reference/preuves/documents-fournis/patent list.xlsx"
+  emplacement: "Sheet1, lignes 1 a 20"
+  citation: "Registration List ; Total number of cases: 18 cases. ; Dec. 27, 2022"
+  valeurs_lues: "Brevets japonais enregistres : 5784122, 5784123, 5778771 (Organic carbonization equipment and Carbonization process, depot 2011), 6791577 (idem, depot 2016), 6871852 (idem, depot 2015), 6391698 (Fresh water generator), 7007158 (Carbonization treatment equipment and Carbonization treatment methods, depot 2017), 7053218 (Water treatment equipment). Demandes non enregistrees : 2019-033049 (Carbonizing and oil treatment furnace), 2019-228429 (Smoke filtrating equipment), 2021-150129 (Carbonizing and oil treatment equipment) ; PCT JP2022/0315 (Carbonizing and oil treatment equipment, 22/08/2022). Modeles d'utilite 3234718, 3235877, 3235878. Premier deposant : One World Japan, seul deposant."
+  contenu: "Portefeuille de 18 titres ou demandes, tous au Japon sauf une demande PCT de 2022 ; aucun titre europeen ou francais."
+  reserve: "Liste etablie par le constructeur (metadonnees : koki ichimura, 16/10/2023), non verifiee sur J-PlatPat ni sur Espacenet. Le contenu technique des brevets n'a pas ete lu."
+
+OW-STEP-TOYOHASHI-9:
+  titre: "Modele 3D STEP 'Toyohashi 9-unit continuous machine, general assembly' (fichier nomme URC-2000_STEP.zip)"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2024-04-18
+  chemin: "reference/preuves/documents-fournis/URC-2000_STEP.zip"
+  emplacement: "nom du fichier contenu ; en-tete FILE_NAME ; entites PRODUCT (739 noms de pieces)"
+  citation: "3Dプリンタ用-豊橋9連続機総合組立図（STEP）.STEP ; 'SolidWorks 2022' ; '2024-04-18T09:00:26'"
+  traduction_claude: "Pour impression 3D : plan d'assemblage general de la machine continue a 9 postes de Toyohashi [trad. Claude]"
+  valeurs_lues: "Noms de sous-ensembles relus (traduction Claude) : （A）前室 (chambre d'entree), （A）後室 (chambre de sortie), （A）本体炉 (four principal), （F）触媒槽 (reservoir catalytique), （G）炭化コンデンサ (condenseur), （H）気液分離槽 (separateur gaz-liquide), （K）油水槽 (bac huile-eau), （R）燃焼塔 (tour de combustion), （R）燃料タンク (reservoir de combustible), ボイラー(ME-10) (chaudiere), 蒸気加熱機 (surchauffeur de vapeur), オイルバーナーOM-1 (bruleur au fioul), クーリングタワー (tour de refroidissement), 軽油タンク (reservoir de gazole), 煙突 (cheminee), 配管-気液分離槽_燃焼塔 (tuyauterie separateur vers tour de combustion), 配管-ボイラー_7炉 (tuyauterie chaudiere vers les 7 fours). Pieces datees de 2021 et 2022 dans leurs noms."
+  contenu: "Le fichier ne decrit pas un URC-2000 : c'est la maquette d'une machine continue a 9 postes installee ou etudiee a Toyohashi. La liste des pieces montre la chaine du procede (chambres d'entree et de sortie, fours, catalyseur, condenseur, separateur gaz-liquide, bac huile-eau, tour de combustion, chaudiere, surchauffeur, bruleur au fioul, reservoir de gazole, cheminee)."
+  reserve: "CONSTRUCTEUR. Lecture des seuls noms de pieces : aucune performance. Le nom du fichier (URC-2000) ne correspond pas au contenu. Toyohashi est aussi le lieu de prelevement du char Izumitec R35-339439 (voir R-012)."
+
+OW-VIDEO-ANIMATION-2024:
+  titre: "Video d'animation 'URBAN RIG' (One World Inc., realisation K3K Design & Engineering)"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  date: 2024-01-24
+  chemin: "reference/preuves/documents-fournis/cinematics Urban Rig.mp4"
+  emplacement: "178 s ; images extraites toutes les 1 a 3 s (notes-recherche-annexe-01/images-videos/cine-planche.jpg et cine-zones-1s.jpg) ; taux d'huile vers 158 s (cine-158-taux-huile.jpg)"
+  citation: "OIL回収率 OIL Recovery Rate 45%~85% ; モジュール式連続プラント Modular Continuous Plant ; HEATING ZONE ; COOLING ZONE (lu sur image)"
+  valeurs_lues: "Paliers affiches (lu sur image, les chiffres montent pendant l'animation) : chauffe 250 C (OIL 1), 450 C (OIL 2), 600 C (OIL 3), 350 C (OIL 4), 120 min par palier ; refroidissement de 350 a 150 C, 120 min. Date : metadonnee creation_time 2024-01-24."
+  contenu: "Animation : plante modulaire continue, bennes passant de poste en poste ; quatre paliers de chauffe donnant quatre huiles, puis refroidissement ; taux de recuperation d'huile annonce de 45 a 85 %."
+  reserve: "CONSTRUCTEUR. Animation commerciale, pas une mesure. Troisieme profil de temperature, different de la brochure 2019 (150/300/450/600 C, 90 min) et du plan 2014 (max. 500 C par zone). Base du 45 a 85 % (masse ou volume, matiere) non indiquee."
+
+OW-VIDEOS-TERRAIN:
+  titre: "Videos OneWorld de machines en fonctionnement (URB-50 'Umigomi Zero Award', machines 5 t et 15 t)"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/ur 5 tons video.mp4 ; urban rig 15 tons.mp4 ; 15 ton Urban rig operating (test equipment).mp4"
+  emplacement: "images extraites toutes les 12 s (notes-recherche-annexe-01/images-videos/planche-1.jpg a planche-3.jpg)"
+  citation: "No need to discriminate. Recycling device that can make fuel from marine debris ; And the device takes oils from plastics and mixed waste becomes carbide. (sous-titres de 'ur 5 tons video.mp4', lu sur image)"
+  contenu: "Images d'une ligne continue en hall (bennes grillagees, portes, bac de char), d'un essai de combustion de l'huile, d'une machine URB-50 en lots ; aucun chiffre lisible."
+  reserve: "CONSTRUCTEUR. Aucune mesure ; illustration seulement."
+
+OW-TRANSPORT-INSTALLATION:
+  titre: "Tableau 'Transportation, Installation and Maintenance' (1t, 100t, 200t)"
+  type: declaration
+  fiabilite: constructeur
+  nature: emetteur_inconnu
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/transport installation and maintenance.pdf"
+  emplacement: "p. 1 (lu sur image par le chat 1, releves/energie-ur2000-divers.md section 6)"
+  citation: "How many 40' containers for shipment ; Days needed for installation onsite ; 3 months operation + 3 days maintenance"
+  valeurs_lues: "200t : 100 conteneurs de 40 pieds ; 30 jours d'installation ; 10 personnes d'installation ; 30 jours de formation ; 9 formateurs ; maintenance 3 jours tous les 3 mois. 1t : 1 conteneur, 15 jours. 100t : 65 conteneurs, 25 jours."
+  contenu: "Logistique d'installation et rythme de maintenance annonces par taille de machine."
+  reserve: "Sans emetteur ni date (scan du 16/01/2024). 100 conteneurs contre 7 morceaux par camion (UR2000-JP p. 6)."
+
+IGES-AEPW-PROPOSITION:
+  titre: "Proposition 'Zero Plastic Island' a l'AEPW (IGES, technologie One World), version anglaise"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-fournis/タイAEPW事業提案書英語版.pdf"
+  emplacement: "p. 4, 5 et 10 (lu sur image par le chat 1, releves/presentations-oneworld.md, document 3)"
+  citation: "URBAN RIG can make a profit by recovering salable resources (carbide, light oil, mixed oil, off-gas). (p. 4) ; Currently, no LCA data is available for URBAN RIG (p. 10)"
+  valeurs_lues: "p. 10 : 7 sites japonais listes (5 et 1 t/jour) ; inspection periodique facturee 2 % du CAPEX."
+  contenu: "Produits vendables selon OneWorld : char, huile legere, huile mixte, off-gas ; aucune ACV ; references japonaises en lots de 1 a 5 t/jour."
+  reserve: "CONSTRUCTEUR. Non datee (vers 2020 selon le contenu). Aucune mesure."
+
+# ------------------------------------------------ ANNEXE 3 (chat 3, 15/10/2026) : debouches annonces par OneWorld
+
+OW-ENG-P16-DEBOUCHES:
+  titre: "Brochure OneWorld 'Urban Rig' (anglais, oct. 2019), debouches annonces pour chaque produit de l'URC-2000"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/documents-constructeur/Urban Rig Recycling Solutions ENG .pdf"
+  emplacement: "p. 16, colonne 'Resource recycling method' du tableau 'Details of waste per day that can be recovered by URC-2000'"
+  citation: "Fuel for sale = 60,924ℓ ; Electricity sales = 60,924ℓ ; Sale as heating fuel ; Produce high-calorie powder coal mixed with heavy oil ; Metals and glasses = Recycled resources ; Debris sand, stone = Reclamation at site"
+  contenu: "Selon OneWorld, pour une entree a 90 % de resines : gazole vendu comme carburant ou converti en electricite vendue ; huile de chauffage et huile lourde vendues comme combustible de chauffage ; char transforme en 'charbon pulverise a haut pouvoir calorifique' melange a l'huile lourde ; metaux et verre recycles ; gravats, sable et pierres en remblai sur site."
+  reserve: "CONSTRUCTEUR (D-016). Aucun prix ni acheteur nomme (R-033). Lu par Claude le 15/10/2026 par extraction de texte (pdftotext) ; le fichier de ce chemin est la copie remplacee par Stephane le 14/10/2026."
+
+HARDIN-P42-P53-DEBOUCHES-CARBONE:
+  titre: "Plan d'affaires Hardin, annexe 'The URBAN RIG Technology' : produits vendables et credit carbone"
+  type: documentation_constructeur
+  fiabilite: constructeur
+  nature: declaration_constructeur
+  statut: lu
+  chemin: "reference/preuves/business-plans/Business-Plan-Hardin.pdf"
+  emplacement: "PDF p. 42 ('URBAN RIG - Highlights', en-tete 'OneWorld corporation') et p. 53 ('Urban Rig Vs Incinerator (WTE)')"
+  citation: "Charcoal is usable for briquettes, nano carbon, activated carbon and diamond raw materials ; Inorganic matters are copper, aluminum, lead, glass and salt. ; the operator could also earn Carbon Credit in lieu of processing the garbage from a normal incinerator ; Carbon Credit scheme Penalty Profit"
+  contenu: "Usages annonces du char (briquettes, nanocarbone, charbon actif, matiere premiere de diamant) ; matieres minerales vendables (cuivre, aluminium, plomb, verre, sel) ; credit carbone annonce par rapport a l'incineration ; 'no harmful substances such as CO2 or Dioxin is produced'."
+  reserve: "CONSTRUCTEUR, presentation reprise dans le plan d'affaires d'un client (Hardin) ; auteur exact de la page non etabli. Aucune methode de credit carbone, aucune mesure de CO2 ; l'installation emet du CO2 de combustion a la cheminee (annexe 2, section 2.7). Demandes R-034 et R-036. Lu par Claude le 15/10/2026 par extraction de texte."
+

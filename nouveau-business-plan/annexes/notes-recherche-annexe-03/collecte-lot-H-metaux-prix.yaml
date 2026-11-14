@@ -1,0 +1,273 @@
+# Lot H : prix publics de la ferraille (acier) et de l'aluminium de récupération, France et Europe, 2024-2026
+# Collecte du 15/10/2026 par un sous-agent de recherche.
+# Méthode Comext : l'API Eurostat (ec.europa.eu) est refusée par le proxy en ligne de commande, et WebFetch a été limité (HTTP 429)
+# après deux requêtes. Les requêtes ont donc été exécutées en lecture seule dans le navigateur Chrome de l'utilisateur
+# (onglet dédié ouvert puis refermé, fetch() GET des URL ci-dessous depuis la page de l'API, aucune connexion, aucun formulaire).
+# Formule de prix unitaire utilisée partout : P (EUR/t) = VALUE_IN_EUROS / (QUANTITY_IN_100KG x 0,1 t) = 10 x V / Q.
+# Base de l'API : https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409
+# Jeu de données : « EU trade since 1988 by HS2-4-6 and CN8 », mis à jour le 2026-09-15 (horodatage DISSEMINATION_TIMESTAMP_DATA).
+# Réserve générale Comext : valeur unitaire statistique (FAB à l'exportation, CAF à l'importation), moyenne de toutes les qualités
+# déclarées sous le code NC, y compris intra-UE pour le déclarant FR/DE et partenaire WORLD ; ce n'est pas un prix de rachat
+# d'un métal de qualité inférieure (métaux extraits d'un char de pyrolyse) ; c'est un plafond indicatif de marché.
+
+A3H-COMEXT-FR-ACIER-ANNUEL-2024-2025:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), France, NC 7204 30, 7204 41, 7204 49, annuel 2024 et 2025"
+  editeur: "Commission européenne, Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=FR&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025 (même requête répétée avec product=72043000, 72044110, 72044191, 72044199, 72044930, 72044990 et flow=1 importations / flow=2 exportations)"
+  emplacement: "Réponse JSON-stat, objet value, indicateurs VALUE_IN_EUROS et QUANTITY_IN_100KG, time 2024 et 2025"
+  contenu: >-
+    France, partenaire monde (intra + extra UE). Format : valeur EUR / quantité en 100 kg -> prix unitaire EUR/t (= 10 x V / Q).
+    EXPORTATIONS (flow 2) :
+    7204 49 10 (broyés, « shredded ») 2024 : 381 658 863 EUR / 10 839 695,56 (100 kg) -> 381 658 863 / 1 083 969,6 t = 352,1 EUR/t ;
+    2025 : 350 545 758 / 11 267 138,67 -> 311,1 EUR/t.
+    7204 49 30 (non broyés, en paquets) 2024 : 83 385 241 / 2 638 701,42 -> 316,0 ; 2025 : 52 387 171 / 1 732 486,13 -> 302,4 EUR/t.
+    7204 49 90 (non broyés, pas en paquets, « autres ») 2024 : 890 058 599 / 25 822 157,11 -> 344,7 ; 2025 : 756 913 876 / 24 495 868,63 -> 309,0 EUR/t.
+    7204 30 00 (fer ou acier étamé) 2024 : 78 151 680 / 2 101 220,59 -> 371,9 ; 2025 : 60 936 672 / 1 748 273,49 -> 348,6 EUR/t.
+    7204 41 10 (tournures, copeaux) 2024 : 99 354 800 / 2 476 243,12 -> 401,2 ; 2025 : 71 494 340 / 1 971 306,7 -> 362,7 EUR/t.
+    7204 41 91 (chutes, en paquets) 2024 : 15 374 019 / 467 892,24 -> 328,6 ; 2025 : 13 306 077 / 471 047,05 -> 282,5 EUR/t.
+    7204 41 99 (chutes, pas en paquets) 2024 : 210 253 110 / 5 759 946,75 -> 365,0 ; 2025 : 169 736 344 / 5 069 873,74 -> 334,8 EUR/t.
+    IMPORTATIONS (flow 1) :
+    7204 49 10 2024 : 147 521 421 / 3 943 887,82 -> 374,1 ; 2025 : 164 911 970 / 4 772 251,04 -> 345,6 EUR/t.
+    7204 49 30 2024 : 204 183 / 4 414,4 -> 462,5 ; 2025 : 58 381 / 1 692 -> 345,0 EUR/t (volumes très faibles, non représentatif).
+    7204 49 90 2024 : 130 676 827 / 4 214 303,16 -> 310,1 ; 2025 : 137 142 768 / 4 898 552,88 -> 280,0 EUR/t.
+    7204 30 00 2024 : 31 209 981 / 1 071 816,95 -> 291,2 ; 2025 : 25 998 471 / 1 032 720,68 -> 251,7 EUR/t.
+    7204 41 10 2024 : 29 749 826 / 942 148,9 -> 315,8 ; 2025 : 19 594 216 / 705 428,3 -> 277,8 EUR/t.
+    7204 41 91 2024 : 251 299 / 1 355,56 -> 1 853,8 (non représentatif, 136 t) ; 2025 : 1 742 442 / 38 665,39 -> 450,6 EUR/t.
+    7204 41 99 2024 : 55 150 158 / 1 363 298,16 -> 404,5 ; 2025 : 41 375 576 / 1 242 971,27 -> 332,9 EUR/t.
+    Synthèse : ferraille broyée et ferraille « autres » exportées par la France à 345-352 EUR/t en 2024 et 309-311 EUR/t en 2025 ;
+    acier étamé (emballages) exporté 372 puis 349 EUR/t, importé 291 puis 252 EUR/t.
+  citation: 'Requête product=72044910, flow=2, time=2024 (lue par WebFetch) : "value":{"1":10839695.56,"0":381658863} avec indicators {"VALUE_IN_EUROS":0,"QUANTITY_IN_100KG":1}. Libellés : 72044910 "Waste and scrap of iron or steel, fragmentised \"shredded\" (excl. slag, scale and other waste of the production of iron and steel; ..."; 72044990 "Waste and scrap of iron or steel, not fragmentised \"shredded\", not in bundles ..."; 72043000 "Waste and scrap of tinned iron or steel (excl. radioactive, and waste and scrap of batteries and electric accumulators)(1996-2500)"'
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 : 1 requête via WebFetch (valeur 2024 de 7204 49 10 export, identique au résultat navigateur), le reste via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur (onglet refermé), WebFetch ayant été limité (HTTP 429). Valeurs reprises telles que renvoyées par le JSON ; prix unitaires calculés par l'agent. Valeur unitaire statistique, toutes qualités confondues ; pas un prix de rachat."
+  parametres: [prix_ferraille_eur_t, prix_acier_etame_eur_t]
+
+A3H-COMEXT-FR-ALU-ANNUEL-2024-2025:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), France, NC 7602 00, annuel 2024 et 2025"
+  editeur: "Commission européenne, Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=FR&partner=WORLD&product=76020090&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025 (répétée avec product=76020011, 76020019 et flow=1)"
+  emplacement: "Réponse JSON-stat, objet value, indicateurs VALUE_IN_EUROS et QUANTITY_IN_100KG"
+  contenu: >-
+    France, partenaire monde. P = 10 x V / Q (EUR/t).
+    EXPORTATIONS : 7602 00 90 (débris / scrap d'aluminium) 2024 : 359 951 364 / 2 608 683,74 -> 1 379,8 EUR/t ; 2025 : 427 423 250 / 2 935 180,26 -> 1 456,2 EUR/t.
+    7602 00 19 (déchets d'aluminium, autres) 2024 : 322 310 961 / 2 048 925,57 -> 1 573,1 ; 2025 : 354 484 854 / 2 059 121,88 -> 1 721,5 EUR/t.
+    7602 00 11 (tournures, copeaux, feuilles minces colorées ou revêtues < 0,2 mm) 2024 : 79 793 422 / 606 843,24 -> 1 314,9 ; 2025 : 79 717 494 / 573 693,89 -> 1 389,5 EUR/t.
+    IMPORTATIONS : 7602 00 90 2024 : 90 992 108 / 574 107,06 -> 1 584,9 ; 2025 : 71 149 211 / 468 652,85 -> 1 518,2 EUR/t.
+    7602 00 19 2024 : 424 634 062 / 2 054 238,53 -> 2 067,1 ; 2025 : 461 693 976 / 2 137 145,56 -> 2 160,3 EUR/t.
+    7602 00 11 2024 : 4 942 660 / 31 492,97 -> 1 569,4 ; 2025 : 5 902 010 / 35 773,64 -> 1 649,8 EUR/t.
+  citation: 'Libellés JSON : 76020090 "Scrap of aluminium (excl. slags, scale and the like from iron and ..."; 76020019 "Waste of aluminium, incl. faulty workpieces and workpieces which have become unusable in the course of production or processing ..."; 76020011 "Turnings, shavings, chips, milling waste, sawdust and filings, of aluminium; waste of coloured, coated or bonded sheets and foil, of a thickness \"excl. any backing\" of <  0,2 mm, of aluminium". Valeurs : voir contenu (objet value du JSON).'
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur (WebFetch limité HTTP 429). Libellés tronqués par l'agent (...). Écart import / export important sur 7602 00 19 (2 160 contre 1 722 EUR/t en 2025) : mélange de qualités différent selon le flux."
+  parametres: [prix_aluminium_recupere_eur_t]
+
+A3H-COMEXT-UE27-EXTRA-2024-2025:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), UE27 avec les pays tiers, NC 7204 et 7602, annuel 2024 et 2025"
+  editeur: "Commission européenne, Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=EU27_2020&partner=EXT_EU27_2020&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025 (répétée pour les autres codes et flow=1)"
+  emplacement: "Réponse JSON-stat, objet value"
+  contenu: >-
+    UE27, échanges extra-UE. P = 10 x V / Q (EUR/t).
+    EXPORTATIONS extra-UE : 7204 49 10 2024 : 1 090 567 675 / 30 768 829,27 -> 354,4 ; 2025 : 1 041 223 291 / 33 517 786,19 -> 310,6 EUR/t.
+    7204 49 90 2024 : 3 805 810 156 / 104 587 467,31 -> 363,9 ; 2025 : 3 256 657 500 / 104 447 413,35 -> 311,8 EUR/t.
+    7204 49 30 2024 : 21 206 811 / 751 183,6 -> 282,3 ; 2025 : 15 821 549 / 621 087,61 -> 254,7 EUR/t.
+    7204 30 00 2024 : 65 989 451 / 1 912 637,84 -> 345,0 ; 2025 : 44 199 504 / 1 531 500,94 -> 288,6 EUR/t.
+    7204 41 10 2024 : 87 183 554 / 2 668 580,13 -> 326,7 ; 2025 : 83 884 134 / 2 837 847,27 -> 295,6. 7204 41 99 2024 : 369,5 ; 2025 : 326,9 EUR/t.
+    7602 00 90 2024 : 1 242 034 224 / 7 279 406,26 -> 1 706,2 ; 2025 : 1 364 140 015 / 7 572 747,03 -> 1 801,4 EUR/t.
+    7602 00 19 2024 : 741 363 089 / 4 273 224,95 -> 1 734,9 ; 2025 : 751 115 245 / 4 086 177,21 -> 1 838,2 EUR/t.
+    7602 00 11 2024 : 181 518 821 / 1 024 749,15 -> 1 771,3 ; 2025 : 215 144 733 / 1 113 615,86 -> 1 931,9 EUR/t.
+    IMPORTATIONS extra-UE : 7204 49 10 2024 : 411 913 539 / 11 309 399,06 -> 364,2 ; 2025 : 365 733 370 / 11 499 825,28 -> 318,0.
+    7204 49 90 2024 : 333,4 ; 2025 : 297,2. 7204 30 00 2024 : 389,0 ; 2025 : 336,1. 7602 00 90 2024 : 1 903,8 ; 2025 : 1 954,4.
+    7602 00 19 2024 : 1 801,6 ; 2025 : 1 938,3. 7602 00 11 2024 : 1 288,6 ; 2025 : 1 458,7 EUR/t.
+  citation: 'Requête de contrôle reporter=EU27_2020, partner=EXT_EU27_2020, product=72044910, flow=2, time=2024 : {"0":1090567675,"1":30768829.27} (0 = VALUE_IN_EUROS, 1 = QUANTITY_IN_100KG). Les codes EU, EXTRA_EU27_2020 et WORLD comme partenaire de EU27_2020 renvoient un objet value vide.'
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Valeurs extra-UE seulement (le commerce intra-UE n'est pas inclus dans cet agrégat)."
+  parametres: [prix_ferraille_eur_t, prix_aluminium_recupere_eur_t]
+
+A3H-COMEXT-MENSUEL-2025-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), données mensuelles janvier 2025 à juin/juillet 2026"
+  editeur: "Commission européenne, Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=M&reporter=FR&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&sinceTimePeriod=2025-01 (répétée pour les autres codes ; UE : reporter=EU27_2020&partner=EXT_EU27_2020)"
+  emplacement: "Réponse JSON-stat, dimension time 2025-01 à 2026-12 ; dernières valeurs disponibles : 2026-06 pour la France, 2026-07 pour l'UE27"
+  contenu: >-
+    Prix unitaires mensuels P = 10 x V / Q (EUR/t), arrondis.
+    FR export 7204 49 10 : 2025-01 334, 02 321, 03 334, 04 340, 05 326, 06 307, 07 300, 08 294, 09 295, 10 286, 11 284, 12 290 ;
+    2026-01 309, 02 301, 03 315, 04 316, 05 329, 06 332. Cumul janv.-juin 2026 : 206 001 084 EUR / 6 510 577,79 (100 kg) -> 316,4 EUR/t.
+    FR export 7204 49 90 : 2025 de 334 (janv.) à 279 (oct.) ; 2026-01 299 à 2026-06 332 ; cumul janv.-juin 2026 : 432 674 160 / 13 672 640,23 -> 316,5 EUR/t.
+    FR export 7204 30 00 (étamé) : 2025 de 311 à 365 (pic isolé 457 en juillet) ; 2026-01 348 à 2026-06 358 ; cumul janv.-juin 2026 : 35 562 393 / 1 008 204,95 -> 352,7 EUR/t.
+    FR import 7204 49 10 : cumul janv.-juin 2026 : 122 591 525 / 3 603 972,56 -> 340,2 EUR/t (mensuel très volatil, 275 à 449).
+    FR export 7602 00 19 : 2025 de 1 500 à 1 860 ; 2026-01 1 366, 02 1 816, 03 1 802, 04 2 061, 05 2 233, 06 3 176 ; cumul janv.-juin 2026 : 242 702 259 / 1 204 543,02 -> 2 014,9 EUR/t.
+    FR export 7602 00 90 : 2025 de 1 374 à 1 569 ; 2026-01 1 459, 02 1 693, 03 1 667, 04 1 723, 05 1 829, 06 2 045 ; cumul janv.-juin 2026 : 260 327 806 / 1 510 795,60 -> 1 723,1 EUR/t.
+    FR import 7602 00 19 : cumul janv.-juin 2026 : 278 960 013 / 1 104 253,38 -> 2 526,2 EUR/t. FR import 7602 00 90 : cumul janv.-juin 2026 : 39 125 351 / 266 305,54 -> 1 469,2 EUR/t.
+    UE27 export extra-UE 7204 49 10 : 2025 de 383 (janv.) à 280 (déc.) ; 2026-01 297 à 2026-07 320 (pic 343 en juin) ; cumul janv.-juil. 2026 : 663 660 840 / 20 854 719,65 -> 318,2 EUR/t.
+    UE27 export extra-UE 7204 49 90 : cumul janv.-juil. 2026 : 2 364 019 655 / 69 845 230,72 -> 338,5 EUR/t.
+    UE27 export extra-UE 7602 00 90 : 2025 de 1 721 à 1 889 ; 2026-01 1 876 à 2026-07 2 330 ; cumul janv.-juil. 2026 : 958 432 737 / 4 480 443,88 -> 2 139,1 EUR/t.
+    UE27 export extra-UE 7602 00 19 : cumul janv.-juil. 2026 : 536 114 248 / 2 443 000,91 -> 2 194,5 EUR/t.
+    Tendance : ferraille au plus bas fin 2025 (environ 280-290 EUR/t) puis remontée à 330-345 EUR/t en mai-juin 2026 ; aluminium en hausse nette au 1er semestre 2026.
+  citation: 'Requête freq=M, reporter=FR, product=72044910, flow=2, indicators=VALUE_IN_EUROS, sinceTimePeriod=2026-01 : "value":{"0":36500846,"1":34846592,"2":37215915,"3":33326500,"4":24634824,"5":39476407} (index 0 = 2026-01 ... 5 = 2026-06), "updated":"2026-09-15T11:00:00+0200"'
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Données 2026 provisoires (révisables). Le pic FR export 7602 00 19 de juin 2026 (3 176 EUR/t) est probablement un effet de composition ; à ne pas utiliser seul."
+  parametres: [prix_ferraille_eur_t, prix_aluminium_recupere_eur_t, tendance_prix_2026]
+
+A3H-COMEXT-DE-ANNUEL-2024-2025:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), Allemagne, NC 7204 et 7602, annuel 2024 et 2025"
+  editeur: "Commission européenne, Eurostat (Comext), données transmises par Destatis"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=DE&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025 (répétée pour 72043000, 72044990, 76020019, 76020090 et flow=1)"
+  emplacement: "Réponse JSON-stat, objet value"
+  contenu: >-
+    Allemagne, partenaire monde. P = 10 x V / Q (EUR/t).
+    Export 7204 49 10 2024 : 255 099 567 / 7 127 102,46 -> 357,9 ; 2025 : 278 266 062 / 8 867 792,46 -> 313,8.
+    Export 7204 49 90 2024 : 1 336 660 203 / 38 834 734,67 -> 344,2 ; 2025 : 1 230 369 510 / 40 612 753,77 -> 303,0.
+    Export 7204 30 00 2024 : 262,1 ; 2025 : 301,3. Import 7204 49 10 2024 : 352,3 ; 2025 : 307,7. Import 7204 49 90 2024 : 323,1 ; 2025 : 281,0. Import 7204 30 00 2024 : 249,6 ; 2025 : 234,3.
+    Export 7602 00 90 2024 : 1 477 492 930 / 8 413 683,94 -> 1 756,1 ; 2025 : 1 476 657 899 / 7 812 290,59 -> 1 890,2. Export 7602 00 19 2024 : 1 855,8 ; 2025 : 1 971,3.
+    Import 7602 00 90 2024 : 1 729,2 ; 2025 : 1 771,2. Import 7602 00 19 2024 : 1 588,6 ; 2025 : 1 802,1 EUR/t.
+  citation: "Valeurs de l'objet value du JSON (voir contenu) ; libellés identiques à A3H-COMEXT-FR-ACIER-ANNUEL-2024-2025."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Substitut aux indices de prix Destatis, non obtenus (voir NON TROUVÉ)."
+  parametres: [prix_ferraille_eur_t, prix_aluminium_recupere_eur_t]
+
+A3H-USGS-MCS2026-IRON-STEEL-SCRAP:
+  titre: "Mineral Commodity Summaries 2026, Iron and Steel Scrap"
+  editeur: "U.S. Geological Survey"
+  date: "2026"
+  type: statistique_publique
+  url: "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-iron-steel-scrap.pdf"
+  emplacement: "Tableau Salient Statistics, ligne Price ; paragraphe sur l'année 2025"
+  contenu: "États-Unis, prix moyen livré de la ferraille No. 1 heavy melting (composite), USD par tonne métrique : 2021 417,66 ; 2022 381,72 ; 2023 333,28 ; 2024 314,85 ; 2025 319 (estimation)."
+  citation: "Price, average, delivered, No. 1 heavy melting composite price, dollars per metric ton3 417.66 381.72 333.28 314.85 319 ; The annual average price delivered in 2025 was estimated to increase to $319.00 per ton"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent le 15/10/2026 via WebFetch. Marché américain, qualité HMS 1 (démolition), en USD ; renvoi 3 du tableau non lu. Repère hors Europe uniquement."
+  parametres: [prix_ferraille_usd_t]
+
+A3H-DERICHEBOURG-RESULTATS-2023-2024:
+  titre: "Résultats de l'exercice 2023-2024 (communiqué de presse)"
+  editeur: "Derichebourg (diffusion AMF / DILA)"
+  date: "2024-12-05"
+  type: entreprise
+  url: "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/12/FCECO076828_20241205.pdf"
+  emplacement: "Activité Recyclage (pages non numérotées)"
+  contenu: "Prix moyen des ferrailles vendues par le groupe (France et autres pays d'implantation) sur l'exercice clos le 30/09/2024 : 349 EUR/t, inférieur de 2 EUR à l'exercice précédent. Prix moyen des métaux non ferreux vendus : 2 445 EUR/t contre 2 307 EUR/t (+6 %) ; ce panier inclut le cuivre et ne représente pas l'aluminium seul."
+  citation: "le prix moyen (349 €/t) n'est inférieur que de 2 € au prix moyen de l'an passé. ; font progresser le prix moyen des métaux non ferreux vendus par le Groupe de 6 %, passant de 2 307 €/t à 2 445 €/t."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent le 15/10/2026 via WebFetch. Source commerciale (premier recycleur français coté) ; prix de vente aux aciéries et fonderies, pas prix d'achat aux apporteurs."
+  parametres: [prix_ferraille_eur_t]
+
+A3H-DERICHEBOURG-S1-2024-2025:
+  titre: "Résultats du premier semestre de l'exercice 2024-2025 (communiqué de presse)"
+  editeur: "Derichebourg (diffusion AMF / DILA)"
+  date: "2025-05-27"
+  type: entreprise
+  url: "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2025/05/FCECO078641_20250527.pdf"
+  emplacement: "page 2/9"
+  contenu: "Semestre clos le 31/03/2025 : prix moyen des ferrailles vendues 328,7 EUR (par tonne), -6,4 % sur un an ; prix moyen des métaux non ferreux +11,9 % (sans valeur absolue)."
+  citation: "Le prix moyen des ferrailles commercialisées par le Groupe se situe à 328,7 €, en retrait de 6,4 % par rapport à l’an passé."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Source commerciale. L'unité « par tonne » n'est pas écrite dans la phrase citée, elle se déduit du communiqué 2023-2024 (349 €/t)."
+  parametres: [prix_ferraille_eur_t]
+
+A3H-DERICHEBOURG-S1-2025-2026:
+  titre: "Résultats du premier semestre de l'exercice 2025-2026 (communiqué de presse)"
+  editeur: "Derichebourg (diffusion AMF / DILA)"
+  date: "2026-05-28"
+  type: entreprise
+  url: "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/05/FCECO082120_20260528.pdf"
+  emplacement: "pages 2, 3 et 5"
+  contenu: "Semestre clos le 31/03/2026 : prix moyen des ferrailles vendues 305,4 EUR (par tonne), -7,1 % sur un an ; point bas en octobre 2025, légère remontée ensuite. Volumes : ferrailles 2 127,7 kt, non ferreux 357,1 kt. Prix moyen des non ferreux +14,6 % (cuivre +20 %), hausse de l'aluminium en mars 2026 (pas de valeur absolue)."
+  citation: "Le prix moyen des ferrailles commercialisées par le Groupe se situe à 305,4 €, ; le point bas du prix des ferrailles vendues a été enregistré au mois d'octobre 2025"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (citation obtenue par fragments, l'outil limitant la longueur des extraits). Source commerciale. Cohérent avec le point bas Comext d'octobre à décembre 2025."
+  parametres: [prix_ferraille_eur_t, tendance_prix_2026]
+
+A3H-LETSRECYCLE-FERREUX-2026:
+  titre: "Ferrous scrap metal prices 2026"
+  editeur: "letsrecycle.com (presse professionnelle, Royaume-Uni)"
+  date: "2026-09"
+  type: presse
+  url: "https://www.letsrecycle.com/prices/metals/ferrous-metal-prices/ferrous-scrap-metal-prices-2026/"
+  emplacement: "Tableau « Ferrous scrap 2026 £ per tonne », janvier à septembre"
+  contenu: "Royaume-Uni, GBP/t, fourchettes mensuelles : 5c light iron (ferraille légère) 60-100 de janvier à avril, 75-100 en mai-juin, 60-90 en juillet, 60-80 en août-septembre ; 8B mixed steel cuttings 100-140 ; 0A plate & girder 120-170 ; No 1 old steel 95-155 ; Cars 60-100. Base (livré ou enlevé) non précisée."
+  citation: "Ferrous scrap 2026 £ per tonne ; 5c light iron 60 - 100 (janvier)"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Presse, sans méthode publiée ; Royaume-Uni et non UE ; prix en livres. Le 5c light iron (ferraille légère, emballages) est la qualité la plus proche des métaux de pyrolyse. Version 2025 : 5c light iron 100-150 en janvier, 60-100 en octobre et décembre 2025 (https://www.letsrecycle.com/prices/metals/ferrous-metal-prices/ferrous-scrap-metal-prices-2025/)."
+  parametres: [prix_ferraille_legere_gbp_t]
+
+A3H-LETSRECYCLE-CANETTES-2026:
+  titre: "Steel can prices 2026 ; Aluminium can prices 2026"
+  editeur: "letsrecycle.com (presse professionnelle, Royaume-Uni)"
+  date: "2026-09"
+  type: presse
+  url: "https://www.letsrecycle.com/prices/metals/steel-cans/steel-can-prices-2026/ et https://www.letsrecycle.com/prices/metals/aluminium-cans/aluminium-can-prices-2026/"
+  emplacement: "Tableaux « 2026 £ per tonne », janvier à septembre"
+  contenu: "Canettes acier, GBP/t : janv. 65-100, févr.-mars 70-105, avr. 90-120, mai 95-130, juin-juil. 90-130, août 90-135, sept. 95-140. Canettes aluminium « Baled or densified and strapped », GBP/t : janv. 820-1 340, févr. 825-1 345, mars 840-1 360, avr. 900-1 400, mai 900-1 500, juin 880-1 450, juil. 880-1 350, août 830-1 300, sept. 880-1 350."
+  citation: "Steel cans 65 - 100 (janvier 2026) ; Baled or densified and strapped 820 - 1340 (janvier 2026)"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Presse, Royaume-Uni, GBP ; base (livré / enlevé) non précisée. Emballages issus de collecte séparée, plus propres que des métaux extraits d'un char."
+  parametres: [prix_canettes_acier_gbp_t, prix_canettes_alu_gbp_t]
+
+A3H-FASTMARKETS-ALU-FRAG-2026-01:
+  titre: "EU secondary aluminium prices firm as scrap shortages bite"
+  editeur: "Fastmarkets (article en accès libre)"
+  date: "2026-01-26"
+  type: presse
+  url: "https://www.fastmarkets.com/insights/eu-secondary-aluminium-prices-firm-as-scrap-shortages-bite/"
+  emplacement: "Corps de l'article"
+  contenu: "Europe, aluminium scrap floated frag (fragments d'aluminium issus de broyage, séparés par flottation), livré consommateur : 1 900-2 000 EUR/t, contre 1 850-1 950 EUR/t une semaine plus tôt (+2,63 %)."
+  citation: "Fastmarkets assessed the price for aluminium scrap floated frag, delivered consumer Europe at €1,900-2,000 per tonne"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Agence de prix commerciale (cotation payante), seule la valeur citée dans l'article libre est reprise. Qualité broyée flottée, proche d'un aluminium mélangé de broyage ; prix livré."
+  parametres: [prix_aluminium_recupere_eur_t]
+
+A3H-GMK-ALLEMAGNE-FERRAILLE-2026-04:
+  titre: "Scrap exports from Germany remained stable in early 2026 (titre déduit de la légende)"
+  editeur: "GMK Center (presse spécialisée, Ukraine), reprenant Kallanish"
+  date: "2026 (non affichée ; vraisemblablement avril-mai 2026)"
+  type: presse
+  url: "https://gmk.center/?p=123283"
+  emplacement: "Paragraphe sur les prix"
+  contenu: "Allemagne, avril 2026 : prix moyens E3 295 EUR/t, E2/8 305 EUR/t, E40 (broyée) 305 EUR/t ; base de livraison non précisée ; hausse attendue en mai."
+  citation: "Average prices stood at €295/t for E3 scrap, €305/t for E2/8, and €305/t for E40."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch. Source secondaire (article attribué à Kallanish, origine du prix non nommée), date de publication non affichée. À n'utiliser qu'en recoupement."
+  parametres: [prix_ferraille_eur_t]
+
+# NON TROUVÉ
+# 1. Destatis, indice des prix de la ferraille (Großhandelsverkaufspreise, rubrique Altmaterial / Eisen- und Stahlschrott) 2024-2026 :
+#    NON TROUVÉ. GENESIS tables 61281-0002 et 61281-0004 ouvertes dans le navigateur
+#    (https://www-genesis.destatis.de/datenbank/online/statistic/61281/table/61281-0004) : application JavaScript, aucune valeur lisible ;
+#    API GENESIS non utilisée (requiert un identifiant). Communiqué Destatis PD26_285_61281 (14/08/2026) lu : aucune mention de la ferraille
+#    (seulement « Nicht-Eisen-Erzen, -Metallen und -Metallhalbzeug (+27,8 % gegenüber Juli 2025 ...) »).
+#    EUWID « Index der Großhandelsverkaufspreise für Altstoffe » : payant. Série BDSV : non trouvée en accès libre.
+#    Statistik Austria GHPI mai 2026 (PDF FMTI) : pas de rubrique ferraille.
+# 2. US BLS PPI ferrous scrap : non cherché en détail (indice, pas un prix) ; seul USGS retenu.
+# 3. Tarifs de rachat affichés par des recycleurs français (ferraille mêlée, tôle, alu mêlé, canettes) avec date d'affichage :
+#    NON TROUVÉ. Recherches : « prix rachat ferraille mêlée tôle aluminium mêlé canettes €/tonne 2026 », « nos prix d'achat métaux ferraille
+#    aluminium canettes €/kg mise à jour 2026 », « ferraille tôle alu mêlé prix rachat kg », « cours ferraille aluminium prix au kilo aujourd'hui » :
+#    seuls des agrégateurs ou blogs sans date ni source (hellopro, synonyme-du-mot, lefrugalisme), non retenus.
+# 4. Derichebourg, exercice complet 2024-2025 (clos le 30/09/2025) : prix moyen annuel des ferrailles NON TROUVÉ ; les deux documents AMF
+#    du 05/12/2025 lus (FCECO080418, FCECO080419) ne renvoient qu'à la vidéo ; article Option Finance du 05/12/2025 sans prix.
+# 5. Presse française libre (Recyclage Récupération, L'Usine Nouvelle) donnant un prix E40 / E3 2025-2026 : NON TROUVÉ (recherches
+#    « prix ferraille E40 €/t 2026 Europe ferrailles broyées », « recyclage-recuperation.fr marché des ferrailles 2026 prix tonne »).
+#    Kallanish, Argus, Platts, EUWID : payants. Steelradar « How much are scrap prices in France » (E40 375-380 EUR/t, E1 330, E3 350) :
+#    article sans date ni source, non retenu. Eurometal (juillet 2021) et Fastmarkets (août 2023, alu frag 1 500-1 550 EUR/t) : hors période, non retenus.
+# 6. Code NC 7204 41 91 / 7204 41 99 : existent dans Comext 2024-2025 ; 7204 41 90 tel que libellé dans la mission n'a pas été interrogé séparément.

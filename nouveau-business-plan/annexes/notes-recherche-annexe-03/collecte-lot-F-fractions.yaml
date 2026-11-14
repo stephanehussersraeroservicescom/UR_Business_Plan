@@ -1,0 +1,244 @@
+# Lot F : éléments de prix publics par fraction de l'huile de pyrolyse (légère / naphta-kérosène, gazole, lourde / cireuse)
+# Sous-agent de recherche, 15/10/2026. Identifiants A3F-.
+# Lecture : API Eurostat Comext et INSEE BDM interrogées dans le navigateur Chrome de l'utilisateur (lecture seule, onglet dédié refermé),
+# car curl est bloqué par le proxy et WebFetch résume les réponses JSON. Les valeurs unitaires (EUR/t) sont des CALCULS de ce sous-agent :
+# valeur unitaire = VALUE_IN_EUROS / (QUANTITY_IN_100KG / 10). Données brutes conservées dans
+# /tmp/claude-0/-home-claude/5f93b1fa-406e-521f-bf34-81fff577c27a/scratchpad/dlF/notes-donnees.txt
+# Avertissement général : une valeur unitaire en douane est une moyenne de transactions CAF (import) ou FAB (export) de qualités hétérogènes,
+# pas une cotation ; elle sert d'ordre de grandeur et de série de comparaison.
+
+A3F-COMEXT-NAPHTA-2710-12-2024-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 12 11, 2710 12 25, 2710 12 90"
+  editeur: "Eurostat (Comext)"
+  date: "2026-09-15 (mise à jour du jeu de données) ; données 2024, 2025 et janv.-juil. 2026"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101211&product=27101225&product=27101290 (France) ; même requête avec reporter=EU27_2020 et flow=1 (UE) ; mensuel : freq=M&time=2026-01 ... &time=2026-07"
+  emplacement: "réponse JSON (json-stat), dimensions product x flow x indicators x time ; libellés de la dimension product (lang=fr)"
+  contenu: "Huiles légères (naphta) : 2710 12 11 « destinées à subir un traitement défini » (charge de vapocraqueur/raffinerie). Importations extra-UE de la FRANCE : 2024 : 270 146 536 EUR pour 4 337 721,96 x 100 kg (433 772 t) soit 622,8 EUR/t ; 2025 : 297 493 114 EUR / 479 060 t = 621,0 EUR/t. Importations extra-UE de l'UE27 : 2024 : 3 670 982 257 EUR / 5 728 546 t = 640,8 EUR/t ; 2025 : 2 413 831 850 EUR / 4 327 825 t = 557,7 EUR/t. UE27 mensuel 2026 (EUR/t, calcul) : janv. 567 ; févr. 555 ; mars 593 ; avr. 701 ; mai 761 ; juin 712 ; juil. 663 (ex. juil. : 200 764 230 EUR / 303 004,7 t). France mensuel 2026 (volumes faibles, série bruitée) : janv. 1 066 ; févr. 1 044 ; mars 589 ; avr. 317 ; mai 687 ; juil. 588 EUR/t. Autres huiles légères 2710 12 90 (« n.d.a. ») UE27 import : 2024 694,0 EUR/t ; 2025 567,2 EUR/t ; 2026 mensuel 505, 495, 666, 816, 823, 705, 701 EUR/t ; France import 2024 626,6 ; 2025 500,9 EUR/t. Essences spéciales 2710 12 25 France import 2024 664 ; 2025 540 EUR/t ; export 2024 638 ; 2025 515 EUR/t."
+  citation: "27101211: Huiles légères de pétrole ou de minéraux bitumineux, destinées à subir un traitement défini {voir note complémentaire 5 du chapitre 27} (à l'excl. des produits contenant du biodiesel) ; [FR, EXT_EU27_2020, import] VALUE_IN_EUROS 2024 270146536 ; QUANTITY_IN_100KG 2024 4337721.96 ; VALUE_IN_EUROS 2025 297493114 ; QUANTITY_IN_100KG 2025 4790599.12 ; [EU27_2020] VALUE_IN_EUROS 2024 3670982257 ; QUANTITY_IN_100KG 2024 57285455.54 ; 2025 2413831850 ; 43278254.85"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via l'API Comext dans le navigateur Chrome (lecture seule) ; valeurs copiées de la réponse JSON (champ value). Base CAF frontière (import). Pas de cotation NWE publique gratuite pour le naphta : c'est la meilleure approche publique. Les huiles légères de pyrolyse de plastiques sont oléfiniques et ne sont pas du naphta conforme ; elles ne pourraient prétendre à ce prix qu'après traitement ou avec une décote non chiffrée ici."
+  parametres: [prix_naphta_import_ue, prix_naphta_import_france, prix_fraction_legere_reference]
+
+A3F-COMEXT-JET-2710-19-21-2024-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), position NC 2710 19 21 « Carburéacteurs, type pétrole lampant »"
+  editeur: "Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101921 (et reporter=EU27_2020 ; mensuel freq=M, time=2026-01 à 2026-07)"
+  emplacement: "réponse JSON, produit 27101921"
+  contenu: "Carburéacteur (kérosène) : importations extra-UE France : 2024 : 4 265 838 850 EUR / 5 634 510 t = 757,1 EUR/t ; 2025 : 3 789 923 841 EUR / 5 695 606 t = 665,4 EUR/t ; exportations France 2024 805 ; 2025 661 EUR/t. UE27 import : 2024 747,8 EUR/t ; 2025 650,4 EUR/t. Mensuel 2026 import (EUR/t, calcul) UE27 : janv. 625 ; févr. 658 ; mars 911 ; avr. 1 221 ; mai 1 111 ; juin 957 ; juil. 911. France : 635 ; 681 ; 937 ; 1 274 ; 1 006 ; 795 ; 721."
+  citation: "27101921: Carburéacteurs, type pétrole lampant ; [FR import] VALUE_IN_EUROS 2024 4265838850 ; QUANTITY_IN_100KG 2024 56345095.23 ; VALUE_IN_EUROS 2025 3789923841 ; QUANTITY_IN_100KG 2025 56956059.35"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via l'API Comext dans le navigateur. Comparable : DGEC Jet 1 574 $/t semaine du 9/10/2026 (A3-DGEC-NPG-2026-10-09-COTATIONS). La fraction légère de type kérosène d'une huile de pyrolyse ne satisfait pas la spécification carburéacteur ; cette série est une borne haute de référence."
+  parametres: [prix_carbureacteur_import, prix_fraction_legere_reference]
+
+A3F-COMEXT-GAZOLE-2710-19-4X-2024-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 19 43 (2024), 2710 19 44 et 2710 19 47 (2025-2026), 2710 19 31"
+  editeur: "Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101943&product=27101944&product=27101947&product=27101931 (et reporter=EU27_2020 ; mensuel freq=M)"
+  emplacement: "réponse JSON, produits 27101943, 27101944, 27101947, 27101931"
+  contenu: "Gazole <= 10 mg/kg S : la position 2710 19 43 n'a plus de données en 2025 ; à partir de 2025 la NC distingue 2710 19 42 (carbone biosourcé >= 80 %) et 2710 19 44 (fossile). France import extra-UE : 2024 (27101943) 7 162 847 182 EUR / 10 020 680 t = 714,8 EUR/t ; 2025 (27101944) 5 795 975 417 EUR / 9 143 815 t = 633,9 EUR/t. UE27 : 2024 736,9 ; 2025 628,9 EUR/t. Gas oil 0,002-0,1 % S (27101947) France import 2025 : 768 EUR/t. Gazole « destiné à subir un traitement défini » (27101931, charge de raffinerie) UE27 import 2024 652,9 ; 2025 577,9 EUR/t. Mensuel 2026, gazole 27101944 (EUR/t, calcul) UE27 : janv. 578 ; févr. 647 ; mars 916 ; avr. 1 154 ; mai 1 061 ; juin 921 ; juil. 867. France : 603 ; 652 ; 871 ; 1 051 ; 971 ; 897 ; 778."
+  citation: "27101944: Gazole de pétrole ou de minéraux bitumineux, d’une teneur en poids de soufre <= 0,001 % (à l’excl. des produits contenant du biodiesel, destinés à subir une transformation chimique ou ayant une teneur en carbone biosourcé >= 80 % ...) ; [FR import 2025] VALUE_IN_EUROS 5795975417 ; QUANTITY_IN_100KG 91438145.75 ; 27101943 [FR import 2024] 7162847182 ; 100206796.83"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via l'API Comext dans le navigateur. Les signes <= et >= du libellé ont été restitués ; le libellé est tronqué ici. Changement de nomenclature 2025 constaté par l'absence de 27101943 en 2025 et la présence de 27101942/27101944 (libellés lus). La fraction gazole d'une huile de pyrolyse (oléfinique, chlore 0,137 à 0,526 %, point éclair < 40 °C) n'est pas un gazole EN 590 ; série de référence haute."
+  parametres: [prix_gazole_import_france, prix_gazole_import_ue, prix_fraction_gazole_reference]
+
+A3F-COMEXT-FIOUL-LOURD-VGO-2710-19-5X-6X-2024-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 19 51, 2710 19 66, 2710 19 67, 2710 19 99"
+  editeur: "Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101951&product=27101966&product=27101967&product=27101999 (et reporter=EU27_2020 ; mensuel freq=M)"
+  emplacement: "réponse JSON, produits 27101951, 27101966, 27101967, 27101999"
+  contenu: "Fuel oils destinés à subir un traitement défini (27101951, charges lourdes de raffinerie de type gazole sous vide/résidus ; meilleure approche publique du VGO) UE27 import : 2024 3 253 476 172 EUR / 6 135 630 t = 530,3 EUR/t ; 2025 2 271 447 464 EUR / 5 007 515 t = 453,6 EUR/t ; mensuel 2026 : 372 ; 423 ; 552 ; 608 ; 662 ; 623 ; 574 EUR/t (janv.-juil.). Fioul lourd 0,1-0,5 % S (27101966) : France import 2024 575,4 ; 2025 443,8 EUR/t ; France export 2024 514 ; 2025 416 EUR/t ; UE27 import 2024 544,0 ; 2025 465,6 EUR/t ; UE27 mensuel 2026 : 430 ; 466 ; 573 ; 745 ; 722 ; 667 ; 727. Fioul lourd > 0,5 % S (27101967) : France import 2024 550,4 ; 2025 488,5 EUR/t ; UE27 2024 498,0 ; 2025 442,3 EUR/t. Huiles lubrifiantes et autres huiles lourdes (27101999) France import 2024 955,4 ; 2025 828,9 EUR/t."
+  citation: "27101966: Fuel oils de minéraux bitumineux, d’une teneur en poids de soufre > 0,1 % mais <= 0,5 % ... ; [FR import] VALUE_IN_EUROS 2024 79273183 ; QUANTITY_IN_100KG 2024 1377672.16 ; 2025 85287493 ; 1921742.65 ; 27101951: Fuel oils de pétrole ou de minéraux bitumineux, destinés à subir un traitement défini (voir note complémentaire 5 du chapitre 27) ; [EU27 import] 2024 3253476172 ; 61356296.68 ; 2025 2271447464 ; 50075147.28"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via l'API Comext dans le navigateur. Le gazole sous vide (VGO) n'a pas de position propre ; 27101951 est une approximation (comprend aussi d'autres charges lourdes). Comparable déjà fiché : DGEC fioul lourd HTT 2024 566,15 EUR/t (A3-DGEC-PRIX-HTT-TTC-2025)."
+  parametres: [prix_fioul_lourd_import, prix_vgo_reference, prix_fraction_lourde_reference]
+
+A3F-COMEXT-PARAFFINES-2712-2024-2026:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2712 20 90, 2712 20 10, 2712 90 31, 2712 90 39, 2712 90 99"
+  editeur: "Eurostat (Comext)"
+  date: "2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=EU27_2020&partner=EXT_EU27_2020&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27122090&product=27129031&product=27129039&product=27129099 (et reporter=FR, flow=1 et 2 ; mensuel freq=M)"
+  emplacement: "réponse JSON, produits 2712xxxx"
+  contenu: "Paraffine < 0,75 % d'huile (cire raffinée, 27122090) UE27 import extra-UE : 2024 136 040 093 EUR / 105 933 t = 1 284,2 EUR/t ; 2025 163 166 236 EUR / 142 858 t = 1 142,2 EUR/t ; mensuel 2026 : 1 018 ; 1 033 ; 1 047 ; 1 061 ; 1 057 ; 1 227 ; 1 245 EUR/t. Cires brutes, dont slack wax (gatsch), destinées à un traitement défini (27129031) UE27 import : 2024 39 274 811 EUR / 35 902 t = 1 093,9 EUR/t ; 2025 45 498 042 EUR / 38 385 t = 1 185,3 EUR/t (la France représente la quasi-totalité : FR 2024 1 094 ; 2025 1 185 EUR/t) ; mensuel 2026 (févr.-juil.) : 1 032 ; 975 ; 1 080 ; 1 142 ; 1 079 ; 1 126 EUR/t. Cires brutes, autres usages (27129039) UE27 import : 2024 963,8 ; 2025 891,8 EUR/t ; 2026 : 794 ; 1 000 ; 789 ; 913 ; 1 090 ; 1 102 ; 1 048. Autres cires (raffinées, 27129099) UE27 import 2024 1 345,2 ; 2025 1 201,5 EUR/t. Petits volumes France (27122090 import 355 t en 2024, 2 030 EUR/t) non représentatifs."
+  citation: "27129031: Paraffine, cire de pétrole microcristalline, {slack wax}, autres cires minérales et produits simil. obtenus par synthèse ou par d’autres procédés, bruts, destinés à subir un traitement défini ... ; [EU27 import] VALUE_IN_EUROS 2024 39274811 ; QUANTITY_IN_100KG 2024 359021.02 ; 2025 45498042 ; 383848.88 ; 27122090: Paraffine contenant en poids < 0,75 % d'huile ... ; [EU27 import] 2024 136040093 ; 1059330.66 ; 2025 163166236 ; 1428580.65"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via l'API Comext dans le navigateur. Les cires de pyrolyse de plastiques (fraction lourde cireuse, oléfinique, chlorée) ne sont pas des paraffines de raffinerie ; série de référence haute. Pas de position 2712 90 33 dans les résultats (aucune donnée renvoyée). Comparer à Larrain et al. 2020 (slack wax 680 EUR/t en janv. 2018, Argus, A3F-LARRAIN-2020-SLACKWAX)."
+  parametres: [prix_slack_wax_import, prix_paraffine_import, prix_fraction_cireuse_reference]
+
+A3F-INSEE-NAPHTA-NWE-010002082:
+  titre: "Cours des matières premières importées - Naphta (Nord-Ouest Européen) - Contrats à terme à la 1ère échéance, settlement price, New-York Mercantile Exchange - Prix en euros par tonne (idbank 010002082)"
+  editeur: "Insee"
+  date: "2026-09-25 (dernière mise à jour) ; données mensuelles jusqu'à août 2026"
+  type: statistique_publique
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010002082+010002076"
+  emplacement: "flux SDMX, série IDBANK 010002082, observations TIME_PERIOD/OBS_VALUE"
+  contenu: "Naphta NWE (contrat NYMEX 1re échéance), EUR/t, moyennes mensuelles. 2024 : 579,3 ; 606,3 ; 643,2 ; 643,3 ; 612,2 ; 603,9 ; 638,2 ; 598,2 ; 558,5 ; 599,4 ; 594,4 ; 579,0 ; moyenne annuelle (calcul, 12 mois) 604,7 EUR/t. 2025 : 624,9 ; 627,9 ; 563,3 ; 492,4 ; 484,2 ; 482,3 ; 473,6 ; 478,0 ; 479,9 ; 455,1 ; 462,4 ; 435,7 ; moyenne 505,0 EUR/t. 2026 : janv. 436,1 ; févr. 472,0 ; mars 683,4 ; avr. 781,6 ; mai 773,3 ; juin 623,8 ; juil. 626,3 ; août 636,8 ; moyenne 8 mois 629,2 EUR/t."
+  citation: "IDBANK 010002082 TITLE_FR « Cours des matières premières importées - Naphta (Nord-Ouest Européen) - Contrats à terme à la 1ère échéance, settlement price, New-York Mercantile Exchange - Prix en euros par tonne » LAST_UPDATE 2026-09-25 ; 2025-12 435.7 ; 2026-01 436.1 ; 2026-03 683.4 ; 2026-04 781.6 ; 2026-08 636.8"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 : flux SDMX ouvert dans le navigateur (lecture seule) et vérifié par WebFetch (mêmes valeurs). Moyennes annuelles calculées par ce sous-agent. Seule série publique gratuite trouvée d'un prix NWE du naphta. Cohérent avec Comext (UE27 import 2710 12 11 : 640,8 EUR/t en 2024, 557,7 en 2025 ; écart dû à la base CAF et aux qualités). Source primaire de l'Insee : NYMEX (CME) ; l'Insee la diffuse."
+  parametres: [prix_naphta_nwe, prix_fraction_legere_reference]
+
+A3F-INSEE-GAZOLE-CAF-010002076:
+  titre: "Cours des matières premières importées - Gazole à faible teneur en soufre - Prix en euros par tonne - CAF - 1% de soufre (idbank 010002076)"
+  editeur: "Insee"
+  date: "2026-09-25 ; données jusqu'à août 2026"
+  type: statistique_publique
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010002082+010002076"
+  emplacement: "flux SDMX, série IDBANK 010002076"
+  contenu: "Gazole CAF, EUR/t, moyennes mensuelles. 2024 : 729,1 ; 789,1 ; 764,4 ; 758,2 ; 694,1 ; 703,8 ; 707,7 ; 648,2 ; 591,9 ; 619,4 ; 638,6 ; 644,8 ; moyenne (calcul) 690,8 EUR/t. 2025 : 697,1 ; 683,1 ; 616,9 ; 553,9 ; 538,0 ; 588,5 ; 618,3 ; 576,8 ; 597,7 ; 583,7 ; 635,2 ; 547,5 ; moyenne 603,1 EUR/t. 2026 : janv. 559,7 ; févr. 597,1 ; mars 1 030,7 ; avr. 1 074,4 ; mai 992,9 ; juin 842,5 ; juil. 996,4 ; août 1 084,4 ; moyenne 8 mois 897,3 EUR/t."
+  citation: "IDBANK 010002076 TITLE_FR « Cours des matières premières importées - Gazole à faible teneur en soufre - Prix en euros par tonne - CAF - 1% de soufre » ; 2024-01 729.1 ; 2025-12 547.5 ; 2026-03 1030.7 ; 2026-08 1084.4"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 dans le navigateur et par WebFetch. Le libellé associe « faible teneur en soufre » et « 1% de soufre » : qualité exacte et place de cotation non précisées (incohérence de libellé signalée, non résolue). Utile comme série de comparaison 2024-2026 du gazole ; la DGEC (Rotterdam) donne 1 406 $/t la semaine du 9/10/2026."
+  parametres: [prix_gazole_nwe_serie, prix_fraction_gazole_reference]
+
+A3F-INSEE-FIOUL-LOURD-SINGAPOUR-010776360:
+  titre: "Fioul lourd - 3.5% de soufre 380Cst Cargo FOB Singapour - Singapore Exchange, cours de clôture, valeur haute - Prix en euros par tonne (idbank 010776360)"
+  editeur: "Insee"
+  date: "2025-08-22 (dernière mise à jour) ; dernière valeur juin 2025"
+  type: statistique_publique
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010751334+010751333+010776360+010002074"
+  emplacement: "flux SDMX, séries 010776360, 010751333, 010002074"
+  contenu: "Fioul lourd 3,5 % S 380 cSt FOB Singapour : moyenne 2024 (calcul, 12 mois) 432,5 EUR/t ; 2025 (6 mois) 423,0 EUR/t (464,8 ; 471,5 ; 431,6 ; 380,2 ; 382,6 ; 407,0) ; plus de données après juin 2025. Les séries Insee du fioul lourd en Europe sont arrêtées : NWE 380 cSt FAB 3,5 % S (010751333) dernière valeur déc. 2023, 392,6 EUR/t ; Rotterdam 1 % S FAB (010002074) dernière valeur juin 2020."
+  citation: "010751333 | Cours des matières premières importées - Fioul lourd (Europe Nord Ouest) 380Cst Cargo FAB - Prix en euros par tonne - FAB - 3,5% de soufre - Série arrêtée | dernière valeur 2023-12 392.6"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 dans le navigateur. Peu utile (Asie, série interrompue) ; fiché pour signaler l'absence de série publique européenne active du fioul lourd à l'Insee. Utiliser plutôt DGEC TBTS (déjà fiché) et Comext 27101966/67."
+  parametres: [prix_fioul_lourd_reference]
+
+A3F-SDES-PRIX-PETROLIERS-2025-TABLEAU2:
+  titre: "Les prix des produits pétroliers poursuivent leur baisse en 2025 avant un rebond début 2026 (Données, fichier xlsx, feuille « Tableau 2 »)"
+  editeur: "SDES, ministère de la Transition écologique (calculs SDES d'après DGDDI)"
+  date: "2026-06-16"
+  type: statistique_publique
+  url: "https://www.statistiques.developpement-durable.gouv.fr/media/9425/download?inline (page : https://www.statistiques.developpement-durable.gouv.fr/les-prix-des-produits-petroliers-poursuivent-leur-baisse-en-2025-avant-un-rebond-debut-2026)"
+  emplacement: "feuille « Tableau 2 : prix moyens des produits raffinés à l’importation et à l’exportation », en euros courants par tep"
+  contenu: "Prix moyens à l'importation, France entière, EUR/tep : gazole/fioul domestique 2024 720, 2025 637 (-11,6 %) ; jet kérosène 2024 756, 2025 666 ; fioul lourd 2024 621, 2025 529 ; produits non énergétiques (naphta, bitumes, lubrifiants) 2024 806, 2025 724. Exportations : gazole/FOD 2024 660, 2025 695 ; supercarburants 615 / 508 ; fioul lourd 487 / 392. Conversion en EUR/t (calcul avec les équivalences SDES déjà fichées, A3-SDES-CCE-2026-EQUIVALENCES : 1,0175 tep/t pour gazole/FOD, 0,9554 tep/t pour fioul lourd) : gazole/FOD import 2025 environ 648 EUR/t ; fioul lourd import 2025 environ 505 EUR/t ; 2024 : 733 et 593 EUR/t."
+  citation: "Tableau 2 : prix moyens des produits raffinés à l’importation et à l’exportation || En euros courants par tep || ... 2024 ; 2025 ; Évolution 2024-2025 || dont gazole/fioul domestique ; ... 720 ; 637 ; -11.6% || jet kérosène ; ... 756 ; 666 ; -11.9% || fioul lourd ; ... 621 ; 529 ; -14.9% || produits non énergétiques* ; ... 806 ; 724 ; -10.2%"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 : fichier xlsx ouvert dans le navigateur (lecture seule, analyse SheetJS). La publication 2024 (https://www.ecologie.gouv.fr/sites/default/files/documents/Prix%20des%20produits%20p%C3%A9troliers%20en%202024.pdf, tableau 2, p. 2) donnait pour 2024 723 EUR/tep (gazole/FOD), 764 (jet), 620 (fioul lourd), 808 (non énergétiques) : valeurs 2024 révisées dans l'édition 2025 (720, 756, 621, 806). Les deux sont données. Le texte de la page indique que la moyenne 2025 précède « le déclenchement de la guerre en Iran ». Moyennes annuelles par produit, pas de cotation Rotterdam par produit."
+  parametres: [prix_gazole_import_france_annuel, prix_jet_import_france_annuel, prix_fioul_lourd_import_france_annuel]
+
+A3F-PRYME-RAPPORT-ANNUEL-2025:
+  titre: "Pryme N.V. 2025 Annual Report (including Governance and Sustainability Reports)"
+  editeur: "Pryme N.V. (Rotterdam ; Euronext Growth Oslo)"
+  date: "2026-05-29"
+  type: entreprise
+  url: "https://storage.mfn.se/c/aHR0cHM6Ly9hcGkzLm9zbG8ub3Nsb2JvcnMubm8vdjEvbmV3c3JlYWRlci9hdHRhY2htZW50P21lc3NhZ2VJZD02NzQ5NTEmYXR0YWNobWVudElkPTMyNzIzMQ/pryme-n-v.pdf?news-id=f019c293-24d6-5245-8186-f33cf9984d13"
+  emplacement: "p. 8 (Key Highlights 2025, Commercial progress) ; p. 86-87 (note 7.4.1 Revenue from contracts with customers)"
+  contenu: "Prix réellement obtenu pour une huile de pyrolyse de plastiques (huile entière, non fractionnée), départ usine (FCA) Rotterdam : 822 t vendues en 2025 à environ 1 300 EUR/t en moyenne ; premiers volumes vers 1 050 EUR/t ; environ 1 425 EUR/t au T3 2025 grâce à une meilleure qualité. Chiffre d'affaires 2025 : 1 069 kEUR (2024 : 102 kEUR). Contrôle (calcul) : 1 069 000 / 822 = 1 300 EUR/t. Mécanisme : formules de prix contractuelles fondées notamment sur le prix du déchet plastique publié mensuellement par EUWID (pas une indexation sur le naphta). Production 2025 : 807 t. L'usine Pryme One a été arrêtée fin mars 2026 ; comptes établis en non-continuité d'exploitation, refus de certifier de l'auditeur."
+  citation: "Pryme sold 822 tons of pyrolysis oil in 2025 at an average price of approximately € 1 . 300 per ton. Earlier volumes were sold at around €1,050 per ton, while improved quality enabled sales at approximately €1,425 per ton in Q3. ... The transaction price as per metric ton pyrolysis oil is determined at the time of the delivery, based on the price formula and benchmarks , like market pricing as per ton of plastic waste monthly published by EUWID ... Revenue from contracts with customers 1.069 102"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 : PDF ouvert dans le navigateur, texte extrait par pdf.js (espaces de l'extraction conservés). Source d'entreprise, comptes avec refus de certifier (disclaimer of opinion, p. 116). Huile issue de déchets plastiques triés (polyoléfines), pas d'ordures ménagères ; le client n'est pas nommé dans le rapport. Le prix inclut probablement une prime « recyclé » liée aux obligations de contenu recyclé ; il ne renseigne pas un prix par fraction."
+  parametres: [prix_huile_pyrolyse_plastique_realise]
+
+A3F-PYRUM-RAPPORT-SEMESTRIEL-2026:
+  titre: "Pyrum Innovations AG, Half-Year Report 2026 (23.09.2026)"
+  editeur: "Pyrum Innovations AG"
+  date: "2026-09-23"
+  type: entreprise
+  url: "https://www.pyrum.net/wp-content/uploads/2026/09/2026-09-23-ENG-Pyrum-halfyear-report-2026.pdf"
+  emplacement: "p. 34 (prévisions, marché du noir de carbone recyclé) ; p. 36 (chiffre d'affaires)"
+  contenu: "Pyrolyse de pneus. Pyrum ne publie ni volumes ni prix de son huile (TTO) dans ce rapport. Prix cité pour le noir de carbone recyclé (TTB, issu du char) : contrats long terme « dans la fourchette de 1 500 EUR/t ». Chiffre d'affaires S1 2026 : 1 743 kEUR (non ventilé par produit) ; 2025 : 4,1 MEUR (communiqué du 8/5/2026, https://live.deutsche-boerse.com/nachrichten/EQS-News-Pyrum-Innovations-AG-publishes-figures-for-the-2025-financial-year-368bfe93-cf05-4cf4-97df-9a17246c3a53). Aucun prix implicite de l'huile calculable."
+  citation: "This expectation is supported by long - term supply contracts already concluded with customers in the price range of EUR 1,500/t, meaning that the currently achievable price is already 100% above the company’s expectations at the time of its initial public offering in 2021."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 : PDF ouvert dans le navigateur (pdf.js). Le prix concerne un noir de carbone broyé et conditionné de pneus (TTB), pas le char brut d'Urban Rig ; donné ici car la mission cite Pyrum (huile et char). Source d'entreprise."
+  parametres: [prix_rcb_pneus_reference]
+
+A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS:
+  titre: "油化手法の概要；特徴と今後の課題・要望（資料５ 札幌プラスチック株式会社資料）, 090424 容リプラ再商品化手法検討会"
+  editeur: "札幌プラスチックリサイクル株式会社 (Sapporo Plastic Recycling), document remis au ministère de l'Environnement du Japon (環境省)"
+  date: "2009-04-24"
+  type: entreprise
+  url: "https://www.env.go.jp/council/former2013/03haiki/y0315-09/mat05.pdf"
+  emplacement: "p. 15 (diapositive « Ⅳ 油化製品の市況と現状 »)"
+  contenu: "Seule source trouvée donnant un prix PAR FRACTION pour une huile de liquéfaction de déchets plastiques ménagers (emballages). Fraction légère : vendue à Japan Energy comme produit de valeur équivalente au naphta importé. Fraction moyenne : vendue à 80-90 % du prix du fioul A du commerce (A重油, proche du fioul domestique/gazole) à des entreprises de l'environnement et de la chimie. Fraction lourde : vendue à 80-90 % du prix du fioul C du commerce (C重油, fioul lourd) à des papetiers et des réseaux de chauffage. « Les ventes sont bonnes, la production à pleine capacité ne suffit pas. » Aucun prix absolu en JPY. Procédé SPR : déchloration, pyrolyse, distillation en huiles légère, moyenne et lourde (p. 7)."
+  citation: "軽質油：輸入ナフサと同等レベルの価値あるものとしてジャパンエナジーに販売 中質油：市販A重油の８０～９０％の価格で販売（環境関連、化学会社に販売） 重質油：市販C重油の８０～９０％の価格で販売（製紙会社、地域暖房会社に販売） 油化製品の販売は好調で、フル生産しても足りない現状"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 : PDF ouvert dans le navigateur (pdf.js avec cartes de caractères), contrôlé par WebFetch. Donnée de 2009 (plus de huit ans) ; l'usine a été dissoute en janvier 2011 (document METI https://www.meti.go.jp/policy/recycle/main/3r_policy/policy/html/pdf1/sapporo.pdf, p. 1 : « 廃プラスチック油化施設（札幌プラスチックリサイクル㈱）... ※解散済（H23.1） »). Source d'entreprise. Utile comme structure de décote par fraction, pas comme niveau de prix."
+  parametres: [decote_fraction_legere, decote_fraction_gazole, decote_fraction_lourde]
+
+A3F-LARRAIN-2020-SLACKWAX:
+  titre: "Economic performance of pyrolysis of mixed plastic waste: open-loop versus closed-loop recycling (Journal of Cleaner Production 270, 122442)"
+  editeur: "Larrain M., Van Passel S., Thomassen G., Kresovic U., Alderweireldt N., Moerman E., Billen P. (Université d'Anvers)"
+  date: "2020"
+  type: etude_publique
+  url: "https://repository.uantwerpen.be/docstore/d:irua:1285"
+  emplacement: "section 2.3.1, p. 15 ; section 3.5.1, p. 24 ; section 3.6.2, p. 27 (manuscrit accepté)"
+  contenu: "Article évalué : les produits valorisés sont le naphta et la cire (slack wax). Prix de la slack wax : 680 EUR/t en janvier 2018 (Argus Media, 2018), soit 68 % au-dessus du prix moyen du brut, rapport supposé constant ; scénario découplé : cire constante à 760 EUR/t. Naphta : projection AIE (The Future of Petrochemicals, 2018), valeur seulement graphique (figure 4a, non lisible) ; hypothèse « naphta toujours 10 % sous le prix du pétrole »."
+  citation: "The price for slack wax was 680 EUR/t on January 2018 (Argus Media, 2018)."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (manuscrit du dépôt institutionnel) ; citation obtenue par l'outil de lecture, non recopiée du PDF par le navigateur. Prix repris d'Argus (payant) : statut secondaire. Donnée de 2018 (limite des huit ans)."
+  parametres: [prix_slack_wax_litterature, prix_fraction_cireuse_reference]
+
+A3F-RIEDEWALD-2020-PRIX-HUILE:
+  titre: "Economic assessment of a 40,000 t/y mixed plastic waste pyrolysis plant using direct heat treatment with molten metal: A case study of a plant located in Belgium (Waste Management 120, 698-707)"
+  editeur: "Riedewald F., Patel Y., Wilson E., Santos S., Sousa-Gallagher M. (University College Cork)"
+  date: "2020-11-13"
+  type: etude_publique
+  url: "https://cora.ucc.ie/bitstreams/406705d6-8d16-4102-b425-442d5ecd366d/download"
+  emplacement: "section 3.2, p. 6 ; section 5, p. 10 ; section 6, p. 13"
+  contenu: "Huile de pyrolyse entière vendue comme fioul n° 6 / fioul de soute : revenu net pour l'exploitant 210 EUR/t (bas de février 2016 : raffineries US payées 1,2 $/gallon soit 275 EUR/t, moins 25 EUR/t de marge et 40 EUR/t de transport) ; sensibilité au 6 mars 2020 (Brent 52,02 $/b) : 227 EUR/t. L'article critique la valeur de 780 EUR/t pour les cires reprise de Fivga et Dimitriou (2018) comme non réaliste. Char : aucune valeur, mise en décharge 130 EUR/t."
+  citation: "a P-oil revenue figure of €210/t for the PlastPyro operator was calculated."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (version auteur déposée) ; citations obtenues par l'outil de lecture. Prix dérivés de l'EIA (prix US) : secondaire. Hypothèse très prudente (huile vendue comme fioul lourd en période de prix bas)."
+  parametres: [prix_huile_pyrolyse_litterature, prix_fraction_lourde_reference]
+
+A3F-STALLKAMP-2024-PMV-HUILE:
+  titre: "Pyrolysis of mixed engineering plastics: Economic challenges for automotive plastic waste (Waste Management 176, 105-116)"
+  editeur: "Stallkamp C., Hennig M., Volk R., Stapf D., Schultmann F. (KIT)"
+  date: "2024-01-26"
+  type: etude_publique
+  url: "https://publikationen.bibliothek.kit.edu/1000167839/152125757"
+  emplacement: "résumé ; section 3.3, p. 111 ; section 4, p. 113"
+  contenu: "Prix de vente minimal couvrant les coûts de l'huile de pyrolyse (résultat de modèle, base de coûts 2021) : 1 182 EUR/t pour 3 750 t/an d'intrant, jusqu'à 418 EUR/t pour 100 000 t/an. Produit de référence retenu : fioul résiduel US, 462 EUR/t en moyenne 2021 (EIA, 2022). Aucun prix par fraction."
+  citation: "Therefore, a potential reference product is US residual fuel oil, with an average price of 462 €/Mg in 2021 (EIA, 2022)."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu le 15/10/2026 via WebFetch (texte intégral KIT) ; citations obtenues par l'outil de lecture. Le 462 EUR/t est repris de l'EIA : secondaire. Les 1 182 et 418 EUR/t sont des coûts calculés, pas des prix de marché."
+  parametres: [prix_huile_pyrolyse_litterature, cout_production_huile_pyrolyse]
+
+# NON TROUVÉ
+# - Moyennes annuelles 2024 et 2025 des cotations Rotterdam DGEC (gazole, FOD, Jet, fioul lourd TBTS) : la page DGEC
+#   https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers ne propose que la dernière note NPG (2026.10.09),
+#   l'historique du Brent, l'historique de la marge brute de raffinage (moyennes annuelles 2015-2025 de la MARGE seulement : 2024 44 EUR/t,
+#   2025 57 EUR/t ; fichier « Historique de la marge brute de raffinage sur Brent depuis 2015 (moyennes mensuelles).xlsx ») et les prix
+#   HTT/TTC. Les anciennes notes NPG testées (NPG-2024.12.20, 2024.12.27, 2024.12.31, 2025.01.03, 2025.01.10, 2025.12.19, 2025.12.26,
+#   2025.12.31, 2026.01.02, 2026.01.09) renvoient 404. Substituts fichés : Comext (valeurs unitaires), SDES tableau 2, Insee 010002076.
+# - Cotation publique du carburéacteur (Jet) en série annuelle : seule la DGEC (note de la semaine) ; substitut Comext 2710 19 21.
+# - Cotation du gazole sous vide (VGO) : aucune source publique ; Comext 2710 19 51 (fuel oils pour traitement défini) en approximation.
+# - Indices de prix à l'importation Insee par produit raffiné (naphta) : non trouvés en dehors des cours de matières premières (010002082).
+# - Prix de la slack wax ou des paraffines en cotation (ICIS, Argus) : payant ; seulement Comext et Larrain 2020 (Argus 2018, secondaire).
+# - Prix obtenus par Quantafuel, Plastic Energy, Agilyx, Mura, Brightmark, Fuenix, Alterra, OMV ReOil, Clean Planet Energy : non trouvés.
+#   Recherches : « Quantafuel annual report 2022 Skive pyrolysis oil sold tonnes revenue BASF price » (communiqués Inderes et financialfilings
+#   lus : aucun volume ni prix ; rapport annuel 2022 non localisé en PDF) ; « Plastic Energy TACOIL price per tonne annual accounts revenue »
+#   (aucun document chiffré). Agilyx, Mura, Brightmark, Fuenix, Alterra, OMV, Clean Planet Energy : non cherchés en détail faute de comptes
+#   publics connus (sociétés non cotées ou activité intégrée), aucun chiffre trouvé.
+# - Pyrum : volumes et prix de l'huile de pneus (TTO) non publiés (rapport semestriel 2026 parcouru en entier par recherche de mots) ;
+#   rapport annuel 2025 (PDF de 6 Mo sur sustainabilityreports.com) non ouvert : la page d'accueil ne donne que le chiffre d'affaires 4 107 kEUR.
+# - Pryme 2024 : volumes vendus en 2024 non relevés (chiffre d'affaires 2024 102 kEUR seulement).
+# - Japon : aucun prix absolu (JPY/l ou JPY/t) d'huile de liquéfaction trouvé. Recherches « 廃プラスチック 油化 生成油 売却単価 円/リットル 報告書 »,
+#   « 札幌プラスチックリサイクル 油化 生成油 販売 価格 円 キロリットル ». JST LCS-FY2022-SR-01 (2023) lu : indique que le油化 des emballages
+#   « 2010年までは行われていたが、現在は実施されていない » (citation reprise par WebFetch) et ne donne aucun prix d'huile.
+# - Littérature : aucun article évalué 2019-2026 lu ne donne simultanément un prix pour les fractions naphta, diesel et cire en Europe.
+#   NREL 2022 (présentation NREL/PR-5100-82632, https://nrel.gov/docs/fy22osti/82632.pdf, non évaluée par les pairs, US) : crédit naphta de
+#   pyrolyse 50 ¢/lb et naphta fossile 0,50 $/kg (IHS Markit PEP 2020) ; non fiché (présentation, US, sources commerciales).

@@ -17,31 +17,31 @@ SRC={
  'Distillation of 200 mL of oil from each virgin plastic into a light fraction (Japanese "class 1 petroleum") and a heavier fraction, with flash points, specific gravity and sulphur.'),
 'CHIBA-AUTORISATION-2022':('A2.1.d',100,'Official notification of the Chiba prefectural government','LU',
  'Prefectural notification authorising the test programme from 2022-03-02 to 2022-09-30 with at most 12,000 kg of waste.'),
-'CHIBA-JLOS-HUILES':('A2.2.a',100,'Independent laboratory (Japan Lubricating Oil Society)','LU',
+'CHIBA-JLOS-HUILES':('A2.2.a',100,'Third-party laboratory (Japan Lubricating Oil Society), commissioned by Asada Shokai','LU',
  'Laboratory analyses of the two oils produced from Noda municipal waste: density, flash point, viscosity, pour point, carbon residue, water, ash, sulphur, nitrogen, chlorine and gross calorific value (calculated by the laboratory).'),
-'CHIBA-OOSUMI-CHAR':('A2.2.b',100,'Independent laboratory (Oosumi Co., registered measurement business, Kanagawa)','LU',
+'CHIBA-OOSUMI-CHAR':('A2.2.b',100,'Third-party laboratory (Oosumi Co., registered measurement business, Kanagawa)','LU',
  'Heavy metal contents (as received) and leaching tests of the chars from the two municipal waste runs.'),
-'CHIBA-OOSUMI-EAUX':('A2.2.c',100,'Independent laboratory (Oosumi Co.)','LU',
+'CHIBA-OOSUMI-EAUX':('A2.2.c',100,'Third-party laboratory (Oosumi Co.), commissioned by Land Brain','LU',
  'Analyses of the untreated process water from the two municipal waste runs.'),
-'CHIBA-OOSUMI-FUMEES':('A2.2.d',100,'Independent laboratory (Oosumi Co.); reports marked provisional','LU',
+'CHIBA-OOSUMI-FUMEES':('A2.2.d',100,'Third-party laboratory (Oosumi Co.), commissioned by Land Brain; reports marked provisional','LU',
  'Exhaust gas measurements at furnace temperatures of 350, 450 and 550 °C during the two municipal waste runs: dust, sulphur oxides, nitrogen oxides, and dioxins on 2022-09-15; metals in dust.'),
-'CHIBA-OOSUMI-ODEURS-BRUIT':('A2.2.e',100,'Independent laboratories (Oosumi Co.; Kazusa Environmental Research Center)','LU',
+'CHIBA-OOSUMI-ODEURS-BRUIT':('A2.2.e',100,'Third-party laboratories (Oosumi Co.; Kazusa Environmental Research Center)','LU',
  'Odour index at the site boundary and near the exhaust outlet, odorous substances, noise and vibration during the 2022 tests.'),
-'KANSO-B2002600':('A2.2.f',100,'Independent laboratory (KANSO Technos, registered measurement business, Osaka); client OneWorld','LU',
+'KANSO-B2002600':('A2.2.f',100,'Third-party laboratory (KANSO Technos, registered measurement business, Osaka); client OneWorld','LU',
  'Gas chromatography of the off-gas of a superheated steam carbonisation unit, sampled on 2020-11-25.'),
-'KANSO-20002610':('A2.2.g',100,'Independent laboratory (KANSO Technos); client OneWorld','LU',
+'KANSO-20002610':('A2.2.g',100,'Third-party laboratory (KANSO Technos); client OneWorld','LU',
  'Exhaust gas measurements at the outlet of the same unit on 2020-11-25: hydrogen chloride, sulphur oxides, nitrogen oxides, dust, oxygen.'),
-'TES-ODEUR-2020':('A2.2.g',100,'Independent laboratory (Total Kankyo System, subcontractor of KANSO)','LU',
+'TES-ODEUR-2020':('A2.2.g',100,'Third-party laboratory (Total Kankyo System, subcontractor of KANSO)','LU',
  'Odour index at the outlet and at the site boundary on 2020-11-25.'),
-'TANABE-2023':('A2.2.h',100,'Independent laboratories (Tanabe Kankyo Kogaku; N.E. Support)','LU',
+'TANABE-2023':('A2.2.h',100,'Third-party laboratories (Tanabe Kankyo Kogaku; N.E. Support)','LU',
  'Exhaust gas measurements (nitrogen oxides, sulphur oxides, hydrogen cyanide, dust, gas flow) and odour on 2023-09-26 and 2023-09-27 at a waste plastic oil demonstration facility.'),
-'DIOXINES-2023':('A2.2.h',100,'Independent laboratory (Kankyo Kogai Bunseki Center); preliminary results','LU',
+'DIOXINES-2023':('A2.2.h',100,'Third-party laboratory (Kankyo Kogai Bunseki Center); preliminary results','LU',
  'Dioxins in the exhaust gas on 2023-09-26 and 2023-09-27.'),
-'NKKK-ZPE8004-2019':('A2.2.i',95,'Independent laboratory (NKKK, Osaka), report reproduced in a OneWorld brochure','LU',
+'NKKK-ZPE8004-2019':('A2.2.i',95,'Third-party laboratory (NKKK, Osaka), commissioned by OneWorld; report reproduced in a OneWorld brochure','LU',
  'Analysis of a fuel oil sample supplied by OneWorld: flash point, viscosity, pour point, carbon residue, water, ash, sulphur, gross calorific value, inorganic chlorine.'),
-'IZUMITEC-R35-339439':('A2.2.j',100,'Independent laboratory (Izumitec Co., registered measurement business, Aichi); client One World Japan','LU',
+'IZUMITEC-R35-339439':('A2.2.j',100,'Third-party laboratory (Izumitec Co., registered measurement business, Aichi); client One World Japan','LU',
  'Calorific value of a urethane char (JIS M 8814 bomb calorimeter method).'),
-'IZUMITEC-R35-339440':('A2.2.j',100,'Independent laboratory (Izumitec Co.); client One World Japan','LU',
+'IZUMITEC-R35-339440':('A2.2.j',100,'Third-party laboratory (Izumitec Co.); client One World Japan','LU',
  'Calorific value of a urethane-derived oil (JIS K 2279).'),
 'ORIST-GCMS-DRAIN':('A2.2.k',100,'Public research institute (Osaka Research Institute of Industrial Science and Technology), preliminary letter','LU',
  'GC-MS analysis of a liquid "drain" sample heated to 350 °C, and its non-volatile residue.'),
@@ -98,7 +98,7 @@ FILES={
 'A2.4.b':('A2-4-b-chlorine-references.md','Chlorine reference values by outlet'),
 'A2.4.c':('A2-4-c-char-outlet-references.md','Reference values for char outlets'),
 'A2.4.d':('A2-4-d-thermochemical-data.md','Thermochemical reference data (NIST)'),
-'A2.5.0':('A2-5-0-working-assumptions.md','Working assumptions (decisions D-016, D-020, D-021, D-024)'),
+'A2.5.0':('A2-5-0-working-assumptions.md','Working assumptions (decisions D-016, D-020, D-021, D-024, D-029)'),
 'A2.5.a':('A2-5-a-calc-conversion-to-fuel.md','Calculation: oil and gas yields per run'),
 'A2.5.b':('A2-5-b-calc-municipal-waste.md','Calculation: municipal waste runs on the convertible fraction'),
 'A2.5.c':('A2-5-c-calc-gas-calorific-value.md','Calculation: pyrolysis gas composition without air and calorific value'),
@@ -121,16 +121,16 @@ CASE={'RESINE':'resin-rich feed (OneWorld design, 90 % resins)','OM':'household 
 def desc(c):
     k=c.replace('CALC-A2-','')
     m=re.match(r'CONV-(PE|PP|PS|3P)-(.+)',k)
-    if m and k[5:] in RUN: return f'Conversion to fuel (oil plus gas) on input weight, {RUN[k[5:]]}.'
+    if m and k[5:] in RUN: return f'Oil plus gas by difference (operator definition, Chiba report p. 27) on input weight, {RUN[k[5:]]}. The gas is not measured.'
     d={
     'OFFGAS-0526':'Gas (by difference) as a share of input, PE/PP/PS mix, 2022-05-26.',
     'OFFGAS-0711':'Gas (by difference) as a share of input, PE/PP/PS mix, 2022-07-11.',
     'RDT-HUILE-0526':'Oil yield on total input, PE/PP/PS mix, 2022-05-26.',
     'RDT-HUILE-0711':'Oil yield on total input, PE/PP/PS mix, 2022-07-11.',
-    'CONV-NODA-0909-TOTAL':'Conversion to fuel (oil plus gas) on total input, municipal packaging plastics, 2022-09-09.',
-    'CONV-NODA-0909-HORSMETAUX':'Conversion to fuel (oil plus gas) on input minus metals and foreign matter, municipal packaging plastics, 2022-09-09.',
-    'CONV-NODA-0915-TOTAL':'Conversion to fuel (oil plus gas) on total input, municipal non-combustible residue, 2022-09-15.',
-    'CONV-NODA-0915-HORSMETAUX':'Conversion to fuel (oil plus gas) on input minus metals and foreign matter, municipal non-combustible residue, 2022-09-15.',
+    'CONV-NODA-0909-TOTAL':'Oil plus gas by difference on total input (gas not measured, moisture of the feed included), municipal packaging plastics, 2022-09-09.',
+    'CONV-NODA-0909-HORSMETAUX':'Oil plus gas by difference on input minus metals and foreign matter (gas not measured, moisture of the feed included), municipal packaging plastics, 2022-09-09.',
+    'CONV-NODA-0915-TOTAL':'Oil plus gas by difference on total input (gas not measured, moisture of the feed included), municipal non-combustible residue, 2022-09-15.',
+    'CONV-NODA-0915-HORSMETAUX':'Oil plus gas by difference on input minus metals and foreign matter (gas not measured, moisture of the feed included), municipal non-combustible residue, 2022-09-15.',
     'HUILE-NODA-0909-HORSMETAUX':'Oil yield on input minus metals and foreign matter, municipal packaging plastics, 2022-09-09.',
     'HUILE-NODA-0915-HORSMETAUX':'Oil yield on input minus metals and foreign matter, municipal non-combustible residue, 2022-09-15.',
     'NONPLAST-NODA-0909':'Share of metals and foreign matter in the input, municipal packaging plastics, 2022-09-09.',
@@ -246,6 +246,43 @@ NEW_FILES={
 'A2.5.g':('A2-5-g-calc-gcms.md','Calculation: GC-MS composition of the oil and boiling points'),
 }
 NEW_DESC={
+'CALC-A2-GAZDIFF10-MOY-POND':'Gas by difference, weighted mean of the 10 pure plastic runs retained (run of 2022-07-11 excluded, decision D-034).',
+'CALC-A2-GAZDIFF10-MOY-SIMPLE':'Gas by difference, simple mean of the 10 pure plastic runs retained.',
+'CALC-A2-GAZDIFF10-MEDIANE':'Gas by difference, median of the 10 runs retained: mean of the 5th and 6th values (PE containers 16.8 % and mix of 2022-05-26 19.5 %).',
+'CALC-A2-GAZDIFF10-MIN':'Gas by difference, lowest value of the 10 runs retained (PS moulding offcuts, 2022-03-31).',
+'CALC-A2-HUILE10-MOY-POND':'Oil, weighted mean of the 10 pure plastic runs retained.',
+'CALC-A2-RESIDU10-MOY-POND':'Solid residue removed, weighted mean of the 10 pure plastic runs retained.',
+'CALC-A2-BASE-NODA-0909':'Input minus metals and foreign matter, municipal packaging plastics, 2022-09-09 (page 42).',
+'CALC-A2-GAZ-NODA-0909-HORSMETAUX':'Gas by difference on input minus metals and foreign matter, municipal packaging plastics, 2022-09-09 (page 42).',
+'CALC-A2-CHAR-NODA-0909':'Char as a share of input, municipal packaging plastics, 2022-09-09 (page 42).',
+'CALC-A2-HUILE-NODA-0909-BRUT':'Oil on raw input, municipal packaging plastics, 2022-09-09.',
+'CALC-A2-HUILE-NODA-0915-BRUT':'Oil on raw input, municipal non-combustible residue, 2022-09-15.',
+'CALC-A2-PCI-CHAR-PLASTIQUE':'Calorific value of char from plastic residues: factor of the Chiba mass balances (5,880 kcal/kg, origin not stated) converted to MJ/kg.',
+'CALC-A2-PCI-GAZ-CHIBA':'Factor applied to the off-gas in the Chiba mass balances (1,323.8 kcal/kg, origin not stated) converted to MJ/kg; not used in the annex.',
+'CALC-A2-NRJ-GAZ-PLASTIQUE15':'Energy in the gas per tonne of pure plastic, with gas at 15 % of the input (working assumption D-038).',
+'CALC-A2-COUV-BRULEUR-PLASTIQUE15':'Energy in the gas divided by the burner heat demand, pure plastic with gas at 15 % (working assumption D-038).',
+'CALC-A2-OW16C-ENTREE':'Corrected OneWorld table (English brochure p. 16): input mass = 200 m3 per day x specific gravity 0.6.',
+'CALC-A2-OW16C-GAZOLE-T':'Corrected OneWorld table: gas (diesel) oil, t per day.',
+'CALC-A2-OW16C-HEATING-T':'Corrected OneWorld table: heating oil, t per day.',
+'CALC-A2-OW16C-HEAVY-T':'Corrected OneWorld table: heavy oil, t per day.',
+'CALC-A2-OW16C-PERTE-T':'Corrected OneWorld table: recovery loss, t per day.',
+'CALC-A2-OW16C-CHAR-T':'Corrected OneWorld table: carbide (char), t per day.',
+'CALC-A2-OW16C-EAU-T':'Corrected OneWorld table: water, t per day.',
+'CALC-A2-OW16C-METAUX-T':'Corrected OneWorld table: metals and glass, t per day.',
+'CALC-A2-OW16C-HUILE-T':'Corrected OneWorld table: total oil, t per day.',
+'CALC-A2-OW16C-GAZOLE-L':'Corrected OneWorld table: gas (diesel) oil at 0.8642 kg/L, L per day.',
+'CALC-A2-OW16C-HEATING-L':'Corrected OneWorld table: heating oil at 0.8642 kg/L, L per day.',
+'CALC-A2-OW16C-HEAVY-L':'Corrected OneWorld table: heavy oil at 0.8642 kg/L, L per day.',
+'CALC-A2-OW16C-HUILE-L':'Corrected OneWorld table: total oil at 0.8642 kg/L, L per day.',
+'CALC-A2-OW16C-SOMME':'Corrected OneWorld table: sum of the products (closure check).',
+'CALC-A2-GAZDIFF-MOY-POND':'Gas by difference (operator definition, Chiba report p. 27), weighted mean of the 11 pure plastic runs: total gas divided by total input.',
+'CALC-A2-GAZDIFF-MOY-SIMPLE':'Gas by difference, simple mean of the 11 pure plastic runs.',
+'CALC-A2-GAZDIFF-MIN':'Gas by difference, lowest value of the pure plastic runs (PE/PP/PS mix, 2022-07-11).',
+'CALC-A2-GAZDIFF-MAX':'Gas by difference, highest value of the pure plastic runs (PE pellets, 2022-03-02).',
+'CALC-A2-GAZDIFF-PE':'Gas by difference, weighted mean of the PE runs.',
+'CALC-A2-GAZDIFF-PP':'Gas by difference, weighted mean of the PP runs.',
+'CALC-A2-GAZDIFF-PS':'Gas by difference, weighted mean of the PS runs.',
+'CALC-A2-GAZDIFF-3P':'Gas by difference, weighted mean of the PE/PP/PS mix runs.',
 'CALC-A2-GCMS-JET-ECH-BAS':'Low estimate of the share of the sample made of hydrocarbons with 8 to 16 carbon atoms (high library match only), taking peak area as mass (working assumption D-024).',
 'CALC-A2-GCMS-JET-ECH-HAUT':'High estimate of the share of the sample made of hydrocarbons with 8 to 16 carbon atoms (all named hydrocarbons), taking peak area as mass (working assumption D-024).',
 'CALC-A2-GCMS-TMN':'Share of peak area of the peaks named trimethylnonene (12 carbon atoms).',
@@ -275,6 +312,8 @@ SRC.update(NEW_SRC); FILES.update(NEW_FILES)
 _cf0=calc_file
 def calc_file(cid):
     if re.search(r'GCMS|TEB-',cid): return 'A2.5.g'
+    if re.search(r'GAZDIFF',cid): return 'A2.5.a'
+    if re.search(r'PCI-CHAR|PCI-GAZ-CHIBA|OW16C|HUILE10|RESIDU10|NODA-0909-BRUT|NODA-0915-BRUT|BASE-NODA|CHAR-NODA-0909|GAZ-NODA-0909',cid): return 'A2.5.b' if 'NODA' in cid else 'A2.5.f'
     return _cf0(cid)
 _desc0=desc
 def desc(c):
@@ -308,7 +347,7 @@ def calc_conf(cid,seen=None):
     return min(base,90) if cid in HYP else min(base,95)
 
 # ---- codes : une page par preuve
-GROUPS=[('2.1','Test reports filed with the authorities'),('2.2','Independent laboratory reports'),('2.3','Manufacturer documentation (OneWorld)'),('2.4','Regulations and reference data'),('2.5','Calculations')]
+GROUPS=[('2.1','Test reports filed with the authorities'),('2.2','Third-party laboratory reports'),('2.3','Manufacturer documentation (OneWorld)'),('2.4','Regulations and reference data'),('2.5','Calculations')]
 letters='abcdefghijklmnopqrstuvwxyz'
 CODE={}; ORDER=[]
 for gnum,_ in GROUPS[:4]:
@@ -509,7 +548,7 @@ def index_page():
     for gnum,gt in GROUPS:
         rows+=f'<tr><th colspan="3">{gnum} · {esc(gt)}</th></tr>'
         if gnum=='2.4': rows+='<tr><td><a href="A2-4-3.html">2.4.3</a></td><td>Oil composition by GC-MS: full analysis and jet fuel reading</td><td>see each figure</td></tr>'
-        if gnum=='2.5': rows+=f'<tr><td><a href="A2-5-0.html">2.5.0</a></td><td>Working assumptions (decisions D-016, D-020, D-021, D-024)</td><td>n/a</td></tr>'
+        if gnum=='2.5': rows+=f'<tr><td><a href="A2-5-0.html">2.5.0</a></td><td>Working assumptions (decisions D-016, D-020, D-021, D-024, D-029)</td><td>n/a</td></tr>'
         for i in ORDER:
             if not CODE[i].startswith(gnum+'.'): continue
             if i in SRC: t=fiche(i).get('titre',''); c=SRC[i][1]; d=SRC[i][4]
@@ -519,11 +558,11 @@ def index_page():
 <p>Each figure of Annex 2 links to one of these sheets. Each sheet shows what the evidence supports, its confidence, and how the figure was obtained: the source document and page, or the formula and inputs of the calculation.</p>
 <h2>Confidence scale</h2>
 <table><tr><th>Confidence</th><th>Applies to</th></tr>
-<tr><td>100 %</td><td>Tests filed with the authorities, independent laboratory reports, legislation and reference data</td></tr>
+<tr><td>100 %</td><td>Tests filed with the authorities, third-party laboratory reports, legislation and reference data</td></tr>
 <tr><td>95 %</td><td>Manufacturer documentation (OneWorld), peer-reviewed literature, a laboratory report read in a reproduction, calculations on data at 95 % or more</td></tr>
 <tr><td>90 %</td><td>Calculations using a working assumption, a manufacturer table without printed author, patents</td></tr>
 <tr><td>80 %</td><td>Secondary sources</td></tr></table>
-<p class="small">A calculation is never rated above its least reliable input, nor above 95 %.</p>
+<p class="small">A calculation is never rated above its least reliable input, nor above 95 %. The percentage measures the confidence in the reading of each document, not the independence of the test.</p>
 <h2>All sheets</h2><table><tr><th>Sheet</th><th>Content</th><th>Confidence</th></tr>{rows}</table>'''
     return page('Annex 2. Evidence sheets',body,'<p class="crumb"><a href="../index.html">Annex 2. Technical Evidence</a></p>')
 
@@ -533,7 +572,7 @@ def main_page():
     i=s.index('## How to Read This Annex'); j=s.index('## 2.1 Test Programme Overview')
     s=s[:i]+'''## How to Read This Annex
 
-The manufacturer's documentation is used as the design basis of the plant (decisions D-016, D-020 and D-021). The batch tests provide the conversion coefficients and the product qualities.
+The manufacturer's documentation is used as the design basis of the plant (decisions D-016, D-020, D-021 and D-029). The batch tests provide the conversion coefficients and the product qualities.
 
 Each figure is followed by a small link, for example <span class="ev"><a href="preuves/'''+fname('CHIBA-ESSAIS-FICHES')+'''">'''+CODE['CHIBA-ESSAIS-FICHES']+'''</a></span>. It opens the evidence sheet: what the evidence shows, its confidence, the source document and page, or the calculation. All sheets are listed in the <a href="preuves/index.html">index of evidence sheets</a>.
 

@@ -1,0 +1,1939 @@
+
+# === ANNEXE 3, collecte complementaire apres D-028 (chat 3 v3, 15/10/2026) ===
+# Lu par des sous-agents de recherche le 15/10/2026 ; statut lu = pas encore recontrole.
+
+# --- Annexe 3, lot F : prix par fraction d huile ---
+
+A3F-COMEXT-NAPHTA-2710-12-2024-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 12 11, 2710 12 25, 2710 12 90
+  editeur: Eurostat (Comext)
+  date: 2026-09-15 (mise à jour du jeu de données) ; données 2024, 2025 et janv.-juil. 2026
+  type: statistique_publique
+  url: 'https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101211&product=27101225&product=27101290
+    (France) ; même requête avec reporter=EU27_2020 et flow=1 (UE) ; mensuel : freq=M&time=2026-01 ... &time=2026-07'
+  emplacement: réponse JSON (json-stat), dimensions product x flow x indicators x time ; libellés de la dimension product (lang=fr)
+  contenu: 'Huiles légères (naphta) : 2710 12 11 « destinées à subir un traitement défini » (charge de vapocraqueur/raffinerie). Importations
+    extra-UE de la FRANCE : 2024 : 270 146 536 EUR pour 4 337 721,96 x 100 kg (433 772 t) soit 622,8 EUR/t ; 2025 : 297 493 114 EUR / 479 060
+    t = 621,0 EUR/t. Importations extra-UE de l''UE27 : 2024 : 3 670 982 257 EUR / 5 728 546 t = 640,8 EUR/t ; 2025 : 2 413 831 850 EUR / 4 327
+    825 t = 557,7 EUR/t. UE27 mensuel 2026 (EUR/t, calcul) : janv. 567 ; févr. 555 ; mars 593 ; avr. 701 ; mai 761 ; juin 712 ; juil. 663 (ex.
+    juil. : 200 764 230 EUR / 303 004,7 t). France mensuel 2026 (volumes faibles, série bruitée) : janv. 1 066 ; févr. 1 044 ; mars 589 ; avr.
+    317 ; mai 687 ; juil. 588 EUR/t. Autres huiles légères 2710 12 90 (« n.d.a. ») UE27 import : 2024 694,0 EUR/t ; 2025 567,2 EUR/t ; 2026 mensuel
+    505, 495, 666, 816, 823, 705, 701 EUR/t ; France import 2024 626,6 ; 2025 500,9 EUR/t. Essences spéciales 2710 12 25 France import 2024 664
+    ; 2025 540 EUR/t ; export 2024 638 ; 2025 515 EUR/t.'
+  citation: '27101211: Huiles légères de pétrole ou de minéraux bitumineux, destinées à subir un traitement défini {voir note complémentaire 5
+    du chapitre 27} (à l''excl. des produits contenant du biodiesel) ; [FR, EXT_EU27_2020, import] VALUE_IN_EUROS 2024 270146536 ; QUANTITY_IN_100KG
+    2024 4337721.96 ; VALUE_IN_EUROS 2025 297493114 ; QUANTITY_IN_100KG 2025 4790599.12 ; [EU27_2020] VALUE_IN_EUROS 2024 3670982257 ; QUANTITY_IN_100KG
+    2024 57285455.54 ; 2025 2413831850 ; 43278254.85'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via l''API Comext dans le navigateur Chrome (lecture seule) ; valeurs copiées de la réponse JSON (champ value). Base
+    CAF frontière (import). Pas de cotation NWE publique gratuite pour le naphta : c''est la meilleure approche publique. Les huiles légères de
+    pyrolyse de plastiques sont oléfiniques et ne sont pas du naphta conforme ; elles ne pourraient prétendre à ce prix qu''après traitement ou
+    avec une décote non chiffrée ici.'
+  parametres:
+  - prix_naphta_import_ue
+  - prix_naphta_import_france
+  - prix_fraction_legere_reference
+
+A3F-COMEXT-JET-2710-19-21-2024-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), position NC 2710 19 21 « Carburéacteurs, type pétrole lampant »
+  editeur: Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101921
+    (et reporter=EU27_2020 ; mensuel freq=M, time=2026-01 à 2026-07)
+  emplacement: réponse JSON, produit 27101921
+  contenu: 'Carburéacteur (kérosène) : importations extra-UE France : 2024 : 4 265 838 850 EUR / 5 634 510 t = 757,1 EUR/t ; 2025 : 3 789 923
+    841 EUR / 5 695 606 t = 665,4 EUR/t ; exportations France 2024 805 ; 2025 661 EUR/t. UE27 import : 2024 747,8 EUR/t ; 2025 650,4 EUR/t. Mensuel
+    2026 import (EUR/t, calcul) UE27 : janv. 625 ; févr. 658 ; mars 911 ; avr. 1 221 ; mai 1 111 ; juin 957 ; juil. 911. France : 635 ; 681 ;
+    937 ; 1 274 ; 1 006 ; 795 ; 721.'
+  citation: '27101921: Carburéacteurs, type pétrole lampant ; [FR import] VALUE_IN_EUROS 2024 4265838850 ; QUANTITY_IN_100KG 2024 56345095.23
+    ; VALUE_IN_EUROS 2025 3789923841 ; QUANTITY_IN_100KG 2025 56956059.35'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via l''API Comext dans le navigateur. Comparable : DGEC Jet 1 574 $/t semaine du 9/10/2026 (A3-DGEC-NPG-2026-10-09-COTATIONS).
+    La fraction légère de type kérosène d''une huile de pyrolyse ne satisfait pas la spécification carburéacteur ; cette série est une borne haute
+    de référence.'
+  parametres:
+  - prix_carbureacteur_import
+  - prix_fraction_legere_reference
+
+A3F-COMEXT-GAZOLE-2710-19-4X-2024-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 19 43 (2024), 2710 19 44 et 2710 19 47 (2025-2026), 2710 19 31
+  editeur: Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101943&product=27101944&product=27101947&product=27101931
+    (et reporter=EU27_2020 ; mensuel freq=M)
+  emplacement: réponse JSON, produits 27101943, 27101944, 27101947, 27101931
+  contenu: 'Gazole <= 10 mg/kg S : la position 2710 19 43 n''a plus de données en 2025 ; à partir de 2025 la NC distingue 2710 19 42 (carbone
+    biosourcé >= 80 %) et 2710 19 44 (fossile). France import extra-UE : 2024 (27101943) 7 162 847 182 EUR / 10 020 680 t = 714,8 EUR/t ; 2025
+    (27101944) 5 795 975 417 EUR / 9 143 815 t = 633,9 EUR/t. UE27 : 2024 736,9 ; 2025 628,9 EUR/t. Gas oil 0,002-0,1 % S (27101947) France import
+    2025 : 768 EUR/t. Gazole « destiné à subir un traitement défini » (27101931, charge de raffinerie) UE27 import 2024 652,9 ; 2025 577,9 EUR/t.
+    Mensuel 2026, gazole 27101944 (EUR/t, calcul) UE27 : janv. 578 ; févr. 647 ; mars 916 ; avr. 1 154 ; mai 1 061 ; juin 921 ; juil. 867. France
+    : 603 ; 652 ; 871 ; 1 051 ; 971 ; 897 ; 778.'
+  citation: '27101944: Gazole de pétrole ou de minéraux bitumineux, d’une teneur en poids de soufre <= 0,001 % (à l’excl. des produits contenant
+    du biodiesel, destinés à subir une transformation chimique ou ayant une teneur en carbone biosourcé >= 80 % ...) ; [FR import 2025] VALUE_IN_EUROS
+    5795975417 ; QUANTITY_IN_100KG 91438145.75 ; 27101943 [FR import 2024] 7162847182 ; 100206796.83'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via l'API Comext dans le navigateur. Les signes <= et >= du libellé ont été restitués ; le libellé est tronqué ici. Changement
+    de nomenclature 2025 constaté par l'absence de 27101943 en 2025 et la présence de 27101942/27101944 (libellés lus). La fraction gazole d'une
+    huile de pyrolyse (oléfinique, chlore 0,137 à 0,526 %, point éclair < 40 °C) n'est pas un gazole EN 590 ; série de référence haute.
+  parametres:
+  - prix_gazole_import_france
+  - prix_gazole_import_ue
+  - prix_fraction_gazole_reference
+
+A3F-COMEXT-FIOUL-LOURD-VGO-2710-19-5X-6X-2024-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2710 19 51, 2710 19 66, 2710 19 67, 2710 19 99
+  editeur: Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=FR&partner=EXT_EU27_2020&flow=1&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27101951&product=27101966&product=27101967&product=27101999
+    (et reporter=EU27_2020 ; mensuel freq=M)
+  emplacement: réponse JSON, produits 27101951, 27101966, 27101967, 27101999
+  contenu: 'Fuel oils destinés à subir un traitement défini (27101951, charges lourdes de raffinerie de type gazole sous vide/résidus ; meilleure
+    approche publique du VGO) UE27 import : 2024 3 253 476 172 EUR / 6 135 630 t = 530,3 EUR/t ; 2025 2 271 447 464 EUR / 5 007 515 t = 453,6
+    EUR/t ; mensuel 2026 : 372 ; 423 ; 552 ; 608 ; 662 ; 623 ; 574 EUR/t (janv.-juil.). Fioul lourd 0,1-0,5 % S (27101966) : France import 2024
+    575,4 ; 2025 443,8 EUR/t ; France export 2024 514 ; 2025 416 EUR/t ; UE27 import 2024 544,0 ; 2025 465,6 EUR/t ; UE27 mensuel 2026 : 430 ;
+    466 ; 573 ; 745 ; 722 ; 667 ; 727. Fioul lourd > 0,5 % S (27101967) : France import 2024 550,4 ; 2025 488,5 EUR/t ; UE27 2024 498,0 ; 2025
+    442,3 EUR/t. Huiles lubrifiantes et autres huiles lourdes (27101999) France import 2024 955,4 ; 2025 828,9 EUR/t.'
+  citation: '27101966: Fuel oils de minéraux bitumineux, d’une teneur en poids de soufre > 0,1 % mais <= 0,5 % ... ; [FR import] VALUE_IN_EUROS
+    2024 79273183 ; QUANTITY_IN_100KG 2024 1377672.16 ; 2025 85287493 ; 1921742.65 ; 27101951: Fuel oils de pétrole ou de minéraux bitumineux,
+    destinés à subir un traitement défini (voir note complémentaire 5 du chapitre 27) ; [EU27 import] 2024 3253476172 ; 61356296.68 ; 2025 2271447464
+    ; 50075147.28'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via l''API Comext dans le navigateur. Le gazole sous vide (VGO) n''a pas de position propre ; 27101951 est une approximation
+    (comprend aussi d''autres charges lourdes). Comparable déjà fiché : DGEC fioul lourd HTT 2024 566,15 EUR/t (A3-DGEC-PRIX-HTT-TTC-2025).'
+  parametres:
+  - prix_fioul_lourd_import
+  - prix_vgo_reference
+  - prix_fraction_lourde_reference
+
+A3F-COMEXT-PARAFFINES-2712-2024-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), positions NC 2712 20 90, 2712 20 10, 2712 90 31, 2712 90 39, 2712 90 99
+  editeur: Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=fr&freq=A&reporter=EU27_2020&partner=EXT_EU27_2020&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025&product=27122090&product=27129031&product=27129039&product=27129099
+    (et reporter=FR, flow=1 et 2 ; mensuel freq=M)
+  emplacement: réponse JSON, produits 2712xxxx
+  contenu: 'Paraffine < 0,75 % d''huile (cire raffinée, 27122090) UE27 import extra-UE : 2024 136 040 093 EUR / 105 933 t = 1 284,2 EUR/t ; 2025
+    163 166 236 EUR / 142 858 t = 1 142,2 EUR/t ; mensuel 2026 : 1 018 ; 1 033 ; 1 047 ; 1 061 ; 1 057 ; 1 227 ; 1 245 EUR/t. Cires brutes, dont
+    slack wax (gatsch), destinées à un traitement défini (27129031) UE27 import : 2024 39 274 811 EUR / 35 902 t = 1 093,9 EUR/t ; 2025 45 498
+    042 EUR / 38 385 t = 1 185,3 EUR/t (la France représente la quasi-totalité : FR 2024 1 094 ; 2025 1 185 EUR/t) ; mensuel 2026 (févr.-juil.)
+    : 1 032 ; 975 ; 1 080 ; 1 142 ; 1 079 ; 1 126 EUR/t. Cires brutes, autres usages (27129039) UE27 import : 2024 963,8 ; 2025 891,8 EUR/t ;
+    2026 : 794 ; 1 000 ; 789 ; 913 ; 1 090 ; 1 102 ; 1 048. Autres cires (raffinées, 27129099) UE27 import 2024 1 345,2 ; 2025 1 201,5 EUR/t.
+    Petits volumes France (27122090 import 355 t en 2024, 2 030 EUR/t) non représentatifs.'
+  citation: '27129031: Paraffine, cire de pétrole microcristalline, {slack wax}, autres cires minérales et produits simil. obtenus par synthèse
+    ou par d’autres procédés, bruts, destinés à subir un traitement défini ... ; [EU27 import] VALUE_IN_EUROS 2024 39274811 ; QUANTITY_IN_100KG
+    2024 359021.02 ; 2025 45498042 ; 383848.88 ; 27122090: Paraffine contenant en poids < 0,75 % d''huile ... ; [EU27 import] 2024 136040093 ;
+    1059330.66 ; 2025 163166236 ; 1428580.65'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via l'API Comext dans le navigateur. Les cires de pyrolyse de plastiques (fraction lourde cireuse, oléfinique, chlorée)
+    ne sont pas des paraffines de raffinerie ; série de référence haute. Pas de position 2712 90 33 dans les résultats (aucune donnée renvoyée).
+    Comparer à Larrain et al. 2020 (slack wax 680 EUR/t en janv. 2018, Argus, A3F-LARRAIN-2020-SLACKWAX).
+  parametres:
+  - prix_slack_wax_import
+  - prix_paraffine_import
+  - prix_fraction_cireuse_reference
+
+A3F-INSEE-NAPHTA-NWE-010002082:
+  titre: Cours des matières premières importées - Naphta (Nord-Ouest Européen) - Contrats à terme à la 1ère échéance, settlement price, New-York
+    Mercantile Exchange - Prix en euros par tonne (idbank 010002082)
+  editeur: Insee
+  date: 2026-09-25 (dernière mise à jour) ; données mensuelles jusqu'à août 2026
+  type: statistique_publique
+  url: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010002082+010002076
+  emplacement: flux SDMX, série IDBANK 010002082, observations TIME_PERIOD/OBS_VALUE
+  contenu: 'Naphta NWE (contrat NYMEX 1re échéance), EUR/t, moyennes mensuelles. 2024 : 579,3 ; 606,3 ; 643,2 ; 643,3 ; 612,2 ; 603,9 ; 638,2
+    ; 598,2 ; 558,5 ; 599,4 ; 594,4 ; 579,0 ; moyenne annuelle (calcul, 12 mois) 604,7 EUR/t. 2025 : 624,9 ; 627,9 ; 563,3 ; 492,4 ; 484,2 ; 482,3
+    ; 473,6 ; 478,0 ; 479,9 ; 455,1 ; 462,4 ; 435,7 ; moyenne 505,0 EUR/t. 2026 : janv. 436,1 ; févr. 472,0 ; mars 683,4 ; avr. 781,6 ; mai 773,3
+    ; juin 623,8 ; juil. 626,3 ; août 636,8 ; moyenne 8 mois 629,2 EUR/t.'
+  citation: IDBANK 010002082 TITLE_FR « Cours des matières premières importées - Naphta (Nord-Ouest Européen) - Contrats à terme à la 1ère échéance,
+    settlement price, New-York Mercantile Exchange - Prix en euros par tonne » LAST_UPDATE 2026-09-25 ; 2025-12 435.7 ; 2026-01 436.1 ; 2026-03
+    683.4 ; 2026-04 781.6 ; 2026-08 636.8
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 : flux SDMX ouvert dans le navigateur (lecture seule) et vérifié par WebFetch (mêmes valeurs). Moyennes annuelles calculées
+    par ce sous-agent. Seule série publique gratuite trouvée d''un prix NWE du naphta. Cohérent avec Comext (UE27 import 2710 12 11 : 640,8 EUR/t
+    en 2024, 557,7 en 2025 ; écart dû à la base CAF et aux qualités). Source primaire de l''Insee : NYMEX (CME) ; l''Insee la diffuse.'
+  parametres:
+  - prix_naphta_nwe
+  - prix_fraction_legere_reference
+
+A3F-INSEE-GAZOLE-CAF-010002076:
+  titre: Cours des matières premières importées - Gazole à faible teneur en soufre - Prix en euros par tonne - CAF - 1% de soufre (idbank 010002076)
+  editeur: Insee
+  date: 2026-09-25 ; données jusqu'à août 2026
+  type: statistique_publique
+  url: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010002082+010002076
+  emplacement: flux SDMX, série IDBANK 010002076
+  contenu: 'Gazole CAF, EUR/t, moyennes mensuelles. 2024 : 729,1 ; 789,1 ; 764,4 ; 758,2 ; 694,1 ; 703,8 ; 707,7 ; 648,2 ; 591,9 ; 619,4 ; 638,6
+    ; 644,8 ; moyenne (calcul) 690,8 EUR/t. 2025 : 697,1 ; 683,1 ; 616,9 ; 553,9 ; 538,0 ; 588,5 ; 618,3 ; 576,8 ; 597,7 ; 583,7 ; 635,2 ; 547,5
+    ; moyenne 603,1 EUR/t. 2026 : janv. 559,7 ; févr. 597,1 ; mars 1 030,7 ; avr. 1 074,4 ; mai 992,9 ; juin 842,5 ; juil. 996,4 ; août 1 084,4
+    ; moyenne 8 mois 897,3 EUR/t.'
+  citation: IDBANK 010002076 TITLE_FR « Cours des matières premières importées - Gazole à faible teneur en soufre - Prix en euros par tonne -
+    CAF - 1% de soufre » ; 2024-01 729.1 ; 2025-12 547.5 ; 2026-03 1030.7 ; 2026-08 1084.4
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 dans le navigateur et par WebFetch. Le libellé associe « faible teneur en soufre » et « 1% de soufre » : qualité exacte
+    et place de cotation non précisées (incohérence de libellé signalée, non résolue). Utile comme série de comparaison 2024-2026 du gazole ;
+    la DGEC (Rotterdam) donne 1 406 $/t la semaine du 9/10/2026.'
+  parametres:
+  - prix_gazole_nwe_serie
+  - prix_fraction_gazole_reference
+
+A3F-INSEE-FIOUL-LOURD-SINGAPOUR-010776360:
+  titre: Fioul lourd - 3.5% de soufre 380Cst Cargo FOB Singapour - Singapore Exchange, cours de clôture, valeur haute - Prix en euros par tonne
+    (idbank 010776360)
+  editeur: Insee
+  date: 2025-08-22 (dernière mise à jour) ; dernière valeur juin 2025
+  type: statistique_publique
+  url: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010751334+010751333+010776360+010002074
+  emplacement: flux SDMX, séries 010776360, 010751333, 010002074
+  contenu: 'Fioul lourd 3,5 % S 380 cSt FOB Singapour : moyenne 2024 (calcul, 12 mois) 432,5 EUR/t ; 2025 (6 mois) 423,0 EUR/t (464,8 ; 471,5
+    ; 431,6 ; 380,2 ; 382,6 ; 407,0) ; plus de données après juin 2025. Les séries Insee du fioul lourd en Europe sont arrêtées : NWE 380 cSt
+    FAB 3,5 % S (010751333) dernière valeur déc. 2023, 392,6 EUR/t ; Rotterdam 1 % S FAB (010002074) dernière valeur juin 2020.'
+  citation: 010751333 | Cours des matières premières importées - Fioul lourd (Europe Nord Ouest) 380Cst Cargo FAB - Prix en euros par tonne -
+    FAB - 3,5% de soufre - Série arrêtée | dernière valeur 2023-12 392.6
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 dans le navigateur. Peu utile (Asie, série interrompue) ; fiché pour signaler l'absence de série publique européenne
+    active du fioul lourd à l'Insee. Utiliser plutôt DGEC TBTS (déjà fiché) et Comext 27101966/67.
+  parametres:
+  - prix_fioul_lourd_reference
+
+A3F-SDES-PRIX-PETROLIERS-2025-TABLEAU2:
+  titre: Les prix des produits pétroliers poursuivent leur baisse en 2025 avant un rebond début 2026 (Données, fichier xlsx, feuille « Tableau
+    2 »)
+  editeur: SDES, ministère de la Transition écologique (calculs SDES d'après DGDDI)
+  date: '2026-06-16'
+  type: statistique_publique
+  url: 'https://www.statistiques.developpement-durable.gouv.fr/media/9425/download?inline (page : https://www.statistiques.developpement-durable.gouv.fr/les-prix-des-produits-petroliers-poursuivent-leur-baisse-en-2025-avant-un-rebond-debut-2026)'
+  emplacement: 'feuille « Tableau 2 : prix moyens des produits raffinés à l’importation et à l’exportation », en euros courants par tep'
+  contenu: 'Prix moyens à l''importation, France entière, EUR/tep : gazole/fioul domestique 2024 720, 2025 637 (-11,6 %) ; jet kérosène 2024 756,
+    2025 666 ; fioul lourd 2024 621, 2025 529 ; produits non énergétiques (naphta, bitumes, lubrifiants) 2024 806, 2025 724. Exportations : gazole/FOD
+    2024 660, 2025 695 ; supercarburants 615 / 508 ; fioul lourd 487 / 392. Conversion en EUR/t (calcul avec les équivalences SDES déjà fichées,
+    A3-SDES-CCE-2026-EQUIVALENCES : 1,0175 tep/t pour gazole/FOD, 0,9554 tep/t pour fioul lourd) : gazole/FOD import 2025 environ 648 EUR/t ;
+    fioul lourd import 2025 environ 505 EUR/t ; 2024 : 733 et 593 EUR/t.'
+  citation: 'Tableau 2 : prix moyens des produits raffinés à l’importation et à l’exportation || En euros courants par tep || ... 2024 ; 2025
+    ; Évolution 2024-2025 || dont gazole/fioul domestique ; ... 720 ; 637 ; -11.6% || jet kérosène ; ... 756 ; 666 ; -11.9% || fioul lourd ; ...
+    621 ; 529 ; -14.9% || produits non énergétiques* ; ... 806 ; 724 ; -10.2%'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 : fichier xlsx ouvert dans le navigateur (lecture seule, analyse SheetJS). La publication 2024 (https://www.ecologie.gouv.fr/sites/default/files/documents/Prix%20des%20produits%20p%C3%A9troliers%20en%202024.pdf,
+    tableau 2, p. 2) donnait pour 2024 723 EUR/tep (gazole/FOD), 764 (jet), 620 (fioul lourd), 808 (non énergétiques) : valeurs 2024 révisées
+    dans l''édition 2025 (720, 756, 621, 806). Les deux sont données. Le texte de la page indique que la moyenne 2025 précède « le déclenchement
+    de la guerre en Iran ». Moyennes annuelles par produit, pas de cotation Rotterdam par produit.'
+  parametres:
+  - prix_gazole_import_france_annuel
+  - prix_jet_import_france_annuel
+  - prix_fioul_lourd_import_france_annuel
+
+A3F-PRYME-RAPPORT-ANNUEL-2025:
+  titre: Pryme N.V. 2025 Annual Report (including Governance and Sustainability Reports)
+  editeur: Pryme N.V. (Rotterdam ; Euronext Growth Oslo)
+  date: '2026-05-29'
+  type: entreprise
+  url: https://storage.mfn.se/c/aHR0cHM6Ly9hcGkzLm9zbG8ub3Nsb2JvcnMubm8vdjEvbmV3c3JlYWRlci9hdHRhY2htZW50P21lc3NhZ2VJZD02NzQ5NTEmYXR0YWNobWVudElkPTMyNzIzMQ/pryme-n-v.pdf?news-id=f019c293-24d6-5245-8186-f33cf9984d13
+  emplacement: p. 8 (Key Highlights 2025, Commercial progress) ; p. 86-87 (note 7.4.1 Revenue from contracts with customers)
+  contenu: 'Prix réellement obtenu pour une huile de pyrolyse de plastiques (huile entière, non fractionnée), départ usine (FCA) Rotterdam : 822
+    t vendues en 2025 à environ 1 300 EUR/t en moyenne ; premiers volumes vers 1 050 EUR/t ; environ 1 425 EUR/t au T3 2025 grâce à une meilleure
+    qualité. Chiffre d''affaires 2025 : 1 069 kEUR (2024 : 102 kEUR). Contrôle (calcul) : 1 069 000 / 822 = 1 300 EUR/t. Mécanisme : formules
+    de prix contractuelles fondées notamment sur le prix du déchet plastique publié mensuellement par EUWID (pas une indexation sur le naphta).
+    Production 2025 : 807 t. L''usine Pryme One a été arrêtée fin mars 2026 ; comptes établis en non-continuité d''exploitation, refus de certifier
+    de l''auditeur.'
+  citation: Pryme sold 822 tons of pyrolysis oil in 2025 at an average price of approximately € 1 . 300 per ton. Earlier volumes were sold at
+    around €1,050 per ton, while improved quality enabled sales at approximately €1,425 per ton in Q3. ... The transaction price as per metric
+    ton pyrolysis oil is determined at the time of the delivery, based on the price formula and benchmarks , like market pricing as per ton of
+    plastic waste monthly published by EUWID ... Revenue from contracts with customers 1.069 102
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 : PDF ouvert dans le navigateur, texte extrait par pdf.js (espaces de l''extraction conservés). Source d''entreprise,
+    comptes avec refus de certifier (disclaimer of opinion, p. 116). Huile issue de déchets plastiques triés (polyoléfines), pas d''ordures ménagères
+    ; le client n''est pas nommé dans le rapport. Le prix inclut probablement une prime « recyclé » liée aux obligations de contenu recyclé ;
+    il ne renseigne pas un prix par fraction.'
+  parametres:
+  - prix_huile_pyrolyse_plastique_realise
+
+A3F-PYRUM-RAPPORT-SEMESTRIEL-2026:
+  titre: Pyrum Innovations AG, Half-Year Report 2026 (23.09.2026)
+  editeur: Pyrum Innovations AG
+  date: '2026-09-23'
+  type: entreprise
+  url: https://www.pyrum.net/wp-content/uploads/2026/09/2026-09-23-ENG-Pyrum-halfyear-report-2026.pdf
+  emplacement: p. 34 (prévisions, marché du noir de carbone recyclé) ; p. 36 (chiffre d'affaires)
+  contenu: 'Pyrolyse de pneus. Pyrum ne publie ni volumes ni prix de son huile (TTO) dans ce rapport. Prix cité pour le noir de carbone recyclé
+    (TTB, issu du char) : contrats long terme « dans la fourchette de 1 500 EUR/t ». Chiffre d''affaires S1 2026 : 1 743 kEUR (non ventilé par
+    produit) ; 2025 : 4,1 MEUR (communiqué du 8/5/2026, https://live.deutsche-boerse.com/nachrichten/EQS-News-Pyrum-Innovations-AG-publishes-figures-for-the-2025-financial-year-368bfe93-cf05-4cf4-97df-9a17246c3a53).
+    Aucun prix implicite de l''huile calculable.'
+  citation: This expectation is supported by long - term supply contracts already concluded with customers in the price range of EUR 1,500/t,
+    meaning that the currently achievable price is already 100% above the company’s expectations at the time of its initial public offering in
+    2021.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 : PDF ouvert dans le navigateur (pdf.js). Le prix concerne un noir de carbone broyé et conditionné de pneus (TTB), pas
+    le char brut d''Urban Rig ; donné ici car la mission cite Pyrum (huile et char). Source d''entreprise.'
+  parametres:
+  - prix_rcb_pneus_reference
+
+A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS:
+  titre: 油化手法の概要；特徴と今後の課題・要望（資料５ 札幌プラスチック株式会社資料）, 090424 容リプラ再商品化手法検討会
+  editeur: 札幌プラスチックリサイクル株式会社 (Sapporo Plastic Recycling), document remis au ministère de l'Environnement du Japon (環境省)
+  date: '2009-04-24'
+  type: entreprise
+  url: https://www.env.go.jp/council/former2013/03haiki/y0315-09/mat05.pdf
+  emplacement: p. 15 (diapositive « Ⅳ 油化製品の市況と現状 »)
+  contenu: 'Seule source trouvée donnant un prix PAR FRACTION pour une huile de liquéfaction de déchets plastiques ménagers (emballages). Fraction
+    légère : vendue à Japan Energy comme produit de valeur équivalente au naphta importé. Fraction moyenne : vendue à 80-90 % du prix du fioul
+    A du commerce (A重油, proche du fioul domestique/gazole) à des entreprises de l''environnement et de la chimie. Fraction lourde : vendue à 80-90
+    % du prix du fioul C du commerce (C重油, fioul lourd) à des papetiers et des réseaux de chauffage. « Les ventes sont bonnes, la production à
+    pleine capacité ne suffit pas. » Aucun prix absolu en JPY. Procédé SPR : déchloration, pyrolyse, distillation en huiles légère, moyenne et
+    lourde (p. 7).'
+  citation: 軽質油：輸入ナフサと同等レベルの価値あるものとしてジャパンエナジーに販売 中質油：市販A重油の８０～９０％の価格で販売（環境関連、化学会社に販売） 重質油：市販C重油の８０～９０％の価格で販売（製紙会社、地域暖房会社に販売） 油化製品の販売は好調で、フル生産しても足りない現状
+  statut: ancien
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 : PDF ouvert dans le navigateur (pdf.js avec cartes de caractères), contrôlé par WebFetch. Donnée de 2009 (plus de huit
+    ans) ; l''usine a été dissoute en janvier 2011 (document METI https://www.meti.go.jp/policy/recycle/main/3r_policy/policy/html/pdf1/sapporo.pdf,
+    p. 1 : « 廃プラスチック油化施設（札幌プラスチックリサイクル㈱）... ※解散済（H23.1） »). Source d''entreprise. Utile comme structure de décote par fraction, pas comme niveau
+    de prix.'
+  parametres:
+  - decote_fraction_legere
+  - decote_fraction_gazole
+  - decote_fraction_lourde
+
+A3F-LARRAIN-2020-SLACKWAX:
+  titre: 'Economic performance of pyrolysis of mixed plastic waste: open-loop versus closed-loop recycling (Journal of Cleaner Production 270,
+    122442)'
+  editeur: Larrain M., Van Passel S., Thomassen G., Kresovic U., Alderweireldt N., Moerman E., Billen P. (Université d'Anvers)
+  date: '2020'
+  type: etude_publique
+  url: https://repository.uantwerpen.be/docstore/d:irua:1285
+  emplacement: section 2.3.1, p. 15 ; section 3.5.1, p. 24 ; section 3.6.2, p. 27 (manuscrit accepté)
+  contenu: 'Article évalué : les produits valorisés sont le naphta et la cire (slack wax). Prix de la slack wax : 680 EUR/t en janvier 2018 (Argus
+    Media, 2018), soit 68 % au-dessus du prix moyen du brut, rapport supposé constant ; scénario découplé : cire constante à 760 EUR/t. Naphta
+    : projection AIE (The Future of Petrochemicals, 2018), valeur seulement graphique (figure 4a, non lisible) ; hypothèse « naphta toujours 10
+    % sous le prix du pétrole ».'
+  citation: The price for slack wax was 680 EUR/t on January 2018 (Argus Media, 2018).
+  statut: secondaire
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (manuscrit du dépôt institutionnel) ; citation obtenue par l''outil de lecture, non recopiée du PDF par
+    le navigateur. Prix repris d''Argus (payant) : statut secondaire. Donnée de 2018 (limite des huit ans).'
+  parametres:
+  - prix_slack_wax_litterature
+  - prix_fraction_cireuse_reference
+
+A3F-RIEDEWALD-2020-PRIX-HUILE:
+  titre: 'Economic assessment of a 40,000 t/y mixed plastic waste pyrolysis plant using direct heat treatment with molten metal: A case study
+    of a plant located in Belgium (Waste Management 120, 698-707)'
+  editeur: Riedewald F., Patel Y., Wilson E., Santos S., Sousa-Gallagher M. (University College Cork)
+  date: '2020-11-13'
+  type: etude_publique
+  url: https://cora.ucc.ie/bitstreams/406705d6-8d16-4102-b425-442d5ecd366d/download
+  emplacement: section 3.2, p. 6 ; section 5, p. 10 ; section 6, p. 13
+  contenu: 'Huile de pyrolyse entière vendue comme fioul n° 6 / fioul de soute : revenu net pour l''exploitant 210 EUR/t (bas de février 2016
+    : raffineries US payées 1,2 $/gallon soit 275 EUR/t, moins 25 EUR/t de marge et 40 EUR/t de transport) ; sensibilité au 6 mars 2020 (Brent
+    52,02 $/b) : 227 EUR/t. L''article critique la valeur de 780 EUR/t pour les cires reprise de Fivga et Dimitriou (2018) comme non réaliste.
+    Char : aucune valeur, mise en décharge 130 EUR/t.'
+  citation: a P-oil revenue figure of €210/t for the PlastPyro operator was calculated.
+  statut: secondaire
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (version auteur déposée) ; citations obtenues par l''outil de lecture. Prix dérivés de l''EIA (prix US)
+    : secondaire. Hypothèse très prudente (huile vendue comme fioul lourd en période de prix bas).'
+  parametres:
+  - prix_huile_pyrolyse_litterature
+  - prix_fraction_lourde_reference
+
+A3F-STALLKAMP-2024-PMV-HUILE:
+  titre: 'Pyrolysis of mixed engineering plastics: Economic challenges for automotive plastic waste (Waste Management 176, 105-116)'
+  editeur: Stallkamp C., Hennig M., Volk R., Stapf D., Schultmann F. (KIT)
+  date: '2024-01-26'
+  type: etude_publique
+  url: https://publikationen.bibliothek.kit.edu/1000167839/152125757
+  emplacement: résumé ; section 3.3, p. 111 ; section 4, p. 113
+  contenu: 'Prix de vente minimal couvrant les coûts de l''huile de pyrolyse (résultat de modèle, base de coûts 2021) : 1 182 EUR/t pour 3 750
+    t/an d''intrant, jusqu''à 418 EUR/t pour 100 000 t/an. Produit de référence retenu : fioul résiduel US, 462 EUR/t en moyenne 2021 (EIA, 2022).
+    Aucun prix par fraction.'
+  citation: Therefore, a potential reference product is US residual fuel oil, with an average price of 462 €/Mg in 2021 (EIA, 2022).
+  statut: secondaire
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (texte intégral KIT) ; citations obtenues par l''outil de lecture. Le 462 EUR/t est repris de l''EIA :
+    secondaire. Les 1 182 et 418 EUR/t sont des coûts calculés, pas des prix de marché.'
+  parametres:
+  - prix_huile_pyrolyse_litterature
+  - cout_production_huile_pyrolyse
+
+
+# --- Annexe 3, lot G : debouches et valeur du char ---
+
+A3G-FDR-DECARBONATION-CIMENT-2023:
+  titre: Feuille de route de décarbonation de la filière Ciment
+  editeur: Filière ciment (France Ciment) et ministère chargé de l'industrie, publiée sur entreprises.gouv.fr
+  date: 2023-05
+  type: federation
+  url: https://www.entreprises.gouv.fr/files/files/enjeux/d%C3%A9carbonation/feuille-de-route-ciment.pdf
+  emplacement: introduction p. 3-4 (25 cimenteries, carte figure 1-1) ; § 2a-2b p. 5-8 (mix thermique) ; § 3b p. 12-13 (levier substitution) ;
+    § 3d p. 17 (biomasse) ; § 4 p. 19-20 (projets Airvault, Saint-Pierre-la-Cour). Pagination approximative selon l'outil.
+  contenu: '25 cimenteries en France (5 groupes : Heidelberg Materials, Eqiom/CRH, Imerys, Lafarge/Holcim, Vicat). Combustibles fossiles : principalement
+    coke de pétrole, charbon (13 à 17 % du mix selon les années) et gaz naturel ; la part du coke de pétrole diminue et doit être remplacée par
+    des combustibles alternatifs. Combustibles de substitution : 29 % de la consommation d''énergie en 2011, 44 % en 2021. Déchets consommés :
+    964 kt en 2015, 1 054 kt en 2021 ; objectif 80 % de la consommation d''énergie en 2030 (1 528 kt) et 85 % en 2050 (1 649 kt). Biomasse : 422
+    kt (2015) puis 577 kt (2021) ; part de biomasse dans les déchets visée 52,5 % en 2030 et 60 % en 2050. Projet Airvault : 88 % de combustibles
+    alternatifs, plus de 200 000 t/an de déchets dont jusqu''à 150 000 t/an de CSR.'
+  citation: « leur taux d'utilisation passant de 29% en 2011 à 44% en 2021. » [...] « Le secteur a consommé un volume de déchets estimé à 964
+    Kt en 2015 et 1054 Kt en 2021. » [...] « Le volume de déchets devrait représenter 80% de la consommation d'énergie en 2030 et 85% en 2050
+    » [...] « soit un volume de 1528 Kt en 2030 et 1649 Kt en 2050. » [...] « La production française de ciment se structure autour de 25 cimenteries
+    »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (extraction par outil ; le tableau 3-2 des taux annuels et la carte des usines
+    n'ont pas été restitués). Document de filière co-signé avec l'État. La part de biomasse visée (52,5 % puis 60 %) signifie qu'une part croissante
+    du gisement recherché est biogénique, ce que le char d'OM et de plastiques n'est que partiellement (fraction biogénique non mesurée). L'écart
+    entre 1 054 kt en 2021 et 1 528 kt en 2030 indique un besoin d'environ 470 kt/an de combustibles de substitution supplémentaires (calcul du
+    sous-agent).
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_taux_substitution
+  - cimenterie_tonnage_dechets
+  - cimenterie_nombre_usines
+
+A3G-HEIDELBERG-AIRVAULT-2025-2022:
+  titre: 'Info presse, octobre 2022 : Airvault 2025 (Ciments Calcia, HeidelbergCement France)'
+  editeur: Heidelberg Materials France (Schilling Communication)
+  date: 2022-10
+  type: entreprise
+  url: https://www.heidelbergmaterials.fr/sites/default/files/2022-10/FLASH%20R-CALCIA-AIRVAULT2025-OCT2022%20%28002%29.pdf
+  emplacement: page unique
+  contenu: 'Cimenterie d''Airvault (Deux-Sèvres) : volume de déchets consommés multiplié par 4 pour dépasser 200 000 t/an ; consommation de CSR
+    multipliée par 15, jusqu''à 150 000 t/an ; 88 % de la consommation thermique assurée par des combustibles alternatifs, sourcés en priorité
+    localement, remplaçant le coke ou le charbon. Autorisation environnementale par arrêté préfectoral du 25/05/2022.'
+  citation: « la consommation de combustibles solides de récupération sera multipliée par 15, pouvant atteindre jusqu’à 150 000 tonnes » [...]
+    « 88% de la consommation thermique du site sera à l’avenir assurée par des combustibles alternatifs » [...] « L’autorisation environnementale
+    a été délivrée par arrêté préfectoral du 25 mai 2022. »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Communiqué d'entreprise. Airvault est à environ 350 km de l'Île-de-France
+    (estimation de distance non sourcée). Aucune spécification de qualité (PCI, chlore) dans le communiqué. L'arrêté du 25/05/2022 (n° A6375 selon
+    le rapport d'inspection 2024) n'a pas été trouvé en ligne.
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_tonnage_csr
+
+A3G-GEORISQUES-CALCIA-GARGENVILLE-2024:
+  titre: Rapport de l'inspection des installations classées, Calcia Gargenville (visite du 03/06/2024)
+  editeur: DRIEAT Île-de-France, unité départementale des Yvelines (Géorisques)
+  date: '2024-08-01'
+  type: reglementaire
+  url: https://georisques.gouv.fr/webappReport/ws/installations/inspection/TdiGJsWOaJnAIhyW4Xa9oyqomy3JMrCa
+  emplacement: section 1 Contexte, p. 4-5 ; fiche n° 4, p. 9-10
+  contenu: 'Cimenterie Heidelberg Materials (Calcia) de Gargenville (Yvelines, AIOT 0006503289) : le four est mis « en cocon » depuis 2021 ; l''usine
+    fabrique du ciment à partir de clinker livré par route ; la fiche 4 porte sur le démantèlement du four. Conséquence : Gargenville, seule cimenterie
+    d''Île-de-France citée dans la mission, n''est pas un débouché combustible.'
+  citation: citation non obtenue (l'outil a résumé le passage « four mis sous cocon en 2021 » sans le citer mot pour mot)
+  statut: non-verifie
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; contenu restitué en paraphrase, à confirmer par lecture directe. Information
+    importante pour la géographie des débouchés.
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_proximite_idf
+
+A3G-GEORISQUES-EQIOM-ROCHEFORT-2026:
+  titre: Rapport de l'inspection des installations classées, EQIOM cimenterie de Rochefort-sur-Nenon, thème Déchets (visite du 09/04/2026)
+  editeur: DREAL Bourgogne-Franche-Comté, UID 39-71 (Géorisques)
+  date: '2026-06-08'
+  type: reglementaire
+  url: https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/48ih3LFQLSDGY110XrPdeVViAEEYg6Qx
+  emplacement: section 1 Contexte p. 2/16 ; section 2-2 p. 3/16 ; fiche 8 p. 13-14 ; fiche 10 p. 15/16
+  contenu: 'Cimenterie EQIOM (Jura, AIOT 0005900978), installation de co-incinération autorisée pour 25 000 t/an de déchets non dangereux et 40
+    000 t/an de déchets dangereux (AP du 24/01/2018, critères au chapitre 3.3, non reproduits). L''inspection rappelle que le PCI est un critère
+    d''acceptation obligatoire (valeurs calorifiques minimales exigées par l''arrêté du 20/09/2002) ; analyses à l''admission : PCI, eau, chlore,
+    soufre (cas des farines animales).'
+  citation: « 25 000 t/an pour les déchets non dangereux et 40 000 t/an pour les déchets dangereux » [...] « La cimenterie est donc aussi assimilée
+    à une installation de co-incinération. » [...] « la suppression du Pouvoir Calorifique Inférieur (PCI) en tant que critère d'acceptation »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Les valeurs limites du chapitre 3.3 de l'AP de 2018 ne sont pas dans le
+    rapport. Les limites métaux antérieures (AP n° 605 de 2007) figurent dans A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010.
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_capacite_dechets
+
+A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010:
+  titre: 'Rapport de présentation de l''inspection des installations classées : Holcim France, cimenterie de Rochefort-sur-Nenon, co-incinération
+    de déchets industriels dangereux (réf. UT39/JM/SG/2010-401)'
+  editeur: DREAL Franche-Comté, unité territoriale du Jura (Géorisques)
+  date: '2010-05-03'
+  type: reglementaire
+  url: https://georisques.gouv.fr/webappReport/ws/installations/document/ca746ad3c12644f1ba5354a69ad3cfe0
+  emplacement: § 2.1 (citation de l'article 3.3.1 de l'AP n° 605 du 17/04/2007) ; § 2.3 ; § 3.7
+  contenu: 'Critères métaux de l''AP n° 605 (article 3.3.1) pour les déchets admis : Hg < 0,001 % (10 mg/kg) ; Cd+Hg+Tl < 0,01 % (100 mg/kg) ;
+    Pb+Cr+Ni+As+Co+V+Sn+Sb+Te+Se < 0,25 % (2 500 mg/kg), demande de passage à 1 % pour certains déchets à valorisation matière. Taux maximal de
+    substitution énergétique fixé à 40 % par l''arrêté.'
+  citation: '« Teneur en métaux lourds : Hg < 0,001 % » ; « Cd + Hg + TI < 0,01 % » ; « Pb + Cr + Ni + As + Co + V + Sn +Sb + Te + Se < 0,25 %
+    »'
+  statut: ancien
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Données de 2007-2010 (plus de huit ans) ; l''AP du 24/01/2018 a remplacé
+    ces critères (non lu). Comparaison du sous-agent : le char Urban Rig (Cd 31-36, Hg < 0,1 mg/kg) respecte Cd+Hg+Tl < 100 mg/kg si Tl est faible
+    (non mesuré) ; Pb 42-140 mg/kg très en dessous de 2 500 mg/kg pour la somme, mais les autres métaux (Cr, Ni, Sb, As, Co, V, Sn) ne sont pas
+    mesurés.'
+  parametres:
+  - char_spec_cimenterie
+
+A3G-AP-AIRVAULT-4401-2005:
+  titre: Arrêté n° 4401 portant actualisation de la situation administrative de la cimenterie d'Airvault (Ciments Calcia)
+  editeur: Préfecture des Deux-Sèvres (Géorisques)
+  date: '2005-08-01'
+  type: reglementaire
+  url: https://georisques.gouv.fr/webappReport/ws/installations/document/900f549d648e40e69b988b2e0af31eb5
+  emplacement: art. 1.1 ; art. 12.A.1 ; art. 12.A.8.1 ; art. 12.A.8.4 ; art. 12.A.10 ; art. 12.A.12 ; art. 12.A.13
+  contenu: 'Limites de composition des déchets admis : PCB/PCT 50 ppm ; chlore organique 1 % au précalcinateur et 2 % à la tuyère principale ;
+    soufre 4 % ; métaux lourds 1 %. À l''entrée du four : Hg 10 mg/kg ; Cd+Hg+Tl 100 mg/kg ; Sb+As+Pb+... 2 500 mg/kg ; hydrocarbures totaux 5
+    000 mg/kg. Un déchet de PCI au moins 5 000 kJ/kg relève de la co-incinération avec valorisation énergétique. Contribution thermique des déchets
+    plafonnée à 40 % (deux fours). Analyses à chaque livraison : H2O, Cl, cendres, pH, compatibilité, PCS. Certificat d''acceptation préalable
+    valable un an.'
+  citation: « 1 % en Chlore organique à la précalcination et 2 % à la tuyère principale » ; « 4 % en Soufre » ; « 1 % en Métaux lourds » ; « 100
+    mg/kg pour la somme des teneurs en cadmium (Cd), mercure (Hg) et thallium (Tl) » ; « 5 000 kJ/kg »
+  statut: ancien
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; texte tronqué à l''article 12.A.14. Date de l''arrêté (1er août 2005)
+    lue dans l''arrêté complémentaire n° 5111 du 10/06/2011 (https://georisques.gouv.fr/webappReport/ws/installations/document/9813525095574847850b718b1d413e83).
+    Données de plus de huit ans ; remplacé pour l''essentiel par l''AP du 25/05/2022 (non trouvé). L''outil restitue des PCI moyens « 23 et 6,3
+    kJ/kg » pour les gammes 3000 et 2000, unité manifestement erronée (probablement MJ/kg) : non repris.'
+  parametres:
+  - char_spec_cimenterie
+
+A3G-GEORISQUES-CALCIA-RANVILLE-2017:
+  titre: 'Rapport de l''inspection des installations classées au CODERST : réexamen des conditions d''autorisation de la cimenterie Ciments Calcia,
+    usine de Ranville (réf. FC-HS/GR-2017-A461)'
+  editeur: DREAL Normandie, unité départementale du Calvados (Géorisques)
+  date: '2017-08-04'
+  type: reglementaire
+  url: https://georisques.gouv.fr/webappReport/ws/installations/document/8accf0a65e7a413f015e7a4338580004
+  emplacement: § II.3.4 (combustibles traditionnels) ; tableau des rubriques 3520-a, 2771, 3520-b ; § VI.2 (MTD 4, 11, 12)
+  contenu: 'Combustibles traditionnels : coke de pétrole et charbon moulu. Co-incinération de déchets non dangereux (farines animales, boues de
+    STEP, CSR et déchets aqueux à faible PCI) limitée à 10 t/h, soit environ 55 000 t/an ; déchets dangereux limités à 72 t/j (14 000 t/an au
+    total). Contribution thermique des déchets dangereux hors huiles usagées plafonnée à 40 %. Introduction des déchets interdite sous 850 °C.
+    Le rapport renvoie à des spécifications qualité sans en donner les valeurs.'
+  citation: « Le pourcentage de contribution thermique, liée à la co-incinération de déchets dangereux » [...] « Des critères physiques et chimiques
+    y sont fixés »
+  statut: ancien
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Rapport de 2017 (plus de huit ans). Confirme que Ranville (Calvados, environ
+    230 km de Paris, distance non sourcée) admet des CSR, sans valeurs limites publiées dans ce document. Les chiffres 10 t/h et 55 000 t/an sont
+    restitués par l'outil (citation verbatim non obtenue pour ces chiffres).
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_capacite_dechets
+
+A3G-GEORISQUES-LAFARGE-LOZANNE-2025:
+  titre: Rapport de l'inspection des installations classées, Lafarge Ciments, usine du Val d'Azergues à Lozanne (visite du 02/10/2025, réf. UDR-SSDAS-25-288-CR)
+  editeur: DREAL Auvergne-Rhône-Alpes, unité départementale du Rhône (Géorisques)
+  date: '2025-10-14'
+  type: reglementaire
+  url: https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/VdTuGNKV4Yqeata3JueA6UPTD7ABxOtQ
+  emplacement: section 1 Contexte p. 2 ; fiche n° 2 p. 5
+  contenu: Environ 30 000 t/an de déchets combustibles utilisés en substitution d'énergies fossiles. Plan de contrôle des combustibles et matières
+    de substitution ; analyse à chaque livraison (teneur en eau, PCI, pH) ; le camion n'est pas dépoté sans le résultat de l'analyse.
+  citation: '« Environ 30 000 t/an de déchets combustibles sont utilisés sur le site en substitution d''énergies fossiles. » [...] « une analyse
+    à chaque livraison sur les paramètres suivant : teneur en eau, PCI, PH »'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Usine éloignée de l'Île-de-France ; donne un ordre de grandeur de tonnage
+    de combustibles de substitution par usine et la pratique d'analyse à chaque livraison.
+  parametres:
+  - char_debouche_cimenterie
+  - cimenterie_tonnage_dechets
+
+A3G-GEORISQUES-VICAT-XEUILLEY-2026:
+  titre: Rapport de l'inspection des installations classées, VICAT Xeuilley, installation Argilor (visite du 25/03/2026, réf. 2026_0302)
+  editeur: DREAL Grand Est (Géorisques)
+  date: '2026-04-22'
+  type: reglementaire
+  url: https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/XrhW2gjqAYyjOiFuPda79MazLTNUwMTi
+  emplacement: fiche n° 2 p. 4-5 (AP complémentaire du 04/01/2022, art. 4) ; fiche n° 3 p. 5-7 ; fiche n° 6 p. 9-10
+  contenu: 'Installation d''activation d''argiles de Vicat à Xeuilley (Meurthe-et-Moselle) : déchets admis = DAE non dangereux sous forme de CSR
+    et déchets de bois ; 382 t de CSR consommées en 2025, soit 8,9 % du mix énergétique ; CSR exigé « de très bonne qualité » ; complément au
+    charbon à coke, coke de pétrole ou gaz naturel. VLE à 10 % d''O2 : HCl 10 mg/m3 ; SO2 250 ; somme métaux 0,5 ; Hg 0,05 ; Cd+Tl 0,05.'
+  citation: « Déchets d'activités économiques non dangereux sous forme CSR (Combustibles solides de récupération) » [...] « 382 tonnes de CSR
+    ont été consommées en 2025, ce qui représente 8,9% du mix énergétique » [...] « le CSR utilisé doit être de très bonne qualité »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Petit débouché (argiles calcinées, pas un four à clinker) mais nouveau type
+    d'installation consommant du combustible solide de récupération ; aucune valeur d'admission (PCI, chlore) publiée.
+  parametres:
+  - char_debouche_autre_four
+
+A3G-COMEXT-PETCOKE-NC27131100-FR:
+  titre: 'EU trade since 1988 by HS2-4-6 and CN8 (DS-045409) : importations françaises de coke de pétrole non calciné, NC 2713 11 00'
+  editeur: Eurostat (Comext)
+  date: données 2023 à juin 2026, mise à jour du jeu de données 2026-09-15
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=en&freq=A&reporter=FR&partner=WORLD&product=27131100&flow=1&time=2025
+  emplacement: 'API Comext, réponse JSON : indicateurs VALUE_IN_EUROS (indice 0) et QUANTITY_IN_100KG (indice 1). Requêtes : freq=A, reporter=FR,
+    flow=1 (import), partner=WORLD ou EXT_EU27_2020, product=27131100, time=2023, 2024, 2025 ; puis freq=M, sinceTimePeriod=2026-01 pour le premier
+    semestre 2026.'
+  contenu: 'Importations France, monde : 2023 = 59 669 694 EUR pour 3 945 099,42 q (394 510 t), soit 151,25 EUR/t ; 2024 = 41 416 991 EUR pour
+    3 381 869,31 q (338 187 t), soit 122,47 EUR/t ; 2025 = 33 055 532 EUR pour 2 808 287,68 q (280 829 t), soit 117,71 EUR/t ; janvier-juin 2026
+    = 17 046 418 EUR pour 1 386 285,83 q (138 629 t), soit 122,96 EUR/t. Hors UE (EXT_EU27_2020) : 2023 = 26 497 555 EUR / 1 901 679,03 q, soit
+    139,34 EUR/t ; 2024 = 16 642 974 EUR / 1 552 506,54 q, soit 107,20 EUR/t ; 2025 = 13 333 078 EUR / 1 268 278,99 q, soit 105,13 EUR/t. Au PCI
+    SDES de 32 GJ/t : 4,73 EUR/GJ (2023), 3,83 (2024), 3,68 (2025), 3,84 (S1 2026). Calcul : valeur / (quantité en 100 kg / 10) = EUR/t ; EUR/t
+    / 32 = EUR/GJ.'
+  citation: '"product":{"index":{"27131100":0},"label":{"27131100":"Petroleum coke, non-calcined"}} ; 2025 : "value":{"0":33055532,"1":2808287.68}
+    ; 2024 : {"0":41416991,"1":3381869.31} ; 2023 : {"0":59669694,"1":3945099.42} ; mois 2026-01 à 2026-06 (valeur/quantité) : 332207/21120.78,
+    3719429/369087.28, 6670058/599609.27, 940146/51295.18, 4150925/319019.07, 1233653/26154.25'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via le navigateur Chrome de l''utilisateur (onglet dédié, fetch de l''API en lecture
+    seule depuis une page ec.europa.eu, onglet refermé) ; curl et WebFetch ne restituaient pas la réponse brute. Valeur statistique à la frontière
+    (CAF pour les importations), hors taxes, hors transport intérieur jusqu''à la cimenterie. La NC 2713 11 ne distingue pas le coke « fuel grade
+    » (cimenterie) du coke destiné à d''autres usages ; c''est une valeur unitaire moyenne, pas un prix de marché. Les volumes mensuels sont très
+    irréguliers (juin 2026 : 1 233 653 EUR pour 2 615 t, soit 471,7 EUR/t, valeur atypique probablement liée à un lot particulier) : préférer
+    les moyennes annuelles. Divergence avec INSEE EACEI (coke de pétrole 254 EUR/t en 2024, déjà au registre) : l''EACEI mesure un prix d''achat
+    moyen rendu usine des industriels, la valeur Comext un prix frontière ; écart d''environ 130 EUR/t en 2024.'
+  parametres:
+  - prix_coke_petrole_import
+  - prix_coke_petrole_eur_gj
+  - char_valeur_energetique
+
+A3G-COMEXT-CHARBON-NC27011290-FR:
+  titre: 'EU trade since 1988 by HS2-4-6 and CN8 (DS-045409) : importations françaises de houille bitumineuse non agglomérée hors charbon à coke,
+    NC 2701 12 90'
+  editeur: Eurostat (Comext)
+  date: données 2023 à juin 2026, mise à jour du jeu de données 2026-09-15
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=en&freq=A&reporter=FR&partner=WORLD&product=27011290&flow=1&time=2025
+  emplacement: 'API Comext, réponse JSON : VALUE_IN_EUROS (indice 0), QUANTITY_IN_100KG (indice 1). Mêmes paramètres que la fiche coke de pétrole,
+    product=27011290.'
+  contenu: 'Importations France, monde : 2023 = 618 951 292 EUR pour 23 657 009,77 q (2 365 701 t), soit 261,64 EUR/t ; 2024 = 308 105 153 EUR
+    pour 15 615 159,61 q (1 561 516 t), soit 197,31 EUR/t ; 2025 = 301 492 232 EUR pour 18 162 717,1 q (1 816 272 t), soit 166,00 EUR/t ; janvier-juin
+    2026 = 144 404 329 EUR pour 8 790 038,1 q (879 004 t), soit 164,28 EUR/t. Au PCI SDES du charbon-vapeur de 26 GJ/t : 10,06 EUR/GJ (2023),
+    7,59 (2024), 6,38 (2025), 6,32 (S1 2026). Pour mémoire, NC 2701 12 10 (charbon à coke) 2025 : 414 804 306 EUR / 23 464 721,1 q, soit 176,8
+    EUR/t ; NC 2713 12 00 (coke de pétrole calciné) 2025 : 138 068 833 EUR / 2 269 122,03 q, soit 608,5 EUR/t.'
+  citation: '"Bituminous coal, whether or not pulverised, non-agglomerated (excl. coking)" ; 2025 : 301492232 | 18162717.1 ; 2024 : 308105153
+    | 15615159.61 ; 2023 : 618951292 | 23657009.77 ; mois 2026-01 à 2026-06 : 15739867/1060367.07, 8282055/452018.52, 28421479/1793378.08, 25662459/1708952.25,
+    27361535/1568853.86, 38936934/2206468.32'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via le navigateur Chrome (même méthode que la fiche coke de pétrole). Valeur frontière
+    CAF, hors taxe carbone et hors acheminement. Le PCI réel du charbon importé n''est pas connu (le PCI SDES de 26 GJ/t est conventionnel). Constat
+    : en valeur frontière, le coke de pétrole (3,7 EUR/GJ en 2025) est nettement moins cher que le charbon (6,4 EUR/GJ), ce qui fixe le plafond
+    de valeur d''un combustible substitué en cimenterie au niveau du coke de pétrole. Divergence avec INSEE EACEI (houille 215 EUR/t en 2024,
+    prix rendu industriel) : écart d''environ 18 EUR/t avec la valeur frontière 2024.'
+  parametres:
+  - prix_charbon_import
+  - prix_charbon_eur_gj
+  - char_valeur_energetique
+
+A3G-ALBA-EBS-HINTERGRUND-2023:
+  titre: 'Hintergrundpapier: Ersatzbrennstoffe, wie Abfall Kohle ersetzen kann'
+  editeur: ALBA Group
+  date: 2023-01-11 (date du nom de fichier ; date non imprimée dans le texte)
+  type: entreprise
+  url: https://www.alba.info/fileadmin/user_upload/Corporate_Site/PDF/hintergrundpapiere/230111_Hintergrundpapier_Ersatzbrennstoff.pdf
+  emplacement: p. 1 (chlore) ; p. 2 (PCI, granulométrie) ; p. 3 (exemple de prix, tonnages 2019)
+  contenu: 'Allemagne : le chlore des CSR destinés aux cimenteries doit être inférieur à 1 % ; PCI des CSR 12 à 18 MJ/kg ; livraison aux cimenteries
+    en granulométrie 0-50 mm et 0-80 mm. Exemple de chaîne de prix : l''entreprise paie 150 EUR/t au fabricant de CSR, qui paie 50 EUR/t à la
+    cimenterie pour qu''elle prenne le CSR ; la cimenterie ou la centrale paie un prix négatif pour son combustible. 1,16 Mt de plastiques utilisés
+    comme combustibles de substitution en 2019 (cimenteries, centrales).'
+  citation: « So muss der Chlorgehalt von EBS unter 1 Prozent liegen. » [...] « in einer Korngröße von 0 bis 50 und 0 bis 80 Millimetern gehen
+    die klimaschonenden EBS an Zement-Fabriken » [...] « 150 Euro pro Tonne an den EBS-Hersteller, der wiederum 50 Euro pro Tonne EBS an das Zementwerk
+    abgibt. »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source d'entreprise (opérateur de déchets) ; le prix de 50 EUR/t est présenté
+    comme un exemple de calcul, pas comme un prix de marché constaté. Concorde avec FNADE 2023 (gate fee CSR payé par le producteur, déjà au registre)
+    et contredit la fourchette « vente 0 à 50 EUR/t » de l'Observatoire normand 2021. Le char Urban Rig (32 MJ/kg PCS) a un PCI très supérieur
+    à ces CSR, ce qui n'est pas valorisé dans cet exemple.
+  parametres:
+  - char_prix_csr_cimenterie
+  - char_spec_cimenterie
+  - char_export_allemagne
+
+A3G-KHI-GOMI-TANKA-NENRYO:
+  titre: ごみ炭化燃料化システム (système de transformation des ordures en combustible carbonisé), dossier de prix 優秀環境装置, 日本産業機械工業会会長賞
+  editeur: 川崎重工業株式会社 (Kawasaki Heavy Industries), publié par la JSIM (Japan Society of Industrial Machinery Manufacturers)
+  date: non indiquée dans le texte extrait (50e édition du concours selon l'URL)
+  type: entreprise
+  url: https://jsim.or.jp/pdf/commendation/50_13.pdf
+  emplacement: p. 127 (utilisations) ; p. 129 (PCI, tableau 5, déchloration) ; p. 133-134 (économie)
+  contenu: Char d'ordures ménagères vendu comme combustible de substitution à des installations utilisant des combustibles fossiles (centrales
+    thermiques d'exploitants électriques, usines de traitement des déchets, centrales d'enrobage). PCI du char 16 000 kJ/kg ou plus (base anhydre).
+    Ordures brutes à 1 à 3 % de chlore, concentré dans le char ; un déchlorateur ramène le chlore à environ 0,2 à 0,4 %. La collectivité vend
+    le char à bas prix (elle évite le coût de mise en décharge des mâchefers et perçoit une recette), prix variable selon la collectivité, moins
+    cher par unité de chaleur que le fioul lourd ; les montants en yens ne sont pas lisibles dans le texte extrait.
+  citation: « 炭化燃料の発熱量は16,000kJ/kg以上（乾燥条件：無水）であり、燃料として十分な発熱量 » [...] « 脱塩装置に供給された炭化物は、0.2-0.4%程度まで塩素濃度を低減可能な » [...] « 自治体は主灰の最終処理費用を負担せずに燃料として収入を得られることから、安価で販売が可能となるためである。
+    » [...] « 炭化燃料の販売価格は、自治体によって変わるが、 »
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; chiffres de capacité et de prix (円/t) absents ou corrompus dans l''extraction
+    du PDF. Source de constructeur. Précédent qualitatif : un char d''OM est vendu, à bas prix, comme combustible ; le chlore brut du char d''OM
+    (sans déchloration) est élevé, ce qui est le principal risque pour le char Urban Rig (chlore non mesuré).'
+  parametres:
+  - char_prix_exemples
+  - char_chlore_reference
+
+A3G-MOE-HARIMA-TANKA-2019:
+  titre: Rapport du projet d'évaluation de la récupération d'énergie par carbonisation dans des installations de traitement des déchets de petite
+    et moyenne taille (炭化燃料化技術を活用した中小廃棄物処理施設におけるエネルギー回収評価事業), exercice 2018
+  editeur: Ministère de l'Environnement du Japon (環境省) ; travaux Kawasaki Heavy Industries
+  date: 2019 (réunions du comité du 06/11/2018 et du 05/03/2019 ; date de publication non imprimée)
+  type: etude_publique
+  url: https://www.env.go.jp/content/900536080.pdf
+  emplacement: p. 6-4 (usine de Harima) ; p. 7-1 et 7-2 (bilan matière et PCI) ; p. 8-1 ; p. 9-2 (centre de carbonisation de Saikai)
+  contenu: 'Cas d''étude : centre de traitement des déchets de Harima (Hyogo). Hypothèse de 50 t/j d''ordures, rendement en char 18 %, soit 9,0
+    t/j de char ; utilisation 1,2 t/j dans l''unité de carbonisation, 0,12 t/j dans l''usine de traitement des déchets, 7,7 t/j en chaudière en
+    remplacement du charbon. PCI du char 3 000 kcal/kg (environ 12,6 MJ/kg, conversion du sous-agent) contre 5 375 kcal/kg pour le charbon. Aucune
+    valeur de prix de vente du char dans le document ; coût d''abattement 132 000 JPY/t CO2.'
+  citation: « 炭化燃料製造量 9.0 t/日 » ; « ボイラで炭化燃料使用量 7.7 t/日 » ; « 炭化物発熱量 3,000 kcal/kg » ; « 石炭発熱量 5,375 kcal/kg »
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Capacité contradictoire dans le document (45 t/j x 2 fours p. 6-4 ; 25
+    t/j x 2 p. 7-1). Le char japonais d''OM issu de carbonisation a un rendement (18 %) et un PCI (environ 12,6 MJ/kg) très inférieurs aux données
+    constructeur Urban Rig (25 %, 32 MJ/kg PCS) : écart à expliquer par le porteur (cendres, humidité, procédé). Cohérent avec le CARBOR d''Arthelyse
+    (11,7 à 15,1 MJ/kg sur sec, A3-VICAT-CRECHY-CARBOR-2008).'
+  parametres:
+  - char_prix_exemples
+  - char_rendement_reference
+  - char_pci_reference
+
+A3G-PYRUM-CONTINENTAL-ACCORD-2024:
+  titre: Pyrum Innovations AG concludes framework agreement with Continental for long-term acceptance of its recovered carbon black
+  editeur: Pyrum Innovations AG (EQS News)
+  date: '2024-07-30'
+  type: entreprise
+  url: https://eqs-news.com/news/corporate/pyrum-innovations-ag-concludes-framework-agreement-with-continental-for-long-term-acceptance-of-its-recovered-carbon-black/2101995
+  emplacement: corps du communiqué
+  contenu: Accord-cadre de dix ans avec Continental pour l'achat du noir de carbone récupéré (rCB, issu du char de pyrolyse de pneus) d'au moins
+    deux usines Pyrum ; capacité portée de 20 000 à 40 000 t/an de pneus usagés ; avance de Continental sur livraisons futures. Aucun prix ni
+    volume de rCB publié.
+  citation: « The agreement covers the rCB purchase quantities for at least two Pyrum plants, with a term of ten years. » [...] « Continental
+    has agreed to make an advance payment for future rCB deliveries, »
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le communiqué des résultats 2025 (8 mai 2026, https://mfn.se/all/a/pyrum-innovations/pyrum-pyrum-innovations-ag-publishes-figures-for-the-2025-financial-year-d15ce56b)
+    donne un chiffre d''affaires de 4,1 M EUR (2,0 M EUR en 2024) sans ventilation par produit ni prix. Le rCB de pneus est un débouché matière
+    qui exige une matière première homogène (pneus) : non transposable à un char d''OM et de plastiques chargé en cendres et métaux.'
+  parametres:
+  - char_prix_exemples
+  - char_debouche_noir_carbone
+
+
+# --- Annexe 3, lot H : prix de l acier et de l aluminium ---
+
+A3H-COMEXT-FR-ACIER-ANNUEL-2024-2025:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), France, NC 7204 30, 7204 41, 7204 49, annuel 2024 et 2025
+  editeur: Commission européenne, Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=FR&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025
+    (même requête répétée avec product=72043000, 72044110, 72044191, 72044199, 72044930, 72044990 et flow=1 importations / flow=2 exportations)
+  emplacement: Réponse JSON-stat, objet value, indicateurs VALUE_IN_EUROS et QUANTITY_IN_100KG, time 2024 et 2025
+  contenu: 'France, partenaire monde (intra + extra UE). Format : valeur EUR / quantité en 100 kg -> prix unitaire EUR/t (= 10 x V / Q). EXPORTATIONS
+    (flow 2) : 7204 49 10 (broyés, « shredded ») 2024 : 381 658 863 EUR / 10 839 695,56 (100 kg) -> 381 658 863 / 1 083 969,6 t = 352,1 EUR/t
+    ; 2025 : 350 545 758 / 11 267 138,67 -> 311,1 EUR/t. 7204 49 30 (non broyés, en paquets) 2024 : 83 385 241 / 2 638 701,42 -> 316,0 ; 2025
+    : 52 387 171 / 1 732 486,13 -> 302,4 EUR/t. 7204 49 90 (non broyés, pas en paquets, « autres ») 2024 : 890 058 599 / 25 822 157,11 -> 344,7
+    ; 2025 : 756 913 876 / 24 495 868,63 -> 309,0 EUR/t. 7204 30 00 (fer ou acier étamé) 2024 : 78 151 680 / 2 101 220,59 -> 371,9 ; 2025 : 60
+    936 672 / 1 748 273,49 -> 348,6 EUR/t. 7204 41 10 (tournures, copeaux) 2024 : 99 354 800 / 2 476 243,12 -> 401,2 ; 2025 : 71 494 340 / 1 971
+    306,7 -> 362,7 EUR/t. 7204 41 91 (chutes, en paquets) 2024 : 15 374 019 / 467 892,24 -> 328,6 ; 2025 : 13 306 077 / 471 047,05 -> 282,5 EUR/t.
+    7204 41 99 (chutes, pas en paquets) 2024 : 210 253 110 / 5 759 946,75 -> 365,0 ; 2025 : 169 736 344 / 5 069 873,74 -> 334,8 EUR/t. IMPORTATIONS
+    (flow 1) : 7204 49 10 2024 : 147 521 421 / 3 943 887,82 -> 374,1 ; 2025 : 164 911 970 / 4 772 251,04 -> 345,6 EUR/t. 7204 49 30 2024 : 204
+    183 / 4 414,4 -> 462,5 ; 2025 : 58 381 / 1 692 -> 345,0 EUR/t (volumes très faibles, non représentatif). 7204 49 90 2024 : 130 676 827 / 4
+    214 303,16 -> 310,1 ; 2025 : 137 142 768 / 4 898 552,88 -> 280,0 EUR/t. 7204 30 00 2024 : 31 209 981 / 1 071 816,95 -> 291,2 ; 2025 : 25 998
+    471 / 1 032 720,68 -> 251,7 EUR/t. 7204 41 10 2024 : 29 749 826 / 942 148,9 -> 315,8 ; 2025 : 19 594 216 / 705 428,3 -> 277,8 EUR/t. 7204
+    41 91 2024 : 251 299 / 1 355,56 -> 1 853,8 (non représentatif, 136 t) ; 2025 : 1 742 442 / 38 665,39 -> 450,6 EUR/t. 7204 41 99 2024 : 55
+    150 158 / 1 363 298,16 -> 404,5 ; 2025 : 41 375 576 / 1 242 971,27 -> 332,9 EUR/t. Synthèse : ferraille broyée et ferraille « autres » exportées
+    par la France à 345-352 EUR/t en 2024 et 309-311 EUR/t en 2025 ; acier étamé (emballages) exporté 372 puis 349 EUR/t, importé 291 puis 252
+    EUR/t.'
+  citation: 'Requête product=72044910, flow=2, time=2024 (lue par WebFetch) : "value":{"1":10839695.56,"0":381658863} avec indicators {"VALUE_IN_EUROS":0,"QUANTITY_IN_100KG":1}.
+    Libellés : 72044910 "Waste and scrap of iron or steel, fragmentised \"shredded\" (excl. slag, scale and other waste of the production of iron
+    and steel; ..."; 72044990 "Waste and scrap of iron or steel, not fragmentised \"shredded\", not in bundles ..."; 72043000 "Waste and scrap
+    of tinned iron or steel (excl. radioactive, and waste and scrap of batteries and electric accumulators)(1996-2500)"'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 : 1 requête via WebFetch (valeur 2024 de 7204 49 10 export, identique au résultat navigateur),
+    le reste via fetch() GET en lecture seule dans le navigateur Chrome de l''utilisateur (onglet refermé), WebFetch ayant été limité (HTTP 429).
+    Valeurs reprises telles que renvoyées par le JSON ; prix unitaires calculés par l''agent. Valeur unitaire statistique, toutes qualités confondues
+    ; pas un prix de rachat.'
+  parametres:
+  - prix_ferraille_eur_t
+  - prix_acier_etame_eur_t
+
+A3H-COMEXT-FR-ALU-ANNUEL-2024-2025:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), France, NC 7602 00, annuel 2024 et 2025
+  editeur: Commission européenne, Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=FR&partner=WORLD&product=76020090&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025
+    (répétée avec product=76020011, 76020019 et flow=1)
+  emplacement: Réponse JSON-stat, objet value, indicateurs VALUE_IN_EUROS et QUANTITY_IN_100KG
+  contenu: 'France, partenaire monde. P = 10 x V / Q (EUR/t). EXPORTATIONS : 7602 00 90 (débris / scrap d''aluminium) 2024 : 359 951 364 / 2 608
+    683,74 -> 1 379,8 EUR/t ; 2025 : 427 423 250 / 2 935 180,26 -> 1 456,2 EUR/t. 7602 00 19 (déchets d''aluminium, autres) 2024 : 322 310 961
+    / 2 048 925,57 -> 1 573,1 ; 2025 : 354 484 854 / 2 059 121,88 -> 1 721,5 EUR/t. 7602 00 11 (tournures, copeaux, feuilles minces colorées ou
+    revêtues < 0,2 mm) 2024 : 79 793 422 / 606 843,24 -> 1 314,9 ; 2025 : 79 717 494 / 573 693,89 -> 1 389,5 EUR/t. IMPORTATIONS : 7602 00 90
+    2024 : 90 992 108 / 574 107,06 -> 1 584,9 ; 2025 : 71 149 211 / 468 652,85 -> 1 518,2 EUR/t. 7602 00 19 2024 : 424 634 062 / 2 054 238,53
+    -> 2 067,1 ; 2025 : 461 693 976 / 2 137 145,56 -> 2 160,3 EUR/t. 7602 00 11 2024 : 4 942 660 / 31 492,97 -> 1 569,4 ; 2025 : 5 902 010 / 35
+    773,64 -> 1 649,8 EUR/t.'
+  citation: 'Libellés JSON : 76020090 "Scrap of aluminium (excl. slags, scale and the like from iron and ..."; 76020019 "Waste of aluminium, incl.
+    faulty workpieces and workpieces which have become unusable in the course of production or processing ..."; 76020011 "Turnings, shavings,
+    chips, milling waste, sawdust and filings, of aluminium; waste of coloured, coated or bonded sheets and foil, of a thickness \"excl. any backing\"
+    of <  0,2 mm, of aluminium". Valeurs : voir contenu (objet value du JSON).'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l''utilisateur (WebFetch limité HTTP 429). Libellés tronqués
+    par l''agent (...). Écart import / export important sur 7602 00 19 (2 160 contre 1 722 EUR/t en 2025) : mélange de qualités différent selon
+    le flux.'
+  parametres:
+  - prix_aluminium_recupere_eur_t
+
+A3H-COMEXT-UE27-EXTRA-2024-2025:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), UE27 avec les pays tiers, NC 7204 et 7602, annuel 2024 et 2025
+  editeur: Commission européenne, Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=EU27_2020&partner=EXT_EU27_2020&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025
+    (répétée pour les autres codes et flow=1)
+  emplacement: Réponse JSON-stat, objet value
+  contenu: 'UE27, échanges extra-UE. P = 10 x V / Q (EUR/t). EXPORTATIONS extra-UE : 7204 49 10 2024 : 1 090 567 675 / 30 768 829,27 -> 354,4
+    ; 2025 : 1 041 223 291 / 33 517 786,19 -> 310,6 EUR/t. 7204 49 90 2024 : 3 805 810 156 / 104 587 467,31 -> 363,9 ; 2025 : 3 256 657 500 /
+    104 447 413,35 -> 311,8 EUR/t. 7204 49 30 2024 : 21 206 811 / 751 183,6 -> 282,3 ; 2025 : 15 821 549 / 621 087,61 -> 254,7 EUR/t. 7204 30
+    00 2024 : 65 989 451 / 1 912 637,84 -> 345,0 ; 2025 : 44 199 504 / 1 531 500,94 -> 288,6 EUR/t. 7204 41 10 2024 : 87 183 554 / 2 668 580,13
+    -> 326,7 ; 2025 : 83 884 134 / 2 837 847,27 -> 295,6. 7204 41 99 2024 : 369,5 ; 2025 : 326,9 EUR/t. 7602 00 90 2024 : 1 242 034 224 / 7 279
+    406,26 -> 1 706,2 ; 2025 : 1 364 140 015 / 7 572 747,03 -> 1 801,4 EUR/t. 7602 00 19 2024 : 741 363 089 / 4 273 224,95 -> 1 734,9 ; 2025 :
+    751 115 245 / 4 086 177,21 -> 1 838,2 EUR/t. 7602 00 11 2024 : 181 518 821 / 1 024 749,15 -> 1 771,3 ; 2025 : 215 144 733 / 1 113 615,86 ->
+    1 931,9 EUR/t. IMPORTATIONS extra-UE : 7204 49 10 2024 : 411 913 539 / 11 309 399,06 -> 364,2 ; 2025 : 365 733 370 / 11 499 825,28 -> 318,0.
+    7204 49 90 2024 : 333,4 ; 2025 : 297,2. 7204 30 00 2024 : 389,0 ; 2025 : 336,1. 7602 00 90 2024 : 1 903,8 ; 2025 : 1 954,4. 7602 00 19 2024
+    : 1 801,6 ; 2025 : 1 938,3. 7602 00 11 2024 : 1 288,6 ; 2025 : 1 458,7 EUR/t.'
+  citation: 'Requête de contrôle reporter=EU27_2020, partner=EXT_EU27_2020, product=72044910, flow=2, time=2024 : {"0":1090567675,"1":30768829.27}
+    (0 = VALUE_IN_EUROS, 1 = QUANTITY_IN_100KG). Les codes EU, EXTRA_EU27_2020 et WORLD comme partenaire de EU27_2020 renvoient un objet value
+    vide.'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Valeurs extra-UE seulement (le commerce
+    intra-UE n'est pas inclus dans cet agrégat).
+  parametres:
+  - prix_ferraille_eur_t
+  - prix_aluminium_recupere_eur_t
+
+A3H-COMEXT-MENSUEL-2025-2026:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), données mensuelles janvier 2025 à juin/juillet 2026
+  editeur: Commission européenne, Eurostat (Comext)
+  date: '2026-09-15'
+  type: statistique_publique
+  url: 'https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=M&reporter=FR&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&sinceTimePeriod=2025-01
+    (répétée pour les autres codes ; UE : reporter=EU27_2020&partner=EXT_EU27_2020)'
+  emplacement: 'Réponse JSON-stat, dimension time 2025-01 à 2026-12 ; dernières valeurs disponibles : 2026-06 pour la France, 2026-07 pour l''UE27'
+  contenu: 'Prix unitaires mensuels P = 10 x V / Q (EUR/t), arrondis. FR export 7204 49 10 : 2025-01 334, 02 321, 03 334, 04 340, 05 326, 06 307,
+    07 300, 08 294, 09 295, 10 286, 11 284, 12 290 ; 2026-01 309, 02 301, 03 315, 04 316, 05 329, 06 332. Cumul janv.-juin 2026 : 206 001 084
+    EUR / 6 510 577,79 (100 kg) -> 316,4 EUR/t. FR export 7204 49 90 : 2025 de 334 (janv.) à 279 (oct.) ; 2026-01 299 à 2026-06 332 ; cumul janv.-juin
+    2026 : 432 674 160 / 13 672 640,23 -> 316,5 EUR/t. FR export 7204 30 00 (étamé) : 2025 de 311 à 365 (pic isolé 457 en juillet) ; 2026-01 348
+    à 2026-06 358 ; cumul janv.-juin 2026 : 35 562 393 / 1 008 204,95 -> 352,7 EUR/t. FR import 7204 49 10 : cumul janv.-juin 2026 : 122 591 525
+    / 3 603 972,56 -> 340,2 EUR/t (mensuel très volatil, 275 à 449). FR export 7602 00 19 : 2025 de 1 500 à 1 860 ; 2026-01 1 366, 02 1 816, 03
+    1 802, 04 2 061, 05 2 233, 06 3 176 ; cumul janv.-juin 2026 : 242 702 259 / 1 204 543,02 -> 2 014,9 EUR/t. FR export 7602 00 90 : 2025 de
+    1 374 à 1 569 ; 2026-01 1 459, 02 1 693, 03 1 667, 04 1 723, 05 1 829, 06 2 045 ; cumul janv.-juin 2026 : 260 327 806 / 1 510 795,60 -> 1
+    723,1 EUR/t. FR import 7602 00 19 : cumul janv.-juin 2026 : 278 960 013 / 1 104 253,38 -> 2 526,2 EUR/t. FR import 7602 00 90 : cumul janv.-juin
+    2026 : 39 125 351 / 266 305,54 -> 1 469,2 EUR/t. UE27 export extra-UE 7204 49 10 : 2025 de 383 (janv.) à 280 (déc.) ; 2026-01 297 à 2026-07
+    320 (pic 343 en juin) ; cumul janv.-juil. 2026 : 663 660 840 / 20 854 719,65 -> 318,2 EUR/t. UE27 export extra-UE 7204 49 90 : cumul janv.-juil.
+    2026 : 2 364 019 655 / 69 845 230,72 -> 338,5 EUR/t. UE27 export extra-UE 7602 00 90 : 2025 de 1 721 à 1 889 ; 2026-01 1 876 à 2026-07 2 330
+    ; cumul janv.-juil. 2026 : 958 432 737 / 4 480 443,88 -> 2 139,1 EUR/t. UE27 export extra-UE 7602 00 19 : cumul janv.-juil. 2026 : 536 114
+    248 / 2 443 000,91 -> 2 194,5 EUR/t. Tendance : ferraille au plus bas fin 2025 (environ 280-290 EUR/t) puis remontée à 330-345 EUR/t en mai-juin
+    2026 ; aluminium en hausse nette au 1er semestre 2026.'
+  citation: 'Requête freq=M, reporter=FR, product=72044910, flow=2, indicators=VALUE_IN_EUROS, sinceTimePeriod=2026-01 : "value":{"0":36500846,"1":34846592,"2":37215915,"3":33326500,"4":24634824,"5":39476407}
+    (index 0 = 2026-01 ... 5 = 2026-06), "updated":"2026-09-15T11:00:00+0200"'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Données 2026 provisoires (révisables). Le
+    pic FR export 7602 00 19 de juin 2026 (3 176 EUR/t) est probablement un effet de composition ; à ne pas utiliser seul.
+  parametres:
+  - prix_ferraille_eur_t
+  - prix_aluminium_recupere_eur_t
+  - tendance_prix_2026
+
+A3H-COMEXT-DE-ANNUEL-2024-2025:
+  titre: EU trade since 1988 by HS2-4-6 and CN8 (DS-045409), Allemagne, NC 7204 et 7602, annuel 2024 et 2025
+  editeur: Commission européenne, Eurostat (Comext), données transmises par Destatis
+  date: '2026-09-15'
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?freq=A&reporter=DE&partner=WORLD&product=72044910&flow=2&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&time=2024&time=2025
+    (répétée pour 72043000, 72044990, 76020019, 76020090 et flow=1)
+  emplacement: Réponse JSON-stat, objet value
+  contenu: 'Allemagne, partenaire monde. P = 10 x V / Q (EUR/t). Export 7204 49 10 2024 : 255 099 567 / 7 127 102,46 -> 357,9 ; 2025 : 278 266
+    062 / 8 867 792,46 -> 313,8. Export 7204 49 90 2024 : 1 336 660 203 / 38 834 734,67 -> 344,2 ; 2025 : 1 230 369 510 / 40 612 753,77 -> 303,0.
+    Export 7204 30 00 2024 : 262,1 ; 2025 : 301,3. Import 7204 49 10 2024 : 352,3 ; 2025 : 307,7. Import 7204 49 90 2024 : 323,1 ; 2025 : 281,0.
+    Import 7204 30 00 2024 : 249,6 ; 2025 : 234,3. Export 7602 00 90 2024 : 1 477 492 930 / 8 413 683,94 -> 1 756,1 ; 2025 : 1 476 657 899 / 7
+    812 290,59 -> 1 890,2. Export 7602 00 19 2024 : 1 855,8 ; 2025 : 1 971,3. Import 7602 00 90 2024 : 1 729,2 ; 2025 : 1 771,2. Import 7602 00
+    19 2024 : 1 588,6 ; 2025 : 1 802,1 EUR/t.'
+  citation: Valeurs de l'objet value du JSON (voir contenu) ; libellés identiques à A3H-COMEXT-FR-ACIER-ANNUEL-2024-2025.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via fetch() GET en lecture seule dans le navigateur Chrome de l'utilisateur. Substitut aux indices de prix Destatis,
+    non obtenus (voir NON TROUVÉ).
+  parametres:
+  - prix_ferraille_eur_t
+  - prix_aluminium_recupere_eur_t
+
+A3H-USGS-MCS2026-IRON-STEEL-SCRAP:
+  titre: Mineral Commodity Summaries 2026, Iron and Steel Scrap
+  editeur: U.S. Geological Survey
+  date: '2026'
+  type: statistique_publique
+  url: https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-iron-steel-scrap.pdf
+  emplacement: Tableau Salient Statistics, ligne Price ; paragraphe sur l'année 2025
+  contenu: 'États-Unis, prix moyen livré de la ferraille No. 1 heavy melting (composite), USD par tonne métrique : 2021 417,66 ; 2022 381,72 ;
+    2023 333,28 ; 2024 314,85 ; 2025 319 (estimation).'
+  citation: Price, average, delivered, No. 1 heavy melting composite price, dollars per metric ton3 417.66 381.72 333.28 314.85 319 ; The annual
+    average price delivered in 2025 was estimated to increase to $319.00 per ton
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent le 15/10/2026 via WebFetch. Marché américain, qualité HMS 1 (démolition), en USD ; renvoi 3 du tableau non lu. Repère
+    hors Europe uniquement.
+  parametres:
+  - prix_ferraille_usd_t
+
+A3H-DERICHEBOURG-RESULTATS-2023-2024:
+  titre: Résultats de l'exercice 2023-2024 (communiqué de presse)
+  editeur: Derichebourg (diffusion AMF / DILA)
+  date: '2024-12-05'
+  type: entreprise
+  url: https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/12/FCECO076828_20241205.pdf
+  emplacement: Activité Recyclage (pages non numérotées)
+  contenu: 'Prix moyen des ferrailles vendues par le groupe (France et autres pays d''implantation) sur l''exercice clos le 30/09/2024 : 349 EUR/t,
+    inférieur de 2 EUR à l''exercice précédent. Prix moyen des métaux non ferreux vendus : 2 445 EUR/t contre 2 307 EUR/t (+6 %) ; ce panier inclut
+    le cuivre et ne représente pas l''aluminium seul.'
+  citation: le prix moyen (349 €/t) n'est inférieur que de 2 € au prix moyen de l'an passé. ; font progresser le prix moyen des métaux non ferreux
+    vendus par le Groupe de 6 %, passant de 2 307 €/t à 2 445 €/t.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent le 15/10/2026 via WebFetch. Source commerciale (premier recycleur français coté) ; prix de vente aux aciéries et
+    fonderies, pas prix d'achat aux apporteurs.
+  parametres:
+  - prix_ferraille_eur_t
+
+A3H-DERICHEBOURG-S1-2024-2025:
+  titre: Résultats du premier semestre de l'exercice 2024-2025 (communiqué de presse)
+  editeur: Derichebourg (diffusion AMF / DILA)
+  date: '2025-05-27'
+  type: entreprise
+  url: https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2025/05/FCECO078641_20250527.pdf
+  emplacement: page 2/9
+  contenu: 'Semestre clos le 31/03/2025 : prix moyen des ferrailles vendues 328,7 EUR (par tonne), -6,4 % sur un an ; prix moyen des métaux non
+    ferreux +11,9 % (sans valeur absolue).'
+  citation: Le prix moyen des ferrailles commercialisées par le Groupe se situe à 328,7 €, en retrait de 6,4 % par rapport à l’an passé.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Source commerciale. L'unité « par tonne » n'est pas écrite dans la phrase citée, elle se déduit du communiqué
+    2023-2024 (349 €/t).
+  parametres:
+  - prix_ferraille_eur_t
+
+A3H-DERICHEBOURG-S1-2025-2026:
+  titre: Résultats du premier semestre de l'exercice 2025-2026 (communiqué de presse)
+  editeur: Derichebourg (diffusion AMF / DILA)
+  date: '2026-05-28'
+  type: entreprise
+  url: https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/05/FCECO082120_20260528.pdf
+  emplacement: pages 2, 3 et 5
+  contenu: 'Semestre clos le 31/03/2026 : prix moyen des ferrailles vendues 305,4 EUR (par tonne), -7,1 % sur un an ; point bas en octobre 2025,
+    légère remontée ensuite. Volumes : ferrailles 2 127,7 kt, non ferreux 357,1 kt. Prix moyen des non ferreux +14,6 % (cuivre +20 %), hausse
+    de l''aluminium en mars 2026 (pas de valeur absolue).'
+  citation: Le prix moyen des ferrailles commercialisées par le Groupe se situe à 305,4 €, ; le point bas du prix des ferrailles vendues a été
+    enregistré au mois d'octobre 2025
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch (citation obtenue par fragments, l'outil limitant la longueur des extraits). Source commerciale. Cohérent
+    avec le point bas Comext d'octobre à décembre 2025.
+  parametres:
+  - prix_ferraille_eur_t
+  - tendance_prix_2026
+
+A3H-LETSRECYCLE-FERREUX-2026:
+  titre: Ferrous scrap metal prices 2026
+  editeur: letsrecycle.com (presse professionnelle, Royaume-Uni)
+  date: 2026-09
+  type: presse
+  url: https://www.letsrecycle.com/prices/metals/ferrous-metal-prices/ferrous-scrap-metal-prices-2026/
+  emplacement: Tableau « Ferrous scrap 2026 £ per tonne », janvier à septembre
+  contenu: 'Royaume-Uni, GBP/t, fourchettes mensuelles : 5c light iron (ferraille légère) 60-100 de janvier à avril, 75-100 en mai-juin, 60-90
+    en juillet, 60-80 en août-septembre ; 8B mixed steel cuttings 100-140 ; 0A plate & girder 120-170 ; No 1 old steel 95-155 ; Cars 60-100. Base
+    (livré ou enlevé) non précisée.'
+  citation: Ferrous scrap 2026 £ per tonne ; 5c light iron 60 - 100 (janvier)
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch. Presse, sans méthode publiée ; Royaume-Uni et non UE ; prix en livres. Le 5c light iron (ferraille légère,
+    emballages) est la qualité la plus proche des métaux de pyrolyse. Version 2025 : 5c light iron 100-150 en janvier, 60-100 en octobre et décembre
+    2025 (https://www.letsrecycle.com/prices/metals/ferrous-metal-prices/ferrous-scrap-metal-prices-2025/).'
+  parametres:
+  - prix_ferraille_legere_gbp_t
+
+A3H-LETSRECYCLE-CANETTES-2026:
+  titre: Steel can prices 2026 ; Aluminium can prices 2026
+  editeur: letsrecycle.com (presse professionnelle, Royaume-Uni)
+  date: 2026-09
+  type: presse
+  url: https://www.letsrecycle.com/prices/metals/steel-cans/steel-can-prices-2026/ et https://www.letsrecycle.com/prices/metals/aluminium-cans/aluminium-can-prices-2026/
+  emplacement: Tableaux « 2026 £ per tonne », janvier à septembre
+  contenu: 'Canettes acier, GBP/t : janv. 65-100, févr.-mars 70-105, avr. 90-120, mai 95-130, juin-juil. 90-130, août 90-135, sept. 95-140. Canettes
+    aluminium « Baled or densified and strapped », GBP/t : janv. 820-1 340, févr. 825-1 345, mars 840-1 360, avr. 900-1 400, mai 900-1 500, juin
+    880-1 450, juil. 880-1 350, août 830-1 300, sept. 880-1 350.'
+  citation: Steel cans 65 - 100 (janvier 2026) ; Baled or densified and strapped 820 - 1340 (janvier 2026)
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Presse, Royaume-Uni, GBP ; base (livré / enlevé) non précisée. Emballages issus de collecte séparée, plus
+    propres que des métaux extraits d'un char.
+  parametres:
+  - prix_canettes_acier_gbp_t
+  - prix_canettes_alu_gbp_t
+
+A3H-FASTMARKETS-ALU-FRAG-2026-01:
+  titre: EU secondary aluminium prices firm as scrap shortages bite
+  editeur: Fastmarkets (article en accès libre)
+  date: '2026-01-26'
+  type: presse
+  url: https://www.fastmarkets.com/insights/eu-secondary-aluminium-prices-firm-as-scrap-shortages-bite/
+  emplacement: Corps de l'article
+  contenu: 'Europe, aluminium scrap floated frag (fragments d''aluminium issus de broyage, séparés par flottation), livré consommateur : 1 900-2
+    000 EUR/t, contre 1 850-1 950 EUR/t une semaine plus tôt (+2,63 %).'
+  citation: Fastmarkets assessed the price for aluminium scrap floated frag, delivered consumer Europe at €1,900-2,000 per tonne
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Agence de prix commerciale (cotation payante), seule la valeur citée dans l'article libre est reprise.
+    Qualité broyée flottée, proche d'un aluminium mélangé de broyage ; prix livré.
+  parametres:
+  - prix_aluminium_recupere_eur_t
+
+A3H-GMK-ALLEMAGNE-FERRAILLE-2026-04:
+  titre: Scrap exports from Germany remained stable in early 2026 (titre déduit de la légende)
+  editeur: GMK Center (presse spécialisée, Ukraine), reprenant Kallanish
+  date: 2026 (non affichée ; vraisemblablement avril-mai 2026)
+  type: presse
+  url: https://gmk.center/?p=123283
+  emplacement: Paragraphe sur les prix
+  contenu: 'Allemagne, avril 2026 : prix moyens E3 295 EUR/t, E2/8 305 EUR/t, E40 (broyée) 305 EUR/t ; base de livraison non précisée ; hausse
+    attendue en mai.'
+  citation: Average prices stood at €295/t for E3 scrap, €305/t for E2/8, and €305/t for E40.
+  statut: secondaire
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Source secondaire (article attribué à Kallanish, origine du prix non nommée), date de publication non affichée.
+    À n'utiliser qu'en recoupement.
+  parametres:
+  - prix_ferraille_eur_t
+
+
+# --- Annexe 3, lot I : textes sur le credit carbone ---
+
+A3I-UE-DIR-2003-87-ANNEXE-I:
+  titre: Directive 2003/87/CE établissant un système d'échange de quotas d'émission de gaz à effet de serre dans l'Union, version consolidée au
+    01/03/2024 (CELEX 02003L0087-20240301), article 2(1), article 3(t), annexe I
+  editeur: Union européenne (EUR-Lex)
+  date: 2024-03-01 (dernière version consolidée listée par EUR-Lex le 15/10/2026)
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301
+  emplacement: Article 2(1) ; article 3, point (t) ; annexe I, point 5 et ligne « Combustion of fuels »
+  contenu: 'Le SEQE s''applique aux activités de l''annexe I. La combustion est toute oxydation de combustibles, quel que soit l''usage de l''énergie
+    produite. L''activité « combustion » vise les installations de puissance thermique nominale totale > 20 MW, sauf les installations d''incinération
+    de déchets dangereux ou municipaux ; depuis le 01/01/2024, l''incinération de déchets municipaux > 20 MW est seulement soumise à surveillance
+    et déclaration (articles 14 et 15), sans restitution. Le SEQE est un système de quotas (obligation de restituer), il ne crée aucun crédit
+    pour une installation qui réduit ou évite des émissions. Conséquence pour Urban Rig (lecture du sous-agent) : si la combustion du gaz de pyrolyse
+    sur site dépasse 20 MW thermiques et que l''installation n''est pas une installation d''incinération de déchets municipaux, elle pourrait
+    entrer dans le SEQE comme émetteur (coût), jamais comme générateur de crédits. Puissance thermique du brûleur Urban Rig : non connue du sous-agent,
+    non estimée.'
+  citation: This Directive shall apply to the activities listed in Annexes I and III ; ‘combustion’ means any oxidation of fuels, regardless of
+    the way in which the heat, electrical or mechanical energy produced by this process is used ; Combustion of fuels in installations with a
+    total rated thermal input exceeding 20 MW (except in installations for the incineration of hazardous or municipal waste) From 1 January 2024,
+    combustion of fuels in installations for the incineration of municipal waste with a total rated thermal input exceeding 20 MW, for the purposes
+    of Articles 14 and 15.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome de l''utilisateur (EUR-Lex, texte intégral, lecture seule)
+    car WebFetch tronque la page à 119 000 caractères. Version anglaise. Le point 5 de l''annexe I dit aussi : « all units in which fuels are
+    combusted, other than units for the incineration of hazardous or municipal waste, shall be included ». Remplace la fiche secondaire A3-ZWE-SEQE-ART30-2024
+    pour l''annexe I.'
+  parametres:
+  - seqe_perimetre_pyrolyse
+  - credit_carbone_seqe
+
+A3I-UE-DIR-2003-87-ART11A:
+  titre: Directive 2003/87/CE consolidée au 01/03/2024, article 11a « Use of CERs and ERUs from project activities in the EU ETS before the entry
+    into force of an international agreement on climate change »
+  editeur: Union européenne (EUR-Lex)
+  date: '2024-03-01'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301
+  emplacement: Article 11a, paragraphes 1 à 4 (modifié par M14, directive (UE) 2023/958)
+  contenu: Dans la version en vigueur, l'article 11a ne permet plus l'usage de crédits internationaux qu'aux exploitants d'aéronefs (unités de
+    l'article 6(4) de l'accord de Paris, programmes CORSIA, accords bilatéraux, et « crédits délivrés pour des projets de niveau Union au titre
+    de l'article 24a »). Les paragraphes sur les installations fixes ne visent que les projets MOC/MDP jusqu'au 31/12/2012. Aucune disposition
+    ne permet à une installation fixe d'utiliser ou de générer des crédits ; aucune ne permet de créer des crédits pour un projet situé en France.
+  citation: aircraft operators that hold an air operator certificate issued by a Member State [...] shall be able to use the following units [...]
+    (d) credits issued in respect of Union level projects pursuant to Article 24a. ; Until 31 December 2012, for JI and CDM project activities
+    which reduce or limit directly the emissions of an installation falling within the scope of this Directive, ERUs and CERs may be issued only
+    if an equal number of allowances is cancelled
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral). Les [...] marquent des coupures du
+    sous-agent. Le texte ne contient pas de date « fin d'usage après 2020 » pour les installations ; la fin de l'usage par les installations résulte
+    de l'absence de toute disposition en ce sens dans la version en vigueur (lecture, pas citation).
+  parametres:
+  - credit_carbone_seqe
+  - credits_internationaux_seqe
+
+A3I-UE-DIR-2003-87-ART24A:
+  titre: Directive 2003/87/CE consolidée au 01/03/2024, article 24a « Harmonised rules for projects that reduce emissions »
+  editeur: Union européenne (EUR-Lex)
+  date: '2024-03-01'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301
+  emplacement: Article 24a, paragraphes 1 et 3 (paragraphe 2 supprimé)
+  contenu: 'La Commission PEUT adopter des mesures (actes délégués) pour délivrer des quotas ou crédits pour des projets gérés par les États membres
+    réduisant des émissions hors SEQE, sans double comptage. C''est une faculté. Le paragraphe 3 permet à un État membre de refuser des crédits
+    pour certains types de projets sur son territoire. Aucun acte délégué établissant cette procédure n''a été trouvé (voir NON TROUVÉ) : l''article
+    est donc inopérant à ce jour. Le considérant 20 du règlement (UE) 2018/842 (répartition de l''effort) mentionne la possibilité de partenariats
+    public-privé pour ces projets.'
+  citation: the Commission may adopt measures for issuing allowances or credits in respect of projects administered by Member States that reduce
+    greenhouse gas emissions not covered by the EU ETS ; Any such measures shall not result in the double-counting of emission reductions ; A
+    Member State can refuse to issue allowances or credits in respect of certain types of projects that reduce greenhouse gas emissions on its
+    own territory.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral). L'absence d'acte délégué est un constat
+    de recherche (EUR-Lex), pas une citation d'un texte qui l'affirmerait.
+  parametres:
+  - credit_carbone_seqe
+  - seqe_article_24a
+
+A3I-UE-DIR-2003-87-ART30-7:
+  titre: Directive 2003/87/CE consolidée au 01/03/2024, article 30, paragraphe 7 (incinération des déchets municipaux)
+  editeur: Union européenne (EUR-Lex)
+  date: '2024-03-01'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02003L0087-20240301
+  emplacement: Article 30, paragraphe 7
+  contenu: Rapport de la Commission au plus tard le 31/07/2026 sur la faisabilité d'inclure les installations d'incinération de déchets municipaux
+    dans le SEQE, en vue d'une inclusion à partir de 2028, avec option de retrait jusqu'au 31/12/2030. Texte primaire qui confirme la fiche secondaire
+    A3-ZWE-SEQE-ART30-2024. Une inclusion future ferait payer l'incinération (scénario de référence plus cher), sans créer de crédit pour une
+    pyrolyse ; elle n'ouvre aucun mécanisme de crédit.
+  citation: By 31 July 2026, the Commission shall present a report to the European Parliament and to the Council in which it shall assess the
+    feasibility of including municipal waste incineration installations in the EU ETS, including with a view to their inclusion from 2028 and
+    with an assessment of the potential need for an option for a Member State to opt out until 31 December 2030.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral).
+  parametres:
+  - seqe_incineration_calendrier_2023
+
+A3I-UE-REG-2024-3012-ART1-CONSID10:
+  titre: Règlement (UE) 2024/3012 du Parlement européen et du Conseil du 27 novembre 2024 établissant un cadre de certification de l'Union relatif
+    aux absorptions permanentes de carbone, à l'agriculture carbonée et au stockage du carbone dans des produits
+  editeur: Parlement européen et Conseil (EUR-Lex)
+  date: '2024-11-27'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R3012
+  emplacement: Article 1(1) ; article 2, points (2) et (11) ; article 3 ; considérant (10)
+  contenu: 'Le CRCF ne certifie que deux choses : des absorptions de carbone et des réductions d''émissions des SOLS (pools de carbone biogénique,
+    sols agricoles). Le considérant 10 exclut expressément les activités qui ne produisent ni absorption ni réduction d''émissions des sols, en
+    citant les projets d''énergie renouvelable. Le stockage dans des produits exige du carbone atmosphérique ou biogénique stocké au moins 35
+    ans. Une réduction d''émissions industrielle, un CO2 évité par substitution de combustible ou par détournement de l''incinération n''entrent
+    pas dans le champ. Le carbone fossile de l''huile ou du char d''Urban Rig n''est ni atmosphérique ni biogénique. Date du règlement vérifiée
+    (27/11/2024), ce qui lève le doute noté dans la fiche du lot C.'
+  citation: this Regulation establishes a voluntary Union framework for the certification of carbon removals and soil emission reductions ; ‘soil
+    emission reduction’ means the reduction of net greenhouse gas emissions from biogenic carbon pools ; ‘carbon storage in products’ means any
+    practice or process that captures and stores atmospheric or biogenic carbon for at least 35 years in long-lasting products ; activities which
+    do not result in either carbon removals or soil emission reductions, such as avoided deforestation projects or renewable energy projects,
+    should not be included in the scope of the Union certification framework.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex, texte intégral, version anglaise). Article 3 : seules
+    les absorptions et réductions d''émissions des sols sont éligibles à la certification.'
+  parametres:
+  - crcf_champ
+  - credit_carbone_crcf
+
+A3I-FR-LBC-METHODES-SITE-2025:
+  titre: Présentation des méthodes du Label bas carbone (site officiel du Label bas-carbone)
+  editeur: Ministère de la transition écologique, DGEC
+  date: 2025-10-06 (mise à jour de la page)
+  type: reglementaire
+  url: https://label-bas-carbone.ecologie.gouv.fr/presentation-des-methodes-du-label-bas-carbone
+  emplacement: Rubriques « Les méthodes approuvées » et « Le label bas-carbone ne s'applique pas... »
+  contenu: 'Liste nominative officielle : forêt (Boisement, Reconstitution de peuplements forestiers dégradés, Balivage, Gestion forestière à
+    stock continu) ; agriculture (CarbonAgri, Haies, Plantation de vergers, SOBAC''ECO TMM, Ecométhane, Grandes cultures) ; bâtiment (Rénovation,
+    Bâtiment neuf biosourcé) ; transport (Tiers-lieux) ; marin (Herbiers de Posidonie, Restauration de mangroves ou forêts marécageuses) ; urbain
+    (Ville arborée) ; plus Restauration hydraulique des tourbières dégradées (lien de la page d''accueil). Aucune méthode déchets, recyclage,
+    plastiques, pyrolyse ou industrie. La page cite le secteur « déchet » parmi les secteurs diffus visés, exclut les émissions directement soumises
+    au SEQE, mais admet que des réductions INDIRECTES puissent être reconnues pour ces quantités.'
+  citation: 'Un projet ne peut être labellisé que s’il est mis en œuvre conformément à une méthode approuvée ; Le Label bas-carbone vise à susciter
+    le développement de projets dans tous les secteurs diffus : agriculture, forêt, écosystèmes marins, transports, bâtiment, déchet, etc. ; le
+    Label bas-carbone ne s’applique pas aux émissions de GES directement soumises au système d''échange de quotas d''émissions de l''Union européenne
+    (SEQE-UE). ; Des réductions d''émissions indirectes peuvent toutefois être reconnues par le label bas-carbone pour ce type de quantités de
+    GES.'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (mtect.fr/714 redirige vers label-bas-carbone.ecologie.gouv.fr
+    ; texte extrait par script, lecture seule). Le décompte (forêt « trois méthodes » mais quatre noms listés) est celui de la page. Les arrêtés
+    d'approbation de chaque méthode au JO n'ont pas été lus (Légifrance bloqué).
+  parametres:
+  - label_bas_carbone_methodes
+
+A3I-FR-LBC-PROJETS-METHODES-2025-10:
+  titre: Liste des projets de méthode, publique, octobre 2025
+  editeur: Ministère de la transition écologique, DGEC (site du Label bas-carbone)
+  date: 2025-10
+  type: reglementaire
+  url: https://label-bas-carbone.ecologie.gouv.fr/sites/default/files/2025-10/Liste%20projets%20de%20m%C3%A9thode_publique%20Octobre%202025.pdf
+  emplacement: Tableau unique
+  contenu: Quatorze projets de méthodes en cours (forêt, espaces naturels, agriculture). Aucun projet sur les déchets, le recyclage, la pyrolyse,
+    le biochar, l'industrie ou la valorisation énergétique. Le seul terme proche est un projet agricole d'algues produisant des bioplastiques.
+  citation: Production d’algues pour substitution d’engrais ammonitrés et production de bioplastiques
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Liste « non exhaustive » selon la page de présentation ; restitution du
+    tableau par l'outil (une ligne a pu être omise).
+  parametres:
+  - label_bas_carbone_methodes
+
+A3I-FR-ARRETE-LBC-2025-ART2-3:
+  titre: Arrêté du 5 septembre 2025 définissant le référentiel du Label bas carbone, articles 2 et 3 (complément à A3-FR-ARRETE-LBC-2025)
+  editeur: Ministère chargé de l'écologie (texte reproduit par INERIS, AIDA)
+  date: '2025-09-05'
+  type: reglementaire
+  url: https://aida.ineris.fr/reglementation/arrete-050925-definissant-referentiel-label-bas-carbone
+  emplacement: 'Article 2 (définitions : crédits directs, indirects, additionnalité) ; article 3 (usages) ; articles 4 et 21 (préfet de région,
+    commune du projet)'
+  contenu: 'Ajout par rapport au lot E : l''arrêté définit des crédits INDIRECTS (scope 2 et 3), qui couvrent notamment l''utilisation ultérieure
+    des produits vendus. Une méthode future pourrait donc en théorie reconnaître des réductions indirectes d''une huile ou d''un char se substituant
+    à un combustible fossile chez un client. Usages : contribution ou compensation, sur notification au ministère ; exclus de la CDN et des restitutions
+    SEQE. Le texte ne mentionne ni l''article 6 de l''accord de Paris, ni l''ajustement correspondant, ni le transfert international. La localisation
+    en France n''est pas écrite mais découle de la compétence du préfet de région et de la notification de la commune du projet (le décret 2018-1043
+    vise le territoire français, voir A3-FR-DECRET-2018-1043).'
+  citation: Les crédits carbone indirects sont les réductions d'émissions liées à la production de l'énergie importée par les activités ; couvertes
+    par le projet (déplacement des salariés, production des matières premières, ; transport amont ou aval des marchandises, utilisation ultérieure
+    des produits vendus, etc.). ; Les crédits carbone peuvent être utilisés à des fins de contribution carbone tout comme à des fins de compensation
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (Légifrance inaccessible). Citation en segments restitués par l'outil
+    (125 caractères max). La phrase verbatim excluant la CDN n'a pas été obtenue (seulement l'extrait « les contributions déterminées au niveau
+    national prévues par l'accord de Paris »).
+  parametres:
+  - label_bas_carbone_conditions
+
+A3I-ACCORD-PARIS-ART6:
+  titre: Accord de Paris (JO UE L 282 du 19/10/2016), article 6
+  editeur: Nations unies, publié par l'Union européenne (EUR-Lex)
+  date: '2015-12-12'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:22016A1019(01)
+  emplacement: Article 6, paragraphes 2, 3 et 5
+  contenu: Un transfert international de résultats d'atténuation (ITMO) suppose l'autorisation des Parties et une comptabilité évitant le double
+    comptage ; une réduction issue du mécanisme 6.4 ne peut pas compter à la fois pour l'hôte et pour l'acquéreur. Un crédit issu d'une réduction
+    en France vendu à un autre pays exigerait une autorisation de la France (et de l'UE, dont la CDN est commune) et un ajustement correspondant.
+  citation: shall apply robust accounting to ensure, inter alia, the avoidance of double counting ; The use of internationally transferred mitigation
+    outcomes to achieve nationally determined contributions under this Agreement shall be voluntary and authorized by participating Parties. ;
+    shall not be used to demonstrate achievement of the host Party's nationally determined contribution if used by another Party
+  statut: ancien
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex). Texte de 2015 toujours en vigueur. unfccc.int refusé
+    par WebFetch.
+  parametres:
+  - article6_paris
+
+A3I-UE-REG-2021-1119-ART4:
+  titre: Règlement (UE) 2021/1119 (loi européenne sur le climat), article 4(1)
+  editeur: Union européenne (EUR-Lex)
+  date: '2021-06-30'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1119
+  emplacement: Article 4, paragraphe 1, premier alinéa
+  contenu: La cible 2030 de l'UE est une réduction INTÉRIEURE nette d'au moins 55 % par rapport à 1990. Les réductions faites en France comptent
+    dans cette cible commune ; aucun texte lu ne prévoit d'autoriser leur transfert à d'autres pays. Le texte lu ne mentionne pas les crédits
+    internationaux.
+  citation: the binding Union 2030 climate target shall be a domestic reduction of net greenhouse gas emissions ; (emissions after deduction of
+    removals) by at least 55 % compared to 1990 levels by 2030.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (version de base 2021, non consolidée ; la modification pour la cible 2040
+    n'a pas été lue).
+  parametres:
+  - article6_paris
+  - double_comptage_inventaire
+
+A3I-CONSEIL-UE-NDC-2025:
+  titre: 'Préparation du Conseil Environnement du 4 novembre 2025 : soumission par l''UE d''une CDN actualisée à la CCNUCC, approbation (doc.
+    14319/25)'
+  editeur: Conseil de l'Union européenne
+  date: '2025-10-29'
+  type: reglementaire
+  url: https://data.consilium.europa.eu/doc/document/ST-14319-2025-INIT/en/pdf
+  emplacement: Note, point 10 ; annexe, section I point 6, points 12 et 13, section IV
+  contenu: 'Projet de CDN de l''UE : cible 2030 décrite comme réduction intérieure nette ; pour 2040, possible contribution limitée de crédits
+    internationaux de haute qualité au titre de l''article 6 (texte entre crochets, document de travail). Le document ne contient aucune déclaration
+    d''autorisation par l''UE de transferts d''ITMO vers d''autres pays. Il traite l''UE comme acheteuse potentielle de crédits, pas comme vendeuse.'
+  citation: a net domestic reduction of at least 55% in GHG emissions by 2030 compared to 1990 ; includes a possible limited adequate contribution
+    of high-quality international credits under Article 6 of the Paris Agreement
+  statut: secondaire
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Document LIMITE de travail (texte entre crochets), pas la CDN déposée ;
+    statut secondaire pour cette raison. La CDN finale déposée à la CCNUCC n'a pas été lue.
+  parametres:
+  - article6_paris
+
+A3I-FR-DECRET-2022-539:
+  titre: Décret n° 2022-539 du 13 avril 2022 relatif à la compensation carbone et aux allégations de neutralité carbone dans la publicité (articles
+    D. 229-106 à D. 229-109 du code de l'environnement)
+  editeur: République française (texte reproduit par INERIS, AIDA)
+  date: 2022-04-13 (en vigueur au 01/01/2023)
+  type: reglementaire
+  url: https://aida.ineris.fr/reglementation/decret-ndeg-2022-539-130422-relatif-a-compensation-carbone-allegations-neutralite
+  emplacement: Articles D. 229-106 (champ), D. 229-107 (bilan), D. 229-108 (rapport, annexe 3), D. 229-109 (projets de compensation)
+  contenu: Le décret encadre les allégations « neutre en carbone » et équivalentes d'un ANNONCEUR (bilan cycle de vie ISO 14067, trajectoire de
+    réduction, compensation des émissions résiduelles sans double comptage). Les projets reconnus par le Label bas-carbone sont réputés conformes.
+    Il ne crée aucun crédit et ne reconnaît pas le « CO2 évité » comme unité ; la seule occurrence de « évitées » est la hiérarchie éviter, réduire,
+    compenser. Urban Rig ne pourrait au mieux qu'apparaître comme projet de compensation d'un annonceur s'il disposait de crédits issus d'un standard
+    reconnu, ce qui renvoie aux fiches label et standards.
+  citation: prioritairement évitées, puis réduites, et enfin compensées ; « Compensation réalisée en France »
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (Légifrance inaccessible) ; l''outil a refusé de reproduire les
+    articles en entier, extraits courts seulement. État « en vigueur » selon AIDA, sans date de mise à jour : abrogation éventuelle par la transposition
+    de la directive 2024/825 non vérifiée (voir A3I-KPMG-ECGT-2026).'
+  parametres:
+  - allegations_neutralite_carbone
+
+A3I-FR-L229-68-CMS:
+  titre: 'France: carbon neutrality claims (CMS Green Globe)'
+  editeur: CMS (cabinet d'avocats)
+  date: '2023-08-28'
+  type: entreprise
+  url: https://cms.law/en/int/publication/cms-green-globe/news-in-sustainability-claims/france-carbon-neutrality-claims
+  emplacement: Corps de l'article
+  contenu: L'article L. 229-68 du code de l'environnement interdit d'affirmer dans une publicité qu'un produit ou service est neutre en carbone
+    sauf mise à disposition d'un bilan d'émissions directes et indirectes, d'une trajectoire de réduction et des modalités de compensation ; amende
+    de 100 000 EUR pour une personne morale (L. 229-69), pouvant aller jusqu'au montant de la dépense publicitaire. Rien sur le « CO2 évité ».
+  citation: it is forbidden to state in an advertisement that a product or service is carbon neutral ; A greenhouse gas emissions report that
+    includes both direct and indirect emissions from the product or service; ; a fine of €100,000 for a legal entity
+  statut: secondaire
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale (cabinet) citant la loi ; le texte de L. 229-68 n'a pas
+    pu être lu sur Légifrance (vérification anti-robot que le sous-agent ne peut pas franchir) ni sur AIDA (page du décret 2022-538 qui ne le
+    reproduit pas).
+  parametres:
+  - allegations_neutralite_carbone
+
+A3I-UE-DIR-2024-825-ANNEXE-4C:
+  titre: Directive (UE) 2024/825 du 28 février 2024 (donner aux consommateurs les moyens d'agir en faveur de la transition verte), annexe I point
+    4 quater et article 4
+  editeur: Union européenne (EUR-Lex)
+  date: '2024-02-28'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L0825
+  emplacement: Annexe I, point 4c (pratiques commerciales réputées déloyales) ; article 4(1)
+  contenu: À partir du 27/09/2026, est interdite en toutes circonstances l'allégation qu'un produit a un impact neutre, réduit ou positif en termes
+    d'émissions sur la base d'une compensation. Cela réduit le débouché « compensation produit » de crédits volontaires auprès des annonceurs.
+    Le texte ne vise pas l'usage du CO2 évité dans une communication d'entreprise hors produit (non tranché).
+  citation: Claiming, based on the offsetting of greenhouse gas emissions, ; shall apply those measures from 27 September 2026.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (citation restituée en deux extraits par l'outil).
+  parametres:
+  - allegations_neutralite_carbone
+
+A3I-KPMG-ECGT-2026:
+  titre: Transposition de la directive Empowering Consumers
+  editeur: KPMG Avocats
+  date: '2026-01-20'
+  type: entreprise
+  url: https://kpmg.com/av/fr/avocats/eclairages/2026/01/transposition-de-la-directive-empowering-consumers.html
+  emplacement: Corps de l'article
+  contenu: Selon le cabinet, le projet de loi d'adaptation au droit de l'UE en matière économique (ECOM2524721L, déposé au Sénat) transpose la
+    directive 2024/825 pour une application au 27/09/2026, abroge les dispositions correspondantes du code de l'environnement et inscrit l'allégation
+    de neutralité fondée sur la compensation dans la liste des pratiques commerciales trompeuses per se du code de la consommation. Adoption définitive
+    non vérifiée.
+  citation: Ces nouvelles dispositions devraient entrer en application le 27 septembre 2026. ; prévoit l'abrogation des dispositions correspondantes
+    du code de l'environnement
+  statut: secondaire
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale ; projet de loi, pas loi promulguée.
+  parametres:
+  - allegations_neutralite_carbone
+
+A3I-FR-CODE-ENERGIE-L221-7-CEE:
+  titre: Code de l'énergie, partie législative relative aux certificats d'économies d'énergie (compilation ministérielle), article L. 221-7
+  editeur: Ministère de la transition écologique
+  date: non datée (cite la loi n° 2025-391 du 30/04/2025 comme dernière modification)
+  type: reglementaire
+  url: https://www.ecologie.gouv.fr/sites/default/files/documents/Code%20de%20l%27%C3%A9nergie%20-%20Partie%20l%C3%A9gislative%20CEE_0.pdf
+  emplacement: Article L. 221-7
+  contenu: Les économies d'énergie réalisées dans des installations soumises au SEQE peuvent donner lieu à CEE dans des conditions fixées par
+    décret ; la substitution d'une énergie non renouvelable par une source renouvelable ou de récupération pour la production de chaleur peut
+    donner lieu à CEE. Les CEE rémunèrent des kWh cumac économisés, pas des tonnes de CO2.
+  citation: Les actions d'économies d'énergie réalisées dans les installations classées pour la protection de l'environnement ; mentionnées à
+    l'article L. 229-5 du code de l'environnement peuvent donner lieu à la délivrance ; une source d'énergie renouvelable ou de récupération pour
+    la production de chaleur
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (compilation du ministère, pas Légifrance). Le décret d'application sur les
+    installations SEQE n'a pas été lu.
+  parametres:
+  - cee_dispositif
+
+A3I-FR-CEE-IND-UT-137:
+  titre: 'Fiche d''opération standardisée IND-UT-137 (vA84-3 à compter du 25/05/2026) : Système de pompe(s) à chaleur en rehausse de température
+    de chaleur fatale récupérée'
+  editeur: Ministère de la transition écologique
+  date: '2026-05-25'
+  type: reglementaire
+  url: https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-137%20vA84-3%20%C3%A0%20compter%20du%2025-05-2026.pdf
+  emplacement: Sections 1 (secteur), 2 (dénomination), 3 (conditions), 4 (montant)
+  contenu: 'Seule fiche standardisée industrie lue qui valorise de la chaleur fatale d''un procédé du même site, y compris sur un site neuf, via
+    des pompes à chaleur électriques (≤ 5 MW) ; montant 10,986 × (Q – Eélec) kWh cumac. Liste des 34 fiches industrie de la page ministérielle
+    relevée : récupération de chaleur sur compresseur d''air (IND-UT-103), économiseur et condenseur sur fumées de chaudière vapeur (IND-UT-104,
+    130), brûleur avec récupération sur four (IND-UT-118), conversion de chaleur fatale en électricité ou air comprimé (IND-UT-138), stockage
+    de chaleur fatale (IND-UT-139). Aucune fiche ne vise la valorisation d''un gaz de procédé ou de pyrolyse en combustible. Hors fiche, la voie
+    est l''opération spécifique (non lue).'
+  citation: L'opération peut concerner un site existant, un nouveau site, une extension d'un site ; La chaleur fatale valorisée est issue d'un
+    process industriel situé sur le site où l'opération est réalisée.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; liste des fiches relevée dans le navigateur Chrome sur https://www.ecologie.gouv.fr/politiques-publiques/operations-standardisees-deconomies-denergie
+    (lecture seule). Fiche IND-UT-138 complète non lue (seule la partie A, attestation, a été lue).
+  parametres:
+  - cee_dispositif
+
+A3I-UE-DIR-2018-2001-ART2-GO:
+  titre: Directive (UE) 2018/2001 relative à la promotion de l'utilisation de l'énergie produite à partir de sources renouvelables, consolidée
+    au 20/11/2023, article 2
+  editeur: Union européenne (EUR-Lex)
+  date: '2023-11-20'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02018L2001-20231120
+  emplacement: Article 2, second alinéa, points (1), (12) et (24)
+  contenu: La garantie d'origine de la directive prouve une énergie produite à partir de sources renouvelables, non fossiles. La biomasse inclut
+    seulement la fraction biodégradable des déchets d'origine biologique. Une énergie issue des plastiques (fossiles) n'ouvre pas de garantie
+    d'origine renouvelable ; seule la fraction biogénique des ordures ménagères pourrait y prétendre, et Urban Rig ne produit pas d'électricité
+    selon les consignes (gaz brûlé sur place). L'article 19 (régime des garanties d'origine) n'a pas été atteint par l'outil.
+  citation: energy from renewable non-fossil sources ; ‘guarantee of origin’ means an electronic document which has the sole function of providing
+    evidence to a final customer ; that a given share or quantity of energy was produced from renewable sources; ; as well as the biodegradable
+    fraction of waste, including industrial and municipal waste of biological origin;
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (100 000 premiers caractères). Les garanties d'origine françaises pour l'hydrogène
+    bas-carbone (code de l'énergie) et pour le gaz n'ont pas été lues (Légifrance bloqué).
+  parametres:
+  - garanties_origine
+
+A3I-VERRA-VCS-STANDARD-V5:
+  titre: VCS Standard, v5.0
+  editeur: Verra
+  date: '2025-12-16'
+  type: norme
+  url: https://verra.org/wp-content/uploads/2025/12/VCS-Standard-v5.0.pdf
+  emplacement: Section 2.1.1, tableau 1 (p. 9 à 10 du document, pages 10-11 du PDF) ; section 3.22, règles 3.22.1 à 3.22.6 et notes 91 à 94 (p.
+    71 à 73)
+  contenu: 'Aucune exclusion des pays de l''UE ni de l''annexe I : les unités sans étiquette article 6 peuvent servir au marché volontaire, y
+    compris entre pays de l''annexe I « sauf réglementation contraire de ces pays ». Le tableau 1 réserve aux pays les moins avancés la substitution
+    d''un combustible fossile par un autre moins carboné, MAIS exclut de cette restriction les déchets contenant des produits pétroliers usagés
+    (plastiques usagés, huiles). Interdiction de créditer une réduction déjà couverte par un système d''échange ou une limite contraignante, sauf
+    preuve (lettre de l''administrateur) d''absence de recouvrement ou d''annulation des unités. Interdiction du double crédit avec un autre certificat
+    environnemental lié aux GES. Une méthodologie approuvée applicable reste nécessaire : les deux projets de méthodologies Verra proches (M0417
+    dépolymérisation de plastiques en produits chimiques, M0173 substitution de plastique vierge) ont été rejetés le 29/03/2026.'
+  citation: 'This applies to all voluntary carbon market transactions globally, including within or between United Nations Framework Convention
+    on Climate Change (UNFCCC) Annex I countries (unless otherwise regulated by those countries). ; Activities involving the following are not
+    restricted to the default eligibility: • Captured flare or vent gas • Waste containing previously used petroleum products (e.g., used plastics,
+    oils, lubricants) ; 3.22.3 Project proponents shall not seek credit for the same GHG emission reduction or carbon dioxide removal with the
+    VCS Program and an emissions trading program or binding emission limit.'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu par un sous-agent de recherche le 15/10/2026 : PDF bloqué pour WebFetch (robots) et page HTML tronquée ; texte décodé par pdf.js dans
+    un onglet verra.org du navigateur Chrome de l''utilisateur (lecture seule, onglet refermé). v4.7 reste active jusqu''au 01/01/2027. Pages
+    M0417 et M0173 lues via WebFetch : https://verra.org/methodologies/methodology-for-the-production-of-chemical-products-from-raw-materials-derived-from-waste-plastic-depolymerization/
+    et https://verra.org/methodologies/methodology-for-the-displacement-of-virgin-petroleum-based-plastic-production/ (« Rejected on March 29,
+    2026 »). Aucune méthodologie VCS active couvrant la pyrolyse de déchets en combustible n''a été trouvée (recherche non exhaustive).'
+  parametres:
+  - credits_carbone_vcs_dechets
+  - vcs_eligibilite_ue
+
+A3I-GS-501-V3-2-2025:
+  titre: GHG Emissions Reduction & Sequestration Product Requirements, version 3.2 (501)
+  editeur: The Gold Standard Foundation
+  date: '2025-12-12'
+  type: norme
+  url: https://globalgoals.goldstandard.org/standards/501_V3.2_PR_GHG-Emissions-Reductions-Sequestration.pdf
+  emplacement: Sections 3.1.1, 5.1.1, 14.3.2, 14.3.6, 15.1.2, 15.1.3, 15.1.7 ; annexe A
+  contenu: 'Pas de liste de pays exclus pour les GSVER, mais si le pays hôte a un dispositif obligatoire de réduction, le projet doit prouver
+    l''absence de double comptage ou faire annuler un nombre équivalent d''unités éligibles avant chaque émission. Types éligibles limités : énergie
+    renouvelable (sources non fossiles), efficacité énergétique, traitement et élimination des déchets, terres et forêts, retrait de CO2 avec
+    méthodologie approuvée. Aucune méthodologie Gold Standard pour la pyrolyse de plastiques n''a été trouvée (voir A3-GS-448-2025, limitée aux
+    métaux).'
+  citation: where host countries or states have mandatory operational schemes to reduce GHG emissions in any form ; demonstrate with documentary
+    evidence that no double counting can occur ; the project owner shall demonstrate that Eligible Cancellation Units are cancelled by or on behalf
+    of the project. ; non-fossil and renewable energy sources
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (extraits restitués par l'outil).
+  parametres:
+  - credits_carbone_gold_standard
+
+A3I-IEA-JCREDIT:
+  titre: J-Credit Scheme (base de données des politiques de l'AIE)
+  editeur: Agence internationale de l'énergie
+  date: 2017-11-05 (dernière mise à jour de la fiche)
+  type: etude_publique
+  url: https://www.iea.org/policies/1777-j-credit-scheme
+  emplacement: Description de la politique
+  contenu: Le J-Credit certifie, par le gouvernement japonais, des réductions et absorptions réalisées au Japon. Une usine en France n'est pas
+    éligible, même si le constructeur (OneWorld) est japonais.
+  citation: The J-Credit Scheme is designed to certify the amount of greenhouse gas emissions reduced and removed by sinks within Japan.
+  statut: ancien
+  consulte: 2026-10-15
+  note: Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Fiche AIE de 2017 (plus de huit ans) qui décrit le dispositif ; le site
+    officiel https://japancredit.go.jp/english/ n'a pas pu être lu (permission d'accès non accordée dans le délai).
+  parametres:
+  - jcredit_eligibilite
+
+
+# --- Annexe 3, lot J : gaz excedentaire et hydrogene ---
+
+A3J-UE-DIR-2018-2001-ART2-RCF:
+  titre: Directive (UE) 2018/2001 relative à la promotion de l'utilisation de l'énergie produite à partir de sources renouvelables (texte consolidé
+    au 16.07.2024, intégrant la directive (UE) 2023/2413)
+  editeur: Union européenne (EUR-Lex)
+  date: 2024-07-16 (version consolidée)
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02018L2001-20240716
+  emplacement: article 2, points 24 (biomasse), 35 (carburants à base de carbone recyclé) et 36 (RFNBO)
+  contenu: 'Un combustible gazeux (dont l''hydrogène) produit à partir de déchets solides d''origine non renouvelable (plastiques fossiles) qui
+    ne se prêtent pas à la valorisation matière relève de la catégorie « combustibles ou carburants à base de carbone recyclé » (RCF). Il ne peut
+    pas être un RFNBO, dont l''énergie doit provenir de sources renouvelables autres que la biomasse. La fraction biodégradable des déchets municipaux
+    est de la biomasse : la part du gaz issue de la fraction biogénique des ordures ménagères relève donc des règles biomasse (article 29 et 31),
+    pas des RCF.'
+  citation: '35) «combustibles ou carburants à base de carbone recyclé»: les combustibles ou carburants liquides et gazeux qui sont produits à
+    partir de flux de déchets liquides ou solides d''origine non renouvelable ne se prêtant pas à la valorisation de matières conformément à l''article
+    4 de la directive 2008/98/CE, ou à partir de gaz issus du traitement des déchets et de gaz d''échappement d''origine non renouvelable qui
+    découlent inévitablement et involontairement de processus de production dans des installations industrielles; 36) «carburants renouvelables
+    d''origine non biologique»: les carburants et combustibles liquides et gazeux dont le contenu énergétique provient de sources renouvelables
+    autres que la biomasse; 24) «biomasse»: [...] ainsi que la fraction biodégradable des déchets, notamment les déchets industriels et municipaux
+    d''origine biologique;'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch, robots.txt). Version consolidée du 16.07.2024 ; une consolidation
+    postérieure peut exister. La qualification RCF exige que les déchets « ne se prêtent pas à la valorisation de matières » (hiérarchie des déchets)
+    : à démontrer pour les plastiques entrants.'
+  parametres:
+  - statut_h2_dechets_plastiques
+  - definition_rcf
+
+A3J-UE-DIR-2024-1788-ART2:
+  titre: Directive (UE) 2024/1788 concernant des règles communes pour les marchés intérieurs du gaz renouvelable, du gaz naturel et de l'hydrogène
+  editeur: Union européenne (JO L, 2024/1788)
+  date: '2024'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202401788
+  emplacement: article 2, points 11 (hydrogène bas carbone), 12 (gaz bas carbone) et 13 (carburants bas carbone)
+  contenu: Les carburants bas carbone comprennent les RCF au sens de la directive 2018/2001 et l'hydrogène bas carbone, à condition d'atteindre
+    70 % de réduction des émissions par rapport au combustible fossile de référence des RFNBO (méthode du règlement 2023/1185). Un hydrogène ou
+    un gaz issu de déchets plastiques fossiles peut donc être « gaz bas carbone » s'il est un RCF atteignant 70 %.
+  citation: '11) «hydrogène bas carbone»: l''hydrogène dont la teneur énergétique provient de sources non renouvelables et qui respecte le niveau
+    de réduction des émissions de gaz à effet de serre de 70 % par rapport au combustible fossile de référence pour les carburants renouvelables
+    d''origine non biologique [...] ; 12) «gaz bas carbone»: la part de carburants gazeux présente dans les carburants à base de carbone recyclé,
+    tels qu''ils sont définis à l''article 2, point 35), de la directive (UE) 2018/2001, dans l''hydrogène bas carbone [...] qui respectent le
+    niveau de réduction des émissions de gaz à effet de serre de 70 % [...] ; 13) «carburants bas carbone»: les carburants à base de carbone recyclé,
+    tels qu''ils sont définis à l''article 2, point 35), de la directive (UE) 2018/2001, l''hydrogène bas carbone et les carburants gazeux synthétiques
+    [...] qui respectent le niveau de réduction des émissions de gaz à effet de serre de 70 %'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch). Les règles d'injection d'hydrogène aux points d'interconnexion (seuil
+    de mélange) n'ont pas été recherchées dans ce texte (extraction infructueuse).
+  parametres:
+  - statut_h2_dechets_plastiques
+  - seuil_reduction_bas_carbone
+
+A3J-UE-REG-DEL-2025-2359:
+  titre: Règlement délégué (UE) 2025/2359 de la Commission du 8 juillet 2025 complétant la directive (UE) 2024/1788 en précisant une méthode d'évaluation
+    des réductions des émissions de gaz à effet de serre réalisées grâce aux carburants bas carbone
+  editeur: Commission européenne (JO série L, 2025/2359, 21.11.2025)
+  date: 2025-07-08 (publié 2025-11-21)
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202502359
+  emplacement: considérant 2 ; articles 1 et 2 ; annexe, point 2 (formule et combustible de référence) ; annexe (traitement des intrants biogéniques,
+    déchets municipaux en mélange)
+  contenu: 'La méthode « bas carbone » de 2025 EXCLUT les carburants à base de carbone recyclé : pour un hydrogène issu de déchets plastiques
+    fossiles (RCF), c''est le règlement 2023/1185 (déjà au registre) qui s''applique. Seuil 70 %, réduction = (EF - E)/EF, combustible de référence
+    identique à celui des RFNBO du règlement 2023/1185 (94 gCO2e/MJ, valeur déjà au registre). Pour les intrants qui contiennent dès le départ
+    une part biogénique, comme les déchets municipaux en mélange, la part biomasse suit l''article 31 de la directive 2018/2001.'
+  citation: '(2) La méthode définie dans le règlement délégué (UE) 2023/1185 s''applique pour déterminer les réductions des émissions de gaz à
+    effet de serre réalisées grâce aux carburants renouvelables d''origine non biologique ainsi qu''aux carburants à base de carbone recyclé,
+    qui constituent une sous-catégorie des carburants bas carbone. Il convient donc d''exclure les carburants à base de carbone recyclé du champ
+    d''application de la méthode définie dans le présent règlement. [...] Article premier : Le présent règlement précise la méthode de calcul
+    des réductions des émissions de gaz à effet de serre réalisées grâce aux carburants bas carbone autres que les carburants à base de carbone
+    recyclé. [...] Réductions = (E F – E) / E F [...] Pour tous les carburants bas carbone, le total des émissions provenant du combustible fossile
+    de référence est égal au combustible fossile de référence pour les carburants renouvelables d''origine non biologique défini dans le règlement
+    délégué (UE) 2023/1185. [...] ou lorsque les matières premières utilisées dans le procédé comprennent déjà une part biogénique dès le départ,
+    comme dans le cas des déchets municipaux en mélange.'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 dans le navigateur Chrome (EUR-Lex refuse WebFetch, robots.txt) ; texte FR de 66 791 caractères, passages extraits par
+    recherche de mots clés, lecture non intégrale de l''annexe. Entrée en vigueur indiquée par EUR-Lex : 11.12.2025 (métadonnées lues via WebFetch).
+    Le signe « = » de la formule a été perdu à l''extraction et rétabli.'
+  parametres:
+  - statut_h2_dechets_plastiques
+  - methode_bas_carbone_ue
+  - seuil_reduction_bas_carbone
+
+A3J-FR-ARRETE-2024-07-01-SEUIL-H2:
+  titre: Arrêté du 1er juillet 2024 précisant le seuil d'émissions de gaz à effet de serre et la méthodologie pour qualifier l'hydrogène comme
+    renouvelable ou bas-carbone (modifié par arrêté du 7 juillet 2026)
+  editeur: Ministre de l'économie (JO n° 157 du 4 juillet 2024, NOR ECOR2323734A), version consolidée AIDA/INERIS
+  date: 2024-07-01, modifié 2026-07-07 (JO n° 171 du 24 juillet 2026)
+  type: reglementaire
+  url: https://aida.ineris.fr/reglementation/arrete-010724-precisant-seuil-demissions-gaz-a-effet-serre-methodologie-qualifier
+  emplacement: articles 1er, 2 et 3
+  contenu: 'Seuil de l''article L. 811-1 du code de l''énergie : 3,38 kgCO2éq/kgH2. Méthode pour l''hydrogène renouvelable : annexe du règlement
+    2023/1185 ; pour l''hydrogène bas-carbone (depuis l''arrêté du 7 juillet 2026) : annexe du règlement délégué 2025/2359, avec certification
+    par un système volontaire reconnu (régime transitoire par le directeur de l''énergie). L''arrêté ne mentionne ni déchets, ni carbone recyclé
+    ; or le règlement 2025/2359 exclut les RCF : le traitement d''un hydrogène issu de déchets plastiques au regard du seuil français n''est donc
+    pas réglé explicitement (lecture de l''agent, à confirmer juridiquement).'
+  citation: Le seuil d'émissions d'équivalent dioxyde de carbone, exprimé en kilogramme d'équivalent dioxyde de carbone par kilogramme d'hydrogène
+    (kgCO2éq/kgH2), prévu à l'article L. 811-1 du code de l'énergie, est fixé à 3,38 kgCO2éq/kgH2. [...] (Article 3) « Les émissions de gaz à
+    effet de serre [...] d'hydrogène bas-carbone, sont déterminées selon les règles définies pour le calcul des émissions de gaz à effet de serre
+    de l'hydrogène décrites dans l'annexe du règlement délégué (UE) 2025/2359 [...] »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 sur AIDA (INERIS) dans le navigateur Chrome (WebFetch en erreur serveur ; Légifrance bloqué par une vérification anti-robot,
+    non contournée). AIDA est une reprise consolidée, pas le JO.
+  parametres:
+  - seuil_h2_bas_carbone_fr
+  - methode_h2_fr
+
+A3J-CRE-2025-229-AVIS-CDC-H2:
+  titre: Délibération n° 2025-229 du 1er octobre 2025 portant avis sur un projet de cahier des charges relatif à une procédure de mise en concurrence
+    avec dialogue concurrentiel portant sur le soutien à la production d'hydrogène renouvelable ou bas-carbone
+  editeur: Commission de régulation de l'énergie
+  date: '2025-10-01'
+  type: reglementaire
+  url: https://www.cre.fr/fileadmin/Documents/Deliberations/2025/251001_2025-229_Avis_CDC_H2.pdf
+  emplacement: page 1 (volume), page 3 (objet, durée, 200 MW, note 2 usages), page 8 (plafond), page 10 (notes 15 et 17)
+  contenu: 'Le mécanisme de soutien français est réservé à l''hydrogène produit par électrolyse de l''eau (article L. 812-1 du code de l''énergie)
+    : un hydrogène issu de pyrolyse de déchets n''y est PAS éligible. Aide au fonctionnement sur 15 ans, prix d''enchère plafonné à 4 EUR/kg,
+    1 GW sur trois périodes jusqu''en 2027 (200 MW en 1re période), projets de 5 à 100 MW ; usages exclus : chauffage (sauf > 400 °C), injection
+    réseau de gaz, production d''électricité, transports. Seuil 3,38 kgCO2éq/kgH2 présenté comme -70 % par rapport à l''hydrogène fossile. Rappel
+    de L. 811-1 : renouvelable = électrolyse avec électricité renouvelable ou autre technologie utilisant exclusivement des sources renouvelables
+    ; bas-carbone = émissions inférieures ou égales au seuil.'
+  citation: « Conformément à l'article L. 812-1 du code de l'énergie qui indique que le soutien est exclusivement réservé à la production d'hydrogène
+    renouvelable ou bas carbone par électrolyse de l'eau. » ; « Enfin, le prix d'enchère est plafonné à 4 € par kilogramme d'hydrogène produit.
+    » ; « Hydrogène bas-carbone = « l'hydrogène dont le procédé de production engendre des émissions inférieures ou égales au seuil retenu pour
+    la qualification d'hydrogène renouvelable (…). » ; « Fixé à 3,38 kgCO2éq/kgH2, il permet de réduire les émissions de gaz à effet de serre
+    de 70 % par rapport à l'hydrogène fossile. »
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (citations restituées par l''outil en extraits). Le texte de l''article L. 811-1 est cité ici par la CRE,
+    pas lu sur Légifrance (bloqué) : statut secondaire pour L. 811-1 lui-même. Il s''agit d''un avis sur un PROJET de cahier des charges ; le
+    cahier des charges définitif et les résultats n''ont pas été lus. L''hydrogène carboné (ni renouvelable ni bas-carbone) n''est pas défini
+    dans l''extrait.'
+  parametres:
+  - soutien_h2_france
+  - eligibilite_h2_pyrolyse
+  - plafond_aide_h2
+
+A3J-AIDA-RAPPORT-ORD-2021-167:
+  titre: Rapport au Président de la République relatif à l'ordonnance n° 2021-167 du 17 février 2021 relative à l'hydrogène
+  editeur: Gouvernement (reprise AIDA/INERIS)
+  date: '2021-02-17'
+  type: reglementaire
+  url: https://aida.ineris.fr/reglementation/rapport-president-republique-relatif-a-lordonnance-ndeg-2021-167-170221-relative-a
+  emplacement: corps du rapport, 2e et 3e paragraphes
+  contenu: 'L''ordonnance définit trois types d''hydrogène (renouvelable, bas carbone, carboné) et deux systèmes de traçabilité : garanties d''origine
+    (cessibles séparément) et garanties de traçabilité (cédées avec l''hydrogène), gérées par un organisme indépendant. Ces garanties ne concernent
+    que l''hydrogène renouvelable ou bas-carbone : un hydrogène issu de déchets plastiques qui ne serait ni l''un ni l''autre (hydrogène carboné)
+    n''y aurait pas accès.'
+  citation: La présente ordonnance que nous soumettons à votre approbation définit les différents types d'hydrogènes qui feront l'objet de régimes
+    particuliers, hydrogène renouvelable, bas carbone ou carboné. Il prévoit deux systèmes de traçabilité de l'hydrogène pour que son caractère
+    bas-carbone ou renouvelable puisse être connu de l'acheteur [...] Les garanties d'origine et de traçabilité seront gérées par un organisme
+    indépendant, sur le modèle de celui qui existe déjà pour les garanties d'origine de l'électricité renouvelable.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 sur AIDA dans le navigateur Chrome. Le texte de l''ordonnance (articles L. 811-1, L. 821-1 et suivants) et ses décrets
+    d''application n''ont pas été lus (Légifrance bloqué) ; le projet d''ordonnance soumis à consultation (consultations-publiques.developpement-durable.gouv.fr,
+    202210113_ordonnance_consultation_v2.pdf) est un projet non daté, non retenu. Organisme gestionnaire désigné et prix des garanties : non trouvés.'
+  parametres:
+  - tracabilite_h2_france
+
+A3J-ACER-H2-MARKETS-2025:
+  titre: European hydrogen markets, 2025 Monitoring Report
+  editeur: ACER (Agence de l'Union européenne pour la coopération des régulateurs de l'énergie)
+  date: 2025 (données janvier à octobre 2025 ; webinaire 9 décembre 2025)
+  type: etude_publique
+  url: https://www.acer.europa.eu/sites/default/files/documents/Publications/ACER-2025-European-hydrogen-markets.pdf
+  emplacement: pages 40 et 41 (paragraphes 78 à 80, figure 15, notes 65 et 66)
+  contenu: 'Coûts de production (estimations S&P Global, janv.-oct. 2025) : hydrogène conventionnel par vaporeformage (SMR) un peu plus de 2 EUR/kg
+    ; SMR avec captage 2,8 EUR/kg (hors transport et stockage du CO2) ; électrolyse Pays-Bas environ 7 EUR/kg (oct. 2025) ; RFNBO environ 8 EUR/kg
+    (7 à 10 selon le pays). Prix de marché : indice EEX HYDRIX (hydrogène « vert », pas nécessairement renouvelable, offert en Allemagne) environ
+    8,2 EUR/kg en moyenne 2025, contre environ 7,8 EUR/kg en 2023 ; indice MIBGAS IBHYX (coût de production RFNBO, Espagne) autour de 6 EUR/kg
+    en 2025 ; HYCLICX (coût marginal Pays-Bas) entre 6 et 8 EUR/kg depuis mi-2025.'
+  citation: in 2025 (January to October), the average cost of conventional hydrogen produced via SMR was a bit higher than 2 EUR/kg, following
+    the price trend of natural gas. Carbon capture brings the average cost of abated hydrogen during the same period to 2.8 EUR/kg, excluding
+    CO 2 transportation and storage costs. [...] Notably, the average cost of RFNBO hydrogen remains significantly higher at around 8 EUR/kg,
+    ranging between 7-10 EUR/kg [...] The market-based HYDRIX index issued by the European Energy Exchange (EEX) for renewable hydrogen has seen
+    a slight increase in 2025, averaging approximately 8.2 EUR/kg up from approximately 7.8 EUR/kg in 2023. [...] EEX HYDRIX is a market-based
+    index that aims to reflect the price for “green”, not necessarily renewable, hydrogen offered in Germany.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'PDF lu le 15/10/2026 dans le navigateur Chrome (WebFetch refusé, robots.txt), texte extrait par pdf.js. Les coûts SMR sont des estimations
+    S&P Global (source commerciale) reprises par ACER. Les valeurs HYDRIX sont reprises par ACER : les valeurs publiées par EEX elles-mêmes n''ont
+    pas été lues (statut secondaire pour HYDRIX). Coût SMR de 2025 antérieur à la hausse du gaz de 2026 (Banque mondiale au registre : 25,42 USD/mmbtu
+    en sept. 2026).'
+  parametres:
+  - cout_h2_gris_ue
+  - cout_h2_bas_carbone_ue
+  - cout_h2_renouvelable_ue
+  - prix_hydrix
+
+A3J-EEX-HYDRIX-FAQ:
+  titre: 'HYDRIX FAQ (For calculating HYDRIX: Lower Heating Value (LHV) or Higher Heating Value (HHV)?)'
+  editeur: EEX Transparency (European Energy Exchange)
+  date: consultée 2026-10-15
+  type: indice_marche
+  url: https://www.eex-transparency.com/service/hydrix-faq
+  emplacement: FAQ
+  contenu: 'HYDRIX : prix moyen de l''hydrogène vert pour les acheteurs en Allemagne, simple indication et non prix de livraison, calculé en EUR/MWh
+    sur la base du PCI, publié chaque mercredi à 16 h depuis le 24 mai 2023. Aucune valeur publiée sur la page.'
+  citation: HYDRIX is an average price for green hydrogen for off-takers in Germany. [...] HYDRIX is calculated in EUR/MWh to make it comparable
+    to power and gas prices, rather than EUR/kg. [...] Our calculations are based on LHV hydrogen.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch. Valeurs hebdomadaires non lues : la page EEX Transparency « hydrogen » affiche un bandeau de consentement
+    aux cookies et ne livre pas les chiffres au texte (non contourné). Conversion EUR/kg vers EUR/MWh non donnée par EEX.'
+  parametres:
+  - prix_hydrix
+
+A3J-ENERGATE-HYDEX-2025-08:
+  titre: Marginal costs of green hydrogen almost unchanged (Hydex, energate hydrogen briefing)
+  editeur: energate messenger / E-Bridge Consulting
+  date: '2025-08-26'
+  type: presse
+  url: https://www.energate-messenger.com/news/255340/marginal-costs-of-green-hydrogen-almost-unchanged
+  emplacement: article
+  contenu: 'Indice Hydex (coûts marginaux de production en Allemagne, calculé par E-Bridge Consulting), semaine précédant le 26/08/2025 : Hydex
+    Green 160 EUR/MWh (5,34 EUR/kg) ; Hydex 12 Green 128 EUR/MWh (4,28 EUR/kg) ; Hydex Grey 83 EUR/MWh (2,75 EUR/kg) ; Hydex Blue 94 EUR/MWh (3,12
+    EUR/kg).'
+  citation: The Hydex Green averaged 160 €/MWh (5.34 €/kg) for the week [...] 83 €/MWh (2.75 €/kg) for Hydex Grey [...] 94 €/MWh (3.12 €/kg) for
+    Hydex Blue
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Source presse spécialisée, indice d'un cabinet de conseil (commercial) ; coût marginal hebdomadaire, pas
+    un prix de transaction ni un coût complet. Le ratio implicite EUR/MWh / EUR/kg (environ 30 kg/MWh, soit 33,3 kWh/kg) correspond au PCI.
+  parametres:
+  - cout_marginal_h2_gris_de
+
+A3J-CHO-LCOH-2024-FRANCE:
+  titre: Hydrogen production costs 2024 (datastream « Cost of hydrogen production »)
+  editeur: European Hydrogen Observatory (Clean Hydrogen Partnership, Union européenne)
+  date: 2025-09 (données 2024)
+  type: donnees_ouvertes
+  url: https://observatory.clean-hydrogen.europa.eu/sites/default/files/2025-09/Hydrogen%20production%20costs%202024.xlsx
+  emplacement: feuille Sheet1, lignes Country = France, colonnes Technology / Cost / Value (€/kg) / Year
+  contenu: 'Coût actualisé de production de l''hydrogène en France, 2024, EUR/kg, par composante. SMR : CAPEX 0,263 + CO2 0,494 + gaz naturel
+    2,008 + autres OPEX 0,092 = 2,86 EUR/kg (somme calculée par l''agent). SMR avec captage : 0,430 + 0,866 + 2,172 + 0,131 = 3,60 EUR/kg. Électrolyse
+    réseau : 5,30 EUR/kg (dont CAPEX 2,761, tarifs réseau 0,849, taxes 0,319, électricité de gros 1,179, autres 0,187). Électrolyse raccordée
+    directement à une source renouvelable : 7,35 EUR/kg (somme). Sources des intrants selon la page : Eurostat 2024 (électricité et gaz), IRENA
+    2024.'
+  citation: '[null,"France","SMR","CAPEX",0.262847965418017,2024],[null,"France","SMR","CO2 costs",0.494033434805036,2024],[null,"France","SMR","Natural
+    gas costs",2.007808911778294,2024],[null,"France","SMR","Other OPEX",0.09163305555555554,2024] ; en-tête : ["Country","Technology","Cost","Value
+    (€/kg)","Year"]'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Tableur lu le 15/10/2026 dans le navigateur Chrome (téléchargement direct refusé par le proxy), analysé par SheetJS. Les totaux par technologie
+    sont des sommes calculées par l''agent. Coût modélisé (LCOH), pas un prix de marché. Page de présentation : https://observatory.clean-hydrogen.europa.eu/index.php/hydrogen-landscape/production-trade-and-cost/cost-hydrogen-production
+    (« Reference years are 2024, 2023 and 2022. »).'
+  parametres:
+  - cout_h2_gris_france
+  - cout_h2_bas_carbone_france
+  - cout_h2_renouvelable_france
+
+A3J-ISO-14687-2025-PREVIEW:
+  titre: ISO 14687:2025 Hydrogen fuel quality, Product specification (pages d'aperçu)
+  editeur: ISO (aperçu publié par ANSI Webstore)
+  date: 2025-02 (2e édition)
+  type: norme
+  url: https://webstore.ansi.org/preview-pages/ISO/preview_ISO+14687-2025.pdf
+  emplacement: avant-propos, introduction, sommaire (clauses 5.1, 6.1, 7.1, annexes E et F)
+  contenu: 'La 2e édition (2025) remplace ISO 14687:2019. Grades D et E : piles PEM des véhicules routiers et des applications stationnaires ;
+    grade A : hydrogène gazeux pour les autres applications ; grades F-1 et F-2 (nouveaux) : moteurs à combustion d''hydrogène. Les tableaux de
+    pureté minimale ne figurent pas dans l''aperçu (norme payante).'
+  citation: Grade D and grade E in this document are intended to apply to PEM fuel cells for road vehicles [...] This second edition cancels and
+    replaces the first edition (ISO 14687:2019). [...] Grades F-1 and F-2 are newly specified in this edition to apply to hydrogen internal combustion
+    engines
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (extraits restitués par l''outil). Statut ISO 14687:2019 retiré le 12/02/2025 confirmé sur https://www.iso.org/standard/69539.html.
+    Valeur de pureté exigée par grade : NON TROUVÉE dans une source primaire (norme payante).'
+  parametres:
+  - specification_h2_mobilite
+
+A3J-WESTFALEN-H2-EN17124:
+  titre: Wasserstoff für Brennstoffzellen (page produit)
+  editeur: Westfalen AG (fournisseur de gaz)
+  date: consultée 2026-10-15
+  type: entreprise
+  url: https://www.westfalen.com/de/en/hydrogen-for-the-energy-transition/hydrogen-as-a-fuel-mobility-of-the-future/hydrogen-for-fuel-cells
+  emplacement: page produit
+  contenu: Hydrogène pour piles à combustible livré selon DIN EN 17124 avec une pureté de 99,97 %. Limites d'impuretés non données.
+  citation: Sie erhalten Wasserstoff nach DIN EN 17124 mit einem Reinheitsgrad von 99,97 %.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch. Source commerciale (fournisseur), pas la norme elle-même : à remplacer par EN 17124 ou ISO 14687 (payantes)
+    si accessibles.'
+  parametres:
+  - specification_h2_mobilite
+
+A3J-LINDE-PSA-H2:
+  titre: Hydrogen recovery and purification (adsorption and membrane plants)
+  editeur: Linde Engineering
+  date: consultée 2026-10-15
+  type: entreprise
+  url: https://www.linde-engineering.com/en/process-plants/adsorption-and-membrane-plants/hydrogen-recovery-and-purification/
+  emplacement: page technologie
+  contenu: Les unités PSA de Linde traitent des gaz de synthèse (vaporeformage, gazéification) et des gaz résiduaires de raffinerie et de pétrochimie
+    ; pureté jusqu'à 99,9999 % molaire ; capacités de quelques centaines à plus de 400 000 Nm3/h. Aucun taux de récupération chiffré.
+  citation: the resulting hydrogen gas meets all purity requirements up to 99.9999 mol-%. [...] from small plants producing a few hundred Nm³/h
+    to large-scale plants that produce more than 400,000 Nm³/h.
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Source commerciale du fabricant. Le taux de récupération est seulement qualifié (« the highest recovery
+    rates »).
+  parametres:
+  - purete_psa
+
+A3J-MDPI-ENERGIES-2025-PSA:
+  titre: Performance Evaluation of Pressure Swing Adsorption for Hydrogen Separation from Syngas and Water–Gas Shift Syngas (Krótki et al., Energies
+    18(8), 1887)
+  editeur: MDPI, Energies
+  date: 2025-04
+  type: etude_publique
+  url: https://www.mdpi.com/1996-1073/18/8/1887
+  emplacement: sections 2.3 et 3.1 (revue de littérature)
+  contenu: 'Revue : un PSA à 4 lits et 12 étapes sur une charge à 69 % H2 (25 % CO2, 5 % CH4, 1 % CO) a produit un hydrogène pur à 99,9913 % avec
+    75,5 % de récupération (Abdeljaoued et al.) ; le procédé Lofin atteint jusqu''à 86,3 % de récupération ; de façon générale, PSA : impuretés
+    au niveau ppm, récupération 80 à 95 %. Charge comparable en H2 (69 %) au gaz de pyrolyse (64,5 % hors air) mais sans hydrocarbures C2-C3.'
+  citation: produced hydrogen with 99.9913% purity, achieving 75.5% recovery [...] achieves higher H2 recovery efficiency (up to 86.3%) [...]
+    PSA can remove impurities to ppm levels and achieve recovery rates of 80–95%.
+  statut: secondaire
+  consulte: 2026-10-15
+  note: 'Article lu le 15/10/2026 via WebFetch (DOI 10.3390/en18081887). Les chiffres sont ceux d''études citées par la revue, pas des résultats
+    propres aux auteurs (dont les essais sont décrits comme une démarche) : statut secondaire. Coût d''une unité PSA : non publié dans cet article.'
+  parametres:
+  - recuperation_psa
+  - purete_psa
+
+A3J-NATRAN-SPEC-METHANE-SYNTHESE:
+  titre: 'Annexe 4 : Prescriptions techniques de GRTgaz relatives aux caractéristiques physico-chimiques du méthane de synthèse destiné à être
+    injecté dans le réseau'
+  editeur: GRTgaz (Natran)
+  date: fichier mis en ligne 2024-07 (date du document non indiquée)
+  type: entreprise
+  url: https://natrangroupe.com/sites/default/files/2024-07/annexe-4-spec-grtgaz-methane-de-synthese-pour-injection.pdf
+  emplacement: tableau des caractéristiques physico-chimiques
+  contenu: 'Pour injecter un méthane de synthèse dans le réseau de transport : H2 < 2 % molaire ; CO < 0,1 % ; CO2 < 2,5 % ; O2 < 0,01 % ; PCS
+    gaz H 10,7 à 12,8 kWh/m3(n) ; Wobbe gaz H 13,64 à 15,7 kWh/m3(n). Le gaz de pyrolyse décrit (64,5 % H2, 3,0 % CO, 8,6 % CO2) est très loin
+    de ces prescriptions : injection impossible sans méthanation et épuration complètes (comparaison de l''agent).'
+  citation: 'Teneur en H2 < 2 % (molaire) ; Teneur en CO < 0,1 % (molaire) ; Teneur en CO2 < 2,5 % (molaire) ; Teneur en O2 < 0,01% (molaire)
+    ; Gaz de type H(1) : 10,7 à 12,8 kWh/m3(n)'
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch. Document de l'opérateur de transport ; les prescriptions du distributeur GRDF n'ont pas été lues. Le document
+    ne mentionne pas la pyrogazéification.
+  parametres:
+  - specification_injection_reseau
+
+A3J-ATEE-CLUB-PYRO-2025:
+  titre: Présentation Club Pyrogazéification, salle gaz renouvelable, BIO360 (5 février 2025)
+  editeur: ATEE, Club Pyrogazéification
+  date: '2025-02-05'
+  type: federation
+  url: https://atee.fr/system/files/2025-03/2025.02.05_Pr%C3%A9sentation%20Club%20PYRO_salle%20gaz%20renouvelable%20BIO360_VF.pdf
+  emplacement: diapositives 3, 7-8, 10, 11, 25, 29, 30 (numérotation issue de l'extraction)
+  contenu: 'Aucun dispositif de soutien pérenne à l''injection de gaz de pyrogazéification n''est en place en France début 2025 : la filière demande
+    des contrats d''expérimentation avec un appel à projets dédié et un « mécanisme de soutien pour la valorisation des déchets non renouvelables
+    ». La loi d''accélération des ENR (mars 2023) a introduit les gaz bas-carbone issus de pyrogazéification d''intrants mixtes ; réfaction de
+    60 % sur le raccordement, plafonnée à 600 kEUR. Gisement cité : 8 Mt/an de déchets non biogéniques non dangereux admis en stockage. Aucun
+    tarif d''achat ni prix.'
+  citation: « Mettre en place à court terme les contrats d'expérimentation pour la production de biométhane et gaz bas carbone » ; « réfaction
+    de 60% sur le raccordement, plafonnée à 600 k€ » ; « 8 millions de tonnes de déchets non biogéniques non dangereux non inertes admis en installation
+    de stockage »
+  statut: lu
+  consulte: 2026-10-15
+  note: Lu le 15/10/2026 via WebFetch (extraits restitués par l'outil). Source de fédération professionnelle (position de filière, militante).
+    Les textes eux-mêmes (loi 2023-175, contrats d'expérimentation, arrêtés) non lus (Légifrance bloqué).
+  parametres:
+  - soutien_injection_pyrogaz
+
+A3J-CRE-2016-AVIS-CR-UIOM:
+  titre: Délibération de la CRE du 3 mars 2016 portant avis sur le projet d'arrêté fixant les conditions du complément de rémunération [installations
+    d'incinération de déchets ménagers]
+  editeur: Commission de régulation de l'énergie
+  date: '2016-03-03'
+  type: reglementaire
+  url: https://www.cre.fr/fileadmin/Documents/Deliberations/import/160303AvisArretesTarifairesIncineration.pdf
+  emplacement: pages 1, 3 et 6
+  contenu: 'Projet (2016) de complément de rémunération pour l''électricité des usines d''incinération d''ordures ménagères, remplaçant les contrats
+    d''achat des arrêtés de 2001 et 2006 : tarif de référence 58 EUR/MWh sur 15 ans ; la CRE recommandait 49 EUR/MWh, 20 ans et un plafond de
+    6 000 heures. Le texte définitif et son applicabilité à une usine de pyrolyse ne sont pas établis.'
+  citation: « établit un mécanisme de soutien sous la forme de complément de rémunération » ; « applicable sur 15 ans » ; tarif de référence «
+    fixé à 58 €/MWh »
+  statut: ancien
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch. Données de 2016 (plus de huit ans) et avis sur un PROJET d''arrêté : l''adoption et la vigueur en 2026
+    n''ont pas été vérifiées (Légifrance bloqué, page EDF OA en erreur). Ne pas utiliser comme tarif applicable.'
+  parametres:
+  - soutien_electricite_dechets
+
+A3J-SDES-BILAN-2024-PRIX-CHALEUR:
+  titre: Bilan énergétique de la France pour 2024, partie 1, section 1.8 « Le prix de la chaleur baisse dans l'industrie et se stabilise dans
+    les autres secteurs »
+  editeur: SDES, ministère de la Transition écologique
+  date: 2026-03-04 (données 2024)
+  type: statistique_publique
+  url: https://www.statistiques.developpement-durable.gouv.fr/media/9087/download?inline
+  emplacement: page 40, section 1.8, figure 1.8.1
+  contenu: 'Prix hors TVA de la chaleur achetée par les consommateurs industriels : 48,5 EUR/MWh en 2024 (-13,9 % par rapport à 2023, après -20,3
+    % entre 2022 et 2023 ; +85 % par rapport à 2019) ; chaleur distribuée par réseau ou dans une relation exclusive producteur-acheteur unique.
+    Autres secteurs (réseaux) : 120 EUR/MWh TTC, 113 EUR/MWh HTVA en 2024. Source : SDES d''après EARCF et EACEI.'
+  citation: Le prix hors TVA de la chaleur achetée par les consommateurs industriels s'élève à 48,5 €/MWh en 2024 ( figure 1.8.1 ), en baisse,
+    pour la deuxième année consécutive, de 13,9 % par rapport à 2023, après une diminution de 20,3 % entre 2022 et 2023. [...] Cette chaleur peut
+    être distribuée soit via un réseau, soit dans la cadre d'une relation exclusive entre un producteur et un acheteur unique.
+  statut: lu
+  consulte: 2026-10-15
+  note: 'PDF lu le 15/10/2026 dans le navigateur Chrome (pdf.js), page de publication https://www.statistiques.developpement-durable.gouv.fr/bilan-energetique-de-la-france-pour-2024.
+    Prix moyen national, toutes formes de chaleur (vapeur et eau chaude non distinguées). Édition précédente (données 2021 : 40 EUR HTVA/MWh)
+    lue aussi, non retenue.'
+  parametres:
+  - prix_chaleur_industrie_france
+
+A3J-EUROSTAT-NRG-PC-203-FR:
+  titre: Gas prices for non-household consumers, bi-annual data (from 2007 onwards) [nrg_pc_203], France
+  editeur: Eurostat
+  date: mise à jour 2026-10-13 (données 2024-S1 à 2026-S1)
+  type: statistique_publique
+  url: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_pc_203?format=JSON&lang=en&geo=FR&currency=EUR&unit=KWH&tax=X_VAT&nrg_cons=GJ10000-99999&sinceTimePeriod=2024-S1
+  emplacement: API JSON ; dimensions geo=FR, currency=EUR, unit=KWH, tax=X_VAT ou X_TAX, nrg_cons=GJ10000-99999 (I3) ou GJ100000-999999 (I4)
+  contenu: 'Gaz naturel, France, consommateurs non domestiques, EUR/kWh. Hors TVA et taxes récupérables (X_VAT) : bande I3 (10 000 à 99 999 GJ)
+    2024-S1 0,0695 ; 2024-S2 0,0688 ; 2025-S1 0,0697 ; 2025-S2 0,0629 ; 2026-S1 0,0606. Bande I4 (100 000 à 999 999 GJ) 2024-S1 0,0449 ; 2024-S2
+    0,0478 ; 2025-S1 0,0505 ; 2025-S2 0,0448 ; 2026-S1 0,0470. Hors toutes taxes (X_TAX) : I3 2025-S1 0,0568 ; 2025-S2 0,0530 ; 2026-S1 0,0483
+    ; I4 2025-S1 0,0462 ; 2025-S2 0,0411 ; 2026-S1 0,0422. Pour mémoire, bande I2 (1 000 à 9 999 GJ) X_VAT 2026-S1 0,0799. Aucun indicateur de
+    statut.'
+  citation: '"updated": "2026-10-13T23:00:00+0200" ; nrg_cons "Consumption from 10 000 GJ to 99 999 GJ - band I3" ; tax "Excluding VAT and other
+    recoverable taxes and levies" ; unit "Kilowatt-hour" ; 2024-S1 0.0695 ; 2024-S2 0.0688 ; 2025-S1 0.0697 ; 2025-S2 0.0629 ; 2026-S1 0.0606
+    | "Consumption from 100 000 GJ to 999 999 GJ - band I4" : 0.0449 ; 0.0478 ; 0.0505 ; 0.0448 ; 0.0470'
+  statut: lu
+  consulte: 2026-10-15
+  note: 'Lu le 15/10/2026 via WebFetch (réponse JSON restituée par l''outil). Requêtes : remplacer nrg_cons par GJ100000-999999 pour I4 et tax
+    par X_TAX pour hors toutes taxes ; une seule valeur de nrg_cons par requête (deux valeurs dans une même URL ont renvoyé une seule bande via
+    WebFetch). Base PCS ou PCI du kWh non vérifiée dans les métadonnées. Le semestre 2026-S1 (janv.-juin) précède la flambée du gaz de sept. 2026
+    (Banque mondiale, au registre).'
+  parametres:
+  - prix_gaz_industriel_france_i3
+  - prix_gaz_industriel_france_i4
+

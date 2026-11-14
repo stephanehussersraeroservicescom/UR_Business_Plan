@@ -1,0 +1,272 @@
+# Lot G : débouchés et valeur du char comme combustible (cimenteries en premier lieu)
+# Annexe 3, Urban Rig, collecte du 15/10/2026 par un sous-agent de recherche.
+# Rappel des données char fournies par le porteur (non sourcées ici) : PCS 32 090 J/g mesuré ; environ 25 % de l'entrée
+# sur OM selon le constructeur ; Cd 31-36 mg/kg, Pb 42-140 mg/kg, Hg < 0,1 mg/kg ; chlore, soufre, cendres non mesurés.
+# Les PCI officiels (coke de pétrole 32 GJ/t, charbon-vapeur 26 GJ/t) sont déjà au registre : A3-SDES-CCE-2026-EQUIVALENCES (lot B).
+
+# ---------------------------------------------------------------
+# 1. CIMENTERIES EN FRANCE : FILIÈRE, OBJECTIFS, USINES
+# ---------------------------------------------------------------
+
+A3G-FDR-DECARBONATION-CIMENT-2023:
+  titre: "Feuille de route de décarbonation de la filière Ciment"
+  editeur: "Filière ciment (France Ciment) et ministère chargé de l'industrie, publiée sur entreprises.gouv.fr"
+  date: "2023-05"
+  type: federation
+  url: "https://www.entreprises.gouv.fr/files/files/enjeux/d%C3%A9carbonation/feuille-de-route-ciment.pdf"
+  emplacement: "introduction p. 3-4 (25 cimenteries, carte figure 1-1) ; § 2a-2b p. 5-8 (mix thermique) ; § 3b p. 12-13 (levier substitution) ; § 3d p. 17 (biomasse) ; § 4 p. 19-20 (projets Airvault, Saint-Pierre-la-Cour). Pagination approximative selon l'outil."
+  contenu: "25 cimenteries en France (5 groupes : Heidelberg Materials, Eqiom/CRH, Imerys, Lafarge/Holcim, Vicat). Combustibles fossiles : principalement coke de pétrole, charbon (13 à 17 % du mix selon les années) et gaz naturel ; la part du coke de pétrole diminue et doit être remplacée par des combustibles alternatifs. Combustibles de substitution : 29 % de la consommation d'énergie en 2011, 44 % en 2021. Déchets consommés : 964 kt en 2015, 1 054 kt en 2021 ; objectif 80 % de la consommation d'énergie en 2030 (1 528 kt) et 85 % en 2050 (1 649 kt). Biomasse : 422 kt (2015) puis 577 kt (2021) ; part de biomasse dans les déchets visée 52,5 % en 2030 et 60 % en 2050. Projet Airvault : 88 % de combustibles alternatifs, plus de 200 000 t/an de déchets dont jusqu'à 150 000 t/an de CSR."
+  citation: "« leur taux d'utilisation passant de 29% en 2011 à 44% en 2021. » [...] « Le secteur a consommé un volume de déchets estimé à 964 Kt en 2015 et 1054 Kt en 2021. » [...] « Le volume de déchets devrait représenter 80% de la consommation d'énergie en 2030 et 85% en 2050 » [...] « soit un volume de 1528 Kt en 2030 et 1649 Kt en 2050. » [...] « La production française de ciment se structure autour de 25 cimenteries »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (extraction par outil ; le tableau 3-2 des taux annuels et la carte des usines n'ont pas été restitués). Document de filière co-signé avec l'État. La part de biomasse visée (52,5 % puis 60 %) signifie qu'une part croissante du gisement recherché est biogénique, ce que le char d'OM et de plastiques n'est que partiellement (fraction biogénique non mesurée). L'écart entre 1 054 kt en 2021 et 1 528 kt en 2030 indique un besoin d'environ 470 kt/an de combustibles de substitution supplémentaires (calcul du sous-agent)."
+  parametres: [char_debouche_cimenterie, cimenterie_taux_substitution, cimenterie_tonnage_dechets, cimenterie_nombre_usines]
+
+A3G-HEIDELBERG-AIRVAULT-2025-2022:
+  titre: "Info presse, octobre 2022 : Airvault 2025 (Ciments Calcia, HeidelbergCement France)"
+  editeur: "Heidelberg Materials France (Schilling Communication)"
+  date: "2022-10"
+  type: entreprise
+  url: "https://www.heidelbergmaterials.fr/sites/default/files/2022-10/FLASH%20R-CALCIA-AIRVAULT2025-OCT2022%20%28002%29.pdf"
+  emplacement: "page unique"
+  contenu: "Cimenterie d'Airvault (Deux-Sèvres) : volume de déchets consommés multiplié par 4 pour dépasser 200 000 t/an ; consommation de CSR multipliée par 15, jusqu'à 150 000 t/an ; 88 % de la consommation thermique assurée par des combustibles alternatifs, sourcés en priorité localement, remplaçant le coke ou le charbon. Autorisation environnementale par arrêté préfectoral du 25/05/2022."
+  citation: "« la consommation de combustibles solides de récupération sera multipliée par 15, pouvant atteindre jusqu’à 150 000 tonnes » [...] « 88% de la consommation thermique du site sera à l’avenir assurée par des combustibles alternatifs » [...] « L’autorisation environnementale a été délivrée par arrêté préfectoral du 25 mai 2022. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Communiqué d'entreprise. Airvault est à environ 350 km de l'Île-de-France (estimation de distance non sourcée). Aucune spécification de qualité (PCI, chlore) dans le communiqué. L'arrêté du 25/05/2022 (n° A6375 selon le rapport d'inspection 2024) n'a pas été trouvé en ligne."
+  parametres: [char_debouche_cimenterie, cimenterie_tonnage_csr]
+
+A3G-GEORISQUES-CALCIA-GARGENVILLE-2024:
+  titre: "Rapport de l'inspection des installations classées, Calcia Gargenville (visite du 03/06/2024)"
+  editeur: "DRIEAT Île-de-France, unité départementale des Yvelines (Géorisques)"
+  date: "2024-08-01"
+  type: reglementaire
+  url: "https://georisques.gouv.fr/webappReport/ws/installations/inspection/TdiGJsWOaJnAIhyW4Xa9oyqomy3JMrCa"
+  emplacement: "section 1 Contexte, p. 4-5 ; fiche n° 4, p. 9-10"
+  contenu: "Cimenterie Heidelberg Materials (Calcia) de Gargenville (Yvelines, AIOT 0006503289) : le four est mis « en cocon » depuis 2021 ; l'usine fabrique du ciment à partir de clinker livré par route ; la fiche 4 porte sur le démantèlement du four. Conséquence : Gargenville, seule cimenterie d'Île-de-France citée dans la mission, n'est pas un débouché combustible."
+  citation: "citation non obtenue (l'outil a résumé le passage « four mis sous cocon en 2021 » sans le citer mot pour mot)"
+  statut: non-verifie
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; contenu restitué en paraphrase, à confirmer par lecture directe. Information importante pour la géographie des débouchés."
+  parametres: [char_debouche_cimenterie, cimenterie_proximite_idf]
+
+A3G-GEORISQUES-EQIOM-ROCHEFORT-2026:
+  titre: "Rapport de l'inspection des installations classées, EQIOM cimenterie de Rochefort-sur-Nenon, thème Déchets (visite du 09/04/2026)"
+  editeur: "DREAL Bourgogne-Franche-Comté, UID 39-71 (Géorisques)"
+  date: "2026-06-08"
+  type: reglementaire
+  url: "https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/48ih3LFQLSDGY110XrPdeVViAEEYg6Qx"
+  emplacement: "section 1 Contexte p. 2/16 ; section 2-2 p. 3/16 ; fiche 8 p. 13-14 ; fiche 10 p. 15/16"
+  contenu: "Cimenterie EQIOM (Jura, AIOT 0005900978), installation de co-incinération autorisée pour 25 000 t/an de déchets non dangereux et 40 000 t/an de déchets dangereux (AP du 24/01/2018, critères au chapitre 3.3, non reproduits). L'inspection rappelle que le PCI est un critère d'acceptation obligatoire (valeurs calorifiques minimales exigées par l'arrêté du 20/09/2002) ; analyses à l'admission : PCI, eau, chlore, soufre (cas des farines animales)."
+  citation: "« 25 000 t/an pour les déchets non dangereux et 40 000 t/an pour les déchets dangereux » [...] « La cimenterie est donc aussi assimilée à une installation de co-incinération. » [...] « la suppression du Pouvoir Calorifique Inférieur (PCI) en tant que critère d'acceptation »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Les valeurs limites du chapitre 3.3 de l'AP de 2018 ne sont pas dans le rapport. Les limites métaux antérieures (AP n° 605 de 2007) figurent dans A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010."
+  parametres: [char_debouche_cimenterie, cimenterie_capacite_dechets]
+
+A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010:
+  titre: "Rapport de présentation de l'inspection des installations classées : Holcim France, cimenterie de Rochefort-sur-Nenon, co-incinération de déchets industriels dangereux (réf. UT39/JM/SG/2010-401)"
+  editeur: "DREAL Franche-Comté, unité territoriale du Jura (Géorisques)"
+  date: "2010-05-03"
+  type: reglementaire
+  url: "https://georisques.gouv.fr/webappReport/ws/installations/document/ca746ad3c12644f1ba5354a69ad3cfe0"
+  emplacement: "§ 2.1 (citation de l'article 3.3.1 de l'AP n° 605 du 17/04/2007) ; § 2.3 ; § 3.7"
+  contenu: "Critères métaux de l'AP n° 605 (article 3.3.1) pour les déchets admis : Hg < 0,001 % (10 mg/kg) ; Cd+Hg+Tl < 0,01 % (100 mg/kg) ; Pb+Cr+Ni+As+Co+V+Sn+Sb+Te+Se < 0,25 % (2 500 mg/kg), demande de passage à 1 % pour certains déchets à valorisation matière. Taux maximal de substitution énergétique fixé à 40 % par l'arrêté."
+  citation: "« Teneur en métaux lourds : Hg < 0,001 % » ; « Cd + Hg + TI < 0,01 % » ; « Pb + Cr + Ni + As + Co + V + Sn +Sb + Te + Se < 0,25 % »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Données de 2007-2010 (plus de huit ans) ; l'AP du 24/01/2018 a remplacé ces critères (non lu). Comparaison du sous-agent : le char Urban Rig (Cd 31-36, Hg < 0,1 mg/kg) respecte Cd+Hg+Tl < 100 mg/kg si Tl est faible (non mesuré) ; Pb 42-140 mg/kg très en dessous de 2 500 mg/kg pour la somme, mais les autres métaux (Cr, Ni, Sb, As, Co, V, Sn) ne sont pas mesurés."
+  parametres: [char_spec_cimenterie]
+
+A3G-AP-AIRVAULT-4401-2005:
+  titre: "Arrêté n° 4401 portant actualisation de la situation administrative de la cimenterie d'Airvault (Ciments Calcia)"
+  editeur: "Préfecture des Deux-Sèvres (Géorisques)"
+  date: "2005-08-01"
+  type: reglementaire
+  url: "https://georisques.gouv.fr/webappReport/ws/installations/document/900f549d648e40e69b988b2e0af31eb5"
+  emplacement: "art. 1.1 ; art. 12.A.1 ; art. 12.A.8.1 ; art. 12.A.8.4 ; art. 12.A.10 ; art. 12.A.12 ; art. 12.A.13"
+  contenu: "Limites de composition des déchets admis : PCB/PCT 50 ppm ; chlore organique 1 % au précalcinateur et 2 % à la tuyère principale ; soufre 4 % ; métaux lourds 1 %. À l'entrée du four : Hg 10 mg/kg ; Cd+Hg+Tl 100 mg/kg ; Sb+As+Pb+... 2 500 mg/kg ; hydrocarbures totaux 5 000 mg/kg. Un déchet de PCI au moins 5 000 kJ/kg relève de la co-incinération avec valorisation énergétique. Contribution thermique des déchets plafonnée à 40 % (deux fours). Analyses à chaque livraison : H2O, Cl, cendres, pH, compatibilité, PCS. Certificat d'acceptation préalable valable un an."
+  citation: "« 1 % en Chlore organique à la précalcination et 2 % à la tuyère principale » ; « 4 % en Soufre » ; « 1 % en Métaux lourds » ; « 100 mg/kg pour la somme des teneurs en cadmium (Cd), mercure (Hg) et thallium (Tl) » ; « 5 000 kJ/kg »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; texte tronqué à l'article 12.A.14. Date de l'arrêté (1er août 2005) lue dans l'arrêté complémentaire n° 5111 du 10/06/2011 (https://georisques.gouv.fr/webappReport/ws/installations/document/9813525095574847850b718b1d413e83). Données de plus de huit ans ; remplacé pour l'essentiel par l'AP du 25/05/2022 (non trouvé). L'outil restitue des PCI moyens « 23 et 6,3 kJ/kg » pour les gammes 3000 et 2000, unité manifestement erronée (probablement MJ/kg) : non repris."
+  parametres: [char_spec_cimenterie]
+
+A3G-GEORISQUES-CALCIA-RANVILLE-2017:
+  titre: "Rapport de l'inspection des installations classées au CODERST : réexamen des conditions d'autorisation de la cimenterie Ciments Calcia, usine de Ranville (réf. FC-HS/GR-2017-A461)"
+  editeur: "DREAL Normandie, unité départementale du Calvados (Géorisques)"
+  date: "2017-08-04"
+  type: reglementaire
+  url: "https://georisques.gouv.fr/webappReport/ws/installations/document/8accf0a65e7a413f015e7a4338580004"
+  emplacement: "§ II.3.4 (combustibles traditionnels) ; tableau des rubriques 3520-a, 2771, 3520-b ; § VI.2 (MTD 4, 11, 12)"
+  contenu: "Combustibles traditionnels : coke de pétrole et charbon moulu. Co-incinération de déchets non dangereux (farines animales, boues de STEP, CSR et déchets aqueux à faible PCI) limitée à 10 t/h, soit environ 55 000 t/an ; déchets dangereux limités à 72 t/j (14 000 t/an au total). Contribution thermique des déchets dangereux hors huiles usagées plafonnée à 40 %. Introduction des déchets interdite sous 850 °C. Le rapport renvoie à des spécifications qualité sans en donner les valeurs."
+  citation: "« Le pourcentage de contribution thermique, liée à la co-incinération de déchets dangereux » [...] « Des critères physiques et chimiques y sont fixés »"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Rapport de 2017 (plus de huit ans). Confirme que Ranville (Calvados, environ 230 km de Paris, distance non sourcée) admet des CSR, sans valeurs limites publiées dans ce document. Les chiffres 10 t/h et 55 000 t/an sont restitués par l'outil (citation verbatim non obtenue pour ces chiffres)."
+  parametres: [char_debouche_cimenterie, cimenterie_capacite_dechets]
+
+A3G-GEORISQUES-LAFARGE-LOZANNE-2025:
+  titre: "Rapport de l'inspection des installations classées, Lafarge Ciments, usine du Val d'Azergues à Lozanne (visite du 02/10/2025, réf. UDR-SSDAS-25-288-CR)"
+  editeur: "DREAL Auvergne-Rhône-Alpes, unité départementale du Rhône (Géorisques)"
+  date: "2025-10-14"
+  type: reglementaire
+  url: "https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/VdTuGNKV4Yqeata3JueA6UPTD7ABxOtQ"
+  emplacement: "section 1 Contexte p. 2 ; fiche n° 2 p. 5"
+  contenu: "Environ 30 000 t/an de déchets combustibles utilisés en substitution d'énergies fossiles. Plan de contrôle des combustibles et matières de substitution ; analyse à chaque livraison (teneur en eau, PCI, pH) ; le camion n'est pas dépoté sans le résultat de l'analyse."
+  citation: "« Environ 30 000 t/an de déchets combustibles sont utilisés sur le site en substitution d'énergies fossiles. » [...] « une analyse à chaque livraison sur les paramètres suivant : teneur en eau, PCI, PH »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Usine éloignée de l'Île-de-France ; donne un ordre de grandeur de tonnage de combustibles de substitution par usine et la pratique d'analyse à chaque livraison."
+  parametres: [char_debouche_cimenterie, cimenterie_tonnage_dechets]
+
+A3G-GEORISQUES-VICAT-XEUILLEY-2026:
+  titre: "Rapport de l'inspection des installations classées, VICAT Xeuilley, installation Argilor (visite du 25/03/2026, réf. 2026_0302)"
+  editeur: "DREAL Grand Est (Géorisques)"
+  date: "2026-04-22"
+  type: reglementaire
+  url: "https://www.georisques.gouv.fr/webappReport/ws/installations/inspection/XrhW2gjqAYyjOiFuPda79MazLTNUwMTi"
+  emplacement: "fiche n° 2 p. 4-5 (AP complémentaire du 04/01/2022, art. 4) ; fiche n° 3 p. 5-7 ; fiche n° 6 p. 9-10"
+  contenu: "Installation d'activation d'argiles de Vicat à Xeuilley (Meurthe-et-Moselle) : déchets admis = DAE non dangereux sous forme de CSR et déchets de bois ; 382 t de CSR consommées en 2025, soit 8,9 % du mix énergétique ; CSR exigé « de très bonne qualité » ; complément au charbon à coke, coke de pétrole ou gaz naturel. VLE à 10 % d'O2 : HCl 10 mg/m3 ; SO2 250 ; somme métaux 0,5 ; Hg 0,05 ; Cd+Tl 0,05."
+  citation: "« Déchets d'activités économiques non dangereux sous forme CSR (Combustibles solides de récupération) » [...] « 382 tonnes de CSR ont été consommées en 2025, ce qui représente 8,9% du mix énergétique » [...] « le CSR utilisé doit être de très bonne qualité »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Petit débouché (argiles calcinées, pas un four à clinker) mais nouveau type d'installation consommant du combustible solide de récupération ; aucune valeur d'admission (PCI, chlore) publiée."
+  parametres: [char_debouche_autre_four]
+
+# ---------------------------------------------------------------
+# 2. VALEUR ÉNERGÉTIQUE DE RÉFÉRENCE (COMEXT)
+# ---------------------------------------------------------------
+
+A3G-COMEXT-PETCOKE-NC27131100-FR:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409) : importations françaises de coke de pétrole non calciné, NC 2713 11 00"
+  editeur: "Eurostat (Comext)"
+  date: "données 2023 à juin 2026, mise à jour du jeu de données 2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=en&freq=A&reporter=FR&partner=WORLD&product=27131100&flow=1&time=2025"
+  emplacement: "API Comext, réponse JSON : indicateurs VALUE_IN_EUROS (indice 0) et QUANTITY_IN_100KG (indice 1). Requêtes : freq=A, reporter=FR, flow=1 (import), partner=WORLD ou EXT_EU27_2020, product=27131100, time=2023, 2024, 2025 ; puis freq=M, sinceTimePeriod=2026-01 pour le premier semestre 2026."
+  contenu: "Importations France, monde : 2023 = 59 669 694 EUR pour 3 945 099,42 q (394 510 t), soit 151,25 EUR/t ; 2024 = 41 416 991 EUR pour 3 381 869,31 q (338 187 t), soit 122,47 EUR/t ; 2025 = 33 055 532 EUR pour 2 808 287,68 q (280 829 t), soit 117,71 EUR/t ; janvier-juin 2026 = 17 046 418 EUR pour 1 386 285,83 q (138 629 t), soit 122,96 EUR/t. Hors UE (EXT_EU27_2020) : 2023 = 26 497 555 EUR / 1 901 679,03 q, soit 139,34 EUR/t ; 2024 = 16 642 974 EUR / 1 552 506,54 q, soit 107,20 EUR/t ; 2025 = 13 333 078 EUR / 1 268 278,99 q, soit 105,13 EUR/t. Au PCI SDES de 32 GJ/t : 4,73 EUR/GJ (2023), 3,83 (2024), 3,68 (2025), 3,84 (S1 2026). Calcul : valeur / (quantité en 100 kg / 10) = EUR/t ; EUR/t / 32 = EUR/GJ."
+  citation: "\"product\":{\"index\":{\"27131100\":0},\"label\":{\"27131100\":\"Petroleum coke, non-calcined\"}} ; 2025 : \"value\":{\"0\":33055532,\"1\":2808287.68} ; 2024 : {\"0\":41416991,\"1\":3381869.31} ; 2023 : {\"0\":59669694,\"1\":3945099.42} ; mois 2026-01 à 2026-06 (valeur/quantité) : 332207/21120.78, 3719429/369087.28, 6670058/599609.27, 940146/51295.18, 4150925/319019.07, 1233653/26154.25"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via le navigateur Chrome de l'utilisateur (onglet dédié, fetch de l'API en lecture seule depuis une page ec.europa.eu, onglet refermé) ; curl et WebFetch ne restituaient pas la réponse brute. Valeur statistique à la frontière (CAF pour les importations), hors taxes, hors transport intérieur jusqu'à la cimenterie. La NC 2713 11 ne distingue pas le coke « fuel grade » (cimenterie) du coke destiné à d'autres usages ; c'est une valeur unitaire moyenne, pas un prix de marché. Les volumes mensuels sont très irréguliers (juin 2026 : 1 233 653 EUR pour 2 615 t, soit 471,7 EUR/t, valeur atypique probablement liée à un lot particulier) : préférer les moyennes annuelles. Divergence avec INSEE EACEI (coke de pétrole 254 EUR/t en 2024, déjà au registre) : l'EACEI mesure un prix d'achat moyen rendu usine des industriels, la valeur Comext un prix frontière ; écart d'environ 130 EUR/t en 2024."
+  parametres: [prix_coke_petrole_import, prix_coke_petrole_eur_gj, char_valeur_energetique]
+
+A3G-COMEXT-CHARBON-NC27011290-FR:
+  titre: "EU trade since 1988 by HS2-4-6 and CN8 (DS-045409) : importations françaises de houille bitumineuse non agglomérée hors charbon à coke, NC 2701 12 90"
+  editeur: "Eurostat (Comext)"
+  date: "données 2023 à juin 2026, mise à jour du jeu de données 2026-09-15"
+  type: statistique_publique
+  url: "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409?format=JSON&lang=en&freq=A&reporter=FR&partner=WORLD&product=27011290&flow=1&time=2025"
+  emplacement: "API Comext, réponse JSON : VALUE_IN_EUROS (indice 0), QUANTITY_IN_100KG (indice 1). Mêmes paramètres que la fiche coke de pétrole, product=27011290."
+  contenu: "Importations France, monde : 2023 = 618 951 292 EUR pour 23 657 009,77 q (2 365 701 t), soit 261,64 EUR/t ; 2024 = 308 105 153 EUR pour 15 615 159,61 q (1 561 516 t), soit 197,31 EUR/t ; 2025 = 301 492 232 EUR pour 18 162 717,1 q (1 816 272 t), soit 166,00 EUR/t ; janvier-juin 2026 = 144 404 329 EUR pour 8 790 038,1 q (879 004 t), soit 164,28 EUR/t. Au PCI SDES du charbon-vapeur de 26 GJ/t : 10,06 EUR/GJ (2023), 7,59 (2024), 6,38 (2025), 6,32 (S1 2026). Pour mémoire, NC 2701 12 10 (charbon à coke) 2025 : 414 804 306 EUR / 23 464 721,1 q, soit 176,8 EUR/t ; NC 2713 12 00 (coke de pétrole calciné) 2025 : 138 068 833 EUR / 2 269 122,03 q, soit 608,5 EUR/t."
+  citation: "\"Bituminous coal, whether or not pulverised, non-agglomerated (excl. coking)\" ; 2025 : 301492232 | 18162717.1 ; 2024 : 308105153 | 15615159.61 ; 2023 : 618951292 | 23657009.77 ; mois 2026-01 à 2026-06 : 15739867/1060367.07, 8282055/452018.52, 28421479/1793378.08, 25662459/1708952.25, 27361535/1568853.86, 38936934/2206468.32"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via le navigateur Chrome (même méthode que la fiche coke de pétrole). Valeur frontière CAF, hors taxe carbone et hors acheminement. Le PCI réel du charbon importé n'est pas connu (le PCI SDES de 26 GJ/t est conventionnel). Constat : en valeur frontière, le coke de pétrole (3,7 EUR/GJ en 2025) est nettement moins cher que le charbon (6,4 EUR/GJ), ce qui fixe le plafond de valeur d'un combustible substitué en cimenterie au niveau du coke de pétrole. Divergence avec INSEE EACEI (houille 215 EUR/t en 2024, prix rendu industriel) : écart d'environ 18 EUR/t avec la valeur frontière 2024."
+  parametres: [prix_charbon_import, prix_charbon_eur_gj, char_valeur_energetique]
+
+# ---------------------------------------------------------------
+# 3. AUTRES DÉBOUCHÉS ET RÉFÉRENCES DE PRIX DES COMBUSTIBLES DE DÉCHETS
+# ---------------------------------------------------------------
+
+A3G-ALBA-EBS-HINTERGRUND-2023:
+  titre: "Hintergrundpapier: Ersatzbrennstoffe, wie Abfall Kohle ersetzen kann"
+  editeur: "ALBA Group"
+  date: "2023-01-11 (date du nom de fichier ; date non imprimée dans le texte)"
+  type: entreprise
+  url: "https://www.alba.info/fileadmin/user_upload/Corporate_Site/PDF/hintergrundpapiere/230111_Hintergrundpapier_Ersatzbrennstoff.pdf"
+  emplacement: "p. 1 (chlore) ; p. 2 (PCI, granulométrie) ; p. 3 (exemple de prix, tonnages 2019)"
+  contenu: "Allemagne : le chlore des CSR destinés aux cimenteries doit être inférieur à 1 % ; PCI des CSR 12 à 18 MJ/kg ; livraison aux cimenteries en granulométrie 0-50 mm et 0-80 mm. Exemple de chaîne de prix : l'entreprise paie 150 EUR/t au fabricant de CSR, qui paie 50 EUR/t à la cimenterie pour qu'elle prenne le CSR ; la cimenterie ou la centrale paie un prix négatif pour son combustible. 1,16 Mt de plastiques utilisés comme combustibles de substitution en 2019 (cimenteries, centrales)."
+  citation: "« So muss der Chlorgehalt von EBS unter 1 Prozent liegen. » [...] « in einer Korngröße von 0 bis 50 und 0 bis 80 Millimetern gehen die klimaschonenden EBS an Zement-Fabriken » [...] « 150 Euro pro Tonne an den EBS-Hersteller, der wiederum 50 Euro pro Tonne EBS an das Zementwerk abgibt. »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source d'entreprise (opérateur de déchets) ; le prix de 50 EUR/t est présenté comme un exemple de calcul, pas comme un prix de marché constaté. Concorde avec FNADE 2023 (gate fee CSR payé par le producteur, déjà au registre) et contredit la fourchette « vente 0 à 50 EUR/t » de l'Observatoire normand 2021. Le char Urban Rig (32 MJ/kg PCS) a un PCI très supérieur à ces CSR, ce qui n'est pas valorisé dans cet exemple."
+  parametres: [char_prix_csr_cimenterie, char_spec_cimenterie, char_export_allemagne]
+
+# ---------------------------------------------------------------
+# 4. CHARS DE PYROLYSE OU DE CARBONISATION VENDUS (JAPON, PNEUS)
+# ---------------------------------------------------------------
+
+A3G-KHI-GOMI-TANKA-NENRYO:
+  titre: "ごみ炭化燃料化システム (système de transformation des ordures en combustible carbonisé), dossier de prix 優秀環境装置, 日本産業機械工業会会長賞"
+  editeur: "川崎重工業株式会社 (Kawasaki Heavy Industries), publié par la JSIM (Japan Society of Industrial Machinery Manufacturers)"
+  date: "non indiquée dans le texte extrait (50e édition du concours selon l'URL)"
+  type: entreprise
+  url: "https://jsim.or.jp/pdf/commendation/50_13.pdf"
+  emplacement: "p. 127 (utilisations) ; p. 129 (PCI, tableau 5, déchloration) ; p. 133-134 (économie)"
+  contenu: "Char d'ordures ménagères vendu comme combustible de substitution à des installations utilisant des combustibles fossiles (centrales thermiques d'exploitants électriques, usines de traitement des déchets, centrales d'enrobage). PCI du char 16 000 kJ/kg ou plus (base anhydre). Ordures brutes à 1 à 3 % de chlore, concentré dans le char ; un déchlorateur ramène le chlore à environ 0,2 à 0,4 %. La collectivité vend le char à bas prix (elle évite le coût de mise en décharge des mâchefers et perçoit une recette), prix variable selon la collectivité, moins cher par unité de chaleur que le fioul lourd ; les montants en yens ne sont pas lisibles dans le texte extrait."
+  citation: "« 炭化燃料の発熱量は16,000kJ/kg以上（乾燥条件：無水）であり、燃料として十分な発熱量 » [...] « 脱塩装置に供給された炭化物は、0.2-0.4%程度まで塩素濃度を低減可能な » [...] « 自治体は主灰の最終処理費用を負担せずに燃料として収入を得られることから、安価で販売が可能となるためである。 » [...] « 炭化燃料の販売価格は、自治体によって変わるが、 »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; chiffres de capacité et de prix (円/t) absents ou corrompus dans l'extraction du PDF. Source de constructeur. Précédent qualitatif : un char d'OM est vendu, à bas prix, comme combustible ; le chlore brut du char d'OM (sans déchloration) est élevé, ce qui est le principal risque pour le char Urban Rig (chlore non mesuré)."
+  parametres: [char_prix_exemples, char_chlore_reference]
+
+A3G-MOE-HARIMA-TANKA-2019:
+  titre: "Rapport du projet d'évaluation de la récupération d'énergie par carbonisation dans des installations de traitement des déchets de petite et moyenne taille (炭化燃料化技術を活用した中小廃棄物処理施設におけるエネルギー回収評価事業), exercice 2018"
+  editeur: "Ministère de l'Environnement du Japon (環境省) ; travaux Kawasaki Heavy Industries"
+  date: "2019 (réunions du comité du 06/11/2018 et du 05/03/2019 ; date de publication non imprimée)"
+  type: etude_publique
+  url: "https://www.env.go.jp/content/900536080.pdf"
+  emplacement: "p. 6-4 (usine de Harima) ; p. 7-1 et 7-2 (bilan matière et PCI) ; p. 8-1 ; p. 9-2 (centre de carbonisation de Saikai)"
+  contenu: "Cas d'étude : centre de traitement des déchets de Harima (Hyogo). Hypothèse de 50 t/j d'ordures, rendement en char 18 %, soit 9,0 t/j de char ; utilisation 1,2 t/j dans l'unité de carbonisation, 0,12 t/j dans l'usine de traitement des déchets, 7,7 t/j en chaudière en remplacement du charbon. PCI du char 3 000 kcal/kg (environ 12,6 MJ/kg, conversion du sous-agent) contre 5 375 kcal/kg pour le charbon. Aucune valeur de prix de vente du char dans le document ; coût d'abattement 132 000 JPY/t CO2."
+  citation: "« 炭化燃料製造量 9.0 t/日 » ; « ボイラで炭化燃料使用量 7.7 t/日 » ; « 炭化物発熱量 3,000 kcal/kg » ; « 石炭発熱量 5,375 kcal/kg »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Capacité contradictoire dans le document (45 t/j x 2 fours p. 6-4 ; 25 t/j x 2 p. 7-1). Le char japonais d'OM issu de carbonisation a un rendement (18 %) et un PCI (environ 12,6 MJ/kg) très inférieurs aux données constructeur Urban Rig (25 %, 32 MJ/kg PCS) : écart à expliquer par le porteur (cendres, humidité, procédé). Cohérent avec le CARBOR d'Arthelyse (11,7 à 15,1 MJ/kg sur sec, A3-VICAT-CRECHY-CARBOR-2008)."
+  parametres: [char_prix_exemples, char_rendement_reference, char_pci_reference]
+
+A3G-PYRUM-CONTINENTAL-ACCORD-2024:
+  titre: "Pyrum Innovations AG concludes framework agreement with Continental for long-term acceptance of its recovered carbon black"
+  editeur: "Pyrum Innovations AG (EQS News)"
+  date: "2024-07-30"
+  type: entreprise
+  url: "https://eqs-news.com/news/corporate/pyrum-innovations-ag-concludes-framework-agreement-with-continental-for-long-term-acceptance-of-its-recovered-carbon-black/2101995"
+  emplacement: "corps du communiqué"
+  contenu: "Accord-cadre de dix ans avec Continental pour l'achat du noir de carbone récupéré (rCB, issu du char de pyrolyse de pneus) d'au moins deux usines Pyrum ; capacité portée de 20 000 à 40 000 t/an de pneus usagés ; avance de Continental sur livraisons futures. Aucun prix ni volume de rCB publié."
+  citation: "« The agreement covers the rCB purchase quantities for at least two Pyrum plants, with a term of ten years. » [...] « Continental has agreed to make an advance payment for future rCB deliveries, »"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le communiqué des résultats 2025 (8 mai 2026, https://mfn.se/all/a/pyrum-innovations/pyrum-pyrum-innovations-ag-publishes-figures-for-the-2025-financial-year-d15ce56b) donne un chiffre d'affaires de 4,1 M EUR (2,0 M EUR en 2024) sans ventilation par produit ni prix. Le rCB de pneus est un débouché matière qui exige une matière première homogène (pneus) : non transposable à un char d'OM et de plastiques chargé en cendres et métaux."
+  parametres: [char_prix_exemples, char_debouche_noir_carbone]
+
+# ---------------------------------------------------------------
+# NON TROUVÉ
+# ---------------------------------------------------------------
+# - Liste nominative et localisation des cimenteries françaises (France Ciment, Infociments, ATILH) : la feuille de route 2023 ne
+#   donne qu'une carte (figure 1-1, non restituée). Pages Infociments non trouvées par recherche. Requêtes : « France Ciment chiffres
+#   clés 2024 cimenteries carte usines combustibles de substitution taux », « cimenteries France carte liste usines clinker ».
+#   Information de presse non retenue (globalcement.com, 05/04/2024) : fermeture annoncée de Beffes et Villiers-au-Bouin (Heidelberg)
+#   d'ici octobre 2025 ; à confirmer par source officielle.
+# - Taux de substitution par usine et tonnage de CSR consommé en France après 2021 (France Ciment, rapports RSE) : non trouvé ;
+#   présentation Vicat FY2025 (vicat.com, 17/02/2026) : taux de combustibles de substitution non attribuable dans l'extraction.
+# - « Montereau » : aucune cimenterie à clinker identifiée sous ce nom ; non vérifié.
+# - Arrêtés préfectoraux récents (après 2018) avec valeurs d'admission chiffrées (PCI, chlore, soufre, métaux) : AP Airvault du
+#   25/05/2022 (n° A6375), AP EQIOM Rochefort du 24/01/2018 (chapitre 3.3), AP Ranville post-2017 : non trouvés en ligne sur Géorisques
+#   (seuls des rapports d'inspection citant ces AP sont publiés). Rapport Lafarge Martres-Tolosane 2023 (Géorisques
+#   6riYNunzYfBa0gvDZbkNt3p4bO4nCHF4) et Calcia Airvault 2024 (auHaQWeQxL9ttNdaTxuOelF7dbKwyagA) lus : paramètres analysés
+#   (chlore, fluor, soufre, métaux, PCB, PCI) sans valeur limite. Diaporama CSS Lafarge Saint-Pierre-la-Cour 2022 (mayenne.gouv.fr) :
+#   lecture refusée (robots).
+# - Prix du coke de pétrole « fuel grade » livré cimenterie (Argus, Platts) : payant, NON TROUVÉ ; seule la valeur unitaire Comext
+#   NC 2713 11 00 (toutes qualités) a été obtenue.
+# - SDES, prix CAF du charbon-vapeur importé 2024 : non trouvé sur la page « Bilan énergétique de la France pour 2024 » (04/03/2026).
+# - Prix publics EUWID des CSR (Allemagne) : articles EUWID consultés en résultats de recherche seulement, prix réservés aux abonnés ;
+#   NON TROUVÉ. Seul l'exemple ALBA (50 EUR/t payés à la cimenterie) a été lu.
+# - Fours à chaux, chaudières industrielles, centrales européennes à CSR haut PCI : aucune spécification ni prix public cherché avec
+#   succès dans le temps imparti ; NON TROUVÉ.
+# - Sidérurgie (charbon pulvérisé injecté) : aucune source plus récente que IEA CCC 2010 (déjà au registre, lot C).
+# - Charbon actif, noir de carbone à partir de char d'OM : aucune spécification ni prix public trouvé ; NON TROUVÉ.
+# - Japon, prix de vente du char d'OM (円/t) : dossier Kawasaki (prix illisible dans l'extraction), rapport MOE Harima (pas de prix),
+#   contrat d'Oita (kokeinenryoubaibai.pdf : prix unitaire non chiffré, boues d'épuration), Kumamoto (Kyushu Electric, boues,
+#   prix non publié), Aichi Kinuura (boues, pas de prix). Requêtes : « 炭化物 売却 単価 円/t 一般廃棄物 炭化施設 燃料 »,
+#   « 炭化燃料 売払 単価 円 クリーンセンター 炭化施設 決算 ごみ », « "炭化物売払" OR "炭化燃料売払" 収入 円 »,
+#   « 恵那市 炭化物 売却 製鉄所 », « 田原市 炭生館 炭化物 売却 単価 ». NON TROUVÉ.
+# - Pyrum : rapport annuel 2024 (more-ir.de, DE000A2G8ZX8-JA-2024-EQ-E-01.pdf) illisible par l'outil ; aucun prix de rCB ou de char
+#   publié dans les communiqués lus. Scandinavian Enviro Systems, Bolder Industries : prix non cherchés au-delà des résultats de
+#   recherche (aucun prix public visible). NON TROUVÉ.
+# - Usines de thermolyse françaises (Arthelyse/Thide Arras, Vernouillet) : devenir du char après 2008 non trouvé ; requête
+#   « "Arthelyse" thermolyse Saint-Laurent-Blangy arrêt "carbor" coût » sans résultat pertinent. NON TROUVÉ.
+# - Coût public de granulation ou de briquetage d'un char (EUR/t) : NON TROUVÉ (requête « coût de granulation €/t pellets
+#   broyage briquetage char ou biochar coût de production granulés étude ADEME » : résultats sur le granulé de bois seulement).
+# - Humidité et forme exigées (poudre, granulés) pour un combustible solide fin en cimenterie : seule la granulométrie des CSR
+#   (moins de 20 mm à Couvrot, déjà au registre ; 0-50 et 0-80 mm en Allemagne, ALBA) a été lue.

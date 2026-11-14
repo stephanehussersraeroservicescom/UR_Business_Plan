@@ -7,6 +7,8 @@ Ces textes sont à coller dans ChatGPT ou DeepSeek pour qu'ils contre-vérifient
 - Une vérification par conversation, pour éviter que les consignes se diluent.
 - Ces agents peuvent eux aussi inventer. Un verdict ne compte que s'il est accompagné d'une citation exacte. Quand deux vérificateurs ne sont pas d'accord, c'est vous qui ouvrez la source.
 
+Pour contre-vérifier une annexe complète avec ChatGPT en mode Codex, relié au dossier local, utiliser la procédure en lots : `verification-annexe-02.md` (modèle pour les annexes suivantes). Les prompts ci-dessous servent pour ChatGPT ou DeepSeek sans accès au dépôt, par exemple pour les sources publiques quand Codex n'a pas internet.
+
 | Prompt | Quand l'utiliser |
 |---|---|
 | 0. Règles permanentes | Une fois, dans les instructions personnalisées de l'outil (s'il en a), sinon en tête de chaque conversation |

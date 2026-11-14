@@ -1,0 +1,416 @@
+# Lot E, carbone : mécanismes applicables et facteurs d'émission (CO2 évité vs incinération)
+# Sous-agent de recherche, 15/10/2026. Lecture via WebFetch (les citations sont limitées par l'outil à des extraits courts, < 125 caractères).
+
+# ---------------------------------------------------------------
+# 1. SEQE-UE et incinération des déchets municipaux
+# ---------------------------------------------------------------
+
+A3-UE-DIR-2023-959-CONSID98:
+  titre: "Directive (UE) 2023/959 du Parlement européen et du Conseil du 10 mai 2023 modifiant la directive 2003/87/CE (version EN, considérants)"
+  editeur: "Union européenne, Journal officiel L 130 du 16/05/2023"
+  date: "2023-05-10"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023L0959"
+  emplacement: "Considérant (98)"
+  contenu: "Le considérant (98) prévoit qu'au plus tard en juillet 2026 la Commission fasse rapport sur la faisabilité d'inclure les installations d'incinération de déchets municipaux dans le SEQE-UE, en vue d'une inclusion à partir de 2028, et évalue le besoin éventuel d'une option de retrait (opt-out) pour un État membre jusqu'à fin 2030. Le texte opérationnel (article 1 modifiant l'article 30 et l'annexe I) n'a pas pu être lu : la page EUR-Lex est tronquée par l'outil avant ces points (HTML, PDF et version consolidée 02003L0087-20240301 essayés)."
+  citation: "By July 2026 [...] the feasibility of including municipal waste incineration installations in the EU ETS, including with a view to their inclusion from 2028 [...] provide an assessment of the potential need for an option for a Member State to opt out until the end of 2030"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Citation en extraits juxtaposés (les [...] marquent les coupures de l'outil). Considérant, pas article : la date exacte « 31 juillet 2026 » n'apparaît pas dans l'extrait lu ; voir A3-ZWE-SEQE-ART30-2024 pour le texte de l'article (secondaire)."
+  parametres: [seqe_incineration_calendrier_2023]
+
+A3-ZWE-SEQE-ART30-2024:
+  titre: "Incineration in the EU ETS (Zero Waste Europe, version finale)"
+  editeur: "Zero Waste Europe (ONG)"
+  date: "2024-09"
+  type: etude_publique
+  url: "https://zerowasteeurope.eu/wp-content/uploads/2024/09/ZWE-Incineration-in-the-EU-ETS-Final-Version.docx.pdf"
+  emplacement: "Introduction, p. 7-8 (article 30, paragraphe 7, cité) ; p. 12 (annexe I modifiée et définition IED citées)"
+  contenu: "Le document reproduit l'article 30(7) de la directive 2003/87/CE modifiée : rapport de la Commission au plus tard le 31/07/2026 sur l'inclusion des incinérateurs de déchets municipaux, en vue d'une inclusion à partir de 2028, avec évaluation d'une option d'opt-out jusqu'au 31/12/2030. Il reproduit aussi l'ajout à l'annexe I : à partir du 1er janvier 2024, la combustion de combustibles dans les installations d'incinération de déchets municipaux relève des articles 14 et 15 (surveillance, déclaration, vérification), sans obligation de restitution de quotas."
+  citation: "By 31 July 2026, the Commission shall present a report to the European Parliament and to the Council [...] including with a view to their inclusion from 2028 [...] for a Member State to opt out until 31 December 2030 ; From 1 January 2024, combustion of fuels in installations for the incineration of municipal waste [...] for the purposes of Articles 14 and 15"
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source militante (ONG) qui cite le texte légal ; le texte légal lui-même (EUR-Lex) n'a pas pu être lu jusqu'à l'article 30 et à l'annexe I (troncature). Pagination du PDF incohérente selon l'outil."
+  parametres: [seqe_incineration_calendrier_2023, seqe_incineration_mrv_2024]
+
+A3-UE-DIR-2010-75-ART3:
+  titre: "Directive 2010/75/UE relative aux émissions industrielles (IED), article 3"
+  editeur: "Union européenne"
+  date: "2010-11-24"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010L0075"
+  emplacement: "Article 3, points (40) et (41)"
+  contenu: "Définition de l'installation d'incinération et de coïncinération des déchets : le traitement thermique inclut la pyrolyse, la gazéification et le procédé plasma, mais seulement si les substances issues du traitement sont ensuite incinérées. C'est cette définition à laquelle renvoie l'annexe I du SEQE (et la proposition COM(2026) 616). Une pyrolyse dont l'huile et le char sont vendus (et non brûlés sur place) ne serait donc pas une installation d'incinération au sens de l'IED ; le gaz brûlé sur place pose question (non tranché par le texte lu)."
+  citation: "through the incineration by oxidation of waste as well as other thermal treatment processes [...] such as pyrolysis, gasification or plasma process [...] if the substances resulting from the treatment are subsequently incinerated"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (version de base 2010, non consolidée ; texte antérieur à 2018 mais toujours en vigueur sur ce point selon la lecture ; la directive (UE) 2024/1785 modifiant l'IED n'a pas été vérifiée). L'application à Urban Rig est une lecture, pas une position d'une autorité."
+  parametres: [seqe_perimetre_pyrolyse]
+
+A3-UE-COM-2026-616-EXPOSE:
+  titre: "Proposal for a Directive amending Directive 2003/87/EC and Decision (EU) 2015/1814 as regards driving competitiveness and cost-effective decarbonisation, COM(2026) 616 final"
+  editeur: "Commission européenne"
+  date: "2026-07-17"
+  type: reglementaire
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52026PC0616"
+  emplacement: "Exposé des motifs, section 5 « Detailed explanation of the specific provisions », rubrique « Municipal waste incineration »"
+  contenu: "Proposition (procédure 2026/0212(COD)) d'étendre le SEQE à toute l'incinération et coïncinération de déchets non dangereux (seuil > 3 t/h, définitions IED), avec obligations de restitution introduites progressivement de 2031 à 2034 et une option de retrait national temporaire pour les États membres appliquant des mesures équivalentes ; l'incinération de déchets dangereux reste exclue. L'exposé des motifs ne mentionne ni la pyrolyse ni le recyclage chimique, ni le rapport de l'article 30(7). Il ne dit pas que des réductions hors périmètre donnent des crédits."
+  citation: "gradually phased in over the period 2031 to 2034 ; Member States implementing appropriate equivalent measures should be eligible to a temporary national opt-out."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Les articles du dispositif (après le caractère 100 000 de la page) n'ont pas pu être lus : seuls les considérants 10 à 39 sont apparus avec l'offset. Les pourcentages 25/50/75/100 % et la date de notification de l'opt-out ne sont donc pas vérifiés en source primaire (voir A3-LOYENS-2026-SEQE-DECHETS). Proposition, pas texte adopté."
+  parametres: [seqe_incineration_proposition_2026]
+
+A3-UE-COM-2026-616-ANNEXES-FR:
+  titre: "ANNEXES de la proposition de DIRECTIVE DU PARLEMENT EUROPÉEN ET DU CONSEIL modifiant la directive 2003/87/CE et la décision (UE) 2015/1814 en ce qui concerne le renforcement de la compétitivité et de la décarbonation à coûts maîtrisés (COM(2026) 616 final, annexes 1 à 2 ; Conseil 12073/26 ADD 1)"
+  editeur: "Commission européenne, transmis par le Conseil de l'UE"
+  date: "2026-07-17"
+  type: reglementaire
+  url: "https://data.consilium.europa.eu/doc/document/ST-12073-2026-ADD-1/fr/pdf"
+  emplacement: "Annexe I modifiée, p. 2 (point 5) et p. 4 (nouvelle ligne « Incinération et coïncinération des déchets »)"
+  contenu: "La proposition supprime les mots « ou municipaux » de l'exclusion du point 5 de l'annexe I (l'exclusion des déchets dangereux demeure) et ajoute une activité : à partir du 1er janvier 2031, élimination ou valorisation de déchets (non dangereux) dans des installations d'incinération ou de coïncinération de capacité > 3 t/h, À L'EXCLUSION DU RECYCLAGE CHIMIQUE ; gaz visé : dioxyde de carbone. La pyrolyse n'est pas nommée. Pour les décharges : rapport de la Commission au plus tard le 31/07/2029 sur deux conditions, inclusion en 2031 ou 2034."
+  citation: "au point 5, les mots suivants sont supprimés: «ou municipaux» ; À partir du 1er janvier 2031, l'élimination ou la valorisation des déchets dans des installations d'incinération [...] avec une capacité supérieure à 3 tonnes par heure, à l'exclusion du recyclage chimique."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Proposition non adoptée. L'exclusion « recyclage chimique » est favorable à une pyrolyse de plastiques produisant une matière (si l'huile est qualifiée de recyclage chimique) ; elle ne couvre pas a priori une huile vendue comme combustible. Le texte ne définit pas le recyclage chimique dans l'extrait lu."
+  parametres: [seqe_incineration_proposition_2026, seqe_perimetre_pyrolyse]
+
+A3-LOYENS-2026-SEQE-DECHETS:
+  titre: "European Commission proposal: extension of the EU ETS to waste incineration (From monitoring to surrender obligations)"
+  editeur: "Loyens & Loeff (cabinet d'avocats)"
+  date: "2026-07"
+  type: entreprise
+  url: "https://www.loyensloeff.com/insights/news--events/news/european-commission-proposal-extension-of-the-eu-ets-to-waste-incineration/"
+  emplacement: "Article web, corps du texte"
+  contenu: "Selon le cabinet, la proposition du 17/07/2026 soumettrait l'incinération des déchets municipaux à la tarification carbone à partir de 2031 ; restitutions égales à 25 % des émissions de 2031, 50 % en 2032, 75 % en 2033, 100 % à partir de 2034 ; exemption temporaire possible jusqu'à l'année de référence 2035 si au moins deux de trois conditions sont remplies, demande à notifier au plus tard le 31/07/2029 ; captage du carbone éligible au soutien (Industrial Decarbonisation Bank, Fonds d'innovation, Fonds de modernisation)."
+  citation: "On 17 July 2026, the European Commission published a proposal to revise the EU Emissions Trading System. ; equivalent to 25% of the relevant total in 2031, 50% in 2032, 75% in 2033 and 100% as of 2034 ; The Member State must notify its request to the Commission by 31 July 2029."
+  statut: secondaire
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Source commerciale (cabinet) qui résume la proposition COM(2026) 616 ; les pourcentages et la date du 31/07/2029 n'ont pas été lus dans le texte primaire (articles tronqués)."
+  parametres: [seqe_incineration_proposition_2026]
+
+# ---------------------------------------------------------------
+# 2. Prix EUA (source publique UE)
+# ---------------------------------------------------------------
+
+A3-ESMA-CARBON-MARKETS-2026:
+  titre: "Carbon markets report 2026 (ESMA50-481369926-34622)"
+  editeur: "ESMA, Autorité européenne des marchés financiers"
+  date: "2026-07"
+  type: etude_publique
+  url: "https://www.esma.europa.eu/sites/default/files/2026-07/ESMA50-481369926-34622_Carbon_markets_report_2026.pdf"
+  emplacement: "p. 4, p. 5 (tableau des statistiques essentielles), p. 7, p. 18"
+  contenu: "Prix spot moyen de l'EUA en 2025 : 74 EUR/tCO2e. Prix à terme moyen 5 ans en 2025 : 88 EUR/tCO2 (p. 5). Enchères 2025 : recettes 43,2 Md EUR pour 589 millions de quotas (p. 5) ; pas de prix moyen d'adjudication publié. Points 2025 : 81 EUR/tCO2 en février, sous 60 EUR/tCO2 en avril. 2026 : plus haut de deux ans à 90 EUR/tCO2 en janvier, creux à 64 EUR/tCO2 en mars (baisse de 29 %)."
+  citation: "The annual average price of EU emission allowances (EUAs) was EUR 74 per tonne of CO2-equivalent emissions in 2025 ; reached a two-year high of EUR 90/tCO2 in January 2026 ; a trough of EUR 64/tCO2 in March"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Autorité de l'UE (ESMA), pas la Commission ; le Carbon Market Report de la Commission n'a pas été trouvé pour 2025. Aucun prix d'adjudication EEX 2026 lu (fichier xlsx non lisible)."
+  parametres: [prix_eua_2025, prix_eua_2026]
+
+# ---------------------------------------------------------------
+# 3. Label bas-carbone (France)
+# ---------------------------------------------------------------
+
+A3-FR-DECRET-2018-1043:
+  titre: "Décret n° 2018-1043 du 28 novembre 2018 créant un label « Bas-Carbone » (modifié par le décret n° 2025-917 du 5 septembre 2025)"
+  editeur: "République française (texte reproduit par INERIS, AIDA)"
+  date: "2018-11-28 (modifié 2025-09-05)"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/decret-ndeg-2018-1043-281118-creant-label-bas-carbone"
+  emplacement: "Article 1er"
+  contenu: "Le label peut être attribué à des projets réduisant les émissions de GES et séquestrant du carbone, pour des émissions ayant lieu sur le territoire français. La notice précise que les réductions d'émissions couvrent les émissions évitées comme les séquestrations."
+  citation: "Il est créé un label intitulé « Label bas carbone ». ; les émissions anthropiques de gaz à effet de serre qui ont lieu sur le territoire français."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA (INERIS), Légifrance inaccessible depuis l'outil. Version affichée annotée des modifications 2025, pas certifiée consolidée."
+  parametres: [label_bas_carbone_conditions]
+
+A3-FR-ARRETE-LBC-2025:
+  titre: "Arrêté du 5 septembre 2025 définissant le référentiel du Label bas carbone (JO n° 208 du 7 septembre 2025)"
+  editeur: "Ministère chargé de l'écologie (texte reproduit par INERIS, AIDA)"
+  date: "2025-09-05"
+  type: reglementaire
+  url: "https://aida.ineris.fr/reglementation/arrete-050925-definissant-referentiel-label-bas-carbone"
+  emplacement: "Articles 2, 3, 6, 8, 15, 19"
+  contenu: "Remplace l'arrêté du 28/11/2018 (abrogé par son article 33, voir https://aida.ineris.fr/reglementation/arrete-281118-definissant-referentiel-label-bas-carbone-abroge). Crédits seulement pour des projets additionnels, au-delà d'un scénario de référence qui intègre les obligations réglementaires ; éligibilité limitée aux projets réduisant les émissions au sens d'une méthode approuvée ; exclusion des émissions directement soumises au SEQE-UE ; crédits non utilisables pour les obligations de restitution ni pour la CDN. Une nouvelle méthode passe par note de concept, avis DGEC, avis du Groupe scientifique et technique, consultation publique, approbation du DGEC. Aucune mention des déchets ou de l'économie circulaire dans le texte."
+  citation: "Les crédits carbone ne peuvent être générés que par des projets additionnels. ; Seules les réductions d'émissions et les séquestrations allant au-delà de ce scénario de référence sont reconnues. ; Tout projet permettant de réduire les émissions anthropiques de gaz à effet de serre, au sens d'une méthode approuvée ; à l'exception de celles directement soumises au système d'échange de quotas d'émissions de l'Union européenne"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur AIDA. Conséquence : sans méthode approuvée couvrant le traitement des déchets ou la pyrolyse, aucun crédit Label bas-carbone n'est possible ; développer une méthode est une procédure longue (articles 6 et 15)."
+  parametres: [label_bas_carbone_conditions]
+
+A3-DREAL-GE-LBC-PLAQUETTE-2026:
+  titre: "Label bas-carbone, plaquette (mars 2026)"
+  editeur: "DREAL Grand Est (services de l'État)"
+  date: "2026-03"
+  type: etude_publique
+  url: "https://www.grand-est.developpement-durable.gouv.fr/IMG/pdf/20260306-lbc-plaquette-w.pdf"
+  emplacement: "p. 2 et p. 3"
+  contenu: "16 méthodes approuvées au niveau national dans 7 domaines : forestier (4), agricole (6), bâtiment (2), transport (1), urbain (1), maritime (2). Aucune méthode déchets, recyclage, plastiques ou pyrolyse n'est citée ; les déchets ne figurent que comme secteur d'action possible. La liste officielle à jour est sur le site du ministère (mtect.fr/714), non lisible depuis l'outil."
+  citation: "16 méthodes sont approuvées au niveau national dans 7 domaines différents ; forestier (4 méthodes), agricole (6), bâtiment (2), transport (1), urbain (1), maritime (2) ; éviter des émissions de gaz à effet de serre par des changements de pratiques sectorielles : bâtiment, transports, déchets, agriculture… ; Un projet qui ne fait que respecter la réglementation ou correspond à des pratiques courantes ne peut être labellisé."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. La répartition donne 16 méthodes mais aucune catégorie « déchets » ou « industrie » ; la liste nominative officielle (ecologie.gouv.fr) n'a pas été lue (accès refusé, robots)."
+  parametres: [label_bas_carbone_methodes]
+
+# ---------------------------------------------------------------
+# 4. Standards volontaires
+# ---------------------------------------------------------------
+
+A3-VERRA-PLASTIC-STD-2021:
+  titre: "Plastic Waste Reduction Standard (Plastic Standard) v1.0"
+  editeur: "Verra"
+  date: "2021-02-10"
+  type: norme
+  url: "https://verra.org/documents/plastic-waste-reduction-standard-v1-0"
+  emplacement: "Activités en périmètre ; sections 3.8, 3.14 ; page programme https://verra.org/programs/plastic-program/"
+  contenu: "Programme distinct des crédits carbone : émet des crédits plastiques (Waste Collection Credits et Waste Recycling Credits), une unité = une tonne de déchet plastique collectée ou recyclée au-delà du niveau de référence. Le recyclage mécanique et chimique est dans le périmètre. Projets multi-pays possibles."
+  citation: "Waste Collection Credits or Waste Recycling Credits ; mechanical recycling and chemical recycling ; The project boundary may span multiple countries."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Le document ne dit pas explicitement que ces crédits ne sont pas des crédits carbone (citation non obtenue sur ce point) ; ce sont des unités en tonnes de plastique, pas en tCO2e. La page programme mentionne une mise à jour de la section 3.5.2."
+  parametres: [credits_plastiques_verra]
+
+A3-VERRA-PWRM-2022:
+  titre: "Verra releases revised Plastic Waste Recycling Methodology (PWRM0002, v1.1)"
+  editeur: "Verra"
+  date: "2022-06-30"
+  type: norme
+  url: "https://verra.org/verra-releases-revised-plastic-waste-recycling-methodology/"
+  emplacement: "Communiqué ; méthodologie : https://verra.org/plastic_methodology/pwrm0002-plastic-waste-recycling-methodology-v1-1/"
+  contenu: "La v1.1 ouvre la méthodologie au recyclage chimique, mais seuls les projets dont la production peut remplacer du plastique vierge sont éligibles : une production utilisée comme combustible, pour la valorisation énergétique ou comme produit chimique n'est pas éligible aux crédits plastiques. Une huile de pyrolyse vendue comme fioul ou gazole serait donc exclue."
+  citation: "Eligible projects that utilize chemical recycling technology may now apply this methodology ; The Plastic Program issues credits only to recycling projects whose output can displace virgin plastic. ; Recycling projects resulting in an output that is used as fuel, for energy recovery, or as a chemical product are not eligible for Plastic Credits."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (communiqué de l'organisme, pas le texte de la méthodologie)."
+  parametres: [credits_plastiques_verra]
+
+A3-VERRA-VMR0007-2023:
+  titre: "VMR0007 Revision to AMS-III.AJ: Recovery and Recycling of Materials from Solid Wastes, v1.0"
+  editeur: "Verra (VCS)"
+  date: "2023-09-04"
+  type: norme
+  url: "https://verra.org/methodologies/vmr0007-revision-to-ams-iii-aj-recovery-and-recycling-of-materials-from-solid-wastes-v1-0/"
+  emplacement: "Page de la méthodologie (statut, périmètre, champ sectoriel 13)"
+  contenu: "Méthodologie VCS active depuis le 04/09/2023 : récupération et recyclage de déchets municipaux en produits intermédiaires ou finis (plastiques HDPE, LDPE, PET, PVC, PP ; verre ; aluminium, acier) remplaçant la production vierge, avec facteur de décote. AMS-III.AJ seule exclue pour les nouveaux projets. La page ne mentionne ni recyclage chimique ni valorisation énergétique."
+  citation: "Effective 4 September 2023, AMS-III.AJ. is excluded as a standalone methodology for new projects."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (page de présentation, pas le document PDF de la méthodologie). Conditions détaillées d'applicabilité non lues. Règles VCS sur le double comptage avec un système d'échange de quotas : non lues."
+  parametres: [credits_carbone_vcs_dechets]
+
+A3-GS-448-2025:
+  titre: "METHODOLOGY - Recovery and Recycling of Materials from Solid Wastes, Version 1.0 (448)"
+  editeur: "The Gold Standard Foundation"
+  date: "2025-05-02"
+  type: norme
+  url: "https://globalgoals.goldstandard.org/standards/448_V1.0_Recovery-and-recycling-of-material-from-solid-wastes.pdf"
+  emplacement: "Résumé p. 2 ; section 3.1.1 p. 5 ; section 4.3.2 p. 12 ; section 4.5.2 p. 14"
+  contenu: "Méthodologie limitée à la récupération et au recyclage de métaux, alliages et minéraux (pas les plastiques) ; applicable mondialement y compris pays de l'annexe 1 ; dans les pays à haut revenu toutes les obligations légales sont réputées appliquées (additionnalité plus stricte) ; seul le recyclage au-delà de la pratique courante et des niveaux imposés est éligible."
+  citation: "applicable to projects that implement activities for the recovery and recycling of metals, alloys, and minerals ; This methodology is globally applicable. ; For high-income countries, all legal requirements shall be deemed to be enforced."
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Pertinente seulement pour les métaux récupérés par Urban Rig, pas pour l'huile ni le char. Aucune méthodologie Gold Standard pour la pyrolyse de plastiques trouvée (page https://goldstandard.org/waste-management lue : rien de nommé)."
+  parametres: [credits_carbone_gold_standard]
+
+A3-PURO-BIOCHAR-2025:
+  titre: "Puro Biochar Methodology, Edition 2025 V2"
+  editeur: "Puro.earth"
+  date: "2025-11-27"
+  type: norme
+  url: "https://7518557.fs1.hubspotusercontent-na1.net/hubfs/7518557/Puro%20Biochar%20Methodology%20-%20Edition%202025%20(version%202)%20-%20For%20Publication.pdf"
+  emplacement: "Couverture p. 1 ; règles 3.4.5 (p. 24-25), 3.4.8 (p. 27), 3.4.16 (p. 30), 3.4.26 (p. 33)"
+  contenu: "Seule méthodologie Puro liée à la pyrolyse (biochar, retrait de CO2). Les déchets municipaux en mélange et assimilés sont en catégorie « non autorisée » (pas de crédits CORC), y compris la fraction organique triée après collecte ; plastiques ajoutés volontairement tolérés seulement si volatils et ≤ 5 % m/m sec, PVC et pneus interdits ; pas de co-combustion avec charbon ou fioul ; le carbone fossile est réputé entièrement réémis. Le char d'Urban Rig (ordures ménagères et plastiques) n'est donc pas éligible."
+  citation: "Edition 2025 V2 | Approved 27 November 2025 | Status: Approved ; Non-allowed categories for biochar production: ; Mixed municipal solid waste (MSW) and assimilated waste. ; post-collection sorting of MSW to extract an organic fraction feedstock is also not deemed eligible ; the total plastic content must not exceed 5% w/w (dry basis)"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Liste des 8 méthodologies Puro lue sur https://puro.earth/carbon-removal-methods : aucune ne couvre la pyrolyse de plastiques."
+  parametres: [credits_carbone_puro]
+
+A3-EM-SOVCM-2023:
+  titre: "State of the Voluntary Carbon Market 2023 (Paying for Quality)"
+  editeur: "Ecosystem Marketplace (Forest Trends), hébergé par VCMI"
+  date: "2023-11-28"
+  type: observatoire
+  url: "https://vcmintegrity.org/wp-content/uploads/2023/12/2023-EcoMarketplace_SOVCM-Nov28_FINALrev-1.pdf"
+  emplacement: "Tableau 3, p. 14 ; tableau 1, p. 7"
+  contenu: "Catégorie « Waste Disposal » : prix moyen 3,63 USD/tCO2e en 2021 (11,6 Mt) et 7,23 USD/tCO2e en 2022 (6,2 Mt) ; dernière colonne 9,00 USD (période non identifiée par l'outil, probablement 2023 partiel). Prix moyen tout marché volontaire : 4,04 USD (2021), 7,37 USD (2022)."
+  citation: "WASTE DISPOSAL 11,647,530 $42,292,142 $3.63 6,207,615 $44,870,139 $7.23 -47% +6% +99% $9.00 ; 517 $2.1Bn $4.04 254 $1.9Bn $7.37"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Données 2021-2022, prix mondiaux en USD, catégorie dominée par le gaz de décharge, non représentative d'une pyrolyse en France. Rapports 2024 et 2025 non lus (téléchargement non accessible)."
+  parametres: [prix_credits_volontaires_dechets]
+
+# ---------------------------------------------------------------
+# 5. Facteurs d'émission
+# ---------------------------------------------------------------
+
+A3-GIEC-2006-V5-CH5-T5-2:
+  titre: "2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5 Waste, Chapter 5 Incineration and Open Burning of Waste"
+  editeur: "GIEC (IPCC), IGES"
+  date: "2006"
+  type: norme
+  url: "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/5_Volume5/V5_5_Ch5_IOB.pdf"
+  emplacement: "Tableau 5.2, p. 5.18 ; équations 5.1 et 5.2, p. 5.7"
+  contenu: "Facteur d'oxydation par défaut pour l'incinération des déchets municipaux : 100 % du carbone entrant (58 % pour le brûlage à l'air libre). Le tableau 5.2 n'a pas de ligne plastiques : il renvoie au tableau 2.4 pour la teneur en carbone et au tableau 2.5 pour la fraction fossile."
+  citation: "DEFAULT DATA FOR CO2 EMISSION FACTORS FOR INCINERATION AND OPEN BURNING OF WASTE"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Valeur 100 % lue dans le tableau mais sans citation verbatim de la cellule. Données de 2006 (plus de huit ans), toujours valeurs par défaut de référence ; le Refinement 2019 n'a pas été vérifié."
+  parametres: [ef_incineration_facteur_oxydation]
+
+A3-GIEC-2006-V5-CH2-T2-4:
+  titre: "2006 IPCC Guidelines, Volume 5 Waste, Chapter 2 Waste Generation, Composition and Management Data"
+  editeur: "GIEC (IPCC), IGES"
+  date: "2006"
+  type: norme
+  url: "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/5_Volume5/V5_2_Ch2_Waste_Data.pdf"
+  emplacement: "Tableau 2.4, p. 2.14, ligne Plastics"
+  contenu: "Plastiques dans les déchets municipaux : matière sèche 100 % du poids humide ; carbone total 75 % du poids sec (plage 67 à 85 %) ; fraction de carbone fossile 100 % du carbone total (plage 95 à 100 %). Conversion évidente : 0,75 t C/t × 44/12 = 2,75 t CO2/t de plastique avec oxydation 100 %."
+  citation: "Plastics 100 - - - - 75 67 - 85 100 95 - 100"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch. Ordre des colonnes (matière sèche, COD humide, COD sec, carbone total, fraction fossile) déduit de l'intitulé du tableau. Données de 2006."
+  parametres: [ef_incineration_plastique]
+
+A3-GIEC-2006-V2-CH2-T2-2:
+  titre: "2006 IPCC Guidelines, Volume 2 Energy, Chapter 2 Stationary Combustion"
+  editeur: "GIEC (IPCC), IGES"
+  date: "2006"
+  type: norme
+  url: "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf"
+  emplacement: "Tableau 2.2, p. 2.16 (kg de GES par TJ, base PCI)"
+  contenu: "Facteurs CO2 par défaut (min-max) en kg CO2/TJ PCI : gazole (Gas/Diesel Oil) 74 100 (72 600 à 74 800) ; fioul lourd (Residual Fuel Oil) 77 400 (75 500 à 78 800) ; anthracite 98 300 (94 600 à 101 000) ; autre charbon bitumineux 94 600 (89 500 à 99 700) ; charbon sous-bitumineux 96 100 (92 800 à 100 000) ; charbon à coke 94 600 (87 300 à 101 000) ; coke de pétrole 97 500 (82 900 à 115 000). Soit en tCO2/TJ : 74,1 ; 77,4 ; 98,3 ; 94,6 ; 96,1 ; 94,6 ; 97,5."
+  citation: "DEFAULT EMISSION FACTORS FOR STATIONARY COMBUSTION IN THE ENERGY INDUSTRIES ; Gas/Diesel Oil 74 100 72 600 74 800 ; Residual Fuel Oil 77 400 75 500 78 800 ; Other Bituminous Coal 94 600 89 500 99 700"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (lignes restituées en tableau par l'outil). Le GIEC ne donne pas de facteur pour le fioul domestique en tant que tel (assimilé au gazole). Données de 2006."
+  parametres: [ef_fioul_lourd, ef_gazole, ef_charbon]
+
+A3-GIEC-2006-V2-CH1-T1-2:
+  titre: "2006 IPCC Guidelines, Volume 2 Energy, Chapter 1 Introduction"
+  editeur: "GIEC (IPCC), IGES"
+  date: "2006"
+  type: norme
+  url: "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_1_Ch1_Introduction.pdf"
+  emplacement: "Tableau 1.2, p. 1.18 (PCI) ; tableau 1.3, p. 1.21 (teneur en carbone)"
+  contenu: "PCI par défaut (TJ/Gg = MJ/kg) : gazole 43,0 (41,4 à 43,3) ; fioul lourd 40,4 (39,8 à 41,7) ; autre charbon bitumineux 25,8 (19,9 à 30,5) ; anthracite 26,7 (21,6 à 32,2) ; sous-bitumineux 18,9 (11,5 à 26,0). Teneur en carbone (kg C/GJ) : gazole 20,2 ; fioul lourd 21,1 ; autre bitumineux 25,8 ; anthracite 26,8 ; sous-bitumineux 26,2."
+  citation: "DEFAULT NET CALORIFIC VALUES (NCVs) AND LOWER AND UPPER LIMITS OF THE 95% CONFIDENCE INTERVALS ; DEFAULT VALUES OF CARBON CONTENT"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch ; valeurs restituées en tableau, pas de citation verbatim des cellules. Utile pour convertir une tonne de char (~32 MJ/kg selon les consignes) ou de fioul en TJ. Données de 2006."
+  parametres: [pci_combustibles_giec]
+
+A3-ADEME-BC-FIOUL-LOURD:
+  titre: "Base Carbone V23.6, Fioul lourd (France continentale), identifiants 14100 et 14098"
+  editeur: "ADEME (jeu de données ouvert data.ademe.fr)"
+  date: "2014-10-20 (données) ; jeu mis à jour 2025-07-03"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l'%C3%A9l%C3%A9ment:(14100%20OR%2014098)&size=20"
+  emplacement: "Lignes 14100 (kgCO2e/litre) et 14098 (kgCO2e/kg), élément et postes Combustion/Amont"
+  contenu: "Fioul lourd, France continentale, statut « Valide générique » : 3,28 kgCO2e/L dont combustion 2,83 (CO2 fossile 2,81) et amont 0,45 ; 3,64 kgCO2e/kg dont combustion 3,14 (CO2 fossile 3,12) et amont 0,5. Autres unités (élément total) : 91,1 kgCO2e/GJ PCI (14095) ; 0,324 kgCO2e/kWh PCI (14099)."
+  citation: "Nom_base_français: Fioul Lourd ; Total_poste_non_décomposé: 2.83 ; Type_poste: Combustion ; Unité_français: kgCO2e/litre ; Période_de_validité: déc-17"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch sur l'API officielle data.ademe.fr (Base Carbone V23.6, licence ouverte) ; l'interface Base Empreinte (base-empreinte.ademe.fr) n'est pas lisible sans JavaScript. Données créées en 2014, période de validité affichée « déc-17 » mais statut toujours « Valide générique »."
+  parametres: [ef_fioul_lourd]
+
+A3-ADEME-BC-FIOUL-DOMESTIQUE:
+  titre: "Base Carbone V23.6, Fioul domestique (France continentale), identifiants 14087, 14083, 14081"
+  editeur: "ADEME (jeu de données ouvert data.ademe.fr)"
+  date: "2014-10-20 (données) ; jeu mis à jour 2025-07-03"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Nom_base_fran%C3%A7ais:%22Fioul%20domestique%22%20AND%20Localisation_g%C3%A9ographique:%22France%20continentale%22&size=60"
+  emplacement: "Lignes 14087 (kgCO2e/litre), 14083 (kgCO2e/kg), 14081 (kgCO2e/GJ PCI), statut Valide générique"
+  contenu: "Fioul domestique : 3,25 kgCO2e/L dont combustion 2,68 (CO2 fossile 2,66) et amont 0,567 ; 3,84 kgCO2e/kg dont combustion 3,17 ; 91,5 kgCO2e/GJ PCI dont combustion 75,5 (CO2 fossile 75) et amont 16."
+  citation: "Fioul domestique ; Identifiant 14087 ; Combustion ; kgCO2e/litre ; 2.68 ; Valide générique"
+  statut: ancien
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (API data.ademe.fr). Champs restitués en tableau par l'outil, pas de champ commentaire. Données de 2014."
+  parametres: [ef_fioul_domestique]
+
+A3-ADEME-BC-GAZOLE-NON-ROUTIER:
+  titre: "Base Carbone V23.6, Gazole non routier (France continentale), identifiants 14015, 14014, 13990"
+  editeur: "ADEME (jeu de données ouvert data.ademe.fr)"
+  date: "2021-06-18"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Nom_base_fran%C3%A7ais:%22Gazole%20non%20routier%22&size=60"
+  emplacement: "Lignes 14015 (kgCO2e/litre), 14014 (kgCO2e/kg), 13990 (kgCO2e/GJ PCI)"
+  contenu: "Gazole non routier, Valide générique : 3,16 kgCO2e/L dont combustion 2,57 (CO2 fossile 2,55 ; CO2 biogénique 0,093 hors total) et amont 0,589 ; 3,77 kgCO2e/kg dont combustion 3,09 ; 89,4 kgCO2e/GJ PCI dont combustion 72,7 (CO2 fossile 72,1). Le gazole routier pur (B0/B7) n'a pas été trouvé dans le jeu (seul le B30 apparaît sous « Gazole »)."
+  citation: "Gazole non routier ; 14015 ; Poste ; Combustion ; kgCO2e/litre ; 2.57 ; Valide générique ; 2021-06-18"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (API data.ademe.fr). Le GNR contient une part biosourcée (CO2b non nul) : il sous-estime légèrement un gazole fossile pur."
+  parametres: [ef_gazole]
+
+A3-ADEME-BC-ELEC-FR-2024:
+  titre: "Base Carbone V23.6, Electricité, 2024 - mix moyen, consommation (France continentale), identifiant 43642"
+  editeur: "ADEME (jeu de données ouvert data.ademe.fr)"
+  date: "2025-04-24 (données valides pour l'année 2024)"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?q=%C3%A9lectricit%C3%A9%20mix%20moyen%20consommation%20France%20continentale&size=40&sort=-Date_de_modification"
+  emplacement: "Ligne 43642, catégorie Electricité > Mix réseau électrique > France continentale > Moyen"
+  contenu: "Électricité, mix moyen consommation, France continentale, année 2024 : 0,0519 kgCO2e/kWh, dont combustion à la centrale 0,035, amont 0,0131, transport et distribution 0,0038. Ancienne valeur archivée (15387) : 0,085 kgCO2e/kWh."
+  citation: "Electricité ; 2024 - mix moyen ; consommation ; France continentale ; kgCO2e/kWh ; 0.0519 ; Données valides pour l'année 2024"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (API data.ademe.fr). Le mix moyen français très bas rend faible le crédit d'électricité évitée."
+  parametres: [ef_electricite_france]
+
+A3-ADEME-BC-OMR-INCINERATION:
+  titre: "Base Carbone V23.6, Ordures ménagères résiduelles, Incinération - Impacts (34650) et Incinération - Emissions évitées (34651)"
+  editeur: "ADEME, GT Déchets Base Carbone (jeu de données ouvert data.ademe.fr)"
+  date: "2021-05-07 (période de validité 11/03/2024)"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l'%C3%A9l%C3%A9ment:(34650%20OR%2034651%20OR%2034586%20OR%2034587)&size=20"
+  emplacement: "Lignes 34650 et 34651, catégorie Traitement des déchets > Ménages et assimilés > Ordures Ménagères Résiduelles"
+  contenu: "Incinération des OMR en France continentale : impacts 374 kgCO2e/t de déchets ; émissions évitées (valorisation énergétique) -212 kgCO2e/t ; incertitude 20 %, source « GT dechets ». Ancienne valeur archivée (22064, « Ordures ménagères ») : 3 245 kgCO2e/t avec CO2 fossile 351, et émissions évitées -164 (22068) ; ce total archivé semble inclure le CO2 biogénique (incohérence non expliquée)."
+  citation: "Nom_base_français: Ordures ménagères résiduelles ; Nom_frontière_français: Incinération - Impacts ; Total_poste_non_décomposé: 374 ; Nom_frontière_français: Incinération - Emissions évitées ; Total_poste_non_décomposé: -212"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (API data.ademe.fr). Pas de champ commentaire décrivant la méthode des émissions évitées (énergie substituée, facteurs) ; la documentation Base Empreinte n'est pas lisible sans JavaScript. Le libellé anglais de 34650 est erroné dans la base (« Avoided impacts »)."
+  parametres: [ef_incineration_omr, ef_incineration_emissions_evitees]
+
+A3-ADEME-BC-EMBALLAGES-PLASTIQUES-INCINERATION:
+  titre: "Base Carbone V23.6, Emballages plastiques, Incinération - Impacts et Incinération - Emissions évitées (source CITEO)"
+  editeur: "ADEME, GT Déchets Base Carbone, source CITEO (jeu de données ouvert data.ademe.fr)"
+  date: "2021-05-07 (période de validité 11/03/2024)"
+  type: donnees_ouvertes
+  url: "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?q=incin%C3%A9ration%20plastique&size=60&sort=-Date_de_modification"
+  emplacement: "Catégorie Traitement des déchets > Ménages et assimilés > Emballages ; identifiants 34528/34529 (PE), 34554/34555 (PP), 34496/34497 (PET), 34574/34575 (PS-PSE), 34580/34581 (PVC), 34586/34587 (autres plastiques et complexes)"
+  contenu: "Incinération d'emballages plastiques pétrosourcés, kgCO2e/t de déchets (impacts / émissions évitées) : PE 2 769 / -747 ; PP 2 769 / -768 ; PET 2 139 / -384 ; PS-PSE 2 967 / -704 ; PVC 4 613 / -299 ; autres plastiques et complexes 2 655 / -651 (incertitude 20 %). Pour comparaison, plastiques biosourcés PE/PP : 122 / -747 et -768. Anciennes valeurs archivées (2021, « fin de vie incinération ») : plastique moyen 5 563 kgCO2e/t total dont CO2 fossile 2 669 ; PE 5 797 (2 903) ; PP 5 908 (3 014) ; PET 4 876 (1 982) ; PS 6 027 (3 133)."
+  citation: "Nom_base_français: Emballages ; Nom_attribut_français: Autres plastiques et plastiques complexes ; Source: CITEO ; Nom_frontière_français: Incinération - Impacts ; Total_poste_non_décomposé: 2655"
+  statut: lu
+  consulte: 2026-10-15
+  note: "Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (API data.ademe.fr). Emballages ménagers, pas plastiques d'activités économiques. Les valeurs archivées divergent fortement des valeurs valides (les totaux archivés semblent intégrer d'autres postes) : utiliser les valeurs « Valide générique »."
+  parametres: [ef_incineration_plastique, ef_incineration_emissions_evitees]
+
+# ===============================================================
+# NON TROUVÉ
+# ===============================================================
+# - Texte verbatim de l'article 30(7) et de l'annexe I de la directive 2003/87/CE modifiée par 2023/959 (source primaire) :
+#   EUR-Lex https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023L0959 (HTML, offsets 100000 et 140000),
+#   PDF ...TXT/PDF/?uri=CELEX:32023L0959, version consolidée ...CELEX:02003L0087-20240301 (offset 100000) : pages tronquées par l'outil
+#   avant ces dispositions ; version FR refusée (robots). Cité uniquement via ZWE (secondaire).
+# - Rapport de la Commission prévu par l'article 30(7) au 31/07/2026 en tant que document distinct : non trouvé ; l'exposé des motifs de
+#   COM(2026) 616 n'y fait pas référence. Corps de la proposition (articles 12a, 30, opt-out, 25/50/75/100 %) non lu : offset 100000 de
+#   https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52026PC0616 ne montre que les considérants 10 à 39 ;
+#   https://data.consilium.europa.eu/doc/document/ST-12073-2026-INIT/fr/pdf : permission refusée (délai).
+# - Texte disant explicitement que le SEQE ne délivre pas de crédits pour des réductions hors périmètre : non trouvé. L'exposé des motifs
+#   de COM(2026) 616 ne le dit pas. Doute : l'article 24a de la directive 2003/87/CE (projets de réduction hors SEQE) n'a pas pu être lu.
+# - Position d'une autorité sur l'assujettissement d'une installation de pyrolyse au SEQE : non trouvé (seulement définitions IED et
+#   exclusion « recyclage chimique » de la proposition).
+# - Prix EUA de source Commission (Carbon Market Report 2025) : non trouvé (recherche « Carbon Market Report 2025 average auction price »).
+#   Résultats d'enchères EEX : fichiers https://public.eex-group.com/eex/eua-auction-report/emission-spot-primary-market-auction-report-2026-data.xlsx
+#   et archive zip 2012-2025 non lisibles (binaire ; curl refusé par le proxy). Moyenne des enchères 2025 et dernier résultat 2026 : NON TROUVÉ.
+# - Liste nominative officielle des méthodes du Label bas-carbone (https://www.ecologie.gouv.fr/politiques-publiques/label-bas-carbone,
+#   mtect.fr/714) : accès refusé (robots). Seule la répartition par domaine (DREAL Grand Est) a été lue ; aucune méthode déchets/pyrolyse.
+# - Gold Standard : aucune méthodologie plastiques ou pyrolyse trouvée (recherche « Gold Standard methodology waste recycling plastic »).
+# - Règles CORSIA / ICVCM (CCP) applicables : non cherchées faute de temps.
+# - Règles VCS sur l'éligibilité des projets situés dans un pays couvert par un SEQE (double comptage) : non lues.
+# - Prix des crédits volontaires « waste » 2024 et 2025 (Ecosystem Marketplace SOVCM 2024/2025) : page
+#   https://www.ecosystemmarketplace.com/publications/2025-state-of-the-voluntary-carbon-market-sovcm/ sans lien PDF lisible ; seul le rapport 2023 (données 2022) lu.
+# - Règle de calcul ADEME des émissions évitées par la valorisation énergétique de l'incinération : documentation
+#   https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Traitement_dechets non lisible (application JavaScript) ; aucun
+#   champ commentaire dans les lignes 34650/34651. Seuls les montants (-212 kgCO2e/t OMR, plastiques par résine) sont disponibles.
+# - Base Carbone : gazole routier pur (B0/B7) et charbon (facteur ADEME) non trouvés par requête ; GIEC utilisé pour le charbon.

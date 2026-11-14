@@ -1,0 +1,40 @@
+Annexe 2 : application des décisions sur le lot 1 de Codex (E-2 à E-10, et E-3).
+
+**Contexte.** Le lot 1 de la contre-vérification Codex (sections 2.1 à 2.3) a été analysé et tranché le 15/10/2026 dans une autre discussion. E-1 est déjà appliqué (D-029). Rien d'autre n'a encore été modifié dans l'annexe. Les décisions et le plan d'application sont dans `working-folder/controle-sources/verifications/ecarts-annexe-02.md` : le tableau E-1 à E-10, la section « Décision du 15/10/2026 sur E-3 » et la section « Plan d'application du lot 1 ». Ce registre fait foi ; en cas de doute, c'est lui qui l'emporte sur ce message.
+
+**Avant toute chose**
+1. Relis `REGLES-DE-RIGUEUR.md` et `CLAUDE.md`.
+2. Lis en entier `ecarts-annexe-02.md`, puis, dans le même dossier, le rapport `2026-10-15-codex-annexe-02-lot-1.md` et son addendum `...-lot-1-clarifications.md`, parties E-2 à E-10.
+3. Résume-moi en dix lignes ce que tu vas changer, puis pose-moi les trois questions ci-dessous. N'écris rien avant mes réponses.
+
+**Trois questions à me poser**
+1. Char des deux essais de Noda (emballages plastiques et résidus d'incombustibles, pas des ordures ménagères brutes) : proposition, 24,6 MJ/kg pour les deux.
+2. Tableau OneWorld p. 16 corrigé : proposition, pourcentages OneWorld appliqués à 120 t (200 m³ × 0,6, chiffres de la brochure) ; volumes d'huile calculés à 0,8642 kg/ℓ.
+3. Couverture du brûleur : proposition, garder l'exemple OneWorld à 11,5 % de gaz (2,9 fois) et ajouter une ligne de sensibilité à 10 % (D-029, 2,5 fois).
+
+**Étape 1, décisions.** Inscris dans `working-folder/params/_decisions.yaml`, aux prochains numéros libres, datées du 15/10/2026, les six décisions de la partie A du plan, dans cet ordre : E-3 ; E-4 ; E-2 avec E-6 ; E-7 ; E-9 ; E-10. Le motif reprend mes mots tels que consignés dans le registre. Aucune valeur de `params/*.yaml` ne change.
+
+**Étape 2, calculs.** Enregistre ou modifie dans `working-folder/controle-sources/calculs.yaml` les calculs de la partie B (Noda 9/9 selon la page 42 ; statistiques sur 10 essais ; tableau OneWorld corrigé ; énergie du char ; sensibilité à 10 % de gaz). Garde les calculs sur 11 essais pour la traçabilité.
+
+**Étape 3, textes.** Applique la partie C à `nouveau-business-plan/annexes/ANNEX-02-Technical-Evidence.md` et à `annexe-02-preuves/A2-5-0-working-assumptions.md`. Avant d'écrire un chiffre nouveau, relis la page source : Chiba PDF p. 1, 22, 24, 26, 29, 41, 42, 43 ; URT-10 p. 2, 5, 8 ; brochure anglaise p. 15 et 16 ; KANSO p. 1 à 3. Point par point :
+- **E-2.** Base « excluding metals and foreign matter recovered after treatment ». C'est le rendement de la charge du réacteur après tri ; la base brute (32,2 % et 45,0 %) donne l'huile par tonne reçue ; les deux restent affichées (§ 2.2.3, § 2.3.1, § 2.9).
+- **E-3.** Essai du 9/9 selon la page 42 : char 10,5 kg, métaux 13,9 kg ; hors métaux, base 36,1 kg, huile 44,6 %, gaz 26,3 %, huile + gaz 70,9 %. Eau : 100 ℓ par essai (73 + 27 ℓ le 9/9, 85 + 15 ℓ le 15/9). Encadré « incohérences de la source » limité aux écarts entre p. 26 et p. 42. Garder 16,1 kg d'huile sans écrire qu'elle a été pesée (p. 29 : jaugeage). Recalculer § 2.4.4 (énergie par tonne de Noda).
+- **E-4.** Retirer « identical ». Écrire : « two runs on PE/PP/PS mixtures, described in the report as moulded-product offcuts; according to Stéphane Husser, mixed plastic waste of unknown composition ». L'essai du 11/7 reste affiché, marqué « excluded from the averages », avec ses motifs : pièces non converties visibles dans le résidu (photo p. 24) ; gaz le plus bas (2,2 %) et huile la plus haute (82,3 %) des 11 essais. Refaire sans lui toutes les moyennes et fourchettes (messages clés, § 2.2.1, § 2.2.2, § 2.8, § 2.9).
+- **E-5.** Retirer « independent » partout (9 occurrences dans l'annexe). Écrire « third-party laboratory, commissioned by OneWorld / Land Brain / Asada Shokai » selon le rapport. Ajouter : « Test programme run by Asada Shokai at its Noda plant (March to September 2022) and reported to the Governor of Chiba Prefecture. The plant was supplied and operated by OneWorld; measurements and analyses were made by Land Brain and third-party laboratories. » Dans « How to Read This Annex », une phrase : les pourcentages mesurent la confiance dans la lecture du document, pas l'indépendance de l'essai.
+- **E-6.** Montrer le tableau OneWorld p. 16 tel quel, puis notre version corrigée (CALCULÉ), en expliquant que le tableau compte 1 litre pour 1 kg. Les 76,5 % d'huile restent une déclaration de OneWorld sur une charge à 90 % de résines. Capacité : 200 m³ par jour ; masse = volume × 0,7 t/m³ = 140 t par jour (HYPOTHÈSE de Stéphane : une presse remet la charge triée à 0,7) ; variable dans le modèle.
+- **E-7.** Nuancer « PE and PP convert almost completely » (6,1 kg de résidu sur 50 kg de palettes PP). Ajouter, étiquetée HYPOTHÈSE : « According to the project team, the internal tests carried out so far in continuous operation have shown higher yields than the batch tests. These data are not yet in this dossier. Tests on the same feed and the same basis of comparison remain to be done. » Le modèle part des rendements des lots.
+- **E-8.** Les 96 % deviennent « oil + gas by difference ». Ajouter l'huile par jour (70 %, 88 %, 91 %) ; seul le cumul de 83 % est utilisable. Ajouter la fuite de gaz à la couche catalytique le jour 1 (p. 2) et le refroidissement sans vapeur les jours 2 et 3 (p. 5 et 8). Les trois jours ne sont pas des répétitions indépendantes.
+- **E-9.** Tableau 2.1 : odeurs 2020 mesurées par Total Kankyo System pour KANSO ; spécification « 2019 (English brochure); Japanese brochure undated ». PVC : « no quantified yield data » (une observation : arrêt au stade de la fusion, URT-10 p. 8). Résidus de broyage : exclus par la nouvelle décision, avec le jugement du rapport (p. 1 note ※3 et p. 43), et non plus par D-017.
+- **E-10.** Char : 24,6 MJ/kg pour les résidus plastiques (facteur de Chiba, 5 880 kcal/kg, p. 41 et 42) ; 32,09 MJ/kg pour les déchets ménagers (Izumitec, HYPOTHÈSE de Stéphane : la matière organique, vidée de son eau, se remplit d'hydrocarbures lourds). Gaz : 37,4 MJ/kg maintenu, avec une phrase : l'échantillon KANSO est dilué par l'air du prélèvement ; l'oxygène et l'azote sont exclus ; la dilution ne change pas l'énergie par tonne. Citer le facteur de Chiba de 1 323,8 kcal/kg comme non utilisé (origine inconnue, R-011).
+- **A2-5-0.** Mettre à jour D-021 (char à deux valeurs, raisonnement sur le gaz) et D-029 (statistiques sur 10 essais), et ajouter les nouvelles décisions.
+
+**Étape 4, autres fichiers** (partie D du plan) : libellés « Independent laboratory » de `annexe-02-html/generer_html.py` ; `_evidence.yaml` (CHIBA-ESSAIS-FICHES « 15 essais, dont 13 avec huile mesurée » ; KANSO-20002610 sans « très inférieurs aux VLE usuelles » ; OWJ-DEMO-2021 avec les citations p. 2, 5 et 8 ; CHIBA-BILANS avec les facteurs 1 323,8 et 5 880 kcal/kg) ; `a-rechercher.yaml` (R-010, R-012, R-018) ; `_arbitrages.yaml` (clore `capacite_volumetrique_annexe01` et `densite_dechet_annexe01`).
+
+**Étape 5, fin de séance**
+1. `python3 nouveau-business-plan/annexes/annexe-02-html/generer_html.py`
+2. `python3 working-folder/controle-sources/verifier_sources.py` : zéro erreur sur les documents.
+3. `--echantillon 3`, puis copie de `working-folder/out/echantillon-a-verifier.md` sous `working-folder/out/echantillon-annexe-02-lot-1.md`.
+4. Dans `ecarts-annexe-02.md`, passer E-2 à E-10 en CLOS, avec la date et le numéro de décision ; mettre à jour `nouveau-business-plan/AVANCEMENT.md` ; ligne de version de l'annexe : révision 4.
+5. Rends-moi : la liste des fichiers modifiés, les numéros de décision créés, le résultat du contrôle, l'échantillon et tout point non appliqué, avec la raison.
+
+**Règles.** Aucun commit, aucune suppression ; git en lecture seule avec `git --no-optional-locks`. Jamais de tiret long. Annexe en anglais, échanges en français. Aucun chiffre sans page source relue. Si le chat devient long, écris une note de passation dans `nouveau-business-plan/annexes/notes-recherche-annexe-02/` et préviens-moi.

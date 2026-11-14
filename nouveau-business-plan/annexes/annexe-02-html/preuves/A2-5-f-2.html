@@ -35,12 +35,12 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <body><main><p class="crumb"><a href="../index.html">Annex 2. Technical Evidence</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 2.5.f.2</h1>
 <p class="small">Calculation · Chlorine ratios, OneWorld design figures and batch factors</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>Chlorine of the non-combustible residue oil divided by the 3 ppm steam cracker limit.</p><p class="result" style="margin-top:10px">Result: <strong>1753.3</strong> rapport</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Factor applied to the off-gas in the Chiba mass balances (1,323.8 kcal/kg, origin not stated) converted to MJ/kg; not used in the annex.</p><p class="result" style="margin-top:10px">Result: <strong>5.54</strong> MJ/kg</p></div>
  <div class="card"><h4>Confidence</h4><div class="conf">95 %</div><p class="small">This is a direct calculation on the inputs below; its confidence is that of its least reliable input, capped at 95 %.</p></div>
 </div>
 <h2>How it was calculated</h2>
-<p>Chlorine of the non-combustible residue oil divided by the 3 ppm steam cracker limit. The result is obtained by applying the formula below to the inputs listed, each taken from its own evidence sheet.</p>
-<h3>Formula</h3><pre>ppm / seuil</pre>
+<p>Factor applied to the off-gas in the Chiba mass balances (1,323.8 kcal/kg, origin not stated) converted to MJ/kg; not used in the annex. The result is obtained by applying the formula below to the inputs listed, each taken from its own evidence sheet.</p>
+<h3>Formula</h3><pre>facteur * kcal / 1000</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Description or location</th><th>Evidence</th></tr><tr><td><code>ppm</code></td><td>5260 ppm</td><td>Chlorine of the oil from municipal non-combustible residue, converted from % by mass to ppm.</td><td><span class="ev"><a href="A2-5-f-4.html" title="CALC-A2-JLOS-CL-RES-PPM">2.5.f.4</a></span></td></tr><tr><td><code>seuil</code></td><td>3 ppm</td><td>tableau 2</td><td><span class="ev"><a href="A2-4-e.html" title="KUSENBERG-AICHE-2021">2.4.e</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A2-CL-VAPO-RES</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Description or location</th><th>Evidence</th></tr><tr><td><code>facteur</code></td><td>1323.8 kcal/kg</td><td>Facteur energetique implicite applique a l&#x27;off-gas dans les bilans de Chiba</td><td><span class="ev"><a href="A2-5-f-6.html" title="CALC-A2-FACTEUR-OFFGAS">2.5.f.6</a></span></td></tr><tr><td><code>kcal</code></td><td>4.1868 kJ/kcal</td><td>Appendix B.9, calorie IT</td><td><span class="ev"><a href="A2-4-n.html" title="NIST-SP811-B9">2.4.n</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A2-PCI-GAZ-CHIBA</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
