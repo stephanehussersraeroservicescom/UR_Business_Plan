@@ -5824,3 +5824,386 @@ CALC-A5-PVC-CL-MAX:
       emplacement: H borne basse
   unite: '%'
   resultat: 56.7315
+
+# === ANNEXE 5, scenarios et couches (chat 5, 19/11/2026, D-047 et D-048) ===
+
+CALC-A5-SANIT-COUCHES-PART:
+  description: Part des couches bebe et autres produits d'hygiene (06.01 et 06.02) dans les textiles sanitaires des OMR
+  formule: (a + b) / t * 100
+  entrees:
+    a:
+      valeur: 859734
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: '06.01'
+    b:
+      valeur: 380662
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: '06.02'
+    t:
+      calc: CALC-A5-CAT06-T
+  unite: '%'
+  resultat: 49.502
+CALC-A5-SEC-SANIT-KG-T:
+  description: Matiere seche des textiles sanitaires par tonne d'OMR (fraction S08)
+  formule: p * (100 - h) / 10
+  entrees:
+    p:
+      valeur: 17.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: S08
+    h:
+      valeur: 60.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: S08
+  unite: kg par tonne d OMR
+  resultat: 68.0
+CALC-A5-SEC-COUCHES-KG-T:
+  description: Matiere seche des couches et produits d'hygiene par tonne d'OMR, a la meme humidite que l'ensemble des textiles sanitaires (D-048)
+  formule: s * p / 100
+  entrees:
+    s:
+      calc: CALC-A5-SEC-SANIT-KG-T
+    p:
+      calc: CALC-A5-SANIT-COUCHES-PART
+  unite: kg par tonne d OMR
+  resultat: 33.6614
+CALC-A5-COUCHE-PPPE-PCT:
+  description: Part du polypropylene et du polyethylene dans une couche neuve (Royaume-Uni, 2006)
+  formule: pp + pe
+  entrees:
+    pp:
+      valeur: 16.6
+      unite: '%'
+      source: A5-EA-2008-NAPPY-LCA
+      emplacement: tableau 1.2
+    pe:
+      valeur: 6.0
+      unite: '%'
+      source: A5-EA-2008-NAPPY-LCA
+      emplacement: tableau 1.2
+  unite: '%'
+  resultat: 22.6
+CALC-A5-SEC-POLY-COUCHES-KG-T:
+  description: PP et PE contenus dans les couches et produits d'hygiene, par tonne d'OMR (D-048)
+  formule: s * p / 100
+  entrees:
+    s:
+      calc: CALC-A5-SEC-COUCHES-KG-T
+    p:
+      calc: CALC-A5-COUCHE-PPPE-PCT
+  unite: kg par tonne d OMR
+  resultat: 7.6075
+CALC-A5-HUILE-COUCHES-BAS-KG-T:
+  description: Huile des PP et PE des couches, par tonne d'OMR, au rendement 55 % (D-044, D-047)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+    r:
+      valeur: 55
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne d OMR
+  resultat: 4.1841
+CALC-A5-HUILE-COUCHES-HAUT-KG-T:
+  description: Huile des PP et PE des couches, par tonne d'OMR, au rendement 81 % (D-044, D-047)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+    r:
+      valeur: 81
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne d OMR
+  resultat: 6.1621
+CALC-A5-HUILE-COUCHES-CENT-KG-T:
+  description: Huile des PP et PE des couches, par tonne d'OMR, au rendement moyen des 10 essais (D-034, D-047)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+    r:
+      calc: CALC-A2-HUILE10-MOY-POND
+  unite: kg par tonne d OMR
+  resultat: 5.5588
+CALC-A5-GAZ-COUCHES-KG-T:
+  description: Gaz des PP et PE des couches, 10 % de leur masse (D-029)
+  formule: m * g / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+    g:
+      valeur: 10
+      unite: '%'
+      source: D-029
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 0.76075
+CALC-A5-SEC-TEXT-KG-T:
+  description: Matiere seche des textiles (fraction S07) par tonne d'OMR
+  formule: p * (100 - h) / 10
+  entrees:
+    p:
+      valeur: 4.9
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: S07
+    h:
+      valeur: 33.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: S07
+  unite: kg par tonne d OMR
+  resultat: 32.487
+CALC-A5-SEC-CELLU-ST-KG-T:
+  description: Matiere seche des textiles sanitaires (hors PP et PE des couches) et des textiles, par tonne d'OMR
+  formule: s - p + t
+  entrees:
+    s:
+      calc: CALC-A5-SEC-SANIT-KG-T
+    p:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+    t:
+      calc: CALC-A5-SEC-TEXT-KG-T
+  unite: kg par tonne d OMR
+  resultat: 92.8795
+CALC-A5-LIQ-ST-BAS-KG-T:
+  description: Liquide oxygene (huile humide) des textiles sanitaires et textiles, a 20 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 20
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3, papier et textiles
+  unite: kg par tonne d OMR
+  resultat: 18.5759
+CALC-A5-GAZ-ST-BAS-KG-T:
+  description: Gaz des textiles sanitaires et textiles, a 45 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 45
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3, papier et textiles
+  unite: kg par tonne d OMR
+  resultat: 41.7958
+CALC-A5-LIQ-ST-CENT-KG-T:
+  description: Liquide oxygene (huile humide) des textiles sanitaires et textiles, a 22.5 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 20.8979
+CALC-A5-GAZ-ST-CENT-KG-T:
+  description: Gaz des textiles sanitaires et textiles, a 46.5 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 43.189
+CALC-A5-LIQ-ST-HAUT-KG-T:
+  description: Liquide oxygene (huile humide) des textiles sanitaires et textiles, a 25 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 25
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3, papier et textiles
+  unite: kg par tonne d OMR
+  resultat: 23.2199
+CALC-A5-GAZ-ST-HAUT-KG-T:
+  description: Gaz des textiles sanitaires et textiles, a 48 % de leur matiere seche (D-048)
+  formule: m * r / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-CELLU-ST-KG-T
+    r:
+      valeur: 48
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3, papier et textiles
+  unite: kg par tonne d OMR
+  resultat: 44.5822
+CALC-A5-SEC-ORG2-KG-T:
+  description: Matiere seche organique non plastique, hors PP et PE des couches
+  formule: o - p
+  entrees:
+    o:
+      calc: CALC-A5-SEC-ORG-KG-T
+    p:
+      calc: CALC-A5-SEC-POLY-COUCHES-KG-T
+  unite: kg par tonne d OMR
+  resultat: 356.1625
+CALC-A5-CHAR2-BAS-KG-T:
+  description: Char de la matiere organique non plastique (hors PP et PE des couches), a 25 % de sa matiere seche (D-045)
+  formule: m * c / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-ORG2-KG-T
+    c:
+      valeur: 25
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 89.0406
+CALC-A5-CHAR2-CENT-KG-T:
+  description: Char de la matiere organique non plastique (hors PP et PE des couches), a 30 % de sa matiere seche (D-045)
+  formule: m * c / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-ORG2-KG-T
+    c:
+      valeur: 30
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 106.8487
+CALC-A5-CHAR2-HAUT-KG-T:
+  description: Char de la matiere organique non plastique (hors PP et PE des couches), a 40 % de sa matiere seche (D-045)
+  formule: m * c / 100
+  entrees:
+    m:
+      calc: CALC-A5-SEC-ORG2-KG-T
+    c:
+      valeur: 40
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 142.465
+CALC-A5-HUILE-TOT-BAS-KG-T:
+  description: 'Huile d''hydrocarbures par tonne d''OMR : plastiques et PP et PE des couches'
+  formule: a + b
+  entrees:
+    a:
+      calc: CALC-A5-HUILE-BAS-KG-T
+    b:
+      calc: CALC-A5-HUILE-COUCHES-BAS-KG-T
+  unite: kg par tonne d OMR
+  resultat: 65.3122
+CALC-A5-HUILE-TOT-CENT-KG-T:
+  description: 'Huile d''hydrocarbures par tonne d''OMR : plastiques et PP et PE des couches'
+  formule: a + b
+  entrees:
+    a:
+      calc: CALC-A5-HUILE-CENT-KG-T
+    b:
+      calc: CALC-A5-HUILE-COUCHES-CENT-KG-T
+  unite: kg par tonne d OMR
+  resultat: 86.7758
+CALC-A5-HUILE-TOT-HAUT-KG-T:
+  description: 'Huile d''hydrocarbures par tonne d''OMR : plastiques et PP et PE des couches'
+  formule: a + b
+  entrees:
+    a:
+      calc: CALC-A5-HUILE-HAUT-KG-T
+    b:
+      calc: CALC-A5-HUILE-COUCHES-HAUT-KG-T
+  unite: kg par tonne d OMR
+  resultat: 96.1871
+CALC-A5-GAZ-HC-TOT-KG-T:
+  description: 'Gaz d''hydrocarbures par tonne d''OMR : plastiques et PP et PE des couches'
+  formule: a + b
+  entrees:
+    a:
+      calc: CALC-A5-GAZ-PLAST-KG-T
+    b:
+      calc: CALC-A5-GAZ-COUCHES-KG-T
+  unite: kg par tonne d OMR
+  resultat: 11.875
+CALC-A5-GAZ-HC-TOT-MJ-T:
+  description: Energie du gaz d'hydrocarbures par tonne d'OMR, a 37,4 MJ/kg (D-038)
+  formule: m * pci
+  entrees:
+    m:
+      calc: CALC-A5-GAZ-HC-TOT-KG-T
+    pci:
+      valeur: 37.4
+      unite: MJ/kg
+      source: D-038
+      emplacement: vers
+  unite: MJ par tonne d OMR
+  resultat: 444.125
+CALC-A5-COUV-GAZHC-EAU:
+  description: Rapport entre l'energie du gaz d'hydrocarbures et la chaleur d'evaporation de l'eau, par tonne d'OMR
+  formule: g / e
+  entrees:
+    g:
+      calc: CALC-A5-GAZ-HC-TOT-MJ-T
+    e:
+      calc: CALC-A5-EAU-MJ-T
+  unite: sans unite
+  resultat: 0.4316
+CALC-A5-COUV-GAZHC-BRULEUR:
+  description: Rapport entre l'energie du gaz d'hydrocarbures et le besoin du bruleur par tonne (OneWorld)
+  formule: g / b
+  entrees:
+    g:
+      calc: CALC-A5-GAZ-HC-TOT-MJ-T
+    b:
+      calc: CALC-A2-BRULEUR-MJ-T
+  unite: sans unite
+  resultat: 0.2948
+CALC-A5-CHAR2-MJ-T:
+  description: Energie du char central (30 %, hors PP et PE des couches) par tonne d'OMR, a 32,09 MJ/kg (D-038)
+  formule: c * pci
+  entrees:
+    c:
+      calc: CALC-A5-CHAR2-CENT-KG-T
+    pci:
+      valeur: 32.09
+      unite: MJ/kg
+      source: D-038
+      emplacement: vers
+  unite: MJ par tonne d OMR
+  resultat: 3428.78
+
+# === ANNEXE 9 (preparation), presse d'extrusion (chat 5, 19/11/2026) ===
+
+CALC-A9-OREX-KWH-T-HAUT:
+  description: "Electricite de la presse OREX 400 par tonne, au debit le plus bas annonce (120 kW, 9 t/h)"
+  formule: "p / d"
+  entrees:
+    p: {valeur: 120, unite: kW, source: A9-ANAERGIA-OREX400, emplacement: "avantages"}
+    d: {valeur: 9, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "debit"}
+  unite: "kWh/t"
+  resultat: 13.3333
+
+CALC-A9-OREX-KWH-T-BAS:
+  description: "Electricite de la presse OREX 400 par tonne, au debit le plus haut annonce (120 kW, 15 t/h)"
+  formule: "p / d"
+  entrees:
+    p: {valeur: 120, unite: kW, source: A9-ANAERGIA-OREX400, emplacement: "avantages"}
+    d: {valeur: 15, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "debit"}
+  unite: "kWh/t"
+  resultat: 8.0

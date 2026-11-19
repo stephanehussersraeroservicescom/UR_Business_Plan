@@ -1,0 +1,20 @@
+
+# === ANNEXE 9 (preparation), presse d'extrusion (chat 5, 19/11/2026) ===
+
+CALC-A9-OREX-KWH-T-HAUT:
+  description: "Electricite de la presse OREX 400 par tonne, au debit le plus bas annonce (120 kW, 9 t/h)"
+  formule: "p / d"
+  entrees:
+    p: {valeur: 120, unite: kW, source: A9-ANAERGIA-OREX400, emplacement: "avantages"}
+    d: {valeur: 9, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "debit"}
+  unite: "kWh/t"
+  resultat: 13.3333
+
+CALC-A9-OREX-KWH-T-BAS:
+  description: "Electricite de la presse OREX 400 par tonne, au debit le plus haut annonce (120 kW, 15 t/h)"
+  formule: "p / d"
+  entrees:
+    p: {valeur: 120, unite: kW, source: A9-ANAERGIA-OREX400, emplacement: "avantages"}
+    d: {valeur: 15, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "debit"}
+  unite: "kWh/t"
+  resultat: 8.0

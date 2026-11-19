@@ -751,3 +751,46 @@ D-046:
     putrescibles (RP2-004, note 16). Le rapport technique complet (R-042) doit trancher.
   preuves: [ADEME-MODECOM-2024-DATA, ADEME-MODECOM-2024-HUM, RP2-004]
   a_verifier: "Methode des fines dans le rapport technique MODECOM 2024 (R-042)."
+
+D-047:
+  date: 2026-11-19
+  titre: "Annexe 5 : trois scenarios selectionnables (pessimiste, standard, optimiste) ; couches, produits d'hygiene et textiles comptes dans l'huile et le gaz"
+  de: "D-043 : huile comptee sur la seule categorie Plastiques ; plastiques des couches et des textiles non comptes"
+  vers: "trois jeux de rendements (pessimiste, standard, optimiste), choisis par un champ cliquable de la page web ; les couches, les produits d'hygiene et les textiles contribuent a l'huile et au gaz"
+  unite: "regle de modele"
+  motif: >
+    Decision de Stephane du 19/11/2026 (11 h 29 et 11 h 30, chat 5) apres lecture de l'annexe 5 : garder les trois
+    scenarios, qui seront des champs cliquables sur la page web pour une vision standard, optimiste ou pessimiste du
+    taux de conversion ; verifier que les couches et tous les linges sont bien pris en compte comme contributeurs de
+    l'huile et du gaz. Modifie D-043 (les PP et PE des couches et les textiles sont desormais comptes, selon D-048).
+  preuves: []
+
+D-048:
+  date: 2026-11-19
+  titre: "Annexe 5 : regles de calcul de la contribution des couches, produits d'hygiene et textiles"
+  de: "aucune regle"
+  vers: "PP et PE des couches et produits d'hygiene : 22,6 % de leur matiere seche, rendements du plastique (D-044, D-029) ; reste des textiles sanitaires et textiles : liquide oxygene 20 / 22,5 / 25 % et gaz 45 / 46,5 / 48 % de la matiere seche, char selon D-045"
+  unite: "regle de calcul"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5), pour appliquer D-047, a confirmer par Stephane. (1) La matiere
+    seche des couches et produits d'hygiene est celle des textiles sanitaires (humidite 60,0 %, ADEME-MODECOM-2024-HUM)
+    au prorata de leur tonnage (CALC-A5-SANIT-COUCHES-PART) ; les couches usagees ont sans doute une autre humidite que
+    les mouchoirs, non mesuree. (2) Le PP et le PE font 22,6 % d'une couche neuve (A5-EA-2008-NAPPY-LCA, Royaume-Uni,
+    2006) ; ils sont traites comme les plastiques (huile 55 / 73,07 / 81 %, gaz 10 %) ; le PET des couches (2,2 %) donne
+    surtout des cires et n'est pas compte. (3) Le reste (cellulose, superabsorbant, adhesifs) et les textiles suivent
+    les fourchettes mesurees sur papier et textiles a 500 C (A5-BHATT-2026-RSCADV) : liquide 20 a 25 %, gaz 45 a 48 % ;
+    le standard prend le milieu des fourchettes (22,5 % et 46,5 %). Ce liquide est oxygene et charge d'eau, et ce gaz
+    est surtout du CO2, du CO et de l'eau : ils ne valent pas l'huile et le gaz des plastiques ; le pouvoir calorifique
+    de ce gaz n'est pas connu et il n'est pas compte dans le bilan d'energie. Le polyester des textiles donnerait
+    surtout des cires, comme le PET (A5-JIA-2020-POLYMERS-PET) ; la part de fibres synthetiques n'est pas connue (R-046).
+  preuves: [ADEME-MODECOM-2024-HUM, A5-EA-2008-NAPPY-LCA, A5-BHATT-2026-RSCADV, A5-JIA-2020-POLYMERS-PET]
+  a_verifier: "Humidite propre des couches usagees ; part de fibres synthetiques des textiles ; essais OneWorld (R-021)."
+  correction_2026_11_19: >
+    Precision de Claude du 19/11/2026 (12 h 15), apres la question de Stephane sur l'absence d'oxygene dans le reacteur.
+    La formule « surtout du CO2, du CO et de l'eau » etait trop forte. Sans oxygene ajoute, le CO2 et le CO viennent de
+    l'oxygene contenu dans la matiere elle-meme (cellulose, dechets alimentaires : environ 48 a 49 % d'oxygene sur sec).
+    Mesure sous azote pur sur la fraction cellulosique de couches usagees (A5-MALSEGNA-2021-ENERGIES-AHP, tableau A1) :
+    CO2 23,5 a 33,3 %, CO 27,8 a 33,4 %, H2 7,9 a 10,7 %, CH4 14,5 a 14,7 %, hydrocarbures 16,5 a 17,7 % (mol %, gaz sec,
+    500 a 600 C). Ce gaz est donc en partie combustible (CO, H2, CH4, hydrocarbures) ; son pouvoir calorifique reste
+    non mesure sur l'Urban Rig et n'est toujours pas compte. L'effet de la vapeur surchauffee (reactions avec l'eau) n'est
+    pas documente.

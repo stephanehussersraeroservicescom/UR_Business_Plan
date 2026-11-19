@@ -12489,6 +12489,8 @@ A5-CIAAW-2024-ATOMIC-WEIGHTS:
 # === ANNEXE 5, complement couches et superabsorbant (chat 5, 19/11/2026) ===
 
 A5-MALSEGNA-2021-ENERGIES-AHP:
+  valeurs_tableau_a1: "Tableau A1 (annexe, sous azote pur, sans oxygene ajoute ; mol % du gaz sec hors azote ; moyennes de trois essais). Fraction cellulosique de couches usagees (AHPus) : 500 C : H2 7,90 ; hydrocarbures en equivalent C3H8 16,5 ; CO 27,8 ; CO2 33,3 ; CH4 14,5 ; 600 C : H2 10,7 ; C3H8 eq. 17,7 ; CO 33,4 ; CO2 23,5 ; CH4 14,7. Couches neuves (AHPam) a 600 C : H2 15,6 ; C3H8 eq. 30,8 ; CO 14,7 ; CO2 18,1 ; CH4 20,8. Les auteurs : sous azote pur, l'oxygene du CO et du CO2 ne peut venir que du solide ; AHPus donne plus de CO et de CO2 qu'AHPam, en accord avec sa teneur en oxygene (48,0 % contre 23,3 % sur sec)."
+  citation_a1: "it is reasonable to assume that oxygen could come only from the solid phases in tests under pure N 2 | AHPus developed higher fractions of CO and CO 2 (Figures 6b and 7b) than those obtained from AHPam"
   titre: "Experimental Study of Absorbent Hygiene Product Devolatilization in a Bubbling Fluidized Bed"
   editeur: "Energies (MDPI), auteurs Malsegna B., Di Giuliano A., Gallucci K."
   date: 2021
@@ -12576,3 +12578,63 @@ A5-CALERO-2025-CEJ-DIAPER:
   statut: secondaire
   consulte: '2026-11-19'
   note: "Resume seul, lu par Claude dans le navigateur de Stephane le 19/11/2026 ; article payant non lu. Les rendements en % massique ne sont pas dans le resume."
+
+# === ANNEXE 9 (preparation), deshydratation des OMR par presse (chat 5, 19/11/2026) ===
+
+A9-DBTECH-OREX-MSW:
+  titre: "Preparation of biological waste and MSW using the OREX Press (presentation)"
+  editeur: "db technologies bv (Oldenzaal, Pays-Bas), contacts K. Dirkes et W. Koggel"
+  date: "non datee (mise en ligne 2018 d'apres le chemin)"
+  annee_donnees: "non precisee"
+  type: entreprise
+  url: https://www.dorset.nu/wp-content/uploads/2018/07/B-15.00-3-43-EN-W.-Koggel-Preparation-of-biological-waste-and-MSW.pdf
+  emplacement: "presentation, pages OREX et fractions"
+  contenu: "Presse a tres haute pression (OREX) appliquee aux ordures menageres : entree a 40-45 % de dechets biodegradables, 25-30 % d'eau. Fraction seche : humidite 18-20 %, PCI 12 000 a 16 000 kJ/kg, inertes (sable, pierres, verre) 25 %, densite 0,5-0,8 t/m3 ; vers CSR ou recyclage. Fraction humide : humidite 55-85 %, matiere organique 65-85 %, matiere seche 30-35 % ; vers methanisation."
+  citation: "humidity: 18-20 % | low heating value: 12.000 – 16.000 kJ/kg | Humidity: 55-85 %"
+  statut: non-verifie
+  consulte: '2026-11-19'
+  note: "Document commercial d'un distributeur, non date, sans methode de mesure. Lu par WebFetch le 19/11/2026. Ordures menageres d'un pays non precise (humidite d'entree 25-30 %, inferieure aux 42,1 % des OMR francaises)."
+
+A9-ANAERGIA-OREX400:
+  titre: "OREX 400 Organic Extrusion Press (fiche produit)"
+  editeur: "Anaergia Orex Manufacturing (Ovada, Italie)"
+  date: "non datee (mise en ligne 2023-10 d'apres le chemin)"
+  annee_donnees: "non precisee"
+  type: entreprise
+  url: https://www.anaergia.com/wp-content/uploads/2023/10/Anaergia-Tech-Bro-orex400.pdf
+  emplacement: "fiche produit, avantages et tableau des capacites"
+  contenu: "Presse d'extrusion pour ordures menageres et biodechets : 9 a 15 t/h traitees ; capacites maximales de 10 a 16 t/h selon le modele (400 a 800) ; rendement en fraction extrudee de 60 a 95 % selon le tableau ; puissance electrique moyenne 120 kW ; la fraction seche ne contient presque plus de matiere organique."
+  citation: "120 kW average electric power consumption | 9 to 15 t/h of material threated"
+  statut: non-verifie
+  consulte: '2026-11-19'
+  note: "Document commercial du constructeur. Lu par WebFetch le 19/11/2026. Pas de pression ni d'humidite de la fraction seche."
+
+A9-TORRETTA-2014-WIT:
+  titre: "The mass and energy balance of an integrated solution for municipal solid waste treatment"
+  editeur: "WIT Transactions on Ecology and The Environment 180 (2014) 151-161, Torretta V., Ionescu G., Raboni M., Merler G."
+  date: 2014
+  annee_donnees: 2014
+  type: etude_publique
+  url: https://www.witpress.com/Secure/elibrary/papers/WM14/WM14013FU1.pdf
+  doi: 10.2495/WM140131
+  emplacement: "tableau 2 (bilan matiere), tableau 3 (energie)"
+  contenu: "Schema de traitement d'ordures menageres avec presse d'extrusion : 32 % de la masse va a la presse (PCI 14 899 kJ/kg) ; fraction seche 23 % (PCI 17 766 kJ/kg) vers separation balistique ; fraction humide 9 % (PCI 8 020 kJ/kg) vers methanisation. Consommation de la presse : 11 kWh/t."
+  citation: "separates the stream in two flows: wet and dry fractions"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Actes de conference a comite de lecture. Lu par WebFetch le 19/11/2026. Bilan de conception (modele), pas une mesure ; humidite des fractions non donnee. Donnees de plus de huit ans."
+
+A9-VELIS-2009-BIODRYING:
+  titre: "Biodrying for mechanical-biological treatment of wastes: A review of process science and engineering"
+  editeur: "Bioresource Technology 100(11) (2009) 2747-2761, Velis C.A., Longhurst P.J., Drew G.H., Smith R., Pollard S.J.T."
+  date: 2009
+  annee_donnees: 2009
+  type: etude_publique
+  url: https://dspace.lib.cranfield.ac.uk/items/f30df64c-3a1c-4453-80e0-1123a07b6f55/full
+  doi: 10.1016/j.biortech.2008.12.026
+  emplacement: "resume"
+  contenu: "Biosechage (traitement mecano-biologique) : humidite finale inferieure a 20 % ; cycles commerciaux de 7 a 15 jours ; pertes surtout d'eau et de CO2, environ 25 a 30 % de la masse."
+  citation: "moisture contents of <20% w/w | Commercial process cycles are completed within 7–15 days"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Revue a comite de lecture (depot Cranfield). Lu par WebFetch le 19/11/2026. Donnees de plus de huit ans."

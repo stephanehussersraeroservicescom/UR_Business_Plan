@@ -18,9 +18,10 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 - **It is mostly wet organic matter.** Putrescibles make up 33.67 % of the mass [calc:CALC-A5-CAT01-PCT] and sanitary textiles, mainly paper tissues and nappies, 16.99 % [calc:CALC-A5-CAT06-PCT]. The average moisture is 42.1 % [ADEME-MODECOM-2024-HUM], about 421 kg of water per tonne [calc:CALC-A5-EAU-KG-T].
 - **Plastics are 15.79 % of the mass** [calc:CALC-A5-CAT07-PCT], about 111 kg of dry plastic per tonne [calc:CALC-A5-SEC-PLAST-KG-T]. Their split by polymer is not published (request R-045).
 - **11.79 % of the mass cannot be converted**: glass, metals, other minerals and hazardous items [calc:CALC-A5-NONPROC-PCT].
-- **Oil comes from the plastic fraction.** On the working assumptions of this annex, one tonne of residual household waste gives 61 to 90 kg of oil, 81 kg in the central case [calc:CALC-A5-HUILE-BAS-KG-T] [calc:CALC-A5-HUILE-HAUT-KG-T] [calc:CALC-A5-HUILE-CENT-KG-T] [hyp:D-043] [hyp:D-044]. OneWorld design data state 5 % of oil for household waste with 10 % of resins [UR2000-JP-P05-BILAN].
-- **Char is the main product.** The non-plastic organic fraction would give 91 to 146 kg of char per tonne, 109 kg in the central case [calc:CALC-A5-CHAR-BAS-KG-T] [calc:CALC-A5-CHAR-HAUT-KG-T] [calc:CALC-A5-CHAR-CENT-KG-T] [hyp:D-045].
-- **Energy self-sufficiency is not established on this feed.** The gas from the plastic gives about 416 MJ per tonne [calc:CALC-A5-GAZ-PLAST-MJ-T], against 1,029 MJ only to evaporate the water [calc:CALC-A5-EAU-MJ-T] and 1,507 MJ of burner demand stated by OneWorld [calc:CALC-A2-BRULEUR-MJ-T]. The gap must be covered by burning part of the char or oil, or by purchased fuel [hyp:D-029].
+- **Three scenarios, selected on the web page** [hyp:D-047]. Per tonne of residual household waste, plastics and the PP and PE of nappies give 65, 87 or 96 kg of hydrocarbon oil (pessimistic, standard, optimistic) [calc:CALC-A5-HUILE-TOT-BAS-KG-T] [calc:CALC-A5-HUILE-TOT-CENT-KG-T] [calc:CALC-A5-HUILE-TOT-HAUT-KG-T] [hyp:D-044] [hyp:D-048]. OneWorld design data state 5 % of oil for household waste with 10 % of resins [UR2000-JP-P05-BILAN].
+- **Nappies and textiles also give gas and a wet liquid**: 41.8 to 44.6 kg of gas, a mix of carbon monoxide, carbon dioxide, hydrogen and methane, and 18.6 to 23.2 kg of oxygenated liquid per tonne [calc:CALC-A5-GAZ-ST-BAS-KG-T] [calc:CALC-A5-GAZ-ST-HAUT-KG-T] [calc:CALC-A5-LIQ-ST-BAS-KG-T] [calc:CALC-A5-LIQ-ST-HAUT-KG-T] [hyp:D-048].
+- **Char is the main product.** The other organic matter would give 89 to 142 kg of char per tonne, 107 kg in the standard case [calc:CALC-A5-CHAR2-BAS-KG-T] [calc:CALC-A5-CHAR2-HAUT-KG-T] [calc:CALC-A5-CHAR2-CENT-KG-T] [hyp:D-045].
+- **Energy self-sufficiency is not established on this feed.** The hydrocarbon gas gives about 444 MJ per tonne [calc:CALC-A5-GAZ-HC-TOT-MJ-T], against 1,029 MJ only to evaporate the water [calc:CALC-A5-EAU-MJ-T] and 1,507 MJ of burner demand stated by OneWorld [calc:CALC-A2-BRULEUR-MJ-T]. The gap must be covered by burning part of the char or oil, or by purchased fuel [hyp:D-029].
 - **Tests are the priority.** An Urban Rig test on French residual household waste, with measured moisture, gas and char, is the main request to OneWorld (R-021).
 
 # Part 1. What Goes In
@@ -117,7 +118,7 @@ Their moisture is 60.0 % [ADEME-MODECOM-2024-HUM]; their calorific value is 18,0
 
 **What a nappy is made of.** The only composition found is British and dates from 2006: a new nappy of 38.6 g holds 34.1 % fluff pulp, 32.4 % superabsorbent polymer, 16.6 % polypropylene, 6.0 % low-density polyethylene, 3.8 % adhesives, 2.2 % PET or polyester and 4.8 % other materials [A5-EA-2008-NAPPY-LCA]. PP, PE and PET together make 24.8 % of a new nappy [calc:CALC-A5-COUCHE-POLYMERES-PCT]. A recent European composition was not found (request R-046).
 
-**Reading.** Nappies carry plastic that could produce oil, but it is mixed with cellulose, superabsorbent gel and, once used, a large weight of water. This plastic is not counted in the oil of this annex [hyp:D-043]. The superabsorbent polymer has no Urban Rig test (Annex 2; request R-021).
+**Reading.** Nappies carry plastic that could produce oil, but it is mixed with cellulose, superabsorbent gel and, once used, a large weight of water. Their PP and PE are counted in the oil of this annex, with the same yields as plastics [hyp:D-047] [hyp:D-048]. The superabsorbent polymer has no Urban Rig test (Annex 2; request R-021).
 
 ### 5.5.1 What Happens to a Nappy in the Reactor
 
@@ -210,41 +211,71 @@ Laboratory conditions differ from the Urban Rig (no superheated steam, smaller s
 - **Plastics leave almost no fixed carbon**: 0 % for PE and PP, 0.2 % for PS, 4.5 % to 4.8 % for PVC [A5-SORUM-2001-SINTEF].
 - **Food waste char** at 500 °C had a gross calorific value of 5,864 kcal/kg [A5-KHAN-2022-POLYMERS-FOOD], i.e. 24.55 MJ/kg [calc:CALC-A5-KHAN-PCS-MJ-KG].
 
-## 5.11 Indicative Mass Balance per Tonne
+## 5.11 Indicative Mass Balance per Tonne: Three Scenarios
+
+The model offers three scenarios, selected by the user on the web page: pessimistic, standard and optimistic [hyp:D-047]. Nappies, hygiene products and textiles count towards the oil and the gas [hyp:D-047].
 
 Working assumptions, dated and changeable by the operator:
-- only the plastic category produces a saleable oil; plastic in nappies, composites and textiles is not counted [hyp:D-043];
-- the oil and gas yields of plastic apply to its dry mass; oil at 55 %, 73.07 % or 81 % [hyp:D-044]; gas at 10 % of the plastic [hyp:D-029];
-- char at 25 %, 30 % or 40 % of the dry non-plastic organic matter [hyp:D-045].
+- plastics: oil at 55 %, 73.07 % or 81 % of their dry mass [hyp:D-044]; gas at 10 % [hyp:D-029];
+- polypropylene and polyethylene in nappies and hygiene products, 22.6 % of a new nappy [calc:CALC-A5-COUCHE-PPPE-PCT], i.e. 7.6 kg per tonne [calc:CALC-A5-SEC-POLY-COUCHES-KG-T]: same yields as plastics [hyp:D-048];
+- the rest of the sanitary textiles (cellulose, superabsorbent) and the textiles, 93 kg of dry matter per tonne [calc:CALC-A5-SEC-CELLU-ST-KG-T]: liquid at 20, 22.5 or 25 % and gas at 45, 46.5 or 48 % of their dry mass, from tests on paper and textiles at 500 °C [A5-BHATT-2026-RSCADV] [hyp:D-048];
+- char at 25 %, 30 % or 40 % of the other dry organic matter [hyp:D-045].
 
-| Product, per tonne received | Low | Central | High | Evidence |
+| Product, per tonne received | Pessimistic | Standard | Optimistic | Evidence |
 |---|---|---|---|---|
-| Oil from the plastic fraction | 61 kg | 81 kg | 90 kg | [calc:CALC-A5-HUILE-BAS-KG-T] [calc:CALC-A5-HUILE-CENT-KG-T] [calc:CALC-A5-HUILE-HAUT-KG-T] |
-| Gas from the plastic fraction | 11.1 kg | 11.1 kg | 11.1 kg | [calc:CALC-A5-GAZ-PLAST-KG-T] |
-| Char from non-plastic organic matter | 91 kg | 109 kg | 146 kg | [calc:CALC-A5-CHAR-BAS-KG-T] [calc:CALC-A5-CHAR-CENT-KG-T] [calc:CALC-A5-CHAR-HAUT-KG-T] |
+| Hydrocarbon oil, from plastics | 61 kg | 81 kg | 90 kg | [calc:CALC-A5-HUILE-BAS-KG-T] [calc:CALC-A5-HUILE-CENT-KG-T] [calc:CALC-A5-HUILE-HAUT-KG-T] |
+| Hydrocarbon oil, from nappy PP and PE | 4.2 kg | 5.6 kg | 6.2 kg | [calc:CALC-A5-HUILE-COUCHES-BAS-KG-T] [calc:CALC-A5-HUILE-COUCHES-CENT-KG-T] [calc:CALC-A5-HUILE-COUCHES-HAUT-KG-T] |
+| **Hydrocarbon oil, total** | **65 kg** | **87 kg** | **96 kg** | [calc:CALC-A5-HUILE-TOT-BAS-KG-T] [calc:CALC-A5-HUILE-TOT-CENT-KG-T] [calc:CALC-A5-HUILE-TOT-HAUT-KG-T] |
+| Oxygenated liquid, from sanitary textiles and textiles | 18.6 kg | 20.9 kg | 23.2 kg | [calc:CALC-A5-LIQ-ST-BAS-KG-T] [calc:CALC-A5-LIQ-ST-CENT-KG-T] [calc:CALC-A5-LIQ-ST-HAUT-KG-T] |
+| Hydrocarbon gas, from plastics and nappy PP and PE | 11.9 kg | 11.9 kg | 11.9 kg | [calc:CALC-A5-GAZ-HC-TOT-KG-T] |
+| Gas from sanitary textiles and textiles (CO, CO2, H2, CH4, hydrocarbons) | 41.8 kg | 43.2 kg | 44.6 kg | [calc:CALC-A5-GAZ-ST-BAS-KG-T] [calc:CALC-A5-GAZ-ST-CENT-KG-T] [calc:CALC-A5-GAZ-ST-HAUT-KG-T] |
+| Char, from the other organic matter | 89 kg | 107 kg | 142 kg | [calc:CALC-A5-CHAR2-BAS-KG-T] [calc:CALC-A5-CHAR2-CENT-KG-T] [calc:CALC-A5-CHAR2-HAUT-KG-T] |
 | Inert residue (glass, metals, minerals), dry | 92 kg | 92 kg | 92 kg | [calc:CALC-A5-SEC-INERTE-KG-T] |
 | Water evaporated, then condensed | 421 kg | 421 kg | 421 kg | [calc:CALC-A5-EAU-KG-T] |
-| Gas, water of reaction and liquid from non-plastic organic matter | balance, not known | | | INCONNU |
+| Gas and liquid from food, garden waste, paper and cardboard | not known | | | INCONNU |
 
 **Reading.**
-- **Oil is a small share of the output.** The central case gives 81 kg of oil per tonne [calc:CALC-A5-HUILE-CENT-KG-T], against 5 % of oil in OneWorld design data for household waste with 10 % resins [UR2000-JP-P05-BILAN]. The French residual waste holds more plastic, 15.79 % [calc:CALC-A5-CAT07-PCT].
-- **The low case is probably the more realistic one** until a test exists: the plastic of residual waste is dirty and mixed, and the municipal plastics of Chiba gave lower yields than clean plastics (Section 5.9).
-- **The non-plastic organic matter is the unknown.** It is 364 kg of dry matter per tonne [calc:CALC-A5-SEC-ORG-KG-T]; how much of it becomes gas, liquid or char in the Urban Rig has not been measured (request R-021).
+- **Oil is a small share of the output.** The standard case gives 87 kg of hydrocarbon oil per tonne [calc:CALC-A5-HUILE-TOT-CENT-KG-T], against 5 % of oil in OneWorld design data for household waste with 10 % resins [UR2000-JP-P05-BILAN]. The French residual waste holds more plastic, 15.79 % [calc:CALC-A5-CAT07-PCT].
+- **Nappies add little oil.** Their PP and PE give 4.2 to 6.2 kg of oil per tonne of residual waste [calc:CALC-A5-HUILE-COUCHES-BAS-KG-T] [calc:CALC-A5-HUILE-COUCHES-HAUT-KG-T]. Their cellulose and superabsorbent give mainly gas, a wet oxygenated liquid and char.
+- **Two qualities of liquid and gas.** The oxygenated liquid and the gas of the sanitary textiles and textiles are not worth the oil and gas of plastics: the liquid from paper held 8.01 % water [A5-BHATT-2026-RSCADV], and the calorific value of this gas is not known; it is not counted in the energy balance [hyp:D-048].
+- **The pessimistic case is probably the more realistic one** until a test exists: the plastic of residual waste is dirty and mixed, and the municipal plastics of Chiba gave lower yields than clean plastics (Section 5.9).
+- **Food, garden waste, paper and cardboard remain the unknown.** Only their char is estimated [hyp:D-045]; how much of them becomes gas or liquid in the Urban Rig has not been measured (request R-021).
 
 ## 5.12 Energy Balance
 
 | Item, per tonne received | MJ | Evidence |
 |---|---|---|
-| Energy in the gas from the plastic fraction, at 37.4 MJ/kg | 416 | [calc:CALC-A5-GAZ-PLAST-MJ-T] [hyp:D-038] |
+| Energy in the hydrocarbon gas, at 37.4 MJ/kg | 444 | [calc:CALC-A5-GAZ-HC-TOT-MJ-T] [hyp:D-038] |
 | Heat to evaporate the water (latent heat only, 2.44 MJ/kg) | 1,029 | [calc:CALC-A5-EAU-MJ-T] [calc:CALC-A5-LATENT-MJ-KG] |
 | Burner demand of the URC-2000 stated by OneWorld | 1,507 | [calc:CALC-A2-BRULEUR-MJ-T] |
-| Energy in the central char, at 32.09 MJ/kg | 3,502 | [calc:CALC-A5-CHAR-MJ-T] [hyp:D-038] |
+| Energy in the standard char, at 32.09 MJ/kg | 3,429 | [calc:CALC-A5-CHAR2-MJ-T] [hyp:D-038] |
 
 **Reading.**
-- **The gas from the plastic does not cover the heat.** It covers 0.404 of the heat needed to evaporate the water [calc:CALC-A5-COUV-GAZ-EAU] and 0.276 of the burner demand stated by OneWorld [calc:CALC-A5-COUV-GAZ-BRULEUR]. Whether the evaporation is included in the burner demand is not stated by OneWorld.
-- **The gas from the organic matter is not known.** Biomass pyrolysis gas is rich in carbon dioxide and its calorific value is lower than that of plastic gas; no measurement on an Urban Rig exists (request R-021).
-- **The char could close the gap.** The central char carries 3,502 MJ per tonne [calc:CALC-A5-CHAR-MJ-T], more than the burner demand. Burning part of it would reduce the char sold. The value of 32.09 MJ/kg is the sponsor's assumption for household waste char [hyp:D-038]; a food waste char measured in the literature reached 24.55 MJ/kg [calc:CALC-A5-KHAN-PCS-MJ-KG]. The model must choose between burning char or oil and buying fuel (Section 5.17).
+- **The hydrocarbon gas does not cover the heat.** It covers 0.432 of the heat needed to evaporate the water [calc:CALC-A5-COUV-GAZHC-EAU] and 0.295 of the burner demand stated by OneWorld [calc:CALC-A5-COUV-GAZHC-BRULEUR]. Whether the evaporation is included in the burner demand is not stated by OneWorld.
+- **The gas from the organic matter is not counted.** The Urban Rig admits no oxygen, so nothing burns in the reactor. Carbon dioxide still forms, because the oxygen is inside the material itself: the cellulosic fraction of used nappies holds 48.0 % oxygen on a dry basis [A5-MALSEGNA-2021-ENERGIES-AHP] and a food waste mixture 49.38 % [A5-KHAN-2022-POLYMERS-FOOD]. Under pure nitrogen, without any oxygen added, this nappy fraction gave a gas of 23.5 to 33.3 % CO2, 27.8 to 33.4 % CO, 7.90 to 10.7 % hydrogen and 14.5 to 14.7 % methane, plus 16.5 to 17.7 % of other hydrocarbons, between 500 and 600 °C (mole fractions of the dry gas) [A5-MALSEGNA-2021-ENERGIES-AHP]. Most of this gas, everything except the CO2, is therefore combustible, but its calorific value per tonne has not been measured on an Urban Rig, and the effect of the superheated steam on this gas is not documented (request R-021).
+- **The char could close the gap.** The standard char carries 3,429 MJ per tonne [calc:CALC-A5-CHAR2-MJ-T], more than the burner demand. Burning part of it would reduce the char sold. The value of 32.09 MJ/kg is the sponsor's assumption for household waste char [hyp:D-038]; a food waste char measured in the literature reached 24.55 MJ/kg [calc:CALC-A5-KHAN-PCS-MJ-KG]. The model must choose between burning char or oil and buying fuel (Section 5.17).
 - **Consistent with Annex 2.** Self-sufficiency on household waste is not claimed [hyp:D-029].
+
+### 5.12.1 Possible Improvement: Separating the Wet Fraction by Press-Extrusion
+
+Most of the water of residual household waste sits in its food waste and sanitary textiles (Section 5.3). A press-extrusion step before the reactor could remove much of it. This is a possible improvement, not part of the base case; its equipment belongs to Annex 9 (request R-047).
+
+**How it works.** The waste is compressed at very high pressure in a perforated chamber. It is not simple squeezing: the press separates the stream into a wet organic paste and a dry fraction.
+
+| Item | Value | Evidence |
+|---|---|---|
+| Dry fraction: moisture | 18 to 20 % | [A9-DBTECH-OREX-MSW], commercial |
+| Dry fraction: net calorific value | 12,000 to 16,000 kJ/kg; 25 % of inerts (sand, stones, glass) | [A9-DBTECH-OREX-MSW], commercial |
+| Wet paste: moisture and organic content | 55 to 85 % moisture; 65 to 85 % organic matter; to anaerobic digestion | [A9-DBTECH-OREX-MSW], commercial |
+| Throughput and power of one press | 9 to 15 t/h; 120 kW on average | [A9-ANAERGIA-OREX400], manufacturer |
+| Electricity per tonne | 8.0 to 13.3 kWh | [calc:CALC-A9-OREX-KWH-T-BAS] [calc:CALC-A9-OREX-KWH-T-HAUT] |
+| Design balance of a plant using the press | 11 kWh/t; dry fraction at 17,766 kJ/kg against 14,899 kJ/kg for the material entering the press | [A9-TORRETTA-2014-WIT] |
+| Alternative: biodrying | below 20 % moisture in 7 to 15 days; 25 to 30 % of the mass lost as water and CO2 | [A9-VELIS-2009-BIODRYING] |
+
+**What it would change for the Urban Rig.**
+- **Better feed.** The dry fraction is richer in plastic and holds far less water. The heat needed to evaporate the water, 1,029 MJ per tonne of raw waste [calc:CALC-A5-EAU-MJ-T], would fall accordingly; oil per tonne fed would rise.
+- **A second product to manage.** The wet paste is not clean water: it holds 30 to 35 % of solids and goes to anaerobic digestion [A9-DBTECH-OREX-MSW]. Its outlet and its price are a cost, or a revenue, still to be established. Whether the water released could feed the steam circuit, after treatment by SEA CORAL, is not documented.
+- **Data to confirm.** The press figures come from a manufacturer and a distributor; the waste they describe held 25 to 30 % of water [A9-DBTECH-OREX-MSW], against 42.1 % for French residual waste [ADEME-MODECOM-2024-HUM]. A test on French residual waste, measured by a third party, is needed (R-047).
 
 ## 5.13 Entry Price
 
@@ -269,9 +300,10 @@ The plant is paid to take residual household waste. The default entry price of t
 | Tonnage and composition of residual household waste, France 2024 | ADEME open data and summary report | LU (open data previously cross-checked for plastics) |
 | Moisture and calorific value by fraction | ADEME open data and summary report | LU |
 | Composition of a nappy | British study, 2006 data, read on a mirror | LU, data older than eight years |
-| Oil and gas of the plastic fraction | Chiba tests on clean plastics, applied to dry plastic | HYPOTHÈSE (D-043, D-044, D-029) |
+| Oil and gas of the plastic fraction and of nappy PP and PE | Chiba tests on clean plastics, applied to dry mass | HYPOTHÈSE (D-044, D-029, D-047, D-048) |
+| Liquid and gas of sanitary textiles and textiles | Literature on paper and textiles [A5-BHATT-2026-RSCADV] | HYPOTHÈSE (D-048) |
 | Char of the non-plastic organic matter | Literature | HYPOTHÈSE (D-045) |
-| Gas and liquid of the non-plastic organic matter | None | INCONNU |
+| Gas and liquid of food, garden waste, paper and cardboard | None | INCONNU |
 | Polymer split and chlorine of residual household waste | None | NON TROUVÉ (R-045) |
 | Fibre composition of textiles in residual waste | None | NON TROUVÉ (R-046) |
 | Energy balance on residual household waste | Calculation on the above | CALCULÉ, on assumptions |
@@ -285,13 +317,15 @@ The plant is paid to take residual household waste. The default entry price of t
 | R-042 | Full MODECOM 2024 technical report: allocation of fines, laboratory analyses | Project sponsor (ADEME registration form) |
 | R-045 | Polymer split and chlorine of residual household waste | Not found in public sources |
 | R-046 | Fibres of textiles in residual waste; recent nappy composition | Partly found |
+| R-047 | Press-extrusion test on French residual waste; price of a press; outlet of the wet paste; SEA CORAL input | Manufacturers, OneWorld |
 
 ## 5.17 Recommendations for the Business Plan
 
-- Present residual household waste as a **paid feed with a modest oil yield**, not as an oil feed: per tonne received, the central case gives 81 kg of oil and 109 kg of char [calc:CALC-A5-HUILE-CENT-KG-T] [calc:CALC-A5-CHAR-CENT-KG-T].
-- Use the **low oil case** by default until an Urban Rig test on French residual waste exists [hyp:D-044].
+- Present residual household waste as a **paid feed with a modest oil yield**, not as an oil feed: per tonne received, the standard case gives 87 kg of hydrocarbon oil and 107 kg of char [calc:CALC-A5-HUILE-TOT-CENT-KG-T] [calc:CALC-A5-CHAR2-CENT-KG-T].
+- Offer the **three scenarios** as a choice on the web page [hyp:D-047]; the pessimistic case is the prudent reading until an Urban Rig test on French residual waste exists [hyp:D-044].
 - Show the **energy balance with a purchased fuel or a char consumption line**, not as self-sufficient [hyp:D-029].
 - Treat a **pre-sorting step** that recovers metals and removes hazardous items as part of the household waste configuration (Annex 9).
+- Study **press-extrusion** before the reactor as an option, once a test on French waste and a price are available (Section 5.12.1, Annex 9).
 
 ## 5.18 References
 
