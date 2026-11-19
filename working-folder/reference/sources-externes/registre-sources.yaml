@@ -316,6 +316,13 @@ SINOE-DEST-DMA:
   statut: verifie
 
 SDES-2022:
+  relecture_a4_2026_11_19:
+    contenu: "Bilan 2022 de la production de dechets en France (SDES, septembre 2025) : 343 Mt produites en 2022 (tableau 1 : 343 211 kt) ; dechets dangereux 11 391 kt au tableau 1 (11 392 au tableau 3, ecart d'une unite) ; plastiques 2 482 kt (tableau 2) ; taux de recyclage des plastiques 20 %."
+    citation: "En 2022, 343 millions de tonnes ont été produites | Déchets de matières plastiques 2 482 380 15,3 | Le taux de recyclage des plastiques est de 20 %"
+    emplacement: "section d'ouverture ; tableaux 1, 2 et 3 ; section sur les taux de recyclage (pages non numerotees)"
+    lu_par: "Claude, chat 5 annexe 4, WebFetch (citations transcrites par un modele intermediaire)"
+    consulte: '2026-11-19'
+    statut: lu
   relecture_a8_2026_10_15:
   - titre: Bilan 2022 de la production de déchets en France
     editeur: SDES / CGDD (auteure Chrystel Scribe), collection Datalab Essentiel (probable)
@@ -12682,3 +12689,62 @@ A7-PRPGD-IDF-SUIVI3-2023:
   statut: verifie-recontrole
   consulte: '2026-11-19'
   note: "Document regional officiel. Lu par WebFetch le 19/11/2026 (premiers 100 000 caracteres ; la section 4-2, p. 80, sur le traitement des DAE n'a pas ete lue)."
+
+# === ANNEXE 4 (chat 5, 19/11/2026) : France ===
+
+A4-AIDA-NOMENCLATURE-V58-2026:
+  titre: "Brochure de la nomenclature des installations classees, edition v58 (juin 2026)"
+  editeur: "Ministere de la transition ecologique (DGPR), diffusee par l'INERIS (AIDA)"
+  date: 2026-06-26
+  annee_donnees: 2026
+  type: reglementaire
+  url: https://aida.ineris.fr/sites/default/files/2026-07/BrochureNom_v58.pdf
+  emplacement: "p. 33 (rubriques 2771 et 2791), p. 38 (3520), p. 39 (3531, 3532)"
+  contenu: "2771 : installation de traitement thermique de dechets non dangereux (hors 2971 et hors installations de combustion ne brulant que de la biomasse au sens de 2910) : regime A (autorisation), rayon 2. 2791 : traitement de dechets non dangereux, 10 t/j ou plus : A, rayon 2 ; moins de 10 t/j : DC. 3520 : elimination ou valorisation de dechets dans des installations d'incineration ou de coincineration ; a) dechets non dangereux, capacite superieure a 3 tonnes par heure : A, rayon 3. 3532 : valorisation de dechets non dangereux non inertes de plus de 75 tonnes par jour, dont pretraitement des dechets destines a l'incineration ou a la coincineration : A, rayon 3. La colonne Rayon ne porte pas d'unite dans la brochure."
+  citation: "2771 Installation de traitement thermique de déchets non dangereux, à l’exclusion des installations visées à la rubrique 2971 | a) Pour les déchets non dangereux avec une capacité supérieure à 3 tonnes par heure | 3532 Valorisation ou un mélange de valorisation et d’élimination, de déchets non dangereux non inertes avec une capacité supérieure à 75 tonnes par jour"
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Document de diffusion ; seule la publication au Journal officiel (annexe de l'article R. 511-9 du code de l'environnement) a valeur juridique. PDF lu par Claude dans le navigateur de Stephane le 19/11/2026."
+  recontrole_a4: "Recontrole independant par un sous-agent (WebFetch), 19/11/2026 : citations et regimes conformes p. 33, 38 et 39. Reserves : exclusion biomasse 2910 ajoutee ; le rayon '2' de 2791 semble aligne sur l'alinea 1 (>= 10 t/j), mise en page a confirmer ; unite du rayon non imprimee."
+A4-DGPR-NOTE-DECHETS-2022:
+  titre: "Note d'explication de la nomenclature ICPE des installations de gestion et de traitement de dechets (version du 27 avril 2022)"
+  editeur: "Ministere de la transition ecologique, DGPR"
+  date: 2022-04-27
+  annee_donnees: 2022
+  type: reglementaire
+  url: https://aida.ineris.fr/sites/aida/files/gesdoc/108548/BPGD-22-041 Note-dechets_27042022.pdf
+  emplacement: "p. 10 (section 7.1 : incineration en 2770 ou 2771), p. 57 (2770) et p. 60 (2771) pour la definition et la citation, p. 84 (annexe 4)"
+  contenu: "Rubriques 277X : installations ou les dechets sont portes a une temperature superieure a 180 C ; elles couvrent les procedes de traitement thermochimique de type pyrolyse, gazeification ou torche a plasma (temperatures du tableau : 250-700 C pour la pyrolyse). Rubrique 2771 : traitement thermique des dechets non dangereux, y compris pyrolyse et gazeification. Articulation avec les rubriques IED 3510, 3520 et 3550 ; la rubrique 3520 correspond aux rubriques 2770, 2771 et 2971. Un dechet ne perd pas son statut de dechet a la sortie d'une installation 27XX sans criteres de sortie."
+  citation: "un procédé de traitement thermochimique de type pyrolyse, gazéification ou torche à plasma | les installations où les déchets sont portés à une température supérieure à 180 °C"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Note d'interpretation de l'administration (2022, antérieure aux modifications de 2023 a 2026 de certaines rubriques). Lue par WebFetch le 19/11/2026 en deux parties ; citations transcrites par un modele intermediaire, a recontroler."
+  recontrole_a4: "Recontrole independant par un sous-agent (WebFetch), 19/11/2026 : citations mot a mot p. 57 et 60 ; tableau pyrolyse 250-700 C ; p. 84 conforme. Emplacement corrige. Les deux lectures passent par un modele intermediaire : statut laisse a lu."
+A4-DRIEAT-AENV-2024:
+  titre: "Reforme de l'autorisation environnementale, loi Industrie verte (octobre 2024)"
+  editeur: "DRIEAT Ile-de-France (document diffuse sur son site)"
+  date: 2024-10
+  annee_donnees: 2024
+  type: reglementaire
+  url: https://www.drieat.ile-de-france.developpement-durable.gouv.fr/IMG/pdf/reforme_de_l_autorisation_environnementale_-_loi_industrie_verte_-_octobre_2024.pdf
+  emplacement: "diapositive 2 (date d'application), 10 (modalite 1), 13 et 14 (modalites 2 et 3), 15 (decision) ; diapositives non numerotees, rang deduit"
+  contenu: "Dossiers deposes a partir du 22/10/2024. Consultation parallelisee : 3 mois de consultation et 3 semaines pour le rapport du commissaire enqueteur. Modalites 2 et 3 (enquete publique unique ou participation par voie electronique) : examen et consultation l'une apres l'autre, 5 mois minimum. Phase de decision : 2 mois, plus 1 si avis du CODERST ou de la CDNPS."
+  citation: "3 mois de consultation + 3 semaines pour la réception du rapport du commissaire enquêteur | La phase d'examen et de consultation se réalisent l'une après l'autre : 5 mois minimum | 2 mois (+1 si avis CODERST/CDNPS"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Document de l'administration regionale. Lu par WebFetch le 19/11/2026. Ne donne pas de duree totale ni la duree de preparation du dossier."
+  recontrole_a4: "Recontrole independant par un sous-agent (WebFetch), 19/11/2026 : les trois citations et la date du 22/10/2024 conformes. Les deux lectures passent par un modele intermediaire : statut laisse a lu."
+A4-CENV-L541-1-2021:
+  titre: "Code de l'environnement, article L. 541-1 (objectifs de la politique nationale de prevention et de gestion des dechets), version en vigueur depuis le 25/08/2021"
+  editeur: "Legifrance"
+  date: 2021-08-25
+  annee_donnees: 2021
+  type: reglementaire
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176615/
+  emplacement: "article L. 541-1, I, 4°, 4° bis, 7°, 7° bis, 9°"
+  contenu: "Objectifs : 65 % des dechets non dangereux non inertes orientes vers la valorisation matiere en 2025 (55 % en 2020) ; 55 % des DMA prepares en vue de la reutilisation ou recycles en 2025, 60 % en 2030, 65 % en 2035 ; tendre vers 100 % de plastique recycle au 1er janvier 2025 ; reduire de 30 % en 2020 et de 50 % en 2025 par rapport a 2010 les dechets non dangereux non inertes admis en stockage ; DMA admis en stockage limites a 10 % des DMA produits en 2035 ; valorisation energetique d'au moins 70 % des dechets ne pouvant faire l'objet d'une valorisation matiere d'ici 2025, notamment par les combustibles solides de recuperation."
+  citation: "Réduire de 30 % les quantités de déchets non dangereux non inertes admis en installation de stockage en 2020 par rapport à 2010, et de 50 % en 2025 | Réduire les quantités de déchets ménagers et assimilés admis en installation de stockage en 2035 à 10 % | Assurer la valorisation énergétique d'au moins 70 % des déchets ne pouvant faire l'objet d'une valorisation matière d'ici 2025"
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Lu par Claude dans le navigateur de Stephane (Legifrance) le 19/11/2026. Modifie notamment par la loi n. 2020-105 du 10/02/2020 (AGEC) et la loi n. 2021-1104 du 22/08/2021."
+  recontrole_a4: "Recontrole independant par un sous-agent, 19/11/2026, sur la copie consolidee AIDA/INERIS (Legifrance inaccessible au sous-agent) : 4°, 4° bis, 7°, 7° bis et 9° conformes ; dernier modificateur liste : loi n. 2021-1104 du 22/08/2021. Lecture primaire de Claude sur Legifrance."

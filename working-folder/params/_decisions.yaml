@@ -838,3 +838,19 @@ D-051:
     confirmer : les 5 MEUR de pre-traitement s'appliquent a chaque ligne, quel que soit le flux ; les deux montants
     s'ajoutent. La formation n'est pas mentionnee et reste a preciser (R-049).
   preuves: []
+
+D-052:
+  date: 2026-11-19
+  titre: "Annexe 4 : regime ICPE retenu pour le plan, autorisation au titre de la rubrique 2771 et, a confirmer, de la rubrique IED 3520"
+  de: "aucun classement"
+  vers: "le plan suppose une autorisation environnementale au titre de la rubrique 2771 ; il retient, par prudence, l'hypothese d'un classement IED 3520 (plus de 3 t/h) avec application des conclusions MTD incineration ; le pre-traitement peut relever de la rubrique 3532 (plus de 75 t/jour)"
+  unite: "regle d'interpretation"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5), a confirmer par Stephane et par l'inspection (DRIEAT). La
+    nomenclature classe le traitement thermique de dechets non dangereux en 2771, a autorisation
+    (A4-AIDA-NOMENCLATURE-V58-2026) ; la note de la DGPR y range la pyrolyse et la gazeification
+    (A4-DGPR-NOTE-DECHETS-2022). La directive IED range la pyrolyse dans l'incineration si les substances qui en
+    resultent sont ensuite incinerees (IED-2010-75-ART3-42) ; l'huile vendue comme combustible serait brulee ailleurs,
+    d'ou l'incertitude. Le debit de 5,8 a 8,3 t/h depasse le seuil de 3 t/h de la rubrique 3520.
+  preuves: [A4-AIDA-NOMENCLATURE-V58-2026, A4-DGPR-NOTE-DECHETS-2022, IED-2010-75-ART3-42]
+  a_verifier: "Classement par l'inspection (R-050)."

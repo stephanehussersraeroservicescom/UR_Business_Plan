@@ -1,0 +1,18 @@
+
+R-050:
+  question: "Classement ICPE et IED d'un URC-2000 en Ile-de-France (2771 seule, ou 2771 et 3520 ; 3532 pour le pre-traitement), application des conclusions MTD incineration, et assujettissement a la TGAP (article L. 433-86 du CIBS) d'une unite de pyrolyse dont l'huile est vendue"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: a_demander
+  detenteur: "DRIEAT Ile-de-France (inspection des installations classees), DGPR ; douanes pour la TGAP"
+  cherche: "Brochure de la nomenclature v58 (2026), note DGPR de 2022 sur les rubriques dechets, directive IED article 3 ; aucune decision publiee sur une unite de pyrolyse comparable en Ile-de-France n'a ete lue."
+  sources: [A4-AIDA-NOMENCLATURE-V58-2026, A4-DGPR-NOTE-DECHETS-2022, IED-2010-75-ART3-42]
+
+R-051:
+  question: "Annexe 4, contexte France : exploitants des 18 UIDND et 7 ISDND franciliennes ; projets de pyrolyse de dechets en melange (OMR, DAE) en France ; aides publiques applicables a une unite de pyrolyse (Fonds Chaleur, France 2030, fonds economie circulaire ADEME) ; acceptabilite locale des unites de traitement en Ile-de-France"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: a_chercher
+  detenteur: "ORDIF, ADEME, Region Ile-de-France ; recherche documentaire"
+  cherche: "Notices ORDIF UIDND et ISDND 2022-2023 (pas d'exploitants nommes dans les extraits lus) ; communique TotalEnergies Grandpuits ; presse Carbios ; conditions ADEME centres de tri 2022 ; article AMORCE sur les aides CSR. Aucune source lue sur les autres aides ni sur l'acceptabilite."
+  sources: [A8-CST-ORDIF-UIDND-2023, A8-CST-ORDIF-ISDND-2023, TOTAL-GRANDPUITS-2026, PRM-ADEME-CDT-CONDITIONS-2022, A8-CST-AMORCE-CSR-2023]

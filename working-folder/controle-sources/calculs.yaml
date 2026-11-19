@@ -6628,3 +6628,33 @@ CALC-A9-CAPEX-LIGNE:
     b: {valeur: 5, unite: MEUR, source: D-051, emplacement: vers}
   unite: "MEUR"
   resultat: 60
+
+# === ANNEXE 4 (chat 5, 19/11/2026) ===
+
+CALC-A4-DEBIT-TH-CHARGE:
+  description: "Debit horaire du reacteur URC-2000 a 140 t/jour (D-035), fonctionnement continu sur 24 h"
+  formule: "j / h"
+  entrees:
+    j: {valeur: 140, unite: t/jour, source: D-035, emplacement: vers}
+    h: {valeur: 24, unite: h, source: D-035, emplacement: "fonctionnement continu (UR2000-JP p. 8 : 200 t par jour)"}
+  unite: "t/h"
+  resultat: 5.8333
+
+CALC-A4-DEBIT-TH-NOMINAL:
+  description: "Debit horaire nominal de l'URC-2000 a 200 t/jour, sur 24 h"
+  formule: "j / h"
+  entrees:
+    j: {valeur: 200, unite: t/jour, source: UR2000-JP-P08-SPEC, emplacement: "p. 8"}
+    h: {valeur: 24, unite: h, source: UR2000-JP-P08-SPEC, emplacement: "fonctionnement continu"}
+  unite: "t/h"
+  resultat: 8.3333
+
+CALC-A4-DELAI-MIN-MOIS:
+  description: "Duree minimale de l'instruction apres depot d'un dossier complet, consultation parallelisee : 3 mois et 3 semaines, plus 2 mois de decision (preparation du dossier non comprise)"
+  formule: "c + s / 4.345 + d"
+  entrees:
+    c: {valeur: 3, unite: mois, source: A4-DRIEAT-AENV-2024, emplacement: "modalite 1"}
+    s: {valeur: 3, unite: semaines, source: A4-DRIEAT-AENV-2024, emplacement: "modalite 1"}
+    d: {valeur: 2, unite: mois, source: A4-DRIEAT-AENV-2024, emplacement: "phase de decision"}
+  unite: "mois"
+  resultat: 5.6904
