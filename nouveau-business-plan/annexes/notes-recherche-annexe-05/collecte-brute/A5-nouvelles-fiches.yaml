@@ -1,0 +1,106 @@
+
+# === ANNEXE 5 (chat 5, 19/11/2026) : ordures menageres residuelles ===
+
+A5-BHATT-2026-RSCADV:
+  titre: "Co-pyrolysis of mixed municipal solid waste components in a semi-pilot scale rotary kiln: synergistic effects on pyrolysis oil and biochar properties"
+  editeur: "RSC Advances (Royal Society of Chemistry), auteurs Bhatt M., Panicker T.F., Mishra R.K., Sharma A., Ganesh M., Sheth P.N., Joshi J.B."
+  date: 2026
+  annee_donnees: 2026
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13329883/
+  doi: 10.1039/d6ra02636b
+  emplacement: "RSC Adv. 16(35):35523-35545 ; resume ; section 2.5 (four rotatif semi-batch, 2 kg par essai, 500 C, 20 C/min, 90 min) ; section 3.3 (rendements) ; tableau 3 (eau de l'huile)"
+  contenu: "Four rotatif semi-pilote, 2 kg par essai, 500 C. Papier et textiles : huile 20 a 25 % en masse, char 28 a 32 %, gaz 45 a 48 %. Plastiques melanges (LDPE et PP, moins de 2 % de PS et HDPE) : huile 40 a 45 %, char 5 a 7 % (corps du texte) ; le resume donne 43 % d'huile et 16 % de char. Le resume donne 30 a 40 % de char pour le papier. Eau de l'huile (tableau 3) : papier 8,01 % ; textile 3,21 % ; plastiques 1,22 %."
+  citation: "Waste paper and textile wastes exhibit relatively lower pyrolysis oil yields (20–25 wt%) and higher char (28–32 wt%). | The gas yield for these materials remains comparatively high (45–48 wt%) | The pure plastics exhibit a markedly different trend, yielding the highest pyrolysis oil content (40–45 wt%) and the lowest char content (5–7 wt%). | Mixed plastics yielded the highest pyrolysis oil content (43 wt%) and the lowest char yield (16 wt%), whereas wastepaper produced the highest char (30–40 wt%)."
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane (texte integral PMC) le 19/11/2026. Contradictions internes entre resume et corps (char du papier, char et huile des plastiques). Les rendements par matiere ne sont donnes qu'en fourchettes dans le texte (valeurs exactes sur la figure 5 seulement). Essais a l'echelle semi-pilote, conditions differentes de l'Urban Rig (pas de vapeur surchauffee)."
+
+A5-JIA-2020-POLYMERS-PET:
+  titre: "Catalytic Fast Pyrolysis of Poly (Ethylene Terephthalate) (PET) with Zeolite and Nickel Chloride"
+  editeur: "Polymers (MDPI), auteurs Jia H., Ben H., Luo Y., Wang R."
+  date: 2020-03-23
+  annee_donnees: 2020
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7183261/
+  doi: 10.3390/polym12030705
+  emplacement: "Polymers 12(3):705 ; section methodes (nacelle en quartz, 450 et 600 C, 30 min) ; section resultats, figure 3 ; tableau 1 (analyse du PET)"
+  contenu: "Pyrolyse rapide de PET en laboratoire, 450 et 600 C. Sans catalyseur : produits cireux (acide benzoique, acide terephtalique) d'environ 59,50 et 67,70 % en masse, gaz d'environ 20 % ; le catalyseur ZSM-5 fait tomber les cires sous 10 % et environ 23 % et porte le gaz au-dela de 50 %. Analyse du PET (tableau 1, base seche) : matieres volatiles 88,54 %, carbone fixe 9,37 %, cendres 2,09 % ; C 61,87 %, H 4,35 %, O 33,78 %."
+  citation: "In Figure 3, the yield of waxy products without any catalyst decreased from about 59.50 wt % and 67.70 wt % to below 10 wt % and about 23 wt % at different pyrolytic temperatures when the ZSM-5 was added as catalyst. | On the contrary, the yield of gases increased from about 20 wt % to over 50 wt % on average | heated up to a diverse final temperature (450, 600 °C)"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane le 19/11/2026. Echelle de quelques grammes ; conditions differentes de l'Urban Rig. Le texte ne precise pas quelle valeur (59,50 ou 67,70) correspond a quelle temperature."
+
+A5-KHAN-2022-POLYMERS-FOOD:
+  titre: "Comparative Investigation of the Physicochemical Properties of Chars Produced by Hydrothermal Carbonization, Pyrolysis, and Microwave-Induced Pyrolysis of Food Waste"
+  editeur: "Polymers (MDPI), auteurs Khan M.A., Hameed B.H., Siddiqui M.R., Alothman Z.A., Alsohaimi I.H."
+  date: 2022-02-20
+  annee_donnees: 2022
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8878147/
+  doi: 10.3390/polym14040821
+  emplacement: "Polymers 14(4):821 ; section resultats (rendement massique, figure 1) ; tableau 1"
+  contenu: "Melange de dechets alimentaires (lentilles, pois chiches) pyrolyse de 500 a 700 C : rendement en char de 28,45 % a 500 C et 26,67 % a 700 C. Char a 500 C (tableau 1) : C 72,73 %, PCS 5 864 kcal/kg, PCI 5 769 kcal/kg, cendres 6,27 %. Dechets alimentaires bruts : PCS 3 851 kcal/kg, cendres 4,07 %."
+  citation: "A similar decreasing trend in the mass yield was also observed after PY (28.45 to 26.67%) and MW (56.45 to 22.44%) of the food waste mixture from 500 to 700 °C | HHV (kcal/kg) 3851.00 4517.00 5864.00 5023.00"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane le 19/11/2026. Dechets alimentaires simules, pas des OMR reelles ; base du rendement (sec ou humide) non precisee dans les passages lus ; huile et gaz non mesures."
+
+A5-CZAJCZYNSKA-2017-REVIEW:
+  titre: "Potentials of pyrolysis processes in the waste management sector"
+  editeur: "Energy Procedia 123 (2017) 387-394, auteurs Czajczynska D., Nannou T., Anguilano L., Krzyzynska R., Ghazal H., Spencer N., Jouhara H."
+  date: 2017
+  annee_donnees: "2007 a 2016 selon les references citees"
+  type: etude_publique
+  url: https://bura.brunel.ac.uk/bitstream/2438/16559/2/Fulltext.pdf
+  doi: 10.1016/j.egypro.2017.07.275
+  emplacement: "Tableau 1, Products allocation from pyrolysis of different waste (gaz, liquide, solide en % massique)"
+  contenu: "Revue (valeurs citees, non mesurees par les auteurs). Dechets alimentaires, lit fixe, 800 C : gaz ~29, liquide 46, solide ~25 (Grycova et al. 2016). Resineux, sous vide, 500 C : 24,7 / 45,0 / 27,6 ; feuillus : 19,9 / 55,9 / 26,2 (Garcia-Perez et al. 2007). Papier, 600 C : ~41 / ~19 / ~40 (Zhou et al. 2013). Textiles (coton peigne), lit fixe, 450 C : 60,35 / 14,00 / 25,26 (Barisci et Oncel 2014). OMR, pyrolyse lente, 550 C : gaz 34,0, liquide 48,0, solide 18,0 (Velghe et al. 2011)."
+  citation: "Products allocation form pyrolysis of different waste | Slow pyrolysis produced approximately 48 wt. % of liquid | about 18 wt. % of solid residue and 34 wt. % of gas"
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Revue de conference ; chaque valeur vient d'un article d'origine non lu (acces payant). Lu par WebFetch le 19/11/2026 (copie de depot de l'universite Brunel). Contradiction interne signalee par la lecture : plastiques 34,0 / 65,2 / 0,8 dans le tableau contre 25,6 / 40,9 / 5,3 dans le texte pour la meme reference. Donnees de plus de huit ans pour les references de 2007 a 2014."
+
+A5-EA-2008-NAPPY-LCA:
+  titre: "An updated lifecycle assessment study for disposable and reusable nappies (Science Report SC010018/SR2)"
+  editeur: "Environment Agency (Royaume-Uni), realise par Environmental Resources Management ; finance par Defra, WRAP et l'Environment Agency"
+  date: 2008-10
+  annee_donnees: 2006
+  type: etude_publique
+  url: https://www.readkong.com/page/an-updated-lifecycle-assessment-study-for-disposable-and-4554730
+  url_officielle: https://www.gov.uk/government/publications/an-updated-lifecycle-assessment-for-disposable-and-reusable-nappies
+  emplacement: "Tableau 1.2, p. 4 (repris au tableau 2.1, p. 12)"
+  contenu: "Couche jetable moyenne au Royaume-Uni en 2006 : 38,6 g ; pulpe de cellulose (fluff) 34,1 % ; polymere superabsorbant 32,4 % ; polypropylene 16,6 % ; polyethylene basse densite 6,0 % ; adhesifs 3,8 % ; PET ou polyester 2,2 % ; autres 4,8 %."
+  citation: "Total 38.6 g | Fluff pulp 34.1% | SAP 32.4% | PP 16.6% | LDPE 6.0% | Adhesives 3.8% | PET/polyester 2.2% | Other 4.8%"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Document officiel lu sur un miroir tiers (readkong) par WebFetch le 19/11/2026 ; la version gov.uk ne contient que le resume. Donnees de 2006 (plus de huit ans), Royaume-Uni, couche neuve (sans urine ni selles). A remplacer par une source plus recente si elle est trouvee."
+
+A5-SORUM-2001-SINTEF:
+  titre: "Characterisation of MSW for Combustion Systems (Technical Report TRA5395)"
+  editeur: "SINTEF Energy Research (Norvege), L. Sorum, pour l'IEA Bioenergy Task 23"
+  date: 2001-02-22
+  annee_donnees: "avant 2001"
+  type: etude_publique
+  url: https://task36.ieabioenergy.com/wp-content/uploads/sites/34/2016/06/Characterisation_of_MSW_for_Combustion_Studies-2001.pdf
+  emplacement: "Tableau 8, p. 28 (analyse immediate) ; tableau 1, p. 9"
+  contenu: "Analyse immediate (base seche) : PVC rigide matieres volatiles 94,8 %, carbone fixe 4,8 %, cendres 0,4 % ; PVC souple 95,1 / 4,5 / 0,4 ; HDPE et LDPE 100 % volatiles, carbone fixe 0 ; PP 100 / 0 ; PS 99,8 / 0,2 ; coton 98,0 / 1,9 / 0,1 ; carton 84,7 / 6,9 / 8,4 ; papier journal 88,5 / 10,5 / 1,0 ; epicea 89,6 / 10,2 / 0,2."
+  citation: "PVC: UPVC 0.1 0.4 94.8 4.8 22.8 | PPVC 0.3 0.4 95.1 4.5 26.6"
+  statut: ancien
+  consulte: '2026-11-19'
+  note: "Rapport technique d'un institut de recherche ; donnees de plus de huit ans ; origine des echantillons non precisee. Lu par WebFetch le 19/11/2026. Utilise seulement pour montrer que les plastiques ne laissent presque pas de carbone fixe."
+
+A5-CIAAW-2024-ATOMIC-WEIGHTS:
+  titre: "Standard Atomic Weights 2024"
+  editeur: "IUPAC, Commission on Isotopic Abundances and Atomic Weights (CIAAW)"
+  date: 2024
+  annee_donnees: 2024
+  type: statistique_publique
+  url: https://www.ciaaw.org/atomic-weights.htm
+  emplacement: "tableau des masses atomiques standard, lignes hydrogene, carbone, chlore"
+  contenu: "Intervalles des masses atomiques standard : H [1,00784 ; 1,00811] ; C [12,0096 ; 12,0116] ; Cl [35,446 ; 35,457]."
+  citation: "Hydrogen [1.007 84, 1.008 11] | Carbon [12.0096, 12.0116] | Chlorine [35.446, 35.457]"
+  valeurs: "H 1.00784 1.00811 ; C 12.0096 12.0116 ; Cl 35.446 35.457"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Donnee officielle de reference. Lu par WebFetch le 19/11/2026."

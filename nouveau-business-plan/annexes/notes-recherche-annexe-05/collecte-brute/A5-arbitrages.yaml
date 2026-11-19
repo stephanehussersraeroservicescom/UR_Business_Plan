@@ -1,0 +1,24 @@
+
+# ============================================================ ANNEXE 5 (chat 5, 19/11/2026, hypotheses D-043 a D-046 posees par Claude)
+# AUCUNE valeur modifiee. Stephane tranche.
+charge_omr_composition_a5:
+  parametre: "composition de la charge 'ordures menageres residuelles' (selecteur de flux)"
+  actuel: "composition moyenne heritee de l'ancien modele"
+  sources_disent: "MODECOM 2024 : plastiques 15,79 %, putrescibles 33,67 %, textiles sanitaires 16,99 %, papiers 5,79 %, cartons 6,60 %, textiles 4,87 %, composites 2,00 %, bois 0,96 %, autres organiques 1,54 %, verre 5,01 %, metaux 3,34 %, autres mineraux 2,17 %, dechets dangereux 1,27 % (CALC-A5-CAT*-PCT) ; non convertible 11,79 % (CALC-A5-NONPROC-PCT) ; eau 421 kg/t (CALC-A5-EAU-KG-T)."
+  sources: [ADEME-MODECOM-2024-DATA, ADEME-MODECOM-2024-HUM]
+  calculs: [CALC-A5-NONPROC-PCT, CALC-A5-EAU-KG-T, CALC-A5-SEC-PLAST-KG-T, CALC-A5-SEC-ORG-KG-T, CALC-A5-SEC-INERTE-KG-T]
+  question: "Prendre la composition MODECOM 2024 comme composition par defaut du flux OMR ?"
+rendements_omr_a5:
+  parametre: "rendements huile, gaz et char pour le flux OMR (kg par tonne entrante)"
+  actuel: "rendements uniques herites de l'ancien modele"
+  sources_disent: "Huile de la fraction plastique : 61 / 81 / 90 kg/t (CALC-A5-HUILE-BAS/CENT/HAUT-KG-T, D-043, D-044) ; OneWorld annonce 5 % d'huile, 5 % de gaz et 25 % de char pour des OM a 10 % de resines (UR2000-JP-P05-BILAN). Gaz issu du plastique 11 kg/t (CALC-A5-GAZ-PLAST-KG-T). Char des matieres organiques 91 / 109 / 146 kg/t (CALC-A5-CHAR-*-KG-T, D-045), hors inertes."
+  sources: [UR2000-JP-P05-BILAN, CHIBA-ESSAIS-FICHES]
+  calculs: [CALC-A5-HUILE-BAS-KG-T, CALC-A5-HUILE-CENT-KG-T, CALC-A5-HUILE-HAUT-KG-T, CALC-A5-CHAR-CENT-KG-T]
+  question: "Valeur par defaut de l'huile : basse (61 kg/t) ou centrale (81 kg/t) ? Char a 30 % ?"
+energie_omr_a5:
+  parametre: "autosuffisance energetique sur OMR"
+  actuel: "non affirmee (D-029)"
+  sources_disent: "Gaz du plastique 416 MJ/t (CALC-A5-GAZ-PLAST-MJ-T) contre 1 029 MJ/t pour evaporer l'eau (CALC-A5-EAU-MJ-T) et 1 507 MJ/t pour le bruleur selon OneWorld (CALC-A2-BRULEUR-MJ-T) ; char central 3 502 MJ/t a 32,09 MJ/kg (CALC-A5-CHAR-MJ-T)."
+  calculs: [CALC-A5-GAZ-PLAST-MJ-T, CALC-A5-EAU-MJ-T, CALC-A5-COUV-GAZ-EAU, CALC-A5-COUV-GAZ-BRULEUR, CALC-A5-CHAR-MJ-T]
+  verdict: "Sur OMR, le gaz du plastique ne couvre pas la chaleur ; il faut bruler une partie du char ou de l'huile, ou acheter du combustible. Le gaz des matieres organiques n'est pas connu."
+  question: "Dans le modele, la chaleur manquante est-elle prise sur le char (moins de char vendu) ou achetee ?"

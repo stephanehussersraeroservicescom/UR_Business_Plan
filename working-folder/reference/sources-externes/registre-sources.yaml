@@ -12,6 +12,158 @@
 # === COMPOSITION ET TONNAGES DMA / OMR =====================================
 
 ADEME-MODECOM-2024-DATA:
+  relecture_a5_2026_11_19:
+    lu_par: Claude, chat 5 annexe 5, dans le navigateur de Stephane (API data-fair, format CSV, 71 lignes)
+    url_lue: https://data.ademe.fr/data-fair/api/v1/datasets/omrcs-compo-jdd/lines?format=csv&size=10000
+    fichier: working-folder/reference/sources-externes/pdf/ADEME-MODECOM-2024-omrcs-compo-jdd-2026-11-19.csv
+    date_jeu: mise a jour du 19/01/2026, Licence Ouverte
+    emplacement: 'colonnes pourcentage_OMR, tonnage_OMR, ratio_OMR ; libelles du jeu omrcs-grille (copie : ADEME-MODECOM-2024-omrcs-grille-extrait-2026-11-19.csv)'
+    contenu: '69 sous-categories renseignees pour les OMR ; total des tonnages 14 752 013 t ; total des ratios 223,54 kg/hab. Les lignes 14.01 (fines 8-20 mm) et 14.02 (fines de moins de 8 mm) sont vides pour les OMR : les fines ne figurent pas comme categorie dans ce jeu. Valeurs OMR (pourcentage ; tonnage ; ratio) :'
+    valeurs_omr: '01.01 Déchets alimentaires (restes de cuisine non consommables) : 19,5% ; 2 873 916 t ; 43.54 kg/hab
+
+      01.02 Produits alimentaires  non consommés sans emballage : 4,9% ; 717 838 t ; 10.88 kg/hab
+
+      01.03 Produits alimentaires non consommés avec emballage : 3,8% ; 566 819 t ; 8.59 kg/hab
+
+      01.04 Coquilles et coquillages vides : 0,4% ; 61 807 t ; 0.94 kg/hab
+
+      01.05 Déchets de jardin : 3,2% ; 477 767 t ; 7.24 kg/hab
+
+      01.06 Autres putrescibles : 1,8% ; 268 171 t ; 4.06 kg/hab
+
+      02.01 Emballages papiers : 1,7% ; 250 784 t ; 3.8 kg/hab
+
+      02.02 Papiers graphiques : 3,1% ; 452 203 t ; 6.85 kg/hab
+
+      02.03 Autres papiers : 1,0% ; 151 494 t ; 2.3 kg/hab
+
+      03.01 Emballages cartons plats : 3,9% ; 581 627 t ; 8.81 kg/hab
+
+      03.02 Emballages cartons ondulés : 2,3% ; 337 191 t ; 5.11 kg/hab
+
+      03.03 Jouets en carton : 0,0% ; 3 024 t ; 0.05 kg/hab
+
+      03.04 Autres cartons : 0,4% ; 52 127 t ; 0.79 kg/hab
+
+      04.01 Emballages de liquides alimentaires : 0,5% ; 78 114 t ; 1.18 kg/hab
+
+      04.02 Emballages composites en papier carton majoritaire : 0,4% ; 64 087 t ; 0.97 kg/hab
+
+      04.03 Emballages composites en plastique majoritaire : 0,9% ; 131 937 t ; 2 kg/hab
+
+      04.04 Articles de sports et de loisirs (non majoritairement composés de bois, textiles, plastiques ou de métal) : 0,0% ; 2 495 t ; 0.04 kg/hab
+
+      04.05 Autres composites : 0,1% ; 17 750 t ; 0.27 kg/hab
+
+      05.01 Textiles d''ameublement : 0,3% ; 51 298 t ; 0.78 kg/hab
+
+      05.02 TLC-Textiles vestimentaire : 3,0% ; 443 844 t ; 6.72 kg/hab
+
+      05.03 TLC-Linge de maison : 0,5% ; 79 126 t ; 1.2 kg/hab
+
+      05.04 TLC-Chaussures : 0,5% ; 76 452 t ; 1.16 kg/hab
+
+      05.05 Maroquinerie : 0,2% ; 29 637 t ; 0.45 kg/hab
+
+      05.06 Jouets textiles : 0,0% ; 1 929 t ; 0.03 kg/hab
+
+      05.07 Autres textiles : 0,2% ; 36 149 t ; 0.55 kg/hab
+
+      06.01 Couches bébé : 5,8% ; 859 734 t ; 13.03 kg/hab
+
+      06.02 Autres fraction hygiénique : 2,6% ; 380 662 t ; 5.77 kg/hab
+
+      06.03 Fraction papiers souillés : 8,6% ; 1 265 338 t ; 19.17 kg/hab
+
+      07.01 Sacs poubelles : 3,4% ; 496 503 t ; 7.52 kg/hab
+
+      07.02 Autres sacs plastiques : 1,1% ; 165 000 t ; 2.5 kg/hab
+
+      07.03 Films plastiques d''emballage : 4,2% ; 619 942 t ; 9.39 kg/hab
+
+      07.04 Bouteilles et flacons pour boissons en PET : 1,1% ; 160 966 t ; 2.44 kg/hab
+
+      07.05 Bouteilles et flacons en PET (autres que boissons) : 0,3% ; 51 533 t ; 0.78 kg/hab
+
+      07.06 Bouteilles et flacons en polyoléfines pour boissons : 0,2% ; 23 899 t ; 0.36 kg/hab
+
+      07.07 Bouteilles et flacons en polyoléfines (autres que boissons) : 0,3% ; 44 178 t ; 0.67 kg/hab
+
+      07.08 Boites, caisses, casiers, pots, barquettes, gobelets : 3,0% ; 443 885 t ; 6.73 kg/hab
+
+      07.09 Autres bouteilles, flacons, bonbonnes : 0,0% ; 5 461 t ; 0.08 kg/hab
+
+      07.10 Bouchons, couvercles, capsules : 0,3% ; 40 401 t ; 0.61 kg/hab
+
+      07.11 Autres emballages plastiques : 0,3% ; 40 123 t ; 0.61 kg/hab
+
+      07.12 Jouets composés majoritairement de plastique : 0,1% ; 14 665 t ; 0.22 kg/hab
+
+      07.13 Articles de sport et de loisirs composés majoritairement de plastiques : 0,0% ; 5 254 t ; 0.08 kg/hab
+
+      07.14 Autres plastiques : 1,5% ; 217 448 t ; 3.29 kg/hab
+
+      08.01 Emballages en bois : 0,3% ; 40 628 t ; 0.62 kg/hab
+
+      08.02 Jouets majoritairement composés de bois : 0,0% ; 1 186 t ; 0.02 kg/hab
+
+      08.03 Articles de sports et de loisirs  majoritairement composés de bois : 0,0% ; 1 531 t ; 0.02 kg/hab
+
+      08.04 Autres bois : 0,7% ; 98 572 t ; 1.49 kg/hab
+
+      09.01 Emballages en verre : 4,7% ; 699 571 t ; 10.6 kg/hab
+
+      09.02 Autres verres : 0,3% ; 39 642 t ; 0.6 kg/hab
+
+      10.01 Canettes métaux ferreux : 0,1% ; 17 735 t ; 0.27 kg/hab
+
+      10.02 Autres emballages métaux non ferreux : 1,2% ; 178 647 t ; 2.71 kg/hab
+
+      10.03 Canettes aluminium : 0,6% ; 82 936 t ; 1.26 kg/hab
+
+      10.04 Autres emballages aluminium : 0,6% ; 92 317 t ; 1.4 kg/hab
+
+      10.05 Autres métaux ferreux : 0,5% ; 75 637 t ; 1.15 kg/hab
+
+      10.06 Autres métaux non ferreux : 0,3% ; 40 981 t ; 0.62 kg/hab
+
+      10.07 Jouets composés majoritairement de métal : 0,0% ; 813 t ; 0.01 kg/hab
+
+      10.08 Articles de sport et de loisirs composés majoritairement de métal : 0,0% ; 4 004 t ; 0.06 kg/hab
+
+      11.01 Autres matières organiques : 1,5% ; 227 604 t ; 3.45 kg/hab
+
+      12.01 Emballages matière minérale : 0,1% ; 17 806 t ; 0.27 kg/hab
+
+      12.02 Autres matières minérales : 2,1% ; 303 036 t ; 4.59 kg/hab
+
+      13.01 DEEE : 0,7% ; 97 698 t ; 1.48 kg/hab
+
+      13.02 Tubes fluorescents et ampoules basse consommation, LED : 0,0% ; 792 t ; 0.01 kg/hab
+
+      13.03 Piles et accumulateurs : 0,0% ; 5 178 t ; 0.08 kg/hab
+
+      13.04 Déchets d''activités de soins perforants : 0,0% ; 3 790 t ; 0.06 kg/hab
+
+      13.05 Médicaments non utilisés : 0,1% ; 17 548 t ; 0.27 kg/hab
+
+      13.06 Huiles minérales : 0,0% ; 2 874 t ; 0.04 kg/hab
+
+      13.07 Cartouches d''impression : 0,0% ; 1 879 t ; 0.03 kg/hab
+
+      13.08 Bouteilles de gaz : 0,1% ; 9 693 t ; 0.15 kg/hab
+
+      13.09 Déchets diffus spécifiques : 0,2% ; 23 530 t ; 0.36 kg/hab
+
+      13.10 Autres déchets dangereux : 0,2% ; 23 807 t ; 0.36 kg/hab
+
+      14.01 Fines 8-20 mm : vide pour les OMR
+
+      14.02 Fines < 8 mm : vide pour les OMR
+
+      '
+    citation: '"01.01","19,5%","1,80%" | "07.01","3,4%","0,35%" | "14.02",,,"0,8%"'
+    statut: lu
   titre: "Composition OMR et CS - MODECOM 2024 (jeu de donnees omrcs-compo-jdd)"
   editeur: ADEME
   date: 2026-01-19
@@ -23,6 +175,14 @@ ADEME-MODECOM-2024-DATA:
   consulte: 2026-10-10
 
 ADEME-MODECOM-2024-HUM:
+  relecture_a5_2026_11_19:
+    lu_par: Claude, chat 5 annexe 5, dans le navigateur de Stephane (API data-fair, CSV)
+    url_lue: https://data.ademe.fr/data-fair/api/v1/datasets/omrhum/lines?format=csv&size=10000
+    fichier: working-folder/reference/sources-externes/pdf/ADEME-MODECOM-2024-omrhum-2026-11-19.csv
+    emplacement: colonnes code_fraction, code_sous-categorie(s), pourcentage_OMR, humidite_OMR, IC
+    contenu: 'Part dans les OMR et humidite par fraction : S01 dechets de jardin 3,0 % et 59,7 % ; S02 autres putrescibles 26,3 % et 59,6 % ; S03 papiers 5,7 % et 28,9 % ; S04 cartons 6,6 % et 33,7 % ; S05 emballages composites 1,8 % et 28,3 % ; S06 autres composites 0,1 % et 18,8 % ; S07 textiles 4,9 % et 33,7 % ; S08 textiles sanitaires 17,0 % et 60,0 % ; S09 films plastiques (07.01 a 07.03) 8,6 % et 35,8 % ; S10 autres plastiques (07.04 a 07.14) 7,0 % et 20,1 % ; S11 emballages bois 0,3 % et 13,0 % ; S12 autres bois 0,7 % et 26,0 % ; S13 verre 4,7 % et 2,2 % ; S14 metaux 3,3 % et 13,2 % ; S15 autres matieres organiques 1,4 % et 27,5 % ; S17 autres matieres minerales 2,0 % et 14,1 % ; S18 fines de moins de 8 mm 5,4 % et 46,3 % ; moyenne 42,1 %. Somme des parts : 98,8 % (pas de ligne pour les dechets dangereux). Dans ce jeu, les fines de moins de 8 mm forment une fraction a part (5,4 %), alors que le jeu de composition omrcs-compo-jdd n''a pas de fines pour les OMR.'
+    citation: '"S09","07.01; 07.02; 07.03","8,6%","35,8%","4,81%" | "S18","14.02","5,4%","46,3%","6,35%" | "Moyenne",,,"42,1%","5,78%"'
+    statut: lu
   titre: "Taux d'humidite OMR - MODECOM 2024"
   editeur: ADEME
   date: 2026-01
@@ -410,6 +570,14 @@ ORDIF-COUTS-2022:
   statut: lu
 
 ORDIF-DMA-2022:
+  relecture_a5_2026_11_19:
+    lu_par: Claude, chat 5 annexe 5, WebFetch
+    titre_exact: Les dechets menagers et assimiles en Ile-de-France, donnees 2022 (ORDIF, Institut Paris Region, decembre 2023, S. Kaba)
+    emplacement: p. 2 (population), p. 7 (traitement des DMA), p. 19 (OMR), p. 21 (destination des residuels) ; le verificateur lit p. 18 et 20 (decalage d une page)
+    recontrole_a5: 'Recontrole independant par un sous-agent, 19/11/2026 : tous les chiffres conformes.'
+    contenu: 'Ile-de-France 2022 : 3,32 Mt d''OMR, 268 kg/hab ; population provisoire 12 395 148 habitants ; 94 % des DMA residuels vers 18 unites d''incineration ; DMA : 63,31 % incineres (3 532 902 t), 9,9 % enfouis (553 631 t).'
+    citation: avec 3,32 Mt d'Omr (268 kg/hab), le tonnage comme le ratio de ce flux atteint son niveau le plus bas | Le flux des déchets ménagers et assimilés résiduels de l'Île-de-France est à 94 % acheminé vers 18 unités d'incinération
+    statut: lu
   titre: "Les DMA en Ile-de-France 2022"
   editeur: ORDIF
   date: 2023-12
@@ -2813,6 +2981,13 @@ RP2-001:
   recontrole: "2026-10-10, relu directement dans la source"
 
 RP2-002:
+  relecture_a5_2026_11_19:
+    lu_par: Claude, chat 5 annexe 5, dans le navigateur de Stephane (API data-fair)
+    url_lue: https://data.ademe.fr/data-fair/api/v1/datasets/omrcs-grille/lines?format=csv&size=10000
+    fichier: working-folder/reference/sources-externes/pdf/ADEME-MODECOM-2024-omrcs-grille-extrait-2026-11-19.csv
+    contenu: 'Grille de tri MODECOM 2024 : 14 categories (01 putrescibles, 02 papiers, 03 cartons, 04 composites, 05 textiles, 06 textiles sanitaires, 07 plastiques, 08 bois, 09 verre, 10 metaux, 11 autres matieres organiques, 12 autres matieres minerales, 13 dechets dangereux ou specifiques, 14 elements fins) et 71 sous-categories. 07.09 : autres bouteilles, flacons, bonbonnes en PVC, PAN et autres resines ; 07.14 autres plastiques (tuyaux, panneaux PVC, films etirables...) ; 11.01 : caoutchouc, sacs d''aspirateur, chutes de moquette, coussins, pneus...'
+    citation: '"07","Plastiques","07.09","Autres bouteilles, flacons, bonbonnes" | "06","Textiles sanitaires","06.01","Couches bébé"'
+    statut: lu
   titre: grid omrcs-grille
   theme: Plastic in residual waste (OMR)
   url: https://data.ademe.fr/data-fair/api/v1/datasets/omrcs-grille/lines?format=csv&size=200
@@ -2831,6 +3006,16 @@ RP2-003:
   consulte: '2026-10-10'
 
 RP2-004:
+  relecture_a5_2026_11_19:
+    lu_par: 'Claude, chat 5 annexe 5 : WebFetch (texte) et lecture visuelle de la p. 23 dans le navigateur de Stephane'
+    titre_exact: MODECOM 2024, Campagne nationale de caracterisation des dechets menagers et assimiles, Synthese, decembre 2025 (brochure ref. 013089-02), ADEME, realise par ECOGEOS
+    emplacement: p. 13 (methode), p. 14, p. 21, p. 22 (tableau 1 et note 16), p. 23 du PDF (tableaux 2 et 3 ; page imprimee 24 selon le verificateur), p. 41 (tableaux 7 et 8)
+    recontrole_a5: 'Recontrole independant par un sous-agent, 19/11/2026 : points cles conformes (95 echantillons, humidite, PCI, textiles sanitaires, note 16, 14 752 013 t). Tableau 2 : 9 valeurs conformes ; 5 lignes ambigues dans le texte extrait (16 975, 19 251, 25 616, 17 822, 16 781), lues par Claude sur l image de la page (colonne 2024) le 19/11/2026.'
+    contenu: 'Methode : 100 echantillons d''OMR dans 50 communes, 16 strates ; 5 retires, 95 analyses ; humidite sur 20 echantillons, PCI sur 15 ; normes NF X30-413 et NF X30-408 ; ratios extrapoles avec l''enquete Collecte 2023. OMR 2024 : pres de 14,7 Mt, 223 kg/hab. Textiles sanitaires 38 kg/hab, dont papiers souilles 19,2, couches bebe 13,0, autres dechets hygieniques 5,8 kg/hab. Humidite moyenne 42,1 % (plus ou moins 6,3 %), 36,9 % en 2017. Note 16 : les elements fins de moins de 8 mm des OMR sont majoritairement composes de dechets putrescibles. PCI global 16,3 MJ/kg de matiere seche (plus ou moins 2,9), 8,4 MJ/kg sur brut ; verre, metaux, autres matieres minerales et DMS comptes a zero, d''ou une legere sous-estimation. PCI 2024 par fraction (J/g de matiere seche, lecture visuelle du tableau 2) : dechets de jardin 16 606 ; autres fractions putrescibles 16 975 ; papiers 14 398 ; cartons 15 635 ; emballages composites 19 794 ; autres fractions composites 19 251 ; textiles 18 466 ; textiles
+      sanitaires 18 040 ; films plastiques 27 808 ; autres fractions plastiques 25 616 ; emballages en bois 17 300 ; autres fractions en bois 17 822 ; autres matieres organiques 16 781 ; elements fins de moins de 8 mm 9 819 ; verre, metaux, autres minerales, DMS non analyses. Tableau 8 p. 41 : total OMR 14 752 013 t, 223,46 kg/hab.'
+    citation: Le taux d'humidité moyen des OMR est ainsi de 42,1 % | 16,3 MJ/kgMS (± 2,9 MJ/kgMS) | Les éléments fins < 8 mm des OMR sont majoritairement composés de déchets putrescibles. | Cinq échantillons caractérisés ont été retirés de l'analyse car présentant des valeurs aberrantes
+    statut: lu
+    note: Miroir de l'observatoire normand (OBDEC) ; le rapport technique complet (librairie ADEME, ref. 013089) est sur formulaire (R-042). La synthese ne dit pas comment les fines sont reparties dans la composition par categorie.
   titre: ADEME, MODECOM 2024 summary (obdec-normandie mirror)
   theme: Plastic in residual waste (OMR)
   url: https://obdec-normandie.org/sites/obdec/files/2026-01/ADEME-MODECOM-2024-caracterisation-dechet-synthese.pdf
@@ -12187,3 +12372,207 @@ A8-PRIX-FRANCEENV-DAE-2025:
   statut: non-verifie
   consulte: '2026-10-15'
   note: 'SOURCE COMMERCIALE, AUCUNE SOURCE CITEE. Fourchette ISDND difficilement compatible avec une TGAP 2025 de 65 EUR/t incluse (laisserait 5 a 35 EUR/t de prix hors taxe, tres en dessous des 83-128 EUR/t hors TGAP releves par AMORCE en 2021) : CONTRADICTION. A ne pas utiliser. Lu par un sous-agent de recherche le 15/10/2026 via WebFetch, chat 4 annexe 8.'
+
+# === ANNEXE 5 (chat 5, 19/11/2026) : ordures menageres residuelles ===
+
+A5-BHATT-2026-RSCADV:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : toutes les valeurs de la fiche conformes au document. Mention moins de 2 % de PS et HDPE en section 2.1.'
+  titre: "Co-pyrolysis of mixed municipal solid waste components in a semi-pilot scale rotary kiln: synergistic effects on pyrolysis oil and biochar properties"
+  editeur: "RSC Advances (Royal Society of Chemistry), auteurs Bhatt M., Panicker T.F., Mishra R.K., Sharma A., Ganesh M., Sheth P.N., Joshi J.B."
+  date: 2026
+  annee_donnees: 2026
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13329883/
+  doi: 10.1039/d6ra02636b
+  emplacement: "RSC Adv. 16(35):35523-35545 ; resume ; section 2.5 (four rotatif semi-batch, 2 kg par essai, 500 C, 20 C/min, 90 min) ; section 3.3 (rendements) ; tableau 3 (eau de l'huile)"
+  contenu: "Resume : devolatilisation principale entre 230 et 550 C (analyse thermogravimetrique). Four rotatif semi-pilote, 2 kg par essai, 500 C. Papier et textiles : huile 20 a 25 % en masse, char 28 a 32 %, gaz 45 a 48 %. Plastiques melanges (LDPE et PP, moins de 2 % de PS et HDPE) : huile 40 a 45 %, char 5 a 7 % (corps du texte) ; le resume donne 43 % d'huile et 16 % de char. Le resume donne 30 a 40 % de char pour le papier. Eau de l'huile (tableau 3) : papier 8,01 % ; textile 3,21 % ; plastiques 1,22 %."
+  citation: "Thermogravimetric analysis revealed primary devolatilization between 230–550 °C | Waste paper and textile wastes exhibit relatively lower pyrolysis oil yields (20–25 wt%) and higher char (28–32 wt%). | The gas yield for these materials remains comparatively high (45–48 wt%) | The pure plastics exhibit a markedly different trend, yielding the highest pyrolysis oil content (40–45 wt%) and the lowest char content (5–7 wt%). | Mixed plastics yielded the highest pyrolysis oil content (43 wt%) and the lowest char yield (16 wt%), whereas wastepaper produced the highest char (30–40 wt%)."
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane (texte integral PMC) le 19/11/2026. Contradictions internes entre resume et corps (char du papier, char et huile des plastiques). Les rendements par matiere ne sont donnes qu'en fourchettes dans le texte (valeurs exactes sur la figure 5 seulement). Essais a l'echelle semi-pilote, conditions differentes de l'Urban Rig (pas de vapeur surchauffee)."
+
+A5-JIA-2020-POLYMERS-PET:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : NON OUVERT (PMC et MDPI inaccessibles a WebFetch) ; aucun chiffre recontrole, statut lu maintenu.'
+  titre: "Catalytic Fast Pyrolysis of Poly (Ethylene Terephthalate) (PET) with Zeolite and Nickel Chloride"
+  editeur: "Polymers (MDPI), auteurs Jia H., Ben H., Luo Y., Wang R."
+  date: 2020-03-23
+  annee_donnees: 2020
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7183261/
+  doi: 10.3390/polym12030705
+  emplacement: "Polymers 12(3):705 ; section methodes (nacelle en quartz, 450 et 600 C, 30 min) ; section resultats, figure 3 ; tableau 1 (analyse du PET)"
+  contenu: "Pyrolyse rapide de PET en laboratoire, 450 et 600 C. Sans catalyseur : produits cireux (acide benzoique, acide terephtalique) d'environ 59,50 et 67,70 % en masse, gaz d'environ 20 % ; le catalyseur ZSM-5 fait tomber les cires sous 10 % et environ 23 % et porte le gaz au-dela de 50 %. Analyse du PET (tableau 1, base seche) : matieres volatiles 88,54 %, carbone fixe 9,37 %, cendres 2,09 % ; C 61,87 %, H 4,35 %, O 33,78 %."
+  citation: "In Figure 3, the yield of waxy products without any catalyst decreased from about 59.50 wt % and 67.70 wt % to below 10 wt % and about 23 wt % at different pyrolytic temperatures when the ZSM-5 was added as catalyst. | On the contrary, the yield of gases increased from about 20 wt % to over 50 wt % on average | heated up to a diverse final temperature (450, 600 °C)"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane le 19/11/2026. Echelle de quelques grammes ; conditions differentes de l'Urban Rig. Le texte ne precise pas quelle valeur (59,50 ou 67,70) correspond a quelle temperature."
+
+A5-KHAN-2022-POLYMERS-FOOD:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : toutes les valeurs conformes. Le verificateur signale que le melange comprend aussi des dattes, du riz et des ecorces d orange (non relu par Claude).'
+  titre: "Comparative Investigation of the Physicochemical Properties of Chars Produced by Hydrothermal Carbonization, Pyrolysis, and Microwave-Induced Pyrolysis of Food Waste"
+  editeur: "Polymers (MDPI), auteurs Khan M.A., Hameed B.H., Siddiqui M.R., Alothman Z.A., Alsohaimi I.H."
+  date: 2022-02-20
+  annee_donnees: 2022
+  type: etude_publique
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8878147/
+  doi: 10.3390/polym14040821
+  emplacement: "Polymers 14(4):821 ; section resultats (rendement massique, figure 1) ; tableau 1"
+  contenu: "Melange de dechets alimentaires (lentilles, pois chiches) pyrolyse de 500 a 700 C : rendement en char de 28,45 % a 500 C et 26,67 % a 700 C. Char a 500 C (tableau 1) : C 72,73 %, PCS 5 864 kcal/kg, PCI 5 769 kcal/kg, cendres 6,27 %. Dechets alimentaires bruts : PCS 3 851 kcal/kg, cendres 4,07 %."
+  citation: "A similar decreasing trend in the mass yield was also observed after PY (28.45 to 26.67%) and MW (56.45 to 22.44%) of the food waste mixture from 500 to 700 °C | HHV (kcal/kg) 3851.00 4517.00 5864.00 5023.00"
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par Claude dans le navigateur de Stephane le 19/11/2026. Dechets alimentaires simules, pas des OMR reelles ; base du rendement (sec ou humide) non precisee dans les passages lus ; huile et gaz non mesures."
+
+A5-CZAJCZYNSKA-2017-REVIEW:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : les lignes du tableau 1 citees et la contradiction sur les plastiques sont bien dans la revue ; les articles d origine restent non lus, statut secondaire maintenu.'
+  titre: "Potentials of pyrolysis processes in the waste management sector"
+  editeur: "Energy Procedia 123 (2017) 387-394, auteurs Czajczynska D., Nannou T., Anguilano L., Krzyzynska R., Ghazal H., Spencer N., Jouhara H."
+  date: 2017
+  annee_donnees: "2007 a 2016 selon les references citees"
+  type: etude_publique
+  url: https://bura.brunel.ac.uk/bitstream/2438/16559/2/Fulltext.pdf
+  doi: 10.1016/j.egypro.2017.07.275
+  emplacement: "Tableau 1, Products allocation from pyrolysis of different waste (gaz, liquide, solide en % massique)"
+  contenu: "Revue (valeurs citees, non mesurees par les auteurs). Dechets alimentaires, lit fixe, 800 C : gaz ~29, liquide 46, solide ~25 (Grycova et al. 2016). Resineux, sous vide, 500 C : 24,7 / 45,0 / 27,6 ; feuillus : 19,9 / 55,9 / 26,2 (Garcia-Perez et al. 2007). Papier, 600 C : ~41 / ~19 / ~40 (Zhou et al. 2013). Textiles (coton peigne), lit fixe, 450 C : 60,35 / 14,00 / 25,26 (Barisci et Oncel 2014). OMR, pyrolyse lente, 550 C : gaz 34,0, liquide 48,0, solide 18,0 (Velghe et al. 2011)."
+  citation: "Products allocation form pyrolysis of different waste | Slow pyrolysis produced approximately 48 wt. % of liquid | about 18 wt. % of solid residue and 34 wt. % of gas"
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Revue de conference ; chaque valeur vient d'un article d'origine non lu (acces payant). Lu par WebFetch le 19/11/2026 (copie de depot de l'universite Brunel). Contradiction interne signalee par la lecture : plastiques 34,0 / 65,2 / 0,8 dans le tableau contre 25,6 / 40,9 / 5,3 dans le texte pour la meme reference. Donnees de plus de huit ans pour les references de 2007 a 2014."
+
+A5-EA-2008-NAPPY-LCA:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : 38,6 g et les sept pourcentages conformes (tableau 1.2 p. 4, tableau 2.1 p. 12), sur le meme miroir.'
+  titre: "An updated lifecycle assessment study for disposable and reusable nappies (Science Report SC010018/SR2)"
+  editeur: "Environment Agency (Royaume-Uni), realise par Environmental Resources Management ; finance par Defra, WRAP et l'Environment Agency"
+  date: 2008-10
+  annee_donnees: 2006
+  type: etude_publique
+  url: https://www.readkong.com/page/an-updated-lifecycle-assessment-study-for-disposable-and-4554730
+  url_officielle: https://www.gov.uk/government/publications/an-updated-lifecycle-assessment-for-disposable-and-reusable-nappies
+  emplacement: "Tableau 1.2, p. 4 (repris au tableau 2.1, p. 12)"
+  contenu: "Couche jetable moyenne au Royaume-Uni en 2006 : 38,6 g ; pulpe de cellulose (fluff) 34,1 % ; polymere superabsorbant 32,4 % ; polypropylene 16,6 % ; polyethylene basse densite 6,0 % ; adhesifs 3,8 % ; PET ou polyester 2,2 % ; autres 4,8 %."
+  citation: "Total 38.6 g | Fluff pulp 34.1% | SAP 32.4% | PP 16.6% | LDPE 6.0% | Adhesives 3.8% | PET/polyester 2.2% | Other 4.8%"
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Document officiel lu sur un miroir tiers (readkong) par WebFetch le 19/11/2026 ; la version gov.uk ne contient que le resume. Donnees de 2006 (plus de huit ans), Royaume-Uni, couche neuve (sans urine ni selles). A remplacer par une source plus recente si elle est trouvee."
+
+A5-SORUM-2001-SINTEF:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : valeurs du tableau 8 conformes ; la mention base seche n est pas dans le document (retiree) ; pages lues 29 et 10.'
+  titre: "Characterisation of MSW for Combustion Systems (Technical Report TRA5395)"
+  editeur: "SINTEF Energy Research (Norvege), L. Sorum, pour l'IEA Bioenergy Task 23"
+  date: 2001-02-22
+  annee_donnees: "avant 2001"
+  type: etude_publique
+  url: https://task36.ieabioenergy.com/wp-content/uploads/sites/34/2016/06/Characterisation_of_MSW_for_Combustion_Studies-2001.pdf
+  emplacement: "Tableau 8 (analyse immediate), p. 28 ou 29 selon la numerotation ; tableau 1, p. 9 ou 10"
+  contenu: "Analyse immediate (tableau 8) : PVC rigide matieres volatiles 94,8 %, carbone fixe 4,8 %, cendres 0,4 % ; PVC souple 95,1 / 4,5 / 0,4 ; HDPE et LDPE 100 % volatiles, carbone fixe 0 ; PP 100 / 0 ; PS 99,8 / 0,2 ; coton 98,0 / 1,9 / 0,1 ; carton 84,7 / 6,9 / 8,4 ; papier journal 88,5 / 10,5 / 1,0 ; epicea 89,6 / 10,2 / 0,2."
+  citation: "PVC: UPVC 0.1 0.4 94.8 4.8 22.8 | PPVC 0.3 0.4 95.1 4.5 26.6"
+  statut: ancien
+  consulte: '2026-11-19'
+  note: "Rapport technique d'un institut de recherche ; donnees de plus de huit ans ; origine des echantillons non precisee. Lu par WebFetch le 19/11/2026. Utilise seulement pour montrer que les plastiques ne laissent presque pas de carbone fixe."
+
+A5-CIAAW-2024-ATOMIC-WEIGHTS:
+  recontrole_a5: 'Recontrole independant par un sous-agent verificateur (n ayant pas redige la fiche), 19/11/2026, chat 5 : les trois intervalles conformes.'
+  titre: "Standard Atomic Weights 2024"
+  editeur: "IUPAC, Commission on Isotopic Abundances and Atomic Weights (CIAAW)"
+  date: 2024
+  annee_donnees: 2024
+  type: statistique_publique
+  url: https://www.ciaaw.org/atomic-weights.htm
+  emplacement: "tableau des masses atomiques standard, lignes hydrogene, carbone, chlore"
+  contenu: "Intervalles des masses atomiques standard : H [1,00784 ; 1,00811] ; C [12,0096 ; 12,0116] ; Cl [35,446 ; 35,457]."
+  citation: "Hydrogen [1.007 84, 1.008 11] | Carbon [12.0096, 12.0116] | Chlorine [35.446, 35.457]"
+  valeurs: "H 1.00784 1.00811 ; C 12.0096 12.0116 ; Cl 35.446 35.457"
+  statut: verifie-recontrole
+  consulte: '2026-11-19'
+  note: "Donnee officielle de reference. Lu par WebFetch le 19/11/2026."
+
+# === ANNEXE 5, complement couches et superabsorbant (chat 5, 19/11/2026) ===
+
+A5-MALSEGNA-2021-ENERGIES-AHP:
+  titre: "Experimental Study of Absorbent Hygiene Product Devolatilization in a Bubbling Fluidized Bed"
+  editeur: "Energies (MDPI), auteurs Malsegna B., Di Giuliano A., Gallucci K."
+  date: 2021
+  annee_donnees: 2021
+  type: etude_publique
+  url: https://www.mdpi.com/1996-1073/14/9/2399
+  doi: 10.3390/en14092399
+  emplacement: "Energies 14(9):2399 ; resume ; section 2.1 (materiaux) ; tableau 3 (analyses immediate et elementaire) ; tableau 5 ; section 3 (ICP-AES, sodium ; agglomeration du lit)"
+  contenu: "Deux materiaux : couches neuves broyees (AHPam, rebut de production) et fraction cellulosique de couches usagees sterilisees (AHPus). Tableau 3 (base brute) : humidite 5,8 et 6,6 % ; cendres 7,5 et 10,7 % ; matieres volatiles 82,8 et 81,5 % ; carbone fixe 3,9 et 1,2 %. Base seche : C 65,3 et 43,5 % ; H 10,3 et 6,6 % ; S 1,1 et 1,8 % ; O 23,3 et 48,0 %. Sodium (venant du polyacrylate de sodium du superabsorbant) : 2 a 3 % en masse dans les couches neuves. Le sodium et d'autres mineraux forment des eutectiques a bas point de fusion entre 500 et 800 C : agglomeration du sable du lit observee. Devolatilisation a 500, 600, 700 et 800 C ; sous azote a 700-800 C, meilleur gaz : H2 29,5 et 23,7 % en volume, hydrocarbures 14,8 et 7,4 %, 53,7 et 46,0 Nl de gaz pour 100 g. Fin de decomposition en combustion (ATG, 20 C/min) : 540 C pour les deux materiaux."
+  citation: "ICP-AES analyses indicated that Na content in AHPam was in the range of 2–3 wt% | Ashes 7.5 10.7 Volatile matter 82.8 81.5 Fixed carbon 3.9 1.2 | can lead to the formation of eutectics [35], which can in turn generate low-melting ashes at the temperatures of those processes investigated in this work"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Texte integral du PDF lu par Claude dans le navigateur de Stephane le 19/11/2026. Lit fluidise de laboratoire (chauffage tres rapide), pas une pyrolyse lente ; les rendements en char, huile et gaz en % massique ne sont pas donnes dans les passages lus."
+
+A5-MAHON-2020-SNAS-SAP:
+  titre: "Swelling performance of sodium polyacrylate and poly(acrylamide-co-acrylic acid) potassium salt"
+  editeur: "SN Applied Sciences 2, 117 (Springer), Mahon R. et al."
+  date: 2020
+  annee_donnees: 2020
+  type: etude_publique
+  url: https://link.springer.com/article/10.1007/s42452-019-1874-5
+  doi: 10.1007/s42452-019-1874-5
+  emplacement: "section 3.3 Thermal degradation, figure 8b"
+  contenu: "Analyse thermogravimetrique du polyacrylate de sodium, sous azote, 10 C/min jusqu'a 800 C, 7,79 g au depart : etape 1 (25 a 360 C) perte de 14 % (eau liee), 6,72 g restants ; etape 2 (360 a 477 C) 32 %, 4,27 g ; etape 3 (477 a 592 C) 88 % annonces, 3,25 g ; residu a 800 C 40 % (3,07 g)."
+  citation: "The first stage of decomposition is associated with the loss of water adsorbed on the surface of the particles."
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par WebFetch le 19/11/2026. Incoherence interne : 88 % annonces pour l'etape 3 alors que la masse passe de 4,27 a 3,25 g ; base de calcul des pourcentages non precisee. Le residu n'est pas identifie (pas de mention du carbonate de sodium)."
+
+A5-GRABOWSKA-2013-PAANA:
+  titre: "Studies of the Thermal Degradation of the BioCo3 Polymer Binder"
+  editeur: "Archives of Foundry Engineering 13 (special issue 1/2013) 27-30, Grabowska B., Grabowski G., Olejnik E., Kaczmarska K."
+  date: 2013
+  annee_donnees: 2013
+  type: etude_publique
+  url: https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a17986b6-9c8b-4a77-934f-70da70b01965/c/06_grabowska_studies_1s_2013.pdf
+  emplacement: "tableau 2 (argon), section 4 (TG-FTIR), section 6"
+  contenu: "Composite polyacrylate de sodium et dextrine de pomme de terre (rapport 9 pour 8), pas du polyacrylate pur. Sous argon : etapes 22-127 C (9,1 %), 127-238 C (8,5 %), 238-406 C (24,5 %), 406-634 C (18,5 %), 634-1000 C (28,1 %) ; residu 11,3 % a 1000 C, surtout du carbone ; perte vers 833 C attribuee au carbonate de sodium forme pendant la decomposition. Gaz : eau a 143 C, CO2 a 275 C, CO, CO2 et CH4 a 390 C ; CO2, H2O, CO et methane entre 300 et 500 C."
+  citation: "probably mainly contains carbonised carbon"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Revue technique a comite de lecture (fonderie). Lu par WebFetch le 19/11/2026. Le materiau contient de la dextrine : les etapes ne sont pas celles du superabsorbant seul."
+
+A5-MCNEILL-1990-PAANA:
+  titre: "Thermal stability and degradation mechanisms of poly(acrylic acid) and its salts. Part 2: Sodium and potassium salts"
+  editeur: "McNeill I.C., Sadeghi S.M.T. (Polymer Degradation and Stability, d'apres l'ISSN 0141-3910), p. 213-230"
+  date: 1990
+  annee_donnees: 1990
+  type: etude_publique
+  url: https://data.zhenzhi.com/details/1/993323970
+  doi: 10.1016/0141-3910(90)90077-K
+  emplacement: "resume"
+  contenu: "Les sels de sodium et de potassium de l'acide polyacrylique sont stables jusqu'a environ 400 C (chauffage programme a 10 C/min sous vide) ; la degradation donne une large gamme de produits, dont des dimeres et trimeres, avec seulement des traces de monomere."
+  citation: "These materials are stable up to about 400°C under programmed heating at 10° per min in vacuo."
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu sur une base de donnees tierce par WebFetch ; article payant non lu. Donnees de plus de huit ans."
+
+A5-LAM-2019-CHEMOSPHERE-DIAPER:
+  titre: "Microwave pyrolysis valorization of used baby diaper"
+  editeur: "Chemosphere 230 (2019) 294-302, Lam S.S. et al."
+  date: 2019-09
+  annee_donnees: 2019
+  type: etude_publique
+  url: https://pubmed.ncbi.nlm.nih.gov/31108440/
+  doi: 10.1016/j.chemosphere.2019.05.054
+  emplacement: "resume (PubMed)"
+  contenu: "Pyrolyse micro-ondes de couches bebe usagees (cellulose, polyolefines, superabsorbant) : chauffage jusqu'a 43 C/min, 20 a 40 min ; jusqu'a 43 % d'huile, 29 % de gaz et 28 % de char en masse. Huile : alcanes, alcenes, esters. Char riche en carbone, pauvre en azote, sans soufre."
+  citation: "generate pyrolysis products comprising up to 43 wt% production of liquid oil, 29 wt% gases and 28 wt% char product"
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu par Claude dans le navigateur de Stephane le 19/11/2026 ; article payant non lu. Valeurs maximales (« up to »), pas un bilan unique."
+
+A5-CALERO-2025-CEJ-DIAPER:
+  titre: "Exploring pyrolysis-based alternatives for the valorization of used diapers through a comprehensive understanding of all generated products"
+  editeur: "Chemical Engineering Journal 503 (2025) 158244, Calero M., Blazquez G., Solis R.R., Martin-Lara M.A., Munoz-Batista M.J."
+  date: 2025-01-01
+  annee_donnees: 2024
+  type: etude_publique
+  url: https://www.sciencedirect.com/science/article/abs/pii/S1385894724097353
+  doi: 10.1016/j.cej.2024.158244
+  emplacement: "resume et points forts"
+  contenu: "Couches bebe issues des refus de centres de traitement d'ordures menageres, separees en couches et fractions. Hydrogene et methane maximaux a 575 C : jusqu'a 7,4 mmol d'hydrogene et 6,3 mmol de methane, 23 mmol de gaz non condensables par gramme. A 525 C, liquides plus legers : plus de 63 % des liquides ont des points d'ebullition proches du naphta lourd. Residu solide partiellement amorphe, surface specifique maximale 9,7 m2/g a 575 C (faible). Influence du superabsorbant etudiee."
+  citation: "This study identified that hydrogen and methane production is maximized at 575 °C. | The temperature of 525 °C optimized the production of lighter liquid fractions."
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu par Claude dans le navigateur de Stephane le 19/11/2026 ; article payant non lu. Les rendements en % massique ne sont pas dans le resume."

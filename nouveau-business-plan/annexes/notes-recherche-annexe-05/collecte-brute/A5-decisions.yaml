@@ -1,0 +1,61 @@
+
+D-043:
+  date: 2026-11-19
+  titre: "Annexe 5 : dans les ordures menageres residuelles, seule la categorie Plastiques (07) produit une huile vendable"
+  de: "aucune regle pour les OMR (D-029 renvoie le bilan a l'annexe 5)"
+  vers: "huile comptee sur la seule categorie MODECOM 07 ; plastiques des composites, des textiles synthetiques et des couches non comptes (prudence) ; les autres matieres organiques donnent du char, de l'eau et du gaz"
+  unite: "regle de calcul"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5, annexe 5), a confirmer par Stephane. Raisons : OneWorld indique que
+    dechets alimentaires, papiers et bois sont convertis en char de substitution au charbon (UR2000-JP-P05-BILAN) ; la
+    litterature donne pour le papier et les textiles une huile chargee d'eau et d'oxygene (A5-BHATT-2026-RSCADV) ; le PET
+    donne surtout des cires (A5-JIA-2020-POLYMERS-PET). L'huile des plastiques contenus dans les couches (PP, PEBD, PET :
+    24,8 % d'une couche neuve, CALC-A5-COUCHE-POLYMERES-PCT), dans les composites et dans les textiles synthetiques est
+    un potentiel non chiffre.
+  preuves: [UR2000-JP-P05-BILAN, A5-BHATT-2026-RSCADV, A5-JIA-2020-POLYMERS-PET]
+  a_verifier: "Confirmer la regle ; essais OneWorld sur OMR brutes (R-021)."
+
+D-044:
+  date: 2026-11-19
+  titre: "Annexe 5 : rendements du plastique appliques a sa matiere seche ; fourchette de 55 a 81 %, valeur centrale 73,07 %"
+  de: "rendements des essais de plastiques propres et secs (annexe 2) ; base humide ou seche non precisee pour D-029"
+  vers: "masse seche des plastiques des OMR = part x (1 - humidite) des fractions S09 et S10 de MODECOM 2024 ; huile = 55 % (bas), 73,07 % (centre, D-034), 81 % (haut) de cette masse ; gaz issu du plastique = 10 % de cette masse (D-029)"
+  unite: "% de la matiere seche plastique"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5, annexe 5), a confirmer par Stephane. L'humidite mesuree des
+    plastiques des OMR (35,8 % pour les films, 20,1 % pour les autres plastiques, ADEME-MODECOM-2024-HUM) est surtout de
+    l'eau et des salissures accrochees ; les essais de Chiba portaient sur des plastiques propres. 55 % et 81 % sont le
+    plus bas et le plus haut des taux d'huile des 10 essais retenus (CHIBA-ESSAIS-FICHES). Le plastique des OMR est sale
+    et melange : la valeur basse est probablement plus realiste tant qu'aucun essai n'existe.
+  preuves: [ADEME-MODECOM-2024-HUM, CHIBA-ESSAIS-FICHES]
+  a_verifier: "Choix de la valeur par defaut (basse ou centrale) ; essais sur OMR (R-021)."
+
+D-045:
+  date: 2026-11-19
+  titre: "Annexe 5 : char des matieres organiques non plastiques pris a 30 % de leur matiere seche (fourchette 25 a 40 %)"
+  de: "aucune valeur (annexe 2 : INCONNU sur equipement Urban Rig)"
+  vers: "char = 30 % de la matiere seche des fractions organiques non plastiques ; bas 25 %, haut 40 %"
+  unite: "% de la matiere seche organique"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5, annexe 5), a confirmer par Stephane, a partir de la litterature,
+    faute d'essai Urban Rig : dechets alimentaires 28,45 % a 500 C (A5-KHAN-2022-POLYMERS-FOOD) ; papier et textiles
+    28 a 32 % a 500 C (A5-BHATT-2026-RSCADV, le resume donne 30 a 40 % pour le papier) ; bois 26,2 a 27,6 %, textiles
+    25,26 %, papier environ 40 % (revue, valeurs secondaires, A5-CZAJCZYNSKA-2017-REVIEW). Conditions de laboratoire
+    differentes de l'Urban Rig (vapeur surchauffee, 600 C).
+  preuves: [A5-KHAN-2022-POLYMERS-FOOD, A5-BHATT-2026-RSCADV, A5-CZAJCZYNSKA-2017-REVIEW]
+  a_verifier: "Valeur par defaut ; essais OneWorld (R-021)."
+
+D-046:
+  date: 2026-11-19
+  titre: "Annexe 5 : deux jeux MODECOM 2024, l'un pour les tonnages, l'autre pour l'eau et la matiere seche"
+  de: "aucune regle"
+  vers: "tonnages et parts par categorie : jeu omrcs-compo-jdd (fines absentes pour les OMR) ; eau et matiere seche : jeu omrhum (fines de moins de 8 mm a part, 5,4 %)"
+  unite: "regle de calcul"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5, annexe 5). Le jeu de composition ne donne pas de fines pour les
+    OMR et totalise 14 752 013 t ; le jeu d'humidite isole des fines de moins de 8 mm a 5,4 % et donne 26,3 % de
+    putrescibles hors jardin, contre 30,47 % dans le jeu de composition. La methode de repartition des fines n'est
+    ecrite ni dans les jeux ni dans la synthese ; la synthese dit seulement que les fines sont surtout des dechets
+    putrescibles (RP2-004, note 16). Le rapport technique complet (R-042) doit trancher.
+  preuves: [ADEME-MODECOM-2024-DATA, ADEME-MODECOM-2024-HUM, RP2-004]
+  a_verifier: "Methode des fines dans le rapport technique MODECOM 2024 (R-042)."

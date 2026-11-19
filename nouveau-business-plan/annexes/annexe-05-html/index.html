@@ -1,0 +1,849 @@
+<!doctype html>
+<!-- Fichier genere par generer_html.py a partir de ANNEX-05-Municipal-Solid-Waste.md et des registres. Ne pas modifier a la main : corriger la source, puis regenerer. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Annex 5. Municipal Solid Waste</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#dedbd2;--accent:#1f5f8b;--box:#f1eee6;--good:#2e6b3f;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-top:.6em;border-top:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.6em 0 .4em}
+p,li{max-width:72ch}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font:14px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--box)}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--box);padding:10px 12px;border-radius:6px;overflow-x:auto}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.ev{white-space:nowrap}
+.ev a{display:inline-block;font:600 11px/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:9px;padding:2px 6px;margin-left:3px;vertical-align:2px;opacity:.85}
+.ev a:hover{opacity:1;background:var(--accent);color:var(--bg)}
+.crumb{font:14px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted)}
+.cards{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin:18px 0 26px}
+@media (max-width:640px){.cards{grid-template-columns:1fr}}
+.card{background:var(--box);border-radius:10px;padding:14px 16px}
+.card h4{margin:0 0 6px;font:600 12px/1.2 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card p{margin:0}
+.conf{font:700 2.4rem/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--good);margin:4px 0 6px}
+.small{font-size:.9rem;color:var(--muted)}
+.result{font-size:1.15rem;background:var(--box);border-left:4px solid var(--good);padding:10px 14px;border-radius:6px}
+
+figure{margin:1.6em 0;padding:0}
+figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+.key{background:var(--box);border-radius:10px;padding:4px 18px;margin:1em 0}
+</style></head>
+<body><main><h1>Annex 5. Municipal Solid Waste (France)</h1>
+<p>This annex describes residual household waste in France (ordures ménagères résiduelles, OMR): how much there is, what it contains, what the Urban Rig can and cannot convert, and what an Urban Rig could produce from one tonne of it. Part 1 covers what goes in; Part 2 covers what comes out. Plastic streams collected on their own are covered by Annex 8, mixed commercial waste by Annex 7 and the CDG airport by Annex 6.</p>
+<h2>How to Read This Annex</h2>
+<p>OneWorld, the manufacturer of the Urban Rig, is the sponsor of this business plan<span class="ev"><a href="preuves/A5-D.html#D-027" title="Decision D-027">D-027</a></span>. Its documentation is marked "OneWorld design data"; these are the company's own figures and have not been verified independently.</p>
+<p>Each figure or fact is followed by a small link. It opens the evidence sheet: what the evidence shows, its confidence, the source document and its location, or the calculation. Sheets numbered 5.x belong to this annex; sheets numbered 1.x, 2.x, 3.x and 8.x are those of Annexes 1, 2, 3 and 8. All sheets are listed in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<p><strong>Composition data.</strong> The composition comes from the national characterisation campaign of 2024 (MODECOM 2024), published by ADEME as open data and in a summary report. The full technical report is available only through a registration form and has not been read (request R-042).</p>
+<p><strong>No Urban Rig test on household waste.</strong> The Urban Rig has been tested on clean plastics and on two municipal plastic-rich streams, not on raw household waste (Annex 2). Part 2 therefore combines those tests, published literature and working assumptions. Each assumption is dated and named; the operator of the model can change it.</p>
+<h2>Key Messages</h2>
+<ul>
+<li><strong>Residual household waste is a large, steady stream.</strong> France collected 14,752,013 t in 2024, 223.46 kg per inhabitant<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>. Ile-de-France collected 3.32 Mt in 2022, 268 kg per inhabitant, and sends 94 % of its residual waste to 18 incinerators<span class="ev"><a href="preuves/A5-P-a.html" title="ORDIF-DMA-2022">5.P.a</a></span>.</li>
+<li><strong>It is mostly wet organic matter.</strong> Putrescibles make up 33.67 % of the mass<span class="ev"><a href="preuves/A5-C-a.html" title="CALC-A5-CAT01-PCT">5.C.a</a></span> and sanitary textiles, mainly paper tissues and nappies, 16.99 %<span class="ev"><a href="preuves/A5-C-b.html" title="CALC-A5-CAT06-PCT">5.C.b</a></span>. The average moisture is 42.1 %<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>, about 421 kg of water per tonne<span class="ev"><a href="preuves/A5-C-c.html" title="CALC-A5-EAU-KG-T">5.C.c</a></span>.</li>
+<li><strong>Plastics are 15.79 % of the mass</strong><span class="ev"><a href="preuves/A5-C-d.html" title="CALC-A5-CAT07-PCT">5.C.d</a></span>, about 111 kg of dry plastic per tonne<span class="ev"><a href="preuves/A5-C-e.html" title="CALC-A5-SEC-PLAST-KG-T">5.C.e</a></span>. Their split by polymer is not published (request R-045).</li>
+<li><strong>11.79 % of the mass cannot be converted</strong>: glass, metals, other minerals and hazardous items<span class="ev"><a href="preuves/A5-C-f.html" title="CALC-A5-NONPROC-PCT">5.C.f</a></span>.</li>
+<li><strong>Oil comes from the plastic fraction.</strong> On the working assumptions of this annex, one tonne of residual household waste gives 61 to 90 kg of oil, 81 kg in the central case<span class="ev"><a href="preuves/A5-C-g.html" title="CALC-A5-HUILE-BAS-KG-T">5.C.g</a><a href="preuves/A5-C-h.html" title="CALC-A5-HUILE-HAUT-KG-T">5.C.h</a><a href="preuves/A5-C-i.html" title="CALC-A5-HUILE-CENT-KG-T">5.C.i</a><a href="preuves/A5-D.html#D-043" title="Decision D-043">D-043</a><a href="preuves/A5-D.html#D-044" title="Decision D-044">D-044</a></span>. OneWorld design data state 5 % of oil for household waste with 10 % of resins<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>.</li>
+<li><strong>Char is the main product.</strong> The non-plastic organic fraction would give 91 to 146 kg of char per tonne, 109 kg in the central case<span class="ev"><a href="preuves/A5-C-j.html" title="CALC-A5-CHAR-BAS-KG-T">5.C.j</a><a href="preuves/A5-C-k.html" title="CALC-A5-CHAR-HAUT-KG-T">5.C.k</a><a href="preuves/A5-C-l.html" title="CALC-A5-CHAR-CENT-KG-T">5.C.l</a><a href="preuves/A5-D.html#D-045" title="Decision D-045">D-045</a></span>.</li>
+<li><strong>Energy self-sufficiency is not established on this feed.</strong> The gas from the plastic gives about 416 MJ per tonne<span class="ev"><a href="preuves/A5-C-m.html" title="CALC-A5-GAZ-PLAST-MJ-T">5.C.m</a></span>, against 1,029 MJ only to evaporate the water<span class="ev"><a href="preuves/A5-C-n.html" title="CALC-A5-EAU-MJ-T">5.C.n</a></span> and 1,507 MJ of burner demand stated by OneWorld<span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-1.html" title="CALC-A2-BRULEUR-MJ-T">2.5.d.1</a></span>. The gap must be covered by burning part of the char or oil, or by purchased fuel<span class="ev"><a href="preuves/A5-D.html#D-029" title="Decision D-029">D-029</a></span>.</li>
+<li><strong>Tests are the priority.</strong> An Urban Rig test on French residual household waste, with measured moisture, gas and char, is the main request to OneWorld (R-021).</li>
+</ul>
+<h1>Part 1. What Goes In</h1>
+<h2>5.1 How Much Residual Household Waste</h2>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Tonnage</th>
+<th>Per inhabitant</th>
+<th>Year</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>France, residual household waste</td>
+<td>14,752,013 t</td>
+<td>223.46 kg</td>
+<td>2024</td>
+<td><span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span></td>
+</tr>
+<tr>
+<td>Same, sum of the open data categories</td>
+<td>14,752,013 t</td>
+<td>223.54 kg</td>
+<td>2024</td>
+<td><span class="ev"><a href="preuves/A5-C-o.html" title="CALC-A5-OMR-T">5.C.o</a><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span></td>
+</tr>
+<tr>
+<td>Ile-de-France</td>
+<td>3.32 Mt</td>
+<td>268 kg</td>
+<td>2022</td>
+<td><span class="ev"><a href="preuves/A5-P-a.html" title="ORDIF-DMA-2022">5.P.a</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>The national tonnages are extrapolated by ADEME from the 2023 collection survey<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>. The campaign characterised 95 samples of residual household waste in 50 municipalities, after 5 outliers were removed<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</p>
+<p>In Ile-de-France, 94 % of residual household and similar waste goes to 18 incinerators<span class="ev"><a href="preuves/A5-P-a.html" title="ORDIF-DMA-2022">5.P.a</a></span>. The regional incinerators burned 3,810,761 t in 2022, 93 % of the technical capacity of their furnaces (Annex 8)<span class="ev"><a href="../annexe-08-html/preuves/A8-P-f.html" title="A8-CST-ORDIF-UIDND-2023">8.P.f</a></span>.</p>
+<h2>5.2 Composition by Category</h2>
+<table>
+<thead>
+<tr>
+<th>Category (MODECOM 2024)</th>
+<th>Tonnes, France</th>
+<th>Share of mass</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Putrescibles (food and garden waste)</td>
+<td>4,966,318</td>
+<td>33.67 %</td>
+<td><span class="ev"><a href="preuves/A5-C-p.html" title="CALC-A5-CAT01-T">5.C.p</a><a href="preuves/A5-C-a.html" title="CALC-A5-CAT01-PCT">5.C.a</a></span></td>
+</tr>
+<tr>
+<td>Sanitary textiles (tissues, nappies, hygiene)</td>
+<td>2,505,734</td>
+<td>16.99 %</td>
+<td><span class="ev"><a href="preuves/A5-C-q.html" title="CALC-A5-CAT06-T">5.C.q</a><a href="preuves/A5-C-b.html" title="CALC-A5-CAT06-PCT">5.C.b</a></span></td>
+</tr>
+<tr>
+<td>Plastics</td>
+<td>2,329,258</td>
+<td>15.79 %</td>
+<td><span class="ev"><a href="preuves/A5-C-r.html" title="CALC-A5-CAT07-T">5.C.r</a><a href="preuves/A5-C-d.html" title="CALC-A5-CAT07-PCT">5.C.d</a></span></td>
+</tr>
+<tr>
+<td>Cardboard</td>
+<td>973,969</td>
+<td>6.60 %</td>
+<td><span class="ev"><a href="preuves/A5-C-s.html" title="CALC-A5-CAT03-T">5.C.s</a><a href="preuves/A5-C-t.html" title="CALC-A5-CAT03-PCT">5.C.t</a></span></td>
+</tr>
+<tr>
+<td>Paper</td>
+<td>854,481</td>
+<td>5.79 %</td>
+<td><span class="ev"><a href="preuves/A5-C-u.html" title="CALC-A5-CAT02-T">5.C.u</a><a href="preuves/A5-C-v.html" title="CALC-A5-CAT02-PCT">5.C.v</a></span></td>
+</tr>
+<tr>
+<td>Glass</td>
+<td>739,213</td>
+<td>5.01 %</td>
+<td><span class="ev"><a href="preuves/A5-C-w.html" title="CALC-A5-CAT09-T">5.C.w</a><a href="preuves/A5-C-x.html" title="CALC-A5-CAT09-PCT">5.C.x</a></span></td>
+</tr>
+<tr>
+<td>Textiles</td>
+<td>718,435</td>
+<td>4.87 %</td>
+<td><span class="ev"><a href="preuves/A5-C-y.html" title="CALC-A5-CAT05-T">5.C.y</a><a href="preuves/A5-C-z.html" title="CALC-A5-CAT05-PCT">5.C.z</a></span></td>
+</tr>
+<tr>
+<td>Metals</td>
+<td>493,070</td>
+<td>3.34 %</td>
+<td><span class="ev"><a href="preuves/A5-C-aa.html" title="CALC-A5-CAT10-T">5.C.aa</a><a href="preuves/A5-C-ab.html" title="CALC-A5-CAT10-PCT">5.C.ab</a></span></td>
+</tr>
+<tr>
+<td>Other minerals</td>
+<td>320,842</td>
+<td>2.17 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ac.html" title="CALC-A5-CAT12-T">5.C.ac</a><a href="preuves/A5-C-ad.html" title="CALC-A5-CAT12-PCT">5.C.ad</a></span></td>
+</tr>
+<tr>
+<td>Composites</td>
+<td>294,383</td>
+<td>2.00 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ae.html" title="CALC-A5-CAT04-T">5.C.ae</a><a href="preuves/A5-C-af.html" title="CALC-A5-CAT04-PCT">5.C.af</a></span></td>
+</tr>
+<tr>
+<td>Other organic matter (rubber, carpet, vacuum bags...)</td>
+<td>227,604</td>
+<td>1.54 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ag.html" title="CALC-A5-CAT11-T">5.C.ag</a><a href="preuves/A5-C-ah.html" title="CALC-A5-CAT11-PCT">5.C.ah</a></span></td>
+</tr>
+<tr>
+<td>Hazardous or specific waste</td>
+<td>186,789</td>
+<td>1.27 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ai.html" title="CALC-A5-CAT13-T">5.C.ai</a><a href="preuves/A5-C-aj.html" title="CALC-A5-CAT13-PCT">5.C.aj</a></span></td>
+</tr>
+<tr>
+<td>Wood</td>
+<td>141,917</td>
+<td>0.96 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ak.html" title="CALC-A5-CAT08-T">5.C.ak</a><a href="preuves/A5-C-al.html" title="CALC-A5-CAT08-PCT">5.C.al</a></span></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>14,752,013</strong></td>
+<td><strong>100 %</strong></td>
+<td><span class="ev"><a href="preuves/A5-C-o.html" title="CALC-A5-OMR-T">5.C.o</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>Each line is the sum of the sub-categories of the open data set<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span>; the category names are those of the sorting grid<span class="ev"><a href="preuves/A5-L-b.html" title="RP2-002">5.L.b</a></span>.</p>
+<p><strong>Fines.</strong> The open composition data give no fines category for residual household waste<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span>, while the moisture data treat fines under 8 mm as a separate fraction of 5.4 %<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>. The summary report states that these fines are mostly putrescible waste<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>. How the fines were allocated to the categories above is not written in the data or in the summary; this annex uses the composition data for tonnages and the moisture data for the water balance<span class="ev"><a href="preuves/A5-D.html#D-046" title="Decision D-046">D-046</a></span>.</p>
+<p><strong>What changed since 2017.</strong> Residual household waste fell from 252.7 to 223.5 kg per inhabitant between 2017 and 2024<span class="ev"><a href="preuves/A5-P-d.html" title="ADEME-CP-2025">5.P.d</a></span>. Its moisture rose from 36.9 % to 42.1 %<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</p>
+<h2>5.3 Moisture and Calorific Value by Fraction</h2>
+<table>
+<thead>
+<tr>
+<th>Fraction</th>
+<th>Share of mass</th>
+<th>Moisture</th>
+<th>Net calorific value, dry basis (J/g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Garden waste</td>
+<td>3.0 %</td>
+<td>59.7 %</td>
+<td>16,606</td>
+</tr>
+<tr>
+<td>Other putrescibles</td>
+<td>26.3 %</td>
+<td>59.6 %</td>
+<td>16,975</td>
+</tr>
+<tr>
+<td>Paper</td>
+<td>5.7 %</td>
+<td>28.9 %</td>
+<td>14,398</td>
+</tr>
+<tr>
+<td>Cardboard</td>
+<td>6.6 %</td>
+<td>33.7 %</td>
+<td>15,635</td>
+</tr>
+<tr>
+<td>Composite packaging</td>
+<td>1.8 %</td>
+<td>28.3 %</td>
+<td>19,794</td>
+</tr>
+<tr>
+<td>Textiles</td>
+<td>4.9 %</td>
+<td>33.7 %</td>
+<td>18,466</td>
+</tr>
+<tr>
+<td>Sanitary textiles</td>
+<td>17.0 %</td>
+<td>60.0 %</td>
+<td>18,040</td>
+</tr>
+<tr>
+<td>Plastic films and bags</td>
+<td>8.6 %</td>
+<td>35.8 %</td>
+<td>27,808</td>
+</tr>
+<tr>
+<td>Other plastics</td>
+<td>7.0 %</td>
+<td>20.1 %</td>
+<td>25,616</td>
+</tr>
+<tr>
+<td>Wood (packaging / other)</td>
+<td>0.3 % / 0.7 %</td>
+<td>13.0 % / 26.0 %</td>
+<td>17,300 / 17,822</td>
+</tr>
+<tr>
+<td>Other organic matter</td>
+<td>1.4 %</td>
+<td>27.5 %</td>
+<td>16,781</td>
+</tr>
+<tr>
+<td>Glass</td>
+<td>4.7 %</td>
+<td>2.2 %</td>
+<td>not analysed</td>
+</tr>
+<tr>
+<td>Metals</td>
+<td>3.3 %</td>
+<td>13.2 %</td>
+<td>not analysed</td>
+</tr>
+<tr>
+<td>Other minerals</td>
+<td>2.0 %</td>
+<td>14.1 %</td>
+<td>not analysed</td>
+</tr>
+<tr>
+<td>Fines under 8 mm</td>
+<td>5.4 %</td>
+<td>46.3 %</td>
+<td>9,819</td>
+</tr>
+<tr>
+<td><strong>Residual household waste, average</strong></td>
+<td></td>
+<td><strong>42.1 %</strong></td>
+<td><strong>16.3 MJ/kg dry; 8.4 MJ/kg as received</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Sources: shares and moisture<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>; calorific values<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>, read on the table of the summary report.</p>
+<p>Moisture was measured on 20 samples and the calorific value on 15<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>. The average calorific value counts glass, metals, other minerals and hazardous waste at zero and is therefore slightly underestimated<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</p>
+<p><strong>Reading.</strong> The plastic fractions of residual waste are not dry: 35.8 % moisture for films and 20.1 % for other plastics<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>. This is mostly water and food soiling stuck to the plastic. The calorific values show that the plastic fractions carry the most energy per dry kilogram, 27,808 and 25,616 J/g<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</p>
+<h2>5.4 What the Urban Rig Cannot Convert</h2>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Share of mass</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Glass</td>
+<td>5.01 %</td>
+<td><span class="ev"><a href="preuves/A5-C-x.html" title="CALC-A5-CAT09-PCT">5.C.x</a></span></td>
+</tr>
+<tr>
+<td>Metals</td>
+<td>3.34 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ab.html" title="CALC-A5-CAT10-PCT">5.C.ab</a></span></td>
+</tr>
+<tr>
+<td>Other minerals (rubble, ceramics, cat litter...)</td>
+<td>2.17 %</td>
+<td><span class="ev"><a href="preuves/A5-C-ad.html" title="CALC-A5-CAT12-PCT">5.C.ad</a></span></td>
+</tr>
+<tr>
+<td>Hazardous or specific waste (electronics, batteries, gas cartridges...)</td>
+<td>1.27 %</td>
+<td><span class="ev"><a href="preuves/A5-C-aj.html" title="CALC-A5-CAT13-PCT">5.C.aj</a></span></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>11.79 %</strong>, 1,739,914 t in France</td>
+<td><span class="ev"><a href="preuves/A5-C-f.html" title="CALC-A5-NONPROC-PCT">5.C.f</a><a href="preuves/A5-C-am.html" title="CALC-A5-NONPROC-T">5.C.am</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>Glass, metals and minerals pass through the reactor unchanged and leave with the solid residue. In the Chiba tests on municipal streams, the operator weighed "metals and foreign matter" separately after treatment: 27.8 % of the input for municipal packaging plastics<span class="ev"><a href="../annexe-02-html/preuves/A2-5-b-11.html" title="CALC-A2-NONPLAST-NODA-0909">2.5.b.11</a></span>. The yields of this annex are therefore expressed per tonne received, with these materials included.</p>
+<p>Hazardous items (batteries, gas cartridges, medicines) are a safety and permitting matter more than a yield matter. Whether they are removed before the reactor depends on the pre-sorting line chosen (Annex 9; request R-023).</p>
+<h2>5.5 Sanitary Textiles and Nappies</h2>
+<p>Sanitary textiles are the second category of residual waste, 16.99 % of its mass<span class="ev"><a href="preuves/A5-C-b.html" title="CALC-A5-CAT06-PCT">5.C.b</a></span>:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-category</th>
+<th>Tonnes</th>
+<th>Share of mass</th>
+<th>Per inhabitant</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Soiled paper (tissues, kitchen paper, napkins)</td>
+<td>1,265,338</td>
+<td>8.6 %</td>
+<td>19.2 kg</td>
+<td><span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span></td>
+</tr>
+<tr>
+<td>Baby nappies</td>
+<td>859,734</td>
+<td>5.8 %</td>
+<td>13.0 kg</td>
+<td><span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span></td>
+</tr>
+<tr>
+<td>Other hygiene products (adult nappies, sanitary towels, wipes)</td>
+<td>380,662</td>
+<td>2.6 %</td>
+<td>5.8 kg</td>
+<td><span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>Their moisture is 60.0 %<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>; their calorific value is 18,040 J/g on a dry basis<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</p>
+<p><strong>What a nappy is made of.</strong> The only composition found is British and dates from 2006: a new nappy of 38.6 g holds 34.1 % fluff pulp, 32.4 % superabsorbent polymer, 16.6 % polypropylene, 6.0 % low-density polyethylene, 3.8 % adhesives, 2.2 % PET or polyester and 4.8 % other materials<span class="ev"><a href="preuves/A5-L-c.html" title="A5-EA-2008-NAPPY-LCA">5.L.c</a></span>. PP, PE and PET together make 24.8 % of a new nappy<span class="ev"><a href="preuves/A5-C-an.html" title="CALC-A5-COUCHE-POLYMERES-PCT">5.C.an</a></span>. A recent European composition was not found (request R-046).</p>
+<p><strong>Reading.</strong> Nappies carry plastic that could produce oil, but it is mixed with cellulose, superabsorbent gel and, once used, a large weight of water. This plastic is not counted in the oil of this annex<span class="ev"><a href="preuves/A5-D.html#D-043" title="Decision D-043">D-043</a></span>. The superabsorbent polymer has no Urban Rig test (Annex 2; request R-021).</p>
+<h3>5.5.1 What Happens to a Nappy in the Reactor</h3>
+<p>No Urban Rig test exists on nappies (request R-021). Published work describes what each component does as the temperature rises. The URC-2000 heats its feed through zones at 150, 300, 450 and 600 °C, according to OneWorld design data<span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span>.</p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>What happens</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Up to about 230 °C</td>
+<td>Water leaves. A used nappy is wet: sanitary textiles hold 60.0 % moisture in residual waste<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>; the superabsorbent itself loses its bound water, 14 % of its dry mass, below 360 °C<span class="ev"><a href="preuves/A5-L-d.html" title="A5-MAHON-2020-SNAS-SAP">5.L.d</a></span></td>
+<td><span class="ev"><a href="preuves/A5-L-e.html" title="A5-GRABOWSKA-2013-PAANA">5.L.e</a></span></td>
+</tr>
+<tr>
+<td>About 230 to 550 °C</td>
+<td>Cellulose (fluff pulp) and paper decompose; the main devolatilisation of household waste components lies between 230 and 550 °C<span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span>. They give char, gas and a wet liquid (Section 5.10)</td>
+<td><span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span></td>
+</tr>
+<tr>
+<td>From about 360 to 400 °C upwards</td>
+<td>The superabsorbent (sodium polyacrylate) starts to break down: stable up to about 400 °C<span class="ev"><a href="preuves/A5-L-g.html" title="A5-MCNEILL-1990-PAANA">5.L.g</a></span>; main losses between 360 and 592 °C<span class="ev"><a href="preuves/A5-L-d.html" title="A5-MAHON-2020-SNAS-SAP">5.L.d</a></span>. It releases water, CO2, CO and methane between 300 and 500 °C<span class="ev"><a href="preuves/A5-L-e.html" title="A5-GRABOWSKA-2013-PAANA">5.L.e</a></span></td>
+<td></td>
+</tr>
+<tr>
+<td>About 400 to 500 °C</td>
+<td>Polypropylene and polyethylene (topsheet, backsheet) crack into oil and gas, as in the Chiba tests (Annex 2)</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span></td>
+</tr>
+<tr>
+<td>End</td>
+<td>A carbon-rich residue remains. For a sodium polyacrylate binder, the residue at 1,000 °C was 11.3 %, mostly carbon, and sodium carbonate formed during the decomposition<span class="ev"><a href="preuves/A5-L-e.html" title="A5-GRABOWSKA-2013-PAANA">5.L.e</a></span>; pure sodium polyacrylate kept 40 % of its mass at 800 °C<span class="ev"><a href="preuves/A5-L-d.html" title="A5-MAHON-2020-SNAS-SAP">5.L.d</a></span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Results on whole nappies.</strong></p>
+<ul>
+<li>Microwave pyrolysis of used baby nappies gave up to 43 % oil, 29 % gas and 28 % char by mass (abstract only)<span class="ev"><a href="preuves/A5-L-h.html" title="A5-LAM-2019-CHEMOSPHERE-DIAPER">5.L.h</a></span>.</li>
+<li>Pyrolysis of nappies taken from the rejects of household waste plants maximised hydrogen and methane at 575 °C, up to 23 mmol of non-condensable gas per gram; at 525 °C, over 63 % of the liquid had boiling points close to heavy naphtha; the char had a low surface area, 9.7 m2/g (abstract only)<span class="ev"><a href="preuves/A5-L-i.html" title="A5-CALERO-2025-CEJ-DIAPER">5.L.i</a></span>.</li>
+<li>New shredded nappies held 7.5 % ash and 3.9 % fixed carbon; the cellulosic fraction of used, sterilised nappies 10.7 % ash and 1.2 % fixed carbon<span class="ev"><a href="preuves/A5-L-j.html" title="A5-MALSEGNA-2021-ENERGIES-AHP">5.L.j</a></span>.</li>
+</ul>
+<p><strong>Sodium is the operational risk.</strong> The superabsorbent brings 2 to 3 % sodium by mass into new nappies<span class="ev"><a href="preuves/A5-L-j.html" title="A5-MALSEGNA-2021-ENERGIES-AHP">5.L.j</a></span>. With silicon and other minerals, sodium forms low-melting ashes between 500 and 800 °C; the authors observed agglomeration of their reactor bed<span class="ev"><a href="preuves/A5-L-j.html" title="A5-MALSEGNA-2021-ENERGIES-AHP">5.L.j</a></span>. In an Urban Rig, this sodium would end in the char and could cause sticky deposits; it also lowers the value of the char as a fuel. This is to be checked in the OneWorld test (R-021).</p>
+<p><strong>Reading.</strong> A nappy is not mainly an oil feed: its cellulose and superabsorbent give char, water and gas, and its PP and PE a modest amount of oil. Pyrolysis destroys the superabsorbent; recovering it as a material requires separation before any thermal treatment, which is outside the Urban Rig process.</p>
+<h2>5.6 Textiles, Composites, Other Organic Matter and Fines</h2>
+<ul>
+<li><strong>Textiles</strong>, 4.87 %<span class="ev"><a href="preuves/A5-C-z.html" title="CALC-A5-CAT05-PCT">5.C.z</a></span>: mainly clothing, 443,844 t<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span>. Their split between cotton and synthetic fibres in residual waste was not found (request R-046).</li>
+<li><strong>Composites</strong>, 2.00 %<span class="ev"><a href="preuves/A5-C-af.html" title="CALC-A5-CAT04-PCT">5.C.af</a></span>: plastic-majority packaging such as coffee bags and crisp packets, 131,937 t; beverage cartons, 78,114 t; paper-majority composites, 64,087 t<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span>.</li>
+<li><strong>Other organic matter</strong>, 1.54 %, 227,604 t: rubber, vacuum cleaner bags, carpet offcuts, cushions, tyres<span class="ev"><a href="preuves/A5-C-ah.html" title="CALC-A5-CAT11-PCT">5.C.ah</a><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-b.html" title="RP2-002">5.L.b</a></span>.</li>
+<li><strong>Fines under 8 mm</strong>, 5.4 % in the moisture data, mostly putrescible<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>; dry calorific value 9,819 J/g<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>.</li>
+</ul>
+<h2>5.7 Plastics in Residual Household Waste</h2>
+<table>
+<thead>
+<tr>
+<th>Plastic type</th>
+<th>Tonnes, France</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bin bags, other bags, packaging films</td>
+<td>1,281,445</td>
+<td><span class="ev"><a href="preuves/A5-C-ao.html" title="CALC-A5-PLAST-SOUPLES-T">5.C.ao</a></span></td>
+</tr>
+<tr>
+<td>Rigid and other plastics</td>
+<td>1,047,813</td>
+<td><span class="ev"><a href="preuves/A5-C-ap.html" title="CALC-A5-PLAST-RIGIDES-T">5.C.ap</a></span></td>
+</tr>
+<tr>
+<td>of which: tubs, trays, pots and cups</td>
+<td>443,885</td>
+<td><span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span></td>
+</tr>
+<tr>
+<td>of which: other plastics (pipes, utensils, PVC panels, stretch films...)</td>
+<td>217,448</td>
+<td><span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-b.html" title="RP2-002">5.L.b</a></span></td>
+</tr>
+<tr>
+<td>of which: PET bottles and flasks</td>
+<td>212,499</td>
+<td><span class="ev"><a href="preuves/A5-C-aq.html" title="CALC-A5-PLAST-PET-T">5.C.aq</a></span></td>
+</tr>
+<tr>
+<td>of which: polyolefin bottles and flasks</td>
+<td>68,077</td>
+<td><span class="ev"><a href="preuves/A5-C-ar.html" title="CALC-A5-PLAST-PO-T">5.C.ar</a></span></td>
+</tr>
+<tr>
+<td><strong>Total plastics</strong></td>
+<td><strong>2,329,258</strong></td>
+<td><span class="ev"><a href="preuves/A5-C-r.html" title="CALC-A5-CAT07-T">5.C.r</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Polymers.</strong> The MODECOM grid sorts plastics by use, not by polymer, except for PET bottles and polyolefin bottles<span class="ev"><a href="preuves/A5-L-b.html" title="RP2-002">5.L.b</a></span>. The share of PE, PP, PS, PET and PVC in the plastics of residual household waste was not found (request R-045). Annex 8 describes the plastic streams that are collected separately.</p>
+<p><strong>PVC and chlorine.</strong> PVC appears in two sub-categories of the grid: other bottles and flasks, 5,461 t, and other plastics<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-L-b.html" title="RP2-002">5.L.b</a></span>. Pure PVC is 56.7 % chlorine by mass<span class="ev"><a href="preuves/A5-C-as.html" title="CALC-A5-PVC-CL-MIN">5.C.as</a><a href="preuves/A5-C-at.html" title="CALC-A5-PVC-CL-MAX">5.C.at</a></span>. No chlorine analysis of residual household waste was found in the MODECOM summary (request R-045). The oil made from municipal streams at Chiba contained 0.137 % and 0.526 % chlorine (Annex 2)<span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html" title="CHIBA-JLOS-HUILES">2.2.a</a></span>.</p>
+<p><strong>Regulatory consequence.</strong> Residual household waste is not among the waste codes from which pyrolysis oil can leave waste status in France<span class="ev"><a href="../annexe-03-html/preuves/A3-R-a.html" title="A3-ARRETE-SSD-HUILE-PYROLYSE-2024">3.R.a</a></span>. Oil made from it remains a waste-derived fuel (Annex 3).</p>
+<h2>5.8 One Tonne of Residual Household Waste</h2>
+<p>The table below converts the composition and moisture data into the mass of water, dry plastic, dry non-plastic organic matter and dry inert matter in one tonne received.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>kg per tonne</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Water</td>
+<td>421</td>
+<td><span class="ev"><a href="preuves/A5-C-c.html" title="CALC-A5-EAU-KG-T">5.C.c</a></span></td>
+</tr>
+<tr>
+<td>Dry plastic (films and other plastics)</td>
+<td>111</td>
+<td><span class="ev"><a href="preuves/A5-C-e.html" title="CALC-A5-SEC-PLAST-KG-T">5.C.e</a></span></td>
+</tr>
+<tr>
+<td>Dry non-plastic organic matter (food, garden, paper, cardboard, composites, textiles, sanitary textiles, wood, other organics, fines)</td>
+<td>364</td>
+<td><span class="ev"><a href="preuves/A5-C-au.html" title="CALC-A5-SEC-ORG-KG-T">5.C.au</a></span></td>
+</tr>
+<tr>
+<td>Dry inert matter (glass, metals, other minerals)</td>
+<td>92</td>
+<td><span class="ev"><a href="preuves/A5-C-av.html" title="CALC-A5-SEC-INERTE-KG-T">5.C.av</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>The moisture data cover 98.8 % of the mass; hazardous waste has no moisture value<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>. The water figure matches the published average moisture of 42.1 %<span class="ev"><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>.</p>
+<h1>Part 2. What Comes Out</h1>
+<h2>5.9 Evidence on Urban Rig Equipment</h2>
+<p><strong>Clean plastics (Chiba, 2022).</strong> Oil yields of 74 % to 81 % for PE, 73 % to 81 % for PP and 55 % to 73 % for PS<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>; 73.07 % on average over the 10 runs retained<span class="ev"><a href="../annexe-02-html/preuves/A2-5-f-7.html" title="CALC-A2-HUILE10-MOY-POND">2.5.f.7</a><a href="preuves/A5-D.html#D-034" title="Decision D-034">D-034</a></span>.</p>
+<p><strong>Two municipal plastic-rich streams (Chiba, 2022).</strong> Not raw household waste, but plastic packaging collected separately and the residue of non-combustible waste collection (Annex 2). Oil yields were 44.6 % and 50.4 % of the input after removal of metals and foreign matter<span class="ev"><a href="../annexe-02-html/preuves/A2-5-b-8.html" title="CALC-A2-HUILE-NODA-0909-HORSMETAUX">2.5.b.8</a><a href="../annexe-02-html/preuves/A2-5-b-10.html" title="CALC-A2-HUILE-NODA-0915-HORSMETAUX">2.5.b.10</a></span>, and 32.2 % and 45.0 % of the raw input<span class="ev"><a href="../annexe-02-html/preuves/A2-5-b-7.html" title="CALC-A2-HUILE-NODA-0909-BRUT">2.5.b.7</a><a href="../annexe-02-html/preuves/A2-5-b-9.html" title="CALC-A2-HUILE-NODA-0915-BRUT">2.5.b.9</a></span>. The moisture of these feeds was not measured<span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html" title="CHIBA-ESSAIS-FICHES">2.1.b</a></span>.</p>
+<p><strong>OneWorld design data for household waste.</strong> For household waste containing 10 % resins, OneWorld design data state 25 % char, 5 % oil and 5 % off-gas<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>. The same document states that food waste, leftovers, paper and wood are converted into a char that substitutes for coal<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>. About 60 % to 65 % of the input is not allocated in this balance; no measurement is attached<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>.</p>
+<h2>5.10 Published Data for Materials Without Urban Rig Tests</h2>
+<p>Laboratory conditions differ from the Urban Rig (no superheated steam, smaller scale). These values give orders of magnitude, not design data.</p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Conditions</th>
+<th>Oil or liquid</th>
+<th>Gas</th>
+<th>Char or solid</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Waste paper and textiles</td>
+<td>Rotary kiln, 2 kg, 500 °C</td>
+<td>20 to 25 %</td>
+<td>45 to 48 %</td>
+<td>28 to 32 %</td>
+<td><span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span></td>
+</tr>
+<tr>
+<td>Mixed plastics (LDPE, PP), same study</td>
+<td>Same</td>
+<td>40 to 45 %</td>
+<td>not stated</td>
+<td>5 to 7 %</td>
+<td><span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span></td>
+</tr>
+<tr>
+<td>Food waste (simulated)</td>
+<td>Laboratory, 500 °C</td>
+<td>not measured</td>
+<td>not measured</td>
+<td>28.45 %</td>
+<td><span class="ev"><a href="preuves/A5-L-k.html" title="A5-KHAN-2022-POLYMERS-FOOD">5.L.k</a></span></td>
+</tr>
+<tr>
+<td>PET</td>
+<td>Laboratory fast pyrolysis, 450 and 600 °C</td>
+<td>waxes about 59.50 and 67.70 %</td>
+<td>about 20 %</td>
+<td></td>
+<td><span class="ev"><a href="preuves/A5-L-l.html" title="A5-JIA-2020-POLYMERS-PET">5.L.l</a></span></td>
+</tr>
+<tr>
+<td>Food waste</td>
+<td>Fixed bed, 800 °C</td>
+<td>46 %</td>
+<td>~29 %</td>
+<td>~25 %</td>
+<td><span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Softwood / hardwood</td>
+<td>Vacuum, 500 °C</td>
+<td>45.0 / 55.9 %</td>
+<td>24.7 / 19.9 %</td>
+<td>27.6 / 26.2 %</td>
+<td><span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Paper</td>
+<td>Batch, 600 °C</td>
+<td>~19 %</td>
+<td>~41 %</td>
+<td>~40 %</td>
+<td><span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Cotton textile waste</td>
+<td>Fixed bed, 450 °C</td>
+<td>14.00 %</td>
+<td>60.35 %</td>
+<td>25.26 %</td>
+<td><span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Mixed municipal solid waste</td>
+<td>Slow pyrolysis, 550 °C</td>
+<td>48.0 %</td>
+<td>34.0 %</td>
+<td>18.0 %</td>
+<td><span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>, secondary</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reading.</strong></p>
+<ul>
+<li><strong>Biomass gives char and a wet, oxygenated liquid.</strong> The liquid from paper held 8.01 % water, against 1.22 % for plastics<span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span>. This liquid is not the hydrocarbon oil of the Chiba tests.</li>
+<li><strong>PET gives mostly waxes</strong> (benzoic and terephthalic acids) rather than oil<span class="ev"><a href="preuves/A5-L-l.html" title="A5-JIA-2020-POLYMERS-PET">5.L.l</a></span>; PET bottles are a small part of residual waste, 212,499 t<span class="ev"><a href="preuves/A5-C-aq.html" title="CALC-A5-PLAST-PET-T">5.C.aq</a></span>.</li>
+<li><strong>Plastics leave almost no fixed carbon</strong>: 0 % for PE and PP, 0.2 % for PS, 4.5 % to 4.8 % for PVC<span class="ev"><a href="preuves/A5-L-n.html" title="A5-SORUM-2001-SINTEF">5.L.n</a></span>.</li>
+<li><strong>Food waste char</strong> at 500 °C had a gross calorific value of 5,864 kcal/kg<span class="ev"><a href="preuves/A5-L-k.html" title="A5-KHAN-2022-POLYMERS-FOOD">5.L.k</a></span>, i.e. 24.55 MJ/kg<span class="ev"><a href="preuves/A5-C-aw.html" title="CALC-A5-KHAN-PCS-MJ-KG">5.C.aw</a></span>.</li>
+</ul>
+<h2>5.11 Indicative Mass Balance per Tonne</h2>
+<p>Working assumptions, dated and changeable by the operator:</p>
+<ul>
+<li>only the plastic category produces a saleable oil; plastic in nappies, composites and textiles is not counted<span class="ev"><a href="preuves/A5-D.html#D-043" title="Decision D-043">D-043</a></span>;</li>
+<li>the oil and gas yields of plastic apply to its dry mass; oil at 55 %, 73.07 % or 81 %<span class="ev"><a href="preuves/A5-D.html#D-044" title="Decision D-044">D-044</a></span>; gas at 10 % of the plastic<span class="ev"><a href="preuves/A5-D.html#D-029" title="Decision D-029">D-029</a></span>;</li>
+<li>char at 25 %, 30 % or 40 % of the dry non-plastic organic matter<span class="ev"><a href="preuves/A5-D.html#D-045" title="Decision D-045">D-045</a></span>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Product, per tonne received</th>
+<th>Low</th>
+<th>Central</th>
+<th>High</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oil from the plastic fraction</td>
+<td>61 kg</td>
+<td>81 kg</td>
+<td>90 kg</td>
+<td><span class="ev"><a href="preuves/A5-C-g.html" title="CALC-A5-HUILE-BAS-KG-T">5.C.g</a><a href="preuves/A5-C-i.html" title="CALC-A5-HUILE-CENT-KG-T">5.C.i</a><a href="preuves/A5-C-h.html" title="CALC-A5-HUILE-HAUT-KG-T">5.C.h</a></span></td>
+</tr>
+<tr>
+<td>Gas from the plastic fraction</td>
+<td>11.1 kg</td>
+<td>11.1 kg</td>
+<td>11.1 kg</td>
+<td><span class="ev"><a href="preuves/A5-C-ax.html" title="CALC-A5-GAZ-PLAST-KG-T">5.C.ax</a></span></td>
+</tr>
+<tr>
+<td>Char from non-plastic organic matter</td>
+<td>91 kg</td>
+<td>109 kg</td>
+<td>146 kg</td>
+<td><span class="ev"><a href="preuves/A5-C-j.html" title="CALC-A5-CHAR-BAS-KG-T">5.C.j</a><a href="preuves/A5-C-l.html" title="CALC-A5-CHAR-CENT-KG-T">5.C.l</a><a href="preuves/A5-C-k.html" title="CALC-A5-CHAR-HAUT-KG-T">5.C.k</a></span></td>
+</tr>
+<tr>
+<td>Inert residue (glass, metals, minerals), dry</td>
+<td>92 kg</td>
+<td>92 kg</td>
+<td>92 kg</td>
+<td><span class="ev"><a href="preuves/A5-C-av.html" title="CALC-A5-SEC-INERTE-KG-T">5.C.av</a></span></td>
+</tr>
+<tr>
+<td>Water evaporated, then condensed</td>
+<td>421 kg</td>
+<td>421 kg</td>
+<td>421 kg</td>
+<td><span class="ev"><a href="preuves/A5-C-c.html" title="CALC-A5-EAU-KG-T">5.C.c</a></span></td>
+</tr>
+<tr>
+<td>Gas, water of reaction and liquid from non-plastic organic matter</td>
+<td>balance, not known</td>
+<td></td>
+<td></td>
+<td>INCONNU</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reading.</strong></p>
+<ul>
+<li><strong>Oil is a small share of the output.</strong> The central case gives 81 kg of oil per tonne<span class="ev"><a href="preuves/A5-C-i.html" title="CALC-A5-HUILE-CENT-KG-T">5.C.i</a></span>, against 5 % of oil in OneWorld design data for household waste with 10 % resins<span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html" title="UR2000-JP-P05-BILAN">2.3.a</a></span>. The French residual waste holds more plastic, 15.79 %<span class="ev"><a href="preuves/A5-C-d.html" title="CALC-A5-CAT07-PCT">5.C.d</a></span>.</li>
+<li><strong>The low case is probably the more realistic one</strong> until a test exists: the plastic of residual waste is dirty and mixed, and the municipal plastics of Chiba gave lower yields than clean plastics (Section 5.9).</li>
+<li><strong>The non-plastic organic matter is the unknown.</strong> It is 364 kg of dry matter per tonne<span class="ev"><a href="preuves/A5-C-au.html" title="CALC-A5-SEC-ORG-KG-T">5.C.au</a></span>; how much of it becomes gas, liquid or char in the Urban Rig has not been measured (request R-021).</li>
+</ul>
+<h2>5.12 Energy Balance</h2>
+<table>
+<thead>
+<tr>
+<th>Item, per tonne received</th>
+<th>MJ</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy in the gas from the plastic fraction, at 37.4 MJ/kg</td>
+<td>416</td>
+<td><span class="ev"><a href="preuves/A5-C-m.html" title="CALC-A5-GAZ-PLAST-MJ-T">5.C.m</a><a href="preuves/A5-D.html#D-038" title="Decision D-038">D-038</a></span></td>
+</tr>
+<tr>
+<td>Heat to evaporate the water (latent heat only, 2.44 MJ/kg)</td>
+<td>1,029</td>
+<td><span class="ev"><a href="preuves/A5-C-n.html" title="CALC-A5-EAU-MJ-T">5.C.n</a><a href="preuves/A5-C-ay.html" title="CALC-A5-LATENT-MJ-KG">5.C.ay</a></span></td>
+</tr>
+<tr>
+<td>Burner demand of the URC-2000 stated by OneWorld</td>
+<td>1,507</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-5-d-1.html" title="CALC-A2-BRULEUR-MJ-T">2.5.d.1</a></span></td>
+</tr>
+<tr>
+<td>Energy in the central char, at 32.09 MJ/kg</td>
+<td>3,502</td>
+<td><span class="ev"><a href="preuves/A5-C-az.html" title="CALC-A5-CHAR-MJ-T">5.C.az</a><a href="preuves/A5-D.html#D-038" title="Decision D-038">D-038</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reading.</strong></p>
+<ul>
+<li><strong>The gas from the plastic does not cover the heat.</strong> It covers 0.404 of the heat needed to evaporate the water<span class="ev"><a href="preuves/A5-C-ba.html" title="CALC-A5-COUV-GAZ-EAU">5.C.ba</a></span> and 0.276 of the burner demand stated by OneWorld<span class="ev"><a href="preuves/A5-C-bb.html" title="CALC-A5-COUV-GAZ-BRULEUR">5.C.bb</a></span>. Whether the evaporation is included in the burner demand is not stated by OneWorld.</li>
+<li><strong>The gas from the organic matter is not known.</strong> Biomass pyrolysis gas is rich in carbon dioxide and its calorific value is lower than that of plastic gas; no measurement on an Urban Rig exists (request R-021).</li>
+<li><strong>The char could close the gap.</strong> The central char carries 3,502 MJ per tonne<span class="ev"><a href="preuves/A5-C-az.html" title="CALC-A5-CHAR-MJ-T">5.C.az</a></span>, more than the burner demand. Burning part of it would reduce the char sold. The value of 32.09 MJ/kg is the sponsor's assumption for household waste char<span class="ev"><a href="preuves/A5-D.html#D-038" title="Decision D-038">D-038</a></span>; a food waste char measured in the literature reached 24.55 MJ/kg<span class="ev"><a href="preuves/A5-C-aw.html" title="CALC-A5-KHAN-PCS-MJ-KG">5.C.aw</a></span>. The model must choose between burning char or oil and buying fuel (Section 5.17).</li>
+<li><strong>Consistent with Annex 2.</strong> Self-sufficiency on household waste is not claimed<span class="ev"><a href="preuves/A5-D.html#D-029" title="Decision D-029">D-029</a></span>.</li>
+</ul>
+<h2>5.13 Entry Price</h2>
+<p>The plant is paid to take residual household waste. The default entry price of the model is 100 EUR/t, changeable by the operator<span class="ev"><a href="preuves/A5-D.html#D-039" title="Decision D-039">D-039</a><a href="preuves/A5-D.html#D-042" title="Decision D-042">D-042</a></span>. For comparison (Annex 8):</p>
+<ul>
+<li>incineration cost an average of 120 EUR/t excluding VAT for private clients and 95 EUR/t for local authorities in 2023<span class="ev"><a href="../annexe-08-html/preuves/A8-L-m.html" title="A8-PRIX-AMORCE-DT156-2023">8.L.m</a></span>;</li>
+<li>the Syctom, the Paris area treatment authority, charges its members 109.4 EUR/t for residual household waste in 2026<span class="ev"><a href="../annexe-08-html/preuves/A8-L-o.html" title="A8-CST-SYCTOM-BP-2026">8.L.o</a></span>;</li>
+<li>the incineration tax is 16 or 29 EUR/t in 2026, depending on the energy performance of the plant<span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html" title="CIBS-TGAP-2026">3.M.c</a></span>.</li>
+</ul>
+<h2>5.14 Conflicts Between Sources</h2>
+<ul>
+<li><strong>Fines:</strong> absent from the composition data, 5.4 % of the mass in the moisture data<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a><a href="preuves/A5-P-b.html" title="ADEME-MODECOM-2024-HUM">5.P.b</a></span>; the method of allocation is not written<span class="ev"><a href="preuves/A5-D.html#D-046" title="Decision D-046">D-046</a></span>.</li>
+<li><strong>Per-inhabitant ratio:</strong> 223.46 kg in the summary report<span class="ev"><a href="preuves/A5-L-a.html" title="RP2-004">5.L.a</a></span>, 223.54 kg as the sum of the open data<span class="ev"><a href="preuves/A5-P-c.html" title="ADEME-MODECOM-2024-DATA">5.P.c</a></span>.</li>
+<li><strong>Char of paper:</strong> 28 to 32 % in the body of the article, 30 to 40 % in its abstract<span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span>.</li>
+<li><strong>Mixed plastics in the literature:</strong> 40 to 45 % oil and 5 to 7 % char in the body of the article, 43 % oil and 16 % char in its abstract<span class="ev"><a href="preuves/A5-L-f.html" title="A5-BHATT-2026-RSCADV">5.L.f</a></span>; the Chiba tests gave 73.07 % oil on clean plastics<span class="ev"><a href="../annexe-02-html/preuves/A2-5-f-7.html" title="CALC-A2-HUILE10-MOY-POND">2.5.f.7</a></span>.</li>
+<li><strong>Plastic pyrolysis in a review:</strong> 65.2 % liquid in a table, 40.9 % liquid in the text, for the same reference<span class="ev"><a href="preuves/A5-L-m.html" title="A5-CZAJCZYNSKA-2017-REVIEW">5.L.m</a></span>.</li>
+<li><strong>Char energy:</strong> 32.09 MJ/kg assumed for household waste char<span class="ev"><a href="preuves/A5-D.html#D-038" title="Decision D-038">D-038</a></span>; 24.55 MJ/kg measured on food waste char<span class="ev"><a href="preuves/A5-C-aw.html" title="CALC-A5-KHAN-PCS-MJ-KG">5.C.aw</a></span>.</li>
+</ul>
+<h2>5.15 Data Quality Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Basis</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tonnage and composition of residual household waste, France 2024</td>
+<td>ADEME open data and summary report</td>
+<td>LU (open data previously cross-checked for plastics)</td>
+</tr>
+<tr>
+<td>Moisture and calorific value by fraction</td>
+<td>ADEME open data and summary report</td>
+<td>LU</td>
+</tr>
+<tr>
+<td>Composition of a nappy</td>
+<td>British study, 2006 data, read on a mirror</td>
+<td>LU, data older than eight years</td>
+</tr>
+<tr>
+<td>Oil and gas of the plastic fraction</td>
+<td>Chiba tests on clean plastics, applied to dry plastic</td>
+<td>HYPOTHÈSE (D-043, D-044, D-029)</td>
+</tr>
+<tr>
+<td>Char of the non-plastic organic matter</td>
+<td>Literature</td>
+<td>HYPOTHÈSE (D-045)</td>
+</tr>
+<tr>
+<td>Gas and liquid of the non-plastic organic matter</td>
+<td>None</td>
+<td>INCONNU</td>
+</tr>
+<tr>
+<td>Polymer split and chlorine of residual household waste</td>
+<td>None</td>
+<td>NON TROUVÉ (R-045)</td>
+</tr>
+<tr>
+<td>Fibre composition of textiles in residual waste</td>
+<td>None</td>
+<td>NON TROUVÉ (R-046)</td>
+</tr>
+<tr>
+<td>Energy balance on residual household waste</td>
+<td>Calculation on the above</td>
+<td>CALCULÉ, on assumptions</td>
+</tr>
+</tbody>
+</table>
+<h2>5.16 Open Points</h2>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Subject</th>
+<th>Held by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-021</td>
+<td>Urban Rig test on French residual household waste: moisture, gas mass and calorific value, char, oil water and chlorine; separate tests on nappies (yields, sodium in the char, deposits) and food waste</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-023</td>
+<td>Pre-sorting line for household waste</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-042</td>
+<td>Full MODECOM 2024 technical report: allocation of fines, laboratory analyses</td>
+<td>Project sponsor (ADEME registration form)</td>
+</tr>
+<tr>
+<td>R-045</td>
+<td>Polymer split and chlorine of residual household waste</td>
+<td>Not found in public sources</td>
+</tr>
+<tr>
+<td>R-046</td>
+<td>Fibres of textiles in residual waste; recent nappy composition</td>
+<td>Partly found</td>
+</tr>
+</tbody>
+</table>
+<h2>5.17 Recommendations for the Business Plan</h2>
+<ul>
+<li>Present residual household waste as a <strong>paid feed with a modest oil yield</strong>, not as an oil feed: per tonne received, the central case gives 81 kg of oil and 109 kg of char<span class="ev"><a href="preuves/A5-C-i.html" title="CALC-A5-HUILE-CENT-KG-T">5.C.i</a><a href="preuves/A5-C-l.html" title="CALC-A5-CHAR-CENT-KG-T">5.C.l</a></span>.</li>
+<li>Use the <strong>low oil case</strong> by default until an Urban Rig test on French residual waste exists<span class="ev"><a href="preuves/A5-D.html#D-044" title="Decision D-044">D-044</a></span>.</li>
+<li>Show the <strong>energy balance with a purchased fuel or a char consumption line</strong>, not as self-sufficient<span class="ev"><a href="preuves/A5-D.html#D-029" title="Decision D-029">D-029</a></span>.</li>
+<li>Treat a <strong>pre-sorting step</strong> that recovers metals and removes hazardous items as part of the household waste configuration (Annex 9).</li>
+</ul>
+<h2>5.18 References</h2>
+<p>Documents cited in this annex, with their location and confidence. The full list of sheets is in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<table><tr><th>Sheet</th><th>Document</th><th>Location</th><th>Confidence</th></tr><tr><td><span class="ev"><a href="preuves/A5-L-a.html">5.L.a</a></span></td><td>ADEME, MODECOM 2024 summary (obdec-normandie mirror)</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-P-a.html">5.P.a</a></span></td><td>Les DMA en Ile-de-France 2022</td><td></td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-P-b.html">5.P.b</a></span></td><td>Taux d&#x27;humidite OMR - MODECOM 2024</td><td></td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-a.html">2.3.a</a></span></td><td>Brochure URC-2000 OneWorld, bilan annonce sur ordures menageres</td><td>p. 5</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-P-c.html">5.P.c</a></span></td><td>Composition OMR et CS - MODECOM 2024 (jeu de donnees omrcs-compo-jdd)</td><td>colonnes pourcentage_OMR, ratio_OMR, tonnage_OMR ; grille : datasets/omrcs-grille</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-08-html/preuves/A8-P-f.html">8.P.f</a></span></td><td>L&#x27;incinération des déchets non dangereux en Île-de-France, données 2022-2023</td><td>p. 3, 7, 8</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-b.html">5.L.b</a></span></td><td>grid omrcs-grille</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-P-d.html">5.P.d</a></span></td><td>Poubelles des Francais : des progres sur le tri des dechets mais encore des marges importantes d&#x27;amelioration</td><td></td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-c.html">5.L.c</a></span></td><td>An updated lifecycle assessment study for disposable and reusable nappies (Science Report SC010018/SR2)</td><td>Tableau 1.2, p. 4 (repris au tableau 2.1, p. 12)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html">2.3.b</a></span></td><td>Brochure URC-2000 OneWorld, fiche de specification</td><td>p. 8 (et p. 4, p. 7)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-d.html">5.L.d</a></span></td><td>Swelling performance of sodium polyacrylate and poly(acrylamide-co-acrylic acid) potassium salt</td><td>section 3.3 Thermal degradation, figure 8b</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-e.html">5.L.e</a></span></td><td>Studies of the Thermal Degradation of the BioCo3 Polymer Binder</td><td>tableau 2 (argon), section 4 (TG-FTIR), section 6</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-f.html">5.L.f</a></span></td><td>Co-pyrolysis of mixed municipal solid waste components in a semi-pilot scale rotary kiln: synergistic effects on pyrolysis oil and biochar properties</td><td>RSC Adv. 16(35):35523-35545 ; resume ; section 2.5 (four rotatif semi-batch, 2 kg par essai, 500 C, 20 C/min, 90 min) ; section 3.3 (rendements) ; tableau 3 (eau de l&#x27;huile)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-g.html">5.L.g</a></span></td><td>Thermal stability and degradation mechanisms of poly(acrylic acid) and its salts. Part 2: Sodium and potassium salts</td><td>resume</td><td>80 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-1-b.html">2.1.b</a></span></td><td>Rapport Chiba, fiches d&#x27;essai de pyrolyse (15 essais, dont 13 avec huile mesuree) et definitions</td><td>PDF p. 19 a 26 (impr. 13 a 20) ; definitions p. 27 (impr. 21) ; methode de mesure de l&#x27;huile p. 29 (impr. 23)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-h.html">5.L.h</a></span></td><td>Microwave pyrolysis valorization of used baby diaper</td><td>resume (PubMed)</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-i.html">5.L.i</a></span></td><td>Exploring pyrolysis-based alternatives for the valorization of used diapers through a comprehensive understanding of all generated products</td><td>resume et points forts</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-j.html">5.L.j</a></span></td><td>Experimental Study of Absorbent Hygiene Product Devolatilization in a Bubbling Fluidized Bed</td><td>Energies 14(9):2399 ; resume ; section 2.1 (materiaux) ; tableau 3 (analyses immediate et elementaire) ; tableau 5 ; section 3 (ICP-AES, sodium ; agglomeration du lit)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-2-a.html">2.2.a</a></span></td><td>Japan Lubricating Oil Society (潤滑油協会), analyses de deux huiles d&#x27;essai, rapports 20221020-003-03 et -04</td><td>PDF p. 45 (impr. 39) et p. 46 (impr. 40)</td><td>100 %</td></tr><tr><td><span class="ev"><a href="../annexe-03-html/preuves/A3-R-a.html">3.R.a</a></span></td><td>Arrêté du 19 février 2024 fixant les critères de sortie du statut de déchet pour l&#x27;huile de pyrolyse issue de la pyrolyse de déchets de matières plastiques, en vue d&#x27;une valorisation matière au sein d&#x27;une installation pétrochimique relevant de la directive 2010/75/UE, pour un usage dans une unité de vapocraquage ou dans une unité de purification à destination d&#x27;une unité de vapocraquage (NOR TREP2403460A)</td><td>Notice ; art. 1er (définitions), art. 2 a) à h) ; art. 3 à 7 ; annexe I sections 1.1 à 1.3, 2.1, 3.3 (tableaux A et B), 4.4 ; annexe II</td><td>100 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-k.html">5.L.k</a></span></td><td>Comparative Investigation of the Physicochemical Properties of Chars Produced by Hydrothermal Carbonization, Pyrolysis, and Microwave-Induced Pyrolysis of Food Waste</td><td>Polymers 14(4):821 ; section resultats (rendement massique, figure 1) ; tableau 1</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-l.html">5.L.l</a></span></td><td>Catalytic Fast Pyrolysis of Poly (Ethylene Terephthalate) (PET) with Zeolite and Nickel Chloride</td><td>Polymers 12(3):705 ; section methodes (nacelle en quartz, 450 et 600 C, 30 min) ; section resultats, figure 3 ; tableau 1 (analyse du PET)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-m.html">5.L.m</a></span></td><td>Potentials of pyrolysis processes in the waste management sector</td><td>Tableau 1, Products allocation from pyrolysis of different waste (gaz, liquide, solide en % massique)</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A5-L-n.html">5.L.n</a></span></td><td>Characterisation of MSW for Combustion Systems (Technical Report TRA5395)</td><td>Tableau 8 (analyse immediate), p. 28 ou 29 selon la numerotation ; tableau 1, p. 9 ou 10</td><td>90 %</td></tr><tr><td><span class="ev"><a href="../annexe-08-html/preuves/A8-L-m.html">8.L.m</a></span></td><td>Recettes de vente d&#x27;electricite et de chaleur des Unites de Valorisation Energetique des dechets - donnees 2023 (DT156)</td><td>p. 23, section 3.1.3 &#x27;Des ventes remuneratrices&#x27;</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-08-html/preuves/A8-L-o.html">8.L.o</a></span></td><td>Budget primitif 2026</td><td>p. 5, 6, 9, 11, 12, 13</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-03-html/preuves/A3-M-c.html">3.M.c</a></span></td><td>Loi de finances 2026 - TGAP dechets (CIBS art. L.433-57 et L.433-86)</td><td></td><td>95 %</td></tr></table></main></body></html>

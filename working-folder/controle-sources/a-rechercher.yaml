@@ -204,6 +204,7 @@ R-020:
   sources: []
 
 R-021:
+  complement_2026_11_19_chat5: "Chat 5 annexe 5 : priorites pour les OMR : un essai sur OMR brutes francaises (ou une charge reconstituee selon MODECOM 2024), avec humidite d'entree mesuree, masse et pouvoir calorifique du gaz, char (cendres, PCI), huile (eau, chlore) ; essais separes sur textiles sanitaires (couches) et dechets alimentaires. Hypotheses provisoires D-043 a D-045."
   complement_2026_10_14_soir: "Stephane (14/10/2026 soir) : URGENT, essais sur PVC et sur pneus, avec analyse des produits (huile : chlore, soufre ; char ; gaz). La recherche bibliographique reste prevue en brique separee."
   question: "Essais Urban Rig sur matieres non testees : ordures menageres brutes, papier et carton, bois, dechets alimentaires, textiles, PET, PVC (rendements, char, chlore de l'huile)"
   demande_par: Stephane
@@ -398,6 +399,7 @@ R-041:
   sources: [OW-ENG-P14-P15-PROCEDE]
 
 R-042:
+  complement_2026_11_19_chat5: "Chat 5 annexe 5 : le rapport technique MODECOM 2024 (ref. 013089, librairie 8784) est necessaire pour la repartition des fines dans la composition par categorie (D-046), les analyses de laboratoire (chlore) et la composition des fines ; synthese lue sur le miroir OBDEC (RP2-004)."
   question: "PDF ADEME sur formulaire courriel, a telecharger par Stephane : Bilan national du recyclage 2012-2021 (librairie ref. 6959), Equipements electriques et electroniques donnees 2024 (ref. 9400), Vehicules donnees 2023 (ref. 8446), MODECOM 2024 (ref. 8784), bilan PMCB donnees 2024 (ref. 11204, lu sur miroir Novabuild), referentiel des couts donnees 2023 (ref. 8811, deja present dans sources-externes/pdf). Avec R-001 (etude 5955)."
   demande_par: Claude
   date: 2026-10-15
@@ -423,3 +425,21 @@ R-044:
   detenteur: "Syctom, SIGIDURS, SIREDOM, exploitants d'UVE franciliennes, TotalEnergies (Grandpuits), courtiers en dechets"
   cherche: "Syctom BP 2026 (OMR 109,4 EUR/t, dechets ordinaires de tiers 108 EUR/t, CSR 16 ou 84 EUR/t ; aucun tarif refus ni DAE), RA Syctom 2024 et 2025, BOAMP 25-80033, communiques TotalEnergies 2023 et 2026 (aucun prix)"
   sources: [A8-CST-SYCTOM-BP-2026, RP-036, RP2-017, RP2-032]
+
+R-045:
+  question: "Composition par polymere (PE, PP, PS, PET, PVC, autres) des plastiques des ordures menageres residuelles en France ; part de PVC et teneur en chlore des OMR"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: introuvable
+  cherche: "Chat 5 (19/11/2026) : jeux ouverts MODECOM 2024 (omrcs-compo-jdd, omrcs-grille, omrhum) et synthese (OBDEC) : categories par usage, pas par polymere, sauf PET (07.04, 07.05) et polyolefines (07.06, 07.07) ; aucune analyse de chlore dans la synthese. Rapport technique MODECOM 2024 non lu (R-042)."
+  manque: "Repartition par polymere et chlore des OMR"
+  sources: [ADEME-MODECOM-2024-DATA, RP2-002, RP2-004]
+
+R-046:
+  question: "Composition par fibre (coton, polyester, autres) des textiles (05) et part des polymeres des textiles sanitaires (06) dans les OMR en France ; composition recente d'une couche jetable (apres 2018)"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: partiel
+  cherche: "Chat 5 (19/11/2026) : MODECOM 2024 (aucune composition par fibre) ; couches : rapport Environment Agency 2008 (donnees 2006, lu sur miroir), Khanyile et al. 2020 (sans pourcentages), page AHPMA (sans pourcentages), rapport Environment Agency 2005 (resume seul)."
+  manque: "Fibres des textiles des OMR ; composition d'une couche recente, en France ou en Europe"
+  sources: [A5-EA-2008-NAPPY-LCA]

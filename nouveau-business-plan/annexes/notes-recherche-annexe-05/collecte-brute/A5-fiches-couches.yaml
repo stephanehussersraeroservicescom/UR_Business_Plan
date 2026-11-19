@@ -1,0 +1,91 @@
+
+# === ANNEXE 5, complement couches et superabsorbant (chat 5, 19/11/2026) ===
+
+A5-MALSEGNA-2021-ENERGIES-AHP:
+  titre: "Experimental Study of Absorbent Hygiene Product Devolatilization in a Bubbling Fluidized Bed"
+  editeur: "Energies (MDPI), auteurs Malsegna B., Di Giuliano A., Gallucci K."
+  date: 2021
+  annee_donnees: 2021
+  type: etude_publique
+  url: https://www.mdpi.com/1996-1073/14/9/2399
+  doi: 10.3390/en14092399
+  emplacement: "Energies 14(9):2399 ; resume ; section 2.1 (materiaux) ; tableau 3 (analyses immediate et elementaire) ; tableau 5 ; section 3 (ICP-AES, sodium ; agglomeration du lit)"
+  contenu: "Deux materiaux : couches neuves broyees (AHPam, rebut de production) et fraction cellulosique de couches usagees sterilisees (AHPus). Tableau 3 (base brute) : humidite 5,8 et 6,6 % ; cendres 7,5 et 10,7 % ; matieres volatiles 82,8 et 81,5 % ; carbone fixe 3,9 et 1,2 %. Base seche : C 65,3 et 43,5 % ; H 10,3 et 6,6 % ; S 1,1 et 1,8 % ; O 23,3 et 48,0 %. Sodium (venant du polyacrylate de sodium du superabsorbant) : 2 a 3 % en masse dans les couches neuves. Le sodium et d'autres mineraux forment des eutectiques a bas point de fusion entre 500 et 800 C : agglomeration du sable du lit observee. Devolatilisation a 500, 600, 700 et 800 C ; sous azote a 700-800 C, meilleur gaz : H2 29,5 et 23,7 % en volume, hydrocarbures 14,8 et 7,4 %, 53,7 et 46,0 Nl de gaz pour 100 g. Fin de decomposition en combustion (ATG, 20 C/min) : 540 C pour les deux materiaux."
+  citation: "ICP-AES analyses indicated that Na content in AHPam was in the range of 2–3 wt% | Ashes 7.5 10.7 Volatile matter 82.8 81.5 Fixed carbon 3.9 1.2 | can lead to the formation of eutectics [35], which can in turn generate low-melting ashes at the temperatures of those processes investigated in this work"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Texte integral du PDF lu par Claude dans le navigateur de Stephane le 19/11/2026. Lit fluidise de laboratoire (chauffage tres rapide), pas une pyrolyse lente ; les rendements en char, huile et gaz en % massique ne sont pas donnes dans les passages lus."
+
+A5-MAHON-2020-SNAS-SAP:
+  titre: "Swelling performance of sodium polyacrylate and poly(acrylamide-co-acrylic acid) potassium salt"
+  editeur: "SN Applied Sciences 2, 117 (Springer), Mahon R. et al."
+  date: 2020
+  annee_donnees: 2020
+  type: etude_publique
+  url: https://link.springer.com/article/10.1007/s42452-019-1874-5
+  doi: 10.1007/s42452-019-1874-5
+  emplacement: "section 3.3 Thermal degradation, figure 8b"
+  contenu: "Analyse thermogravimetrique du polyacrylate de sodium, sous azote, 10 C/min jusqu'a 800 C, 7,79 g au depart : etape 1 (25 a 360 C) perte de 14 % (eau liee), 6,72 g restants ; etape 2 (360 a 477 C) 32 %, 4,27 g ; etape 3 (477 a 592 C) 88 % annonces, 3,25 g ; residu a 800 C 40 % (3,07 g)."
+  citation: "The first stage of decomposition is associated with the loss of water adsorbed on the surface of the particles."
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Article a comite de lecture, acces libre. Lu par WebFetch le 19/11/2026. Incoherence interne : 88 % annonces pour l'etape 3 alors que la masse passe de 4,27 a 3,25 g ; base de calcul des pourcentages non precisee. Le residu n'est pas identifie (pas de mention du carbonate de sodium)."
+
+A5-GRABOWSKA-2013-PAANA:
+  titre: "Studies of the Thermal Degradation of the BioCo3 Polymer Binder"
+  editeur: "Archives of Foundry Engineering 13 (special issue 1/2013) 27-30, Grabowska B., Grabowski G., Olejnik E., Kaczmarska K."
+  date: 2013
+  annee_donnees: 2013
+  type: etude_publique
+  url: https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a17986b6-9c8b-4a77-934f-70da70b01965/c/06_grabowska_studies_1s_2013.pdf
+  emplacement: "tableau 2 (argon), section 4 (TG-FTIR), section 6"
+  contenu: "Composite polyacrylate de sodium et dextrine de pomme de terre (rapport 9 pour 8), pas du polyacrylate pur. Sous argon : etapes 22-127 C (9,1 %), 127-238 C (8,5 %), 238-406 C (24,5 %), 406-634 C (18,5 %), 634-1000 C (28,1 %) ; residu 11,3 % a 1000 C, surtout du carbone ; perte vers 833 C attribuee au carbonate de sodium forme pendant la decomposition. Gaz : eau a 143 C, CO2 a 275 C, CO, CO2 et CH4 a 390 C ; CO2, H2O, CO et methane entre 300 et 500 C."
+  citation: "probably mainly contains carbonised carbon"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Revue technique a comite de lecture (fonderie). Lu par WebFetch le 19/11/2026. Le materiau contient de la dextrine : les etapes ne sont pas celles du superabsorbant seul."
+
+A5-MCNEILL-1990-PAANA:
+  titre: "Thermal stability and degradation mechanisms of poly(acrylic acid) and its salts. Part 2: Sodium and potassium salts"
+  editeur: "McNeill I.C., Sadeghi S.M.T. (Polymer Degradation and Stability, d'apres l'ISSN 0141-3910), p. 213-230"
+  date: 1990
+  annee_donnees: 1990
+  type: etude_publique
+  url: https://data.zhenzhi.com/details/1/993323970
+  doi: 10.1016/0141-3910(90)90077-K
+  emplacement: "resume"
+  contenu: "Les sels de sodium et de potassium de l'acide polyacrylique sont stables jusqu'a environ 400 C (chauffage programme a 10 C/min sous vide) ; la degradation donne une large gamme de produits, dont des dimeres et trimeres, avec seulement des traces de monomere."
+  citation: "These materials are stable up to about 400°C under programmed heating at 10° per min in vacuo."
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu sur une base de donnees tierce par WebFetch ; article payant non lu. Donnees de plus de huit ans."
+
+A5-LAM-2019-CHEMOSPHERE-DIAPER:
+  titre: "Microwave pyrolysis valorization of used baby diaper"
+  editeur: "Chemosphere 230 (2019) 294-302, Lam S.S. et al."
+  date: 2019-09
+  annee_donnees: 2019
+  type: etude_publique
+  url: https://pubmed.ncbi.nlm.nih.gov/31108440/
+  doi: 10.1016/j.chemosphere.2019.05.054
+  emplacement: "resume (PubMed)"
+  contenu: "Pyrolyse micro-ondes de couches bebe usagees (cellulose, polyolefines, superabsorbant) : chauffage jusqu'a 43 C/min, 20 a 40 min ; jusqu'a 43 % d'huile, 29 % de gaz et 28 % de char en masse. Huile : alcanes, alcenes, esters. Char riche en carbone, pauvre en azote, sans soufre."
+  citation: "generate pyrolysis products comprising up to 43 wt% production of liquid oil, 29 wt% gases and 28 wt% char product"
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu par Claude dans le navigateur de Stephane le 19/11/2026 ; article payant non lu. Valeurs maximales (« up to »), pas un bilan unique."
+
+A5-CALERO-2025-CEJ-DIAPER:
+  titre: "Exploring pyrolysis-based alternatives for the valorization of used diapers through a comprehensive understanding of all generated products"
+  editeur: "Chemical Engineering Journal 503 (2025) 158244, Calero M., Blazquez G., Solis R.R., Martin-Lara M.A., Munoz-Batista M.J."
+  date: 2025-01-01
+  annee_donnees: 2024
+  type: etude_publique
+  url: https://www.sciencedirect.com/science/article/abs/pii/S1385894724097353
+  doi: 10.1016/j.cej.2024.158244
+  emplacement: "resume et points forts"
+  contenu: "Couches bebe issues des refus de centres de traitement d'ordures menageres, separees en couches et fractions. Hydrogene et methane maximaux a 575 C : jusqu'a 7,4 mmol d'hydrogene et 6,3 mmol de methane, 23 mmol de gaz non condensables par gramme. A 525 C, liquides plus legers : plus de 63 % des liquides ont des points d'ebullition proches du naphta lourd. Residu solide partiellement amorphe, surface specifique maximale 9,7 m2/g a 575 C (faible). Influence du superabsorbant etudiee."
+  citation: "This study identified that hydrogen and methane production is maximized at 575 °C. | The temperature of 525 °C optimized the production of lighter liquid fractions."
+  statut: secondaire
+  consulte: '2026-11-19'
+  note: "Resume seul, lu par Claude dans le navigateur de Stephane le 19/11/2026 ; article payant non lu. Les rendements en % massique ne sont pas dans le resume."

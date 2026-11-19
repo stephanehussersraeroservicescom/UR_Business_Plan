@@ -1,0 +1,18 @@
+
+R-045:
+  question: "Composition par polymere (PE, PP, PS, PET, PVC, autres) des plastiques des ordures menageres residuelles en France ; part de PVC et teneur en chlore des OMR"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: introuvable
+  cherche: "Chat 5 (19/11/2026) : jeux ouverts MODECOM 2024 (omrcs-compo-jdd, omrcs-grille, omrhum) et synthese (OBDEC) : categories par usage, pas par polymere, sauf PET (07.04, 07.05) et polyolefines (07.06, 07.07) ; aucune analyse de chlore dans la synthese. Rapport technique MODECOM 2024 non lu (R-042)."
+  manque: "Repartition par polymere et chlore des OMR"
+  sources: [ADEME-MODECOM-2024-DATA, RP2-002, RP2-004]
+
+R-046:
+  question: "Composition par fibre (coton, polyester, autres) des textiles (05) et part des polymeres des textiles sanitaires (06) dans les OMR en France ; composition recente d'une couche jetable (apres 2018)"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: partiel
+  cherche: "Chat 5 (19/11/2026) : MODECOM 2024 (aucune composition par fibre) ; couches : rapport Environment Agency 2008 (donnees 2006, lu sur miroir), Khanyile et al. 2020 (sans pourcentages), page AHPMA (sans pourcentages), rapport Environment Agency 2005 (resume seul)."
+  manque: "Fibres des textiles des OMR ; composition d'une couche recente, en France ou en Europe"
+  sources: [A5-EA-2008-NAPPY-LCA]

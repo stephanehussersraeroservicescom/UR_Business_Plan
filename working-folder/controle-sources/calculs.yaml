@@ -4489,3 +4489,1338 @@ CALC-A8-PS-PART-TRIE:
       emplacement: p. 1
   unite: '%'
   resultat: 8.3333
+
+# === ANNEXE 5 (chat 5, 19/11/2026) ===
+
+CALC-A5-CAT01-T:
+  description: 'Tonnage des OMR, categorie 01 (putrescibles), MODECOM 2024 : somme des sous-categories'
+  formule: s01_01 + s01_02 + s01_03 + s01_04 + s01_05 + s01_06
+  entrees:
+    s01_01:
+      valeur: 2873916
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.01, colonne tonnage_OMR
+    s01_02:
+      valeur: 717838
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.02, colonne tonnage_OMR
+    s01_03:
+      valeur: 566819
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.03, colonne tonnage_OMR
+    s01_04:
+      valeur: 61807
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.04, colonne tonnage_OMR
+    s01_05:
+      valeur: 477767
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.05, colonne tonnage_OMR
+    s01_06:
+      valeur: 268171
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 01.06, colonne tonnage_OMR
+  unite: t
+  resultat: 4966318
+CALC-A5-CAT02-T:
+  description: 'Tonnage des OMR, categorie 02 (papiers), MODECOM 2024 : somme des sous-categories'
+  formule: s02_01 + s02_02 + s02_03
+  entrees:
+    s02_01:
+      valeur: 250784
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 02.01, colonne tonnage_OMR
+    s02_02:
+      valeur: 452203
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 02.02, colonne tonnage_OMR
+    s02_03:
+      valeur: 151494
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 02.03, colonne tonnage_OMR
+  unite: t
+  resultat: 854481
+CALC-A5-CAT03-T:
+  description: 'Tonnage des OMR, categorie 03 (cartons), MODECOM 2024 : somme des sous-categories'
+  formule: s03_01 + s03_02 + s03_03 + s03_04
+  entrees:
+    s03_01:
+      valeur: 581627
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 03.01, colonne tonnage_OMR
+    s03_02:
+      valeur: 337191
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 03.02, colonne tonnage_OMR
+    s03_03:
+      valeur: 3024
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 03.03, colonne tonnage_OMR
+    s03_04:
+      valeur: 52127
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 03.04, colonne tonnage_OMR
+  unite: t
+  resultat: 973969
+CALC-A5-CAT04-T:
+  description: 'Tonnage des OMR, categorie 04 (composites), MODECOM 2024 : somme des sous-categories'
+  formule: s04_01 + s04_02 + s04_03 + s04_04 + s04_05
+  entrees:
+    s04_01:
+      valeur: 78114
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 04.01, colonne tonnage_OMR
+    s04_02:
+      valeur: 64087
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 04.02, colonne tonnage_OMR
+    s04_03:
+      valeur: 131937
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 04.03, colonne tonnage_OMR
+    s04_04:
+      valeur: 2495
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 04.04, colonne tonnage_OMR
+    s04_05:
+      valeur: 17750
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 04.05, colonne tonnage_OMR
+  unite: t
+  resultat: 294383
+CALC-A5-CAT05-T:
+  description: 'Tonnage des OMR, categorie 05 (textiles), MODECOM 2024 : somme des sous-categories'
+  formule: s05_01 + s05_02 + s05_03 + s05_04 + s05_05 + s05_06 + s05_07
+  entrees:
+    s05_01:
+      valeur: 51298
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.01, colonne tonnage_OMR
+    s05_02:
+      valeur: 443844
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.02, colonne tonnage_OMR
+    s05_03:
+      valeur: 79126
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.03, colonne tonnage_OMR
+    s05_04:
+      valeur: 76452
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.04, colonne tonnage_OMR
+    s05_05:
+      valeur: 29637
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.05, colonne tonnage_OMR
+    s05_06:
+      valeur: 1929
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.06, colonne tonnage_OMR
+    s05_07:
+      valeur: 36149
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 05.07, colonne tonnage_OMR
+  unite: t
+  resultat: 718435
+CALC-A5-CAT06-T:
+  description: 'Tonnage des OMR, categorie 06 (textiles sanitaires), MODECOM 2024 : somme des sous-categories'
+  formule: s06_01 + s06_02 + s06_03
+  entrees:
+    s06_01:
+      valeur: 859734
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 06.01, colonne tonnage_OMR
+    s06_02:
+      valeur: 380662
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 06.02, colonne tonnage_OMR
+    s06_03:
+      valeur: 1265338
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 06.03, colonne tonnage_OMR
+  unite: t
+  resultat: 2505734
+CALC-A5-CAT07-T:
+  description: 'Tonnage des OMR, categorie 07 (plastiques), MODECOM 2024 : somme des sous-categories'
+  formule: s07_01 + s07_02 + s07_03 + s07_04 + s07_05 + s07_06 + s07_07 + s07_08 + s07_09 + s07_10 + s07_11 + s07_12 + s07_13 + s07_14
+  entrees:
+    s07_01:
+      valeur: 496503
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.01, colonne tonnage_OMR
+    s07_02:
+      valeur: 165000
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.02, colonne tonnage_OMR
+    s07_03:
+      valeur: 619942
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.03, colonne tonnage_OMR
+    s07_04:
+      valeur: 160966
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.04, colonne tonnage_OMR
+    s07_05:
+      valeur: 51533
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.05, colonne tonnage_OMR
+    s07_06:
+      valeur: 23899
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.06, colonne tonnage_OMR
+    s07_07:
+      valeur: 44178
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.07, colonne tonnage_OMR
+    s07_08:
+      valeur: 443885
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.08, colonne tonnage_OMR
+    s07_09:
+      valeur: 5461
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.09, colonne tonnage_OMR
+    s07_10:
+      valeur: 40401
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.10, colonne tonnage_OMR
+    s07_11:
+      valeur: 40123
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.11, colonne tonnage_OMR
+    s07_12:
+      valeur: 14665
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.12, colonne tonnage_OMR
+    s07_13:
+      valeur: 5254
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.13, colonne tonnage_OMR
+    s07_14:
+      valeur: 217448
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.14, colonne tonnage_OMR
+  unite: t
+  resultat: 2329258
+CALC-A5-CAT08-T:
+  description: 'Tonnage des OMR, categorie 08 (bois), MODECOM 2024 : somme des sous-categories'
+  formule: s08_01 + s08_02 + s08_03 + s08_04
+  entrees:
+    s08_01:
+      valeur: 40628
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 08.01, colonne tonnage_OMR
+    s08_02:
+      valeur: 1186
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 08.02, colonne tonnage_OMR
+    s08_03:
+      valeur: 1531
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 08.03, colonne tonnage_OMR
+    s08_04:
+      valeur: 98572
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 08.04, colonne tonnage_OMR
+  unite: t
+  resultat: 141917
+CALC-A5-CAT09-T:
+  description: 'Tonnage des OMR, categorie 09 (verre), MODECOM 2024 : somme des sous-categories'
+  formule: s09_01 + s09_02
+  entrees:
+    s09_01:
+      valeur: 699571
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 09.01, colonne tonnage_OMR
+    s09_02:
+      valeur: 39642
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 09.02, colonne tonnage_OMR
+  unite: t
+  resultat: 739213
+CALC-A5-CAT10-T:
+  description: 'Tonnage des OMR, categorie 10 (metaux), MODECOM 2024 : somme des sous-categories'
+  formule: s10_01 + s10_02 + s10_03 + s10_04 + s10_05 + s10_06 + s10_07 + s10_08
+  entrees:
+    s10_01:
+      valeur: 17735
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.01, colonne tonnage_OMR
+    s10_02:
+      valeur: 178647
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.02, colonne tonnage_OMR
+    s10_03:
+      valeur: 82936
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.03, colonne tonnage_OMR
+    s10_04:
+      valeur: 92317
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.04, colonne tonnage_OMR
+    s10_05:
+      valeur: 75637
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.05, colonne tonnage_OMR
+    s10_06:
+      valeur: 40981
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.06, colonne tonnage_OMR
+    s10_07:
+      valeur: 813
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.07, colonne tonnage_OMR
+    s10_08:
+      valeur: 4004
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 10.08, colonne tonnage_OMR
+  unite: t
+  resultat: 493070
+CALC-A5-CAT11-T:
+  description: 'Tonnage des OMR, categorie 11 (autres matieres organiques), MODECOM 2024 : somme des sous-categories'
+  formule: s11_01
+  entrees:
+    s11_01:
+      valeur: 227604
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 11.01, colonne tonnage_OMR
+  unite: t
+  resultat: 227604
+CALC-A5-CAT12-T:
+  description: 'Tonnage des OMR, categorie 12 (autres matieres minerales), MODECOM 2024 : somme des sous-categories'
+  formule: s12_01 + s12_02
+  entrees:
+    s12_01:
+      valeur: 17806
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 12.01, colonne tonnage_OMR
+    s12_02:
+      valeur: 303036
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 12.02, colonne tonnage_OMR
+  unite: t
+  resultat: 320842
+CALC-A5-CAT13-T:
+  description: 'Tonnage des OMR, categorie 13 (dechets dangereux ou specifiques), MODECOM 2024 : somme des sous-categories'
+  formule: s13_01 + s13_02 + s13_03 + s13_04 + s13_05 + s13_06 + s13_07 + s13_08 + s13_09 + s13_10
+  entrees:
+    s13_01:
+      valeur: 97698
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.01, colonne tonnage_OMR
+    s13_02:
+      valeur: 792
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.02, colonne tonnage_OMR
+    s13_03:
+      valeur: 5178
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.03, colonne tonnage_OMR
+    s13_04:
+      valeur: 3790
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.04, colonne tonnage_OMR
+    s13_05:
+      valeur: 17548
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.05, colonne tonnage_OMR
+    s13_06:
+      valeur: 2874
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.06, colonne tonnage_OMR
+    s13_07:
+      valeur: 1879
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.07, colonne tonnage_OMR
+    s13_08:
+      valeur: 9693
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.08, colonne tonnage_OMR
+    s13_09:
+      valeur: 23530
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.09, colonne tonnage_OMR
+    s13_10:
+      valeur: 23807
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 13.10, colonne tonnage_OMR
+  unite: t
+  resultat: 186789
+CALC-A5-OMR-T:
+  description: Total des OMR, somme des 13 categories (fines non renseignees dans le jeu)
+  formule: c01 + c02 + c03 + c04 + c05 + c06 + c07 + c08 + c09 + c10 + c11 + c12 + c13
+  entrees:
+    c01:
+      calc: CALC-A5-CAT01-T
+    c02:
+      calc: CALC-A5-CAT02-T
+    c03:
+      calc: CALC-A5-CAT03-T
+    c04:
+      calc: CALC-A5-CAT04-T
+    c05:
+      calc: CALC-A5-CAT05-T
+    c06:
+      calc: CALC-A5-CAT06-T
+    c07:
+      calc: CALC-A5-CAT07-T
+    c08:
+      calc: CALC-A5-CAT08-T
+    c09:
+      calc: CALC-A5-CAT09-T
+    c10:
+      calc: CALC-A5-CAT10-T
+    c11:
+      calc: CALC-A5-CAT11-T
+    c12:
+      calc: CALC-A5-CAT12-T
+    c13:
+      calc: CALC-A5-CAT13-T
+  unite: t
+  resultat: 14752013
+CALC-A5-CAT01-PCT:
+  description: Part de la categorie 01 (putrescibles) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT01-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 33.6654
+CALC-A5-CAT02-PCT:
+  description: Part de la categorie 02 (papiers) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT02-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 5.7923
+CALC-A5-CAT03-PCT:
+  description: Part de la categorie 03 (cartons) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT03-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 6.6023
+CALC-A5-CAT04-PCT:
+  description: Part de la categorie 04 (composites) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT04-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 1.9955
+CALC-A5-CAT05-PCT:
+  description: Part de la categorie 05 (textiles) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT05-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 4.8701
+CALC-A5-CAT06-PCT:
+  description: Part de la categorie 06 (textiles sanitaires) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT06-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 16.9857
+CALC-A5-CAT07-PCT:
+  description: Part de la categorie 07 (plastiques) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT07-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 15.7894
+CALC-A5-CAT08-PCT:
+  description: Part de la categorie 08 (bois) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT08-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 0.962
+CALC-A5-CAT09-PCT:
+  description: Part de la categorie 09 (verre) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT09-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 5.0109
+CALC-A5-CAT10-PCT:
+  description: Part de la categorie 10 (metaux) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT10-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 3.3424
+CALC-A5-CAT11-PCT:
+  description: Part de la categorie 11 (autres matieres organiques) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT11-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 1.5429
+CALC-A5-CAT12-PCT:
+  description: Part de la categorie 12 (autres matieres minerales) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT12-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 2.1749
+CALC-A5-CAT13-PCT:
+  description: Part de la categorie 13 (dechets dangereux ou specifiques) dans les OMR
+  formule: cat / total * 100
+  entrees:
+    cat:
+      calc: CALC-A5-CAT13-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 1.2662
+CALC-A5-NONPROC-T:
+  description: 'Matieres que la pyrolyse ne convertit pas : verre, metaux, autres matieres minerales, dechets dangereux ou specifiques'
+  formule: v + m + mi + dd
+  entrees:
+    v:
+      calc: CALC-A5-CAT09-T
+    m:
+      calc: CALC-A5-CAT10-T
+    mi:
+      calc: CALC-A5-CAT12-T
+    dd:
+      calc: CALC-A5-CAT13-T
+  unite: t
+  resultat: 1739914
+CALC-A5-NONPROC-PCT:
+  description: Part des matieres non convertibles dans les OMR
+  formule: n / total * 100
+  entrees:
+    n:
+      calc: CALC-A5-NONPROC-T
+    total:
+      calc: CALC-A5-OMR-T
+  unite: '%'
+  resultat: 11.7944
+CALC-A5-PLAST-SOUPLES-T:
+  description: 'Plastiques souples des OMR : sacs poubelles, autres sacs, films d''emballage'
+  formule: s07_01 + s07_02 + s07_03
+  entrees:
+    s07_01:
+      valeur: 496503
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.01
+    s07_02:
+      valeur: 165000
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.02
+    s07_03:
+      valeur: 619942
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.03
+  unite: t
+  resultat: 1281445
+CALC-A5-PLAST-RIGIDES-T:
+  description: 'Plastiques rigides et autres des OMR : sous-categories 07.04 a 07.14'
+  formule: s07_04 + s07_05 + s07_06 + s07_07 + s07_08 + s07_09 + s07_10 + s07_11 + s07_12 + s07_13 + s07_14
+  entrees:
+    s07_04:
+      valeur: 160966
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.04
+    s07_05:
+      valeur: 51533
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.05
+    s07_06:
+      valeur: 23899
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.06
+    s07_07:
+      valeur: 44178
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.07
+    s07_08:
+      valeur: 443885
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.08
+    s07_09:
+      valeur: 5461
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.09
+    s07_10:
+      valeur: 40401
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.10
+    s07_11:
+      valeur: 40123
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.11
+    s07_12:
+      valeur: 14665
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.12
+    s07_13:
+      valeur: 5254
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.13
+    s07_14:
+      valeur: 217448
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.14
+  unite: t
+  resultat: 1047813
+CALC-A5-PLAST-PET-T:
+  description: Bouteilles et flacons en PET des OMR (boissons et autres)
+  formule: s07_04 + s07_05
+  entrees:
+    s07_04:
+      valeur: 160966
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.04
+    s07_05:
+      valeur: 51533
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.05
+  unite: t
+  resultat: 212499
+CALC-A5-PLAST-PO-T:
+  description: Bouteilles et flacons en polyolefines des OMR
+  formule: s07_06 + s07_07
+  entrees:
+    s07_06:
+      valeur: 23899
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.06
+    s07_07:
+      valeur: 44178
+      unite: t
+      source: ADEME-MODECOM-2024-DATA
+      emplacement: sous-categorie 07.07
+  unite: t
+  resultat: 68077
+CALC-A5-EAU-KG-T:
+  description: 'Eau contenue dans une tonne d''OMR : somme des parts de chaque fraction multipliees par leur humidite (les fractions renseignees couvrent 98,8 % de la masse ; dechets dangereux non renseignes)'
+  formule: (p_s01 * h_s01 + p_s02 * h_s02 + p_s03 * h_s03 + p_s04 * h_s04 + p_s05 * h_s05 + p_s06 * h_s06 + p_s07 * h_s07 + p_s08 * h_s08 + p_s09 * h_s09 + p_s10 * h_s10 + p_s11 * h_s11 + p_s12 * h_s12 + p_s13 * h_s13 + p_s14 * h_s14 + p_s15 * h_s15 + p_s17 * h_s17 + p_s18 * h_s18) / 10
+  entrees:
+    p_s01:
+      valeur: 3.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S01, pourcentage_OMR
+    h_s01:
+      valeur: 59.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S01, humidite_OMR
+    p_s02:
+      valeur: 26.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S02, pourcentage_OMR
+    h_s02:
+      valeur: 59.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S02, humidite_OMR
+    p_s03:
+      valeur: 5.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S03, pourcentage_OMR
+    h_s03:
+      valeur: 28.9
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S03, humidite_OMR
+    p_s04:
+      valeur: 6.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S04, pourcentage_OMR
+    h_s04:
+      valeur: 33.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S04, humidite_OMR
+    p_s05:
+      valeur: 1.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S05, pourcentage_OMR
+    h_s05:
+      valeur: 28.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S05, humidite_OMR
+    p_s06:
+      valeur: 0.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S06, pourcentage_OMR
+    h_s06:
+      valeur: 18.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S06, humidite_OMR
+    p_s07:
+      valeur: 4.9
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S07, pourcentage_OMR
+    h_s07:
+      valeur: 33.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S07, humidite_OMR
+    p_s08:
+      valeur: 17.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S08, pourcentage_OMR
+    h_s08:
+      valeur: 60.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S08, humidite_OMR
+    p_s09:
+      valeur: 8.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S09, pourcentage_OMR
+    h_s09:
+      valeur: 35.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S09, humidite_OMR
+    p_s10:
+      valeur: 7.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S10, pourcentage_OMR
+    h_s10:
+      valeur: 20.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S10, humidite_OMR
+    p_s11:
+      valeur: 0.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S11, pourcentage_OMR
+    h_s11:
+      valeur: 13.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S11, humidite_OMR
+    p_s12:
+      valeur: 0.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S12, pourcentage_OMR
+    h_s12:
+      valeur: 26.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S12, humidite_OMR
+    p_s13:
+      valeur: 4.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S13, pourcentage_OMR
+    h_s13:
+      valeur: 2.2
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S13, humidite_OMR
+    p_s14:
+      valeur: 3.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S14, pourcentage_OMR
+    h_s14:
+      valeur: 13.2
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S14, humidite_OMR
+    p_s15:
+      valeur: 1.4
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S15, pourcentage_OMR
+    h_s15:
+      valeur: 27.5
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S15, humidite_OMR
+    p_s17:
+      valeur: 2.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S17, pourcentage_OMR
+    h_s17:
+      valeur: 14.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S17, humidite_OMR
+    p_s18:
+      valeur: 5.4
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S18, pourcentage_OMR
+    h_s18:
+      valeur: 46.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S18, humidite_OMR
+  unite: kg par tonne d OMR
+  resultat: 421.298
+CALC-A5-SEC-PLAST-KG-T:
+  description: Matiere seche des plastiques par tonne d'OMR (films et autres plastiques, humidite deduite)
+  formule: (p_s09 * (100 - h_s09) + p_s10 * (100 - h_s10)) / 10
+  entrees:
+    p_s09:
+      valeur: 8.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S09, pourcentage_OMR
+    h_s09:
+      valeur: 35.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S09, humidite_OMR
+    p_s10:
+      valeur: 7.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S10, pourcentage_OMR
+    h_s10:
+      valeur: 20.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S10, humidite_OMR
+  unite: kg par tonne d OMR
+  resultat: 111.142
+CALC-A5-SEC-ORG-KG-T:
+  description: 'Matiere seche des fractions organiques non plastiques par tonne d''OMR : putrescibles, papiers, cartons, composites, textiles, textiles sanitaires, bois, autres matieres organiques, fines de moins de 8 mm'
+  formule: (p_s01 * (100 - h_s01) + p_s02 * (100 - h_s02) + p_s03 * (100 - h_s03) + p_s04 * (100 - h_s04) + p_s05 * (100 - h_s05) + p_s06 * (100 - h_s06) + p_s07 * (100 - h_s07) + p_s08 * (100 - h_s08) + p_s11 * (100 - h_s11) + p_s12 * (100 - h_s12) + p_s15 * (100 - h_s15) + p_s18 * (100 - h_s18)) / 10
+  entrees:
+    p_s01:
+      valeur: 3.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S01, pourcentage_OMR
+    h_s01:
+      valeur: 59.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S01, humidite_OMR
+    p_s02:
+      valeur: 26.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S02, pourcentage_OMR
+    h_s02:
+      valeur: 59.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S02, humidite_OMR
+    p_s03:
+      valeur: 5.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S03, pourcentage_OMR
+    h_s03:
+      valeur: 28.9
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S03, humidite_OMR
+    p_s04:
+      valeur: 6.6
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S04, pourcentage_OMR
+    h_s04:
+      valeur: 33.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S04, humidite_OMR
+    p_s05:
+      valeur: 1.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S05, pourcentage_OMR
+    h_s05:
+      valeur: 28.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S05, humidite_OMR
+    p_s06:
+      valeur: 0.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S06, pourcentage_OMR
+    h_s06:
+      valeur: 18.8
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S06, humidite_OMR
+    p_s07:
+      valeur: 4.9
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S07, pourcentage_OMR
+    h_s07:
+      valeur: 33.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S07, humidite_OMR
+    p_s08:
+      valeur: 17.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S08, pourcentage_OMR
+    h_s08:
+      valeur: 60.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S08, humidite_OMR
+    p_s11:
+      valeur: 0.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S11, pourcentage_OMR
+    h_s11:
+      valeur: 13.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S11, humidite_OMR
+    p_s12:
+      valeur: 0.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S12, pourcentage_OMR
+    h_s12:
+      valeur: 26.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S12, humidite_OMR
+    p_s15:
+      valeur: 1.4
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S15, pourcentage_OMR
+    h_s15:
+      valeur: 27.5
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S15, humidite_OMR
+    p_s18:
+      valeur: 5.4
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S18, pourcentage_OMR
+    h_s18:
+      valeur: 46.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S18, humidite_OMR
+  unite: kg par tonne d OMR
+  resultat: 363.77
+CALC-A5-SEC-INERTE-KG-T:
+  description: 'Matiere seche des fractions inertes par tonne d''OMR : verre, metaux, autres matieres minerales'
+  formule: (p_s13 * (100 - h_s13) + p_s14 * (100 - h_s14) + p_s17 * (100 - h_s17)) / 10
+  entrees:
+    p_s13:
+      valeur: 4.7
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S13, pourcentage_OMR
+    h_s13:
+      valeur: 2.2
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S13, humidite_OMR
+    p_s14:
+      valeur: 3.3
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S14, pourcentage_OMR
+    h_s14:
+      valeur: 13.2
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S14, humidite_OMR
+    p_s17:
+      valeur: 2.0
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S17, pourcentage_OMR
+    h_s17:
+      valeur: 14.1
+      unite: '%'
+      source: ADEME-MODECOM-2024-HUM
+      emplacement: fraction S17, humidite_OMR
+  unite: kg par tonne d OMR
+  resultat: 91.79
+CALC-A5-HUILE-BAS-KG-T:
+  description: Huile par tonne d'OMR, venant de la seule fraction plastique, au rendement de l'essai le plus bas (PS chutes de moulage, 31/03/2022) applique a la matiere seche plastique (hypothese D-044)
+  formule: sec * r / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-PLAST-KG-T
+    r:
+      valeur: 55
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne d OMR
+  resultat: 61.1281
+CALC-A5-HUILE-HAUT-KG-T:
+  description: Huile par tonne d'OMR, venant de la seule fraction plastique, au rendement de l'essais les plus hauts (PP granules et PE bidons) applique a la matiere seche plastique (hypothese D-044)
+  formule: sec * r / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-PLAST-KG-T
+    r:
+      valeur: 81
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne d OMR
+  resultat: 90.025
+CALC-A5-HUILE-CENT-KG-T:
+  description: Huile par tonne d'OMR, venant de la seule fraction plastique, au rendement moyen pondere des 10 essais de plastiques purs (D-034) applique a la matiere seche plastique (hypothese D-044)
+  formule: sec * r / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-PLAST-KG-T
+    r:
+      calc: CALC-A2-HUILE10-MOY-POND
+  unite: kg par tonne d OMR
+  resultat: 81.2115
+  tolerance: 0.001
+CALC-A5-GAZ-PLAST-KG-T:
+  description: 'Gaz issu du plastique par tonne d''OMR : 10 % de la masse de plastique (D-029), appliques a la matiere seche plastique (lecture D-044)'
+  formule: sec * g / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-PLAST-KG-T
+    g:
+      valeur: 10
+      unite: '%'
+      source: D-029
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 11.1142
+CALC-A5-GAZ-PLAST-MJ-T:
+  description: Energie du gaz issu du plastique par tonne d'OMR, a 37,4 MJ/kg (D-038)
+  formule: m * pci
+  entrees:
+    m:
+      calc: CALC-A5-GAZ-PLAST-KG-T
+    pci:
+      valeur: 37.4
+      unite: MJ/kg
+      source: D-038
+      emplacement: vers
+  unite: MJ par tonne d OMR
+  resultat: 415.6711
+CALC-A5-CHAR-BAS-KG-T:
+  description: Char des fractions organiques non plastiques par tonne d'OMR, a 25 % de leur matiere seche (hypothese D-045)
+  formule: sec * c / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-ORG-KG-T
+    c:
+      valeur: 25
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 90.9425
+CALC-A5-CHAR-CENT-KG-T:
+  description: Char des fractions organiques non plastiques par tonne d'OMR, a 30 % de leur matiere seche (hypothese D-045)
+  formule: sec * c / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-ORG-KG-T
+    c:
+      valeur: 30
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 109.131
+CALC-A5-CHAR-HAUT-KG-T:
+  description: Char des fractions organiques non plastiques par tonne d'OMR, a 40 % de leur matiere seche (hypothese D-045)
+  formule: sec * c / 100
+  entrees:
+    sec:
+      calc: CALC-A5-SEC-ORG-KG-T
+    c:
+      valeur: 40
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne d OMR
+  resultat: 145.508
+CALC-A5-LATENT-MJ-KG:
+  description: Chaleur de vaporisation de l'eau a 25 C, deduite des enthalpies de formation de l'eau liquide et de la vapeur (NIST)
+  formule: (hl - hg) / m
+  entrees:
+    hl:
+      valeur: 285.83
+      unite: kJ/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: H2O liquide
+    hg:
+      valeur: 241.826
+      unite: kJ/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: H2O gaz
+    m:
+      valeur: 18.0153
+      unite: g/mol
+      source: NIST-WEBBOOK-GAZ
+      emplacement: masse molaire H2O
+  unite: MJ/kg
+  resultat: 2.4426
+CALC-A5-EAU-MJ-T:
+  description: Chaleur minimale pour evaporer l'eau d'une tonne d'OMR (chaleur latente seule, sans chauffage de la vapeur ni pertes)
+  formule: eau * l
+  entrees:
+    eau:
+      calc: CALC-A5-EAU-KG-T
+    l:
+      calc: CALC-A5-LATENT-MJ-KG
+  unite: MJ par tonne d OMR
+  resultat: 1029.06
+CALC-A5-COUV-GAZ-EAU:
+  description: Rapport entre l'energie du gaz issu du plastique et la chaleur d'evaporation de l'eau, par tonne d'OMR
+  formule: g / e
+  entrees:
+    g:
+      calc: CALC-A5-GAZ-PLAST-MJ-T
+    e:
+      calc: CALC-A5-EAU-MJ-T
+  unite: sans unite
+  resultat: 0.4039
+CALC-A5-COUV-GAZ-BRULEUR:
+  description: Rapport entre l'energie du gaz issu du plastique d'une tonne d'OMR et le besoin du bruleur de surchauffe par tonne (OneWorld, CALC-A2-BRULEUR-MJ-T)
+  formule: g / b
+  entrees:
+    g:
+      calc: CALC-A5-GAZ-PLAST-MJ-T
+    b:
+      calc: CALC-A2-BRULEUR-MJ-T
+  unite: sans unite
+  resultat: 0.2759
+CALC-A5-CHAR-MJ-T:
+  description: Energie du char central (30 %) par tonne d'OMR, a 32,09 MJ/kg (D-038, char de dechets menagers)
+  formule: c * pci
+  entrees:
+    c:
+      calc: CALC-A5-CHAR-CENT-KG-T
+    pci:
+      valeur: 32.09
+      unite: MJ/kg
+      source: D-038
+      emplacement: vers
+  unite: MJ par tonne d OMR
+  resultat: 3502.01
+CALC-A5-KHAN-PCS-MJ-KG:
+  description: Pouvoir calorifique superieur du char de dechets alimentaires a 500 C (Khan et al. 2022), converti en MJ/kg
+  formule: k * c / 1000
+  entrees:
+    k:
+      valeur: 5864
+      unite: kcal/kg
+      source: A5-KHAN-2022-POLYMERS-FOOD
+      emplacement: tableau 1, PY500
+    c:
+      valeur: 4.1868
+      unite: kJ/kcal
+      source: NIST-SP811-B9
+      emplacement: calorie IT
+  unite: MJ/kg
+  resultat: 24.5514
+CALC-A5-COUCHE-POLYMERES-PCT:
+  description: Part des polymeres synthetiques classiques (PP, PEBD, PET) dans une couche jetable neuve (Royaume-Uni, 2006)
+  formule: pp + pe + pet
+  entrees:
+    pp:
+      valeur: 16.6
+      unite: '%'
+      source: A5-EA-2008-NAPPY-LCA
+      emplacement: tableau 1.2
+    pe:
+      valeur: 6.0
+      unite: '%'
+      source: A5-EA-2008-NAPPY-LCA
+      emplacement: tableau 1.2
+    pet:
+      valeur: 2.2
+      unite: '%'
+      source: A5-EA-2008-NAPPY-LCA
+      emplacement: tableau 1.2
+  unite: '%'
+  resultat: 24.8
+CALC-A5-PVC-CL-MIN:
+  description: Part massique du chlore dans le PVC (motif C2H3Cl), borne basse avec les intervalles IUPAC
+  formule: cl / (2 * c + 3 * h + cl) * 100
+  entrees:
+    cl:
+      valeur: 35.446
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: Cl borne basse
+    c:
+      valeur: 12.0116
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: C borne haute
+    h:
+      valeur: 1.00811
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: H borne haute
+  unite: '%'
+  resultat: 56.7195
+CALC-A5-PVC-CL-MAX:
+  description: Part massique du chlore dans le PVC (motif C2H3Cl), borne haute
+  formule: cl / (2 * c + 3 * h + cl) * 100
+  entrees:
+    cl:
+      valeur: 35.457
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: Cl borne haute
+    c:
+      valeur: 12.0096
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: C borne basse
+    h:
+      valeur: 1.00784
+      unite: g/mol
+      source: A5-CIAAW-2024-ATOMIC-WEIGHTS
+      emplacement: H borne basse
+  unite: '%'
+  resultat: 56.7315
