@@ -1,0 +1,48 @@
+
+# === ANNEXE 9 (chat 5, 19/11/2026) ===
+
+CALC-A9-PRIX-PAR-TJ:
+  description: Prix de l'URC-2000 par tonne de capacite journaliere nominale (200 t/jour)
+  formule: p / c
+  entrees:
+    p:
+      valeur: 50000000
+      unite: EUR
+      source: D-050
+      emplacement: vers
+    c:
+      valeur: 200
+      unite: t/jour
+      source: UR2000-JP-P08-SPEC
+      emplacement: p. 8
+  unite: EUR par t/jour
+  resultat: 250000
+CALC-A9-PRIX-PAR-T-AN:
+  description: Prix de l'URC-2000 par tonne de capacite annuelle de charge (140 t/jour sur 365 jours, D-035)
+  formule: p / a
+  entrees:
+    p:
+      valeur: 50000000
+      unite: EUR
+      source: D-050
+      emplacement: vers
+    a:
+      calc: CALC-A8-CAPACITE-AN
+  unite: EUR par t/an
+  resultat: 978.4736
+CALC-A9-HARDIN-PAR-TJ:
+  description: Cout machine du plan Hardin par tonne de capacite journaliere (60 000 000 pour 200 t, devise non indiquee)
+  formule: p / c
+  entrees:
+    p:
+      valeur: 60000000
+      unite: devise non indiquee
+      source: HARDIN-LOI
+      emplacement: PDF p. 6
+    c:
+      valeur: 200
+      unite: t/jour
+      source: HARDIN-LOI
+      emplacement: PDF p. 6
+  unite: par t/jour
+  resultat: 300000

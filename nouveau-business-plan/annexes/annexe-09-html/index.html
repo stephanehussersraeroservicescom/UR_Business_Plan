@@ -1,0 +1,437 @@
+<!doctype html>
+<!-- Fichier genere par generer_html.py a partir de ANNEX-09-Equipment-and-Configuration.md et des registres. Ne pas modifier a la main : corriger la source, puis regenerer. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Annex 9. Equipment and Configuration</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#dedbd2;--accent:#1f5f8b;--box:#f1eee6;--good:#2e6b3f;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-top:.6em;border-top:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.6em 0 .4em}
+p,li{max-width:72ch}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font:14px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--box)}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--box);padding:10px 12px;border-radius:6px;overflow-x:auto}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.ev{white-space:nowrap}
+.ev a{display:inline-block;font:600 11px/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:9px;padding:2px 6px;margin-left:3px;vertical-align:2px;opacity:.85}
+.ev a:hover{opacity:1;background:var(--accent);color:var(--bg)}
+.crumb{font:14px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted)}
+.cards{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin:18px 0 26px}
+@media (max-width:640px){.cards{grid-template-columns:1fr}}
+.card{background:var(--box);border-radius:10px;padding:14px 16px}
+.card h4{margin:0 0 6px;font:600 12px/1.2 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card p{margin:0}
+.conf{font:700 2.4rem/1 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--good);margin:4px 0 6px}
+.small{font-size:.9rem;color:var(--muted)}
+.result{font-size:1.15rem;background:var(--box);border-left:4px solid var(--good);padding:10px 14px;border-radius:6px}
+
+figure{margin:1.6em 0;padding:0}
+figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+.key{background:var(--box);border-radius:10px;padding:4px 18px;margin:1em 0}
+</style></head>
+<body><main><h1>Annex 9. Equipment Configuration and Sorting Requirements</h1>
+<p>This annex describes the Urban Rig equipment, its price, what it needs around it (pre-treatment, utilities, building) and how the configuration changes with the feed: plastic waste (Annex 8), residual household waste (Annex 5), mixed business waste (Annex 7). The process itself is described in Annex 1.</p>
+<h2>How to Read This Annex</h2>
+<p>OneWorld, the manufacturer of the Urban Rig, is the sponsor of this business plan<span class="ev"><a href="preuves/A9-D.html#D-027" title="Decision D-027">D-027</a></span>. Its documentation is marked "OneWorld design data"; these are the company's own figures and have not been verified independently. The price of the machine is set by the sponsor<span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a></span>.</p>
+<p>Each figure or fact is followed by a small link to its evidence sheet. Sheets numbered 9.x belong to this annex; sheets numbered 1.x, 2.x, 3.x, 5.x and 8.x are those of other annexes. All sheets are listed in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<p><strong>Prices of auxiliary equipment.</strong> No quotation has been obtained for the pre-treatment line (request R-006). The prices shown come from public tenders, advertisements and manufacturer documents; they give orders of magnitude only.</p>
+<h2>Key Messages</h2>
+<ul>
+<li><strong>One price for the machine.</strong> The URC-2000, 200 t per day, costs 50 MEUR, including the options PRIMO (exhaust gas treatment), SEA CORAL (water treatment) and FORCE 9 (residue stabilisation); delivery is not included, as it depends on the site<span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a></span>.</li>
+<li><strong>That is 978 EUR per tonne of annual capacity</strong>, on a reactor feed of 140 t per day over 365 days<span class="ev"><a href="preuves/A9-C-a.html" title="CALC-A9-PRIX-PAR-T-AN">9.C.a</a><a href="preuves/A9-D.html#D-035" title="Decision D-035">D-035</a></span>.</li>
+<li><strong>Installation included, shipping not.</strong> OneWorld design data state 100 forty-foot containers, 30 days of installation by 10 people and 30 days of training by 9 trainers<span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span>. Installation is included in the price; shipping varies widely with the site and is not counted<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span>.</li>
+<li><strong>Around the machine: 10 MEUR.</strong> The sponsor takes about 5 MEUR per pre-treatment line and a base of 5 MEUR for the building, civil works, engineering and permits<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span>.</li>
+<li><strong>Pre-treatment depends on the feed.</strong> Sorted plastic needs little; residual household waste needs bag opening, screening and metal removal. OneWorld says no sorting is required, but its own plant layouts show a crushing hopper and a sorting machine<span class="ev"><a href="../annexe-01-html/preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span> (request R-023).</li>
+<li><strong>These two amounts are estimates of the sponsor</strong>, not quotations<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span>; quotations remain to be obtained (R-006).</li>
+</ul>
+<h2>9.1 The Urban Rig Range</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Daily capacity</th>
+<th>Operation</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URC-2000</td>
+<td>200 t</td>
+<td>Continuous</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URC-1000</td>
+<td>100 t</td>
+<td>Continuous</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URC-400</td>
+<td>40 t</td>
+<td>Continuous</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URB-50</td>
+<td>5 t</td>
+<td>Batch</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>URB-10, URT-10</td>
+<td>1 t</td>
+<td>Batch</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>All figures are OneWorld design data. The business plan uses the URC-2000.</p>
+<h2>9.2 The URC-2000, Reference Machine</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nominal capacity</td>
+<td>200 t per day</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span></td>
+</tr>
+<tr>
+<td>Reactor feed used in the plan</td>
+<td>200 m3 per day at 0.7 t/m3, i.e. 140 t per day</td>
+<td><span class="ev"><a href="preuves/A9-D.html#D-035" title="Decision D-035">D-035</a></span></td>
+</tr>
+<tr>
+<td>Annual feed, 365 days, availability not deducted</td>
+<td>51,100 t</td>
+<td><span class="ev"><a href="preuves/A9-C-b.html" title="CALC-A8-CAPACITE-AN">9.C.b</a></span></td>
+</tr>
+<tr>
+<td>Construction</td>
+<td>7 units of about 12 t, built in series, carried in 7 pieces and assembled on site</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span></td>
+</tr>
+<tr>
+<td>Size of the unit</td>
+<td>66 x 7 x 7 m; building of 4,650 m2 on the layout</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span></td>
+</tr>
+<tr>
+<td>Maximum temperature and pressure</td>
+<td>600 °C; 0.2 MPa</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a></span></td>
+</tr>
+<tr>
+<td>Electricity</td>
+<td>20 kW according to the specification sheet; 600 kW according to the consumption table</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html" title="UR2000-JP-P08-SPEC">2.3.b</a><a href="../annexe-02-html/preuves/A2-3-e.html" title="OW-CONSO-ENERGIE">2.3.e</a></span></td>
+</tr>
+<tr>
+<td>Fuel for operation</td>
+<td>10,000 L per day in the consumption table</td>
+<td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html" title="OW-CONSO-ENERGIE">2.3.e</a></span></td>
+</tr>
+<tr>
+<td>Lead time, contract to start-up</td>
+<td>about 10 months for the continuous type</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+<tr>
+<td>Foundation</td>
+<td>5 t/m2</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>The two electricity figures contradict each other; Annex 2 uses the higher value<span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html" title="OW-CONSO-ENERGIE">2.3.e</a></span> (request R-015).</p>
+<h2>9.3 Price</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URC-2000 with PRIMO, SEA CORAL and FORCE 9, not delivered</td>
+<td>50,000,000 EUR</td>
+<td><span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a></span></td>
+</tr>
+<tr>
+<td>Per tonne of daily capacity</td>
+<td>250,000 EUR</td>
+<td><span class="ev"><a href="preuves/A9-C-c.html" title="CALC-A9-PRIX-PAR-TJ">9.C.c</a></span></td>
+</tr>
+<tr>
+<td>Per tonne of annual reactor feed</td>
+<td>978 EUR</td>
+<td><span class="ev"><a href="preuves/A9-C-a.html" title="CALC-A9-PRIX-PAR-T-AN">9.C.a</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Another figure in the files.</strong> A business plan prepared for a Korean waste operator shows a "Machine cost" of 60,000,000 for 200 t per day, plus 4,700,000 of other initial capital costs<span class="ev"><a href="preuves/A9-M-a.html" title="HARDIN-LOI">9.M.a</a></span>. The currency is not stated on the page, and it is a planning worksheet, not a transaction. Per tonne of daily capacity, it gives 300,000 in that currency<span class="ev"><a href="preuves/A9-C-d.html" title="CALC-A9-HARDIN-PAR-TJ">9.C.d</a></span>. The business plan uses the sponsor's price<span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a></span>.</p>
+<h2>9.4 Options Included in the Price</h2>
+<ul>
+<li><strong>PRIMO, exhaust gas treatment.</strong> Denitrification, desulphurisation, dust removal and deodorisation, presented by OneWorld as an option<span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>. Its performance is discussed in Annex 2.</li>
+<li><strong>SEA CORAL, water treatment.</strong> A ceramic purifier that absorbs waste water, evaporates it with blown air and recovers clean water<span class="ev"><a href="../annexe-02-html/preuves/A2-3-i.html" title="OW-ENG-P13-SEACORAL">2.3.i</a></span>. Its only documented test is the desalination of sea water<span class="ev"><a href="../annexe-02-html/preuves/A2-3-j.html" title="SEACORAL-DETAIL-ENG">2.3.j</a></span>. Its performance on the process water of the Urban Rig is not documented (request R-017).</li>
+<li><strong>FORCE 9, residue stabilisation.</strong> Catalytic stabilisation of residues at about 400 °C, according to OneWorld<span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>.</li>
+</ul>
+<p>All three are included in the price of 50 MEUR<span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a></span>.</p>
+<h2>9.5 Delivery, Installation and Maintenance</h2>
+<table>
+<thead>
+<tr>
+<th>Item, URC-2000</th>
+<th>Value</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shipment</td>
+<td>100 forty-foot containers</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span></td>
+</tr>
+<tr>
+<td>Installation on site</td>
+<td>30 days, 10 people</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span></td>
+</tr>
+<tr>
+<td>Training</td>
+<td>30 days, 9 trainers</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span></td>
+</tr>
+<tr>
+<td>Maintenance</td>
+<td>3 days every 3 months</td>
+<td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html" title="OW-TRANSPORT-INSTALLATION">1.M.h</a></span></td>
+</tr>
+<tr>
+<td>Installation on site</td>
+<td>included in the price</td>
+<td><span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td>Shipping (100 containers)</td>
+<td>not counted, depends on the site</td>
+<td><span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td>Training</td>
+<td>not stated whether included</td>
+<td>R-049</td>
+</tr>
+</tbody>
+</table>
+<p>The table has no issuer or date. Its 100 containers differ from the 7 pieces carried by truck described elsewhere by OneWorld<span class="ev"><a href="../annexe-01-html/preuves/A1-M-d.html" title="UR2000-JP-P06-P07-MODULES">1.M.d</a></span>.</p>
+<h2>9.6 Pre-Treatment</h2>
+<p><strong>What OneWorld says.</strong> The brochures state that no sorting is needed, but the layouts of the URC-2000 show an input hopper "with crushing function" and a "sorting machine"<span class="ev"><a href="../annexe-01-html/preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span>. The scope of pre-treatment is to be confirmed with OneWorld (request R-023).</p>
+<p><strong>What the feeds require.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feed</th>
+<th>Main contaminants</th>
+<th>Pre-treatment</th>
+<th>Annex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sorted plastic in bales</td>
+<td>Wires, labels, some PVC</td>
+<td>Bale breaking, shredding</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Residual household waste</td>
+<td>11.79 % glass, metals, minerals and hazardous items; 421 kg of water per tonne</td>
+<td>Bag opening, screening, magnetic and eddy-current separation, removal of hazardous items; optional press-extrusion</td>
+<td>5<span class="ev"><a href="../annexe-05-html/preuves/A5-C-f.html" title="CALC-A5-NONPROC-PCT">5.C.f</a><a href="../annexe-05-html/preuves/A5-C-c.html" title="CALC-A5-EAU-KG-T">5.C.c</a></span></td>
+</tr>
+<tr>
+<td>Mixed business waste</td>
+<td>23 % inerts, metals and plaster; treated wood</td>
+<td>Screening, metal separation, removal of inerts</td>
+<td>7<span class="ev"><a href="../annexe-07-html/preuves/A7-C-l.html" title="CALC-A7-NONCONV-PCT">7.C.l</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Orders of magnitude for equipment.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Equipment</th>
+<th>Price</th>
+<th>Basis</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trommel screen</td>
+<td>50,000 to 150,000 EUR, up to 50 t/h</td>
+<td>Trade website</td>
+<td><span class="ev"><a href="preuves/A9-L-a.html" title="PRM-HELLOPRO-MACHINES-CDT-2026">9.L.a</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Mobile trommel with 4-year maintenance contract</td>
+<td>214,000 EUR</td>
+<td>Public tender award, 2024</td>
+<td><span class="ev"><a href="preuves/A9-L-b.html" title="PRM-BOAMP-SMTD65-TROMMEL-2024">9.L.b</a></span></td>
+</tr>
+<tr>
+<td>Magnetic separator</td>
+<td>from 30,000 EUR, 20 to 50 t/h</td>
+<td>Trade website</td>
+<td><span class="ev"><a href="preuves/A9-L-a.html" title="PRM-HELLOPRO-MACHINES-CDT-2026">9.L.a</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Overband magnet, belt 750 mm</td>
+<td>5,350 EUR excluding VAT</td>
+<td>Advertisement</td>
+<td><span class="ev"><a href="preuves/A9-L-c.html" title="PRM-MACHINESEEKER-PUTZ-OVERBAND-2026">9.L.c</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Shredder</td>
+<td>about 25,000 EUR</td>
+<td>Trade website</td>
+<td><span class="ev"><a href="preuves/A9-L-a.html" title="PRM-HELLOPRO-MACHINES-CDT-2026">9.L.a</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Complete automatic line</td>
+<td>at least 500,000 EUR</td>
+<td>Trade website</td>
+<td><span class="ev"><a href="preuves/A9-L-a.html" title="PRM-HELLOPRO-MACHINES-CDT-2026">9.L.a</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Dust extraction, ATEX version</td>
+<td>15,000 to 80,000 EUR</td>
+<td>Trade website</td>
+<td><span class="ev"><a href="preuves/A9-L-d.html" title="PRM-HELLOPRO-DEPOUSSIEREUR-2026">9.L.d</a></span>, secondary</td>
+</tr>
+<tr>
+<td>Press-extrusion, 9 to 15 t/h</td>
+<td>price not published; 120 kW</td>
+<td>Manufacturer</td>
+<td><span class="ev"><a href="../annexe-05-html/preuves/A5-L-p.html" title="A9-ANAERGIA-OREX400">5.L.p</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A benchmark of scale.</strong> A French operator invested 8.5 MEUR in a new line producing solid recovered fuel, aiming at 75,000 t a year from 100,000 t of non-hazardous waste<span class="ev"><a href="preuves/A9-L-e.html" title="PRM-BAUDELET-CSR-2026">9.L.e</a></span>. Its scope is wider than the pre-treatment of an Urban Rig.</p>
+<p><strong>Press-extrusion (option for household waste).</strong> Section 5.12.1 of Annex 5 describes it: a dry fraction at 18 to 20 % moisture according to a distributor<span class="ev"><a href="../annexe-05-html/preuves/A5-L-o.html" title="A9-DBTECH-OREX-MSW">5.L.o</a></span>, 8.0 to 13.3 kWh per tonne<span class="ev"><a href="../annexe-05-html/preuves/A5-C-br.html" title="CALC-A9-OREX-KWH-T-BAS">5.C.br</a><a href="../annexe-05-html/preuves/A5-C-bs.html" title="CALC-A9-OREX-KWH-T-HAUT">5.C.bs</a></span>. Its price is not known (request R-047).</p>
+<h2>9.7 Building and Site</h2>
+<ul>
+<li>The layout of the URC-2000 shows a building of 4,650 m2<span class="ev"><a href="../annexe-01-html/preuves/A1-M-b.html" title="OW-ENG-P04-P07-SPEC-PLANS">1.M.b</a></span> and a foundation load of 5 t/m2<span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html" title="OW-ENG-P03-P19-GAMME-DELAIS">1.M.c</a></span>.</li>
+<li>Earthworks, roads and civil works of a French waste reception site were estimated at 2,695,000 EUR excluding VAT in a 2024 tender<span class="ev"><a href="preuves/A9-L-f.html" title="PRM-BOAMP-SITREVA-DREUX-2024">9.L.f</a></span>; the project is different and the figure is only an order of magnitude.</li>
+<li>No price per square metre of industrial building has been sourced for this plan. The business plan takes a base of 5 MEUR for the building, civil works, engineering and permits together<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span>.</li>
+</ul>
+<h2>9.8 Engineering and Permitting</h2>
+<p>The plant needs an environmental permit (ICPE), studied in Annex 4. Textbook ratios for process plants put engineering and supervision at 4 to 20 % of fixed capital, and buildings at 2 to 18 % (secondary source)<span class="ev"><a href="preuves/A9-L-g.html" title="PRM-POLIMI-PT-PLANTECON-2015">9.L.g</a></span>. They are given for orientation only.</p>
+<h2>9.9 Capital Cost per Line</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Amount</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URC-2000 with PRIMO, SEA CORAL and FORCE 9, installation included</td>
+<td>50 MEUR</td>
+<td><span class="ev"><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td>Pre-treatment line</td>
+<td>about 5 MEUR</td>
+<td>Sponsor's estimate<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td>Building, civil works, engineering and permits</td>
+<td>5 MEUR</td>
+<td>Sponsor's estimate<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td>Shipping</td>
+<td>not counted</td>
+<td>Depends on the site<span class="ev"><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span></td>
+</tr>
+<tr>
+<td><strong>Total per line, before shipping</strong></td>
+<td><strong>60 MEUR</strong></td>
+<td><span class="ev"><a href="preuves/A9-C-e.html" title="CALC-A9-CAPEX-LIGNE">9.C.e</a></span></td>
+</tr>
+</tbody>
+</table>
+<p>The pre-treatment amount applies to each line whatever the feed, in the reading of this annex; a plastic feed may need less (Section 9.6). Each amount is a parameter that the operator of the model can change.</p>
+<h2>9.10 Open Points</h2>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Subject</th>
+<th>Held by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-006</td>
+<td>Quotation for a pre-sorting line, to replace the estimate of 5 MEUR</td>
+<td>Equipment makers</td>
+</tr>
+<tr>
+<td>R-015</td>
+<td>Electricity of the URC-2000 (two contradictory figures)</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-017</td>
+<td>SEA CORAL on process water</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-023</td>
+<td>Pre-treatment required by the URC-2000</td>
+<td>OneWorld</td>
+</tr>
+<tr>
+<td>R-047</td>
+<td>Press-extrusion: test and price</td>
+<td>Equipment makers</td>
+</tr>
+<tr>
+<td>R-049</td>
+<td>Shipping cost by site; whether training is included</td>
+<td>OneWorld, freight forwarder</td>
+</tr>
+</tbody>
+</table>
+<h2>9.11 Recommendations for the Business Plan</h2>
+<ul>
+<li>Use 60 MEUR per line before shipping: the machine at 50 MEUR, installation included, plus 5 MEUR of pre-treatment and 5 MEUR of building, civil works, engineering and permits<span class="ev"><a href="preuves/A9-C-e.html" title="CALC-A9-CAPEX-LIGNE">9.C.e</a><a href="preuves/A9-D.html#D-050" title="Decision D-050">D-050</a><a href="preuves/A9-D.html#D-051" title="Decision D-051">D-051</a></span>.</li>
+<li>Show shipping as a site-dependent line, and replace the two estimates by quotations when available (R-006, R-049).</li>
+<li>Settle with OneWorld the electricity figure and the scope of pre-treatment (R-015, R-023).</li>
+</ul>
+<h2>9.12 References</h2>
+<p>Documents cited in this annex, with their location and confidence. The full list of sheets is in the <a href="preuves/index.html">index of evidence sheets</a>.</p>
+<table><tr><th>Sheet</th><th>Document</th><th>Location</th><th>Confidence</th></tr><tr><td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-h.html">1.M.h</a></span></td><td>Tableau &#x27;Transportation, Installation and Maintenance&#x27; (1t, 100t, 200t)</td><td>p. 1 (lu sur image par le chat 1, releves/energie-ur2000-divers.md section 6)</td><td>90 %</td></tr><tr><td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-b.html">1.M.b</a></span></td><td>Brochure OneWorld anglaise (oct. 2019), fiches SPEC et plans d&#x27;implantation URC-2000, URC-1000, URC-150</td><td>p. 4 (URC-2000), p. 6 (URC-1000), p. 7 (URC-150)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-c.html">1.M.c</a></span></td><td>Brochure OneWorld anglaise (oct. 2019), gamme de machines, options PRIMO et FORCE 9, delais de fabrication</td><td>p. 3 a 9 (gamme et fiches SPEC), 11, 12, 18, 19</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-b.html">2.3.b</a></span></td><td>Brochure URC-2000 OneWorld, fiche de specification</td><td>p. 8 (et p. 4, p. 7)</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-01-html/preuves/A1-M-d.html">1.M.d</a></span></td><td>Brochure URC-2000 OneWorld (japonais), construction modulaire et chargement des bennes</td><td>p. 6 et p. 7</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-e.html">2.3.e</a></span></td><td>Tableau &#x27;UR Energy Consumption&#x27; par taille de machine</td><td>p. 1, ligne 200t</td><td>90 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-M-a.html">9.M.a</a></span></td><td>Lettre d&#x27;intention Hardin, 2 x URC-1000</td><td></td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-i.html">2.3.i</a></span></td><td>Brochure anglaise OneWorld, page SEA CORAL</td><td>p. 13</td><td>95 %</td></tr><tr><td><span class="ev"><a href="../annexe-02-html/preuves/A2-3-j.html">2.3.j</a></span></td><td>OneWorld, SEA CORAL detail (anglais) et presentation SEACORAL (japonais)</td><td>SEA CORALdetail.pdf p. 1 a 8 (essai p. 5) ; presentation japonaise p. 6</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-a.html">9.L.a</a></span></td><td>Combien coute une machine pour centre de tri de dechets ?</td><td>Tableau des prix par machine ; mention Chiffres constates en octobre 2026</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-b.html">9.L.b</a></span></td><td>Avis d&#x27;attribution 24-96781 - Fourniture d&#x27;un crible rotatif avec contrat d&#x27;entretien</td><td>Avis de resultats, LOT-0001 ; ligne Valeur de tous les contrats attribues</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-c.html">9.L.c</a></span></td><td>Overband magnet recycling Putz Recycling</td><td>Fiche annonce</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-d.html">9.L.d</a></span></td><td>Combien coute un depoussiereur ?</td><td>Tableaux prix par type, par secteur et couts d&#x27;installation ; Chiffres constates en octobre 2026</td><td>80 %</td></tr><tr><td><span class="ev"><a href="../annexe-05-html/preuves/A5-L-p.html">5.L.p</a></span></td><td>OREX 400 Organic Extrusion Press (fiche produit)</td><td>fiche produit, avantages et tableau des capacites</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-e.html">9.L.e</a></span></td><td>Le groupe Baudelet investit 11,5 M EUR dans son centre de valorisation matiere</td><td>Corps de l&#x27;article</td><td>90 %</td></tr><tr><td><span class="ev"><a href="../annexe-05-html/preuves/A5-L-o.html">5.L.o</a></span></td><td>Preparation of biological waste and MSW using the OREX Press (presentation)</td><td>presentation, pages OREX et fractions</td><td>80 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-f.html">9.L.f</a></span></td><td>Avis d&#x27;attribution 24-97628 - Extension dechetterie et reamenagement du quai de transfert de Dreux</td><td>Lot 1 (LOT-0001) ; valeur totale des contrats</td><td>95 %</td></tr><tr><td><span class="ev"><a href="preuves/A9-L-g.html">9.L.g</a></span></td><td>L8 Plant Economics (cours PSE Lab) citant Peters, Timmerhaus &amp; West, Plant Design and Economics for Chemical Engineers, McGraw Hill, 2003</td><td>Slide 8 (Component Range of FCI, %) ; slide 14 (Shipping expenses)</td><td>80 %</td></tr></table></main></body></html>

@@ -1,0 +1,9 @@
+
+R-049:
+  question: "Cout de livraison d'un URC-2000 du Japon vers un site francais : fret maritime de 100 conteneurs de 40 pieds (OW-TRANSPORT-INSTALLATION), transport terrestre, douane ; cout de l'installation sur site (30 jours, 10 personnes) et de la formation (30 jours, 9 formateurs) : compris dans le prix ou non"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: a_demander
+  detenteur: "Urban Rig / OneWorld (perimetre), transitaire (fret)"
+  cherche: "Tableau OneWorld transport, installation et maintenance (sans prix) ; aucune cotation de fret lue."
+  sources: [OW-TRANSPORT-INSTALLATION]

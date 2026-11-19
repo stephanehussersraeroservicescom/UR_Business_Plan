@@ -126,6 +126,8 @@ HARDIN-LOI:
   fiabilite: constructeur
   chemin: "reference/preuves/business-plans/Business-Plan-Hardin.pdf"
   contenu: "USD 60 M pour 2 x URC-1000, soit environ 30 MEUR par unite de 100 T/jour. Seul prix de transaction reel du depot."
+  valeurs_lues_2026_11_19: "PDF p. 6 (tableau, lu sur image par Claude le 19/11/2026) : Machine Capacity (T) 200 ; Machine cost 60,000,000 ; Initial other CAPEX 4,700,000 ; Total Investment 64,700,000 ; Interest rate 7.0% ; Loan (90%) 58,230,000. PDF p. 4 : Hardin would purchase 2x 100T daily capacity waste processing pyrolysis machine from Petercorp."
+  correction_2026_11_19: "Correction de Claude (chat 5) : la devise n est pas indiquee sur la page lue ; le document est un plan d affaires (feuille de calcul financiere), pas une lettre d intention ni une transaction ; il ne nomme pas le modele URC-1000 dans les pages lues. Le prix de la machine est fixe par la decision D-050."
 
 LUFTHANSA-WS:
   titre: "Worksheet for Lufthansa, 200 MT"

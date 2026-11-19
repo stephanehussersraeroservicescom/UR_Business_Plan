@@ -50,6 +50,7 @@ R-004:
   sources: [PRM-DGEC-NPG-2025-12, PRM-INSEE-EACEI-2024, A3-DGEC-NPG-2026-10-09-COTATIONS, A3-CE-WOB-2026-10-12, A3-BM-PINKSHEET-2026-10]
 
 R-005:
+  complement_2026_11_19_chat5: "Prix fixe par Stephane le 19/11/2026 (D-050) : 50 MEUR, options PRIMO, SEA CORAL et FORCE 9 comprises, hors livraison. Reste ouvert : livraison, installation et formation comprises ou non (R-049)."
   question: "Perimetre exact de la cotation OneWorld (Incoterm, montage, ingenierie, formation, pieces)"
   demande_par: Stephane
   date: 2026-10-10
@@ -462,3 +463,12 @@ R-048:
   cherche: "Chat 5 (19/11/2026) : Insee Premiere 2034 (parts seulement, pas d'humidite) ; rapport ADEME 2025 sur le tri des DAE (composition visuelle, sans humidite ni PCI) ; rapport de suivi 3 du PRPGD d'Ile-de-France (pas de tonnage en melange) ; RECORD 14-0245 (rien sur les DAE) ; Zero Waste Scotland 2024 (aucune composition mesuree) ; recherche web « PCI DAE en melange », « refus de tri DAE PCI »."
   manque: "Humidite, PCI et chlore des DAE en melange ; composition des fines ; tonnage regional en melange"
   sources: [A7-INSEE-IP2034-2025, A7-ADEME-TRI-DAE-2025, A7-PRPGD-IDF-SUIVI3-2023]
+
+R-049:
+  question: "Cout de livraison d'un URC-2000 du Japon vers un site francais : fret maritime de 100 conteneurs de 40 pieds (OW-TRANSPORT-INSTALLATION), transport terrestre, douane ; cout de l'installation sur site (30 jours, 10 personnes) et de la formation (30 jours, 9 formateurs) : compris dans le prix ou non"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: a_demander
+  detenteur: "Urban Rig / OneWorld (perimetre), transitaire (fret)"
+  cherche: "Tableau OneWorld transport, installation et maintenance (sans prix) ; aucune cotation de fret lue."
+  sources: [OW-TRANSPORT-INSTALLATION]

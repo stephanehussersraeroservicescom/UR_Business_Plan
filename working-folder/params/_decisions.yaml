@@ -808,3 +808,33 @@ D-049:
     Trois scenarios comme pour l'annexe 5 (D-047).
   preuves: [A7-ADEME-TRI-DAE-2025]
   a_verifier: "Humidite et PCI des DAE en melange ; composition des fines ; essais OneWorld (R-021)."
+
+D-050:
+  date: 2026-11-19
+  titre: "Prix de l'URC-2000 : 50 MEUR, toutes options comprises (PRIMO, SEA CORAL, FORCE 9), hors livraison"
+  de: "prix connu seulement par l'ancienne annexe 9 archivee (ONEWORLD-COTATION, sans valeur de preuve) ; demande R-005"
+  vers: "50 000 000 EUR pour une machine de 200 t/jour, options PRIMO, SEA CORAL et FORCE 9 comprises ; livraison non comprise (depend du site)"
+  unite: "EUR"
+  motif: >
+    Decision de Stephane du 19/11/2026 (12 h 41, chat 5) : « C'est nous qui decidons du prix et il est fixe [...]
+    50 millions, c'est le prix de la machine. [...] La machine de 200 tonnes, c'est 50 millions. Et ca comprend toutes
+    les options. Primo, Sea Coral et Force 9. [...] Mais ce n'est pas livre, parce que la livraison depend de
+    l'endroit. » Stephane fait partie d'Urban Rig, qui fixe le prix (D-027). Devise : l'euro, utilisee dans tout le
+    projet et dans l'ancienne annexe 9 ; a corriger si Stephane precise autrement. R-005 devient sans objet pour le prix ;
+    le cout de livraison reste a chiffrer selon le site (R-049).
+  preuves: []
+
+D-051:
+  date: 2026-11-19
+  titre: "Annexe 9 : installation comprise dans le prix, transport non chiffre ; pre-traitement environ 5 MEUR par ligne ; batiment, genie civil, ingenierie et permis 5 MEUR"
+  de: "installation, transport, pre-traitement, batiment, genie civil, ingenierie et permis inconnus (R-006, R-049)"
+  vers: "installation sur site comprise dans les 50 MEUR (D-050) ; transport (100 conteneurs) non compris et non chiffre, depend du site ; pre-traitement : environ 5 MEUR par ligne ; batiment, genie civil, ingenierie et permis : base de 5 MEUR"
+  unite: "EUR"
+  motif: >
+    Decision de Stephane du 19/11/2026 (13 h 01, chat 5) : « L'installation [...] on peut la mettre dans le cout » ;
+    « le shipment, ca varie enormement, donc on n'a pas compris » ; « le pre-traitement, rajoute-le [...] On va rajouter
+    a chaque fois a peu pres 5 millions » ; « prend une base de 5 millions pour le batiment, genie civil, ingenierie et
+    permis ». HYPOTHESES de Stephane pour les deux montants de 5 MEUR (estimations, sans devis). Lecture de Claude, a
+    confirmer : les 5 MEUR de pre-traitement s'appliquent a chaque ligne, quel que soit le flux ; les deux montants
+    s'ajoutent. La formation n'est pas mentionnee et reste a preciser (R-049).
+  preuves: []
