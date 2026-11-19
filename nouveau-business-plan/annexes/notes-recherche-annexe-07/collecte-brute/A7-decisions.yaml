@@ -1,0 +1,14 @@
+
+D-049:
+  date: 2026-11-19
+  titre: "Annexe 7 : bilan indicatif d'une tonne de DAE en melange, sur la composition visuelle de l'ADEME et sur masse brute"
+  de: "aucune regle"
+  vers: "composition des flux en melange des centres de tri de DAE (ADEME 2025, 18 sites) ; rendements appliques a la masse brute, l'humidite n'etant pas connue ; plastiques selon D-044 et D-029 ; bois, fibreux et textiles : char selon D-045 ; fibreux et textiles : liquide et gaz selon D-048 ; inertes, metaux et platre non convertis ; elements fins non attribues"
+  unite: "regle de calcul"
+  motif: >
+    HYPOTHESE posee par Claude le 19/11/2026 (chat 5, annexe 7), a confirmer par Stephane. Aucune humidite ni aucun
+    pouvoir calorifique des DAE en melange n'a ete trouve (recherche R-048) : appliquer les rendements a la masse brute
+    surestime les produits. Les elements fins ou non reconnaissables (34 %) ne sont pas attribues faute de composition.
+    Trois scenarios comme pour l'annexe 5 (D-047).
+  preuves: [A7-ADEME-TRI-DAE-2025]
+  a_verifier: "Humidite et PCI des DAE en melange ; composition des fines ; essais OneWorld (R-021)."

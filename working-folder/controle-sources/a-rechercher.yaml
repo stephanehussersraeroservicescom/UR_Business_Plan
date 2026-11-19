@@ -453,3 +453,12 @@ R-047:
   manque: "Mesures sur OMR francaises ; prix ; humidite mesuree de la fraction seche par un tiers ; devenir de la fraction humide"
   sources: [A9-DBTECH-OREX-MSW, A9-ANAERGIA-OREX400, A9-TORRETTA-2014-WIT, A9-VELIS-2009-BIODRYING]
   detenteur: "Constructeurs (Anaergia, VM Press, db technologies), OneWorld pour SEA CORAL"
+
+R-048:
+  question: "Humidite, pouvoir calorifique et composition des fines des DAE en melange en France (et en Ile-de-France) ; tonnage des DAE en melange en Ile-de-France"
+  demande_par: Claude
+  date: 2026-11-19
+  statut: introuvable
+  cherche: "Chat 5 (19/11/2026) : Insee Premiere 2034 (parts seulement, pas d'humidite) ; rapport ADEME 2025 sur le tri des DAE (composition visuelle, sans humidite ni PCI) ; rapport de suivi 3 du PRPGD d'Ile-de-France (pas de tonnage en melange) ; RECORD 14-0245 (rien sur les DAE) ; Zero Waste Scotland 2024 (aucune composition mesuree) ; recherche web « PCI DAE en melange », « refus de tri DAE PCI »."
+  manque: "Humidite, PCI et chlore des DAE en melange ; composition des fines ; tonnage regional en melange"
+  sources: [A7-INSEE-IP2034-2025, A7-ADEME-TRI-DAE-2025, A7-PRPGD-IDF-SUIVI3-2023]

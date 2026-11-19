@@ -1,0 +1,44 @@
+
+# === ANNEXE 7 (chat 5, 19/11/2026) : dechets d'activites economiques en melange ===
+
+A7-INSEE-IP2034-2025:
+  titre: "Les dechets dans les etablissements de l'industrie et du tertiaire en 2022 (Insee Premiere n 2034)"
+  editeur: "Insee, A. Larmat"
+  date: 2025-01-21
+  annee_donnees: 2022
+  type: statistique_publique
+  url: https://www.insee.fr/fr/statistiques/8324486
+  emplacement: "texte ; figures 1, 2, 3 et 4 ; erratum du 3/11/2026"
+  contenu: "Champ : etablissements de 10 salaries ou plus de l'industrie manufacturiere, de 20 salaries ou plus du commerce et des services ; dechets non dangereux hors mineraux et boues. Figure 1 (milliers de tonnes) : industrie 14 891 dont banals 11 671 (78 %) et organiques 3 147 ; commerce 5 649 dont banals 4 856 (86 %) ; services 5 405 dont banals 4 127 (76 %) et organiques 913. Figure 2 (part des banals) : dechets en melange : industrie 9 %, commerce 24 %, services 26 %, ensemble 16 % ; plastiques tries : 4, 6, 5 et 5 % ; papier-carton : 17, 46, 49 et 30 % ; bois : 39, 13, 14 et 28 %. Figure 3 (dechets en melange) : recyclage matiere et organique 15 %, valorisation energetique 19 %, non valorises 32 %, centre de tri 34 %. Industrie agroalimentaire : 30 % des dechets de l'industrie, dont 71 % organiques. Tous secteurs : 79 % des dechets tries sont valorises, 19 % vont en centre de tri."
+  citation: "Les déchets composés de plusieurs matières, dits en mélange, sont deux fois moins souvent valorisés (34 %). | Seulement 34 % des déchets en mélange sont valorisés (moitié moins que les déchets triés), dont plus de la moitié pour produire de l’énergie, tandis que 32 % sont incinérés sans récupération d’énergie ou mis en décharge."
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Statistique officielle. Lue par Claude dans le navigateur de Stephane le 19/11/2026, apres l'erratum du 3/11/2026 (erreur d'unite sur un etablissement des services) ; une lecture par WebFetch le meme jour donnait encore les valeurs anterieures (services 5 601 et banals 4 323 ; melange 29 % dans les services, 17 % au total). Les tonnages des dechets en melange ne sont pas publies, seulement des parts arrondies. Hors BTP et hors petits etablissements."
+
+A7-ADEME-TRI-DAE-2025:
+  titre: "Performances des installations de tri des dechets d'activites economiques : etat des lieux, methodologie d'evaluation des performances de tri et evolution du secteur (rapport final)"
+  editeur: "ADEME ; Elcimai (M. Botte, L. Deschamps, A. Arnal) et RDC Environment (M. Gautier, T. Huppertz)"
+  date: 2025-11
+  annee_donnees: 2023
+  type: etude_publique
+  url: https://www.rdcenvironment.be/wp-content/uploads/2026/01/performance-tri-DAE-rapport-1.pdf
+  emplacement: "resume p. 5 ; section 1.1 ; section 3.3.2 (figure 6) ; p. 30 (figure 14) ; section 3.3.5 (refus)"
+  contenu: "Production de DAE : 57 millions de tonnes (hors BTP et assimiles) et 7 millions de tonnes de dechets assimiles, soit 64 Mt (2021 ; le resume dit 2020). Panel de 18 sites de tri (8 en tri par engins, 10 mecanises), annee 2023 : 52 % de flux en melange et 48 % de monoflux (68 % de melange sur les sites mecanises, 33 % sur les sites a engins). Composition moyenne en masse des flux en melange (figure 14) : bois 28 % (aux trois quarts du bois B) ; inertes 19 % ; elements fins ou non reconnaissables 34 % ; fibreux 7 % ; plastiques 5 % ; metaux 3 % ; textiles 3 % ; platre 1 %. Cout moyen de traitement des refus : environ 200 EUR par tonne de refus, TGAP comprise. Chiffre d'affaires des sites : environ 150 EUR/t en moyenne, de 70-80 a plus de 200 EUR/t."
+  citation: "Le bois (28%), dont les 3/4 correspondent à du bois B ; Les inertes (19%) ; 34% d’éléments fins ou non reconnaissables ; 19% pour le reste des catégories plus à la marge : fibreux – 7% ; plastiques – 5% ; métaux – 3% ; textiles – 3% ; plâtre – 1% | 52% de flux en mélange pour 48% de monoflux | le coût de traitement moyen des refus mesuré est d’environ 200 €/tonne de refus produite, TGAP comprise"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Etude commandee par l'ADEME. PDF lu par Claude dans le navigateur de Stephane le 19/11/2026 (texte integral, 162 p.). Composition visuelle sur 18 sites, pas une campagne nationale ; humidite et PCI des flux non mesures."
+
+A7-PRPGD-IDF-SUIVI3-2023:
+  titre: "Rapport de suivi n 3 du Plan regional de prevention et de gestion des dechets (PRPGD) d'Ile-de-France"
+  editeur: "Region Ile-de-France, avec l'ORDIF (Institut Paris Region)"
+  date: 2023-11-28
+  annee_donnees: 2020
+  type: observatoire
+  url: https://iledefrance.fr/document/25808/download
+  emplacement: "p. 10, p. 14, p. 16, p. 42"
+  contenu: "5,09 millions de tonnes de DAE non dangereux non inertes produits en 2020 en Ile-de-France (hors BTP geres par le service public) ; serie 2014, 2016, 2018, 2020 : 5,90 ; 5,95 ; 5,63 ; 5,09 Mt (2020 atypique, confinements) ; objectif 2031 environ 5,87 Mt ; objectif : 100 % des DAE collectes en melange orientes vers une chaine de tri en 2025. Pas de tonnage des DAE en melange."
+  citation: "5,09 millions de tonnes de déchets d'activités économiques (DAE) non dangereux non inertes produits en 2020 | 100 % des DAE collectés en mélange orientés vers une chaîne de tri en 2025"
+  statut: lu
+  consulte: '2026-11-19'
+  note: "Document regional officiel. Lu par WebFetch le 19/11/2026 (premiers 100 000 caracteres ; la section 4-2, p. 80, sur le traitement des DAE n'a pas ete lue)."

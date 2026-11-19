@@ -6207,3 +6207,366 @@ CALC-A9-OREX-KWH-T-BAS:
     d: {valeur: 15, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "debit"}
   unite: "kWh/t"
   resultat: 8.0
+
+# === ANNEXE 7 (chat 5, 19/11/2026) ===
+
+CALC-A7-MELANGE-IND-KT:
+  description: 'Dechets en melange, industrie manufacturiere, 2022 : dechets banals multiplies par la part des dechets en melange (parts arrondies a l''unite)'
+  formule: b * p / 100
+  entrees:
+    b:
+      valeur: 11671
+      unite: kt
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 1, dechets banals
+    p:
+      valeur: 9
+      unite: '%'
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 2, en melange
+  unite: kt
+  resultat: 1050.39
+CALC-A7-MELANGE-COM-KT:
+  description: 'Dechets en melange, commerce, 2022 : dechets banals multiplies par la part des dechets en melange (parts arrondies a l''unite)'
+  formule: b * p / 100
+  entrees:
+    b:
+      valeur: 4856
+      unite: kt
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 1, dechets banals
+    p:
+      valeur: 24
+      unite: '%'
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 2, en melange
+  unite: kt
+  resultat: 1165.44
+CALC-A7-MELANGE-SERV-KT:
+  description: 'Dechets en melange, services, 2022 : dechets banals multiplies par la part des dechets en melange (parts arrondies a l''unite)'
+  formule: b * p / 100
+  entrees:
+    b:
+      valeur: 4127
+      unite: kt
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 1, dechets banals
+    p:
+      valeur: 26
+      unite: '%'
+      source: A7-INSEE-IP2034-2025
+      emplacement: figure 2, en melange
+  unite: kt
+  resultat: 1073.02
+CALC-A7-MELANGE-TOT-KT:
+  description: Dechets en melange des trois secteurs, 2022 (etablissements de 10 ou 20 salaries ou plus)
+  formule: a + b + c
+  entrees:
+    a:
+      calc: CALC-A7-MELANGE-IND-KT
+    b:
+      calc: CALC-A7-MELANGE-COM-KT
+    c:
+      calc: CALC-A7-MELANGE-SERV-KT
+  unite: kt
+  resultat: 3288.85
+CALC-A7-IDF-DAE-ENFOUIS-T:
+  description: 'DAE enfouis en Ile-de-France en 2022 : tonnage enfoui multiplie par la part d''origine entreprises'
+  formule: t * p / 100
+  entrees:
+    t:
+      valeur: 2228079
+      unite: t
+      source: A8-CST-ORDIF-ISDND-2023
+      emplacement: contenu
+    p:
+      valeur: 38.1
+      unite: '%'
+      source: A8-CST-ORDIF-ISDND-2023
+      emplacement: contenu
+  unite: t
+  resultat: 848898.1
+CALC-A7-IDF-DAE-INCIN-T:
+  description: 'Dechets d''entreprises incineres en Ile-de-France en 2022 : tonnage incinere multiplie par la part des entreprises'
+  formule: t * p / 100
+  entrees:
+    t:
+      valeur: 3810761
+      unite: t
+      source: A8-CST-ORDIF-UIDND-2023
+      emplacement: contenu
+    p:
+      valeur: 8.8
+      unite: '%'
+      source: A8-CST-ORDIF-UIDND-2023
+      emplacement: contenu
+  unite: t
+  resultat: 335347.0
+CALC-A7-NONCONV-PCT:
+  description: 'Part non convertible des DAE en melange : inertes, metaux, platre (figure 14)'
+  formule: i + m + p
+  entrees:
+    i:
+      valeur: 19
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, inertes
+    m:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, metaux
+    p:
+      valeur: 1
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, platre
+  unite: '%'
+  resultat: 23
+CALC-A7-ORG-PCT:
+  description: Part bois, fibreux et textiles des DAE en melange (figure 14)
+  formule: b + f + t
+  entrees:
+    b:
+      valeur: 28
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, bois
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+  unite: '%'
+  resultat: 38
+CALC-A7-HUILE-BAS-KG-T:
+  description: Huile par tonne de DAE en melange, plastiques a 5 % de la masse et rendement de 55 % (D-044, D-049)
+  formule: p * r / 10
+  entrees:
+    p:
+      valeur: 5
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, plastiques
+    r:
+      valeur: 55
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne
+  resultat: 27.5
+CALC-A7-HUILE-HAUT-KG-T:
+  description: Huile par tonne de DAE en melange, plastiques a 5 % de la masse et rendement de 81 % (D-044, D-049)
+  formule: p * r / 10
+  entrees:
+    p:
+      valeur: 5
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, plastiques
+    r:
+      valeur: 81
+      unite: '%'
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: contenu, taux d huile par essai
+  unite: kg par tonne
+  resultat: 40.5
+CALC-A7-HUILE-CENT-KG-T:
+  description: Huile par tonne de DAE en melange, plastiques a 5 %, rendement moyen des 10 essais (D-034, D-049)
+  formule: p * r / 10
+  entrees:
+    p:
+      valeur: 5
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, plastiques
+    r:
+      calc: CALC-A2-HUILE10-MOY-POND
+  unite: kg par tonne
+  resultat: 36.535
+CALC-A7-GAZ-PLAST-KG-T:
+  description: Gaz des plastiques par tonne de DAE en melange, 10 % de la masse de plastique (D-029)
+  formule: p * g / 10
+  entrees:
+    p:
+      valeur: 5
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, plastiques
+    g:
+      valeur: 10
+      unite: '%'
+      source: D-029
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 5.0
+CALC-A7-CHAR-BAS-KG-T:
+  description: Char du bois, des fibreux et des textiles par tonne de DAE en melange, a 25 % (D-045, D-049)
+  formule: o * c / 10
+  entrees:
+    o:
+      calc: CALC-A7-ORG-PCT
+    c:
+      valeur: 25
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 95.0
+CALC-A7-CHAR-CENT-KG-T:
+  description: Char du bois, des fibreux et des textiles par tonne de DAE en melange, a 30 % (D-045, D-049)
+  formule: o * c / 10
+  entrees:
+    o:
+      calc: CALC-A7-ORG-PCT
+    c:
+      valeur: 30
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 114.0
+CALC-A7-CHAR-HAUT-KG-T:
+  description: Char du bois, des fibreux et des textiles par tonne de DAE en melange, a 40 % (D-045, D-049)
+  formule: o * c / 10
+  entrees:
+    o:
+      calc: CALC-A7-ORG-PCT
+    c:
+      valeur: 40
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 152.0
+CALC-A7-LIQ-BAS-KG-T:
+  description: Liquide oxygene des fibreux et textiles (10 % de la masse) par tonne de DAE en melange, a 20 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 20
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3
+  unite: kg par tonne
+  resultat: 20.0
+CALC-A7-GAZ-ST-BAS-KG-T:
+  description: Gaz des fibreux et textiles par tonne de DAE en melange, a 45 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 45
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3
+  unite: kg par tonne
+  resultat: 45.0
+CALC-A7-LIQ-CENT-KG-T:
+  description: Liquide oxygene des fibreux et textiles (10 % de la masse) par tonne de DAE en melange, a 22.5 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 22.5
+CALC-A7-GAZ-ST-CENT-KG-T:
+  description: Gaz des fibreux et textiles par tonne de DAE en melange, a 46.5 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 46.5
+CALC-A7-LIQ-HAUT-KG-T:
+  description: Liquide oxygene des fibreux et textiles (10 % de la masse) par tonne de DAE en melange, a 25 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 25
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3
+  unite: kg par tonne
+  resultat: 25.0
+CALC-A7-GAZ-ST-HAUT-KG-T:
+  description: Gaz des fibreux et textiles par tonne de DAE en melange, a 48 % (D-048, D-049)
+  formule: (f + t) * r / 10
+  entrees:
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    r:
+      valeur: 48
+      unite: '%'
+      source: A5-BHATT-2026-RSCADV
+      emplacement: section 3.3
+  unite: kg par tonne
+  resultat: 48.0
