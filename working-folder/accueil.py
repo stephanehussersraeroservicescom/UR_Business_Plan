@@ -60,6 +60,7 @@ _ANNEX_HTML = re.compile(r"^nouveau-business-plan/annexes/annexe-0[1-9]-html/.+"
 _PREFIXES = ("working-folder/reference/preuves/", "working-folder/reference/sources-externes/")
 _MD_RENDUS = re.compile(
     r"^(nouveau-business-plan/BUSINESS-PLAN\.md"
+    r"|nouveau-business-plan/CRITICAL-POINTS\.md"
     r"|working-folder/controle-sources/verifications/ecarts-annexe-[0-9-]+\.md)$"
 )
 _INTERDITS = (".py", ".pyc", ".yaml", ".yml", ".sh")
@@ -252,6 +253,17 @@ def reports():
         annexes=_annexes(),
     )
 
+
+
+@bp.route("/critical-points")
+def critical_points():
+    fichier = BP_DIR / "CRITICAL-POINTS.md"
+    if not fichier.is_file():
+        abort(404)
+    texte = fichier.read_text(encoding="utf-8", errors="replace")
+    titre = next((l.lstrip("# ").strip() for l in texte.splitlines() if l.startswith("# ")), "Critical open points")
+    return render_template("accueil/page_md.html", titre=titre, corps=_md_html(texte),
+                           source="nouveau-business-plan/CRITICAL-POINTS.md", retour=url_for("accueil.home"))
 
 @bp.route("/files/<path:rel>")
 def files(rel: str):
