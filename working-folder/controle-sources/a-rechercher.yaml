@@ -472,6 +472,7 @@ R-049:
   detenteur: "Urban Rig / OneWorld (perimetre), transitaire (fret)"
   cherche: "Tableau OneWorld transport, installation et maintenance (sans prix) ; aucune cotation de fret lue."
   sources: [OW-TRANSPORT-INSTALLATION]
+  complement_2026_11_25: "Apres le lot 2 de Codex (annexe 9) : obtenir une matrice des limites de fourniture (battery limits) entre OneWorld, le constructeur du pre-traitement et le genie civil : raccordement electrique, utilites et stockages, protection incendie, traitement complementaire des fumees ou des eaux si PRIMO ou SEA CORAL ne suffisent pas, assurance chantier, mise en service et essais de performance, garanties. Les aleas et le fonds de roulement sont traites dans le modele financier."
 
 R-050:
   question: "Classement ICPE et IED d'un URC-2000 en Ile-de-France (2771 seule, ou 2771 et 3520 ; 3532 pour le pre-traitement), application des conclusions MTD incineration, et assujettissement a la TGAP (article L. 433-86 du CIBS) d'une unite de pyrolyse dont l'huile est vendue"

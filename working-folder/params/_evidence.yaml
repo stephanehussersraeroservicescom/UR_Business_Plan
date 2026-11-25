@@ -128,6 +128,7 @@ HARDIN-LOI:
   contenu: "USD 60 M pour 2 x URC-1000, soit environ 30 MEUR par unite de 100 T/jour. Seul prix de transaction reel du depot."
   valeurs_lues_2026_11_19: "PDF p. 6 (tableau, lu sur image par Claude le 19/11/2026) : Machine Capacity (T) 200 ; Machine cost 60,000,000 ; Initial other CAPEX 4,700,000 ; Total Investment 64,700,000 ; Interest rate 7.0% ; Loan (90%) 58,230,000. PDF p. 4 : Hardin would purchase 2x 100T daily capacity waste processing pyrolysis machine from Petercorp."
   correction_2026_11_19: "Correction de Claude (chat 5) : la devise n est pas indiquee sur la page lue ; le document est un plan d affaires (feuille de calcul financiere), pas une lettre d intention ni une transaction ; il ne nomme pas le modele URC-1000 dans les pages lues. Le prix de la machine est fixe par la decision D-050."
+  correction_2026_11_25: "Correction de Claude apres le lot 1 de Codex (annexe 9) : le champ contenu ci-dessus (USD, transaction reelle) est faux et ne doit plus etre repris. Lecture retenue : PDF p. 4, intention d'achat (« would purchase ») de 2 machines de 100 t/jour aupres de Petercorp ; p. 6, feuille financiere « Machine cost 60,000,000 » pour 200 t, devise non imprimee. Scenario de planification, pas une transaction."
 
 LUFTHANSA-WS:
   titre: "Worksheet for Lufthansa, 200 MT"
@@ -844,6 +845,7 @@ UR2000-JP-P08-SPEC:
   citation: "処理量 / 日 200 トン / 日 ; 消費電力 ( 連続時 ) 20kw/h ; 水蒸気生成 蒸気ボイラ / 軽油"
   contenu: "200 t/jour ; 600 C max, 0,2 MPa ; electricite 20 'kw/h' en continu ; chaudiere au gazole ; bruleur 833 kcal/s (p. 4) ; 48 bennes de 4,17 t max par 24 h (p. 7)."
   reserve: "CONSTRUCTEUR. Electricite contredite par OW-CONSO-ENERGIE (600). Temperatures de zones differentes p. 12 (plan 2014, max 800 C)."
+  valeurs_lues_2026_11_25: "p. 8 (pdftotext, Claude, 25/11/2026, a la suite du lot 1 de Codex sur l'annexe 9) : « サイズ ( 処理機 ) W: 62m D: 10m H: 7m », soit 62 x 10 x 7 m pour l'unite de traitement, contre 66 x 7 x 7 m dans la brochure anglaise (OW-ENG-P04-P07-SPEC-PLANS). Contradiction interne aux documents OneWorld."
 
 UR2000-JP-P14-EMISSIONS:
   titre: "Brochure URC-2000 OneWorld, courbes SOx et NOx de l'option PRIMO et affirmation sur les dioxines"
@@ -1059,6 +1061,7 @@ UR2000-JP-P09-P13-PLANS:
   valeurs_lues: "p. 12, plan date 2014.05.22 : zones 150 / 250 / 350 / 500 / 350 / 150 / <100 C ; 4 surchauffeurs et 4 chaudieres ; fluides 圧縮空気, 精製水, 灯油 (kerosene), AC200V, 排水. p. 10 : plan 1 000 t/jour = 5 x URC-2000, terrain 28 900 m2. p. 13 : contrat a mise en service en 4 mois ; fondation de 5 t/m2 au moins."
   contenu: "Les plans prevoient broyage a l'entree et machine de tri. Le plan d'ensemble de 2014 donne un autre profil de temperature (max. 500 C en zone, 800 C max. au total) que les p. 4 et 8 (150 a 600 C)."
   reserve: "CONSTRUCTEUR. Contradictions internes deja relevees par le chat 1 (releves/energie-ur2000-divers.md) : zones, capacite horaire, longueur, combustible (gazole p. 8, kerosene p. 12)."
+  valeurs_lues_2026_11_25: "p. 13 (pdftotext, Claude, 25/11/2026) : calendrier « 契約から製造、船積み設置までの流れ » sur quatre mois (1st. Month a 4th. Month) : contrat, fabrication, essai, emballage, expedition, debarquement, montage, essais et reglage. Contre environ 10 mois de fabrication du type continu dans la brochure anglaise p. 19 (OW-ENG-P03-P19-GAMME-DELAIS)."
 
 OW-ENG-P03-P19-GAMME-DELAIS:
   titre: "Brochure OneWorld anglaise (oct. 2019), gamme de machines, options PRIMO et FORCE 9, delais de fabrication"

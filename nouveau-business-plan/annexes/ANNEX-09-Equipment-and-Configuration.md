@@ -10,12 +10,15 @@ Each figure or fact is followed by a small link to its evidence sheet. Sheets nu
 
 **Prices of auxiliary equipment.** No quotation has been obtained for the pre-treatment line (request R-006). The prices shown come from public tenders, advertisements and manufacturer documents; they give orders of magnitude only.
 
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 9.
+
 ## Key Messages
 
 - **One price for the machine.** The URC-2000, 200 t per day, costs 50 MEUR, including the options PRIMO (exhaust gas treatment), SEA CORAL (water treatment) and FORCE 9 (residue stabilisation); delivery is not included, as it depends on the site [hyp:D-050].
 - **That is 978 EUR per tonne of annual capacity**, on a reactor feed of 140 t per day over 365 days [calc:CALC-A9-PRIX-PAR-T-AN] [hyp:D-035].
 - **Installation included, shipping not.** OneWorld design data state 100 forty-foot containers, 30 days of installation by 10 people and 30 days of training by 9 trainers [OW-TRANSPORT-INSTALLATION]. Installation is included in the price; shipping varies widely with the site and is not counted [hyp:D-051].
-- **Around the machine: 10 MEUR.** The sponsor takes about 5 MEUR per pre-treatment line and a base of 5 MEUR for the building, civil works, engineering and permits [hyp:D-051].
+- **Around the machine: 10 MEUR.** The sponsor takes about 5 MEUR per pre-treatment line and a base of 5 MEUR for the land, the building, civil works, engineering and permits [hyp:D-051].
+- **60 MEUR is the capital cost base, not the total financing need** [calc:CALC-A9-CAPEX-LIGNE]. Shipping, grid connection and utilities not supplied with the machine, contingency and working capital come on top; the scope of each supplier is to be set in a contract matrix (request R-049). Contingency and working capital are handled in the financial model.
 - **Pre-treatment depends on the feed.** Sorted plastic needs little; residual household waste needs bag opening, screening and metal removal. OneWorld says no sorting is required, but its own plant layouts show a crushing hopper and a sorting machine [OW-ENG-P04-P07-SPEC-PLANS] (request R-023).
 - **These two amounts are estimates of the sponsor**, not quotations [hyp:D-051]; quotations remain to be obtained (R-006).
 
@@ -26,6 +29,7 @@ Each figure or fact is followed by a small link to its evidence sheet. Sheets nu
 | URC-2000 | 200 t | Continuous | [OW-ENG-P03-P19-GAMME-DELAIS] |
 | URC-1000 | 100 t | Continuous | [OW-ENG-P03-P19-GAMME-DELAIS] |
 | URC-400 | 40 t | Continuous | [OW-ENG-P03-P19-GAMME-DELAIS] |
+| URC-150 | 15 t | Continuous | [OW-ENG-P03-P19-GAMME-DELAIS] |
 | URB-50 | 5 t | Batch | [OW-ENG-P03-P19-GAMME-DELAIS] |
 | URB-10, URT-10 | 1 t | Batch | [OW-ENG-P03-P19-GAMME-DELAIS] |
 
@@ -39,14 +43,14 @@ All figures are OneWorld design data. The business plan uses the URC-2000.
 | Reactor feed used in the plan | 200 m3 per day at 0.7 t/m3, i.e. 140 t per day | [hyp:D-035] |
 | Annual feed, 365 days, availability not deducted | 51,100 t | [calc:CALC-A8-CAPACITE-AN] |
 | Construction | 7 units of about 12 t, built in series, carried in 7 pieces and assembled on site | [UR2000-JP-P06-P07-MODULES] |
-| Size of the unit | 66 x 7 x 7 m; building of 4,650 m2 on the layout | [OW-ENG-P04-P07-SPEC-PLANS] |
+| Size of the unit | 66 x 7 x 7 m in the English brochure; 62 x 10 x 7 m in the Japanese specification sheet; building of 4,650 m2 on the layout | [OW-ENG-P04-P07-SPEC-PLANS] [UR2000-JP-P08-SPEC] |
 | Maximum temperature and pressure | 600 °C; 0.2 MPa | [UR2000-JP-P08-SPEC] |
 | Electricity | 20 kW according to the specification sheet; 600 kW according to the consumption table | [UR2000-JP-P08-SPEC] [OW-CONSO-ENERGIE] |
 | Fuel for operation | 10,000 L per day in the consumption table | [OW-CONSO-ENERGIE] |
-| Lead time, contract to start-up | about 10 months for the continuous type | [OW-ENG-P03-P19-GAMME-DELAIS] |
+| Lead time | about 10 months of manufacturing for the continuous type in the English brochure; 4 months from contract to installation and trial run in the Japanese brochure | [OW-ENG-P03-P19-GAMME-DELAIS] [UR2000-JP-P09-P13-PLANS] |
 | Foundation | 5 t/m2 | [OW-ENG-P03-P19-GAMME-DELAIS] |
 
-The two electricity figures contradict each other; Annex 2 uses the higher value [OW-CONSO-ENERGIE] (request R-015).
+Three pairs of OneWorld figures contradict each other: electricity, size and lead time. By prudence, the plan uses the higher electricity value, as Annex 2 does [OW-CONSO-ENERGIE] (request R-015), an envelope of 66 x 10 x 7 m for the unit, and at least 10 months for the machine, to which French permitting and site works are added (Annex 4). A dimensioned layout and a contractual schedule are to be obtained from OneWorld (request R-049).
 
 ## 9.3 Price
 
@@ -99,7 +103,7 @@ The table has no issuer or date. Its 100 containers differ from the 7 pieces car
 | Trommel screen | 50,000 to 150,000 EUR, up to 50 t/h | Trade website | [PRM-HELLOPRO-MACHINES-CDT-2026], secondary |
 | Mobile trommel with 4-year maintenance contract | 214,000 EUR | Public tender award, 2024 | [PRM-BOAMP-SMTD65-TROMMEL-2024] |
 | Magnetic separator | from 30,000 EUR, 20 to 50 t/h | Trade website | [PRM-HELLOPRO-MACHINES-CDT-2026], secondary |
-| Overband magnet, belt 750 mm | 5,350 EUR excluding VAT | Advertisement | [PRM-MACHINESEEKER-PUTZ-OVERBAND-2026], secondary |
+| Overband magnet, belt 750 mm | 5,350 EUR excluding VAT | Advertisement, no longer online | [PRM-MACHINESEEKER-PUTZ-OVERBAND-2026], secondary |
 | Shredder | about 25,000 EUR | Trade website | [PRM-HELLOPRO-MACHINES-CDT-2026], secondary |
 | Complete automatic line | at least 500,000 EUR | Trade website | [PRM-HELLOPRO-MACHINES-CDT-2026], secondary |
 | Dust extraction, ATEX version | 15,000 to 80,000 EUR | Trade website | [PRM-HELLOPRO-DEPOUSSIEREUR-2026], secondary |
@@ -107,13 +111,13 @@ The table has no issuer or date. Its 100 containers differ from the 7 pieces car
 
 **A benchmark of scale.** A French operator invested 8.5 MEUR in a new line producing solid recovered fuel, aiming at 75,000 t a year from 100,000 t of non-hazardous waste [PRM-BAUDELET-CSR-2026]. Its scope is wider than the pre-treatment of an Urban Rig.
 
-**Press-extrusion (option for household waste).** Section 5.12.1 of Annex 5 describes it: a dry fraction at 18 to 20 % moisture according to a distributor [A9-DBTECH-OREX-MSW], 8.0 to 13.3 kWh per tonne [calc:CALC-A9-OREX-KWH-T-BAS] [calc:CALC-A9-OREX-KWH-T-HAUT]. Its price is not known (request R-047).
+**Press-extrusion (option for household waste).** Section 5.12.1 of Annex 5 describes it: a dry fraction at 18 to 20 % moisture according to a distributor [A9-DBTECH-OREX-MSW], 8.0 to 13.3 kWh per tonne [calc:CALC-A9-OREX-KWH-T-BAS] [calc:CALC-A9-OREX-KWH-T-HAUT]. Its price is not known (request R-047). One press handles 9 to 15 t per hour, i.e. 216 to 360 t per day over 24 hours [calc:CALC-A9-OREX-TJ-BAS] [calc:CALC-A9-OREX-TJ-HAUT]; the distributor's figures are for a household waste at 25 to 30 % water [A9-DBTECH-OREX-MSW], against 42.1 % in France [ADEME-MODECOM-2024-HUM]. The number of presses, their availability and a buffer store are to be sized by a test on the French feed (request R-047).
 
 ## 9.7 Building and Site
 
 - The layout of the URC-2000 shows a building of 4,650 m2 [OW-ENG-P04-P07-SPEC-PLANS] and a foundation load of 5 t/m2 [OW-ENG-P03-P19-GAMME-DELAIS].
 - Earthworks, roads and civil works of a French waste reception site were estimated at 2,695,000 EUR excluding VAT in a 2024 tender [PRM-BOAMP-SITREVA-DREUX-2024]; the project is different and the figure is only an order of magnitude.
-- No price per square metre of industrial building has been sourced for this plan. The business plan takes a base of 5 MEUR for the building, civil works, engineering and permits together [hyp:D-051].
+- No price per square metre of industrial building has been sourced for this plan. The business plan takes a base of 5 MEUR for the land, the building, civil works, engineering and permits together [hyp:D-051]. With earthworks and civil works alone near 2.7 MEUR on a different French site [PRM-BOAMP-SITREVA-DREUX-2024], this base is tight.
 
 ## 9.8 Engineering and Permitting
 
@@ -125,11 +129,13 @@ The plant needs an environmental permit (ICPE), studied in Annex 4. Textbook rat
 |---|---|---|
 | URC-2000 with PRIMO, SEA CORAL and FORCE 9, installation included | 50 MEUR | [hyp:D-050] [hyp:D-051] |
 | Pre-treatment line | about 5 MEUR | Sponsor's estimate [hyp:D-051] |
-| Building, civil works, engineering and permits | 5 MEUR | Sponsor's estimate [hyp:D-051] |
+| Land, building, civil works, engineering and permits | 5 MEUR | Sponsor's estimate [hyp:D-051] |
 | Shipping | not counted | Depends on the site [hyp:D-051] |
 | **Total per line, before shipping** | **60 MEUR** | [calc:CALC-A9-CAPEX-LIGNE] |
 
 The pre-treatment amount applies to each line whatever the feed, in the reading of this annex; a plastic feed may need less (Section 9.6). Each amount is a parameter that the operator of the model can change.
+
+**What 60 MEUR does not cover.** It is the base of the sponsor before shipping [calc:CALC-A9-CAPEX-LIGNE]. It does not show, as separate lines: grid connection and utilities not supplied with the machine, storage and fire protection, any additional flue gas or water treatment needed for the French permit, construction insurance, commissioning beyond the installation included, contingency and working capital. Some of these may already be in the machine price or in the 10 MEUR around it [hyp:D-051]; a contract matrix of supply limits is needed to avoid both gaps and double counting (request R-049). Contingency and working capital are set in the financial model.
 
 ## 9.10 Open Points
 
@@ -140,11 +146,12 @@ The pre-treatment amount applies to each line whatever the feed, in the reading 
 | R-017 | SEA CORAL on process water | OneWorld |
 | R-023 | Pre-treatment required by the URC-2000 | OneWorld |
 | R-047 | Press-extrusion: test and price | Equipment makers |
-| R-049 | Shipping cost by site; whether training is included | OneWorld, freight forwarder |
+| R-049 | Shipping cost by site; whether training is included; dimensioned layout and contractual schedule; contract matrix of supply limits (connections, utilities, fire protection, commissioning, guarantees) | OneWorld, freight forwarder, equipment makers |
 
 ## 9.11 Recommendations for the Business Plan
 
-- Use 60 MEUR per line before shipping: the machine at 50 MEUR, installation included, plus 5 MEUR of pre-treatment and 5 MEUR of building, civil works, engineering and permits [calc:CALC-A9-CAPEX-LIGNE] [hyp:D-050] [hyp:D-051].
+- Use 60 MEUR per line before shipping as the capital cost base: the machine at 50 MEUR, installation included, plus 5 MEUR of pre-treatment and 5 MEUR of land, building, civil works, engineering and permits [calc:CALC-A9-CAPEX-LIGNE] [hyp:D-050] [hyp:D-051]. Add contingency and working capital in the financial model; do not present 60 MEUR as the total financing need.
+- Use at least 10 months for the machine in the timetable, plus French permitting (Annex 4).
 - Show shipping as a site-dependent line, and replace the two estimates by quotations when available (R-006, R-049).
 - Settle with OneWorld the electricity figure and the scope of pre-treatment (R-015, R-023).
 

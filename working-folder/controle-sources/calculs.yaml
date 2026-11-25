@@ -6680,3 +6680,23 @@ CALC-A4-PART-ENFOUI-IDF:
     b: {valeur: 2228079, unite: t, source: A8-CST-ORDIF-ISDND-2023, emplacement: "p. 5"}
   unite: "%"
   resultat: 2.2934
+
+# === ANNEXE 9, corrections apres Codex (25/11/2026) ===
+
+CALC-A9-OREX-TJ-BAS:
+  description: "Capacite journaliere d'une presse d'extrusion OREX 400 au debit bas, sur 24 h"
+  formule: "q * h"
+  entrees:
+    q: {valeur: 9, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "fiche produit (9 a 15 t/h)"}
+    h: {valeur: 24, unite: h, source: D-035, emplacement: "fonctionnement continu"}
+  unite: "t/jour"
+  resultat: 216
+
+CALC-A9-OREX-TJ-HAUT:
+  description: "Capacite journaliere d'une presse d'extrusion OREX 400 au debit haut, sur 24 h"
+  formule: "q * h"
+  entrees:
+    q: {valeur: 15, unite: t/h, source: A9-ANAERGIA-OREX400, emplacement: "fiche produit (9 a 15 t/h)"}
+    h: {valeur: 24, unite: h, source: D-035, emplacement: "fonctionnement continu"}
+  unite: "t/jour"
+  resultat: 360
