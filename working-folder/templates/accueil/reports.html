@@ -1,0 +1,51 @@
+{% extends "accueil/base.html" %}
+{% block title %}Business plan and annexes · Urban Rig{% endblock %}
+{% block content %}
+<h1>Business plan and annexes</h1>
+<p class="lead">Reading version in the browser. Each figure carries a small link to its evidence sheet: what the evidence shows, its confidence, the source document and page, or the calculation.</p>
+
+<h2>Business plan</h2>
+<ul class="list">
+  <li class="item{{ '' if bp_pret else ' off' }}">
+    <div class="item-head">
+      <h3>{% if bp_pret %}<a href="{{ bp_lien }}">Urban Rig Business Plan</a>{% else %}Urban Rig Business Plan{% endif %}</h3>
+      {% if bp_pret %}<span class="badge">available</span>{% else %}<span class="badge muted">in preparation</span>{% endif %}
+    </div>
+  </li>
+</ul>
+
+<h2>Annexes</h2>
+<p class="meta">Status read from the correction logs of the counter-verification (working-folder/controle-sources/verifications/). Counts are rows of each log table, grouped by the first word of the treatment column; the log text may group them differently.</p>
+<ul class="list">
+{% for a in annexes %}
+  {% if a.set_aside %}
+  <li class="item off">
+    <div class="item-head"><h3>Annex {{ a.n }}. {{ a.nom }}</h3><span class="badge muted">set aside</span></div>
+    <div class="meta">{{ a.set_aside }}</div>
+  </li>
+  {% else %}
+  <li class="item">
+    <div class="item-head">
+      <h3>{% if a.existe %}<a href="{{ a.lien }}">{{ a.titre }}</a>{% else %}{{ a.titre }}{% endif %}</h3>
+      {% set j = a.journaux[0] if a.journaux else None %}
+      {% if not a.existe %}<span class="badge warn">HTML not generated</span>
+      {% elif j and j.date %}<span class="badge good">counter-checked {{ j.date }}, corrected</span>
+      {% elif j %}<span class="badge good">counter-checked, corrected</span>
+      {% else %}<span class="badge muted">not yet counter-checked</span>{% endif %}
+    </div>
+    {% if j %}
+      <ul class="counts sans">
+        <li>{{ j.total }} points in the log:</li>
+        {% for libelle, nb in j.comptes %}<li>{{ nb }} {{ libelle }}</li>{% endfor %}
+      </ul>
+      {% for nt in j.non_trouve %}<p class="quote">Log: « {{ nt }} »</p>{% endfor %}
+    {% endif %}
+    <div class="meta">
+      {% if a.existe %}<a href="{{ a.lien }}">Read the annex</a>{% if a.lien_preuves %}<a href="{{ a.lien_preuves }}">Evidence sheets ({{ a.nb_fiches }})</a>{% endif %}{% endif %}
+      {% for jj in a.journaux %}<a href="{{ jj.lien }}">Correction log{% if a.journaux|length > 1 %} ({{ jj.date or 'October 2026' }}){% endif %}</a>{% endfor %}
+    </div>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}

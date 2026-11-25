@@ -1,0 +1,19 @@
+{% extends "accueil/base.html" %}
+{% block content %}
+<h1>Urban Rig</h1>
+<p class="lead">Business plan for deploying Urban Rig pyrolysis plants in France, converting residual municipal, commercial and plastic waste into oil, gas and char, with every figure traced to its source.</p>
+<div class="cards">
+  <a class="card" href="{{ url_for('accueil.financial_model') }}">
+    <span class="card-kicker">Space 1</span>
+    <h3>Financial model and data</h3>
+    <p>The financial model, its parameters and results, with the confidence scale and the labels used for every figure.</p>
+    <span class="go">Open &rarr;</span>
+  </a>
+  <a class="card" href="{{ url_for('accueil.reports') }}">
+    <span class="card-kicker">Space 2</span>
+    <h3>Business plan and annexes</h3>
+    <p>The business plan and its annexes, to read in the browser, with the evidence sheet behind each figure and the review status of each annex.</p>
+    <span class="go">Open &rarr;</span>
+  </a>
+</div>
+{% endblock %}

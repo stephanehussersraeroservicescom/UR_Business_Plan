@@ -1,0 +1,15 @@
+{% extends "accueil/base.html" %}
+{% block title %}Financial model and data · Urban Rig{% endblock %}
+{% block content %}
+<h1>Financial model and data</h1>
+<p class="lead">The model computes every result from its parameters. Each parameter enters the plan only with a source, a recorded calculation or a dated decision.</p>
+<p>
+{% if model_pret %}
+  <a class="btn" href="{{ model_route }}">Open the financial model</a>
+{% else %}
+  <a class="btn" href="{{ url_for('accueil.financial_model_pending') }}">Open the financial model</a>
+  <span class="badge muted" style="margin-left:8px">in preparation</span>
+{% endif %}
+</p>
+{% include "accueil/_echelle.html" %}
+{% endblock %}

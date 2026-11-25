@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Urban Rig{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='accueil/accueil.css') }}">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="{{ url_for('accueil.home') }}">URBAN RIG</a>
+  <nav>
+    <a href="{{ url_for('accueil.financial_model') }}" class="{{ 'on' if request.endpoint and request.endpoint.startswith('accueil.financial') }}">Financial model and data</a>
+    <a href="{{ url_for('accueil.reports') }}" class="{{ 'on' if request.endpoint == 'accueil.reports' }}">Business plan and annexes</a>
+  </nav>
+</div></header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer>Urban Rig business plan, version 3. Restricted access. Working documents, not an offer.</footer>
+</body>
+</html>

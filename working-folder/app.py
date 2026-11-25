@@ -33,6 +33,11 @@ from engine.assistant import (
 )
 
 app = Flask(__name__)
+
+# Accueil et lecture du plan d'affaires (chat C, 25/11/2026) : module accueil.py.
+# Enregistre ici, avant les autres routes : pour deux regles identiques, Flask retient la premiere.
+from accueil import bp as accueil_bp  # noqa: E402
+app.register_blueprint(accueil_bp)
 app.secret_key = os.environ.get("FLASK_SECRET", "ur-secret-dev-2024")
 
 OUT = Path(__file__).resolve().parent / "out"

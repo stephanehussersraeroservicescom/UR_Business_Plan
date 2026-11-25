@@ -1,0 +1,9 @@
+{% extends "accueil/base.html" %}
+{% block title %}Financial model, in preparation · Urban Rig{% endblock %}
+{% block content %}
+<h1>Financial model</h1>
+<p class="note warn">The new financial model is in preparation. This page will open it as soon as it is published.</p>
+{% if rapport_actuel %}<p>The current report of the model, built from the parameters inherited from the previous model (to be re-sourced), remains available: <a href="{{ url_for('accueil.financial_model_current') }}">open the current report</a>.</p>{% endif %}
+<p><a class="btn ghost" href="{{ url_for('accueil.financial_model') }}">&larr; Back to the confidence scale</a>
+   <a class="btn ghost" href="{{ url_for('accueil.reports') }}">Read the annexes</a></p>
+{% endblock %}

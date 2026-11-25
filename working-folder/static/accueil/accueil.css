@@ -1,0 +1,57 @@
+/* Accueil et espace de lecture Urban Rig. Palette reprise des pages HTML des annexes. */
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#dedbd2;--accent:#1f5f8b;--box:#f1eee6;--good:#2e6b3f;--warn:#8a5a00;}
+@media (prefers-color-scheme:dark){:root{--bg:#17181a;--fg:#e9e7e1;--muted:#a3a19a;--line:#34363a;--accent:#7fb3d9;--box:#222428;--good:#7cc08f;--warn:#e0b562;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+.sans,nav,.card-kicker,.badge,.meta,table,.btn{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+header.top{border-bottom:1px solid var(--line)}
+header.top .in{max-width:960px;margin:0 auto;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header.top a.brand{font-weight:700;letter-spacing:.02em;color:var(--fg);text-decoration:none;font-size:1.05rem}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover,nav a.on{color:var(--accent)}
+main{max-width:960px;margin:0 auto;padding:32px 18px 80px}
+h1{font-size:2.1rem;line-height:1.15;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2em 0 .6em;padding-top:.6em;border-top:1px solid var(--line)}
+p{max-width:72ch}
+a{color:var(--accent)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:62ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}
+.card{display:block;border:1px solid var(--line);border-radius:10px;padding:22px 22px 20px;background:var(--box);color:var(--fg);text-decoration:none;transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.card h3{margin:.25em 0 .4em;font-size:1.3rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card-kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.card .go{display:inline-block;margin-top:14px;font:600 14px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:9px 16px;border-radius:7px;font-size:14px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.note{border-left:3px solid var(--accent);background:var(--box);padding:10px 14px;border-radius:0 6px 6px 0;max-width:72ch}
+.note.warn{border-left-color:var(--warn)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:14px;line-height:1.45}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--box)}
+.tbl{overflow-x:auto}
+.pct{font-weight:700;white-space:nowrap}
+.label{font:700 12px/1 ui-monospace,Menlo,Consolas,monospace;background:var(--box);border:1px solid var(--line);padding:4px 7px;border-radius:4px;white-space:nowrap}
+.list{list-style:none;padding:0;margin:0}
+.item{border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.item-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.item h3{margin:0;font-size:1.12rem}
+.item h3 a{text-decoration:none}
+.item h3 a:hover{text-decoration:underline}
+.item.off{opacity:.7;border-style:dashed}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;border:1px solid var(--line);white-space:nowrap}
+.badge.good{color:var(--good);border-color:var(--good)}
+.badge.muted{color:var(--muted)}
+.badge.warn{color:var(--warn);border-color:var(--warn)}
+.meta{font-size:13px;color:var(--muted);margin-top:8px}
+.meta a{margin-right:14px}
+.counts{margin:6px 0 0;padding:0;list-style:none;display:flex;gap:6px 14px;flex-wrap:wrap;font-size:13px}
+.quote{font-size:13px;color:var(--muted);font-style:italic;margin:6px 0 0}
+details{margin-top:6px}
+summary{cursor:pointer;font:13px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--accent)}
+footer{max-width:960px;margin:0 auto;padding:0 18px 40px;font:13px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--muted)}
+.md table{display:block;overflow-x:auto}
+.md pre{background:var(--box);padding:10px 12px;border-radius:6px;overflow-x:auto}
+@media (max-width:560px){body{font-size:16px}h1{font-size:1.7rem}main{padding:22px 14px 60px}.card{padding:18px}th,td{padding:7px 6px}}

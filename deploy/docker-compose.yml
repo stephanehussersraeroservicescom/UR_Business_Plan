@@ -11,6 +11,9 @@ services:
     environment:
       - PORT=5050
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      # Pages de lecture du plan et des annexes (accueil.py) : lues dans le depot, jamais copiees (D-023)
+      - ../nouveau-business-plan:/nouveau-business-plan:ro
     networks:
       - ur_network
 

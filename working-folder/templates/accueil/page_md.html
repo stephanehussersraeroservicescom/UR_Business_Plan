@@ -1,0 +1,6 @@
+{% extends "accueil/base.html" %}
+{% block title %}{{ titre }} · Urban Rig{% endblock %}
+{% block content %}
+<p class="meta"><a href="{{ retour }}">&larr; Business plan and annexes</a> Source: {{ source }}</p>
+<div class="md">{{ corps|safe }}</div>
+{% endblock %}
