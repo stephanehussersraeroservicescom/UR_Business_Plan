@@ -40,12 +40,12 @@ figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;col
 <body><main><p class="crumb"><a href="../index.html">Annex 3. Output Markets and Pricing</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 3.C.aj</h1>
 <p class="small">Calculation</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>CO2 fossile emis par tonne de plastique brulee (75 % de carbone, 100 % fossile, oxydation 100 %, GIEC 2006)</p><p class="result" style="margin-top:10px">Result: <strong>2750.0</strong> kgCO2/t</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Valeur du surplus de gaz vendu comme combustible au prix du gaz naturel industriel (bande I4, 2026-S1, hors TVA), par tonne de charge riche en resines</p><p class="result" style="margin-top:10px">Result: <strong>36.4609</strong> EUR/t</p></div>
  <div class="card"><h4>Confidence</h4><div class="conf">90 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
 </div>
 <h2>How it was calculated</h2>
 <p>The formula below is applied to the inputs listed, each taken from its own evidence sheet. The description of the calculation is recorded in the register in French.</p>
-<h3>Formula</h3><pre>c * fossile * ox * 44 / 12 * 1000</pre>
+<h3>Formula</h3><pre>mj / mj_kwh * prix</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>c</code></td><td>0.75 fraction</td><td>tableau 2.4, plastiques</td><td><span class="ev"><a href="A3-R-av.html">3.R.av</a></span></td></tr><tr><td><code>fossile</code></td><td>1 fraction</td><td>tableau 2.4</td><td><span class="ev"><a href="A3-R-av.html">3.R.av</a></span></td></tr><tr><td><code>ox</code></td><td>1 fraction</td><td>tableau 5.2</td><td><span class="ev"><a href="A3-R-aw.html">3.R.aw</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A3-CO2-PLASTIQUE-GIEC</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>mj</code></td><td>2792.75 MJ/t</td><td>Surplus d energie du gaz par tonne de charge riche en resines (gaz moins besoin du bruleur)</td><td><span class="ev"><a href="A3-C-ae.html">3.C.ae</a></span></td></tr><tr><td><code>mj_kwh</code></td><td>3.6 MJ/kWh</td><td>Appendix B.9</td><td><span class="ev"><a href="../../annexe-02-html/preuves/A2-4-n.html">2.4.n</a></span></td></tr><tr><td><code>prix</code></td><td>0.047 EUR/kWh</td><td>bande I4, X_VAT, 2026-S1</td><td><span class="ev"><a href="A3-P-ab.html">3.P.ab</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A3-GAZ-SURPLUS-VAL</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>

@@ -214,6 +214,7 @@ def calc_page(c):
     return page(f'Evidence {CODE[c]}', body, CR())
 
 DEC_EN = dict(g1.DEC_EN)
+DEC_EN.update(g1.DEC_EN_MODELE)
 DEC_EN.update({
  'D-027': 'OneWorld, the manufacturer of the Urban Rig, is the sponsor of this business plan. Its documentation is marked "OneWorld design data" in the text and keeps the label CONSTRUCTEUR in the evidence sheets: these are the company\'s own figures, not independent verification.',
  'D-028': 'Choices of the project sponsor on output prices (15 October 2026): oil priced by fraction; char sold, cement plants as main outlet; steel and aluminium at public prices; no price for glass and inerts; no carbon revenue; electricity bought; process heat from the pyrolysis gas, the surplus being saleable.',

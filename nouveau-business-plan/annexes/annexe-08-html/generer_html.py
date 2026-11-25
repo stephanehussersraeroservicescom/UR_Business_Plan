@@ -223,6 +223,7 @@ def calc_page(c):
     return page(f'Evidence {CODE[c]}', body, CR())
 
 DEC_EN = dict(g1.DEC_EN)
+DEC_EN.update(g1.DEC_EN_MODELE)
 DEC_EN.update(g3.DEC_EN)
 DEC_EN.update({
  'D-018': 'Scope of Annex 8: all plastic streams, household and industrial, with priority to those little or not recycled; single-plastic industrial streams belong here, mixed commercial waste to Annex 7.',

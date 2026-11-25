@@ -721,7 +721,7 @@ D-044:
     et melange : la valeur basse est probablement plus realiste tant qu'aucun essai n'existe.
   preuves: [ADEME-MODECOM-2024-HUM, CHIBA-ESSAIS-FICHES]
   a_verifier: "Choix de la valeur par defaut (basse ou centrale) ; essais sur OMR (R-021)."
-
+  correction_2026_11_25: "Valeur centrale 73,08 % et non 73,07 % : CALC-A2-HUILE10-MOY-POND = 292,3 / 400 = 73,075 %, arrondi a 73,08 % (revision de l'annexe 2 du 25/11/2026). Les calculs des annexes 5 et 7 lisent le calcul : aucun resultat ne change (reconciliation, chat A, point C-1)."
 D-045:
   date: 2026-11-19
   titre: "Annexe 5 : char des matieres organiques non plastiques pris a 30 % de leur matiere seche (fourchette 25 a 40 %)"

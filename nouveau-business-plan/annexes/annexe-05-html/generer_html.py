@@ -235,12 +235,13 @@ def calc_page(c):
     return page(f'Evidence {CODE[c]}', body, CR())
 
 DEC_EN = dict(g1.DEC_EN)
+DEC_EN.update(g1.DEC_EN_MODELE)
 DEC_EN.update(g3.DEC_EN)
 DEC_EN.update(g8.DEC_EN)
 DEC_EN.update({
  'D-053': 'Working assumption posed by Claude (25 November 2026), after the independent check of Annex 5: the mass of one tonne of residual household waste not yet allocated to a product (about 205 kg in the standard case) is shown by scenario and split indicatively into liquid and gas in the 22.5 / 46.5 ratio of D-048; in the model, by default, this gas is not counted as heat and this liquid is treated as process water to be disposed of, at a cost; an option counts the gas. To be replaced by the mass balance of the test R-021.',
  'D-043': 'Working assumption posed by Claude (19 November 2026), to be confirmed by the project sponsor: in residual household waste, only the plastic category produces a saleable oil; plastic in nappies, composites and synthetic textiles is not counted; the other organic matter gives char, water and gas.',
- 'D-044': 'Working assumption posed by Claude (19 November 2026), to be confirmed: the oil and gas yields of the Chiba plastic tests apply to the dry mass of the plastic of residual waste (moisture from MODECOM 2024); oil at 55 % (low), 73.07 % (central) or 81 % (high); gas at 10 % (D-029).',
+ 'D-044': 'Working assumption posed by Claude (19 November 2026), to be confirmed: the oil and gas yields of the Chiba plastic tests apply to the dry mass of the plastic of residual waste (moisture from MODECOM 2024); oil at 55 % (low), 73.08 % (central) or 81 % (high); gas at 10 % (D-029).',
  'D-045': 'Working assumption posed by Claude (19 November 2026), to be confirmed: char of the non-plastic organic matter taken at 30 % of its dry mass, range 25 to 40 %, from published laboratory data.',
  'D-046': 'Working assumption posed by Claude (19 November 2026): tonnages and shares from the MODECOM 2024 composition data set (no fines for residual waste); water and dry matter from the moisture data set (fines under 8 mm as a separate fraction of 5.4 %). The allocation method of the fines is to be read in the full technical report.',
  'D-047': 'Decision of the project sponsor (19 November 2026): three scenarios (pessimistic, standard, optimistic), selected by a clickable field on the web page; nappies, hygiene products and textiles count towards the oil and the gas. Modifies D-043.',

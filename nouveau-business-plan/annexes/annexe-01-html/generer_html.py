@@ -67,6 +67,12 @@ for g, _ in GROUPS[:2]:
         if SRC1[i][0] == g and i in cites:
             CODE[i] = f'1.{g}.{letters[n]}'; ORDER.append(i); n += 1
 CALC1 = [c[5:] for c in cites if c.startswith('calc:') and c[5:] not in g2.CODE]
+def _deps1(c, seen):
+    for e in (calcs[c].get('entrees') or {}).values():
+        if 'calc' in e and e['calc'] not in seen and e['calc'] not in g2.CODE:
+            seen.append(e['calc']); _deps1(e['calc'], seen)
+for _c in list(CALC1): _deps1(_c, CALC1)
+CALC1 = list(dict.fromkeys(CALC1))
 for n, c in enumerate(CALC1):
     CODE[c] = f'1.C.{letters[n]}'; ORDER.append(c)
 
@@ -90,6 +96,8 @@ def href(i, depth):
         return ('' if depth else 'preuves/') + 'A' + CODE[i].replace('.', '-') + '.html', CODE[i]
     if i in g2.CODE:
         return ('../' * depth) + '../annexe-02-html/preuves/' + g2.fname(i), g2.CODE[i]
+    if str(i).startswith('D-'):
+        return ('' if depth else 'preuves/') + 'A1-D.html#' + i, i
     return None, i
 def pill(tok, depth):
     if tok.startswith('hyp:'):
@@ -196,6 +204,19 @@ DEC_EN = {
  'D-029': 'Gas from plastic, measured by difference (Chiba report, PDF p. 27), taken at 10 % of the incoming plastic mass for mixed waste (working assumption of the project sponsor, 15 October 2026). No energy self-sufficiency is claimed for household or municipal waste; their energy balance is built in Annex 5. Pure resin feeds keep the self-sufficiency shown in Annex 2.',
  'D-038': 'Gas at 37.4 MJ/kg confirmed. Char at two values by feed: 24.6 MJ/kg for char from plastic residues (Chiba factor, origin not stated) and 32.09 MJ/kg for char from household waste (Izumitec, measured on a urethane char). Burner coverage on pure plastic shown on two lines: 2.9 times with 11.5 % gas (OneWorld example) and 3.7 times with 15 % gas (rounded measured value). Amends D-021.',
 }
+DEC_EN_MODELE = {
+ 'D-066': 'Decision of the project sponsor (25 November 2026): part A of the decision sheet applied in the model: machine 50 MEUR (D-050); installation and shipping not counted separately (D-051); 5 MEUR of pre-treatment per line and 5 MEUR for land, building, civil works, engineering and permits, about 60 MEUR turnkey before shipping; reactor feed 140 t per day (D-035); gas from plastic 10 % (D-029); char calorific values (D-038); latest published prices of Annex 3; entry price by stream.',
+ 'D-067': 'Decision of the project sponsor (25 November 2026): the oil is sold by default at 80 % of the weighted reference price of its three fractions; a field the user can change on the web page.',
+ 'D-068': 'Decision of the project sponsor (25 November 2026): char at 0 EUR/t by default, a field the user can change on the site, from -50 EUR/t (fee paid by the plant) to 123 EUR/t (petroleum coke parity).',
+ 'D-069': 'Decision of the project sponsor (25 November 2026): on residual household and business waste, the missing process heat is covered by default by burning part of the oil produced, which is then not sold; options: char (if a solid fuel furnace is added) or purchased gas oil; the gas of the organic matter is not counted by default, an option counts it.',
+ 'D-070': 'Decision of the project sponsor (25 November 2026): one model per feed (plastics, residual household waste, business waste; airport waste later) and per scenario (D-047), reading the per-tonne balances of the annexes; each value shows its source, its confidence on the D-022 scale and its status (checked, or counter-checked by an independent reviewer).',
+ 'D-071': 'Working assumption for the model (25 November 2026): plastic feed balance per tonne and per scenario from the 10 Chiba runs: oil 550, 730.8 or 810 kg; gas 100 kg (D-029); char 106.5 kg, limited to 90 kg in the optimistic case so that the total does not exceed one tonne.',
+ 'D-072': 'Working assumption for the model (25 November 2026): the burner demand stated by OneWorld (833 kcal/s, continuous) is taken per day and divided by the actual feed of 140 t per day, i.e. 2,152 MJ per tonne.',
+ 'D-073': 'Decisions of the project sponsor (25 November 2026) on the remaining points of the decision sheet: standard scenario by default with char at 30 %; electricity 600 kW per line; ATEX, post-sorting and settling included in the 5 + 5 MEUR; contingency, ramp-up, operating days, staff, maintenance, insurance, financing and horizon set as recorded in the decision register.',
+}
+for _d, _t in DEC_EN_MODELE.items():
+    if f'[hyp:{_d}]' in MD:
+        DEC_EN[_d] = _t
 def decisions_page():
     rows = ''.join(f'<h2 id="{d}">{d}. {esc(decs[d].get("titre", ""))}</h2><p>{esc(DEC_EN[d])}</p><p class="small">Dated {esc(decs[d].get("date", ""))}. Full text in French in <code>working-folder/params/_decisions.yaml</code>: « {esc(" ".join(str(decs[d].get("motif", "")).split()))} »</p>' for d in DEC_EN if d in decs)
     body = '''<h1>Decisions and working assumptions</h1>

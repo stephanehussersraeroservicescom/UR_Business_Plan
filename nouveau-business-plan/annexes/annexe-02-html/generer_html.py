@@ -512,6 +512,7 @@ def assumptions_page():
     a=re.sub(r'\[Annex 2\.2\.a\]\([^)]*\)','<a href="'+fname('CHIBA-JLOS-HUILES')+'">'+CODE['CHIBA-JLOS-HUILES']+'</a>',a)
     a=re.sub(r'\[Annex 2\.3\.a\]\([^)]*\)','<a href="'+fname('UR2000-JP-P08-SPEC')+'">'+CODE['UR2000-JP-P08-SPEC']+'</a>',a)
     a=re.sub(r'\[Annex 2\.3\.c\]\([^)]*\)','<a href="'+fname('OW-CONSO-ENERGIE')+'">'+CODE['OW-CONSO-ENERGIE']+'</a>',a)
+    a=re.sub(r'\[Annex 2\.5\.a\]\([^)]*\)','<a href="'+fname('CALC-A2-GAZDIFF10-MOY-POND')+'">'+CODE['CALC-A2-GAZDIFF10-MOY-POND']+'</a>',a)
     body='''<h1>Evidence 2.5.0</h1><p class="small">Working assumptions</p>
 <div class="cards"><div class="card"><h4>What this sheet shows</h4><p>The working assumptions decided by the project sponsor and recorded as dated decisions. Any figure that depends on them is capped at 90 % confidence.</p></div>
 <div class="card"><h4>Confidence</h4><div class="conf">n/a</div><p class="small">Assumptions, not measurements.</p></div></div>'''+markdown.markdown(a)

@@ -529,3 +529,27 @@ R-052:
   sources:
   - A7-ADEME-TRI-DAE-2025
   - A7-FCBA-CLASSIF-BOIS-2022
+
+# === Reconciliation du plan d'affaires (chat A, 25/11/2026) ===
+
+R-060:
+  question: 'Base des consommations declarees de l''URC-2000 : le bruleur de surchauffe (833 kcal/s),
+    l''electricite (600 kW) et le combustible (10 000 L/jour) sont-ils des valeurs par jour, fixes quel
+    que soit le debit (lecture retenue par le modele, D-072 et D-073), ou des valeurs a 200 t/jour qui
+    baissent avec la charge ? Quelles valeurs OneWorld garantit-il a 140 t/jour (200 m3/jour a 0,7 t/m3,
+    D-035) ? Les 10 000 L/jour s''appliquent-ils en regime etabli, alors que la brochure anglaise indique
+    qu''aucun combustible n''est necessaire apres le demarrage ?'
+  demande_par: Claude
+  date: 2026-11-25
+  statut: a_demander
+  detenteur: OneWorld
+  cherche: UR2000-JP p. 4 et 8 (bruleur, 20 kW), tableau UR Energy Consumption (600 kW, 10 000 L/jour),
+    brochure anglaise p. 2 et 14 ; aucun document lu ne dit si ces valeurs dependent du debit.
+  sources:
+  - UR2000-JP-P08-SPEC
+  - OW-CONSO-ENERGIE
+  - OW-ENG-P02-P14-AFFIRMATIONS
+  lien_avec:
+  - R-015
+  - R-019
+  - R-025
