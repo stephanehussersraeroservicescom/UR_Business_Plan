@@ -41,16 +41,16 @@ All figures are OneWorld design data. The business plan uses the URC-2000.
 |---|---|---|
 | Nominal capacity | 200 t per day | [UR2000-JP-P08-SPEC] |
 | Reactor feed used in the plan | 200 m3 per day at 0.7 t/m3, i.e. 140 t per day | [hyp:D-035] |
-| Annual feed, 365 days, availability not deducted | 51,100 t | [calc:CALC-A8-CAPACITE-AN] |
+| Annual feed, 365 days, availability not deducted (the financial model uses 330 days a year) | 51,100 t | [calc:CALC-A8-CAPACITE-AN] [hyp:D-073] |
 | Construction | 7 units of about 12 t, built in series, carried in 7 pieces and assembled on site | [UR2000-JP-P06-P07-MODULES] |
 | Size of the unit | 66 x 7 x 7 m in the English brochure; 62 x 10 x 7 m in the Japanese specification sheet; building of 4,650 m2 on the layout | [OW-ENG-P04-P07-SPEC-PLANS] [UR2000-JP-P08-SPEC] |
 | Maximum temperature and pressure | 600 °C; 0.2 MPa | [UR2000-JP-P08-SPEC] |
 | Electricity | 20 kW according to the specification sheet; 600 kW according to the consumption table | [UR2000-JP-P08-SPEC] [OW-CONSO-ENERGIE] |
-| Fuel for operation | 10,000 L per day in the consumption table | [OW-CONSO-ENERGIE] |
+| Fuel for operation | 10,000 L per day in the consumption table; no fuel after start-up according to the English brochure | [OW-CONSO-ENERGIE] [OW-ENG-P02-P14-AFFIRMATIONS] |
 | Lead time | about 10 months of manufacturing for the continuous type in the English brochure; 4 months from contract to installation and trial run in the Japanese brochure | [OW-ENG-P03-P19-GAMME-DELAIS] [UR2000-JP-P09-P13-PLANS] |
 | Foundation | 5 t/m2 | [OW-ENG-P03-P19-GAMME-DELAIS] |
 
-Three pairs of OneWorld figures contradict each other: electricity, size and lead time. By prudence, the plan uses the higher electricity value, as Annex 2 does [OW-CONSO-ENERGIE] (request R-015), an envelope of 66 x 10 x 7 m for the unit, and at least 10 months for the machine, to which French permitting and site works are added (Annex 4). A dimensioned layout and a contractual schedule are to be obtained from OneWorld (request R-049).
+Four pairs of OneWorld figures contradict each other: electricity, fuel, size and lead time. By prudence, the plan uses the higher electricity value, as Annex 2 does [OW-CONSO-ENERGIE] (request R-015), an envelope of 66 x 10 x 7 m for the unit, and at least 10 months for the machine, to which French permitting and site works are added (Annex 4). A dimensioned layout and a contractual schedule are to be obtained from OneWorld (request R-049).
 
 ## 9.3 Price
 

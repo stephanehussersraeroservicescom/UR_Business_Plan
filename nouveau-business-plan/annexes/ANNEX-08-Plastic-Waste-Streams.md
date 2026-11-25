@@ -226,7 +226,7 @@ Source of the table: [CHIBA-ESSAIS-FICHES] [OWJ-DEMO-2021]; details in Annex 2. 
 ## 8.5 Competition for the Feedstock
 
 - **Mechanical recycling:** French and European recyclers take back the valuable streams (8.3.1).
-- **Chemical recycling in France:** the Grandpuits plant of TotalEnergies, 15,000 t per year, started in March 2026 [RP2-032] and is now wholly owned by TotalEnergies [A8-CST-TTE-RACHAT-2026]. Its technology partner went into administration in the United Kingdom in April 2026 [A8-CST-GAZETTE-PE-2026]. The Eastman polyester project in Normandy, more than 110,000 t per year in a first phase, is paused [A8-CST-EASTMAN-2026].
+- **Chemical recycling in France:** the Grandpuits plant of TotalEnergies, 15,000 t per year, started in March 2026 [RP2-032] and is now wholly owned by TotalEnergies [A8-CST-TTE-RACHAT-2026]. A financing company of its technology partner, Plastic Energy Finco Ltd, was placed in administration in the United Kingdom in April 2026 [A8-CST-GAZETTE-PE-2026]. The Eastman polyester project in Normandy, more than 110,000 t per year in a first phase, is paused [A8-CST-EASTMAN-2026].
 - **Chemical recycling in Europe:** Viridor closed its three plastic pyrolysis plants in 2026, citing weak demand and cheaper virgin plastic [A8-CST-VIRIDOR-2026].
 - **Buyers of pyrolysis feed:** they buy sorted, washed and shredded bales with at least 86 % polyolefins and at most 1 % PVC [RP2-062], at 248.81 EUR/t in June 2025 [RP2-061].
 - **Solid recovered fuel and cement plants:** see Section 8.2.

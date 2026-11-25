@@ -83,7 +83,7 @@ The composition was estimated visually on 18 sites, which received 52 % mixed fl
 
 The same three scenarios as Annex 5 apply, selected on the web page [hyp:D-047]. Working assumptions [hyp:D-049]:
 - the yields are applied to the mass as received, the moisture being unknown; this overstates the products;
-- plastics: oil at 55, 73.07 or 81 %, gas at 10 % [hyp:D-044] [hyp:D-029];
+- plastics: oil at 55, 73.08 or 81 %, gas at 10 % [hyp:D-044] [hyp:D-029];
 - wood, fibrous material and textiles, 38 % of the mass [calc:CALC-A7-ORG-PCT]: char at 25, 30 or 40 % [hyp:D-045], except as below;
 - fibrous material and textiles: liquid at 20, 22.5 or 25 % and gas at 45, 46.5 or 48 % [hyp:D-048]; in the optimistic case their char is limited to 27 %, so that their products do not exceed their mass [calc:CALC-A7-CHAR-FT-HAUT-PCT] [hyp:D-054];
 - fines: not allocated.

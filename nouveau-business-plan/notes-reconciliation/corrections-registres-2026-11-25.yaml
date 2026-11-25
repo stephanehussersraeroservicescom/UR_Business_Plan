@@ -1,0 +1,39 @@
+# Corrections et ajouts de registre issus de la reconciliation des annexes du 25/11/2026 (chat A,
+# plan d'affaires v3). Redige par Claude le 25/11/2026.
+# A fusionner par le chat principal dans les registres partages. Aucun registre partage n'a ete modifie.
+# Identifiants reserves a ce chat : D-062 a D-065, R-060 a R-063 (seul R-060 est utilise).
+# Voir nouveau-business-plan/RECONCILIATION-2026-11-25.md pour le contexte de chaque point.
+# Les calculs a 140 t/jour d'abord proposes ici sont retires : le chat B a cree CALC-MOD-BRULEUR-MJ-T-140
+# (D-072) et l'electricite est prise par jour (D-073, B5).
+
+decisions:
+
+  D-044:
+    action: corriger
+    champ: titre et vers
+    de: "valeur centrale 73,07 %"
+    vers: "valeur centrale 73,08 %"
+    motif: "CALC-A2-HUILE10-MOY-POND vaut 292,3 / 400 = 73,075 %, arrondi a 73,08 % dans l'annexe 2 (revision du 25/11/2026). Les calculs des annexes 5 et 7 lisent le calcul et non le texte : aucun resultat ne change. Annexes 5 et 7 corrigees dans le texte (point C-1 de la reconciliation)."
+
+recherches:
+
+  R-060:
+    question: "Base des consommations declarees de l'URC-2000 : le bruleur de surchauffe (833 kcal/s), l'electricite (600 kW) et le combustible (10 000 L/jour) sont-ils des valeurs par jour, fixes quel que soit le debit (lecture retenue par le modele, D-072 et D-073), ou des valeurs a 200 t/jour qui baissent avec la charge ? Quelles valeurs OneWorld garantit-il a 140 t/jour (200 m3/jour a 0,7 t/m3, D-035) ? Les 10 000 L/jour s'appliquent-ils en regime etabli, alors que la brochure anglaise indique qu'aucun combustible n'est necessaire apres le demarrage ?"
+    demande_par: Claude
+    date: 2026-11-25
+    statut: a_demander
+    detenteur: OneWorld
+    cherche: "UR2000-JP p. 4 et 8 (bruleur, 20 kW), tableau UR Energy Consumption (600 kW, 10 000 L/jour), brochure anglaise p. 2 et 14 ; aucun document lu ne dit si ces valeurs dependent du debit."
+    sources: [UR2000-JP-P08-SPEC, OW-CONSO-ENERGIE, OW-ENG-P02-P14-AFFIRMATIONS]
+    lien_avec: [R-015, R-019, R-025]
+
+generateurs:
+  # Hors perimetre de ce chat : a appliquer par le chat principal avant la regeneration du HTML.
+  - fichiers: [annexes/annexe-04-html/generer_html.py, annexes/annexe-05-html/generer_html.py, annexes/annexe-07-html/generer_html.py, annexes/annexe-09-html/generer_html.py]
+    action: "Texte de D-044 dans le dictionnaire des hypotheses : remplacer '73.07 % (central)' par '73.08 % (central)'."
+  - fichiers: [annexes/annexe-01-html/generer_html.py, annexes/annexe-03-html/generer_html.py, annexes/annexe-04-html/generer_html.py, annexes/annexe-05-html/generer_html.py, annexes/annexe-09-html/generer_html.py]
+    action: "Les annexes citent desormais D-067, D-068, D-069, D-072, D-073 et CALC-MOD-BRULEUR-MJ-T-140 (annexes 1, 3, 4, 5, 9) : ajouter ces hypotheses et ce calcul aux dictionnaires des generateurs pour que les liens s'affichent."
+  - fichiers: [annexes/annexe-02-html/generer_html.py]
+    action: "La section 2.7.1 de l'annexe 2 cite A4-IED-2024-1785-ART42 (commentaire HTML). Ajouter la fiche au tableau SRC si l'on veut un lien visible ; sinon le renvoi a l'annexe 4, section 4.3.2, suffit."
+  - fichiers: [annexes/annexe-03-html/generer_html.py, annexes/annexe-04-html/generer_html.py]
+    action: "Les annexes 3 et 4 citent A8-CST-TTE-RACHAT-2026 (et l'annexe 3 A8-CST-GAZETTE-PE-2026) ; verifier que ces fiches sont construites ou reprises par lien."

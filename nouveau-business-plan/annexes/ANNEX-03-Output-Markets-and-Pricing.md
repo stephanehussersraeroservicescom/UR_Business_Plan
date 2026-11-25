@@ -19,11 +19,11 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 - **The oil is priced by fraction.** OneWorld design data split the oil into 80 % gas oil, 10 % light oil and 10 % heavy oil [calc:CALC-A1-OW16-PART-GAZOLE] [calc:CALC-A1-OW16-PART-HEATING] [calc:CALC-A1-OW16-PART-HEAVY]. Each fraction is benchmarked to its fossil equivalent: naphtha, gas oil and low-sulphur fuel oil [hyp:D-028].
 - **At the latest prices, the benchmark value of the oil is 1,121 EUR/t; at a Brent of 80 USD it is 714 EUR/t, and at 50 USD 446 EUR/t** [calc:CALC-A3-HUILE-MOY-REF] [calc:CALC-A3-HUILE-MOY-BRENT80] [calc:CALC-A3-HUILE-MOY-BRENT50]. These are benchmarks before any quality discount; the discount is an operator input (Section 3.1.5).
 - **As produced from municipal plastics, the oil is a hazardous waste fuel.** Its flash point is below 40 °C [CHIBA-JLOS-HUILES], and a liquid waste with a flash point below 60 °C is hazardous [A3-REG1357-2014-HP3]: it can only be delivered to a plant authorised to receive this hazardous waste for thermal treatment or co-incineration. It does not meet the gas oil or fuel oil specifications without refining, and its chlorine is 2.7 to 10.5 times the limit for use in a steam cracker without purification [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]. A French end-of-waste order exists for pyrolysis oil sent to a steam cracker, but only for sorted plastic waste [A3-ARRETE-SSD-HUILE-PYROLYSE-2024].
-- **The char is a solid fuel for cement kilns.** Its energy content of 32,090 J/g [IZUMITEC-R35-339439] gives it a value of 123 to 255 EUR/t at parity with petroleum coke or coal [calc:CALC-A3-CHAR-PARITE-PETCOKE] [calc:CALC-A3-CHAR-PARITE-INSEE]. French cement plants aim to cover 80 % of their energy with alternative fuels by 2030 [A3G-FDR-DECARBONATION-CIMENT-2023]. Its chlorine content, the decisive acceptance criterion, is still to be measured.
+- **The char is intended as a solid fuel for cement kilns.** At its high-case energy content of 32,090 J/g [IZUMITEC-R35-339439] [hyp:D-038], energy parity with petroleum coke or coal gives an upper bound of 123 to 255 EUR/t [calc:CALC-A3-CHAR-PARITE-PETCOKE] [calc:CALC-A3-CHAR-PARITE-INSEE]. On the French market for waste fuels the producer usually pays the user [A3-OBS-NORMANDIE-CSR-2021]; the model default is 0 EUR/t, changeable between a gate fee paid by the plant and petroleum coke parity [hyp:D-068] (Section 3.7). French cement plants aim to cover 80 % of their energy with alternative fuels by 2030 [A3G-FDR-DECARBONATION-CIMENT-2023]. Its chlorine content, the decisive acceptance criterion, is still to be measured.
 - **Metals are priced at public scrap values:** 316.4 EUR/t for shredded steel scrap and 1,723 EUR/t for aluminium scrap, French exports in the first half of 2026 [A3H-COMEXT-MENSUEL-2025-2026].
 - **On a plastic-only feed, the surplus gas can be sold, including its hydrogen** [hyp:D-031]. The gas holds about 13 kg of hydrogen per tonne of resin-rich feed [calc:CALC-A3-H2-KG-T-RESINE], worth 27 to 109 EUR per tonne before purification [calc:CALC-A3-H2-VAL-GRIS] [calc:CALC-A3-H2-VAL-HYDRIX].
 - **No carbon credit is counted.** No mechanism open to the plant in France has an approved method for it today (Section 3.5) [hyp:D-028]. The CO2 avoided compared with incineration is shown for information: about 1,973 kgCO2e per tonne of resin-rich feed [calc:CALC-A3-CO2-NET-VS-INCIN].
-- **Purchased energy:** electricity at 0.1212 EUR/kWh, excluding VAT [PRM-EUROSTAT-NRGPC205-ID-2025], or 8.73 EUR per tonne treated [calc:CALC-A3-ELEC-EUR-T]; fuel for start-up and for household waste feeds, where the gas does not cover the heat demand [hyp:D-029].
+- **Purchased energy:** electricity at 0.1212 EUR/kWh, excluding VAT [PRM-EUROSTAT-NRGPC205-ID-2025], or 8.73 EUR per tonne treated at the nominal 200 t per day [calc:CALC-A3-ELEC-EUR-T] [OW-CONSO-ENERGIE]; fuel for start-up and for household waste feeds, where the gas does not cover the heat demand [hyp:D-029].
 
 ## 3.1 Pyrolysis Oil
 
@@ -126,7 +126,7 @@ The model takes, for each fraction, the most recent benchmark of Section 3.1.4, 
 | Heavy (10 %) | 541 EUR/t [A3-DGEC-NPG-2026-10-09-COTATIONS] | set by the operator; Sapporo sold its heavy oil at 80 to 90 % of C fuel oil [A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS] |
 | Weighted benchmark of the oil | 1,121 EUR/t [calc:CALC-A3-HUILE-MOY-REF] | |
 
-The quality factor reflects that the oil, as produced from municipal plastics, is off-specification (Section 3.1.2). No source gives the discount actually obtained for such an oil in France; the factor is a decision of the project sponsor, proposed in the list of parameters to be decided.
+The quality factor reflects that the oil, as produced from municipal plastics, is off-specification (Section 3.1.2). No source gives the discount actually obtained for such an oil in France; the sponsor has set it at 0.80 of the weighted benchmark by default, changeable by the operator [hyp:D-067].
 
 ### 3.1.6 Sensitivity to the Oil Price
 
@@ -148,7 +148,7 @@ Buyers of plastic pyrolysis oil named by a primary source:
 |---|---|---|---|
 | ExxonMobil, with Plastic Energy | Notre-Dame-de-Gravenchon (France) | Historical precedent, not a current buyer: plant for 25,000 t per year of plastic waste announced in 2021 [A3-PLASTICENERGY-NDG-2021]; the steam cracker was shut down permanently in 2024 [A3-SDES-PETROCHIMIE-2026]; effect on the agreement not known [A3-SENAT-EXXON-NDG-2024] | [A3-PLASTICENERGY-NDG-2021] [A3-SDES-PETROCHIMIE-2026] |
 | INEOS | Lavéra (France) | Steam cracker fed with pyrolysis oil from packaging waste, ISCC PLUS | [A3-INEOS-LAVERA-2025] |
-| TotalEnergies, with Plastic Energy | Seville (Spain); Grandpuits (France) | 33,000 t per year in Seville; 15,000 t per year in Grandpuits | [A3-TOTAL-PLASTICENERGY-SEVILLE-2022] |
+| TotalEnergies, with Plastic Energy | Seville (Spain); Grandpuits (France) | 33,000 t per year in Seville; 15,000 t per year in Grandpuits, started in March 2026 and now wholly owned by TotalEnergies [A8-CST-TTE-RACHAT-2026]; a Plastic Energy financing company, Plastic Energy Finco Ltd, was placed in administration in the United Kingdom in April 2026 [A8-CST-GAZETTE-PE-2026] | [A3-TOTAL-PLASTICENERGY-SEVILLE-2022] [A8-CST-TTE-RACHAT-2026] [A8-CST-GAZETTE-PE-2026] |
 | BASF | Germany | Up to 100,000 t per year of oil (Arcus) | [A3-BASF-ARCUS-2022] |
 | Shell, with Pryme | Moerdijk (Netherlands) | Oil from 60,000 t per year of plastic waste | [A3-SHELL-PRYME-2021] [A3-PRYME-SHELL-AVENANT-2024] |
 
@@ -158,7 +158,7 @@ All these buyers take oil made from sorted plastic waste for petrochemical use. 
 
 ### 3.2.1 Product Characteristics
 
-The char has a gross calorific value of 32,090 J/g [IZUMITEC-R35-339439], close to petroleum coke (32 GJ/t, net) and above steam coal (26 GJ/t, net) [A3-SDES-CCE-2026-EQUIVALENCES]. Its heavy metals were measured on two municipal runs: cadmium 31 and 36 mg/kg, lead 140 and 42 mg/kg, mercury 0.06 and below 0.02 mg/kg [CHIBA-OOSUMI-CHAR]. Its chlorine, sulphur and ash have not been measured (requests R-012 and R-034).
+The char has a gross calorific value of 32,090 J/g [IZUMITEC-R35-339439], close to petroleum coke (32 GJ/t, net) and above steam coal (26 GJ/t, net) [A3-SDES-CCE-2026-EQUIVALENCES]. This is the high case of the plan; the prudent values are 24.6 MJ/kg for char from plastic residues [calc:CALC-A2-PCI-CHAR-PLASTIQUE] and 24.55 MJ/kg for a food waste char (Annex 5) [calc:CALC-A5-KHAN-PCS-MJ-KG] [hyp:D-038]; the parity values of Section 3.2.4 fall in proportion. Its heavy metals were measured on two municipal runs: cadmium 31 and 36 mg/kg, lead 140 and 42 mg/kg, mercury 0.06 and below 0.02 mg/kg [CHIBA-OOSUMI-CHAR]. Its chlorine, sulphur and ash have not been measured (requests R-012 and R-034).
 
 OneWorld design data describe the char as a high-calorie powder coal mixed with heavy oil [OW-ENG-P16-DEBOUCHES] and as a coal substitute [UR2000-JP-P05-BILAN].
 
@@ -207,7 +207,7 @@ These values use the gross calorific value of the char against the net value of 
 
 A recovered fuel has a net calorific value of 12 to 18 MJ/kg, or above 18 MJ/kg for cement grade [A3-OBS-NORMANDIE-CSR-2021]; the char carries about twice as much energy per tonne [IZUMITEC-R35-339439]. No published price for a pyrolysis char sold as fuel was found. In Japan, a carbonised household waste fuel of at least 16 MJ/kg is sold "at a low price" (price not readable) [A3G-KHI-GOMI-TANKA-NENRYO].
 
-**For the model.** The char is sold [hyp:D-028]. The default price is set by the project sponsor within the range above: from a gate fee paid by the plant to the energy parity with petroleum coke (Section 3.7).
+**For the model.** The char is sold [hyp:D-028]. The default price is set by the project sponsor at 0 EUR/t, changeable within the range above: from a gate fee paid by the plant to the energy parity with petroleum coke [hyp:D-068] (Section 3.7).
 
 ### 3.2.5 If the Char Cannot Be Sold
 
@@ -327,13 +327,13 @@ The URC-2000 draws 600 kW [OW-CONSO-ENERGIE], or 5,256 MWh per year in continuou
 | 2025, first half | 0.1296 [PRM-EUROSTAT-NRGPC205-ID-2025] |
 | 2025, second half (default) | 0.1212 [PRM-EUROSTAT-NRGPC205-ID-2025] |
 
-At 72 kWh per tonne treated [calc:CALC-A3-ELEC-KWH-T], the default gives 8.73 EUR per tonne [calc:CALC-A3-ELEC-EUR-T].
+At 72 kWh per tonne treated [calc:CALC-A3-ELEC-KWH-T], the default gives 8.73 EUR per tonne [calc:CALC-A3-ELEC-EUR-T]. Both are calculated at the nominal 200 t per day [OW-CONSO-ENERGIE]; at the reactor feed of 140 t per day used in the plan [hyp:D-035], the financial model takes the power drawn per day, 14,400 kWh per line [hyp:D-073], so the cost per tonne is higher than shown here; OneWorld is to confirm the basis of its figures (R-015).
 
 Components for 2026, to update the default: the excise duty on electricity was 26.58 EUR/MWh from 1 February 2026 [A3-BOFIP-RES-EAT-000240-2025-12-31], and 26.35 EUR/MWh from 1 August 2026 according to a supplier [A3-EDF-TAXES-ELEC-2026]; the wholesale spot price averaged 61 EUR/MWh in 2025 [A3-CRE-SURVEILLANCE-2025-CP]; network tariffs (TURPE) rose by 3.04 % on 1 August 2026 [A3-CRE-TURPE7-HTA-2026-105].
 
 ### 3.6.2 Fuel
 
-The gas covers the process heat on plastic-rich feeds (Section 3.4.1). Fuel is bought for start-up and, on household and municipal waste, for the heat that the gas does not cover [hyp:D-029]. OneWorld's consumption table states 10,000 L of fuel per day [OW-CONSO-ENERGIE].
+The gas covers the process heat on plastic-rich feeds (Section 3.4.1). Fuel is bought for start-up and, on household and municipal waste, for the heat that the gas does not cover [hyp:D-029]. In the financial model, this deficit is covered by default by burning part of the oil produced, with purchased gas oil as a complement [hyp:D-069]. OneWorld's consumption table states 10,000 L of fuel per day [OW-CONSO-ENERGIE].
 
 | Fuel, France, excluding all taxes | Latest week (to 9 October 2026, default) | 2025 average | Source |
 |---|---|---|---|
@@ -344,21 +344,21 @@ Including taxes, the same week: 2.0500 EUR/L for non-road diesel and 1.7920 EUR/
 
 ## 3.7 Price Table for the Financial Model
 
-Each line is a default that the operator can change [hyp:D-030]. Values marked "to decide" are proposed to the project sponsor in the list of parameters to be decided.
+Each line is a default that the operator can change [hyp:D-030]. The quality factor, the char price, the hydrogen and the metals of mixed waste were decided by the sponsor on 25/11/2026 [hyp:D-067] [hyp:D-068] [hyp:D-073].
 
 | Item | Default | Basis | Source |
 |---|---|---|---|
 | Light oil, benchmark | 636.8 EUR/t | Naphtha NWE, August 2026 | [A3F-INSEE-NAPHTA-NWE-010002082] |
 | Gas oil, benchmark | 1,254 EUR/t | Rotterdam, week to 9 October 2026 | [calc:CALC-A3-GAZOLE-EUR-T] |
 | Heavy oil, benchmark | 541 EUR/t | Fuel oil below 1 % sulphur, Rotterdam, same week | [A3-DGEC-NPG-2026-10-09-COTATIONS] |
-| Quality factor per fraction | to decide | Precedent of 80 to 90 % | [A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS] |
+| Quality factor of the oil | 0.80 of the weighted benchmark | Decision; precedent of 80 to 90 % | [hyp:D-067] [A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS] |
 | Brent of reference | 128.53 USD per barrel | Week to 9 October 2026 | [A3-DGEC-NPG-2026-10-09-COTATIONS] |
-| Char | to decide | From a gate fee of 50 EUR/t paid by the plant to 123 EUR/t at petroleum coke parity | [A3G-ALBA-EBS-HINTERGRUND-2023] [calc:CALC-A3-CHAR-PARITE-PETCOKE] |
-| Steel scrap | 316.4 EUR/t | French exports, first half of 2026 | [A3H-COMEXT-MENSUEL-2025-2026] |
-| Aluminium scrap | 1,723 EUR/t | French exports, first half of 2026 | [A3H-COMEXT-MENSUEL-2025-2026] |
+| Char | 0 EUR/t | Decision; range from a gate fee of 50 EUR/t paid by the plant to 123 EUR/t at petroleum coke parity | [hyp:D-068] [A3G-ALBA-EBS-HINTERGRUND-2023] [calc:CALC-A3-CHAR-PARITE-PETCOKE] |
+| Steel scrap | 316.4 EUR/t; metal revenue set at 0 by default for residual household and business waste | French exports, first half of 2026; decision for mixed waste | [A3H-COMEXT-MENSUEL-2025-2026] [hyp:D-073] |
+| Aluminium scrap | 1,723 EUR/t; same rule as steel for mixed waste | French exports, first half of 2026 | [A3H-COMEXT-MENSUEL-2025-2026] [hyp:D-073] |
 | Glass and inerts | no price | Decision | [hyp:D-028] |
 | Carbon | no revenue | Decision | [hyp:D-028] |
-| Hydrogen (plastic-only feed) | 2 EUR/kg | Conventional hydrogen, 2025 | [A3J-ACER-H2-MARKETS-2025] |
+| Hydrogen (plastic-only feed) | not counted by default; option at 2 EUR/kg | Conventional hydrogen, 2025; decision | [A3J-ACER-H2-MARKETS-2025] [hyp:D-073] |
 | Surplus gas as fuel (plastic-only feed) | 0.0470 EUR/kWh | Natural gas, band I4, first half of 2026 | [A3J-EUROSTAT-NRG-PC-203-FR] |
 | Electricity | 0.1212 EUR/kWh | Band ID, second half of 2025, excluding VAT | [PRM-EUROSTAT-NRGPC205-ID-2025] |
 | Fuel (non-road diesel) | 1.3405 EUR/L | Excluding taxes, week to 9 October 2026 | [A3-DGEC-NPG-2026-10-09-PRIX-FRANCE] |
@@ -369,7 +369,7 @@ Each line is a default that the operator can change [hyp:D-030]. Values marked "
 |---|---|---|
 | Oil fractions | OneWorld design data | Output of each zone not measured (R-013) |
 | Oil benchmarks | Official statistics and quotations | Crisis prices in 2026; constant ratio to Brent |
-| Price of the oil itself | No public quotation | Quality discount to decide; ICIS and Argus paid (R-037) |
+| Price of the oil itself | No public quotation | Quality factor 0.80 by default [hyp:D-067], no market evidence for it; ICIS and Argus paid (R-037) |
 | Steam cracker outlet | Regulation read | Plastic-only feed; oxygen and metals not measured (R-035) |
 | Fuel outlet | Regulation read | Hazardous waste (flash point); acceptance by an authorised plant to obtain |
 | Char value | Energy parity and market practice | Chlorine not measured; sense of payment disputed (R-012, R-034, R-038) |
