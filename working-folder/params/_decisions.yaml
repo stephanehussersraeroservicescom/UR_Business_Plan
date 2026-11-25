@@ -855,3 +855,16 @@ D-052:
     d'ou l'incertitude. Le debit de 5,8 a 8,3 t/h depasse le seuil de 3 t/h de la rubrique 3520.
   preuves: [A4-AIDA-NOMENCLATURE-V58-2026, A4-DGPR-NOTE-DECHETS-2022, IED-2010-75-ART3-42]
   a_verifier: "Classement par l'inspection (R-050)."
+
+D-053:
+  date: 2026-11-25
+  titre: "Annexe 5 : masse non allouee du bilan d'une tonne d'OMR (environ 205 kg/t au standard), repartition indicative et traitement dans le modele"
+  de: "masse non allouee laissee INCONNU"
+  vers: "masse non allouee affichee par scenario ; repartition indicative en liquide et gaz dans le rapport 22,5 / 46,5 de D-048 ; dans le modele, par defaut, ce gaz n'est pas compte pour la chaleur et ce liquide est traite comme une eau de procede a eliminer, avec un cout ; une option cliquable compte le gaz"
+  unite: "regle d'interpretation"
+  motif: >
+    HYPOTHESE posee par Claude le 25/11/2026, apres le lot 3 de Codex sur l'annexe 5 (ecart E-1) et accord de principe de
+    Stephane dans le chat du 25/11/2026. Aucune mesure Urban Rig sur aliments, dechets verts, papiers et cartons ; la
+    repartition reprend le rapport liquide / gaz mesure sur papier et textiles (A5-BHATT-2026-RSCADV, D-048). A remplacer
+    par le bilan massique de l'essai R-021.
+  preuves: [A5-BHATT-2026-RSCADV, ADEME-MODECOM-2024-HUM]

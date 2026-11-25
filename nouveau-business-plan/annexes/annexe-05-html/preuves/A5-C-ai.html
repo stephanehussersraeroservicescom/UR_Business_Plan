@@ -40,12 +40,12 @@ figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;col
 <body><main><p class="crumb"><a href="../index.html">Annex 5. Municipal Solid Waste</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 5.C.ai</h1>
 <p class="small">Calculation</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>Tonnage des OMR, categorie 04 (composites), MODECOM 2024 : somme des sous-categories</p><p class="result" style="margin-top:10px">Result: <strong>294383</strong> t</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Part de la categorie 10 (metaux) dans les OMR</p><p class="result" style="margin-top:10px">Result: <strong>3.3424</strong> %</p></div>
  <div class="card"><h4>Confidence</h4><div class="conf">95 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
 </div>
 <h2>How it was calculated</h2>
 <p>The formula below is applied to the inputs listed, each taken from its own evidence sheet. The description of the calculation is recorded in the register in French.</p>
-<h3>Formula</h3><pre>s04_01 + s04_02 + s04_03 + s04_04 + s04_05</pre>
+<h3>Formula</h3><pre>cat / total * 100</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>s04_01</code></td><td>78114 t</td><td>sous-categorie 04.01, colonne tonnage_OMR</td><td><span class="ev"><a href="A5-P-c.html">5.P.c</a></span></td></tr><tr><td><code>s04_02</code></td><td>64087 t</td><td>sous-categorie 04.02, colonne tonnage_OMR</td><td><span class="ev"><a href="A5-P-c.html">5.P.c</a></span></td></tr><tr><td><code>s04_03</code></td><td>131937 t</td><td>sous-categorie 04.03, colonne tonnage_OMR</td><td><span class="ev"><a href="A5-P-c.html">5.P.c</a></span></td></tr><tr><td><code>s04_04</code></td><td>2495 t</td><td>sous-categorie 04.04, colonne tonnage_OMR</td><td><span class="ev"><a href="A5-P-c.html">5.P.c</a></span></td></tr><tr><td><code>s04_05</code></td><td>17750 t</td><td>sous-categorie 04.05, colonne tonnage_OMR</td><td><span class="ev"><a href="A5-P-c.html">5.P.c</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A5-CAT04-T</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>cat</code></td><td>493070 t</td><td>Tonnage des OMR, categorie 10 (metaux), MODECOM 2024 : somme des sous-categories</td><td><span class="ev"><a href="A5-C-ah.html">5.C.ah</a></span></td></tr><tr><td><code>total</code></td><td>14752013 t</td><td>Total des OMR, somme des 13 categories (fines non renseignees dans le jeu)</td><td><span class="ev"><a href="A5-C-v.html">5.C.v</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A5-CAT10-PCT</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>

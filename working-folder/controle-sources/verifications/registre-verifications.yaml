@@ -19079,3 +19079,764 @@ verifications:
     citation: "bois 28% ; fibreux 7% ; textiles 3%"
     emplacement: "figure 14, p. 30 ; recalcul"
     commentaire: "28 + 7 + 3 = 38 %."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 hypothèse D-049
+    source: D-049
+    valeur: "rendements sur masse brute ; fines non attribuées"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "rendements appliqués à la masse brute, l'humidité n'étant pas connue ; les éléments fins ou non reconnaissables (34 %) ne sont pas attribués faute de composition"
+    emplacement: "working-folder/params/_decisions.yaml, D-049"
+    commentaire: "Hypothèse correctement étiquetée ; optimiste pour un dimensionnement."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 huile scénario bas
+    source: CALC-A7-HUILE-BAS-KG-T
+    valeur: "27,5 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "Le bois (28%), dont les 3/4 correspondent à du bois B ; Les inertes (19%) ; 34% d'éléments fins ou non reconnaissables ; 19% pour le reste des catégories plus à la marge : fibreux 7% ; plastiques 5% ; métaux 3% ; textiles 3% ; plâtre 1%."
+    emplacement: "ADEME 2025, figure 14, p. 30 ; recalcul 50 x 55 %"
+    commentaire: "50 x 55 % = 27,5 kg. Rendement de 55 % tenu pour hypothèse D-044."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 huile scénario standard
+    source: CALC-A7-HUILE-CENT-KG-T
+    valeur: "36,535 kg/t, affiché 36,5"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "formule: p * r / 10 | resultat: 36.535"
+    emplacement: "working-folder/controle-sources/calculs.yaml, CALC-A7-HUILE-CENT-KG-T"
+    commentaire: "50 x 73,07 % = 36,535 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 huile scénario haut
+    source: CALC-A7-HUILE-HAUT-KG-T
+    valeur: "40,5 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "formule: p * r / 10 | resultat: 40.5"
+    emplacement: "working-folder/controle-sources/calculs.yaml, CALC-A7-HUILE-HAUT-KG-T"
+    commentaire: "50 x 81 % = 40,5 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 gaz des plastiques
+    source: CALC-A7-GAZ-PLAST-KG-T
+    valeur: "5,0 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "gaz issu du plastique = 10 % de la masse de plastique entrante (HYPOTHESE)"
+    emplacement: "working-folder/params/_decisions.yaml, D-029 ; recalcul"
+    commentaire: "50 x 10 % = 5,0 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 char scénario bas
+    source: CALC-A7-CHAR-BAS-KG-T
+    valeur: "95 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "char = 30 % de la matière sèche des fractions organiques non plastiques ; bas 25 %, haut 40 %"
+    emplacement: "working-folder/params/_decisions.yaml, D-045 ; recalcul"
+    commentaire: "380 x 25 % = 95 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 char scénario standard
+    source: CALC-A7-CHAR-CENT-KG-T
+    valeur: "114 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "formule: o * c / 10 | resultat: 114.0"
+    emplacement: "working-folder/controle-sources/calculs.yaml, CALC-A7-CHAR-CENT-KG-T"
+    commentaire: "380 x 30 % = 114 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 char scénario haut
+    source: CALC-A7-CHAR-HAUT-KG-T
+    valeur: "152 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "formule: o * c / 10 | resultat: 152.0"
+    emplacement: "working-folder/controle-sources/calculs.yaml, CALC-A7-CHAR-HAUT-KG-T"
+    commentaire: "380 x 40 % = 152 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 liquide oxygéné scénario bas
+    source: CALC-A7-LIQ-BAS-KG-T
+    valeur: "20,0 kg/t"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Waste paper and textile wastes exhibit relatively lower pyrolysis oil yields (20-25 wt%)."
+    emplacement: "Bhatt et al. 2026, résumé et section 3.3 ; recalcul"
+    commentaire: "100 x 20 % = 20 kg. Conditions différentes de l'Urban Rig."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 liquide oxygéné scénario standard
+    source: CALC-A7-LIQ-CENT-KG-T
+    valeur: "22,5 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "reste des textiles sanitaires et textiles : liquide oxygéné 20 / 22,5 / 25 %"
+    emplacement: "working-folder/params/_decisions.yaml, D-048 ; recalcul"
+    commentaire: "100 x 22,5 % = 22,5 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 liquide oxygéné scénario haut
+    source: CALC-A7-LIQ-HAUT-KG-T
+    valeur: "25,0 kg/t"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Waste paper and textile wastes exhibit relatively lower pyrolysis oil yields (20-25 wt%)."
+    emplacement: "Bhatt et al. 2026, résumé et section 3.3 ; recalcul"
+    commentaire: "100 x 25 % = 25 kg. Conditions différentes de l'Urban Rig."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 gaz fibreux et textiles scénario bas
+    source: CALC-A7-GAZ-ST-BAS-KG-T
+    valeur: "45,0 kg/t"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "The gas yield for these materials remains comparatively high (45-48 wt%)."
+    emplacement: "Bhatt et al. 2026, résumé et section 3.3 ; recalcul"
+    commentaire: "100 x 45 % = 45 kg. Conditions différentes de l'Urban Rig."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 gaz fibreux et textiles scénario standard
+    source: CALC-A7-GAZ-ST-CENT-KG-T
+    valeur: "46,5 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "reste des textiles sanitaires et textiles : liquide oxygéné 20 / 22,5 / 25 % et gaz 45 / 46,5 / 48 %"
+    emplacement: "working-folder/params/_decisions.yaml, D-048 ; recalcul"
+    commentaire: "100 x 46,5 % = 46,5 kg."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 gaz fibreux et textiles scénario haut
+    source: CALC-A7-GAZ-ST-HAUT-KG-T
+    valeur: "48,0 kg/t"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "The gas yield for these materials remains comparatively high (45-48 wt%)."
+    emplacement: "Bhatt et al. 2026, résumé et section 3.3 ; recalcul"
+    commentaire: "100 x 48 % = 48 kg. Conditions différentes de l'Urban Rig."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 cohérence du scénario haut
+    source: D-045+D-048
+    valeur: "113 kg de produits pour 100 kg de fibreux et textiles"
+    verdict: CALCUL FAUX
+    nature: tiers
+    citation: "char selon D-045 | liquide oxygéné 20 / 22,5 / 25 % et gaz 45 / 46,5 / 48 %"
+    emplacement: "working-folder/params/_decisions.yaml, D-048 et D-049 ; recalcul 40 + 25 + 48"
+    commentaire: "Le scénario haut totalise 113 %, donc les maxima indépendants ne peuvent pas être additionnés."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 fermeture du bilan standard
+    source: tableau-7.4
+    valeur: "205,465 kg/t non affectés après ajout des 340 kg de fines"
+    verdict: ABSENT
+    nature: tiers
+    citation: "Fines, water, gas and liquid from wood | Not allocated: no measurement on this feed"
+    emplacement: "section 7.4 ; recalcul 1000 - 454,535 - 340"
+    commentaire: "Les catégories sont nommées, mais la masse non affectée n'est pas affichée."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 besoin du brûleur
+    source: CALC-A2-BRULEUR-MJ-T
+    valeur: "1 506,65 MJ/t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Burner rating 833 kcal/s, operated 24 hours a day, divided by 200 t/day."
+    emplacement: "annexe 2, fiche 2.5.d.1 ; recalcul"
+    commentaire: "833 x 86400 x 4,1868 / 1000 / 200 = 1506,65 MJ/t."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 énergie du gaz plastique
+    source: CALC-A7-GAZ-PLAST-KG-T+CALC-A2-GAZ-PCI-MJ-KG
+    valeur: "186,93 MJ/t, soit 12,4 % du besoin du brûleur"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "resultat: 37.386 MJ/kg | resultat: 5.0 kg par tonne"
+    emplacement: "working-folder/controle-sources/calculs.yaml ; recalcul"
+    commentaire: "5 x 37,386 = 186,93 MJ/t ; 186,93 / 1 506,65 = 12,4 %."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: sections 7.4 et 7.8 humidité et PCI du DAE brut
+    source: A7-ADEME-TRI-DAE-2025
+    valeur: "aucune valeur représentative trouvée"
+    verdict: ABSENT
+    nature: publique
+    citation: "La précision des identifications visuelles reste approximative par rapport à des caractérisations effectuées en bonne et due forme."
+    emplacement: "ADEME 2025, p. 28 ; rapport entier et recherche publique complémentaire"
+    commentaire: "Aucune humidité ni aucun PCI représentatif du flux brut de l'annexe n'a été trouvé."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.4 autre interprétation CSR préparé
+    source: DDAE-CSR-NEUVILLETTE-2021
+    valeur: "PCI 12-18 MJ/kg ; humidité 15-25 % ; cendres 10-20 %"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "PCI brut : 12-18 MJ/kg ; Humidité sur brut : 15-25% en masse ; Teneur en cendres : 10-20% en masse."
+    emplacement: "dossier public de la chaufferie CSR de Neuvillette et Thenelles, p. 51/228"
+    commentaire: "Spécification d'un CSR préparé, non transposable au DAE brut sans préparation."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: sections Key Messages et 7.5 coût des refus
+    source: A7-ADEME-TRI-DAE-2025
+    valeur: "environ 200 EUR/t, TGAP comprise"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "le coût de traitement moyen des refus mesuré est d'environ 200 €/tonne de refus produite, TGAP comprise"
+    emplacement: "ADEME 2025, p. 32"
+    commentaire: "Repère de coût d'élimination, pas prix d'entrée Urban Rig acquis."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.5 chiffre d'affaires des centres
+    source: A7-ADEME-TRI-DAE-2025
+    valeur: "environ 150 EUR/t ; bas 70-80 ; haut supérieur à 200"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "En moyenne, les sites ont un chiffre d'affaires aux alentours de 150 €/ tonne, avec une fourchette basse à 70-80 €/ tonne et une fourchette haute supérieure à 200 €/ tonne."
+    emplacement: "ADEME 2025, p. 32"
+    commentaire: "Chiffre d'affaires des centres, pas gate fee Urban Rig."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.6 variabilité des entrants
+    source: A7-ADEME-TRI-DAE-2025
+    valeur: "68 % mélange en centres mécanisés ; 33 % en centres à engins"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Centres de tri mécanisés : 1/3 de monoflux pour 2/3 de flux en mélange ; Centres de tri engins : 2/3 de monoflux pour 1/3 de flux en mélange."
+    emplacement: "ADEME 2025, p. 24, figure 6"
+    commentaire: "La figure affiche 68 % et 33 %."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.8 tonnage régional en mélange
+    source: A7-PRPGD-IDF-SUIVI3-2023
+    valeur: "2,77 Mt en 2020"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "Total DAE franciliens en mélange [...] 2020 2,77 Mt"
+    emplacement: "PRPGD suivi 3, p. 82"
+    commentaire: "La ligne R-048 disant qu'aucun tonnage régional n'est publié est obsolète."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: Key Messages plastiques professionnels franciliens
+    source: A8-PRO-IDF-LIVRET-2023
+    valeur: "260 000 t/an"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Sur l'ensemble des 260 000 tonnes par an de déchets d'activité économique"
+    emplacement: "livret Région Ile-de-France et ADEME, p. 41"
+    commentaire: "Déchets plastiques d'activité économique."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: Key Messages commerce et films étirables
+    source: A8-PRO-IDF-LIVRET-2023
+    valeur: "commerce 34 %, dont la moitié en films étirables pour palettes"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "près du tiers (34 %) du commerce (la moitié est constituée de films étirables pour palettes)"
+    emplacement: "livret Région Ile-de-France et ADEME, p. 41"
+    commentaire: "Le tonnage des films n'est pas mesuré séparément."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: Key Messages char produit principal
+    source: CALC-A7-CHAR-BAS-KG-T+CALC-A7-CHAR-HAUT-KG-T
+    valeur: "95 à 152 kg/t"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "formule: o * c / 10"
+    emplacement: "working-folder/controle-sources/calculs.yaml ; recalculs des trois scénarios"
+    commentaire: "Premier produit chiffré en masse ; qualité commerciale non démontrée."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-07-html/index.html
+    ligne: section 7.5 prix d'entrée par défaut
+    source: texte-annexe-07
+    valeur: "aucun prix par défaut décidé"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "No default entry price is decided for mixed business waste."
+    emplacement: "HTML, section 7.5"
+    commentaire: "Étiquetage prudent ; offre ou contrat nécessaire."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.2, réserve R-1"
+    source: KANSO-B2002600
+    valeur: "composition transférable ; seule la quantité est incertaine"
+    verdict: ABSENT
+    nature: tiers
+    citation: "試料名 両元産業株式会社 両元リサイクルセンター 過熱水蒸気炭化装置 オフガス ; 採取年月日 2020年11月25日 ; 採取箇所 [non renseigné]"
+    emplacement: "Analysis-Results-Off-gas-Odor-Exhaust.pdf, p. 1"
+    commentaire: "Un échantillon de 2020 est analysé ; la transférabilité aux autres charges est une hypothèse D-029."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.3, réserve R-2"
+    source: CHIBA-ESSAIS-FICHES
+    valeur: "rendement hors métaux, verre et autres inorganiques"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "油化率：投入重量から油化に貢献しない金属・ガラスなど無機物の重量を差し引いた重量に対する生成油重量の割合。"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 27"
+    commentaire: "Définition observée correctement reprise."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.3, réserve R-2"
+    source: CHIBA-ESSAIS-FICHES
+    valeur: "rendement effectivement obtenu après le pré-tri projeté"
+    verdict: ABSENT
+    nature: tiers
+    citation: "油化率：投入重量から油化に貢献しない金属・ガラスなど無機物の重量を差し引いた重量に対する生成油重量の割合。"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 27"
+    commentaire: "La source définit le dénominateur, mais ne teste pas le pré-tri ; application conditionnelle selon D-035."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.1, essai 3P du 11 juillet, réserve R-3"
+    source: CHIBA-ESSAIS-FICHES
+    valeur: "entrée 60,0 kg ; huile 49,4 kg ; résidu 9,3 kg ; off-gas 1,3 kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "投入重量 60.0kg 生成油重量 49.4kg 油化率 82% ; 油化残渣重量 9.3kg オフガス量 1.3kg"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 24"
+    commentaire: "Valeurs exactes ; exclusion des moyennes décidée par D-034."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.2 et fiche 2.5.f.7, réserves R-3 et R-5"
+    source: CALC-A2-HUILE10-MOY-POND
+    valeur: "73,07 %"
+    verdict: CALCUL FAUX
+    nature: tiers
+    citation: "生成油重量 14.8kg ; 30.7kg ; 40.7kg ; 16.2kg ; 39.8kg ; 36.5kg ; 43.1kg ; 36.3kg ; 12.2kg ; 22.0kg ; 投入重量 20kg ; 40kg ; 50kg ; 20kg ; 50kg ; 50kg ; 60kg ; 50kg ; 20kg ; 40kg"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 19 à 23 ; recalcul 292,3 / 400"
+    commentaire: "Résultat exact 73,075 %, soit 73,08 % à deux décimales. Le résumé à 73,1 % est correct."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.3.3 et fiche 2.3.a, réserve R-4"
+    source: UR2000-JP-P05-BILAN
+    valeur: "10 % résines ; char 25 % ; huile 5 % ; off-gas 5 %"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "樹脂系類含有率 10% で試算 ; 炭化物 25% (50m3/ 加工利用可能) ; 混合油 (軽油・重油) 5% (10,000ℓ / 再利用可能) ; OFF ガス 5% (10,000ℓ / 再利用)"
+    emplacement: "UR2000-JP.pdf, p. 5"
+    commentaire: "Valeurs imprimées par OneWorld, sans validation indépendante."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.3.3 et fiche 2.3.a, réserve R-4"
+    source: UR2000-JP-P05-BILAN
+    valeur: "pourcentages sur une base massique homogène"
+    verdict: ABSENT
+    nature: constructeur
+    citation: "一般ゴミ 200ton. ▶ 200m3 (200,000L) ; 炭化物 25% (50m3/ 加工利用可能) ; 混合油 (軽油・重油) 5% (10,000ℓ / 再利用可能) ; OFF ガス 5% (10,000ℓ / 再利用)"
+    emplacement: "UR2000-JP.pdf, p. 5"
+    commentaire: "Les quantités associées sont volumiques ; la base masse/volume reste indéfinie."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/preuves/A2-1-g.html
+    ligne: "fiche 2.1.g, réserve R-5"
+    source: CHIBA-PROCEDE-HUILE
+    valeur: "poids d'huile = volume jauge multiplié par densité"
+    verdict: ABSENT
+    nature: tiers
+    citation: "ドラム缶で静置分離後に検尺棒を使用して油水量を計量した。全体の検尺量から、水の検尺量を差し引くことで、油の計量を行う。"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 29"
+    commentaire: "Le rapport décrit le jaugeage des volumes après décantation, pas la conversion explicite en masse."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.2.3, réserve R-5"
+    source: CHIBA-BILANS
+    valeur: "eau évaporée calculée : 27 L et 15 L"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "マテリアルバランスの水(排水)の蒸散水については、計算値とした。排出水 73ℓ ; 蒸散水 27ℓ ; 排出水 85ℓ ; 蒸散水 15ℓ"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 40 et 42"
+    commentaire: "Le caractère calculé est explicite ; 100 - 73 = 27 et 100 - 85 = 15."
+
+# Codex, annexe 1, lot 1, rapport 2026-11-25-codex-annexe-01-lot-1.md
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages et section 1.1, procédé"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "vapeur sans oxygène à 600 °C"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Inject high-temperature oxygen-free steam(further superheated) at 600 °C into the cracking furnace."
+    emplacement: "Urban RIg ENG.pdf, p. 14"
+    commentaire: "Déclaration constructeur, pas mesure indépendante. Rapport lot 1, ligne 2."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages et section 1.1, capacité"
+    source: UR2000-JP-P08-SPEC
+    valeur: "200 t/j et 7 unités"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "処理量 / 日 200 トン / 日 ; 本機処理プラント (200T) は 7 ユニットで構成。"
+    emplacement: "UR2000-JP.pdf, p. 8 et p. 6"
+    commentaire: "Capacité nominale déclarée, pas mesurée. Rapport lot 1, ligne 3."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages, autonomie thermique riche en résines"
+    source: CALC-A2-COUV-BRULEUR-RESINE
+    valeur: "2,9 fois avec 11,5 % de gaz"
+    verdict: CALCUL FAUX
+    nature: constructeur
+    citation: "Recovery Loss 11.5 % ; Mainly discharged as flue gas; a very small amount will be carbide."
+    emplacement: "Urban RIg ENG.pdf, p. 16 ; calcul 4299,4 / 1506,65"
+    commentaire: "Arithmétique exacte, mais 11,5 % est une ligne Recovery Loss d'une table incohérente, pas une quantité de gaz mesurée ni une fraction établie de l'entrée. Rapport lot 1, ligne 4."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages, autonomie thermique plastique"
+    source: CALC-A2-COUV-BRULEUR-PLASTIQUE15
+    valeur: "3,7 fois avec 15 % de gaz"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "gaz / besoin ; 5607,9 / 1506,65 = 3,7221"
+    emplacement: "calculs.yaml, CALC-A2-COUV-BRULEUR-PLASTIQUE15"
+    commentaire: "Calcul exact sous l'hypothèse D-038 de 15 %, pas mesure sur le continu. Rapport lot 1, ligne 5."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages, dioxines 2023"
+    source: DIOXINES-2023
+    valeur: "0,011 et 0,025 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "排ガス(9/26) 0.1 0.011 基準値以下 ; 排ガス(9/27) 0.1 0.025 基準値以下"
+    emplacement: "Dioxins .pdf, p. 1"
+    commentaire: "Rapport préliminaire, oxygène de référence absent. Rapport lot 1, ligne 6."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages, dioxines 2022"
+    source: CHIBA-OOSUMI-FUMEES
+    valeur: "0,067 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "ダイオキシン類（毒性等量） ng-TEQ/m³ 0.067"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 56, imprimé p. 50"
+    commentaire: "Rapport provisoire, oxygène de référence absent. Rapport lot 1, ligne 7."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "Key Messages, comparaison dioxines à la limite UE"
+    source: IED-2010-75-ANX6-P3
+    valeur: "inférieur à 0,1 ng/Nm3"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "They are standardised at 11 % oxygen in waste gas ; Dioxins and furans 0,1"
+    emplacement: "Directive 2010/75/UE, annexe VI, partie 3, points 1 et 1.4"
+    commentaire: "Les mesures ne donnent pas O2 ; infériorité numérique brute confirmée, conformité réglementaire non démontrée. Rapport lot 1, ligne 8."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, gamme URC-2000"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "200 t/j ; 7 étapes ; 3 x 4,5 m3 ; 66 x 7 x 7 m"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Throughput / day 200 ton / day ; Size (Processing Unit) W:66m D:7m H:7m ; Size (bucket) W:1.5m D:3m H:1m / 4.5m3"
+    emplacement: "Urban RIg ENG.pdf, p. 4"
+    commentaire: "Le document japonais donne 62 x 10 x 7 m. Rapport lot 1, ligne 10."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, gamme URC-1000"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "100 t/j ; 4 étapes ; 2 x 4,5 m3 ; 20 x 7 x 7 m"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "100 ton Continuous Process URC-1000 ; 2 buckets as 1 batch ; W:20m D:7m H:7m"
+    emplacement: "Urban RIg ENG.pdf, p. 6"
+    commentaire: "Rapport lot 1, ligne 11."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, gamme URC-400"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "40 t/j ; 7 étapes ; 3 x 1 m3 ; 41 x 7 x 7 m"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Throughput / day 40ton / day ; 3 buckets as 1 batch ; W:41m D:7m H:7m"
+    emplacement: "Urban RIg ENG.pdf, p. 5"
+    commentaire: "Rapport lot 1, ligne 12."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, gamme URC-150"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "15 t/j ; 7 étapes ; 1 ou 2 m3 ; 22 x 6,5 x 6 m"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Throughput / day 15ton / day ; W:22m D:6.5m H:6m"
+    emplacement: "Urban RIg ENG.pdf, p. 7"
+    commentaire: "Rapport lot 1, ligne 13."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, gamme unités en lots"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "URB-50 5 t/j ; URT-10 1 t/j ; URB-10 1 t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "5 ton 1 Batch URB-50 ; 1 ton 1 Batch URT-10 ; 1 ton 1 Batch URB-10"
+    emplacement: "Urban RIg ENG.pdf, p. 3, 8 et 9"
+    commentaire: "Rapport lot 1, ligne 14."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.1, échelle des essais"
+    source: CHIBA-RAPPORT-2023 + OWJ-DEMO-2021
+    valeur: "lots de 20 à 60 kg en 2022 ; environ 100 kg par lot en 2021"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "投入前重量 299.2kg ; 油重量 248.2kg ; 油化率 83%"
+    emplacement: "rapport Chiba, fiches de lots ; 20231114110656.pdf, p. 8"
+    commentaire: "Les essais cités ne sont pas ceux d'un URC-2000 continu. Rapport lot 1, ligne 15."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, modularité"
+    source: UR2000-JP-P06-P07-MODULES
+    valeur: "7 unités d'environ 12 t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "本機処理プラント (200T) は 7 ユニットで構成。 ; 約 12 トン処理機 ( 1 ユニット ) を工場量産"
+    emplacement: "UR2000-JP.pdf, p. 6"
+    commentaire: "Rapport lot 1, ligne 16."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, bennes et cadence"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "4,5 m3 ; 3 bennes ; 90 min"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "3 bucket movement in 90 minutes ; Size (bucket) W:1.5m D:3m H:1m / 4.5m3"
+    emplacement: "Urban RIg ENG.pdf, p. 4 et 15"
+    commentaire: "Rapport lot 1, ligne 17."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, fiche 1.C.a"
+    source: CALC-A1-UR2000-TEMPS-TOTAL
+    valeur: "10,5 h"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "7-continuous process, 90 minutes ; 7 x 90 / 60 = 10,5"
+    emplacement: "Urban RIg ENG.pdf, p. 15 ; recalcul"
+    commentaire: "Rapport lot 1, ligne 18."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, cadence maximale"
+    source: CALC-A2-UR2000-CADENCE
+    valeur: "48 x 4,17 = 200,16 t/j"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "24 時間のバケット搬入台数 48 台 ; MAX 重量 : 4.17 t"
+    emplacement: "UR2000-JP.pdf, p. 7 ; recalcul"
+    commentaire: "Capacité atteinte seulement si chaque benne est au maximum. Rapport lot 1, ligne 19."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, profil thermique 2019"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "150, 300, 450, 600, 400, 150, 60 °C"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "150℃ 300℃ 450℃ 600℃ 400℃ 150℃ 60℃"
+    emplacement: "Urban RIg ENG.pdf, p. 15"
+    commentaire: "Rapport lot 1, ligne 20."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, température et pression"
+    source: UR2000-JP-P08-SPEC
+    valeur: "max. 600 °C ; moins de 0,2 MPa"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "熱処理分解温度 MAX 600℃ 常圧 0.2MPa 以下"
+    emplacement: "UR2000-JP.pdf, p. 8"
+    commentaire: "Pression absolue ou relative non précisée. Rapport lot 1, ligne 21."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.1, profils alternatifs"
+    source: UR2000-JP-P09-P13-PLANS + OW-VIDEO-ANIMATION-2024 + OW-STEP-TOYOHASHI-9
+    valeur: "500 °C ; 250/450/600/350 °C ; 9 postes"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "No. 3 ゾーン (max. 500℃ 加熱) ; OIL Recovery Rate 45%~85% ; 3Dプリンタ用-豊橋9連続機総合組立図"
+    emplacement: "UR2000-JP.pdf, p. 12 ; vidéo 2024 ; en-tête STEP"
+    commentaire: "L'annexe montre correctement les configurations divergentes. Rapport lot 1, ligne 22."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.2, chaîne thermique"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "chaudière 165 °C ; surchauffeur 600 °C"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "General purpose boiler max. 165℃ ; Superheated steam generator max. 600℃"
+    emplacement: "Urban RIg ENG.pdf, p. 14"
+    commentaire: "Schéma illustré sur un URB-50 en lots. Rapport lot 1, ligne 23."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.3, composition du gaz"
+    source: KANSO-B2002600
+    valeur: "H2 12,7 % ; CH4 3,2 % ; C2H6 0,7 % ; C2H4 0,2 % ; C3H8 0,3 % ; C3H6 0,3 % ; CO 0,6 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "水素 12.7 % ; メタン 3.2 % ; エタン 0.7 % ; エチレン 0.2 % ; プロパン 0.3 % ; プロピレン 0.3 % ; 一酸化炭素 0.6 %"
+    emplacement: "Analysis-Results-Off-gas-Odor-Exhaust.pdf, p. 1"
+    commentaire: "Un seul échantillon, charge et point de prélèvement non documentés. Rapport lot 1, ligne 26."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.3, part combustible hors air"
+    source: CALC-A2-GAZ-PART-COMBUSTIBLE
+    valeur: "91,4 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "18,0 / (18,0 + 1,7) = 0,9137"
+    emplacement: "rapport KANSO p. 1 ; recalcul"
+    commentaire: "Rapport lot 1, ligne 27."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.3, PCI du gaz"
+    source: CALC-A2-GAZ-PCI
+    valeur: "37,4 MJ/kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "resultat: 37.386 MJ/kg"
+    emplacement: "calculs.yaml, CALC-A2-GAZ-PCI"
+    commentaire: "Calcul cohérent pour l'échantillon KANSO hors air. Rapport lot 1, ligne 28."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.2.4, démarrage"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "8 premiers lots sans sortie"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Start-up loss (no off-loading)"
+    emplacement: "Urban RIg ENG.pdf, p. 15, tableau des bennes"
+    commentaire: "Rapport lot 1, ligne 30."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3, rendement d'huile riche en résines"
+    source: CALC-A2-OW16-HUILE-TOTALE
+    valeur: "76,5 % de l'entrée"
+    verdict: CALCUL FAUX
+    nature: constructeur
+    citation: "Gas (Diesel) Oil 61.2 % 62,424ℓ (62.424ton) ; Amount of input one day 200Mt"
+    emplacement: "Urban RIg ENG.pdf, p. 16"
+    commentaire: "Les pourcentages totalisent 100 % et les masses 102 t. 76,5 % n'est pas démontré comme part des 200 t d'entrée. Rapport lot 1, ligne 31."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3, bilan déchets ménagers"
+    source: UR2000-JP-P05-BILAN
+    valeur: "char 25 % ; huile 5 % ; off-gas 5 % ; métaux et verre 0 à 5 %"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "炭化物 25% ; 混合油 (軽油・重油) 5% ; OFF ガス 5% ; 樹脂系類含有率 10% で試算"
+    emplacement: "UR2000-JP.pdf, p. 5"
+    commentaire: "Déclaration confirmée, mais base masse-volume ambiguë et 60 à 65 % non affectés. Rapport lot 1, ligne 32."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3, huiles municipales"
+    source: CHIBA-JLOS-HUILES
+    valeur: "45 000 à 46 000 J/g ; chlore 0,137 % et 0,526 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "塩素分 質量% 0.137 ; 総発熱量（計算） J/g 46000"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 45 et 46"
+    commentaire: "Rapport lot 1, ligne 33."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3.1, fiches 1.C.b à 1.C.d"
+    source: CALC-A1-OW16-PART-GAZOLE + CALC-A1-OW16-PART-HEATING + CALC-A1-OW16-PART-HEAVY
+    valeur: "80 % ; 10 % ; 10 % des trois lignes d'huile"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "61,2 / 76,5 = 80 % ; 7,65 / 76,5 = 10 % ; 7,65 / 76,5 = 10 %"
+    emplacement: "Urban RIg ENG.pdf, p. 16 ; recalcul"
+    commentaire: "Répartition interne exacte, sans validation du rendement global. Rapport lot 1, ligne 34."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3.2, facteur du char plastique"
+    source: CALC-A2-PCI-CHAR-PLASTIQUE
+    valeur: "24,6 MJ/kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "5 880 kcal/kg x 4,1868 kJ/kcal / 1 000 = 24,62 MJ/kg"
+    emplacement: "bilans Chiba ; recalcul"
+    commentaire: "Origine expérimentale du facteur non indiquée. Rapport lot 1, ligne 35."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3.2, char attribué aux déchets ménagers"
+    source: IZUMITEC-R35-339439
+    valeur: "32 090 J/g pour char de déchets ménagers"
+    verdict: DIFFÉRENT
+    nature: tiers
+    citation: "INOウレタン炭 ; 発熱量 32090 J/g"
+    emplacement: "Calorie-content-UR-Carbide-1.pdf, p. 1"
+    commentaire: "Le bulletin concerne un char d'uréthane et ne mentionne ni déchets ménagers, ni Urban Rig, ni PCI. Rapport lot 1, ligne 36."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.3.3, récupération d'acier"
+    source: OWT-DEMO-2020
+    valeur: "111 kg de fil sur 450 kg de pneus"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "The weight of each component after pyrolysis was 111 kg of wire"
+    emplacement: "Urban-Rig-Demo-Operation-Test-Report.pdf, p. 3"
+    commentaire: "Essai constructeur en lots, pas URC-2000. Rapport lot 1, ligne 37."

@@ -3013,6 +3013,11 @@ RP2-003:
   consulte: '2026-10-10'
 
 RP2-004:
+  relecture_a5_2026_11_25:
+    citation: "Le taux d'humidité moyen des OMR est ainsi de 42,1 %, avec un large intervalle de confiance (± 6,3 %) | est de 16,3 MJ/kgMS (± 2,9 MJ/kgMS) | Ces résultats sont donc à considérer avec beaucoup de prudence. | Pour l'année 2024, les données sont issues de l'Enquête Collecte 2023."
+    contenu: "Humidite moyenne des OMR 42,1 % (intervalle de confiance plus ou moins 6,3 %) ; PCI moyen 16,3 MJ/kg MS (plus ou moins 2,9) ; resultats a considerer avec beaucoup de prudence. Le tonnage 2024 (14 752 013 t, 223,46 kg/hab, tableau 6) vient de l'Enquete Collecte 2023."
+    emplacement: "section 2.1.1 (p. 14, note 13) ; section 2.3.1 et 2.3.2 ; tableau 6 (section 5.1.1, p. 39)"
+    lu_par: "Claude, 25/11/2026, WebFetch (citations transcrites par un modele intermediaire), apres le lot 1 de Codex sur l'annexe 5"
   relecture_a5_2026_11_19:
     lu_par: 'Claude, chat 5 annexe 5 : WebFetch (texte) et lecture visuelle de la p. 23 dans le navigateur de Stephane'
     titre_exact: MODECOM 2024, Campagne nationale de caracterisation des dechets menagers et assimiles, Synthese, decembre 2025 (brochure ref. 013089-02), ADEME, realise par ECOGEOS

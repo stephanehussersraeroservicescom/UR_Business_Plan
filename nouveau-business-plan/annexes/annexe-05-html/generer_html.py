@@ -177,6 +177,8 @@ def source_page(i):
     if f.get('url'): files = (files + ' ; ' if files else '') + f'<a href="{esc(f["url"])}">{esc(f.get("titre", "online source"))}</a>'
     r5 = f.get('relecture_a5_2026_11_19')
     rel = (f.get('relecture_a8_2026_10_15') or []) + (f.get('relecture_a8_2026_10_15_b') or []) + ([r5] if isinstance(r5, dict) else (r5 or []))
+    r6 = f.get('relecture_a5_2026_11_25')
+    rel = rel + ([r6] if isinstance(r6, dict) else (r6 or []))
     quotes = ''.join(f'<li>« {esc(v)} »</li>' for k, v in f.items() if str(k).startswith('citation'))
     quotes += ''.join(f'<li>« {esc(r.get("citation"))} » <span class="small">(re-read{", " + esc(r.get("emplacement")) if r.get("emplacement") else ""})</span></li>' for r in rel if r.get('citation'))
     vals = ''.join(f'<li>{esc(f[k])}</li>' for k in ['contenu'] + [x for x in f if str(x).startswith('valeurs')] if f.get(k))
@@ -236,6 +238,7 @@ DEC_EN = dict(g1.DEC_EN)
 DEC_EN.update(g3.DEC_EN)
 DEC_EN.update(g8.DEC_EN)
 DEC_EN.update({
+ 'D-053': 'Working assumption posed by Claude (25 November 2026), after the independent check of Annex 5: the mass of one tonne of residual household waste not yet allocated to a product (about 205 kg in the standard case) is shown by scenario and split indicatively into liquid and gas in the 22.5 / 46.5 ratio of D-048; in the model, by default, this gas is not counted as heat and this liquid is treated as process water to be disposed of, at a cost; an option counts the gas. To be replaced by the mass balance of the test R-021.',
  'D-043': 'Working assumption posed by Claude (19 November 2026), to be confirmed by the project sponsor: in residual household waste, only the plastic category produces a saleable oil; plastic in nappies, composites and synthetic textiles is not counted; the other organic matter gives char, water and gas.',
  'D-044': 'Working assumption posed by Claude (19 November 2026), to be confirmed: the oil and gas yields of the Chiba plastic tests apply to the dry mass of the plastic of residual waste (moisture from MODECOM 2024); oil at 55 % (low), 73.07 % (central) or 81 % (high); gas at 10 % (D-029).',
  'D-045': 'Working assumption posed by Claude (19 November 2026), to be confirmed: char of the non-plastic organic matter taken at 30 % of its dry mass, range 25 to 40 %, from published laboratory data.',

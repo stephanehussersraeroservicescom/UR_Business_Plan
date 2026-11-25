@@ -6700,3 +6700,112 @@ CALC-A9-OREX-TJ-HAUT:
     h: {valeur: 24, unite: h, source: D-035, emplacement: "fonctionnement continu"}
   unite: "t/jour"
   resultat: 360
+
+# === ANNEXE 5, corrections apres Codex (25/11/2026) ===
+
+CALC-A5-QUANT-BAS-KG-T:
+  description: "Masse quantifiee par tonne recue, scenario pessimiste : huile, liquide oxygene, gaz hydrocarbone, gaz des textiles sanitaires, char, inertes secs et eau"
+  formule: "h + l + gh + gs + c + i + e"
+  entrees:
+    h: {calc: CALC-A5-HUILE-TOT-BAS-KG-T}
+    l: {calc: CALC-A5-LIQ-ST-BAS-KG-T}
+    gh: {calc: CALC-A5-GAZ-HC-TOT-KG-T}
+    gs: {calc: CALC-A5-GAZ-ST-BAS-KG-T}
+    c: {calc: CALC-A5-CHAR2-BAS-KG-T}
+    i: {calc: CALC-A5-SEC-INERTE-KG-T}
+    e: {calc: CALC-A5-EAU-KG-T}
+  unite: "kg/t"
+  resultat: 739.6875
+
+CALC-A5-NONALLOUE-BAS-KG-T:
+  description: "Masse non allouee a un produit par tonne recue, scenario pessimiste : part couverte par les donnees d'humidite (98,8 %) moins la masse quantifiee ; gaz et liquide des aliments, dechets verts, papiers, cartons et autres fractions, residu du plastique"
+  formule: "p * 10 - q"
+  entrees:
+    p: {valeur: 98.8, unite: "%", source: ADEME-MODECOM-2024-HUM, emplacement: "jeu omrhum, somme des fractions (hors dechets dangereux)"}
+    q: {calc: CALC-A5-QUANT-BAS-KG-T}
+  unite: "kg/t"
+  resultat: 248.3125
+
+CALC-A5-QUANT-CENT-KG-T:
+  description: "Masse quantifiee par tonne recue, scenario standard : huile, liquide oxygene, gaz hydrocarbone, gaz des textiles sanitaires, char, inertes secs et eau"
+  formule: "h + l + gh + gs + c + i + e"
+  entrees:
+    h: {calc: CALC-A5-HUILE-TOT-CENT-KG-T}
+    l: {calc: CALC-A5-LIQ-ST-CENT-KG-T}
+    gh: {calc: CALC-A5-GAZ-HC-TOT-KG-T}
+    gs: {calc: CALC-A5-GAZ-ST-CENT-KG-T}
+    c: {calc: CALC-A5-CHAR2-CENT-KG-T}
+    i: {calc: CALC-A5-SEC-INERTE-KG-T}
+    e: {calc: CALC-A5-EAU-KG-T}
+  unite: "kg/t"
+  resultat: 782.6744
+
+CALC-A5-NONALLOUE-CENT-KG-T:
+  description: "Masse non allouee a un produit par tonne recue, scenario standard : part couverte par les donnees d'humidite (98,8 %) moins la masse quantifiee ; gaz et liquide des aliments, dechets verts, papiers, cartons et autres fractions, residu du plastique"
+  formule: "p * 10 - q"
+  entrees:
+    p: {valeur: 98.8, unite: "%", source: ADEME-MODECOM-2024-HUM, emplacement: "jeu omrhum, somme des fractions (hors dechets dangereux)"}
+    q: {calc: CALC-A5-QUANT-CENT-KG-T}
+  unite: "kg/t"
+  resultat: 205.3256
+
+CALC-A5-QUANT-HAUT-KG-T:
+  description: "Masse quantifiee par tonne recue, scenario optimiste : huile, liquide oxygene, gaz hydrocarbone, gaz des textiles sanitaires, char, inertes secs et eau"
+  formule: "h + l + gh + gs + c + i + e"
+  entrees:
+    h: {calc: CALC-A5-HUILE-TOT-HAUT-KG-T}
+    l: {calc: CALC-A5-LIQ-ST-HAUT-KG-T}
+    gh: {calc: CALC-A5-GAZ-HC-TOT-KG-T}
+    gs: {calc: CALC-A5-GAZ-ST-HAUT-KG-T}
+    c: {calc: CALC-A5-CHAR2-HAUT-KG-T}
+    i: {calc: CALC-A5-SEC-INERTE-KG-T}
+    e: {calc: CALC-A5-EAU-KG-T}
+  unite: "kg/t"
+  resultat: 831.4172
+
+CALC-A5-NONALLOUE-HAUT-KG-T:
+  description: "Masse non allouee a un produit par tonne recue, scenario optimiste : part couverte par les donnees d'humidite (98,8 %) moins la masse quantifiee ; gaz et liquide des aliments, dechets verts, papiers, cartons et autres fractions, residu du plastique"
+  formule: "p * 10 - q"
+  entrees:
+    p: {valeur: 98.8, unite: "%", source: ADEME-MODECOM-2024-HUM, emplacement: "jeu omrhum, somme des fractions (hors dechets dangereux)"}
+    q: {calc: CALC-A5-QUANT-HAUT-KG-T}
+  unite: "kg/t"
+  resultat: 156.5828
+
+CALC-A5-NONALLOUE-LIQ-CENT-KG-T:
+  description: "Part liquide de la masse non allouee, scenario standard, repartie dans le rapport liquide / gaz de D-048 (22,5 / 46,5)"
+  formule: "n * l / (l + g)"
+  entrees:
+    n: {calc: CALC-A5-NONALLOUE-CENT-KG-T}
+    l: {valeur: 22.5, unite: "%", source: D-048, emplacement: "liquide, scenario standard"}
+    g: {valeur: 46.5, unite: "%", source: D-048, emplacement: "gaz, scenario standard"}
+  unite: "kg/t"
+  resultat: 66.954
+
+CALC-A5-NONALLOUE-GAZ-CENT-KG-T:
+  description: "Part gazeuse de la masse non allouee, scenario standard, repartie dans le rapport liquide / gaz de D-048 (22,5 / 46,5)"
+  formule: "n * g / (l + g)"
+  entrees:
+    n: {calc: CALC-A5-NONALLOUE-CENT-KG-T}
+    l: {valeur: 22.5, unite: "%", source: D-048, emplacement: "liquide, scenario standard"}
+    g: {valeur: 46.5, unite: "%", source: D-048, emplacement: "gaz, scenario standard"}
+  unite: "kg/t"
+  resultat: 138.3716
+
+CALC-A5-CHAR2-MJ-T-PRUDENT:
+  description: "Energie du char standard au pouvoir calorifique du char de dechets alimentaires (comparaison prudente)"
+  formule: "c * k"
+  entrees:
+    c: {calc: CALC-A5-CHAR2-CENT-KG-T}
+    k: {calc: CALC-A5-KHAN-PCS-MJ-KG}
+  unite: "MJ/t"
+  resultat: 2623.29
+
+CALC-A5-NONPROC-T-AN:
+  description: "Masse annuelle de matieres non convertibles (verre, metaux, mineraux, dechets dangereux) pour une URC-2000 a 51 100 t/an"
+  formule: "p / 100 * a"
+  entrees:
+    p: {calc: CALC-A5-NONPROC-PCT}
+    a: {calc: CALC-A8-CAPACITE-AN}
+  unite: "t/an"
+  resultat: 6026.94
