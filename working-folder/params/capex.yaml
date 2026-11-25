@@ -1,14 +1,14 @@
 _domaine: "Investissement"
 
-machine:        {justification: AFF-MAC-00, label: "Machine URC-2000", valeur: 50000000, unite: EUR, statut: decision_commerciale, preuves: [ONEWORLD-COTATION, HARDIN-LOI], bornes: {bas: 35000000, haut: 60000000}, note: "Cotation OneWorld, prix fixe par le representant commercial. Reference de transaction : 2 x URC-1000 pour USD 60 M (Hardin). Le plan d'affaires section 8.1 et les annexes B et C citent 10 a 15 MEUR : a aligner.", par_unite: true}
-installation:   {justification: AFF-CPX-ANN, label: "Installation et mise en service", valeur: 200000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
-fret:           {justification: AFF-CPX-ANN, label: "Fret depuis le Japon", valeur: 400000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
-formation:      {justification: AFF-CPX-ANN, label: "Formation", valeur: 300000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
-pieces:         {justification: AFF-CPX-ANN, label: "Accessoires et pieces de rechange", valeur: 2000000, unite: EUR, statut: constructeur, preuves: [V3-MODEL], par_unite: true}
-pre_tri:        {justification: AFF-CPX-TRI, label: "Ligne de pre-tri", valeur: 1080000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true, note: "Trommel 6 T/h = debit d'une machine. Donc x N."}
-post_tri:       {label: "Ligne de post-tri", valeur: 430000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true}
-atex:           {label: "ATEX et depoussierage", valeur: 650000, unite: EUR, statut: hypothese, preuves: [V3-MODEL], par_unite: true}
-decanteur:      {label: "Cuve de neutralisation et decantation", valeur: 250000, unite: EUR, statut: hypothese, preuves: [AUCUNE], decision: D-008, par_unite: true, note: "Ordre de grandeur, a chiffrer sur devis."}
+machine:        {justification: AFF-MAC-00, label: "Machine URC-2000, options PRIMO, SEA CORAL et FORCE 9 comprises, installation comprise, hors transport", valeur: 50000000, unite: EUR, statut: decision_commerciale, preuves: [ONEWORLD-COTATION, HARDIN-LOI], decision: D-050, bornes: {bas: 35000000, haut: 60000000}, note: "D-050 et D-051 (installation comprise). ONEWORLD-COTATION est dans l'archive : seule la decision D-050 fonde la valeur.", par_unite: true}
+installation:   {label: "Installation et mise en service (comprise dans la machine)", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-066, par_unite: true, note: "Comprise dans les 50 MEUR (D-051). Valeur heritee 200 000 EUR."}
+fret:           {label: "Transport depuis le Japon (non compte)", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-066, par_unite: true, note: "Non compte, depend du site (D-051, R-049). Le plan est presente hors transport. Valeur heritee 400 000 EUR."}
+formation:      {label: "Formation", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-073, par_unite: true, note: "B21 : 0 par defaut, a valider par l'utilisateur (valeur heritee 300 000 EUR, V3-MODEL, sans source). R-049."}
+pieces:         {label: "Accessoires et pieces de rechange", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-073, par_unite: true, note: "B21 : 0 par defaut, a valider par l'utilisateur (valeur heritee 2 000 000 EUR, V3-MODEL, sans source)."}
+pre_tri:        {justification: AFF-CPX-TRI, label: "Pre-traitement, par ligne", valeur: 5000000, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-066, par_unite: true, note: "Environ 5 MEUR par ligne, estimation de Stephane sans devis (D-051, R-006). Valeur heritee 1 080 000 EUR."}
+post_tri:       {label: "Ligne de post-tri (comprise dans le pre-traitement ou le batiment)", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-073, par_unite: true, note: "B7 : compris dans les 5 + 5 MEUR. Valeur heritee 430 000 EUR."}
+atex:           {label: "ATEX et depoussierage (compris dans le pre-traitement ou le batiment)", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-073, par_unite: true, note: "B7 : compris dans les 5 + 5 MEUR. Valeur heritee 650 000 EUR."}
+decanteur:      {label: "Cuve de neutralisation et decantation (comprise)", valeur: 0, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-073, par_unite: true, note: "B7 : compris dans les 5 + 5 MEUR. Valeur heritee 250 000 EUR (D-008)."}
 
 surface_usine_1:   {justification: AFF-CPX-SUR, label: "Surface usine de traitement, 1re unite", valeur: 3000, unite: m2, statut: constructeur, preuves: [UR2000-JP]}
 surface_usine_d:   {justification: AFF-CPX-SUR, label: "Variation surface usine par unite ajoutee", valeur: -38.5, unite: m2, statut: calcule, preuves: [UR2000-JP], note: "14 230 m2 pour 5 unites"}
@@ -26,4 +26,7 @@ vrd_base:       {label: "VRD, fondations, raccordements, 1re unite", valeur: 130
 vrd_par_unite:  {label: "VRD par unite ajoutee", valeur: 400000, unite: EUR, statut: hypothese, preuves: [AUCUNE]}
 ingenierie_base: {label: "Ingenierie, ICPE, MOE, 1re unite", valeur: 750000, unite: EUR, statut: hypothese, preuves: [V3-MODEL]}
 ingenierie_step: {label: "Majoration ingenierie par unite", valeur: 0.20, unite: fraction, statut: hypothese, preuves: [AUCUNE]}
-taux_aleas:     {justification: AFF-CPX-ALE, label: "Taux d'aleas", valeur: 0.05, unite: fraction, statut: hypothese, preuves: [V3-MODEL], bornes: {bas: 0.05, haut: 0.15}}
+taux_aleas:     {justification: AFF-CPX-ALE, label: "Taux d'aleas", valeur: 0.05, unite: fraction, statut: decision, preuves: [AUCUNE], decision: D-073, bornes: {bas: 0.0, haut: 0.15}, note: "B8 : 5 % du CAPEX, choix de Stephane du 25/11/2026."}
+# Modele par flux (D-066) : une seule ligne remplace surfaces, prix au m2, VRD et ingenierie ci-dessus,
+# qui ne servent plus qu'a l'ancien moteur.
+batiment_gc_ingenierie_permis: {label: "Terrain, batiment, genie civil, ingenierie et permis, par ligne", valeur: 5000000, unite: EUR, statut: decision, preuves: [AUCUNE], decision: D-066, par_unite: true, note: "Base de 5 MEUR, estimation de Stephane sans devis (D-051, complement du 25/11/2026 : terrain compris)."}

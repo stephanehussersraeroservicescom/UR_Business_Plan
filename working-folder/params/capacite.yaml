@@ -77,3 +77,12 @@ jours_exploitation:
     Les UVE francaises matures sont concues sur 8 000 h (333 jours) et realisent entre
     282 et 314 jours par four. 330 est coherent avec un parc mature ; un premier exemplaire
     peut etre en dessous les premieres annees.
+  note_2026_11_25: "B10 : 330 jours par an retenus par Stephane le 25/11/2026 (D-073)."
+charge_reacteur:
+  label: "Charge du reacteur par ligne"
+  valeur: 140
+  unite: "t/j"
+  statut: decision
+  preuves: [UR2000-JP-P08-SPEC]
+  decision: D-066
+  note: "200 m3/jour a 0,7 t/m3 (D-035). Lue par le modele par flux ; l'ancien moteur garde capacite_volumetrique x densite_dechet."

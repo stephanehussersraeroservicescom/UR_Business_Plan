@@ -44,18 +44,20 @@ provision_fioul_secours:
   note: "Demarrages, arrets, variations de charge, flamme pilote."
 
 pci_fioul: {justification: AFF-NRJ-FIO, label: "PCI du fioul", valeur: 38, unite: "MJ/L", statut: hypothese, preuves: [V3-MODEL]}
-pci_char:  {justification: AFF-NRJ-CHO, label: "PCI du char organique", valeur: 15, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL, PRM-HWANG-2007]}
-pci_residu_plastique: {justification: AFF-NRJ-CHP, label: "PCI du residu plastique", valeur: 25, unite: "MJ/kg", statut: hypothese, preuves: [V3-MODEL]}
+pci_char:  {justification: AFF-NRJ-CHO, label: "PCI du char de dechets menagers", valeur: 32.09, unite: "MJ/kg", statut: decision, preuves: [IZUMITEC-R35-339439], decision: D-066, note: "32,09 MJ/kg (D-038, hypothese de Stephane sur la valeur Izumitec). Valeur heritee 15."}
+pci_residu_plastique: {justification: AFF-NRJ-CHP, label: "PCI du char de residus plastiques", valeur: 24.6, unite: "MJ/kg", statut: decision, preuves: [CHIBA-BILANS], decision: D-066, note: "Facteur de Chiba 5 880 kcal/kg (D-038, CALC-A2-PCI-CHAR-PLASTIQUE). Valeur heritee 25."}
 
 elec_par_unite:
   justification: AFF-NRJ-ELE
   label: "Consommation electrique par unite"
-  valeur: 3000
+  valeur: 14400
   unite: "kWh/j"
-  statut: hypothese
-  preuves: [ICHIMURA-2022, UR2000-JP]
+  statut: decision
+  preuves: [OW-CONSO-ENERGIE, UR2000-JP-P08-SPEC, ICHIMURA-2022, UR2000-JP]
   bornes: {bas: 480, haut: 14400}
   note: >
     QUATRE valeurs incompatibles dans le depot : 20 kW en continu (fiche UR2000-JP),
     600 kW (annexe 9), 4 800 kWh/j (V3), 15 a 20 kWh/T mesures (Ichimura).
     3 000 kWh/j se cale sur la seule valeur mesuree. A trancher par un releve d'un mois.
+  note_2026_11_25: "B5 : 600 kW en continu, soit 14 400 kWh/jour (valeur haute, tableau OneWorld ; la fiche UR2000-JP donne 20 kW), D-073. Valeur heritee 3 000 kWh/j."
+  decision: D-073

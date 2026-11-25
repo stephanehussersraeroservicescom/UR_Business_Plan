@@ -28,20 +28,21 @@ prix_huile_craqueur:
 prix_char:
   justification: AFF-PRX-CHA
   label: "Prix du char"
-  valeur: 100
+  valeur: 0
   unite: "EUR/T"
-  statut: hypothese
-  preuves: [V3-MODEL]
-  bornes: {bas: 0, haut: 150}
-  note: "Debouche non demontre. IBI, EBC et Puro.earth excluent les OMR melangees."
+  statut: decision
+  preuves: [A3G-COMEXT-PETCOKE-NC27131100-FR]
+  bornes: {bas: -50, haut: 123}
+  note: "B2 : 0 EUR/t par defaut, modifiable ; -50 = redevance payee, 123 = parite petcoke (CALC-A3-CHAR-PARITE-PETCOKE). Valeur heritee 100."
+  decision: D-068
 
-prix_ferreux: {justification: AFF-PRX-MET, label: "Prix ferreux", valeur: 250, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
-prix_alu:     {justification: AFF-PRX-MET, label: "Prix aluminium", valeur: 1400, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_ferreux: {justification: AFF-PRX-MET, label: "Prix ferreux", valeur: 316.4, unite: "EUR/T", statut: decision, preuves: [A3H-COMEXT-MENSUEL-2025-2026], decision: D-066, note: "Ferraille broyee, export France, S1 2026 (D-030)."}
+prix_alu:     {justification: AFF-PRX-MET, label: "Prix aluminium", valeur: 1723, unite: "EUR/T", statut: decision, preuves: [A3H-COMEXT-MENSUEL-2025-2026], decision: D-066, note: "Debris d'aluminium, export France, S1 2026 (D-030)."}
 prix_autres_metaux: {justification: AFF-PRX-MET, label: "Prix autres metaux", valeur: 500, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
-prix_verre:   {label: "Prix du verre", valeur: 30, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
+prix_verre:   {label: "Prix du verre", valeur: 0, unite: "EUR/T", statut: decision, preuves: [AUCUNE], decision: D-066, note: "Sans prix (D-028)."}
 cout_elimination: {justification: AFF-PRX-ELI, label: "Cout d'elimination des residus", valeur: 110, unite: "EUR/T", statut: hypothese, preuves: [V3-MODEL]}
-prix_fioul:   {justification: AFF-PRX-FIO, label: "Prix du fioul (GNR)", valeur: 0.95, unite: "EUR/L", statut: hypothese, preuves: [AUCUNE]}
-prix_elec:    {label: "Prix de l'electricite", valeur: 0.15, unite: "EUR/kWh", statut: hypothese, preuves: [V3-MODEL]}
+prix_fioul:   {justification: AFF-PRX-FIO, label: "Prix du gazole non routier", valeur: 1.3405, unite: "EUR/L", statut: decision, preuves: [A3-DGEC-NPG-2026-10-09-PRIX-FRANCE], decision: D-066, note: "GNR hors toutes taxes, semaine au 09/10/2026 (D-030). Taxe GNR 2026 non trouvee."}
+prix_elec:    {label: "Prix de l'electricite", valeur: 0.1212, unite: "EUR/kWh", statut: decision, preuves: [PRM-EUROSTAT-NRGPC205-ID-2025], decision: D-066, note: "Eurostat bande ID, 2025-S2, hors TVA (D-030)."}
 
 reduction_carbone_certifiee:
   label: "Reduction carbone certifiee"
@@ -51,4 +52,27 @@ reduction_carbone_certifiee:
   preuves: [AUCUNE]
   decision: D-005
   note: "A ZERO tant qu'aucune certification n'est obtenue. Le V3 retenait 1,04."
-prix_carbone: {justification: AFF-PRX-CO2, label: "Prix du credit carbone", valeur: 50, unite: "EUR/T CO2", statut: hypothese, preuves: [AUCUNE]}
+prix_carbone: {justification: AFF-PRX-CO2, label: "Prix du credit carbone", valeur: 0, unite: "EUR/T CO2", statut: decision, preuves: [AUCUNE], decision: D-066, note: "Aucun revenu carbone (D-028)."}
+# ---------------------------------------------------------------- modele par flux (D-066, D-067, D-073)
+prix_huile_legere:  {label: "Prix de reference, fraction legere (naphta NWE)", valeur: 636.8, unite: "EUR/T", statut: decision, preuves: [A3F-INSEE-NAPHTA-NWE-010002082], decision: D-066, note: "Aout 2026 (D-030)."}
+prix_huile_gazole:  {label: "Prix de reference, fraction gazole (Rotterdam)", valeur: 1254.24, unite: "EUR/T", statut: decision, preuves: [A3-DGEC-NPG-2026-10-09-COTATIONS], decision: D-066, note: "Semaine au 09/10/2026, CALC-A3-GAZOLE-EUR-T (D-030)."}
+prix_huile_lourde:  {label: "Prix de reference, fraction lourde (fioul TBTS)", valeur: 541, unite: "EUR/T", statut: decision, preuves: [A3-DGEC-NPG-2026-10-09-COTATIONS], decision: D-066, note: "Semaine au 09/10/2026 (D-030)."}
+part_huile_legere:  {label: "Part de la fraction legere dans l'huile", valeur: 0.10, unite: fraction, statut: constructeur, preuves: [OW-ENG-P16-BILAN], decision: D-066, note: "Bilan de conception OneWorld (CALC-A1-OW16-PART-HEATING)."}
+part_huile_gazole:  {label: "Part de la fraction gazole dans l'huile", valeur: 0.80, unite: fraction, statut: constructeur, preuves: [OW-ENG-P16-BILAN], decision: D-066, note: "Bilan de conception OneWorld (CALC-A1-OW16-PART-GAZOLE)."}
+part_huile_lourde:  {label: "Part de la fraction lourde dans l'huile", valeur: 0.10, unite: fraction, statut: constructeur, preuves: [OW-ENG-P16-BILAN], decision: D-066, note: "Bilan de conception OneWorld (CALC-A1-OW16-PART-HEAVY)."}
+facteur_qualite_huile: {label: "Facteur de qualite de l'huile (part du prix de reference)", valeur: 0.80, unite: fraction, statut: decision, preuves: [A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS], decision: D-067, bornes: {bas: 0.0, haut: 1.0}}
+
+prix_entree_balles_plastique: {label: "Prix d'entree, plastique trie en balles (achat)", valeur: -249, unite: "EUR/T", statut: decision, preuves: [RP2-061], decision: D-042, note: "Positif = l'usine est payee ; negatif = l'usine achete."}
+prix_entree_pse_blanc:   {label: "Prix d'entree, PSE blanc de decheterie (achat)", valeur: -55, unite: "EUR/T", statut: decision, preuves: [RP-060], decision: D-042}
+prix_entree_films_ps:    {label: "Prix d'entree, films menagers, flux developpement, PS, PSE menager trie", valeur: 0, unite: "EUR/T", statut: decision, preuves: [A8-MENA-PRIXREPRISE-2025], decision: D-042}
+prix_entree_refus_pro:   {label: "Prix d'entree, refus de tri d'emballages professionnels", valeur: 188, unite: "EUR/T", statut: decision, preuves: [A8-PRO-NOTE-SOUTIENS-EPRO-2026], decision: D-042}
+prix_entree_refus_menagers: {label: "Prix d'entree, refus de tri menagers", valeur: 100, unite: "EUR/T", statut: decision, preuves: [A8-MENB-DGPR-COUTSREF-2026], decision: D-042, note: "Cout reel du detenteur 159 EUR/t TGAP comprise."}
+prix_entree_plastiques_autres: {label: "Prix d'entree, autres plastiques (bromes, textiles synthetiques, mousses, batiment)", valeur: 100, unite: "EUR/T", statut: decision, preuves: [AUCUNE], decision: D-042, note: "HYPOTHESE de Stephane, prix reel non trouve."}
+prix_entree_omr:         {label: "Prix d'entree, ordures menageres residuelles", valeur: 100, unite: "EUR/T", statut: decision, preuves: [AUCUNE], decision: D-039, note: "HYPOTHESE de Stephane (D-039, D-042)."}
+
+tgap_payee_usine: {label: "TGAP payee par l'usine (interrupteur)", valeur: true, unite: "-", statut: decision, preuves: [CIBS-TGAP-2026], decision: D-073, note: "B15 : active par defaut."}
+tgap_incineration: {label: "TGAP incineration 2026", valeur: 16, unite: "EUR/T", statut: decision, preuves: [CIBS-TGAP-2026], decision: D-073, note: "Tarif incineration performante 2026 ; 29 EUR/t sinon ; 20 ou 45 en 2030 (CIBS L. 433-57, L. 433-86)."}
+compter_hydrogene: {label: "Hydrogene vendu (flux plastiques seul)", valeur: false, unite: "-", statut: decision, preuves: [AUCUNE], decision: D-073, note: "B16 : non compte par defaut (D-031)."}
+prix_hydrogene:    {label: "Prix de l'hydrogene", valeur: 2.0, unite: "EUR/kg", statut: decision, preuves: [A3J-ACER-H2-MARKETS-2025], decision: D-073}
+recuperation_h2:   {label: "Recuperation de l'hydrogene (PSA)", valeur: 0.8, unite: fraction, statut: decision, preuves: [A3J-MDPI-ENERGIES-2025-PSA], decision: D-073, note: "HYPOTHESE ; source secondaire : 75,5 a 95 %."}
+compter_metaux: {label: "Revenu des metaux des OMR et DAE", valeur: false, unite: "-", statut: decision, preuves: [AUCUNE], decision: D-073, note: "B20 : 0 par defaut, option modifiable ; repartition et taux de recuperation non trouves en v3."}

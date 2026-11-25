@@ -7213,3 +7213,347 @@ CALC-A7-GAZ-PLAST-PART-BRULEUR-PCT:
       calc: CALC-A2-BRULEUR-MJ-T
   unite: '%'
   resultat: 12.41
+
+# ------------------------------------------------ Modele financier par flux (chat B, 25/11/2026) ; CALC-MOD-*
+CALC-MOD-PLAST-HUILE-BAS-KG-T:
+  description: 'Flux plastiques, scenario pessimiste : huile par tonne au rendement le plus bas des 10 essais retenus (PS chutes 2022-03-31) (D-071)'
+  formule: h / e * 1000
+  entrees:
+    h:
+      valeur: 22.0
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS chutes 2022-03-31
+    e:
+      valeur: 40
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS chutes 2022-03-31
+  resultat: 550.0
+  unite: kg/t
+CALC-MOD-PLAST-HUILE-HAUT-KG-T:
+  description: 'Flux plastiques, scenario optimiste : huile par tonne au rendement le plus haut des 10 essais retenus (PP granules 2022-04-08) (D-071)'
+  formule: h / e * 1000
+  entrees:
+    h:
+      valeur: 16.2
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP granules 2022-04-08
+    e:
+      valeur: 20
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP granules 2022-04-08
+  resultat: 810.0
+  unite: kg/t
+CALC-MOD-PLAST-HUILE-CENT-KG-T:
+  description: 'Flux plastiques, scenario standard : huile par tonne a la moyenne ponderee des 10 essais retenus (D-034, D-071)'
+  formule: r * 10
+  entrees:
+    r:
+      calc: CALC-A2-HUILE10-MOY-POND
+  resultat: 730.8
+  unite: kg/t
+CALC-MOD-PLAST-GAZ-KG-T:
+  description: 'Flux plastiques : gaz compte par tonne, 10 % de la masse entrante (D-029), tous scenarios'
+  formule: g * 1000
+  entrees:
+    g:
+      valeur: 0.1
+      unite: fraction
+      source: D-029
+      emplacement: vers
+  resultat: 100.0
+  unite: kg/t
+CALC-MOD-PLAST-CHAR-KG-T:
+  description: 'Flux plastiques, scenarios pessimiste et standard : char (residu solide retire) par tonne, moyenne ponderee des 10 essais (D-071)'
+  formule: r * 10
+  entrees:
+    r:
+      calc: CALC-A2-RESIDU10-MOY-POND
+  resultat: 106.5
+  unite: kg/t
+CALC-MOD-PLAST-CHAR-HAUT-KG-T:
+  description: 'Flux plastiques, scenario optimiste : char limite au complement a une tonne de l''huile haute et du gaz (D-071)'
+  formule: 1000 - h - g
+  entrees:
+    h:
+      calc: CALC-MOD-PLAST-HUILE-HAUT-KG-T
+    g:
+      calc: CALC-MOD-PLAST-GAZ-KG-T
+  resultat: 90.0
+  unite: kg/t
+CALC-MOD-PLAST-GAZ-MJ-T:
+  description: 'Flux plastiques : energie du gaz compte par tonne, au PCI de 37,386 MJ/kg (D-038)'
+  formule: g * p
+  entrees:
+    g:
+      calc: CALC-MOD-PLAST-GAZ-KG-T
+    p:
+      calc: CALC-A2-GAZ-PCI
+  resultat: 3738.6
+  unite: MJ/t
+CALC-MOD-BRULEUR-MJ-J:
+  description: Chaleur du bruleur de surchauffe par jour et par ligne (833 kcal/s en continu)
+  formule: kcal_s * 86400 * kcal_kj / 1000
+  entrees:
+    kcal_s:
+      valeur: 833
+      unite: kcal/s
+      source: UR2000-JP-P08-SPEC
+      emplacement: p. 4
+    kcal_kj:
+      valeur: 4.1868
+      unite: kJ/kcal
+      source: NIST-SP811-B9
+      emplacement: Appendix B.9
+  resultat: 301329.0202
+  unite: MJ/jour
+CALC-MOD-BRULEUR-MJ-T-140:
+  description: Besoin du bruleur par tonne reellement traitee, a 140 t/jour (D-035, D-072)
+  formule: mj / t
+  entrees:
+    mj:
+      calc: CALC-MOD-BRULEUR-MJ-J
+    t:
+      valeur: 140
+      unite: t/jour
+      source: D-035
+      emplacement: vers
+  resultat: 2152.3501
+  unite: MJ/t
+CALC-MOD-PLAST-COUV-BRULEUR-140:
+  description: 'Flux plastiques : energie du gaz compte rapportee au besoin du bruleur a 140 t/jour'
+  formule: g / b
+  entrees:
+    g:
+      calc: CALC-MOD-PLAST-GAZ-MJ-T
+    b:
+      calc: CALC-MOD-BRULEUR-MJ-T-140
+  resultat: 1.737
+  unite: rapport
+CALC-MOD-OMR-COUV-BRULEUR-140:
+  description: 'Flux OMR : energie du gaz d''hydrocarbures rapportee au besoin du bruleur a 140 t/jour'
+  formule: g / b
+  entrees:
+    g:
+      calc: CALC-A5-GAZ-HC-TOT-MJ-T
+    b:
+      calc: CALC-MOD-BRULEUR-MJ-T-140
+  resultat: 0.2063
+  unite: rapport
+CALC-MOD-DAE-COUV-BRULEUR-140:
+  description: 'Flux DAE : energie du gaz des plastiques rapportee au besoin du bruleur a 140 t/jour'
+  formule: g / b
+  entrees:
+    g:
+      calc: CALC-A7-GAZ-PLAST-MJ-T
+    b:
+      calc: CALC-MOD-BRULEUR-MJ-T-140
+  resultat: 0.0868
+  unite: rapport
+CALC-MOD-OMR-NONALLOUE-LIQ-BAS-KG-T:
+  description: 'Flux OMR, scenario pessimiste : part liquide de la masse non allouee, rapport liquide / gaz de D-048 (D-053)'
+  formule: n * l / (l + g)
+  entrees:
+    n:
+      calc: CALC-A5-NONALLOUE-BAS-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 80.9715
+  unite: kg/t
+CALC-MOD-OMR-NONALLOUE-GAZ-BAS-KG-T:
+  description: 'Flux OMR, scenario pessimiste : part gazeuse de la masse non allouee, rapport liquide / gaz de D-048 (D-053)'
+  formule: n * g / (l + g)
+  entrees:
+    n:
+      calc: CALC-A5-NONALLOUE-BAS-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 167.341
+  unite: kg/t
+CALC-MOD-OMR-NONALLOUE-LIQ-HAUT-KG-T:
+  description: 'Flux OMR, scenario optimiste : part liquide de la masse non allouee, rapport liquide / gaz de D-048 (D-053)'
+  formule: n * l / (l + g)
+  entrees:
+    n:
+      calc: CALC-A5-NONALLOUE-HAUT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 51.0596
+  unite: kg/t
+CALC-MOD-OMR-NONALLOUE-GAZ-HAUT-KG-T:
+  description: 'Flux OMR, scenario optimiste : part gazeuse de la masse non allouee, rapport liquide / gaz de D-048 (D-053)'
+  formule: n * g / (l + g)
+  entrees:
+    n:
+      calc: CALC-A5-NONALLOUE-HAUT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 105.5232
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-LIQ-BAS-KG-T:
+  description: 'Flux DAE, scenario pessimiste : part liquide de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * l / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-BAS-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 77.4457
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-GAZ-BAS-KG-T:
+  description: 'Flux DAE, scenario pessimiste : part gazeuse de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * g / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-BAS-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 160.0543
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-LIQ-CENT-KG-T:
+  description: 'Flux DAE, scenario standard : part liquide de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * l / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-CENT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 66.9995
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-GAZ-CENT-KG-T:
+  description: 'Flux DAE, scenario standard : part gazeuse de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * g / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-CENT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 138.4655
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-LIQ-HAUT-KG-T:
+  description: 'Flux DAE, scenario optimiste : part liquide de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * l / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-HAUT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 56.25
+  unite: kg/t
+CALC-MOD-DAE-NONALLOUE-GAZ-HAUT-KG-T:
+  description: 'Flux DAE, scenario optimiste : part gazeuse de la masse non allouee, rapport liquide / gaz de D-048 (D-055)'
+  formule: n * g / (l + g)
+  entrees:
+    n:
+      calc: CALC-A7-NONALLOUE-HAUT-KG-T
+    l:
+      valeur: 22.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 46.5
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  resultat: 116.25
+  unite: kg/t
+CALC-MOD-GAZOLE-MJ-L:
+  description: Energie du gazole par litre, facteur implicite des bilans de Chiba converti en MJ/L
+  formule: f * kcal_kj / 1000
+  entrees:
+    f:
+      calc: CALC-A2-FACTEUR-GAZOLE
+    kcal_kj:
+      valeur: 4.1868
+      unite: kJ/kcal
+      source: NIST-SP811-B9
+      emplacement: Appendix B.9
+  resultat: 38.0496
+  unite: MJ/L
+CALC-MOD-HUILE-PCS-MJ-KG:
+  description: Pouvoir calorifique superieur calcule de l'huile d'emballages de Noda, en MJ/kg (D-021, D-069)
+  formule: j / 1000
+  entrees:
+    j:
+      valeur: 46000
+      unite: J/g
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 45
+  resultat: 46.0
+  unite: MJ/kg

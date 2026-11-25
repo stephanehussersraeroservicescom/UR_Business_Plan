@@ -11,7 +11,7 @@ rdt_huile_plastique:
   note: "Moyenne ponderee du mix polymere. Essais sur plastique pur uniquement : 71,8% et 82,3%."
 
 rdt_gaz_plastique:
-  {justification: AFF-RDT-GAZ, label: "Rendement gaz sur plastique", valeur: 0.193, unite: fraction, statut: extrapolation, preuves: [ICHIMURA-2022]}
+  {justification: AFF-RDT-GAZ, label: "Rendement gaz sur plastique", valeur: 0.10, unite: fraction, statut: decision, preuves: [ICHIMURA-2022], decision: D-066, note: "10 % de la masse de plastique, hypothese de Stephane (D-029). Valeur heritee 0,193."}
 rdt_residu_plastique:
   {justification: AFF-RDT-RES, label: "Rendement residu solide sur plastique", valeur: 0.10325, unite: fraction, statut: extrapolation, preuves: [ICHIMURA-2022]}
 

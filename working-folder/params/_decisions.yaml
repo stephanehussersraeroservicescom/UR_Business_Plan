@@ -912,3 +912,145 @@ D-055:
   preuves:
   - A7-ADEME-TRI-DAE-2025
   a_verifier: Traitement par defaut dans le modele ; essai OneWorld (R-021).
+
+# === MODELE FINANCIER PAR FLUX (chat B, 25/11/2026) ; identifiants reserves D-066 a D-075 ===
+
+D-066:
+  date: 2026-11-25
+  titre: "Modele : application de la partie A de la fiche d'arbitrages du 19/11/2026 (CAPEX, capacite, rendements, PCI, prix, prix d'entree par flux)"
+  de: "valeurs heritees de l'ancien modele (voir colonne 'valeur heritee' de ARBITRAGES-MODELE-2026-11-19.md, partie A)"
+  vers: >
+    machine 50 000 000 EUR (D-050) ; installation 0 et fret 0, transport non compte (D-051) ; pre_tri 5 000 000 EUR par ligne ;
+    une ligne batiment, genie civil, ingenierie et permis de 5 000 000 EUR (D-051), soit environ 60 MEUR cle en main hors
+    transport (CALC-A9-CAPEX-LIGNE) ; charge reacteur 140 t/jour (D-035) ; rdt_gaz_plastique 0,10 (D-029) ; pci_char 32,09
+    et pci_residu_plastique 24,6 MJ/kg (D-038) ; huile en trois fractions 10/80/10 a 636,8, 1 254,24 et 541 EUR/t (D-028,
+    D-030, CALC-A3-HUILE-MOY-REF) ; prix_ferreux 316,4 et prix_alu 1 723 EUR/t (A3H-COMEXT-MENSUEL-2025-2026) ; prix_verre 0
+    et prix_carbone 0 (D-028) ; prix_elec 0,1212 EUR/kWh (PRM-EUROSTAT-NRGPC205-ID-2025) ; prix_fioul 1,3405 EUR/L hors
+    taxes (A3-DGEC-NPG-2026-10-09-PRIX-FRANCE) ; prix d'entree par flux selon D-041 et D-042 ; trois scenarios (D-047)
+  unite: "voir chaque parametre"
+  motif: >
+    Decision de Stephane du 25/11/2026 (chat B, message de lancement du modele financier) : « Partie A de la fiche
+    d'arbitrages : appliquer (D-050, D-051 : 50 MEUR la machine, 5 MEUR de pre-traitement par ligne, 5 MEUR terrain,
+    batiment, genie civil, ingenierie et permis, environ 60 MEUR cle en main hors transport ; 140 t/j ; prix de
+    l'annexe 3) ». Les anciennes lignes de surfaces, VRD et ingenierie restent dans capex.yaml pour l'ancien moteur ;
+    le modele par flux ne les lit pas (remplacees par batiment_gc_ingenierie_permis). Les prix gardent leur base et leur
+    date (D-030) et restent modifiables sur la page web.
+  preuves: [A3H-COMEXT-MENSUEL-2025-2026, PRM-EUROSTAT-NRGPC205-ID-2025, A3-DGEC-NPG-2026-10-09-PRIX-FRANCE, A3F-INSEE-NAPHTA-NWE-010002082, A3-DGEC-NPG-2026-10-09-COTATIONS, RP2-061, RP-060, A8-MENA-PRIXREPRISE-2025, A8-PRO-NOTE-SOUTIENS-EPRO-2026, A8-MENB-DGPR-COUTSREF-2026]
+
+D-067:
+  date: 2026-11-25
+  titre: "Modele : facteur de qualite de l'huile 0,80 du prix de reference par defaut, modifiable (B1)"
+  de: "aucun facteur ; prix craqueur 641 EUR/t sans source"
+  vers: "huile vendue a 80 % du prix de reference pondere des trois fractions ; champ modifiable sur la page web"
+  unite: "fraction"
+  motif: >
+    Decision de Stephane du 25/11/2026 (chat B) : « B1 : huile vendue a 80 % du prix de reference par defaut,
+    modifiable ». HYPOTHESE de Stephane, appuyee sur le precedent Sapporo (80 a 90 % du prix du fioul,
+    A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS) ; l'huile d'OMR est hors specification (A3-ARRETE-SSD-HUILE-PYROLYSE-2024).
+  preuves: [A3F-SAPPORO-SPR-2009-PRIX-FRACTIONS]
+  a_verifier: "Devis d'un acheteur par type d'huile (plastique seul, OMR, DAE)."
+
+D-068:
+  date: 2026-11-25
+  titre: "Modele : char a 0 EUR/t par defaut, champ modifiable sur le site (B2)"
+  de: "100 EUR/t (hypothese heritee, V3-MODEL)"
+  vers: "0 EUR/t par defaut ; bornes -50 (redevance) a 123 EUR/t (parite petcoke, CALC-A3-CHAR-PARITE-PETCOKE)"
+  unite: "EUR/t"
+  motif: >
+    Decision de Stephane du 25/11/2026 (chat B) : « B2 : char a 0 EUR/t par defaut, champ modifiable sur le site ».
+    Aucun acheteur de char identifie (annexe 3).
+  preuves: [A3G-COMEXT-PETCOKE-NC27131100-FR]
+
+D-069:
+  date: 2026-11-25
+  titre: "Modele : chaleur manquante sur OMR et DAE couverte en brulant l'huile par defaut ; options char et gazole achete ; gaz organique non compte par defaut (B3)"
+  de: "chaleur manquante achetee en combustible (proposition B3 du 19/11/2026)"
+  vers: >
+    par defaut, le deficit de chaleur (besoin du bruleur moins gaz d'hydrocarbures) est couvert par l'huile produite,
+    qui n'est alors pas vendue ; options : « char (si foyer solide ajoute) » et « gazole achete » ; le gaz des matieres
+    organiques (textiles et masse non allouee, D-053, D-055) n'est pas compte par defaut, une option le compte au PCI de
+    pci_gaz_organique (D-002)
+  unite: "regle de modele"
+  motif: >
+    Proposition de Claude du 25/11/2026 (chat B), validee par Stephane le 25/11/2026 a 16 h 22 : « B3, OK ».
+    Si l'huile ne suffit pas, le reste est achete en gazole. L'huile est comptee a 46 MJ/kg (PCS calcule JLOS,
+    CHIBA-JLOS-HUILES, D-021) : c'est un pouvoir calorifique superieur, la quantite d'huile brulee est donc un peu
+    sous-estimee. Le rendement du bruleur n'est pas applique, comme dans les annexes 2 et 5.
+  preuves: [CHIBA-JLOS-HUILES]
+  a_verifier: "PCI de l'huile ; foyer solide pour le char (OneWorld)."
+
+D-070:
+  date: 2026-11-25
+  titre: "Modele : un modele par flux et par scenario, qui lit les bilans par tonne dans calculs.yaml ; confiance et statut affiches"
+  de: "un seul dechet moyen recalcule a partir de composition.yaml (ancien moteur)"
+  vers: >
+    flux plastiques (annexe 8, bilan des essais de l'annexe 2), OMR (annexe 5), DAE (annexe 7), CDG plus tard ; trois
+    scenarios (D-047) ; chaque produit par tonne est lu dans calculs.yaml (table engine/flux_bilans.yaml) ; chaque valeur
+    affiche sa source, sa confiance sur l'echelle D-022 et son statut (« controle, non contre-verifie » ou « contre-verifie
+    Codex ») ; les valeurs non encore tranchees (points B4 a B21) restent les valeurs heritees, affichees « en attente »
+  unite: "regle de modele"
+  motif: >
+    Decision de Stephane du 25/11/2026 (chat B, mission) : « Un modele par flux [...] et par scenario [...], qui lit les
+    bilans par tonne dans calculs.yaml plutot que de les recalculer » ; « Pour chaque parametre : valeur, source [...] et
+    niveau de confiance affiche (echelle D-022 : 100, 95, 90, 80 %), plus un statut ». Le statut « contre-verifie Codex »
+    est attribue quand l'identifiant figure dans un rapport 2026-11-25-codex-* de controle-sources/verifications/.
+    Le modele n'est pas presentable a un investisseur avant validation des briques (fiche du 19/11/2026, point 1).
+  preuves: []
+
+D-071:
+  date: 2026-11-25
+  titre: "Modele, flux plastiques : bilan par tonne et par scenario tire des 10 essais de Chiba"
+  de: "aucun bilan par tonne du flux plastiques"
+  vers: >
+    huile 550 / 730,8 / 810 kg/t (plus bas, moyenne ponderee, plus haut des 10 essais retenus) ; gaz 100 kg/t (D-029) ;
+    char 106,5 kg/t (moyenne ponderee des residus) en pessimiste et en standard ; en optimiste, char limite au complement
+    a 1 000 kg (90 kg/t), sinon la somme depasse une tonne ; le reste (gaz par difference au-dela de 10 %) n'est pas compte
+  unite: "kg par tonne de plastique entrant"
+  motif: >
+    HYPOTHESE posee par Claude le 25/11/2026 (chat B), a trancher par Stephane. Calculs CALC-MOD-PLAST-*. Les essais sont
+    des lots sur plastiques propres (annexe 2) ; la machine continue n'a pas de garantie de performance (annexe 1). Le
+    cumul 810 + 100 + 106,5 = 1 016,5 kg/t etant impossible, le char optimiste est reduit, sur le modele de D-054. Autre
+    choix possible : garder le residu propre a chaque essai (PP granules 2,5 %, PS chutes 38 %).
+  preuves: [CHIBA-ESSAIS-FICHES]
+  a_verifier: "Choix pour le scenario optimiste ; essai continu OneWorld (R-021)."
+
+D-072:
+  date: 2026-11-25
+  titre: "Modele : besoin du bruleur pris par jour (833 kcal/s en continu), rapporte a la charge reelle de 140 t/jour"
+  de: "1 507 MJ/t, soit le bruleur rapporte a 200 t/jour (CALC-A2-BRULEUR-MJ-T, proposition B6)"
+  vers: "301 330 MJ/jour par ligne, soit 2 152 MJ/t a 140 t/jour (CALC-MOD-BRULEUR-MJ-T-140)"
+  unite: "MJ/t"
+  motif: >
+    HYPOTHESE posee par Claude le 25/11/2026 (chat B), a trancher par Stephane avec le point B6. Le bruleur fonctionne en
+    continu (UR2000-JP-P08-SPEC p. 4) ; depuis D-035, la ligne traite 140 t/jour et non 200. Rapporte a la tonne reellement
+    traitee, le besoin passe de 1 507 a 2 152 MJ/t (+43 %). Les couvertures de l'annexe 5 (CALC-A5-COUV-GAZHC-BRULEUR) et de
+    l'annexe 7 sont calculees sur 1 507 MJ/t et seraient donc optimistes.
+  preuves: [UR2000-JP-P08-SPEC]
+  a_verifier: "Puissance du bruleur a charge reduite (OneWorld)."
+
+D-073:
+  date: 2026-11-25
+  titre: "Modele : points B4 a B17, B20 et B21 de la fiche d'arbitrages tranches par Stephane"
+  de: "valeurs heritees de l'ancien modele (fiche ARBITRAGES-MODELE-2026-11-19.md, partie B)"
+  vers: >
+    B4 scenario standard par defaut, char 30 % (D-044, D-045, D-048, D-049, D-054 confirmees pour le modele) ;
+    B5 electricite 600 kW, soit 14 400 kWh/jour par ligne ; B6 besoin de chaleur du bruleur OneWorld (voir D-072 pour la
+    base de 140 t/jour) ; B7 ATEX, post-tri et decanteur compris dans les 5 + 5 MEUR, sans ligne propre (0) ; B8 aleas 5 %
+    du CAPEX ; B9 montee en charge 70 % l'annee 1 et 85 % l'annee 2 ; B10 330 jours par an ; B11 20 ETP par defaut ;
+    B12 maintenance 1 % les annees 1 a 4, puis 4 % (D-007) ; B13 assurance 1 % du CAPEX ; B14 deux structures affichees :
+    100 % fonds propres, et 60 % de dette a 7 % sur 10 ans (taux a sourcer) ; B15 TGAP payee par l'usine : interrupteur
+    ACTIVE par defaut, 16 EUR/t (CIBS-TGAP-2026, incineration performante 2026) ; B16 hydrogene non compte, option a
+    2 EUR/kg et recuperation 0,8 (flux plastiques seul) ; B17 horizon et amortissement 15 ans ; B20 revenu des metaux des
+    OMR et DAE a 0 par defaut, option modifiable par l'utilisateur ; B21 pieces de rechange et formation a 0 par defaut,
+    a valider par l'utilisateur (champ modifiable)
+  unite: "voir chaque parametre"
+  motif: >
+    Decision de Stephane du 25/11/2026 a 16 h 24 (chat B) : « OK, donc B4 avec B17, B8 mais 5 du CAPEX, B9 70 et 85, B15
+    laisse l'interrupteur active [...] B20, je suis d'accord, mets-le a 0 par defaut, mais laisse-le valide pour un
+    changement. B21, pareil, 0 par defaut et a valider par l'utilisateur. » Les propositions de Claude (B5 a B7, B10 a B14,
+    B16, B17) sont acceptees telles quelles. HYPOTHESES de Stephane, sans source lue, sauf B12 (D-007), B15
+    (CIBS-TGAP-2026) et B16 (A3J-ACER-H2-MARKETS-2025). B14 : le taux de 7 % reste a sourcer ; la recuperation PSA de 0,8 est
+    une hypothese (A3J-MDPI-ENERGIES-2025-PSA, source secondaire). B18 (prix d'entree des DAE) et B19 (cout du liquide a
+    eliminer) restent ouverts.
+  preuves: [CIBS-TGAP-2026, A3J-ACER-H2-MARKETS-2025]
+  a_verifier: "Taux d'interet (B14) ; effectif avec OneWorld (B11) ; cotation d'assurance (R-007)."

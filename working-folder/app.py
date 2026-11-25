@@ -819,6 +819,10 @@ refreshVersions();
 </html>"""
 
 
+# --- Modele financier par flux (chat B, 25/11/2026) : routes /model uniquement ---
+from engine.web_flux import bp as modele_flux_bp  # noqa: E402
+app.register_blueprint(modele_flux_bp)
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5050))
     app.run(host="0.0.0.0", port=port, debug=False)

@@ -1,0 +1,154 @@
+# ---------------------------------------------------------------------------
+# BILANS PAR TONNE DU MODELE PAR FLUX (decision D-070, 25/11/2026)
+# Ce fichier ne contient AUCUN chiffre de bilan : il dit seulement, pour chaque
+# flux et chaque scenario (D-047), quel calcul de controle-sources/calculs.yaml
+# donne chaque produit, en kg par tonne entrante. Le moteur lit la valeur dans
+# calculs.yaml (champ resultat). Un produit absent = non quantifie (affiche).
+#
+# Produits :
+#   huile            huile d'hydrocarbures vendable (ou brulee, D-069)
+#   gaz_hc           gaz d'hydrocarbures, compte pour la chaleur (PCI CALC-A2-GAZ-PCI)
+#   char             char (ou residu solide des plastiques)
+#   liquide          liquide oxygene des papiers et textiles, a traiter (D-048, D-053)
+#   gaz_org          gaz des matieres organiques (compte seulement en option, D-069)
+#   eau              eau contenue dans le dechet, a traiter
+#   inertes          matieres non converties, a eliminer
+#   metaux           metaux contenus (revenu en option seulement, D-073 B20)
+#   non_alloue_liq   part liquide de la masse non allouee (D-053, D-055)
+#   non_alloue_gaz   part gazeuse de la masse non allouee (option gaz organique)
+#   fines            elements fins non attribues (affiches, sans produit ni cout)
+#   non_alloue       masse non allouee totale (affichee)
+# ---------------------------------------------------------------------------
+
+_communs:
+  pci_gaz_hc: CALC-A2-GAZ-PCI                 # MJ/kg
+  bruleur_mj_jour: CALC-MOD-BRULEUR-MJ-J      # MJ par jour et par ligne (D-072)
+  pci_huile: CALC-MOD-HUILE-PCS-MJ-KG         # MJ/kg (PCS, D-069)
+  pci_gazole: CALC-MOD-GAZOLE-MJ-L            # MJ/L
+  h2_part_masse: CALC-A3-H2-PART-MASSE        # % de la masse du gaz
+  h2_part_energie: CALC-A3-H2-PART-ENERGIE    # % de l'energie du gaz
+
+plastiques:
+  label: "Dechets plastiques"
+  annexe: "Annexe 8 (gisements) ; bilan des 10 essais de Chiba, annexe 2 (D-071)"
+  ordre: 1
+  bilan_energie: "boucle : le gaz couvre le bruleur (CALC-MOD-PLAST-COUV-BRULEUR-140)"
+  pci_char_param: pci_residu_plastique
+  hydrogene_possible: true
+  prix_entree:
+    defaut: prix_entree_balles_plastique
+    choix: [prix_entree_balles_plastique, prix_entree_pse_blanc, prix_entree_films_ps,
+            prix_entree_refus_pro, prix_entree_refus_menagers, prix_entree_plastiques_autres]
+  scenarios:
+    pessimiste:
+      huile: CALC-MOD-PLAST-HUILE-BAS-KG-T
+      gaz_hc: CALC-MOD-PLAST-GAZ-KG-T
+      char: CALC-MOD-PLAST-CHAR-KG-T
+    standard:
+      huile: CALC-MOD-PLAST-HUILE-CENT-KG-T
+      gaz_hc: CALC-MOD-PLAST-GAZ-KG-T
+      char: CALC-MOD-PLAST-CHAR-KG-T
+    optimiste:
+      huile: CALC-MOD-PLAST-HUILE-HAUT-KG-T
+      gaz_hc: CALC-MOD-PLAST-GAZ-KG-T
+      char: CALC-MOD-PLAST-CHAR-HAUT-KG-T
+
+omr:
+  label: "Ordures menageres residuelles (OMR)"
+  annexe: "Annexe 5 (D-043 a D-048, D-053)"
+  ordre: 2
+  bilan_energie: "non boucle : le gaz d'hydrocarbures ne couvre pas le bruleur (CALC-MOD-OMR-COUV-BRULEUR-140)"
+  pci_char_param: pci_char
+  hydrogene_possible: false
+  prix_entree:
+    defaut: prix_entree_omr
+    choix: [prix_entree_omr]
+  communs_scenarios:
+    gaz_hc: CALC-A5-GAZ-HC-TOT-KG-T
+    eau: CALC-A5-EAU-KG-T
+    inertes: CALC-A5-SEC-INERTE-KG-T
+    metaux: {calc: CALC-A5-CAT10-PCT, facteur: 10}   # % de la masse -> kg/t
+  scenarios:
+    pessimiste:
+      huile: CALC-A5-HUILE-TOT-BAS-KG-T
+      char: CALC-A5-CHAR2-BAS-KG-T
+      liquide: CALC-A5-LIQ-ST-BAS-KG-T
+      gaz_org: CALC-A5-GAZ-ST-BAS-KG-T
+      non_alloue: CALC-A5-NONALLOUE-BAS-KG-T
+      non_alloue_liq: CALC-MOD-OMR-NONALLOUE-LIQ-BAS-KG-T
+      non_alloue_gaz: CALC-MOD-OMR-NONALLOUE-GAZ-BAS-KG-T
+    standard:
+      huile: CALC-A5-HUILE-TOT-CENT-KG-T
+      char: CALC-A5-CHAR2-CENT-KG-T
+      liquide: CALC-A5-LIQ-ST-CENT-KG-T
+      gaz_org: CALC-A5-GAZ-ST-CENT-KG-T
+      non_alloue: CALC-A5-NONALLOUE-CENT-KG-T
+      non_alloue_liq: CALC-A5-NONALLOUE-LIQ-CENT-KG-T
+      non_alloue_gaz: CALC-A5-NONALLOUE-GAZ-CENT-KG-T
+    optimiste:
+      huile: CALC-A5-HUILE-TOT-HAUT-KG-T
+      char: CALC-A5-CHAR2-HAUT-KG-T
+      liquide: CALC-A5-LIQ-ST-HAUT-KG-T
+      gaz_org: CALC-A5-GAZ-ST-HAUT-KG-T
+      non_alloue: CALC-A5-NONALLOUE-HAUT-KG-T
+      non_alloue_liq: CALC-MOD-OMR-NONALLOUE-LIQ-HAUT-KG-T
+      non_alloue_gaz: CALC-MOD-OMR-NONALLOUE-GAZ-HAUT-KG-T
+
+dae:
+  label: "Dechets d'activites economiques en melange (DAE)"
+  annexe: "Annexe 7 (D-049, D-054, D-055)"
+  ordre: 3
+  bilan_energie: "non boucle : humidite et PCI inconnus (R-048) ; gaz des plastiques tres en dessous du bruleur (CALC-MOD-DAE-COUV-BRULEUR-140)"
+  pci_char_param: pci_char
+  hydrogene_possible: false
+  prix_entree:
+    defaut: prix_entree_dae
+    choix: [prix_entree_dae]
+  communs_scenarios:
+    gaz_hc: CALC-A7-GAZ-PLAST-KG-T
+    inertes: CALC-A7-NONCONV-KG-T
+    fines: CALC-A7-FINES-KG-T
+  scenarios:
+    pessimiste:
+      huile: CALC-A7-HUILE-BAS-KG-T
+      char: CALC-A7-CHAR-BAS-KG-T
+      liquide: CALC-A7-LIQ-BAS-KG-T
+      gaz_org: CALC-A7-GAZ-ST-BAS-KG-T
+      non_alloue: CALC-A7-NONALLOUE-BAS-KG-T
+      non_alloue_liq: CALC-MOD-DAE-NONALLOUE-LIQ-BAS-KG-T
+      non_alloue_gaz: CALC-MOD-DAE-NONALLOUE-GAZ-BAS-KG-T
+    standard:
+      huile: CALC-A7-HUILE-CENT-KG-T
+      char: CALC-A7-CHAR-CENT-KG-T
+      liquide: CALC-A7-LIQ-CENT-KG-T
+      gaz_org: CALC-A7-GAZ-ST-CENT-KG-T
+      non_alloue: CALC-A7-NONALLOUE-CENT-KG-T
+      non_alloue_liq: CALC-MOD-DAE-NONALLOUE-LIQ-CENT-KG-T
+      non_alloue_gaz: CALC-MOD-DAE-NONALLOUE-GAZ-CENT-KG-T
+    optimiste:
+      huile: CALC-A7-HUILE-HAUT-KG-T
+      char: CALC-A7-CHAR-HAUT-V2-KG-T
+      liquide: CALC-A7-LIQ-HAUT-KG-T
+      gaz_org: CALC-A7-GAZ-ST-HAUT-KG-T
+      non_alloue: CALC-A7-NONALLOUE-HAUT-KG-T
+      non_alloue_liq: CALC-MOD-DAE-NONALLOUE-LIQ-HAUT-KG-T
+      non_alloue_gaz: CALC-MOD-DAE-NONALLOUE-GAZ-HAUT-KG-T
+
+cdg:
+  label: "Aeroport CDG (annexe 6, mise de cote)"
+  annexe: "Annexe 6, a faire"
+  ordre: 4
+  inactif: true
+
+# ---------------------------------------------------------------------------
+# VALEURS EN ATTENTE DE DECISION (pas dans params/ : regle D-070)
+# Utilisees par defaut, affichees « en attente », modifiables sur la page.
+# ---------------------------------------------------------------------------
+en_attente:
+  prix_entree_dae:
+    label: "Prix d'entree, DAE en melange"
+    valeur: 100
+    unite: "EUR/T"
+    point: B18
+    note: "Proposition de Claude (25/11/2026), alignee sur les OMR (D-039). Reference lue : refus de tri payes environ 200 EUR/t TGAP comprise (A7-ADEME-TRI-DAE-2025)."
+    preuves: [A7-ADEME-TRI-DAE-2025]
