@@ -6658,3 +6658,25 @@ CALC-A4-DELAI-MIN-MOIS:
     d: {valeur: 2, unite: mois, source: A4-DRIEAT-AENV-2024, emplacement: "phase de decision"}
   unite: "mois"
   resultat: 5.6904
+
+# === ANNEXE 4, corrections apres Codex (25/11/2026) ===
+
+CALC-A4-PART-OMR-IDF:
+  description: "Part des ordures menageres residuelles franciliennes de 2022 que traiterait une URC-2000 a 140 t/jour sur 365 jours"
+  formule: "a / b * 100"
+  entrees:
+    a:
+      calc: CALC-A8-CAPACITE-AN
+    b: {valeur: 3320000, unite: t, source: ORDIF-DMA-2022, emplacement: "p. 19 (3,32 Mt d'OMR)"}
+  unite: "%"
+  resultat: 1.5392
+
+CALC-A4-PART-ENFOUI-IDF:
+  description: "Part des dechets enfouis en Ile-de-France en 2022 que traiterait une URC-2000 a 140 t/jour sur 365 jours"
+  formule: "a / b * 100"
+  entrees:
+    a:
+      calc: CALC-A8-CAPACITE-AN
+    b: {valeur: 2228079, unite: t, source: A8-CST-ORDIF-ISDND-2023, emplacement: "p. 5"}
+  unite: "%"
+  resultat: 2.2934

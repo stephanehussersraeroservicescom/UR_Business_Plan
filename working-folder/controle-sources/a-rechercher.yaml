@@ -481,6 +481,7 @@ R-050:
   detenteur: "DRIEAT Ile-de-France (inspection des installations classees), DGPR ; douanes pour la TGAP"
   cherche: "Brochure de la nomenclature v58 (2026), note DGPR de 2022 sur les rubriques dechets, directive IED article 3 ; aucune decision publiee sur une unite de pyrolyse comparable en Ile-de-France n'a ete lue."
   sources: [A4-AIDA-NOMENCLATURE-V58-2026, A4-DGPR-NOTE-DECHETS-2022, IED-2010-75-ART3-42]
+  complement_2026_11_25: "Apres contre-verification Codex (annexe 4, lots 2, 3 et 5) : (1) test de l'article 42 de la directive IED tel que modifie en 2024 (gaz ou liquides traites avant incineration, emissions comparees au combustible le moins polluant) et sa transposition francaise ; (2) rubrique de chaque operation de pre-traitement (3532, 2791 ou autre), la 2791 excluant les installations classees en 2771 ; (3) TGAP : la reception en installation autorisee au titre du traitement thermique est taxee (L. 433-74), mais des exemptions existent (co-incineration, combustible destine a cesser d'etre un dechet ou a la co-incineration, hydrocarbures traites sans combustion, L. 433-78 et L. 433-80) ; (4) voie de l'article L. 541-4-3, I ter pour l'huile ; (5) specifications d'admission des intrants. Detenteur : DRIEAT, DGPR, douanes ; livrable : position ecrite de l'inspection et rescrit fiscal."
 
 R-051:
   question: "Annexe 4, contexte France : exploitants des 18 UIDND et 7 ISDND franciliennes ; projets de pyrolyse de dechets en melange (OMR, DAE) en France ; aides publiques applicables a une unite de pyrolyse (Fonds Chaleur, France 2030, fonds economie circulaire ADEME) ; acceptabilite locale des unites de traitement en Ile-de-France"
@@ -490,3 +491,4 @@ R-051:
   detenteur: "ORDIF, ADEME, Region Ile-de-France ; recherche documentaire"
   cherche: "Notices ORDIF UIDND et ISDND 2022-2023 (pas d'exploitants nommes dans les extraits lus) ; communique TotalEnergies Grandpuits ; presse Carbios ; conditions ADEME centres de tri 2022 ; article AMORCE sur les aides CSR. Aucune source lue sur les autres aides ni sur l'acceptabilite."
   sources: [A8-CST-ORDIF-UIDND-2023, A8-CST-ORDIF-ISDND-2023, TOTAL-GRANDPUITS-2026, PRM-ADEME-CDT-CONDITIONS-2022, A8-CST-AMORCE-CSR-2023]
+  complement_2026_11_25: "Apres contre-verification Codex (annexe 4, lots 4 et 5) : contrats amont (lettres d'intention de fournisseurs de dechets totalisant au moins 51 100 t/an, avec analyses de composition) et aval (acheteurs de l'huile et du char) ; date de demarrage actualisee de Carbios Longlaville."

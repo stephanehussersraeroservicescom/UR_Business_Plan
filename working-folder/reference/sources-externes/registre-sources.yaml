@@ -4994,7 +4994,7 @@ PRM-ADEME-CDT-CONDITIONS-2022:
   titre: "Centres de tri et de preparation des dechets : conditions d'eligibilite et de financement 2022"
   editeur: "ADEME"
   date: "2022"
-  type: reglementaire
+  type: diffusion_administrative
   url: "https://agir.ademe.fr/sites/default/files/Investissement%20Centres%20Tri%20Emballages%20-%20Conditions%20d%27%C3%A9ligibilit%C3%A9%20et%20de%20financement%20-%202022.pdf"
   emplacement: "Section 3 Depenses eligibles / Calcul de l'aide, p. 3"
   contenu: "Depenses eligibles : batiments et process dont VRD ; exclus : equipements d'obligation reglementaire (sprinklage, bassins) et etudes de depollution ; aide 10 % max, plafond 1,1 M EUR (1,5 M EUR avec bonus). Aucun ratio de cout."
@@ -12697,13 +12697,14 @@ A4-AIDA-NOMENCLATURE-V58-2026:
   editeur: "Ministere de la transition ecologique (DGPR), diffusee par l'INERIS (AIDA)"
   date: 2026-06-26
   annee_donnees: 2026
-  type: reglementaire
+  type: diffusion_administrative
   url: https://aida.ineris.fr/sites/default/files/2026-07/BrochureNom_v58.pdf
   emplacement: "p. 33 (rubriques 2771 et 2791), p. 38 (3520), p. 39 (3531, 3532)"
-  contenu: "2771 : installation de traitement thermique de dechets non dangereux (hors 2971 et hors installations de combustion ne brulant que de la biomasse au sens de 2910) : regime A (autorisation), rayon 2. 2791 : traitement de dechets non dangereux, 10 t/j ou plus : A, rayon 2 ; moins de 10 t/j : DC. 3520 : elimination ou valorisation de dechets dans des installations d'incineration ou de coincineration ; a) dechets non dangereux, capacite superieure a 3 tonnes par heure : A, rayon 3. 3532 : valorisation de dechets non dangereux non inertes de plus de 75 tonnes par jour, dont pretraitement des dechets destines a l'incineration ou a la coincineration : A, rayon 3. La colonne Rayon ne porte pas d'unite dans la brochure."
+  contenu: "2771 : installation de traitement thermique de dechets non dangereux (hors 2971 et hors installations de combustion ne brulant que de la biomasse au sens de 2910) : regime A (autorisation), rayon 2. 2791 : traitement de dechets non dangereux, 10 t/j ou plus : A, rayon 2 ; moins de 10 t/j : DC. 3520 : elimination ou valorisation de dechets dans des installations d'incineration ou de coincineration ; a) dechets non dangereux, capacite superieure a 3 tonnes par heure : A, rayon 3. 3532 : valorisation de dechets non dangereux non inertes de plus de 75 tonnes par jour, dont pretraitement des dechets destines a l'incineration ou a la coincineration : A, rayon 3. La colonne Rayon ne porte pas d'unite dans la brochure. 2791 exclut les installations classees au titre des rubriques 2515, 2711, 2713, 2714, 2716, 2720, 2760, 2771, 2780, 2781, 2782, 2783, 2794, 2795 et 2971 (complement lu le 25/11/2026 par WebFetch)."
   citation: "2771 Installation de traitement thermique de déchets non dangereux, à l’exclusion des installations visées à la rubrique 2971 | a) Pour les déchets non dangereux avec une capacité supérieure à 3 tonnes par heure | 3532 Valorisation ou un mélange de valorisation et d’élimination, de déchets non dangereux non inertes avec une capacité supérieure à 75 tonnes par jour"
   statut: verifie-recontrole
   consulte: '2026-11-19'
+  nature_source: "diffusion administrative (le texte juridique est l'annexe de l'article R. 511-9 publiee au Journal officiel)"
   note: "Document de diffusion ; seule la publication au Journal officiel (annexe de l'article R. 511-9 du code de l'environnement) a valeur juridique. PDF lu par Claude dans le navigateur de Stephane le 19/11/2026."
   recontrole_a4: "Recontrole independant par un sous-agent (WebFetch), 19/11/2026 : citations et regimes conformes p. 33, 38 et 39. Reserves : exclusion biomasse 2910 ajoutee ; le rayon '2' de 2791 semble aligne sur l'alinea 1 (>= 10 t/j), mise en page a confirmer ; unite du rayon non imprimee."
 A4-DGPR-NOTE-DECHETS-2022:
@@ -12748,3 +12749,34 @@ A4-CENV-L541-1-2021:
   consulte: '2026-11-19'
   note: "Lu par Claude dans le navigateur de Stephane (Legifrance) le 19/11/2026. Modifie notamment par la loi n. 2020-105 du 10/02/2020 (AGEC) et la loi n. 2021-1104 du 22/08/2021."
   recontrole_a4: "Recontrole independant par un sous-agent, 19/11/2026, sur la copie consolidee AIDA/INERIS (Legifrance inaccessible au sous-agent) : 4°, 4° bis, 7°, 7° bis et 9° conformes ; dernier modificateur liste : loi n. 2021-1104 du 22/08/2021. Lecture primaire de Claude sur Legifrance."
+
+# === ANNEXE 4, corrections apres contre-verification Codex (25/11/2026) ===
+
+A4-CIBS-L433-74-89-2026:
+  titre: "Code des impositions sur les biens et services, articles L. 433-73 a L. 433-90 (taxe sur les dechets incineres), dans la loi n. 2026-103 du 19/02/2026 de finances pour 2026"
+  editeur: "Journal officiel de la Republique francaise, 20/02/2026, texte 1 sur 131"
+  date: 2026-02-20
+  annee_donnees: 2026
+  type: reglementaire
+  url: https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155
+  fichier: pdf/joe_20260220_0043_0001.pdf
+  emplacement: "PDF p. 59 (articles L. 433-74 a L. 433-81) et p. 61 (articles L. 433-89 et L. 433-90)"
+  contenu: "L. 433-74 : est taxee la reception de dechets en vue de leur traitement thermique dans une installation classee autorisee au titre du traitement thermique de dechets. L. 433-77 : exemption de l'installation incinerant exclusivement ses propres dechets. L. 433-78 : exemption, pour les dechets non dangereux, de l'installation classee autorisee au titre de la co-incineration. L. 433-80 : exemption du dechet destine a une valorisation matiere, ou a une transformation en un combustible destine a cesser d'etre un dechet (L. 541-4-3) ou a etre utilise dans une installation autorisee au titre de la co-incineration ; pour les hydrocarbures, exemption du traitement thermique sans combustion. L. 433-89 : le tarif des residus de tri performant (8 EUR/t en 2026, L. 433-90) suppose une installation de performance au moins egale a 70 % et un residu d'une operation de tri de dechets collectes separement, visant la valorisation matiere et repondant a des criteres de performance fixes par arrete."
+  citation: "La réception de déchets en vue de leur traitement thermique dans une installation classée autorisée au titre du traitement thermique de déchets | Est exemptée, pour les déchets non dangereux, l'installation classée autorisée au titre de la co-incinération | Une transformation en un combustible qui est destiné : | a) A cesser d'être un déchet en application de l'article L. 541-4-3 du code de l'environnement ; | b) A l'utilisation dans une installation classée autorisée au titre de la co-incinération ; | Pour les hydrocarbures, un traitement thermique dans le cadre duquel n'intervient aucune combustion | Il s'agit du résidu d'une opération de tri de déchets ayant fait l'objet d'une collecte séparée"
+  statut: lu
+  consulte: '2026-11-25'
+  note: "Lu par Claude dans la copie locale du JORF (pdftotext) le 25/11/2026, a la suite du lot 3 de Codex (annexe 4). L'application de ces exemptions a une unite de pyrolyse n'est pas etablie (R-050)."
+
+A4-IED-2024-1785-ART42:
+  titre: "Directive (UE) 2024/1785 du 24 avril 2024 modifiant la directive 2010/75/UE (emissions industrielles), article 1er, point 35 (article 42, paragraphe 1, second alinea)"
+  editeur: "EUR-Lex, Journal officiel de l'Union europeenne"
+  date: 2024-04-24
+  annee_donnees: 2024
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L1785
+  emplacement: "article 1er, point (35)"
+  contenu: "Le chapitre IV (incineration) ne s'applique pas aux installations de gazeification ou de pyrolyse si les gaz ou liquides issus du traitement thermique des dechets sont traites avant leur incineration de sorte que : (a) l'incineration emet moins que la combustion des combustibles les moins polluants disponibles sur le marche qui pourraient etre brules dans l'installation ; (b) pour les emissions autres que NOx, SOx et poussieres, elle n'emet pas plus que l'incineration ou la co-incineration de dechets. Directive (UE) 2024/1785, article 1er, point 35, en 2024. Remplace la redaction de 2010 (gaz purifies au point de ne plus etre des dechets, emissions pas superieures au gaz naturel). Transposition en droit francais non verifiee."
+  citation: "This Chapter shall not apply to gasification or pyrolysis plants, if the gases or liquids resulting from such thermal treatment of waste are treated prior to their incineration to such an extent that: | the incineration causes emissions lower than the combustion of the least polluting fuels available on the market that could be combusted in the installation"
+  statut: lu
+  consulte: '2026-11-25'
+  note: "Lu par Claude dans le navigateur de Stephane (EUR-Lex, texte du JO) le 25/11/2026, a la suite du lot 2 de Codex (annexe 4)."

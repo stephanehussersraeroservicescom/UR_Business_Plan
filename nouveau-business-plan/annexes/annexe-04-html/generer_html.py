@@ -41,9 +41,9 @@ MD = open(os.path.join(ANNEXES, 'ANNEX-04-France.md'), encoding='utf-8').read()
 
 GROUPS = [('M', 'OneWorld design data'), ('R', 'Legislation, regulations and standards'),
           ('P', 'Prices and official statistics'), ('L', 'Industry, literature and other sources'), ('C', 'Calculations')]
-TYPE_GROUP = {'reglementaire': 'R', 'norme': 'R', 'statistique_publique': 'P', 'indice_marche': 'P',
+TYPE_GROUP = {'reglementaire': 'R', 'diffusion_administrative': 'R', 'norme': 'R', 'statistique_publique': 'P', 'indice_marche': 'P',
               'observatoire': 'P', 'donnees_ouvertes': 'P'}
-TYPE_EN = {'reglementaire': 'Legislation or regulation', 'norme': 'Standard', 'statistique_publique': 'Official statistics',
+TYPE_EN = {'reglementaire': 'Legislation or regulation', 'diffusion_administrative': 'Administrative publication (not the legal text itself)', 'norme': 'Standard', 'statistique_publique': 'Official statistics',
            'indice_marche': 'Market index (commercial source)', 'observatoire': 'Observatory (eco-organisation)',
            'donnees_ouvertes': 'Open data', 'etude_publique': 'Institutional or peer-reviewed study',
            'federation': 'Industry federation', 'entreprise': 'Company document (commercial source)',
@@ -66,6 +66,8 @@ def classify(i):
     lab = 'VÉRIFIÉ' if st == 'verifie-recontrole' else 'LU'
     if t == 'presse':
         return g, 90, nature, lab
+    if t == 'diffusion_administrative':
+        return g, 95, nature, lab
     if g in ('R',) or t in ('statistique_publique', 'donnees_ouvertes', 'observatoire'):
         return g, 100, nature, lab
     return g, 95, nature, lab
