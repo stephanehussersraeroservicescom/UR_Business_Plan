@@ -14,6 +14,8 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 
 **Reading of the sources.** Most documents were read online by research sub-agents in October 2026, with short quotations. The key figures of this annex were then re-opened by an independent checker, who found them all in the documents; their sheets say so.
 
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 8.
+
 ## Key Messages
 
 - **France recycles about a quarter of its plastic packaging.** In 2023, 625,275 t of the 2,428,987 t of plastic packaging waste were recycled, 25.7 %; 1,213,829 t went to energy recovery [EUROSTAT-WASPAC]. The EU average was 41.7 % [A8-CAD-EUROSTAT-WASPAC-UE-2023]. About 49 % of the tonnage counted as recycled was recycled outside France [calc:CALC-A8-EMB-RECY-HORS-FRANCE].
@@ -67,7 +69,7 @@ The targets are 50 % for plastic packaging by end 2025 and 55 % by end 2030 [A8-
 
 ### 8.1.4 The EU Contribution on Non-Recycled Plastic Packaging
 
-Each Member State pays the EU 0.80 EUR per kilogram of non-recycled plastic packaging waste [RP2-055]. For France this was 1.564 billion EUR in 2023 [RP2-056]. It is paid from the State budget and is not a tax charged to households or companies [RP2-056]. A tax to pass it on, proposed in the 2026 budget bill, was removed by Parliament [RP2-057]. It therefore creates no direct payment for a waste holder today.
+Each Member State pays the EU 0.80 EUR per kilogram of non-recycled plastic packaging waste [RP2-055]. For France this was 1.564 billion EUR in 2023 [RP2-056]. It is paid from the State budget and is not a tax charged to households or companies [RP2-056]. A tax to pass it on, proposed in the 2026 budget bill, was removed by a Senate amendment during the examination of the bill [RP2-057]; the final law has not been read for this point. It therefore creates no direct payment for a waste holder today.
 
 ## 8.2 What Disposal Costs Today
 
@@ -151,12 +153,12 @@ Source of the table: [CIBS-TGAP-2026].
 
 - **Tonnage:** 1,074 kt of non-hazardous plastic packaging placed on the market, of which 307 kt of flexible LDPE (stretch and shrink films) [A8-PRO-NOTE-SOUTIENS-EPRO-2026]. In Ile-de-France, 260,000 t per year of plastic waste from businesses, of which 17 % recycled; half of the commercial share is pallet stretch film [A8-PRO-IDF-LIVRET-2023].
 - **Recycling rate:** 26 % in 2023 [A8-PRO-NOTE-SOUTIENS-EPRO-2026].
-- **Who pays:** an extended producer responsibility scheme starts for this packaging, with targets of 50 % in 2028 and 55 % in 2030 for plastic [A8-PRO-CDC-EPRO-2025]; its start has been postponed by a draft order [A8-PRO-REPORT-EPRO-2026]. Clear flexible LDPE was taken back at 151 EUR/t in April 2024; sorting rejects cost 188 EUR/t in energy recovery [A8-PRO-NOTE-SOUTIENS-EPRO-2026].
+- **Who pays:** an extended producer responsibility scheme starts for this packaging, with targets of 50 % in 2028 and 55 % in 2030 for plastic [A8-PRO-CDC-EPRO-2025]; its start has been postponed by an order, read at the draft stage [A8-PRO-REPORT-EPRO-2026]; the final text is to be cited. Clear flexible LDPE was taken back at 151 EUR/t in April 2024; sorting rejects cost 188 EUR/t in energy recovery [A8-PRO-NOTE-SOUTIENS-EPRO-2026].
 - **Urban Rig:** PE and PP tested (Section 8.4).
 
 ### 8.3.7 Agricultural Films and Plastics
 
-- **Tonnage:** 84,500 t of agricultural plastics collected in 2025, a collection rate of 75 % [A8-PRO-ADIVALOR-RA-2025]. Used films to collect are estimated at 70,000 to 85,000 t per year [A8-PRO-ADIVALOR-RA-2024].
+- **Tonnage:** 84,500 t of agricultural plastics collected in 2025; the overall collection rate of the scheme, all its streams, is about 75 % [A8-PRO-ADIVALOR-RA-2025]. Used films to collect are estimated at 70,000 to 85,000 t per year [A8-PRO-ADIVALOR-RA-2024].
 - **Recycling:** 90 % of what is collected [A8-PRO-ADIVALOR-RA-2025].
 - **Who pays:** a contribution included in the product price [A8-PRO-ADIVALOR-RA-2025].
 - **Urban Rig:** PE tested. Little of this stream is in Ile-de-France.
@@ -198,7 +200,7 @@ Sorted plastics are in scope; shredder residues are excluded [hyp:D-037].
 
 ### 8.3.13 Furniture and Other Producer Schemes
 
-- **Furniture and household goods:** 1,974 kt collected in 2025 by the main scheme; across all its streams, 46 % recycled and 47 % recovered as energy; outputs included 407 kt of solid recovered fuel, 45 kt of foams and 13 kt of plastics [A8-BTX-ECOMAISON-2025].
+- **Furniture and household goods:** 1,974 kt collected in 2025 by the main scheme across all its streams, of which 1,549 kt of furniture [A8-BTX-ECOMAISON-2025]; across all its streams, 46 % recycled and 47 % recovered as energy; outputs included 407 kt of solid recovered fuel, 45 kt of foams and 13 kt of plastics [A8-BTX-ECOMAISON-2025].
 - **Urban Rig:** foams (PU) are not tested.
 
 ### 8.3.14 Plastic in Residual Household Waste
@@ -207,7 +209,7 @@ Plastics make up 15.8 % of residual household waste, 2,329,258 t [ADEME-MODECOM-
 
 ## 8.4 Suitability for the Urban Rig
 
-| Polymer or stream | Tested on Urban Rig equipment | Result | Evidence |
+| Polymer or stream | Tested on Urban Rig equipment (batch runs, not the continuous URC-2000) | Result | Evidence |
 |---|---|---|---|
 | PE and PP | Yes | Oil 73 % to 81 % of the input | [CHIBA-ESSAIS-FICHES] |
 | PS, including expanded PS waste | Yes | Oil 55 % to 73 % | [CHIBA-ESSAIS-FICHES] |
@@ -215,10 +217,10 @@ Plastics make up 15.8 % of residual household waste, 2,329,258 t [ADEME-MODECOM-
 | PET, PA, PU, textiles, PVC alone | No | Request R-021 | |
 | Sorting rejects, multilayer packaging, sorted electronic plastics | No | Request R-040 | |
 
-Source of the table: [CHIBA-ESSAIS-FICHES] [OWJ-DEMO-2021]; details in Annex 2.
+Source of the table: [CHIBA-ESSAIS-FICHES] [OWJ-DEMO-2021]; details in Annex 2. These are batch tests; their transfer to the continuous URC-2000 at 51,100 t a year [calc:CALC-A8-CAPACITE-AN] is not demonstrated and needs a performance guarantee from OneWorld on the target mix (Annex 2).
 
 - **Chlorine.** According to OneWorld design data, the chlorine of PVC turns into dilute hydrochloric acid in the steam and is captured by a catalytic layer [UR2000-JP-P03-P04-CHLORE]. The oils made from municipal plastics contained 0.137 % and 0.526 % chlorine [CHIBA-JLOS-HUILES].
-- **Outlet of the oil.** To leave waste status for a steam cracker, the oil must come from plastic waste with at least 85 % of PE, PP and PS and at most 3 % of PVC, and contain at most 500 ppm of halogens without purification [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. Otherwise the oil is a fuel for a permitted plant (Annex 3).
+- **Outlet of the oil.** To leave waste status for a steam cracker, the oil must come from plastic waste with at least 85 % of PE, PP and PS and at most 3 % of PVC, and contain at most 500 ppm of halogens without purification [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. Each incoming batch must also be free of electrical and electronic waste and of waste that may contain brominated flame retardants [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. Sorted electronic plastics and brominated plastics are therefore outside this route, whatever the purification. Otherwise, and for those streams, the oil is a fuel sold as waste to a permitted plant (Annex 3).
 - **Bromine.** No OneWorld document covers bromine. The project sponsor's working assumption is that bromine is removed largely as chlorine is; it is not documented and awaits tests [hyp:D-040].
 
 ## 8.5 Competition for the Feedstock
@@ -257,7 +259,7 @@ In the model, a price paid to the plant is positive and a purchase is negative. 
 |---|---|---|
 | R-001, R-042 | ADEME reports available only on registration | Project sponsor |
 | R-003 | Composition of sorting rejects in Ile-de-France | Local authorities |
-| R-021, R-040 | Tests on PET, PVC, textiles, rejects, multilayer, electronic plastics, foams | OneWorld |
+| R-021, R-040 | Tests on PET, PVC, textiles, rejects, multilayer, electronic plastics, foams; performance guarantee of the continuous URC-2000 on the target mix | OneWorld |
 | R-039 | Bromine and persistent pollutants | OneWorld |
 | R-041 | Physical form of a plastic feed, maximum PVC and bromine | OneWorld |
 | R-044 | Disposal prices in Ile-de-France, purchase price at Grandpuits | Operators |

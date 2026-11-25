@@ -1,0 +1,215 @@
+# Corrections de registres, annexe 2, 25/11/2026 (chat de correction). A fusionner par le chat principal.
+meta:
+  auteur: Claude (chat de correction de l annexe 2)
+  date: '2026-11-25'
+  objet: Corrections de registres issues des lots 1 et 2 de Codex sur l'annexe 2 (ecarts-annexe-02-2026-11-25.md). A fusionner par le chat principal.
+  ne_pas_appliquer_sans: relecture du chat principal
+fiches:
+  nouvelles:
+    A2-IED-2010-75-ANX6-P6:
+      registre: registre-sources.yaml
+      titre: 'Directive 2010/75/UE, annexe VI, partie 6, point 2.1 : surveillance des emissions des installations d''incineration (mesures en continu et periodiques)'
+      editeur: Parlement europeen et Conseil
+      date: '2010-11-24'
+      type: reglementaire
+      url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010L0075
+      emplacement: Annexe VI, partie 6, point 2.1 a), b) et c)
+      citation: '(a) continuous measurements of the following substances: NOx, provided that emission limit values are set, CO, total dust, TOC, HCl, HF, SO2;'
+      citation_c: (c) at least two measurements per year of heavy metals and dioxins and furans;
+      contenu: 'Mesures en continu : NOx, CO, poussieres totales, COT, HCl, HF, SO2 ; parametres de procede en continu au point b) (oxygene, pression, temperature, vapeur d''eau des gaz) ; au moins deux
+        mesures par an des metaux lourds et des dioxines et furannes (une tous les 3 mois les 12 premiers mois).'
+      statut: lu
+      consulte: '2026-11-25'
+      reserve: Lu par Claude via l'outil de lecture web (texte EUR-Lex consolide au format HTML d'origine, sans verification de version consolidee ulterieure a 2010) ; le point b) est une paraphrase de
+        l'outil, citation exacte a recontroler. Utilise dans l'annexe 2, section 2.7.2 (conditions d'une demonstration de permis).
+  champs_a_ajouter_ou_remplacer:
+    UR2000-JP-P05-BILAN:
+      registre: _evidence.yaml
+      citation_volumes: 一般ゴミ 200ton. ▶ 200m3 (200,000L) ; 炭化物 25% (50m3/ 加工利用可能 ) ; 混合油 ( 軽油・重油 ) 5% (10,000ℓ / 再利用可能 ) ; OFF ガス 5% (10,000ℓ / 再利用 )
+      valeurs_lues_2026_11_25: 'p. 5 relue par Claude (pdftotext) le 25/11/2026 : les quantites imprimees sont les pourcentages appliques au volume d''entree (25 % de 200 m3 = 50 m3 ; 5 % de 200 000 L =
+        10 000 L, pour l''huile comme pour l''off-gas).'
+      reserve_remplace: CONSTRUCTEUR. Pourcentages imprimes, rapportes au volume d'entree de 200 m3 (200 000 L) ; base massique non definie ; ne pas utiliser comme bilan massique (R-010). Aucune mesure
+        jointe.
+      motif: Lot 1 Codex E-1 (reserve R-4) ; remplace « 60 a 65 % de l entree non affectes ».
+    OW-ENG-P16-BILAN:
+      registre: _evidence.yaml
+      citation_perte: Recovery Loss 11.5 % 11,730ℓ (11.73ton) ; Mainly discharged as flue gas; a very small amount will be carbide.
+      valeurs_lues_2026_11_25: 'p. 16 relue par Claude (pdftotext, mise en page en colonnes reconstituee) le 25/11/2026 : la ligne de 11,5 % s''appelle « Recovery Loss », pas gaz ; aucune composition donnee.'
+      reserve_ajout: La « Recovery Loss » de 11,5 % n'est pas une part mesuree de gaz combustible ; son assimilation au gaz KANSO est l'hypothese D-038 (lot 2 Codex E-1).
+    CHIBA-PROCEDE-HUILE:
+      registre: _evidence.yaml
+      reserve_remplace: 'Le rapport ne dit ni la fonction du catalyseur (dechloration ou autre), ni sa nature, ni son etat. Il ne decrit pas la conversion du volume jauge en masse : chaque fiche imprime
+        volume, densite et poids, en general coherents (ex. 60 L x 0,823 = 49,4 kg, PDF p. 24), avec un ecart p. 26 (18 L x 0,874 = 15,7 kg contre 16,1 kg imprimes). Conversion par la densite : inference,
+        non methode decrite.'
+      motif: Lot 1 Codex, verdict 8 (reserve R-5) ; pages 24, 26 et 29 relues par Claude le 25/11/2026.
+    CHIBA-CONSTATS:
+      registre: _evidence.yaml
+      citation_p40: マテリアルバランスの水(排水)の蒸散水については、計算値とした。
+      valeurs_lues_2026_11_25: 'PDF p. 40 relue par Claude (pdftotext) le 25/11/2026 : l''eau evaporee du bilan matiere est une valeur calculee (27 L et 15 L, PDF p. 42, soit 100 L moins 73 L et 85 L rejetes).'
+      motif: Lot 1 Codex, verdict 9 ; citee dans la section 2.2.3.
+    CHIBA-OOSUMI-FUMEES:
+      registre: _evidence.yaml
+      valeurs_lues_2026_11_25: 'PDF p. 55 et 56 (images) vues par Claude le 25/11/2026 : rapports marques 仮 2022/10/18 ; parametres : ばいじん, 硫黄酸化物, 窒素酸化物 et, le 15/09 seulement, ダイオキシン類 ; aucune teneur en
+        oxygene, ni CO, ni HCl ; mesures ponctuelles a 350, 450 et 550 C ; ppm en volume a 0 C et 101,3 kPa (備考).'
+      motif: Lot 2 Codex E-2 et E-3.
+    IED-2010-75-ART50:
+      registre: registre-sources.yaml
+      citation_complete: If hazardous waste with a content of more than 1 % of halogenated organic substances, expressed as chlorine, is incinerated or co-incinerated, the temperature required to comply
+        with the first and second subparagraphs shall be at least 1 100 °C.
+      relu: 2026-11-25 (Claude, EUR-Lex HTML)
+      motif: 'Lot 2 Codex E-5 : perimetre (dechets dangereux, declencheur de temperature, pas une limite d acceptation).'
+calculs:
+  nouveaux:
+    CALC-A2-HUILE11-MOY-POND:
+      description: Huile, moyenne ponderee des 11 essais de plastiques purs, essai 3P du 11/07/2022 inclus (contre-verification Codex du 25/11/2026, lot 1, autre interpretation 1)
+      formule: (h_pe_gran + h_pe_chutes + h_pe_bidons + h_pp_gran + h_pp_chutes + h_pp_palettes + h_3p_0526 + h_ps_expanse + h_ps_gran + h_ps_chutes + h_3p_0711) / (e_pe_gran + e_pe_chutes + e_pe_bidons
+        + e_pp_gran + e_pp_chutes + e_pp_palettes + e_3p_0526 + e_ps_expanse + e_ps_gran + e_ps_chutes + e_3p_0711) * 100
+      entrees:
+        h_pe_gran:
+          valeur: 14.8
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 19, PE granules 2022-03-02
+        e_pe_gran:
+          valeur: 20
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 19, PE granules 2022-03-02
+        h_pe_chutes:
+          valeur: 30.7
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 19, PE chutes 2022-03-09
+        e_pe_chutes:
+          valeur: 40
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 19, PE chutes 2022-03-09
+        h_pe_bidons:
+          valeur: 40.7
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 22, PE bidons 2022-06-21
+        e_pe_bidons:
+          valeur: 50
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 22, PE bidons 2022-06-21
+        h_pp_gran:
+          valeur: 16.2
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 21, PP granules 2022-04-08
+        e_pp_gran:
+          valeur: 20
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 21, PP granules 2022-04-08
+        h_pp_chutes:
+          valeur: 39.8
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 21, PP chutes 2022-04-16
+        e_pp_chutes:
+          valeur: 50
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 21, PP chutes 2022-04-16
+        h_pp_palettes:
+          valeur: 36.5
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 23, PP palettes 2022-06-28
+        e_pp_palettes:
+          valeur: 50
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 23, PP palettes 2022-06-28
+        h_3p_0526:
+          valeur: 43.1
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 22, 3P 2022-05-26
+        e_3p_0526:
+          valeur: 60
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 22, 3P 2022-05-26
+        h_ps_expanse:
+          valeur: 36.3
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 23, PS expanse 2022-07-07
+        e_ps_expanse:
+          valeur: 50
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 23, PS expanse 2022-07-07
+        h_ps_gran:
+          valeur: 12.2
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 20, PS granules 2022-03-17
+        e_ps_gran:
+          valeur: 20
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 20, PS granules 2022-03-17
+        h_ps_chutes:
+          valeur: 22.0
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 20, PS chutes 2022-03-31
+        e_ps_chutes:
+          valeur: 40
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 20, PS chutes 2022-03-31
+        h_3p_0711:
+          valeur: 49.4
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 24, 3P 2022-07-11
+        e_3p_0711:
+          valeur: 60.0
+          unite: kg
+          source: CHIBA-ESSAIS-FICHES
+          emplacement: PDF p. 24, 3P 2022-07-11
+      unite: '%'
+      resultat: 74.28
+  a_modifier:
+    CALC-A2-HUILE10-MOY-POND:
+      resultat: 73.08
+      motif: 292,3 / 400 x 100 = 73,075 ; arrondi a deux decimales 73,08 (lot 1 Codex, verdict 5, R-5).
+    CALC-A2-NRJ-GAZ-RESINE:
+      description: 'Energie du gaz par tonne de charge, charge riche en resines : « Recovery Loss » de 11,5 % de la brochure OneWorld p. 16 assimilee au gaz de composition KANSO (hypothese D-038, non mesure)'
+      motif: Lot 2 Codex E-1.
+    CALC-A2-COUV-BRULEUR-RESINE:
+      description: Energie du gaz rapportee au besoin du bruleur, charge riche en resines, « Recovery Loss » de 11,5 % assimilee au gaz (hypothese D-038)
+      motif: Lot 2 Codex E-1.
+    CALC-A2-UR2000-NONAFFECTE-MIN:
+      description: Part non affectee des pourcentages imprimes dans UR2000-JP p. 5 (parts du volume d'entree, pas de la masse), metaux et verre a 5 %
+      motif: Lot 1 Codex E-1 (R-4).
+    CALC-A2-UR2000-NONAFFECTE-MAX:
+      description: Part non affectee des pourcentages imprimes dans UR2000-JP p. 5 (parts du volume d'entree, pas de la masse), metaux et verre a 0 %
+      motif: Lot 1 Codex E-1 (R-4).
+decisions:
+  nouvelles: {}
+  note: 'Aucune nouvelle decision creee : les corrections appliquent D-022, D-029, D-033 a D-035 et D-038 sans les modifier. Points a trancher par Stephane : voir ecarts-annexe-02-2026-11-25.md (D-058 a
+    D-061 restent libres).'
+recherches:
+  complements:
+    R-010:
+      complement_2026_11_25: 'UR2000-JP p. 5 relue : les pourcentages (char 25 %, huile 5 %, off-gas 5 %) sont des parts du volume d''entree de 200 m3 (50 m3, 10 000 L, 10 000 L). Demander la base massique
+        et un bilan massique mesure sur ordures menageres.'
+    R-011:
+      complement_2026_11_25: 'Brochure anglaise p. 16 : que contient la « Recovery Loss » de 11,5 % (« mainly discharged as flue gas ; a very small amount will be carbide ») : masse de gaz de pyrolyse,
+        composition, part brulee, eau ? Bilan gazeux mesure sur l''URC-2000 en continu.'
+    R-012:
+      complement_2026_11_25: 'Char : specification par lot pour le debouche CSR (chlore, cendres, humidite, homogeneite et autres caracterisations de l''arrete du 23 mai 2016).'
+    R-016:
+      complement_2026_11_25: 'Campagne de permis sur la charge cible en continu : mesures en continu de poussieres, COT, HCl, HF, SO2, NOx, CO, avec O2, temperature et vapeur d''eau, sur les periodes reglementaires
+        (moyennes journalieres ; dioxines sur 6 a 8 h) ; mesures periodiques des metaux lourds et dioxines (directive 2010/75/UE, annexe VI, parties 3 et 6) ; rapports definitifs.'
+    R-017:
+      complement_2026_11_25: Essai de traitabilite sur l'eau de procede reelle (phenols, cyanures, DBO, pH 0,8), bilan eau en continu, filiere de traitement, destination des concentrats, criteres de rejet
+        et garantie de performance.

@@ -51,6 +51,8 @@ SRC1 = {
    'Waste Framework Directive: definitions of recovery and recycling (recycling excludes reprocessing into fuels) and the waste hierarchy.'),
  'IED-2010-75-ART3-42': ('R', 100, 'EU legislation', 'LU',
    'Industrial Emissions Directive: pyrolysis and gasification plants are waste incineration plants when their products are incinerated, unless the gases are purified and emit no more than natural gas.'),
+ 'A4-IED-2024-1785-ART42': ('R', 100, 'EU legislation', 'LU',
+   'Directive (EU) 2024/1785 amending the Industrial Emissions Directive: since 2024, the incineration chapter does not apply to a pyrolysis or gasification plant whose gases or liquids are treated before being burned so that they emit less than the least polluting fuel that could be burned in the installation.'),
  'JRC-2023-PLASTIC-RECYCLING': ('R', 90, 'EU Joint Research Centre report (page numbers to be confirmed on the PDF)', 'LU',
    'Comparison of mechanical, physical and chemical recycling and energy recovery of plastic waste: recycling preferable to energy recovery; no clear ranking between mechanical and chemical recycling.'),
 }
@@ -184,6 +186,7 @@ def calc_page(c):
     return page(f'Evidence {CODE[c]}', body, CR())
 
 DEC_EN = {
+ 'D-035': 'Reactor capacity of 200 m3 per day; feed density after pressing taken at 0.7 t/m3, i.e. 140 t per day (working assumption of the project sponsor).',
  'D-016': 'OneWorld statements are admitted as a working basis when they appear in a OneWorld document cited with page or date; they are labelled CONSTRUCTEUR, attributed in the text and never presented as independently verified.',
  'D-020': 'OneWorld documentation is used as the design basis of the URC-2000, always attributed.',
  'D-021': 'Energy values of the products and basis of the energy balance (see Annex 2, sheet 2.5.0). The char value and the burner coverage are amended by D-038; the self-sufficiency on household and municipal waste is withdrawn by D-029.',

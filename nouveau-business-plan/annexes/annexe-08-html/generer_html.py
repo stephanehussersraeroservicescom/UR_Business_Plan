@@ -167,6 +167,8 @@ def source_page(i):
     files = g1.pdf_links(f.get('chemin', '')) if f.get('chemin') else ''
     if f.get('url'): files = (files + ' ; ' if files else '') + f'<a href="{esc(f["url"])}">{esc(f.get("titre", "online source"))}</a>'
     rel = (f.get('relecture_a8_2026_10_15') or []) + (f.get('relecture_a8_2026_10_15_b') or [])
+    for _k in sorted(k for k in f if str(k).startswith('relecture_') and k not in ('relecture_a8_2026_10_15', 'relecture_a8_2026_10_15_b')):
+        _v = f[_k]; rel = rel + ([_v] if isinstance(_v, dict) else (_v or []))
     quotes = ''.join(f'<li>« {esc(v)} »</li>' for k, v in f.items() if str(k).startswith('citation'))
     quotes += ''.join(f'<li>« {esc(r.get("citation"))} » <span class="small">(re-read on 15 October 2026{", " + esc(r.get("emplacement")) if r.get("emplacement") else ""})</span></li>' for r in rel if r.get('citation'))
     vals = ''.join(f'<li>{esc(f[k])}</li>' for k in ['contenu'] + [x for x in f if str(x).startswith('valeurs')] if f.get(k))

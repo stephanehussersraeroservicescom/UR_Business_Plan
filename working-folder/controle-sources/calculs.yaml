@@ -257,7 +257,7 @@ CALC-A2-UR2000-CADENCE:
   unite: t/jour
 
 CALC-A2-UR2000-NONAFFECTE-MIN:
-  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 5 %"
+  description_avant_2026_11_25: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 5 %"
   formule: "1 - char - huile - offgas - metaux"
   entrees:
     char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
@@ -266,9 +266,11 @@ CALC-A2-UR2000-NONAFFECTE-MIN:
     metaux: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
   resultat: 0.60
   unite: fraction
-
+  description: Part non affectee des pourcentages imprimes dans UR2000-JP p. 5 (parts du volume d'entree,
+    pas de la masse), metaux et verre a 5 %
+  correction_2026_11_25_motif: Lot 1 Codex E-1 (R-4).
 CALC-A2-UR2000-NONAFFECTE-MAX:
-  description: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 0 %"
+  description_avant_2026_11_25: "Part de l'entree non affectee dans le bilan UR2000-JP p. 5, metaux et verre a 0 %"
   formule: "1 - char - huile - offgas"
   entrees:
     char: {valeur: 0.25, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
@@ -276,7 +278,9 @@ CALC-A2-UR2000-NONAFFECTE-MAX:
     offgas: {valeur: 0.05, unite: fraction, source: UR2000-JP-P05-BILAN, emplacement: "p. 5"}
   resultat: 0.65
   unite: fraction
-
+  description: Part non affectee des pourcentages imprimes dans UR2000-JP p. 5 (parts du volume d'entree,
+    pas de la masse), metaux et verre a 0 %
+  correction_2026_11_25_motif: Lot 1 Codex E-1 (R-4).
 CALC-A2-FIOUL-T-CONTINU:
   description: "Fioul par tonne d'apres le tableau non attribue 'UR Energy Consumption', ligne 200t"
   formule: "fioul / capacite"
@@ -847,14 +851,16 @@ CALC-A2-ELEC-MJ-T:
   unite: "MJ/t"
 
 CALC-A2-NRJ-GAZ-RESINE:
-  description: "Energie du gaz par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  description_avant_2026_11_25: "Energie du gaz par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
   formule: "part * 1000 * pci"
   entrees:
     part: {valeur: 0.115, unite: "fraction", source: OW-ENG-P16-BILAN, emplacement: "p. 16"}
     pci: {calc: CALC-A2-GAZ-PCI}
   resultat: 4299.4
   unite: "MJ/t"
-
+  description: 'Energie du gaz par tonne de charge, charge riche en resines : « Recovery Loss » de 11,5
+    % de la brochure OneWorld p. 16 assimilee au gaz de composition KANSO (hypothese D-038, non mesure)'
+  correction_2026_11_25_motif: Lot 2 Codex E-1.
 CALC-A2-NRJ-HUILE-RESINE:
   description: "Energie de l'huile par tonne de charge, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
   formule: "part * 0.01 * 1000 * pcs"
@@ -879,14 +885,16 @@ CALC-A2-NRJ-CHAR-RESINE:
   resultat: 1230.92
 
 CALC-A2-COUV-BRULEUR-RESINE:
-  description: "Energie du gaz rapportee au besoin du bruleur, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
+  description_avant_2026_11_25: "Energie du gaz rapportee au besoin du bruleur, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
   formule: "gaz / besoin"
   entrees:
     gaz: {calc: CALC-A2-NRJ-GAZ-RESINE}
     besoin: {calc: CALC-A2-BRULEUR-MJ-T}
   resultat: 2.8536
   unite: "rapport"
-
+  description: Energie du gaz rapportee au besoin du bruleur, charge riche en resines, « Recovery Loss »
+    de 11,5 % assimilee au gaz (hypothese D-038)
+  correction_2026_11_25_motif: Lot 2 Codex E-1.
 CALC-A2-COUV-FIOUL-RESINE:
   description: "Energie du gaz rapportee au combustible declare, charge riche en resines (bilan de conception OneWorld, brochure p. 16)"
   formule: "gaz / fioul"
@@ -3831,7 +3839,10 @@ CALC-A2-HUILE10-MOY-POND:
       source: CHIBA-ESSAIS-FICHES
       emplacement: PDF p. 20, PS chutes 2022-03-31
   unite: '%'
-  resultat: 73.07
+  resultat_avant_2026_11_25: 73.07
+  resultat: 73.08
+  correction_2026_11_25_motif: 292,3 / 400 x 100 = 73,075 ; arrondi a deux decimales 73,08 (lot 1 Codex,
+    verdict 5, R-5).
 CALC-A2-RESIDU10-MOY-POND:
   description: Residu solide retire, moyenne ponderee des 10 essais de plastiques purs retenus (decision E-4)
   formule: (r_pe_gran + r_pe_chutes + r_pe_bidons + r_pp_gran + r_pp_chutes + r_pp_palettes + r_3p_0526 + r_ps_expanse + r_ps_gran + r_ps_chutes) / (e_pe_gran + e_pe_chutes + e_pe_bidons + e_pp_gran + e_pp_chutes + e_pp_palettes + e_3p_0526 + e_ps_expanse + e_ps_gran + e_ps_chutes) * 100
@@ -4343,7 +4354,7 @@ CALC-A8-EMB-RECY-HORS-FRANCE:
       source: EUROSTAT-WASPAC
       emplacement: RCY, 2023
   unite: '%'
-  resultat: 49.1695
+  resultat: 49.1694
 
 CALC-A8-REFUS-PART-PLASTIQUE:
   description: Part des plastiques (rigides + souples) dans les refus de tri de collecte selective, composition moyenne France (OCAPEM, tableau 3)
@@ -6809,3 +6820,396 @@ CALC-A5-NONPROC-T-AN:
     a: {calc: CALC-A8-CAPACITE-AN}
   unite: "t/an"
   resultat: 6026.94
+
+# === ANNEXE 2, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+CALC-A2-HUILE11-MOY-POND:
+  description: Huile, moyenne ponderee des 11 essais de plastiques purs, essai 3P du 11/07/2022 inclus
+    (contre-verification Codex du 25/11/2026, lot 1, autre interpretation 1)
+  formule: (h_pe_gran + h_pe_chutes + h_pe_bidons + h_pp_gran + h_pp_chutes + h_pp_palettes + h_3p_0526
+    + h_ps_expanse + h_ps_gran + h_ps_chutes + h_3p_0711) / (e_pe_gran + e_pe_chutes + e_pe_bidons + e_pp_gran
+    + e_pp_chutes + e_pp_palettes + e_3p_0526 + e_ps_expanse + e_ps_gran + e_ps_chutes + e_3p_0711) *
+    100
+  entrees:
+    h_pe_gran:
+      valeur: 14.8
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 19, PE granules 2022-03-02
+    e_pe_gran:
+      valeur: 20
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 19, PE granules 2022-03-02
+    h_pe_chutes:
+      valeur: 30.7
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 19, PE chutes 2022-03-09
+    e_pe_chutes:
+      valeur: 40
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 19, PE chutes 2022-03-09
+    h_pe_bidons:
+      valeur: 40.7
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 22, PE bidons 2022-06-21
+    e_pe_bidons:
+      valeur: 50
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 22, PE bidons 2022-06-21
+    h_pp_gran:
+      valeur: 16.2
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP granules 2022-04-08
+    e_pp_gran:
+      valeur: 20
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP granules 2022-04-08
+    h_pp_chutes:
+      valeur: 39.8
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP chutes 2022-04-16
+    e_pp_chutes:
+      valeur: 50
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 21, PP chutes 2022-04-16
+    h_pp_palettes:
+      valeur: 36.5
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 23, PP palettes 2022-06-28
+    e_pp_palettes:
+      valeur: 50
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 23, PP palettes 2022-06-28
+    h_3p_0526:
+      valeur: 43.1
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 22, 3P 2022-05-26
+    e_3p_0526:
+      valeur: 60
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 22, 3P 2022-05-26
+    h_ps_expanse:
+      valeur: 36.3
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 23, PS expanse 2022-07-07
+    e_ps_expanse:
+      valeur: 50
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 23, PS expanse 2022-07-07
+    h_ps_gran:
+      valeur: 12.2
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS granules 2022-03-17
+    e_ps_gran:
+      valeur: 20
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS granules 2022-03-17
+    h_ps_chutes:
+      valeur: 22.0
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS chutes 2022-03-31
+    e_ps_chutes:
+      valeur: 40
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 20, PS chutes 2022-03-31
+    h_3p_0711:
+      valeur: 49.4
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 24, 3P 2022-07-11
+    e_3p_0711:
+      valeur: 60.0
+      unite: kg
+      source: CHIBA-ESSAIS-FICHES
+      emplacement: PDF p. 24, 3P 2022-07-11
+  unite: '%'
+  resultat: 74.28
+
+# === ANNEXE 7, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+CALC-A7-IDF-DAE-ENFOUIS-REAFF-T:
+  description: DAE enfouis en Ile-de-France en 2022, origine economique apres reaffectation des refus
+    a leurs producteurs initiaux
+  formule: t * p / 100
+  entrees:
+    t:
+      valeur: 2228079
+      unite: t
+      source: A8-CST-ORDIF-ISDND-2023
+      emplacement: p. 5
+    p:
+      valeur: 77.6
+      unite: '%'
+      source: A8-CST-ORDIF-ISDND-2023
+      emplacement: p. 5, apres reaffectation des refus
+  unite: t
+  resultat: 1728989.304
+
+CALC-A7-PART-MACHINE-DAE-IDF-PCT:
+  description: Part d'une URC-2000 (51 100 t/an) dans les DAE non dangereux non inertes franciliens de
+    2020
+  formule: c / (d * 10000)
+  entrees:
+    c:
+      calc: CALC-A8-CAPACITE-AN
+    d:
+      valeur: 5.09
+      unite: Mt
+      source: A7-PRPGD-IDF-SUIVI3-2023
+      emplacement: p. 10
+  unite: '%'
+  resultat: 1.003929
+
+CALC-A7-PART-MACHINE-MELANGE-IDF-PCT:
+  description: Part d'une URC-2000 (51 100 t/an) dans les DAE franciliens en melange de 2020 (total minimal)
+  formule: c / (d * 10000)
+  entrees:
+    c:
+      calc: CALC-A8-CAPACITE-AN
+    d:
+      valeur: 2.77
+      unite: Mt
+      source: A7-PRPGD-IDF-SUIVI3-2023
+      emplacement: tableau 'Total de DAE en melange entrant dans les centres de tri', 2020
+  unite: '%'
+  resultat: 1.844765
+
+CALC-A7-BOISB-PCT:
+  description: 'Part du bois B dans les flux en melange des centres de tri de DAE : bois (28 %) multiplie
+    par les trois quarts (figure 14)'
+  formule: b * f / 100
+  entrees:
+    b:
+      valeur: 28
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, bois
+    f:
+      valeur: 75
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, 'dont les 3/4 correspondent a du bois B'
+  unite: '%'
+  resultat: 21.0
+
+CALC-A7-CHAR-FT-HAUT-PCT:
+  description: 'Char des fibreux et textiles, scenario optimiste : complement a 100 % du liquide (25 %)
+    et du gaz (48 %) (D-048, D-054)'
+  formule: 100 - l - g
+  entrees:
+    l:
+      valeur: 25
+      unite: '%'
+      source: D-048
+      emplacement: vers
+    g:
+      valeur: 48
+      unite: '%'
+      source: D-048
+      emplacement: vers
+  unite: '% de la masse des fibreux et textiles'
+  resultat: 27
+
+CALC-A7-CHAR-HAUT-V2-KG-T:
+  description: 'Char par tonne de DAE en melange, scenario optimiste corrige : bois a 40 % (D-045), fibreux
+    et textiles a 27 % (D-054). Remplace CALC-A7-CHAR-HAUT-KG-T (152 kg/t) dans l''annexe 7.'
+  formule: (b * cb + (f + t) * cft) / 10
+  entrees:
+    b:
+      valeur: 28
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, bois
+    cb:
+      valeur: 40
+      unite: '%'
+      source: D-045
+      emplacement: vers
+    f:
+      valeur: 7
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, fibreux
+    t:
+      valeur: 3
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, textiles
+    cft:
+      calc: CALC-A7-CHAR-FT-HAUT-PCT
+  unite: kg par tonne
+  resultat: 139.0
+
+CALC-A7-NONCONV-KG-T:
+  description: Inertes, metaux et platre par tonne de DAE en melange (non convertis)
+  formule: n * 10
+  entrees:
+    n:
+      calc: CALC-A7-NONCONV-PCT
+  unite: kg par tonne
+  resultat: 230
+
+CALC-A7-FINES-KG-T:
+  description: Elements fins ou non reconnaissables par tonne de DAE en melange (non attribues)
+  formule: f * 10
+  entrees:
+    f:
+      valeur: 34
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, elements fins ou non reconnaissables
+  unite: kg par tonne
+  resultat: 340
+
+CALC-A7-QUANT-BAS-KG-T:
+  description: 'Masse chiffree par tonne de DAE en melange, scenario pessimiste : huile, gaz du plastique,
+    liquide et gaz des fibreux et textiles, char, non convertis, fines'
+  formule: h + gp + l + gs + c + n + f
+  entrees:
+    h:
+      calc: CALC-A7-HUILE-BAS-KG-T
+    gp:
+      calc: CALC-A7-GAZ-PLAST-KG-T
+    l:
+      calc: CALC-A7-LIQ-BAS-KG-T
+    gs:
+      calc: CALC-A7-GAZ-ST-BAS-KG-T
+    c:
+      calc: CALC-A7-CHAR-BAS-KG-T
+    n:
+      calc: CALC-A7-NONCONV-KG-T
+    f:
+      calc: CALC-A7-FINES-KG-T
+  unite: kg par tonne
+  resultat: 762.5
+
+CALC-A7-QUANT-CENT-KG-T:
+  description: Masse chiffree par tonne de DAE en melange, scenario standard
+  formule: h + gp + l + gs + c + n + f
+  entrees:
+    h:
+      calc: CALC-A7-HUILE-CENT-KG-T
+    gp:
+      calc: CALC-A7-GAZ-PLAST-KG-T
+    l:
+      calc: CALC-A7-LIQ-CENT-KG-T
+    gs:
+      calc: CALC-A7-GAZ-ST-CENT-KG-T
+    c:
+      calc: CALC-A7-CHAR-CENT-KG-T
+    n:
+      calc: CALC-A7-NONCONV-KG-T
+    f:
+      calc: CALC-A7-FINES-KG-T
+  unite: kg par tonne
+  resultat: 794.535
+
+CALC-A7-QUANT-HAUT-KG-T:
+  description: Masse chiffree par tonne de DAE en melange, scenario optimiste (char corrige, D-054)
+  formule: h + gp + l + gs + c + n + f
+  entrees:
+    h:
+      calc: CALC-A7-HUILE-HAUT-KG-T
+    gp:
+      calc: CALC-A7-GAZ-PLAST-KG-T
+    l:
+      calc: CALC-A7-LIQ-HAUT-KG-T
+    gs:
+      calc: CALC-A7-GAZ-ST-HAUT-KG-T
+    c:
+      calc: CALC-A7-CHAR-HAUT-V2-KG-T
+    n:
+      calc: CALC-A7-NONCONV-KG-T
+    f:
+      calc: CALC-A7-FINES-KG-T
+  unite: kg par tonne
+  resultat: 827.5
+
+CALC-A7-NONALLOUE-BAS-KG-T:
+  description: 'Masse non attribuee par tonne, scenario pessimiste : une tonne (les huit categories de
+    la figure 14 totalisent 100 %) moins la masse chiffree ; gaz, liquide et eau du bois, residu du plastique
+    et des fibreux'
+  formule: 1000 - q
+  entrees:
+    q:
+      calc: CALC-A7-QUANT-BAS-KG-T
+  unite: kg par tonne
+  resultat: 237.5
+
+CALC-A7-NONALLOUE-CENT-KG-T:
+  description: Masse non attribuee par tonne, scenario standard
+  formule: 1000 - q
+  entrees:
+    q:
+      calc: CALC-A7-QUANT-CENT-KG-T
+  unite: kg par tonne
+  resultat: 205.465
+
+CALC-A7-NONALLOUE-HAUT-KG-T:
+  description: Masse non attribuee par tonne, scenario optimiste (char corrige, D-054)
+  formule: 1000 - q
+  entrees:
+    q:
+      calc: CALC-A7-QUANT-HAUT-KG-T
+  unite: kg par tonne
+  resultat: 172.5
+
+CALC-A7-BOIS-RESTE-CENT-KG-T:
+  description: Part du bois non convertie en char, scenario standard (gaz, liquide et eau du bois, non
+    mesures)
+  formule: b * (100 - c) / 10
+  entrees:
+    b:
+      valeur: 28
+      unite: '%'
+      source: A7-ADEME-TRI-DAE-2025
+      emplacement: figure 14, bois
+    c:
+      valeur: 30
+      unite: '%'
+      source: D-045
+      emplacement: vers
+  unite: kg par tonne
+  resultat: 196.0
+
+CALC-A7-GAZ-PLAST-MJ-T:
+  description: Energie du gaz des plastiques par tonne de DAE en melange (PCI du gaz de l'annexe 2)
+  formule: g * p
+  entrees:
+    g:
+      calc: CALC-A7-GAZ-PLAST-KG-T
+    p:
+      calc: CALC-A2-GAZ-PCI
+  unite: MJ par tonne
+  resultat: 186.93
+
+CALC-A7-GAZ-PLAST-PART-BRULEUR-PCT:
+  description: Part du besoin du bruleur (donnee OneWorld) couverte par le gaz des plastiques, par tonne
+    de DAE en melange
+  formule: e / b * 100
+  entrees:
+    e:
+      calc: CALC-A7-GAZ-PLAST-MJ-T
+    b:
+      calc: CALC-A2-BRULEUR-MJ-T
+  unite: '%'
+  resultat: 12.41

@@ -8,6 +8,8 @@ Each figure or fact is followed by a small link to its evidence sheet. Sheets nu
 
 **Legal texts.** The permitting and tax rules are read from the official texts or from documents of the administration. Their application to an Urban Rig plant has not been confirmed by the authorities. Where this annex says how a rule would apply, it is an assumption of the business plan, stated as such, until the regional inspectorate gives its view (request R-050).
 
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 4.
+
 ## Key Messages
 
 - **The waste exists, and capacity in Ile-de-France is tight.** Ile-de-France collected 3.32 Mt of residual household waste in 2022 and sends 94 % of its residual household and similar waste to 18 incinerators [ORDIF-DMA-2022]. These incinerators burned 3,810,761 t in 2022, 93 % of their technical capacity [A8-CST-ORDIF-UIDND-2023]. The Syctom diverted about 150,000 t to outside plants in 2025 [A8-CST-SYCTOM-BP-2026].

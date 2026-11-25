@@ -1,6 +1,6 @@
 # Annex 1. Process and Technology
 
-This annex describes what the Urban Rig is, how it works, what it produces and how it compares with other waste treatment routes. It describes; Annex 2 proves the performance. Where a figure is already proven in Annex 2, this annex links to the Annex 2 evidence sheet.
+This annex describes what the Urban Rig is, how it works, what it produces and how it compares with other waste treatment routes. It describes; Annex 2 gives the evidence. The tests of Annex 2 were run on batch units; the performance of the continuous URC-2000 (capacity, yields, consumption, availability) is OneWorld design data, to be secured by contractual guarantees and an acceptance test on the target feed (request R-009). Where a figure comes from Annex 2, this annex links to the Annex 2 evidence sheet.
 
 ## How to Read This Annex
 
@@ -8,14 +8,16 @@ The Urban Rig is designed, built and documented by OneWorld Corporation (Osaka),
 
 Each figure or fact is followed by a small link. It opens the evidence sheet: what the evidence shows, its confidence, the source document and page, or the calculation. Sheets numbered 1.M, 1.R and 1.C belong to this annex (manufacturer documents, regulations and references, calculations); sheets numbered 2.x link to Annex 2. All sheets are listed in the index of evidence sheets.
 
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 1.
+
 This annex contains no revenue, price or cost figures. Prices are in Annex 3, costs in Annex 9 and revenues in the financial model.
 
 ## Key Messages
 
 - **Waste in, fuels and char out.** According to OneWorld design data, the Urban Rig heats waste with superheated steam in an oxygen-free reactor and recovers fuel oil, char, metals and a combustible gas [OW-ENG-P14-P15-PROCEDE].
 - **A line of reactors, not a single kiln.** The reference plant, the URC-2000, treats 200 t per day [UR2000-JP-P08-SPEC]. According to OneWorld design data, buckets of waste move through a line of 7 heated and cooled units [UR2000-JP-P06-P07-MODULES].
-- **The process heat comes from the waste on resin-rich feeds.** The measured gas, once air is removed, covers the burner heat demand 2.9 times on OneWorld's resin-rich example, with 11.5 % gas [calc:CALC-A2-COUV-BRULEUR-RESINE], and 3.7 times on pure plastic with 15 % gas, a rounded value of the measured gas by difference [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] [hyp:D-038]. On household and municipal waste, self-sufficiency is not established; their energy balance is built in Annex 5, according to the feed chosen [hyp:D-029]. Electricity is bought from the grid [OW-CONSO-ENERGIE].
-- **Very low dioxin levels.** Measured dioxins were 0.011 and 0.025 ng-TEQ/m³ in 2023 [DIOXINES-2023] and 0.067 ng-TEQ/m³ in 2022 [CHIBA-OOSUMI-FUMEES], below the EU limit of 0.1 [IED-2010-75-ANX6-P3].
+- **The process heat may come from the waste on resin-rich feeds.** Taking the 11.5 % "recovery loss" of OneWorld's resin-rich design table as gas, with the composition of the gas measured in a batch test, the gas would cover the burner heat demand 2.9 times [calc:CALC-A2-COUV-BRULEUR-RESINE]; this is a design scenario, not a measurement of the gas quantity, and 3.7 times on pure plastic with 15 % gas, a rounded value of the measured gas by difference [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] [hyp:D-038]. On household and municipal waste, self-sufficiency is not established; their energy balance is built in Annex 5, according to the feed chosen [hyp:D-029]. Electricity is bought from the grid [OW-CONSO-ENERGIE].
+- **Low dioxin levels as reported.** Measured dioxins were 0.011 and 0.025 ng-TEQ/m³ in 2023 [DIOXINES-2023] and 0.067 ng-TEQ/m³ in 2022 [CHIBA-OOSUMI-FUMEES], numerically below the EU limit of 0.1 [IED-2010-75-ANX6-P3]. The EU limit applies at 11 % oxygen, which the reports do not give; compliance is possible but to be confirmed on final reports (R-016).
 - **Three points to secure with OneWorld:** the pre-treatment actually required (the plant layouts include a crusher and a sorting machine), the route of the off-gas in the plant, and the acceptance of PVC-rich waste (Section 1.6).
 
 ## 1.1 What the Urban Rig Does
@@ -67,7 +69,7 @@ For the URC-2000, OneWorld design data state:
 - 7 units of about 12 t, built in series in the factory [UR2000-JP-P06-P07-MODULES];
 - buckets of 4.5 m³, moved 3 at a time, every 90 minutes [OW-ENG-P14-P15-PROCEDE];
 - a total time of 10.5 hours from inlet to outlet [calc:CALC-A1-UR2000-TEMPS-TOTAL];
-- 48 buckets per 24 hours, each of at most 4.17 t, which gives 200.16 t per day [UR2000-JP-P08-SPEC] [calc:CALC-A2-UR2000-CADENCE];
+- 48 buckets per 24 hours, each of at most 4.17 t, which gives 200.16 t per day at maximum load [UR2000-JP-P08-SPEC] [calc:CALC-A2-UR2000-CADENCE]; the real capacity depends on the density, moisture and filling of the feed, and the business plan uses 140 t per day [hyp:D-035];
 - a heating zone at 150, 300, 450 and 600 °C, then a cooling zone at 400, 150 and 60 °C [OW-ENG-P14-P15-PROCEDE];
 - a decomposition temperature of 600 °C at most, at a pressure below 0.2 MPa [UR2000-JP-P08-SPEC].
 
@@ -104,8 +106,8 @@ In a continuous line, every unit holds a bucket at all times. Each step, the buc
 
 | Output | What it is | OneWorld design data | Measured quality (Annex 2) |
 |---|---|---|---|
-| Oils | Light (heating) oil, gas (diesel) oil and heavy oil; asphaltenes remain at the hottest step [OW-ENG-P14-P15-PROCEDE] | 76.5 % of input on a resin-rich feed [calc:CALC-A2-OW16-HUILE-TOTALE]; 5 % on household waste with 10 % resins [UR2000-JP-P05-BILAN] | Gross calorific value 45,000 to 46,000 J/g [CHIBA-JLOS-HUILES] |
-| Char | Carbon-rich solid residue [OW-ENG-P14-P15-PROCEDE] | 5 % of input on a resin-rich feed [OW-ENG-P16-BILAN]; 25 % on household waste with 10 % resins [UR2000-JP-P05-BILAN] | 24.6 MJ/kg for char from plastic residues [calc:CALC-A2-PCI-CHAR-PLASTIQUE]; 32,090 J/g for char from household waste, measured on a urethane char [IZUMITEC-R35-339439] [hyp:D-038] |
+| Oils | Light (heating) oil, gas (diesel) oil and heavy oil; asphaltenes remain at the hottest step [OW-ENG-P14-P15-PROCEDE] | 76.5 % of the products listed in OneWorld's design table for a resin-rich feed, whose input basis is unclear [calc:CALC-A2-OW16-HUILE-TOTALE]; 5 % on household waste with 10 % resins [UR2000-JP-P05-BILAN] | Gross calorific value 45,000 to 46,000 J/g [CHIBA-JLOS-HUILES] |
+| Char | Carbon-rich solid residue [OW-ENG-P14-P15-PROCEDE] | 5 % of input on a resin-rich feed [OW-ENG-P16-BILAN]; 25 % on household waste with 10 % resins [UR2000-JP-P05-BILAN] | 24.6 MJ/kg for char from plastic residues [calc:CALC-A2-PCI-CHAR-PLASTIQUE]; 32,090 J/g assumed for char from household waste, measured on a urethane char sample, not on household waste char [IZUMITEC-R35-339439] [hyp:D-038] |
 | Metals and glass | Separated from the char; metals not oxidised, according to OneWorld design data [OW-ENG-P14-P15-PROCEDE] | 2 % on a resin-rich feed [OW-ENG-P16-BILAN]; 0 to 5 % on household waste [UR2000-JP-P05-BILAN] | not analysed (R-031) |
 | Gas | Non-condensable gas, used as process fuel (Section 1.2.3) | 5 % on household waste with 10 % resins [UR2000-JP-P05-BILAN] | 37.4 MJ/kg [calc:CALC-A2-GAZ-PCI] |
 | Water | Condensed steam and moisture of the waste | 5 % on a resin-rich feed, reused in the boiler [OW-ENG-P16-BILAN] | untreated water above discharge standards; treatment to be designed [CHIBA-CONSTATS] |
@@ -147,13 +149,15 @@ See Section 1.2.3. On the household waste case, OneWorld's design gives 5 % of t
 
 ### 1.4.2 Emissions, Including Dioxins
 
-**Dioxin levels are very low.** The measurements gave 0.011 and 0.025 ng-TEQ/m³ in 2023 [DIOXINES-2023] and 0.067 ng-TEQ/m³ in 2022 [CHIBA-OOSUMI-FUMEES]. All are below the EU limit for waste incineration of 0.1 ng/Nm³ [IED-2010-75-ANX6-P3]. The 2023 values are within the best-available-technique range for new plants, below 0.01 to 0.04 ng I-TEQ/Nm³ [BAT-WI-2019-2010].
+**Dioxin levels are low as reported.** The measurements gave 0.011 and 0.025 ng-TEQ/m³ in 2023 [DIOXINES-2023] and 0.067 ng-TEQ/m³ in 2022 [CHIBA-OOSUMI-FUMEES]. All are numerically below the EU limit for waste incineration of 0.1 ng/Nm³, and the 2023 values within the best-available-technique range for new plants, 0.01 to 0.04 ng I-TEQ/Nm³ [IED-2010-75-ANX6-P3] [BAT-WI-2019-2010]. These limits apply at 11 % oxygen, which the reports do not state [DIOXINES-2023] [CHIBA-OOSUMI-FUMEES]: compliance is possible under conditions, to be confirmed on final reports (R-016).
 
 OneWorld explains this by the absence of oxygen in the reactor, where dioxins cannot form [OW-ENG-P02-P14-AFFIRMATIONS]. The stack gas comes from the boiler, superheaters and heaters [OW-ENG-P02-P14-AFFIRMATIONS], so the plant does emit combustion gas.
 
 **Other pollutants.** Nitrogen oxides, sulphur oxides, dust and hydrogen chloride were all below the EU daily limits on the values as reported (Annex 2, Section 2.7). The values are not yet corrected to the EU reference of 11 % oxygen [IED-2010-75-ANX6-P3], and the 2022 and 2023 reports are provisional; final reports are requested (R-016).
 
 **Flue gas treatment.** OneWorld sells a flue gas treatment unit, PRIMO (removal of nitrogen oxides, sulphur oxides, dust and odour), as an option [OW-ENG-P03-P19-GAMME-DELAIS]. The configuration for a French plant is to be specified (R-029).
+
+**Other options.** OneWorld also offers SEA CORAL, a ceramic water treatment [OW-ENG-P13-SEACORAL], documented only on sea water [SEACORAL-DETAIL-ENG], and FORCE 9, a catalytic stabilisation of the residues at about 400 °C [OW-ENG-P03-P19-GAMME-DELAIS]. Both are included in the price retained by the sponsor (Annex 9); whether they are needed, and how they perform on Urban Rig effluents and char, is not established (R-017).
 
 ### 1.4.3 Fractional Oil Separation
 
@@ -169,7 +173,7 @@ According to OneWorld design data, the continuous plants are controlled by micro
 
 Annex 2 (Section 2.6) builds the energy balance on OneWorld's figures [hyp:D-021] [hyp:D-038]:
 
-- **Heat.** The superheating burner corresponds to 1,507 MJ per tonne treated [calc:CALC-A2-BRULEUR-MJ-T]. The gas covers this demand 2.9 times on OneWorld's resin-rich example, with 11.5 % gas [calc:CALC-A2-COUV-BRULEUR-RESINE], and 3.7 times on pure plastic with 15 % gas [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] [hyp:D-038]. This supports OneWorld's statement that no fuel is needed after start-up [OW-ENG-P02-P14-AFFIRMATIONS]. On household and municipal waste, self-sufficiency is not established: their gas was not measured and includes the moisture of the feed; their energy balance is built in Annex 5, according to the feed chosen [hyp:D-029]. A start-up fuel is needed.
+- **Heat.** The superheating burner corresponds to 1,507 MJ per tonne treated [calc:CALC-A2-BRULEUR-MJ-T]. Taking the 11.5 % "recovery loss" of OneWorld's resin-rich design table as gas, the gas would cover this demand 2.9 times [calc:CALC-A2-COUV-BRULEUR-RESINE], and 3.7 times on pure plastic with 15 % gas [calc:CALC-A2-COUV-BRULEUR-PLASTIQUE15] [hyp:D-038]. These are design scenarios, not measurements of the gas quantity; they make OneWorld's statement that no fuel is needed after start-up plausible on resin-rich feeds [OW-ENG-P02-P14-AFFIRMATIONS], without demonstrating it. The gas quantity, its routing and losses are to be measured on the continuous plant (R-025). On household and municipal waste, self-sufficiency is not established: their gas was not measured and includes the moisture of the feed; their energy balance is built in Annex 5, according to the feed chosen [hyp:D-029]. A start-up fuel is needed.
 - **Electricity.** Bought from the grid: 600 kW for a 200 t plant according to OneWorld's consumption table [OW-CONSO-ENERGIE], or 259 MJ per tonne [calc:CALC-A2-ELEC-MJ-T]. The brochure gives 20 kW [UR2000-JP-P08-SPEC]; the gap is an open point of Annex 2 (R-015).
 
 The batch tests at Noda used gas oil for heating and for a diesel generator [CHIBA-BILANS]. A small batch reactor heated for each run does not represent the consumption of a continuous plant [hyp:D-021].
@@ -179,7 +183,7 @@ The batch tests at Noda used gas oil for heating and for a diesel generator [CHI
 According to OneWorld design data [UR2000-JP-P06-P07-MODULES]:
 
 - the URC-2000 is made of 7 units of about 12 t, produced in series [UR2000-JP-P06-P07-MODULES];
-- the machine is split into 7 parts, carried by truck and assembled on site [UR2000-JP-P06-P07-MODULES];
+- the machine is split into 7 parts, carried by truck and assembled on site [UR2000-JP-P06-P07-MODULES]; another OneWorld table gives 100 forty-foot containers for a 200 t plant [OW-TRANSPORT-INSTALLATION], probably including the auxiliaries; a packing list is to be obtained (R-027);
 - larger capacities are reached by combining several 200 t plants [UR2000-JP-P06-P07-MODULES]. A 1,000 t per day layout uses 5 URC-2000 lines [UR2000-JP-P09-P13-PLANS].
 
 Delivery and installation, according to OneWorld documents: about 10 months of manufacturing for a continuous plant [OW-ENG-P03-P19-GAMME-DELAIS], or 4 months from contract to test run [UR2000-JP-P09-P13-PLANS]; 30 days of installation on site and maintenance of 3 days every 3 months for a 200 t plant [OW-TRANSPORT-INSTALLATION]. These figures differ between documents and are to be confirmed (R-027).
@@ -198,18 +202,18 @@ The plant can earn from five sources. This annex names them only; amounts are se
 
 **The EU waste hierarchy** ranks, in order: prevention, preparing for re-use, recycling, other recovery (for example energy recovery), and disposal [WFD-2008-98-ART3-4]. Recycling excludes the reprocessing of waste into materials to be used as fuels [WFD-2008-98-ART3-4].
 
-**Consequence for the Urban Rig.** Oil sold as fuel counts as recovery, not recycling. Oil sold as a raw material, for example to a steam cracker, would count as recycling; steam crackers accept about 3 ppm of chlorine [KUSENBERG-AICHE-2021], far below the oils measured so far [CHIBA-JLOS-HUILES].
+**Consequence for the Urban Rig.** Oil sold as fuel counts as recovery, not recycling. Oil sold as a raw material, for example to a steam cracker, could count as recycling if it is actually reprocessed into materials and the status and counting rules are met; steam crackers accept about 3 ppm of chlorine [KUSENBERG-AICHE-2021], far below the oils measured so far [CHIBA-JLOS-HUILES].
 
-**Permitting.** Under the Industrial Emissions Directive, a pyrolysis or gasification plant is a waste incineration plant when the substances it produces are then incinerated [IED-2010-75-ART3-42]. The incineration chapter does not apply if the gases are purified until they are no longer waste and emit no more than natural gas [IED-2010-75-ART3-42]. How the off-gas is treated and burned (R-025) therefore decides the permitting route; Annex 2 already compares the measured emissions with the incineration limits.
+**Permitting.** Under the Industrial Emissions Directive, a pyrolysis or gasification plant is a waste incineration plant when the substances it produces are then incinerated [IED-2010-75-ART3-42]. Since the amendment of 2024, the incineration chapter does not apply if the gases or liquids produced are treated before being burned so that they emit less than the least polluting fuel that could be burned in the installation [A4-IED-2024-1785-ART42]. Until this is demonstrated, the prudent assumption is that the plant falls under the incineration rules (Annex 4). How the off-gas is treated and burned (R-025) therefore decides the permitting route; Annex 2 already compares the measured emissions with the incineration limits.
 
 **Recycling against energy recovery.** The European Commission's Joint Research Centre found recycling, whether mechanical, physical or chemical, preferable to energy recovery in all the pathways it analysed, and could not establish a clear ranking between mechanical and chemical recycling [JRC-2023-PLASTIC-RECYCLING].
 
 | Route | What happens to the waste | Status in the EU waste hierarchy | Status under the Industrial Emissions Directive |
 |---|---|---|---|
 | Incineration with energy recovery | Burned with oxygen; heat recovered as steam, electricity or heat | Other recovery [WFD-2008-98-ART3-4] | Waste incineration plant [IED-2010-75-ART3-42] |
-| Gasification | Converted into a synthesis gas of small molecules [JRC-2023-PLASTIC-RECYCLING] | Recycling if the product is a material; recovery if it is burned [WFD-2008-98-ART3-4] | Incineration plant if the products are incinerated, unless the gas is purified [IED-2010-75-ART3-42] |
+| Gasification | Converted into a synthesis gas of small molecules [JRC-2023-PLASTIC-RECYCLING] | Recycling if the product is a material; recovery if it is burned [WFD-2008-98-ART3-4] | Incineration plant if the products are incinerated, unless the gases or liquids are treated to the 2024 emission test [IED-2010-75-ART3-42] [A4-IED-2024-1785-ART42] |
 | Mechanical recycling | Plastics reprocessed into plastic material | Recycling [WFD-2008-98-ART3-4] | Not a thermal treatment |
-| Pyrolysis, including the Urban Rig | Heated without oxygen into oil, gas and char [JRC-2023-PLASTIC-RECYCLING] | Recycling if the oil is a material; recovery if it is burned [WFD-2008-98-ART3-4] | Incineration plant if the products are incinerated, unless the gas is purified [IED-2010-75-ART3-42] |
+| Pyrolysis, including the Urban Rig | Heated without oxygen into oil, gas and char [JRC-2023-PLASTIC-RECYCLING] | Recycling if the oil is a material; recovery if it is burned [WFD-2008-98-ART3-4] | Incineration plant if the products are incinerated, unless the gases or liquids are treated to the 2024 emission test [IED-2010-75-ART3-42] [A4-IED-2024-1785-ART42] |
 
 **What sets the Urban Rig apart from other pyrolysis plants, according to OneWorld design data:** superheated steam as heat carrier and oxygen barrier, a line of units at fixed temperatures that separates oil grades, and mixed waste as feed rather than sorted plastics [OW-ENG-P14-P15-PROCEDE]. These features are the manufacturer's; no independent comparison of pyrolysis technologies was found.
 

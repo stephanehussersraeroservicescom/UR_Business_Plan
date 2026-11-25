@@ -107,7 +107,9 @@ R-010:
   detenteur: "OneWorld Corporation"
   cherche: "UR2000-JP p. 5 et 7 ; brochure anglaise p. 4, 15 et 16 : contradictions internes, aucune mesure jointe"
   sources: [UR2000-JP-P05-BILAN, OW-ENG-P16-BILAN, OW-ENG-P02-P14-AFFIRMATIONS]
-
+  complement_2026_11_25: 'UR2000-JP p. 5 relue : les pourcentages (char 25 %, huile 5 %, off-gas 5 %) sont
+    des parts du volume d''entree de 200 m3 (50 m3, 10 000 L, 10 000 L). Demander la base massique et un
+    bilan massique mesure sur ordures menageres.'
 R-011:
   complement_2026_10_14_soir: "Stephane (14/10/2026 soir) : ou le gaz B2002600 a-t-il ete preleve ? Le bulletin indique 採取箇所 « ー » (non renseigne), installation et nom d'echantillon caviardes (… 過熱水蒸気炭化装置 オフガス), preleve par KANSO. 65,8 % N2 et 12,3 % O2 : avant ou apres bruleur, avant ou apres la tour catalytique, a la cheminee, purge a l'azote ?"
   question: "Off-gas : mesure directe de la masse ou du debit, composition non diluee, PCI mesure ; origine du facteur 1 323,8 kcal/kg utilise dans les bilans de Chiba ; nature de l'echantillon KANSO B2002600 (65,8 % N2, 12,3 % O2) et site mesure"
@@ -117,7 +119,9 @@ R-011:
   detenteur: "OneWorld Corporation (et Asada Shokai / Land Brain via OneWorld pour les essais de Noda)"
   cherche: "Rapport Chiba p. 27 (off-gas calcule par difference), p. 41 et 42 (facteur applique) ; KANSO p. 1 (site caviarde)"
   sources: [CHIBA-ESSAIS-FICHES, CHIBA-BILANS, KANSO-B2002600]
-
+  complement_2026_11_25: 'Brochure anglaise p. 16 : que contient la « Recovery Loss » de 11,5 % (« mainly
+    discharged as flue gas ; a very small amount will be carbide ») : masse de gaz de pyrolyse, composition,
+    part brulee, eau ? Bilan gazeux mesure sur l''URC-2000 en continu.'
 R-012:
   complement_2026_10_15_lot1: "15/10/2026 (D-038) : char de dechets menagers pris a 32,09 MJ/kg (Izumitec, char d'urethane, HYPOTHESE de Stephane) ; demander une mesure de PCI, cendres et chlore sur char de dechets menagers. Char de residus plastiques : 24,6 MJ/kg, facteur de Chiba d'origine inconnue."
   question: "Char : PCI mesure (PCS ou PCI, base seche ou brute) sur char de dechets melanges ; origine du facteur 5 880 kcal/kg des bilans de Chiba ; origine du char d'urethane Izumitec R35-339439 (machine Urban Rig ? site de Toyohashi ?) ; analyse elementaire (C, cendres, Cl)"
@@ -127,7 +131,8 @@ R-012:
   detenteur: "OneWorld Corporation"
   cherche: "Rapport Chiba p. 41, 42, 47 a 50 ; Calorie-content-UR-Carbide-1.pdf ; aucun PCI de char de dechets dans les 29 fichiers"
   sources: [CHIBA-BILANS, CHIBA-OOSUMI-CHAR, IZUMITEC-R35-339439]
-
+  complement_2026_11_25: 'Char : specification par lot pour le debouche CSR (chlore, cendres, humidite,
+    homogeneite et autres caracterisations de l''arrete du 23 mai 2016).'
 R-013:
   complement_2026_10_14_soir: "Stephane (14/10/2026 soir) : (1) la methode de mesure du chlore JLOS n'est pas indiquee ; le mot 'total' ecrit auparavant n'est pas dans la source (corrige) ; demander chlore organique / inorganique (sel, HCl dissous) ; les deux huiles ont une reaction acide (酸性). (2) L'unite d'essai de Noda avait un reservoir de reaction catalytique avant le condenseur (rapport Chiba PDF p. 29) : fonction (dechloration ?), type, etat, identique a la couche catalytique de l'URC-2000 ? (3) Echantillon 'drain' ORIST : machine, matiere, date, point de prelevement ; analyse en masse et distillation carbureacteur."
   question: "Huile : certificat NKKK ZPE8004.1/19 d'origine et origine de l'echantillon (machine, matiere, date) ; PCI mesure ; chlore (JLOS mesure 0,137 et 0,526 % sur les huiles de Noda, methode non indiquee ; NKKK ne donne que le chlore inorganique) ; distillation normee ; repartition reelle par zone de l'URC-2000 ; lien du rapport YTS 2014 avec Urban Rig ; source des valeurs du tableau de synthese p. 17 (viscosite 2,28, chlore 100 under) ; rapport formel ORIST et origine de l'echantillon 'drain'"
@@ -165,7 +170,10 @@ R-016:
   detenteur: "OneWorld Corporation (et Land Brain pour les rapports 2022 et 2023)"
   cherche: "Rapport Chiba p. 55 a 70 ; Analysis-Results-Off-gas-Odor-Exhaust.pdf ; Exhaust Gas Concentration - Bad Smell - Dioxins.pdf ; Dioxins.pdf ; UR2000-JP p. 14"
   sources: [CHIBA-OOSUMI-FUMEES, KANSO-20002610, TANABE-2023, DIOXINES-2023, UR2000-JP-P14-EMISSIONS]
-
+  complement_2026_11_25: 'Campagne de permis sur la charge cible en continu : mesures en continu de poussieres,
+    COT, HCl, HF, SO2, NOx, CO, avec O2, temperature et vapeur d''eau, sur les periodes reglementaires (moyennes
+    journalieres ; dioxines sur 6 a 8 h) ; mesures periodiques des metaux lourds et dioxines (directive
+    2010/75/UE, annexe VI, parties 3 et 6) ; rapports definitifs.'
 R-017:
   complement_2026_10_14_soir: "Stephane (14/10/2026 soir) : traitement des eaux par SEA CORAL. Lu : brochure anglaise p. 13 (OPTION), SEA CORALdetail.pdf et presentation japonaise : seul un essai de dessalement d'eau de mer, sans laboratoire ni date. Rapport Chiba PDF p. 39 : l'unite d'essai n'avait pas de traitement des eaux. Demander un essai SEA CORAL sur eaux de procede Urban Rig (phenols, cyanures, DBO, pH 0,8), capacite, gestion du concentrat, cout."
   question: "Eaux de procede : volume par tonne traitee, origine (46 a 90 L par essai de 20 a 60 kg), composition (pH 0,8 et DBO 16 000 mg/L sur residus incombustibles) et traitement prevu sur l'URC-2000"
@@ -175,7 +183,9 @@ R-017:
   detenteur: "OneWorld Corporation"
   cherche: "Rapport Chiba p. 19 a 26, 44, 51 a 54"
   sources: [CHIBA-ESSAIS-FICHES, CHIBA-OOSUMI-EAUX, CHIBA-SYNTHESE]
-
+  complement_2026_11_25: Essai de traitabilite sur l'eau de procede reelle (phenols, cyanures, DBO, pH 0,8),
+    bilan eau en continu, filiere de traitement, destination des concentrats, criteres de rejet et garantie
+    de performance.
 R-018:
   complement_2026_10_15_lot1: "15/10/2026 (D-033) : point 407 L (p. 43) / 451 L (fiches) explique (44 L des essais de Noda) et retire. Masse d'huile : jaugee (p. 29), valeur imprimee conservee. 250 / 310 kg : non bloquant."
   question: "Essais de Chiba : duree et temperature de chaque essai ; masse d'huile pesee ou deduite du volume ; ecarts 250 kg declares / 310 kg sur fiches ; off-gas de 19 % puis 2 % sur deux essais 3P de 60 kg ; nature exacte de la matiere du 26/05 (granules ou chutes)"
@@ -456,14 +466,21 @@ R-047:
   detenteur: "Constructeurs (Anaergia, VM Press, db technologies), OneWorld pour SEA CORAL"
 
 R-048:
-  question: "Humidite, pouvoir calorifique et composition des fines des DAE en melange en France (et en Ile-de-France) ; tonnage des DAE en melange en Ile-de-France"
+  question_avant_2026_11_25: "Humidite, pouvoir calorifique et composition des fines des DAE en melange en France (et en Ile-de-France) ; tonnage des DAE en melange en Ile-de-France"
   demande_par: Claude
   date: 2026-11-19
-  statut: introuvable
+  statut_avant_2026_11_25: introuvable
   cherche: "Chat 5 (19/11/2026) : Insee Premiere 2034 (parts seulement, pas d'humidite) ; rapport ADEME 2025 sur le tri des DAE (composition visuelle, sans humidite ni PCI) ; rapport de suivi 3 du PRPGD d'Ile-de-France (pas de tonnage en melange) ; RECORD 14-0245 (rien sur les DAE) ; Zero Waste Scotland 2024 (aucune composition mesuree) ; recherche web « PCI DAE en melange », « refus de tri DAE PCI »."
   manque: "Humidite, PCI et chlore des DAE en melange ; composition des fines ; tonnage regional en melange"
   sources: [A7-INSEE-IP2034-2025, A7-ADEME-TRI-DAE-2025, A7-PRPGD-IDF-SUIVI3-2023]
-
+  question: Humidite, pouvoir calorifique, chlore et composition des fines des DAE en melange en France
+    (et en Ile-de-France)
+  statut: introuvable
+  complement_2026_11_25: 'Le tonnage regional des DAE en melange est retire de la question : le rapport
+    de suivi 3 du PRPGD publie 2,77 Mt en 2020, total minimal (A7-PRPGD-IDF-SUIVI3-2023, lu par Claude et
+    Codex le 25/11/2026). Codex signale une specification publique de CSR prepare (PCI 12 a 18 MJ/kg, humidite
+    15 a 25 %) dans un dossier d''autorisation de chaufferie ; non lue par Claude et non representative
+    du DAE brut : non reprise.'
 R-049:
   question: "Cout de livraison d'un URC-2000 du Japon vers un site francais : fret maritime de 100 conteneurs de 40 pieds (OW-TRANSPORT-INSTALLATION), transport terrestre, douane ; cout de l'installation sur site (30 jours, 10 personnes) et de la formation (30 jours, 9 formateurs) : compris dans le prix ou non"
   demande_par: Claude
@@ -493,3 +510,22 @@ R-051:
   cherche: "Notices ORDIF UIDND et ISDND 2022-2023 (pas d'exploitants nommes dans les extraits lus) ; communique TotalEnergies Grandpuits ; presse Carbios ; conditions ADEME centres de tri 2022 ; article AMORCE sur les aides CSR. Aucune source lue sur les autres aides ni sur l'acceptabilite."
   sources: [A8-CST-ORDIF-UIDND-2023, A8-CST-ORDIF-ISDND-2023, TOTAL-GRANDPUITS-2026, PRM-ADEME-CDT-CONDITIONS-2022, A8-CST-AMORCE-CSR-2023]
   complement_2026_11_25: "Apres contre-verification Codex (annexe 4, lots 4 et 5) : contrats amont (lettres d'intention de fournisseurs de dechets totalisant au moins 51 100 t/an, avec analyses de composition) et aval (acheteurs de l'huile et du char) ; date de demarrage actualisee de Carbios Longlaville."
+
+# === ANNEXE 7, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+R-052:
+  question: 'Caracterisation d''un flux cible de DAE en melange ou de refus de tri de DAE : humidite,
+    PCI, cendres, chlore, soufre, metaux, composition des fines, part et classe du bois (A, BR1, BR2),
+    variabilite entre bennes et dans le temps ; specification d''admission, plan d''echantillonnage et
+    criteres de refus pour un contrat'
+  demande_par: Claude
+  date: 2026-11-25
+  statut: a_demander
+  detenteur: Detenteur du flux cible (centre de tri de DAE ou producteur) ; laboratoire d'analyse ; OneWorld
+    pour l'essai (R-021)
+  cherche: Rapport ADEME 2025 sur le tri des DAE (composition visuelle, sans humidite, PCI ni chlore)
+    ; referentiel FCBA 2022 de classification des dechets bois (classes, pas d'analyse du flux) ; voir
+    aussi R-048.
+  sources:
+  - A7-ADEME-TRI-DAE-2025
+  - A7-FCBA-CLASSIF-BOIS-2022

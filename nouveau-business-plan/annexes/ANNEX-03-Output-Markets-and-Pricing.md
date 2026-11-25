@@ -12,11 +12,13 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 
 **A note on 2026 prices.** Oil prices are in a period of crisis: the Brent averaged 69.0 USD per barrel in 2025 and 116.8 USD in September 2026 [A3-BM-PINKSHEET-2026-10], and 128.53 USD in the week to 9 October 2026 [A3-DGEC-NPG-2026-10-09-COTATIONS]. Defaults based on the latest prices are therefore high; the sensitivity of Section 3.1.6 shows the effect of a lower oil price.
 
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 3.
+
 ## Key Messages
 
 - **The oil is priced by fraction.** OneWorld design data split the oil into 80 % gas oil, 10 % light oil and 10 % heavy oil [calc:CALC-A1-OW16-PART-GAZOLE] [calc:CALC-A1-OW16-PART-HEATING] [calc:CALC-A1-OW16-PART-HEAVY]. Each fraction is benchmarked to its fossil equivalent: naphtha, gas oil and low-sulphur fuel oil [hyp:D-028].
 - **At the latest prices, the benchmark value of the oil is 1,121 EUR/t; at a Brent of 80 USD it is 714 EUR/t, and at 50 USD 446 EUR/t** [calc:CALC-A3-HUILE-MOY-REF] [calc:CALC-A3-HUILE-MOY-BRENT80] [calc:CALC-A3-HUILE-MOY-BRENT50]. These are benchmarks before any quality discount; the discount is an operator input (Section 3.1.5).
-- **As produced from municipal plastics, the oil is an industrial fuel.** It does not meet the gas oil or fuel oil specifications without refining, and its chlorine is 2.7 to 10.5 times the limit for use in a steam cracker without purification [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]. A French end-of-waste order exists for pyrolysis oil sent to a steam cracker, but only for sorted plastic waste [A3-ARRETE-SSD-HUILE-PYROLYSE-2024].
+- **As produced from municipal plastics, the oil is a hazardous waste fuel.** Its flash point is below 40 °C [CHIBA-JLOS-HUILES], and a liquid waste with a flash point below 60 °C is hazardous [A3-REG1357-2014-HP3]: it can only be delivered to a plant authorised to receive this hazardous waste for thermal treatment or co-incineration. It does not meet the gas oil or fuel oil specifications without refining, and its chlorine is 2.7 to 10.5 times the limit for use in a steam cracker without purification [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]. A French end-of-waste order exists for pyrolysis oil sent to a steam cracker, but only for sorted plastic waste [A3-ARRETE-SSD-HUILE-PYROLYSE-2024].
 - **The char is a solid fuel for cement kilns.** Its energy content of 32,090 J/g [IZUMITEC-R35-339439] gives it a value of 123 to 255 EUR/t at parity with petroleum coke or coal [calc:CALC-A3-CHAR-PARITE-PETCOKE] [calc:CALC-A3-CHAR-PARITE-INSEE]. French cement plants aim to cover 80 % of their energy with alternative fuels by 2030 [A3G-FDR-DECARBONATION-CIMENT-2023]. Its chlorine content, the decisive acceptance criterion, is still to be measured.
 - **Metals are priced at public scrap values:** 316.4 EUR/t for shredded steel scrap and 1,723 EUR/t for aluminium scrap, French exports in the first half of 2026 [A3H-COMEXT-MENSUEL-2025-2026].
 - **On a plastic-only feed, the surplus gas can be sold, including its hydrogen** [hyp:D-031]. The gas holds about 13 kg of hydrogen per tonne of resin-rich feed [calc:CALC-A3-H2-KG-T-RESINE], worth 27 to 109 EUR per tonne before purification [calc:CALC-A3-H2-VAL-GRIS] [calc:CALC-A3-H2-VAL-HYDRIX].
@@ -27,7 +29,7 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 
 ### 3.1.1 Fractions and Their Outlets
 
-According to OneWorld design data, the continuous plant condenses the vapours in zones heated to 150, 300, 450 and 600 °C [UR2000-JP-P08-SPEC], and a solenoid valve separates gas oil and heavy oil by vapour temperature [OW-ENG-P14-P15-PROCEDE]. For a resin-rich feed, the design balance gives:
+According to OneWorld design data, the continuous plant has heating zones set at 150, 300, 450 and 600 °C [UR2000-JP-P08-SPEC]; separately, a solenoid valve separates gas oil and heavy oil by vapour temperature [OW-ENG-P14-P15-PROCEDE]. For a resin-rich feed, the design balance gives:
 
 | Fraction (OneWorld) | Share of the oil | Outlet stated by OneWorld | Benchmark used here |
 |---|---|---|---|
@@ -47,26 +49,39 @@ The measured properties are those of the two oils made from municipal waste at N
 
 | Property | Urban Rig oil, municipal plastics | Gas oil (France) | Heavy fuel oil (France) | Steam cracker, end-of-waste without purification |
 |---|---|---|---|---|
-| Flash point | below 40 °C [CHIBA-JLOS-HUILES] | at least 55 °C [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | at least 70 °C [A3-ARRETE-FIOULS-LOURDS-2000] | not set [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
-| Sulphur | below 0.05 % and 0.06 % [CHIBA-JLOS-HUILES] | 10 mg/kg at most [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | 1 % to 4 % depending on grade [A3-ARRETE-FIOULS-LOURDS-2000] | 3,000 ppm [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
+| Flash point | below 40 °C [CHIBA-JLOS-HUILES] | above 55 °C [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | at least 70 °C [A3-ARRETE-FIOULS-LOURDS-2000] | not set [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
+| Sulphur | below 0.05 % and 0.06 % [CHIBA-JLOS-HUILES] | 10 mg/kg at most [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | at most 1 %, 2 % or 4 % depending on grade [A3-ARRETE-FIOULS-LOURDS-2000] | 3,000 ppm [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
 | Density at 15 °C | 0.8642 and 0.8762 g/cm³ [CHIBA-JLOS-HUILES] | 820 to 845 kg/m³ [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | not set | not set |
 | Water | 0.13 % and 0.20 % [CHIBA-JLOS-HUILES] | 200 mg/kg at most [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | 1.5 % at most [A3-ARRETE-FIOULS-LOURDS-2000] | not set |
+| Nitrogen | 0.24 % and 0.43 %, i.e. 2,400 and 4,300 ppm [CHIBA-JLOS-HUILES] | not set | not set | 5,000 ppm; 10,000 ppm if purified [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
 | Chlorine | 0.137 % and 0.526 % [CHIBA-JLOS-HUILES] | no limit in the text read [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | no limit in the text read [A3-ARRETE-FIOULS-LOURDS-2000] | sum of halogens 500 ppm; 30,000 ppm if purified [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] |
 
 Reading.
 
 - **Gas oil and heating oil.** The oil fails the flash point, and its sulphur is up to 60 times the gas oil limit [calc:CALC-A3-SOUFRE-GAZOLE]. It needs refining (stabilisation, hydrotreatment) before it can be sold as a road or heating fuel.
 - **Regulated heavy fuel oil.** The flash point is also too low for the French heavy fuel oil specification [A3-ARRETE-FIOULS-LOURDS-2000].
-- **Fuel for a permitted combustion plant.** This is the outlet that fits the oil as produced. The plant's permit sets the fuels allowed [ARRETE-2910-2018]. Below 1 % of halogenated substances, the oil does not trigger the 1,100 °C requirement for waste combustion [IED-2010-75-ART50].
-- **Steam cracker.** Without purification, the chlorine of the municipal oils is 2.7 and 10.5 times the limit [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]; at the cracker inlet, the industrial threshold is 3 ppm [KUSENBERG-AICHE-2021]. Nitrogen, oxygen and metals, also limited, have not been measured (R-035).
-- **Jet fuel.** No ASTM D7566 annex approves pyrolysis oil from plastics [A3-ASTM-D7566-24]. Recycled carbon aviation fuels must save at least 70 % of emissions [A3-RCF-2023-1185]. This outlet is not open in the short term.
+- **Fuel sold as a hazardous waste.** With a flash point below 40 °C [CHIBA-JLOS-HUILES], the oil is a hazardous waste (property HP 3, flash point below 60 °C) [A3-REG1357-2014-HP3]. An ordinary combustion plant cannot take it on the basis of its fuel list [ARRETE-2910-2018]; it must go to a plant authorised for the thermal treatment or co-incineration of this hazardous waste, such as a cement kiln with that authorisation, under an acceptance certificate. The 1,100 °C rule applies to hazardous waste with more than 1 % of halogenated organic substances expressed as chlorine [IED-2010-75-ART50]; the total chlorine measured, 0.137 % and 0.526 %, stays below 1 % even if all of it were organic [CHIBA-JLOS-HUILES]. This outlet is possible under conditions; no buyer has been identified.
+- **Steam cracker.** Without purification, the chlorine of the municipal oils is 2.7 and 10.5 times the limit [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]; at the cracker inlet, the industrial threshold is 3 ppm [KUSENBERG-AICHE-2021]. Nitrogen was measured at 2,400 and 4,300 ppm, below the 5,000 ppm limit [CHIBA-JLOS-HUILES] [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]; oxygen and metals, also limited, have not been measured (R-035).
+- **Jet fuel.** No ASTM D7566 annex approving pyrolysis oil from plastics was identified in the accessible summary of the standard; the full standard has not been read [A3-ASTM-D7566-24]. Recycled carbon aviation fuels must save at least 70 % of emissions [A3-RCF-2023-1185]. This outlet is not open in the short term.
+
+**What opens or closes each market.**
+
+| Market | Conditions | Measured oil (municipal plastics) | Conclusion |
+|---|---|---|---|
+| Steam cracker, end of waste, without purification | Listed sorted plastic waste, PE + PP + PS at least 85 %, PVC at most 3 %; halogens 500 ppm, sulphur 3,000 ppm, nitrogen 5,000 ppm, oxygen 10,000 ppm, metals 500 ppm [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] | Chlorine 1,370 and 5,260 ppm; nitrogen 2,400 and 4,300 ppm [CHIBA-JLOS-HUILES] | Does not pass: chlorine |
+| Steam cracker, end of waste, after purification | Same feed; halogens 30,000 ppm, sulphur 5,000 ppm, nitrogen 10,000 ppm, oxygen 40,000 ppm, metals 5,000 ppm for the compounds treated [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]; buyer's specification | Chlorine, sulphur and nitrogen within these limits; oxygen and metals not measured [CHIBA-JLOS-HUILES] | Possible under conditions, for a sorted plastic feed only |
+| Fuel sold as a hazardous waste | Plant authorised for this hazardous waste [A3-REG1357-2014-HP3] | Flash point below 40 °C [CHIBA-JLOS-HUILES] | Possible under conditions |
+| Heavy fuel oil | Flash point at least 70 °C [A3-ARRETE-FIOULS-LOURDS-2000] | Below 40 °C [CHIBA-JLOS-HUILES] | Does not pass without refining |
+| Road diesel | Flash point above 55 °C, sulphur 10 mg/kg, density 820 to 845 kg/m³, water 200 mg/kg [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | Fails on flash point, density, water and sulphur [CHIBA-JLOS-HUILES] | Does not pass without refining |
+
+In short, chlorine closes the steam cracker without purification, and the flash point closes the finished fuels. Finding technical solutions to reach the better markets (removing PVC upstream, dechlorination, stabilisation) is a matter for Urban Rig.
 
 ### 3.1.3 Regulatory Status
 
-- **The oil is a waste** until it meets end-of-waste criteria. French law sets four conditions for a waste to cease being a waste [A3-CODE-ENV-L541-4-3]. Criteria are set by ministerial order, or case by case [A3-DECRET-2012-602-SSD] [A3-DECRET-2026-435-SSD].
+- **The oil is a waste** until it meets end-of-waste criteria. French law sets four conditions for a waste to cease being a waste [A3-CODE-ENV-L541-4-3]. The criteria are set by the minister for the environment [A3-CENV-D541-12-4-6-2026], under a procedure revised in 2026 [A3-DECRET-2026-435-SSD]. The Code also provides that a product made from waste is not a waste if it is similar to the product made without waste and meets the four conditions [A3-CODE-ENV-L541-4-3]; this route has not been examined for the oil.
 - **End-of-waste for a steam cracker (order of 19 February 2024).** It applies to pyrolysis oil used in a steam cracker or a purification unit feeding one [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. The incoming waste must be listed plastic waste with at least 85 % of PE, PP and PS and at most 3 % of PVC [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. Mixed municipal waste is not on the list; separately collected or sorted plastic waste is [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. This route is therefore open only to a plastic-only feed (Annex 8), subject to confirmation with the regional authority.
 - **Fuel is not recycling.** The order states that producing fuel is not recycling [A3-ARRETE-SSD-HUILE-PYROLYSE-2024], in line with the EU definition [WFD-2008-98-ART3-4]. In the EU rules on recycled content, the share turned into fuels counts for zero, and the char is excluded [A3-SUP-DECISION-CONTENU-RECYCLE-2026].
-- **REACH.** A waste is outside REACH; once it ceases to be a waste, the substance must be registered unless it is identical to a substance already registered [A3-REACH-ART2-2006] [A3-ECHA-GUIDE-DECHETS-2010].
+- **REACH.** A waste is outside REACH; once it ceases to be a waste, the substance must be registered unless it is identical to a substance already registered and the safety information on that substance is available to the recovery operator [A3-REACH-ART2-2006] [A3-ECHA-GUIDE-DECHETS-2010].
 - **Certification.** Buyers of recycled feedstock use mass balance certification such as ISCC PLUS [A3-ISCC-PLUS-COC-2026].
 
 ### 3.1.4 Market Benchmarks
@@ -96,9 +111,9 @@ The import unit values are calculated from Eurostat trade statistics (value divi
 
 **Pyrolysis oil itself.** No public quotation was found; the ICIS and Argus assessments are paid services (request R-037) [PRM-ARGUS-PYRO-2024]. Three points of reference:
 
-- Pryme (Rotterdam) sold 822 t of plastic pyrolysis oil in 2025 at about 1,300 EUR/t, ex-works, with a price formula linked to the price of plastic waste rather than naphtha [A3F-PRYME-RAPPORT-ANNUEL-2025]. The oil was sold whole, to a steam cracker buyer; the plant was stopped at the end of March 2026 and the auditor refused to certify the accounts [A3F-PRYME-RAPPORT-ANNUEL-2025].
+- Pryme (Rotterdam) sold 822 t of plastic pyrolysis oil in 2025 at about 1,300 EUR/t, ex-works, with a price formula that refers, among other things, to a plastic waste price index [A3F-PRYME-RAPPORT-ANNUEL-2025]. The oil was sold whole, to a steam cracker buyer (Shell is the partner named in other sources) [A3-SHELL-PRYME-2021]; the plant was stopped at the end of March 2026 and the auditor refused to certify the accounts [A3F-PRYME-RAPPORT-ANNUEL-2025].
 - A commercial index gives 683 USD/t for pyrolysis oil in Germany in September 2026, without origin or quality (not verified) [PRM-IMARC-PYRO-2026].
-- An oil sold as a heavy fuel oil substitute fetched 210 EUR/t in 2020 (secondary source) [A3F-RIEDEWALD-2020-PRIX-HUILE].
+- An economic study calculated a net revenue of 210 EUR/t for a pyrolysis oil used as a heavy fuel oil substitute, in its own scenario; it is a calculation, not an observed sale (secondary source) [A3F-RIEDEWALD-2020-PRIX-HUILE].
 
 ### 3.1.5 Price per Fraction for the Model
 
@@ -131,14 +146,13 @@ Buyers of plastic pyrolysis oil named by a primary source:
 
 | Buyer | Site | What the source states | Source |
 |---|---|---|---|
-| ExxonMobil, with Plastic Energy | Notre-Dame-de-Gravenchon (France) | Plant for 25,000 t per year of plastic waste, oil bought by ExxonMobil | [A3-PLASTICENERGY-NDG-2021] |
-| ExxonMobil | Notre-Dame-de-Gravenchon | Closure of chemical activities announced in April 2024; effect on the agreement not known | [A3-SENAT-EXXON-NDG-2024] |
+| ExxonMobil, with Plastic Energy | Notre-Dame-de-Gravenchon (France) | Historical precedent, not a current buyer: plant for 25,000 t per year of plastic waste announced in 2021 [A3-PLASTICENERGY-NDG-2021]; the steam cracker was shut down permanently in 2024 [A3-SDES-PETROCHIMIE-2026]; effect on the agreement not known [A3-SENAT-EXXON-NDG-2024] | [A3-PLASTICENERGY-NDG-2021] [A3-SDES-PETROCHIMIE-2026] |
 | INEOS | Lavéra (France) | Steam cracker fed with pyrolysis oil from packaging waste, ISCC PLUS | [A3-INEOS-LAVERA-2025] |
 | TotalEnergies, with Plastic Energy | Seville (Spain); Grandpuits (France) | 33,000 t per year in Seville; 15,000 t per year in Grandpuits | [A3-TOTAL-PLASTICENERGY-SEVILLE-2022] |
 | BASF | Germany | Up to 100,000 t per year of oil (Arcus) | [A3-BASF-ARCUS-2022] |
 | Shell, with Pryme | Moerdijk (Netherlands) | Oil from 60,000 t per year of plastic waste | [A3-SHELL-PRYME-2021] [A3-PRYME-SHELL-AVENANT-2024] |
 
-All these buyers take oil made from sorted plastic waste for petrochemical use. None was found buying oil made from mixed household waste. For the fuel outlet, buyers are industrial users with a combustion permit; none is named by a source read.
+All these buyers take oil made from sorted plastic waste for petrochemical use. None was found buying oil made from mixed household waste. For the fuel outlet, buyers are plants authorised to receive this oil as a hazardous waste; none is named by a source read. Letters of intent stating the accepted quality, the status of the product, the volumes and the price formula are the next step.
 
 ## 3.2 Char
 
@@ -163,7 +177,7 @@ OneWorld design data describe the char as a high-calorie powder coal mixed with 
 | Cadmium + mercury + thallium | 100 mg/kg | [A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010] |
 | Lead, chromium, nickel and other metals (sum) | 2,500 mg/kg | [A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010] |
 
-These permits date from 2005 and 2010 [A3G-AP-AIRVAULT-4401-2005] [A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010]; recent permits with figures were not found online (request R-038). On the metals measured, the char meets these limits; on chlorine, it is not known.
+These are historical examples: the Airvault permit of 2005 and the Rochefort permit of 17 April 2007, reproduced in an inspection report of 2010 [A3G-AP-AIRVAULT-4401-2005] [A3G-GEORISQUES-HOLCIM-ROCHEFORT-2010]; recent permits with figures were not found online (request R-038). The measured cadmium, lead and mercury of the char are far below these limits taken one by one; the sums of metals cannot be checked because the other metals were not measured; chlorine is not known (R-034).
 
 **Other outlets.** Boilers burning solid recovered fuel need a net calorific value of at least 12,000 kJ/kg [ARRETE-CSR-2016], but the rules apply to fuels prepared in a dedicated installation [A3-AIDA-AM-23052016-COMBUSTION-CSR], which the char is not. Blast furnace injection requires chlorine below 0.05 % (2010 source) [A3-IEACCC-PCI-PLASTIQUES-2010].
 
@@ -281,11 +295,11 @@ No carbon revenue is counted [hyp:D-028]. The texts were checked one by one:
 | French low-carbon label | Approved method required, additionality, emissions under the EU system excluded [A3I-FR-ARRETE-LBC-2025-ART2-3]; no approved or draft method covers waste [A3I-FR-LBC-METHODES-SITE-2025] [A3I-FR-LBC-PROJETS-METHODES-2025-10] | No, until a method exists |
 | Paris Agreement, Article 6 | Transfers must be authorised by the countries [A3I-ACCORD-PARIS-ART6]; the EU 2030 target is a domestic reduction [A3I-UE-REG-2021-1119-ART4] | No, without State authorisation |
 | Verra (VCS) | EU countries not excluded; a method is required, and the two closest were rejected in March 2026; no double counting with an allowance system [A3I-VERRA-VCS-STANDARD-V5]; plastic credits are in tonnes of plastic, and use as fuel is not eligible [A3-VERRA-PLASTIC-STD-2021] [A3-VERRA-PWRM-2022] | Not today |
-| Gold Standard | Waste methodology limited to metals and minerals [A3-GS-448-2025]; eligibility rules [A3I-GS-501-V3-2-2025] | No |
+| Gold Standard | Waste methodology limited to metals, alloys and minerals [A3-GS-448-2025]; eligibility rules [A3I-GS-501-V3-2-2025] | No for the oil and the char; a route to study for the recovered metals, under conditions |
 | Biochar credits (Puro) | Mixed municipal solid waste not allowed [A3-PURO-BIOCHAR-2025] | No |
 | Guarantees of origin | Renewable energy only; the fossil share of waste is excluded [A3I-UE-DIR-2018-2001-ART2-GO] | No, for the fossil share |
 
-**A risk rather than a revenue.** Combustion installations above 20 MW of thermal input fall within the EU emissions trading system, unless they incinerate hazardous or municipal waste [A3I-UE-DIR-2003-87-ANNEXE-I]. The thermal input of a URC-2000 and its classification are to be confirmed (Annex 4).
+**A risk rather than a revenue.** Combustion installations above 20 MW of thermal input fall within the EU emissions trading system, unless they incinerate hazardous or municipal waste [A3I-UE-DIR-2003-87-ANNEXE-I]; since 1 January 2024, municipal waste incinerators must nevertheless monitor and report their emissions [A3-ZWE-SEQE-ART30-2024]. The thermal input of a URC-2000 and its classification are to be confirmed (Annex 4).
 
 **Claims.** Since 27 September 2026, a product claim based on the offsetting of emissions is prohibited in the EU [A3I-UE-DIR-2024-825-ANNEXE-4C]. The CO2 avoided below is an information for investors, not a claim for products.
 
@@ -356,7 +370,8 @@ Each line is a default that the operator can change [hyp:D-030]. Values marked "
 | Oil fractions | OneWorld design data | Output of each zone not measured (R-013) |
 | Oil benchmarks | Official statistics and quotations | Crisis prices in 2026; constant ratio to Brent |
 | Price of the oil itself | No public quotation | Quality discount to decide; ICIS and Argus paid (R-037) |
-| Steam cracker outlet | Regulation read | Plastic-only feed; nitrogen, oxygen, metals not measured (R-035) |
+| Steam cracker outlet | Regulation read | Plastic-only feed; oxygen and metals not measured (R-035) |
+| Fuel outlet | Regulation read | Hazardous waste (flash point); acceptance by an authorised plant to obtain |
 | Char value | Energy parity and market practice | Chlorine not measured; sense of payment disputed (R-012, R-034, R-038) |
 | Metal prices | Trade statistics and Citeo | Cleanliness of the metals not analysed (R-031) |
 | Hydrogen | Calculated from one gas analysis | Gas quantity and purification cost (R-011, Annex 9) |

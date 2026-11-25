@@ -1,0 +1,277 @@
+# Corrections et ajouts de registre issus du traitement de la contre-verification Codex de l'annexe 7
+# (rapports 2026-11-25-codex-annexe-07-lot-1.md et lot-2.md). Redige par Claude le 25/11/2026.
+# A fusionner par le chat principal dans les registres partages. Aucun registre partage n'a ete modifie.
+# Sections : fiches (registre-sources.yaml), calculs (calculs.yaml), decisions (_decisions.yaml),
+# recherches (a-rechercher.yaml).
+
+fiches:
+
+  # --- fiches existantes : champs a ajouter ou corriger ---
+
+  A7-PRPGD-IDF-SUIVI3-2023:
+    action: completer_et_corriger
+    champs_a_ajouter:
+      url_pdf: https://www.institutparisregion.fr/fileadmin/DataStorage/user_upload/Rapport-de-suivi-PRPGD_2023.pdf
+      emplacement_complement: "section sur les DAE en melange : objectif p. 83 et tableau 'Total de DAE en melange entrant dans les centres de tri' p. 84 de la lecture WebFetch (p. 82 selon Codex ; pagination a confirmer)"
+      contenu_complement: "DAE franciliens en melange : 3,41 Mt (2014), 3,93 Mt (2016), 3,35 Mt (2018), 2,77 Mt (2020) ; quantite entrant en centres de tri : 1,75 ; 2 ; 2,42 ; 1,62 Mt ; taux d'entree en centres de tri : 51 %, 51 %, 72 %, 58 %. Le total est un minimum : la totalite des flux de DAE en melange exportes hors Ile-de-France ne serait pas connue."
+      citation_complement: "Total DAE franciliens en mélange 3,41 Mt 3,93 Mt 3,35 Mt 2,77 Mt | Taux de DAE en mélange entrant en centres de tri 51 % 51 % 72 % 58% | Par conséquent, le total des DAE franciliens en mélange correspond à un minimum. | 100 % des DAE en mélange orientés vers une chaîne de tri en 2025 (51 % en 2014)"
+      lecture_2026_11_25: "Lu par Claude par WebFetch le 25/11/2026 (caracteres 100 000 a 200 000 du PDF de l'Institut Paris Region ; citations transcrites par un modele intermediaire). Meme valeur 2,77 Mt et meme mention de minimum lues par Codex le 25/11/2026 (lot 1, verdict 27) : deux lectures concordantes."
+    champs_a_corriger:
+      contenu: "Supprimer la phrase finale 'Pas de tonnage des DAE en melange.' : elle est fausse (tableau p. 84 de la lecture WebFetch)."
+      note: "Remplacer '(la section 4-2, p. 80, sur le traitement des DAE n'a pas ete lue)' par '(section sur les DAE en melange lue le 25/11/2026, voir lecture_2026_11_25)'."
+    statut: "inchange (verifie-recontrole) ; les nouvelles valeurs ont deux lectures (Claude et Codex)"
+    date_lecture: '2026-11-25'
+
+  A8-CST-ORDIF-ISDND-2023:
+    action: completer
+    champs_a_ajouter:
+      contenu_complement: "Origines producteurs des tonnages enfouis en 2022 (p. 5) : 59,5 % d'installations de traitement de dechets, 38,1 % d'entreprises, 2,4 % de menages et collectivites ; en reaffectant les refus a leurs producteurs initiaux : 77,6 % d'entreprises, 5,7 % d'installations de traitement, 16,3 % de menages et collectivites."
+      citation_complement: "En réaffectant les refus à leur producteurs initiaux… | 77,6 % d’entreprises | 5,7 % d’installations de traitement de déchets | 16,3 % des ménages/collectivités"
+      emplacement_complement: "p. 5, diapositive '3. Nature et origine des tonnages enfouis en Ile-de-France en 2022'"
+      lecture_2026_11_25: "Lu par Claude par WebFetch le 25/11/2026 (citation transcrite par un modele intermediaire ; la source ecrit 'a leur producteurs'). Meme valeur lue par Codex le 25/11/2026 (lot 1, verdict 23)."
+    statut: "lu pour la fiche ; la valeur 77,6 % a deux lectures concordantes (Claude et Codex)"
+    date_lecture: '2026-11-25'
+
+  A7-ADEME-TRI-DAE-2025:
+    action: completer
+    champs_a_ajouter:
+      emplacement_complement: "p. 28 (limites de la composition visuelle) ; p. 29 (bois A, B)"
+      contenu_complement: "Limites de la composition visuelle (p. 28) : precision approximative par rapport a des caracterisations en bonne et due forme ; chaque site a ses propres entrants ; la nature des entrants peut evoluer dans le temps. Le rapport ne definit pas la classe de bois B (mention 'A, B, emballages ou non emballages', p. 29)."
+      citation_complement: "La précision des identifications visuelles reste approximative par rapport à des caractérisations | Chaque site présente ses propres caractéristiques de déchets entrants, en fonction notamment du contexte local | La nature des entrants peut évoluer dans le temps"
+      lecture_2026_11_25: "Lu par Claude par WebFetch le 25/11/2026 (caracteres 0 a 100 000 ; citations transcrites par un modele intermediaire). Meme citation de la p. 28 lue par Codex (lot 1, verdict 38)."
+    date_lecture: '2026-11-25'
+
+  # --- nouvelle fiche ---
+
+  A7-FCBA-CLASSIF-BOIS-2022:
+    action: creer
+    titre: "Referentiel de classification des dechets bois, version 05/2022"
+    editeur: "FCBA, groupe de travail plan Dechets du CSF bois ; projet cofinance par l'ADEME"
+    date: 2022-05
+    annee_donnees: 2022
+    type: referentiel_professionnel
+    url: https://www.codifab.fr/uploads/media/62867d4fa564a/csf-classification-dechets-bois-v0.pdf
+    emplacement: "p. 5 (definition biomasse IED, classes BR1 et BR2 non dangereuses), p. 6 (section 4.2, ancienne classe B), p. 9 (section 6.1, BR1), p. 10 (section 8.1, classe C)"
+    contenu: "Classes A, BR1, BR2 et C. BR1 et BR2 representent globalement l'ancienne classe B, constituee des dechets de bois non dangereux mais contenant des substances chimiques a des concentrations superieures aux teneurs naturellement presentes dans la biomasse. L'acceptation en BR1 suppose un cahier des charges de seuils en organohalogenes et metaux lourds. La definition de la biomasse de la directive IED rappelle que le bois traite peut contenir des composes organiques halogenes ou des metaux lourds. Classe C : dechets de bois classes dangereux (par exemple bois creosotes). Les termes 'peint', 'verni' ou 'colle' ne figurent pas dans le texte lu."
+    citation: "l'ancienne classe B, constituée des déchets de bois non dangereux mais contenant des substances chimiques | à des concentrations supérieures aux teneurs naturellement présentes dans la biomasse | respectant un cahier des charges de seuils de concentration en organohalogénés et métaux lourds"
+    statut: lu
+    consulte: '2026-11-25'
+    nature_source: "referentiel professionnel (filiere bois), cofinance par l'ADEME ; pas un texte reglementaire"
+    note: "Lu par Claude par WebFetch le 25/11/2026 ; citations transcrites par un modele intermediaire, a recontroler sur le PDF. Ajoute apres l'ecart E-3 du lot 1 de Codex (annexe 7)."
+
+calculs:
+
+  CALC-A7-IDF-DAE-ENFOUIS-REAFF-T:
+    description: "DAE enfouis en Ile-de-France en 2022, origine economique apres reaffectation des refus a leurs producteurs initiaux"
+    formule: t * p / 100
+    entrees:
+      t: {valeur: 2228079, unite: t, source: A8-CST-ORDIF-ISDND-2023, emplacement: "p. 5"}
+      p: {valeur: 77.6, unite: '%', source: A8-CST-ORDIF-ISDND-2023, emplacement: "p. 5, apres reaffectation des refus"}
+    unite: t
+    resultat: 1728989.304
+
+  CALC-A7-PART-MACHINE-DAE-IDF-PCT:
+    description: "Part d'une URC-2000 (51 100 t/an) dans les DAE non dangereux non inertes franciliens de 2020"
+    formule: c / (d * 10000)
+    entrees:
+      c: {calc: CALC-A8-CAPACITE-AN}
+      d: {valeur: 5.09, unite: Mt, source: A7-PRPGD-IDF-SUIVI3-2023, emplacement: "p. 10"}
+    unite: '%'
+    resultat: 1.003929
+
+  CALC-A7-PART-MACHINE-MELANGE-IDF-PCT:
+    description: "Part d'une URC-2000 (51 100 t/an) dans les DAE franciliens en melange de 2020 (total minimal)"
+    formule: c / (d * 10000)
+    entrees:
+      c: {calc: CALC-A8-CAPACITE-AN}
+      d: {valeur: 2.77, unite: Mt, source: A7-PRPGD-IDF-SUIVI3-2023, emplacement: "tableau 'Total de DAE en melange entrant dans les centres de tri', 2020"}
+    unite: '%'
+    resultat: 1.844765
+
+  CALC-A7-BOISB-PCT:
+    description: "Part du bois B dans les flux en melange des centres de tri de DAE : bois (28 %) multiplie par les trois quarts (figure 14)"
+    formule: b * f / 100
+    entrees:
+      b: {valeur: 28, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, bois"}
+      f: {valeur: 75, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, 'dont les 3/4 correspondent a du bois B'"}
+    unite: '%'
+    resultat: 21.0
+
+  CALC-A7-CHAR-FT-HAUT-PCT:
+    description: "Char des fibreux et textiles, scenario optimiste : complement a 100 % du liquide (25 %) et du gaz (48 %) (D-048, D-054)"
+    formule: 100 - l - g
+    entrees:
+      l: {valeur: 25, unite: '%', source: D-048, emplacement: vers}
+      g: {valeur: 48, unite: '%', source: D-048, emplacement: vers}
+    unite: '% de la masse des fibreux et textiles'
+    resultat: 27
+
+  CALC-A7-CHAR-HAUT-V2-KG-T:
+    description: "Char par tonne de DAE en melange, scenario optimiste corrige : bois a 40 % (D-045), fibreux et textiles a 27 % (D-054). Remplace CALC-A7-CHAR-HAUT-KG-T (152 kg/t) dans l'annexe 7."
+    formule: (b * cb + (f + t) * cft) / 10
+    entrees:
+      b: {valeur: 28, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, bois"}
+      cb: {valeur: 40, unite: '%', source: D-045, emplacement: vers}
+      f: {valeur: 7, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, fibreux"}
+      t: {valeur: 3, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, textiles"}
+      cft: {calc: CALC-A7-CHAR-FT-HAUT-PCT}
+    unite: kg par tonne
+    resultat: 139.0
+
+  CALC-A7-NONCONV-KG-T:
+    description: "Inertes, metaux et platre par tonne de DAE en melange (non convertis)"
+    formule: n * 10
+    entrees:
+      n: {calc: CALC-A7-NONCONV-PCT}
+    unite: kg par tonne
+    resultat: 230
+
+  CALC-A7-FINES-KG-T:
+    description: "Elements fins ou non reconnaissables par tonne de DAE en melange (non attribues)"
+    formule: f * 10
+    entrees:
+      f: {valeur: 34, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, elements fins ou non reconnaissables"}
+    unite: kg par tonne
+    resultat: 340
+
+  CALC-A7-QUANT-BAS-KG-T:
+    description: "Masse chiffree par tonne de DAE en melange, scenario pessimiste : huile, gaz du plastique, liquide et gaz des fibreux et textiles, char, non convertis, fines"
+    formule: h + gp + l + gs + c + n + f
+    entrees:
+      h: {calc: CALC-A7-HUILE-BAS-KG-T}
+      gp: {calc: CALC-A7-GAZ-PLAST-KG-T}
+      l: {calc: CALC-A7-LIQ-BAS-KG-T}
+      gs: {calc: CALC-A7-GAZ-ST-BAS-KG-T}
+      c: {calc: CALC-A7-CHAR-BAS-KG-T}
+      n: {calc: CALC-A7-NONCONV-KG-T}
+      f: {calc: CALC-A7-FINES-KG-T}
+    unite: kg par tonne
+    resultat: 762.5
+
+  CALC-A7-QUANT-CENT-KG-T:
+    description: "Masse chiffree par tonne de DAE en melange, scenario standard"
+    formule: h + gp + l + gs + c + n + f
+    entrees:
+      h: {calc: CALC-A7-HUILE-CENT-KG-T}
+      gp: {calc: CALC-A7-GAZ-PLAST-KG-T}
+      l: {calc: CALC-A7-LIQ-CENT-KG-T}
+      gs: {calc: CALC-A7-GAZ-ST-CENT-KG-T}
+      c: {calc: CALC-A7-CHAR-CENT-KG-T}
+      n: {calc: CALC-A7-NONCONV-KG-T}
+      f: {calc: CALC-A7-FINES-KG-T}
+    unite: kg par tonne
+    resultat: 794.535
+
+  CALC-A7-QUANT-HAUT-KG-T:
+    description: "Masse chiffree par tonne de DAE en melange, scenario optimiste (char corrige, D-054)"
+    formule: h + gp + l + gs + c + n + f
+    entrees:
+      h: {calc: CALC-A7-HUILE-HAUT-KG-T}
+      gp: {calc: CALC-A7-GAZ-PLAST-KG-T}
+      l: {calc: CALC-A7-LIQ-HAUT-KG-T}
+      gs: {calc: CALC-A7-GAZ-ST-HAUT-KG-T}
+      c: {calc: CALC-A7-CHAR-HAUT-V2-KG-T}
+      n: {calc: CALC-A7-NONCONV-KG-T}
+      f: {calc: CALC-A7-FINES-KG-T}
+    unite: kg par tonne
+    resultat: 827.5
+
+  CALC-A7-NONALLOUE-BAS-KG-T:
+    description: "Masse non attribuee par tonne, scenario pessimiste : une tonne (les huit categories de la figure 14 totalisent 100 %) moins la masse chiffree ; gaz, liquide et eau du bois, residu du plastique et des fibreux"
+    formule: 1000 - q
+    entrees:
+      q: {calc: CALC-A7-QUANT-BAS-KG-T}
+    unite: kg par tonne
+    resultat: 237.5
+
+  CALC-A7-NONALLOUE-CENT-KG-T:
+    description: "Masse non attribuee par tonne, scenario standard"
+    formule: 1000 - q
+    entrees:
+      q: {calc: CALC-A7-QUANT-CENT-KG-T}
+    unite: kg par tonne
+    resultat: 205.465
+
+  CALC-A7-NONALLOUE-HAUT-KG-T:
+    description: "Masse non attribuee par tonne, scenario optimiste (char corrige, D-054)"
+    formule: 1000 - q
+    entrees:
+      q: {calc: CALC-A7-QUANT-HAUT-KG-T}
+    unite: kg par tonne
+    resultat: 172.5
+
+  CALC-A7-BOIS-RESTE-CENT-KG-T:
+    description: "Part du bois non convertie en char, scenario standard (gaz, liquide et eau du bois, non mesures)"
+    formule: b * (100 - c) / 10
+    entrees:
+      b: {valeur: 28, unite: '%', source: A7-ADEME-TRI-DAE-2025, emplacement: "figure 14, bois"}
+      c: {valeur: 30, unite: '%', source: D-045, emplacement: vers}
+    unite: kg par tonne
+    resultat: 196.0
+
+  CALC-A7-GAZ-PLAST-MJ-T:
+    description: "Energie du gaz des plastiques par tonne de DAE en melange (PCI du gaz de l'annexe 2)"
+    formule: g * p
+    entrees:
+      g: {calc: CALC-A7-GAZ-PLAST-KG-T}
+      p: {calc: CALC-A2-GAZ-PCI}
+    unite: MJ par tonne
+    resultat: 186.93
+
+  CALC-A7-GAZ-PLAST-PART-BRULEUR-PCT:
+    description: "Part du besoin du bruleur (donnee OneWorld) couverte par le gaz des plastiques, par tonne de DAE en melange"
+    formule: e / b * 100
+    entrees:
+      e: {calc: CALC-A7-GAZ-PLAST-MJ-T}
+      b: {calc: CALC-A2-BRULEUR-MJ-T}
+    unite: '%'
+    resultat: 12.41
+
+decisions:
+
+  D-054:
+    date: 2026-11-25
+    titre: "Annexe 7 : scenario optimiste, char des fibreux et textiles limite au complement a 100 % de leur liquide et de leur gaz (27 %)"
+    de: "D-049 : char a 40 % (D-045) sur bois, fibreux et textiles, plus liquide 25 % et gaz 48 % (D-048) sur fibreux et textiles, soit 113 % de leur masse"
+    vers: "scenario optimiste : bois a 40 % de char (D-045) ; fibreux et textiles a 25 % de liquide, 48 % de gaz et 27 % de char ; scenarios pessimiste (90 %) et standard (99 %) inchanges"
+    unite: "regle de calcul"
+    motif: >
+      HYPOTHESE posee par Claude le 25/11/2026 apres l'ecart E-1 du lot 2 de Codex (annexe 7), a trancher par Stephane.
+      Le cumul des hypotheses independantes D-045 et D-048 donnait 113 kg de produits pour 100 kg de fibreux et
+      textiles : erreur physique. Le char de 27 % est proche des 28 a 32 % mesures sur papier et textiles a 500 C
+      (A5-BHATT-2026-RSCADV, valeurs reprises dans D-045). Autre choix possible : garder 40 % de char et reduire
+      liquide et gaz au prorata. Effet : char optimiste 139 kg/t au lieu de 152. Le meme cumul semble exister en
+      annexe 5 (D-048 applique le char de D-045 aux textiles sanitaires) : a verifier par le chat principal.
+    preuves: [A5-BHATT-2026-RSCADV, A7-ADEME-TRI-DAE-2025]
+    a_verifier: "Choix entre complement a 100 % (char 27 %) et reduction au prorata ; essai OneWorld (R-021)."
+
+  D-055:
+    date: 2026-11-25
+    titre: "Annexe 7 : masse non attribuee du bilan d'une tonne de DAE en melange affichee par scenario et traitee comme dans D-053"
+    de: "fines et masse non attribuee laissees INCONNU, sans masse"
+    vers: "fines (340 kg/t) et masse non attribuee (237,5 / 205,465 / 172,5 kg/t) affichees ; par defaut, dans le modele, cette masse ne donne ni chaleur ni produit vendable ; le liquide est traite comme une eau de procede a eliminer, comme dans D-053"
+    unite: "regle d'interpretation"
+    motif: >
+      HYPOTHESE posee par Claude le 25/11/2026 apres l'ecart E-2 du lot 2 de Codex (annexe 7), a trancher par Stephane.
+      Le reste est surtout le gaz, le liquide et l'eau du bois (196 kg/t au standard) et le residu des plastiques.
+      Aucune mesure sur ce flux. A remplacer par le bilan massique de l'essai R-021 et la caracterisation R-052.
+    preuves: [A7-ADEME-TRI-DAE-2025]
+    a_verifier: "Traitement par defaut dans le modele ; essai OneWorld (R-021)."
+
+recherches:
+
+  R-048:
+    action: modifier
+    question: "Humidite, pouvoir calorifique, chlore et composition des fines des DAE en melange en France (et en Ile-de-France)"
+    statut: introuvable
+    complement_2026_11_25: "Le tonnage regional des DAE en melange est retire de la question : le rapport de suivi 3 du PRPGD publie 2,77 Mt en 2020, total minimal (A7-PRPGD-IDF-SUIVI3-2023, lu par Claude et Codex le 25/11/2026). Codex signale une specification publique de CSR prepare (PCI 12 a 18 MJ/kg, humidite 15 a 25 %) dans un dossier d'autorisation de chaufferie ; non lue par Claude et non representative du DAE brut : non reprise."
+    sources_a_ajouter: []
+
+  R-052:
+    question: "Caracterisation d'un flux cible de DAE en melange ou de refus de tri de DAE : humidite, PCI, cendres, chlore, soufre, metaux, composition des fines, part et classe du bois (A, BR1, BR2), variabilite entre bennes et dans le temps ; specification d'admission, plan d'echantillonnage et criteres de refus pour un contrat"
+    demande_par: Claude
+    date: 2026-11-25
+    statut: a_demander
+    detenteur: "Detenteur du flux cible (centre de tri de DAE ou producteur) ; laboratoire d'analyse ; OneWorld pour l'essai (R-021)"
+    cherche: "Rapport ADEME 2025 sur le tri des DAE (composition visuelle, sans humidite, PCI ni chlore) ; referentiel FCBA 2022 de classification des dechets bois (classes, pas d'analyse du flux) ; voir aussi R-048."
+    sources: [A7-ADEME-TRI-DAE-2025, A7-FCBA-CLASSIF-BOIS-2022]

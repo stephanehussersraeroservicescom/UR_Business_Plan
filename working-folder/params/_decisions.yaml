@@ -868,3 +868,47 @@ D-053:
     repartition reprend le rapport liquide / gaz mesure sur papier et textiles (A5-BHATT-2026-RSCADV, D-048). A remplacer
     par le bilan massique de l'essai R-021.
   preuves: [A5-BHATT-2026-RSCADV, ADEME-MODECOM-2024-HUM]
+
+# === ANNEXE 7, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+D-054:
+  date: 2026-11-25
+  titre: 'Annexe 7 : scenario optimiste, char des fibreux et textiles limite au complement a 100 % de
+    leur liquide et de leur gaz (27 %)'
+  de: 'D-049 : char a 40 % (D-045) sur bois, fibreux et textiles, plus liquide 25 % et gaz 48 % (D-048)
+    sur fibreux et textiles, soit 113 % de leur masse'
+  vers: 'scenario optimiste : bois a 40 % de char (D-045) ; fibreux et textiles a 25 % de liquide, 48
+    % de gaz et 27 % de char ; scenarios pessimiste (90 %) et standard (99 %) inchanges'
+  unite: regle de calcul
+  motif: 'HYPOTHESE posee par Claude le 25/11/2026 apres l''ecart E-1 du lot 2 de Codex (annexe 7), a
+    trancher par Stephane. Le cumul des hypotheses independantes D-045 et D-048 donnait 113 kg de produits
+    pour 100 kg de fibreux et textiles : erreur physique. Le char de 27 % est proche des 28 a 32 % mesures
+    sur papier et textiles a 500 C (A5-BHATT-2026-RSCADV, valeurs reprises dans D-045). Autre choix possible
+    : garder 40 % de char et reduire liquide et gaz au prorata. Effet : char optimiste 139 kg/t au lieu
+    de 152. Le meme cumul semble exister en annexe 5 (D-048 applique le char de D-045 aux textiles sanitaires)
+    : a verifier par le chat principal.
+
+    '
+  preuves:
+  - A5-BHATT-2026-RSCADV
+  - A7-ADEME-TRI-DAE-2025
+  a_verifier: Choix entre complement a 100 % (char 27 %) et reduction au prorata ; essai OneWorld (R-021).
+
+D-055:
+  date: 2026-11-25
+  titre: 'Annexe 7 : masse non attribuee du bilan d''une tonne de DAE en melange affichee par scenario
+    et traitee comme dans D-053'
+  de: fines et masse non attribuee laissees INCONNU, sans masse
+  vers: fines (340 kg/t) et masse non attribuee (237,5 / 205,465 / 172,5 kg/t) affichees ; par defaut,
+    dans le modele, cette masse ne donne ni chaleur ni produit vendable ; le liquide est traite comme
+    une eau de procede a eliminer, comme dans D-053
+  unite: regle d'interpretation
+  motif: 'HYPOTHESE posee par Claude le 25/11/2026 apres l''ecart E-2 du lot 2 de Codex (annexe 7), a
+    trancher par Stephane. Le reste est surtout le gaz, le liquide et l''eau du bois (196 kg/t au standard)
+    et le residu des plastiques. Aucune mesure sur ce flux. A remplacer par le bilan massique de l''essai
+    R-021 et la caracterisation R-052.
+
+    '
+  preuves:
+  - A7-ADEME-TRI-DAE-2025
+  a_verifier: Traitement par defaut dans le modele ; essai OneWorld (R-021).

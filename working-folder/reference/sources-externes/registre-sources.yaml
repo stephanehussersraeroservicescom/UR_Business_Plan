@@ -6290,7 +6290,12 @@ IED-2010-75-ART50:
   citation: "If hazardous waste with a content of more than 1 % of halogenated organic substances, expressed as chlorine,"
   statut: verifie
   consulte: 2026-10-14
-
+  citation_complete: If hazardous waste with a content of more than 1 % of halogenated organic substances,
+    expressed as chlorine, is incinerated or co-incinerated, the temperature required to comply with the
+    first and second subparagraphs shall be at least 1 100 °C.
+  relu: 2026-11-25 (Claude, EUR-Lex HTML)
+  correction_2026_11_25_motif: 'Lot 2 Codex E-5 : perimetre (dechets dangereux, declencheur de temperature,
+    pas une limite d acceptation).'
 ARRETE-2910-2018:
   titre: "Arrete du 3 aout 2018 relatif aux installations de combustion de moins de 50 MW soumises a autorisation (rubriques 2910, 2931, 3110)"
   editeur: "Ministere de la transition ecologique (reproduction AIDA/INERIS)"
@@ -6569,6 +6574,11 @@ A3-ZWE-LEAKY-LOOP-2023:
   - spec_vapocraqueur_olefines
 
 A3-ARRETE-SSD-HUILE-PYROLYSE-2024:
+  relecture_a8_2026_11_25:
+    citation: "de déchets d'équipements électriques et électroniques (dits « DEEE ») ; | de déchets pouvant contenir des retardateurs de flamme bromés ;"
+    contenu: "Annexe I, point 1.3 : tout lot de dechets entrant doit etre exempt notamment de DEEE et de dechets pouvant contenir des retardateurs de flamme bromes."
+    emplacement: "annexe I, point 1.3"
+    lu_par: "Claude, 25/11/2026, WebFetch sur AIDA (citations transcrites par un modele intermediaire), apres le lot 3 de Codex sur l'annexe 8"
   titre: Arrêté du 19 février 2024 fixant les critères de sortie du statut de déchet pour l'huile de pyrolyse issue de la pyrolyse de déchets
     de matières plastiques, en vue d'une valorisation matière au sein d'une installation pétrochimique relevant de la directive 2010/75/UE, pour
     un usage dans une unité de vapocraquage ou dans une unité de purification à destination d'une unité de vapocraquage (NOR TREP2403460A)
@@ -9770,7 +9780,8 @@ A3I-ACCORD-PARIS-ART6:
   citation: shall apply robust accounting to ensure, inter alia, the avoidance of double counting ; The use of internationally transferred mitigation
     outcomes to achieve nationally determined contributions under this Agreement shall be voluntary and authorized by participating Parties. ;
     shall not be used to demonstrate achievement of the host Party's nationally determined contribution if used by another Party
-  statut: ancien
+  statut: lu
+  statut_avant_2026_11_25: "ancien (decote retiree, texte juridique en vigueur ; tri Codex de l'annexe 3, ecart n. 22)"
   consulte: 2026-10-15
   note: Lu par un sous-agent de recherche le 15/10/2026 dans le navigateur Chrome (EUR-Lex). Texte de 2015 toujours en vigueur. unfccc.int refusé
     par WebFetch.
@@ -11059,6 +11070,17 @@ A8-CST-ORDIF-ISDND-2023:
   statut: lu
   consulte: '2026-10-15'
   note: 'Les plastiques ne sont pas isolés : ils sont inclus dans « Divers ». Lu par un sous-agent de recherche le 15/10/2026 via WebFetch (citations limitées à environ 125 caractères, à recontrôler sur le document), chat 4 annexe 8.'
+  contenu_complement: 'Origines producteurs des tonnages enfouis en 2022 (p. 5) : 59,5 % d''installations
+    de traitement de dechets, 38,1 % d''entreprises, 2,4 % de menages et collectivites ; en reaffectant
+    les refus a leurs producteurs initiaux : 77,6 % d''entreprises, 5,7 % d''installations de traitement,
+    16,3 % de menages et collectivites.'
+  citation_complement: En réaffectant les refus à leur producteurs initiaux… | 77,6 % d’entreprises | 5,7
+    % d’installations de traitement de déchets | 16,3 % des ménages/collectivités
+  emplacement_complement: p. 5, diapositive '3. Nature et origine des tonnages enfouis en Ile-de-France
+    en 2022'
+  lecture_2026_11_25: Lu par Claude par WebFetch le 25/11/2026 (citation transcrite par un modele intermediaire
+    ; la source ecrit 'a leur producteurs'). Meme valeur lue par Codex le 25/11/2026 (lot 1, verdict 23).
+  consulte_2026_11_25: '2026-11-25'
 A8-CST-FRANCECIMENT-2025:
   titre: 'Feuille de route de décarbonation : L''industrie cimentière tient ses objectifs et entend poursuivre ses actions'
   editeur: France Ciment
@@ -12680,7 +12702,17 @@ A7-ADEME-TRI-DAE-2025:
   statut: verifie-recontrole
   consulte: '2026-11-19'
   note: "Etude commandee par l'ADEME. PDF lu par Claude dans le navigateur de Stephane le 19/11/2026 (texte integral, 162 p.). Composition visuelle sur 18 sites, pas une campagne nationale ; humidite et PCI des flux non mesures."
-
+  emplacement_complement: p. 28 (limites de la composition visuelle) ; p. 29 (bois A, B)
+  contenu_complement: 'Limites de la composition visuelle (p. 28) : precision approximative par rapport
+    a des caracterisations en bonne et due forme ; chaque site a ses propres entrants ; la nature des entrants
+    peut evoluer dans le temps. Le rapport ne definit pas la classe de bois B (mention ''A, B, emballages
+    ou non emballages'', p. 29).'
+  citation_complement: La précision des identifications visuelles reste approximative par rapport à des
+    caractérisations | Chaque site présente ses propres caractéristiques de déchets entrants, en fonction
+    notamment du contexte local | La nature des entrants peut évoluer dans le temps
+  lecture_2026_11_25: Lu par Claude par WebFetch le 25/11/2026 (caracteres 0 a 100 000 ; citations transcrites
+    par un modele intermediaire). Meme citation de la p. 28 lue par Codex (lot 1, verdict 38).
+  consulte_2026_11_25: '2026-11-25'
 A7-PRPGD-IDF-SUIVI3-2023:
   titre: "Rapport de suivi n 3 du Plan regional de prevention et de gestion des dechets (PRPGD) d'Ile-de-France"
   editeur: "Region Ile-de-France, avec l'ORDIF (Institut Paris Region)"
@@ -12689,12 +12721,27 @@ A7-PRPGD-IDF-SUIVI3-2023:
   type: observatoire
   url: https://iledefrance.fr/document/25808/download
   emplacement: "p. 10, p. 14, p. 16, p. 42"
-  contenu: "5,09 millions de tonnes de DAE non dangereux non inertes produits en 2020 en Ile-de-France (hors BTP geres par le service public) ; serie 2014, 2016, 2018, 2020 : 5,90 ; 5,95 ; 5,63 ; 5,09 Mt (2020 atypique, confinements) ; objectif 2031 environ 5,87 Mt ; objectif : 100 % des DAE collectes en melange orientes vers une chaine de tri en 2025. Pas de tonnage des DAE en melange."
+  contenu: "5,09 millions de tonnes de DAE non dangereux non inertes produits en 2020 en Ile-de-France (hors BTP geres par le service public) ; serie 2014, 2016, 2018, 2020 : 5,90 ; 5,95 ; 5,63 ; 5,09 Mt (2020 atypique, confinements) ; objectif 2031 environ 5,87 Mt ; objectif : 100 % des DAE collectes en melange orientes vers une chaine de tri en 2025."
   citation: "5,09 millions de tonnes de déchets d'activités économiques (DAE) non dangereux non inertes produits en 2020 | 100 % des DAE collectés en mélange orientés vers une chaîne de tri en 2025"
   statut: verifie-recontrole
   consulte: '2026-11-19'
   note: "Document regional officiel. Lu par WebFetch le 19/11/2026 (premiers 100 000 caracteres ; la section 4-2, p. 80, sur le traitement des DAE n'a pas ete lue)."
-
+  url_pdf: https://www.institutparisregion.fr/fileadmin/DataStorage/user_upload/Rapport-de-suivi-PRPGD_2023.pdf
+  emplacement_complement: 'section sur les DAE en melange : objectif p. 83 et tableau ''Total de DAE en
+    melange entrant dans les centres de tri'' p. 84 de la lecture WebFetch (p. 82 selon Codex ; pagination
+    a confirmer)'
+  contenu_complement: 'DAE franciliens en melange : 3,41 Mt (2014), 3,93 Mt (2016), 3,35 Mt (2018), 2,77
+    Mt (2020) ; quantite entrant en centres de tri : 1,75 ; 2 ; 2,42 ; 1,62 Mt ; taux d''entree en centres
+    de tri : 51 %, 51 %, 72 %, 58 %. Le total est un minimum : la totalite des flux de DAE en melange exportes
+    hors Ile-de-France ne serait pas connue.'
+  citation_complement: Total DAE franciliens en mélange 3,41 Mt 3,93 Mt 3,35 Mt 2,77 Mt | Taux de DAE en
+    mélange entrant en centres de tri 51 % 51 % 72 % 58% | Par conséquent, le total des DAE franciliens
+    en mélange correspond à un minimum. | 100 % des DAE en mélange orientés vers une chaîne de tri en 2025
+    (51 % en 2014)
+  lecture_2026_11_25: 'Lu par Claude par WebFetch le 25/11/2026 (caracteres 100 000 a 200 000 du PDF de
+    l''Institut Paris Region ; citations transcrites par un modele intermediaire). Meme valeur 2,77 Mt et
+    meme mention de minimum lues par Codex le 25/11/2026 (lot 1, verdict 27) : deux lectures concordantes.'
+  consulte_2026_11_25: '2026-11-25'
 # === ANNEXE 4 (chat 5, 19/11/2026) : France ===
 
 A4-AIDA-NOMENCLATURE-V58-2026:
@@ -12785,3 +12832,97 @@ A4-IED-2024-1785-ART42:
   statut: lu
   consulte: '2026-11-25'
   note: "Lu par Claude dans le navigateur de Stephane (EUR-Lex, texte du JO) le 25/11/2026, a la suite du lot 2 de Codex (annexe 4)."
+
+# === ANNEXE 3, corrections apres contre-verification Codex (25/11/2026) ===
+
+A3-REG1357-2014-HP3:
+  titre: "Reglement (UE) n. 1357/2014 de la Commission remplacant l'annexe III de la directive 2008/98/CE (proprietes qui rendent les dechets dangereux), HP 3 Inflammable"
+  editeur: "EUR-Lex, Journal officiel de l'Union europeenne, L 365 du 19/12/2014"
+  date: 2014-12-18
+  annee_donnees: 2014
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R1357
+  emplacement: "annexe, HP 3 Flammable"
+  contenu: "HP 3 Inflammable : dechet liquide inflammable = dechet liquide dont le point d'eclair est inferieur a 60 C, ou dechets de gazole, diesel et fiouls legers dont le point d'eclair est superieur a 55 C et au plus 75 C."
+  citation: "flammable liquid waste: liquid waste having a flash point below 60 °C | or waste gas oil, diesel and light heating oils having a flash point > 55 °C and ≤ 75 °C"
+  statut: lu
+  consulte: '2026-11-25'
+  note: "Lu par Claude par WebFetch (citations transcrites par un modele intermediaire) le 25/11/2026, a la suite du tri Codex de l'annexe 3 (ecart n. 1). Texte de 2014 en vigueur : pas de decote d'anciennete pour un texte juridique."
+
+A3-CENV-D541-12-4-6-2026:
+  titre: "Code de l'environnement, articles D. 541-12-4 (version du 5 juin 2026, decret n. 2026-435) et D. 541-12-6 (sortie du statut de dechet)"
+  editeur: "Legifrance"
+  date: 2026-06-05
+  annee_donnees: 2026
+  type: reglementaire
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006143787/
+  emplacement: "articles D. 541-12-4 et D. 541-12-6"
+  contenu: "D. 541-12-4 (en vigueur depuis le 5/06/2026, modifie par le decret n. 2026-435 du 2/06/2026) : la sous-section definit les modalites d'adoption des criteres du I bis de l'article L. 541-4-3 et la procedure de sortie du statut de dechet prevue a ce point. D. 541-12-6 (en vigueur depuis le 1/01/2016) : l'autorite competente pour fixer les criteres de sortie du statut de dechet est le ministre charge de l'environnement."
+  citation: "Les dispositions de la présente sous-section définissent les modalités selon lesquelles sont adoptés les critères mentionnés au I bis de l'article L. 541-4-3 | L'autorité compétente pour fixer les critères de sortie du statut de déchet est le ministre chargé de l'environnement."
+  statut: lu
+  consulte: '2026-11-25'
+  note: "Lu par Claude dans le navigateur de Stephane (Legifrance) le 25/11/2026. Remplace, pour la procedure, la lecture du decret de 2012 (A3-DECRET-2012-602-SSD), qui confiait au prefet la fixation de criteres au cas par cas."
+
+A3-SDES-PETROCHIMIE-2026:
+  titre: "L'activite de la petrochimie en France baisse de 11 % en 2025"
+  editeur: "SDES (service statistique du ministere de la transition ecologique)"
+  date: 2026-07-23
+  annee_donnees: 2025
+  type: statistique_publique
+  url: https://www.statistiques.developpement-durable.gouv.fr/lactivite-de-la-petrochimie-en-france-baisse-de-11-en-2025?list-actu=true
+  emplacement: "corps de la page"
+  contenu: "Le vapocraqueur de Port-Jerome-Gravenchon (Notre-Dame-de-Gravenchon) a ete arrete definitivement en 2024."
+  citation: "notamment après l'arrêt définitif du vapocraqueur de Port-Jérôme-Gravenchon en 2024."
+  statut: lu
+  consulte: '2026-11-25'
+  note: "Lu par Claude par WebFetch le 25/11/2026, a la suite du lot 1 de Codex sur l'annexe 3. L'effet sur l'accord ExxonMobil / Plastic Energy n'est pas etabli."
+
+# === ANNEXE 2, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+A2-IED-2010-75-ANX6-P6:
+  titre: 'Directive 2010/75/UE, annexe VI, partie 6, point 2.1 : surveillance des emissions des installations
+    d''incineration (mesures en continu et periodiques)'
+  editeur: Parlement europeen et Conseil
+  date: '2010-11-24'
+  type: reglementaire
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010L0075
+  emplacement: Annexe VI, partie 6, point 2.1 a), b) et c)
+  citation: '(a) continuous measurements of the following substances: NOx, provided that emission limit
+    values are set, CO, total dust, TOC, HCl, HF, SO2;'
+  citation_c: (c) at least two measurements per year of heavy metals and dioxins and furans;
+  contenu: 'Mesures en continu : NOx, CO, poussieres totales, COT, HCl, HF, SO2 ; parametres de procede
+    en continu au point b) (oxygene, pression, temperature, vapeur d''eau des gaz) ; au moins deux mesures
+    par an des metaux lourds et des dioxines et furannes (une tous les 3 mois les 12 premiers mois).'
+  statut: lu
+  consulte: '2026-11-25'
+  reserve: Lu par Claude via l'outil de lecture web (texte EUR-Lex consolide au format HTML d'origine,
+    sans verification de version consolidee ulterieure a 2010) ; le point b) est une paraphrase de l'outil,
+    citation exacte a recontroler. Utilise dans l'annexe 2, section 2.7.2 (conditions d'une demonstration
+    de permis).
+
+# === ANNEXE 7, corrections apres Codex (chat parallele, 25/11/2026) ===
+
+A7-FCBA-CLASSIF-BOIS-2022:
+  titre: Referentiel de classification des dechets bois, version 05/2022
+  editeur: FCBA, groupe de travail plan Dechets du CSF bois ; projet cofinance par l'ADEME
+  date: 2022-05
+  annee_donnees: 2022
+  type: referentiel_professionnel
+  url: https://www.codifab.fr/uploads/media/62867d4fa564a/csf-classification-dechets-bois-v0.pdf
+  emplacement: p. 5 (definition biomasse IED, classes BR1 et BR2 non dangereuses), p. 6 (section 4.2,
+    ancienne classe B), p. 9 (section 6.1, BR1), p. 10 (section 8.1, classe C)
+  contenu: 'Classes A, BR1, BR2 et C. BR1 et BR2 representent globalement l''ancienne classe B, constituee
+    des dechets de bois non dangereux mais contenant des substances chimiques a des concentrations superieures
+    aux teneurs naturellement presentes dans la biomasse. L''acceptation en BR1 suppose un cahier des
+    charges de seuils en organohalogenes et metaux lourds. La definition de la biomasse de la directive
+    IED rappelle que le bois traite peut contenir des composes organiques halogenes ou des metaux lourds.
+    Classe C : dechets de bois classes dangereux (par exemple bois creosotes). Les termes ''peint'', ''verni''
+    ou ''colle'' ne figurent pas dans le texte lu.'
+  citation: l'ancienne classe B, constituée des déchets de bois non dangereux mais contenant des substances
+    chimiques | à des concentrations supérieures aux teneurs naturellement présentes dans la biomasse
+    | respectant un cahier des charges de seuils de concentration en organohalogénés et métaux lourds
+  statut: lu
+  consulte: '2026-11-25'
+  nature_source: referentiel professionnel (filiere bois), cofinance par l'ADEME ; pas un texte reglementaire
+  note: Lu par Claude par WebFetch le 25/11/2026 ; citations transcrites par un modele intermediaire,
+    a recontroler sur le PDF. Ajoute apres l'ecart E-3 du lot 1 de Codex (annexe 7).

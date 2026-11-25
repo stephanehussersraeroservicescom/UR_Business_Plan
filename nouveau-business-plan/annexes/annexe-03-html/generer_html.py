@@ -29,20 +29,20 @@ MD = open(os.path.join(ANNEXES, 'ANNEX-03-Output-Markets-and-Pricing.md'), encod
 
 GROUPS = [('M', 'OneWorld design data'), ('R', 'Legislation, regulations and standards'),
           ('P', 'Prices and official statistics'), ('L', 'Industry, literature and other sources'), ('C', 'Calculations')]
-TYPE_GROUP = {'reglementaire': 'R', 'norme': 'R', 'statistique_publique': 'P', 'indice_marche': 'P',
+TYPE_GROUP = {'reglementaire': 'R', 'diffusion_administrative': 'R', 'norme': 'R', 'statistique_publique': 'P', 'indice_marche': 'P',
               'observatoire': 'P', 'donnees_ouvertes': 'P'}
-TYPE_EN = {'reglementaire': 'Legislation or regulation', 'norme': 'Standard', 'statistique_publique': 'Official statistics',
+TYPE_EN = {'reglementaire': 'Legislation or regulation', 'diffusion_administrative': 'Administrative publication (not the legal text itself)', 'norme': 'Standard', 'statistique_publique': 'Official statistics',
            'indice_marche': 'Market index (commercial source)', 'observatoire': 'Observatory (eco-organisation)',
            'donnees_ouvertes': 'Open data', 'etude_publique': 'Institutional or peer-reviewed study',
            'federation': 'Industry federation', 'entreprise': 'Company document (commercial source)',
            'presse': 'Press', 'publication': 'Scientific publication'}
 
-def fiche(i): return ev.get(i) or ext.get(i) or {}
+def fiche(i): return ext.get(i) or ev.get(i) or {}  # 25/11/2026 : une source publique presente dans les deux registres est lue dans le registre externe
 
 def classify(i):
     """(groupe, confiance, nature, etiquette) d'une source propre a l'annexe 3"""
     f = fiche(i)
-    if i in ev:
+    if i in ev and i not in ext:
         return 'M', 95, 'OneWorld documentation (company data, not independently verified)', 'CONSTRUCTEUR'
     t, st = str(f.get('type', '')), str(f.get('statut', ''))
     g = TYPE_GROUP.get(t, 'L')
@@ -161,6 +161,12 @@ def source_page(i):
     quotes = ''.join(f'<li>« {esc(v)} »</li>' for k, v in f.items() if str(k).startswith('citation'))
     vals = ''.join(f'<li>{esc(f[k])}</li>' for k in ['contenu'] + [x for x in f if str(x).startswith('valeurs')] if f.get(k))
     notes = ''.join(f'<li>{esc(f[k])}</li>' for k in ['reserve', 'note'] if f.get(k))
+    for _k in sorted(k for k in f if str(k).startswith('relecture')):
+        _v = f[_k]
+        for _r in ([_v] if isinstance(_v, dict) else (_v or [])):
+            if isinstance(_r, dict):
+                if _r.get('citation'): quotes += f'<li>« {esc(_r.get("citation"))} » <span class="small">(re-read{", " + esc(_r.get("emplacement")) if _r.get("emplacement") else ""})</span></li>'
+                if _r.get('contenu'): vals += f'<li>{esc(_r.get("contenu"))}</li>'
     body = f'''<h1>Evidence {CODE[i]}</h1>
 <p class="small">{esc(f.get('titre', ''))}</p>
 <div class="cards">

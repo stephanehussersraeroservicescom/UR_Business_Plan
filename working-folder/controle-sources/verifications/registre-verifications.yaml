@@ -19840,3 +19840,707 @@ verifications:
     citation: "The weight of each component after pyrolysis was 111 kg of wire"
     emplacement: "Urban-Rig-Demo-Operation-Test-Report.pdf, p. 3"
     commentaire: "Essai constructeur en lots, pas URC-2000. Rapport lot 1, ligne 37."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.1, huile de plastiques d'emballage"
+    source: CHIBA-JLOS-HUILES
+    valeur: "46 000 J/g ; 0,8642 g/cm3 ; 1,706 mm2/s ; chlore 0,137 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "総発熱量（計算）46000 J/g ; 密度（15℃）0.8642 g/cm3 ; 動粘度（50℃）1.706 mm2/s ; 塩素分 0.137"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 45"
+    commentaire: "Rapport annexe 2 lot 2, ligne 1."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.1, huile de résidus non combustibles"
+    source: CHIBA-JLOS-HUILES
+    valeur: "45 000 J/g ; 0,8762 g/cm3 ; 1,759 mm2/s ; chlore 0,526 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "総発熱量（計算）45000 J/g ; 密度（15℃）0.8762 g/cm3 ; 動粘度（50℃）1.759 mm2/s ; 塩素分 0.526"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 46"
+    commentaire: "Rapport annexe 2 lot 2, ligne 2."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.1, huile OneWorld 2019"
+    source: NKKK-ZPE8004-2019
+    valeur: "43 270 J/g ; viscosité 1,11 ; chlore inorganique 0,0001 %"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Gross calorific value 43,270 J/g ; Kinematic viscosity 1.11 mm2/s ; Inorganic chlorine 0.0001 mass%"
+    emplacement: "Urban Rig Recycling Solutions ENG .pdf, p. 17"
+    commentaire: "Échantillon fourni par OneWorld, analyse attribuée à NKKK. Rapport lot 2, ligne 3."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.1, conversion du chlore"
+    source: CALC-A2-JLOS-CL-EMB-PPM + CALC-A2-JLOS-CL-RES-PPM
+    valeur: "1 370 ppm ; 5 260 ppm"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "0,137 x 10 000 = 1 370 ; 0,526 x 10 000 = 5 260"
+    emplacement: "calculs.yaml, calculs cités ; recalcul"
+    commentaire: "Rapport annexe 2 lot 2, ligne 4."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.1, seuil de chlore article 50"
+    source: IED-2010-75-ART50
+    valeur: "> 1 % ; 1 100 °C"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "If hazardous waste with a content of more than 1 % of halogenated organic substances, expressed as chlorine, is incinerated or co-incinerated, the temperature [...] shall be at least 1 100 °C."
+    emplacement: "Directive 2010/75/UE, article 50(2)"
+    commentaire: "Déclencheur de température pour certains déchets dangereux, pas limite générale d'acceptation. Rapport lot 2, ligne 5."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.4, char d'emballages"
+    source: CHIBA-OOSUMI-CHAR
+    valeur: "Cd 31 ; Pb 140 ; Hg 0,06 ; As 0,95 mg/kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "カドミウム 31 mg/kg ; 鉛 140 mg/kg ; 総水銀 0.06 mg/kg ; 砒素 0.95 mg/kg"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 47"
+    commentaire: "Rapport annexe 2 lot 2, ligne 6."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.4, char de résidus non combustibles"
+    source: CHIBA-OOSUMI-CHAR
+    valeur: "Cd 36 ; Pb 42 ; Hg < 0,02 ; As 1,8 mg/kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "カドミウム 36 mg/kg ; 鉛 42 mg/kg ; 総水銀 0.02未満 mg/kg ; 砒素 1.8 mg/kg"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 49"
+    commentaire: "Rapport annexe 2 lot 2, ligne 7."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.4, limites amendement organique"
+    source: FPR-2019-1009
+    valeur: "Cd 2 ; Pb 120 ; Hg 1 ; As inorganique 40 mg/kg sec"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "cadmium (Cd): 2 mg/kg dry matter ; mercury (Hg): 1 mg/kg dry matter ; lead (Pb): 120 mg/kg dry matter ; inorganic arsenic (As): 40 mg/kg dry matter"
+    emplacement: "Règlement (UE) 2019/1009, annexe I, PFC 3(A), point 2"
+    commentaire: "Rapport annexe 2 lot 2, ligne 8."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.4, paramètres CSR"
+    source: ARRETE-CSR-2016
+    valeur: "PCI >= 12 000 kJ/kg ; Hg <= 3 mg/kg sec ; Cl <= 15 000 mg/kg sec"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "a un PCI sur CSR brut supérieur ou égal à 12 000 kJ/kg ; mercure (Hg) : 3 mg/kg de matière sèche ; chlore (Cl) : 15 000 mg/kg de matière sèche"
+    emplacement: "Arrêté du 23 mai 2016, article 3 et annexe, version en vigueur"
+    commentaire: "Qualification CSR complète non démontrée, chlore du char absent. Rapport lot 2, ligne 9."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.4.4, hypothèse de PCI du char ménager"
+    source: IZUMITEC-R35-339439 + D-038
+    valeur: "32,09 MJ/kg mesurés sur char d'uréthane"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "INOウレタン炭 ; 発熱量 32090 J/g"
+    emplacement: "Calorie-content-UR-Carbide-1.pdf, p. 1"
+    commentaire: "Le HTML présente bien l'application aux déchets ménagers comme hypothèse. Rapport lot 2, ligne 10."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.5.1, composition brute du gaz"
+    source: KANSO-B2002600
+    valeur: "H2 12,7 % ; CH4 3,2 % ; C2H6 0,7 % ; C2H4 0,2 % ; C3H8 0,3 % ; C3H6 0,3 % ; CO 0,6 % ; CO2 1,7 % ; O2 12,3 % ; N2 65,8 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "水素 12.7 % ; メタン 3.2 % ; エタン 0.7 % ; エチレン 0.2 % ; プロパン 0.3 % ; プロピレン 0.3 % ; 一酸化炭素 0.6 % ; 二酸化炭素 1.7 % ; 酸素 12.3 % ; 窒素 65.8 %"
+    emplacement: "Analysis-Results-Off-gas-Odor-Exhaust.pdf, p. 1"
+    commentaire: "Un seul échantillon, charge et point non renseignés. Rapport lot 2, ligne 11."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.5.1, gaz hors air"
+    source: CALC-A2-GAZ-PART-COMBUSTIBLE
+    valeur: "H2 64,5 % ; CH4 16,2 % ; combustible 91,4 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "12,7 / 19,7 = 64,47 % ; 3,2 / 19,7 = 16,24 % ; 18,0 / (18,0 + 1,7) = 0,9137"
+    emplacement: "rapport KANSO p. 1 ; recalcul"
+    commentaire: "Exact sous l'hypothèse déclarée d'exclusion de O2 et N2. Rapport lot 2, ligne 12."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.5.2, PCI du gaz"
+    source: CALC-A2-GAZ-PCI
+    valeur: "37,4 MJ/kg"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "resultat: 37.386 MJ/kg"
+    emplacement: "calculs.yaml, CALC-A2-GAZ-PCI ; recalcul"
+    commentaire: "Calcul cohérent pour la composition KANSO hors air. Rapport lot 2, ligne 13."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.5.3, part de gaz du bilan OneWorld"
+    source: OW-ENG-P16-BILAN + D-038
+    valeur: "11,5 % de gaz combustible"
+    verdict: DIFFÉRENT
+    nature: constructeur
+    citation: "Recovery Loss 11.5 % ; Mainly discharged as flue gas; a very small amount will be carbide."
+    emplacement: "Urban Rig Recycling Solutions ENG .pdf, p. 16"
+    commentaire: "La ligne n'est pas un débit mesuré de gaz de pyrolyse et inclut du char. Rapport lot 2, ligne 14."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.5.3, énergie du gaz riche en résines"
+    source: CALC-A2-NRJ-GAZ-RESINE
+    valeur: "4 299 MJ/t"
+    verdict: CALCUL FAUX
+    nature: constructeur
+    citation: "part: 0.115 ; source: OW-ENG-P16-BILAN ; source réelle: Recovery Loss 11.5 %"
+    emplacement: "calculs.yaml, CALC-A2-NRJ-GAZ-RESINE ; brochure OneWorld p. 16"
+    commentaire: "Arithmétique exacte, mais l'entrée n'est pas une fraction démontrée de gaz combustible. Rapport lot 2, ligne 15."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.1, limites IED"
+    source: IED-2010-75-ANX6-P3
+    valeur: "poussières 10 ; HCl 10 ; SO2 50 ; NOx 200 ; CO 50 mg/Nm3 ; dioxines 0,1 ng/Nm3"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Total dust 10 ; Hydrogen chloride (HCl) 10 ; Sulphur dioxide (SO2) 50 ; Nitrogen monoxide (NO) and nitrogen dioxide (NO2), expressed as NO2 200 ; 50 as daily average value ; Dioxins and furans 0,1"
+    emplacement: "Directive 2010/75/UE, annexe VI, partie 3, points 1.1, 1.4 et 1.5"
+    commentaire: "Dioxines sur 6 à 8 h, pas moyenne journalière. Rapport lot 2, ligne 16."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.1, BAT-AEL installation neuve"
+    source: BAT-WI-2019-2010
+    valeur: "poussières < 2-5 ; HCl < 2-6 ; SO2 5-30 ; NOx 50-120 mg/Nm3 ; PCDD/F < 0,01-0,04 ng I-TEQ/Nm3"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "Dust < 2-5 ; HCl < 2-6 ; SO2 5-30 ; NOX 50-120 ; PCDD/F < 0,01-0,04"
+    emplacement: "Décision d'exécution (UE) 2019/2010, tableaux 6 et 7"
+    commentaire: "Rapport annexe 2 lot 2, ligne 17."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, pires mesures 2022"
+    source: CHIBA-OOSUMI-FUMEES
+    valeur: "NOx 43 ppm ; SOx 1,4 ppm ; poussières 0,004 g/m3 ; dioxines 0,067 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "窒素酸化物濃度 43 ppm ; 硫黄酸化物濃度 1.4 ppm ; ばいじん濃度 0.004 g/m3 ; ダイオキシン類 0.067 ng-TEQ/m3"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 56"
+    commentaire: "Rapport provisoire, O2 absent. Rapport lot 2, ligne 18."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, mesures 2023"
+    source: TANABE-2023 + DIOXINES-2023
+    valeur: "NOx 30 ppm ; SOx < 0,5 ppm ; poussières < 0,005 g/m3N ; dioxines 0,011 et 0,025 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "窒素酸化物濃度 30 ppm ; 硫黄酸化物濃度 0.5未満 ppm ; ばいじん濃度 0.005未満 g/m3N ; 排ガス(9/26) 0.011 ; 排ガス(9/27) 0.025"
+    emplacement: "Exhaust Gas Concentration - Bad Smell - Dioxins  .pdf, p. 1 et 5 ; Dioxins .pdf, p. 1"
+    commentaire: "Rapport dioxines préliminaire. Rapport lot 2, ligne 19."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, mesures 2020"
+    source: KANSO-20002610
+    valeur: "NOx 15 ppm ; HCl < 1 ppm ; SOx < 1 ppm ; poussières < 0,002 g/m3 ; O2 18,5 %"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "窒素酸化物濃度 15 ppm ; 塩化水素濃度 1 ppm未満 ; 硫黄酸化物濃度 1 ppm未満 ; ダスト濃度 0.002 g/m3未満 ; 酸素濃度 18.5 %"
+    emplacement: "Analysis-Results-Off-gas-Odor-Exhaust.pdf, p. 2"
+    commentaire: "Rapport annexe 2 lot 2, ligne 20."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, correction 2020 à 11 % O2"
+    source: CALC-A2-FACTEUR-O2-2020 + CALC-A2-NOX-2020-CORRIGE + CALC-A2-HCL-2020-CORRIGE + CALC-A2-POUSS-2020-CORRIGE
+    valeur: "facteur 4 ; NOx 123 ; HCl < 6,52 ; poussières < 8 mg/Nm3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "(21 - 11) / (21 - 18,5) = 4 ; 15 x 2,05 x 4 = 123 ; 1 x 1,63 x 4 = 6,52 ; 0,002 x 1 000 x 4 = 8"
+    emplacement: "rapport KANSO p. 2 ; recalcul"
+    commentaire: "Rapport annexe 2 lot 2, ligne 21."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, O2 maximal campagnes 2022"
+    source: CALC-A2-O2MAX-NOX-IED + CALC-A2-O2MAX-POUSS-IED + CALC-A2-O2MAX-DIOX-IED + CALC-A2-O2MAX-NOX-BAT
+    valeur: "16,6 % ; 17,0 % ; 14,3 % ; 13,7 % O2"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "resultat: 16.59 % O2 ; resultat: 17.0 % O2 ; resultat: 14.3 % O2 ; resultat: 13.65 % O2"
+    emplacement: "calculs.yaml, calculs cités ; recalcul"
+    commentaire: "Montre que la conformité dépend d'un O2 non mesuré. Rapport lot 2, ligne 22."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, conclusion de conformité"
+    source: IED-2010-75-ANX6-P3 + CHIBA-OOSUMI-FUMEES + TANABE-2023
+    valeur: "chaque polluant mesuré passe dans les trois campagnes"
+    verdict: ABSENT
+    nature: publique
+    citation: "They are standardised at 11 % oxygen in waste gas ; rapports 2022 et 2023: teneur en O2 non reportée"
+    emplacement: "Directive 2010/75/UE, annexe VI, partie 3 ; rapports 2022 et 2023"
+    commentaire: "Valeurs brutes inférieures, mais conformité non démontrée sans O2 et périodes de moyenne. Rapport lot 2, ligne 23."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.2, dioxines et BAT-AEL"
+    source: CHIBA-OOSUMI-FUMEES + DIOXINES-2023 + BAT-WI-2019-2010
+    valeur: "2022 0,067 > 0,04 ; 2023 0,011 et 0,025 dans la plage brute"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "0.067 ng-TEQ/m3 ; 0.011 ; 0.025 ; PCDD/F < 0,01-0,04 ng I-TEQ/Nm3"
+    emplacement: "rapports 2022 et 2023 ; décision 2019/2010, tableau 7"
+    commentaire: "Comparaison brute exacte, réserves O2 et TEQ indiquées dans le HTML. Rapport lot 2, ligne 24."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.3, odeurs"
+    source: TES-ODEUR-2020 + CHIBA-OOSUMI-ODEURS-BRUIT + TANABE-2023
+    valeur: "périmètre < 10 ; exutoire 14 ; 16, 18, 19 ; 24, 22"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "敷地境界 10未満 ; 発生源（排出口）14 ; 排出口付近 16 ; 排出口付近 18 ; 臭気指数 24 ; 臭気指数 22"
+    emplacement: "rapport KANSO p. 3 ; rapport Chiba PDF p. 62 à 67 ; rapport Tanabe p. 2 et 6"
+    commentaire: "Rapport annexe 2 lot 2, ligne 25."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.3, bruit à 1 m"
+    source: CHIBA-OOSUMI-ODEURS-BRUIT
+    valeur: "76 à 77 dB(A)"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "発生源（機側1m）10:00 76 ; 12:30 76 ; 15:30 77"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 74"
+    commentaire: "Rapport annexe 2 lot 2, ligne 26."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.4, eau brute de procédé"
+    source: CHIBA-OOSUMI-EAUX
+    valeur: "phénols 740 mg/L ; cyanure 14 mg/L ; pH 0,8 ; DBO 16 000 mg/L"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "フェノール類 740 mg/L ; シアン化合物 14 mg/L ; 水素イオン濃度 0.8 pH ; 生物化学的酸素要求量 16000 mg/L"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 51 à 53"
+    commentaire: "Traitement dédié nécessaire. Rapport lot 2, ligne 27."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-02-html/index.html
+    ligne: "section 2.7.4, essai SEA CORAL"
+    source: SEACORAL-DETAIL-ENG
+    valeur: "chlorures 31 000 vers 31 mg/L ; résiduel 140 000 mg/L ; environ 330 t/j"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Chloride ion mg/L Raw water 31,000 ; Treated water 31 ; Residual water 140,000 ; About 330ton/Day"
+    emplacement: "SEA CORALdetail.pdf, tableau d'essai et calcul de capacité, pages non numérotées"
+    commentaire: "Essai d'eau de mer, pas d'eau de pyrolyse ; le HTML le dit correctement. Rapport lot 2, ligne 28."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.1, absence de tri et nettoyage"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "pas de tri ni nettoyage ; un jour de stockage"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "URBAN RIG does not require to sort waste for processing ; This machine does not require clean such contamination and able to input after one-day storage to remove moisture."
+    emplacement: "Urban RIg ENG.pdf, p. 2"
+    commentaire: "Déclaration constructeur ; un prétraitement intégré reste visible sur les plans. Rapport annexe 1 lot 2, ligne 1."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.1, prétraitement sur les plans"
+    source: OW-ENG-P04-P07-SPEC-PLANS
+    valeur: "trémie avec broyage ; machine de tri"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Input throat (with crushing function) ; Sorting machine"
+    emplacement: "Urban RIg ENG.pdf, p. 4"
+    commentaire: "La contradiction apparente avec l'absence de tri est correctement signalée. Rapport annexe 1 lot 2, ligne 2."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.1, matières testées"
+    source: CHIBA-ESSAIS-FICHES + OWJ-DEMO-2021 + OWT-DEMO-2020
+    valeur: "PE, PP, PS, flux municipaux, mélange avec PVC et FRP, pneus, résidu de broyage"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "油化率 ; 中にはFRP素材と見られるガラス繊維も混在されていた。 ; The weight of each component after pyrolysis was 111 kg of wire, 133 kg of charcoal, and approximately 180 L of oil."
+    emplacement: "rapport Chiba PDF p. 19 à 29 ; démonstration 2021 p. 5 et 8 ; essai pneus 2020 p. 3"
+    commentaire: "Le rapport pneus est de nature constructeur ; la campagne Chiba est tierce. Rapport annexe 1 lot 2, ligne 3."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.1, comportement du PVC"
+    source: OWJ-DEMO-2021
+    valeur: "PVC arrêté au stade de la fusion"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "塩ビに関しては融点で止まっている"
+    emplacement: "Urban-Rig-Demo-Operation-Test-Report.pdf, p. 8"
+    commentaire: "Ne démontre pas l'acceptation durable d'un flux riche en PVC. Rapport annexe 1 lot 2, ligne 4."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, dioxines 2023"
+    source: DIOXINES-2023
+    valeur: "0,011 et 0,025 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "排ガス(9/26) 0.1 0.011 基準値以下 ; 排ガス(9/27) 0.1 0.025 基準値以下"
+    emplacement: "Dioxins .pdf, p. 1"
+    commentaire: "Rapport préliminaire ; machine, charge et O2 non indiqués. Rapport annexe 1 lot 2, ligne 6."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, dioxines 2022"
+    source: CHIBA-OOSUMI-FUMEES
+    valeur: "0,067 ng-TEQ/m3"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "ダイオキシン類（毒性等量） ng-TEQ/m³ 0.067"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 56, imprimé p. 50"
+    commentaire: "Rapport provisoire ; O2 non indiqué. Rapport annexe 1 lot 2, ligne 7."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, comparaison à la limite UE dioxines"
+    source: IED-2010-75-ANX6-P3
+    valeur: "toutes les valeurs sous 0,1 ng/Nm3"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "They are standardised at 11 % oxygen in waste gas ; Dioxins and furans 0,1"
+    emplacement: "directive 2010/75/UE, annexe VI, partie 3, points 1 et 1.4"
+    commentaire: "Les rapports ne donnent pas la correction à 11 % O2. Rapport annexe 1 lot 2, ligne 8."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, comparaison dioxines aux MTD"
+    source: BAT-WI-2019-2010
+    valeur: "2023 dans la plage 0,01 à 0,04 ng I-TEQ/Nm3"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "BAT-AEL (ng I-TEQ/Nm3) 0,01-0,04 ; 11 vol-%"
+    emplacement: "décision d'exécution (UE) 2019/2010, considérations générales et tableau MTD 30"
+    commentaire: "La plage est à 11 % O2 ; l'O2 des mesures 2023 manque. Rapport annexe 1 lot 2, ligne 9."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, déclaration OneWorld sur les dioxines"
+    source: OW-ENG-P02-P14-AFFIRMATIONS
+    valeur: "dioxines et CO2 non générés"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "It is not necessary for fuel for operation except initial startup. ; Dioxin and CO₂ are not generated."
+    emplacement: "Urban RIg ENG.pdf, p. 2"
+    commentaire: "L'annexe distingue le réacteur des fumées de combustion. Rapport annexe 1 lot 2, ligne 10."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.2, option PRIMO"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "DeNOx, DeSOx, poussières, odeurs"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "OPTION PRIMO / Exhaust Gas Purification Facility ; Nox decomposition ; Sox decomposition ; Dust removal ; Odor removal"
+    emplacement: "Urban RIg ENG.pdf, p. 12"
+    commentaire: "Option constructeur ; performance française à spécifier. Rapport annexe 1 lot 2, ligne 11."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "sections 1.4 à 1.6, option SEA CORAL omise"
+    source: OW-ENG-P13-SEACORAL
+    valeur: "option non décrite"
+    verdict: ABSENT
+    nature: constructeur
+    citation: "OPTION SEA CORAL / Specialized ceramic purifier"
+    emplacement: "Urban RIg ENG.pdf, p. 13"
+    commentaire: "L'annexe 2 précise qu'aucun essai sur eau de procédé n'est fourni. Rapport annexe 1 lot 2, ligne 12."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "sections 1.4 à 1.6, option FORCE 9 omise"
+    source: OW-ENG-P03-P19-GAMME-DELAIS
+    valeur: "option non décrite"
+    verdict: ABSENT
+    nature: constructeur
+    citation: "FORCE 9 / FIA CR-09 Far infrared catalytic reduction facility ; made for the stabilization of carbide residue"
+    emplacement: "Urban RIg ENG.pdf, p. 11"
+    commentaire: "Nécessité non établie pour le cas standard. Rapport annexe 1 lot 2, ligne 13."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.3, séparation des huiles"
+    source: OW-ENG-P14-P15-PROCEDE
+    valeur: "séparation gazole et huile lourde selon la température"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Segregate gas-oil and heavy-oil by the temperature difference of vaporized gas through a solenoid valve."
+    emplacement: "Urban RIg ENG.pdf, p. 14"
+    commentaire: "Quantités et qualités des coupes continues non mesurées. Rapport annexe 1 lot 2, ligne 14."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.4, pilotage"
+    source: OW-ENG-P04-P07-SPEC-PLANS
+    valeur: "micro-ordinateur, vannes et capteurs"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Control System microcomputer control ; Safety device Valve & sensor"
+    emplacement: "Urban RIg ENG.pdf, p. 4"
+    commentaire: "Logique de sécurité et effectifs non décrits. Rapport annexe 1 lot 2, ligne 15."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, besoin du brûleur"
+    source: CALC-A2-BRULEUR-MJ-T
+    valeur: "1 506,65 MJ/t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "833 kcal/s x 86 400 s/j x 4,1868 kJ/kcal / 1 000 / 200 t/j = 1 506,65 MJ/t"
+    emplacement: "UR2000-JP.pdf, p. 4 ; recalcul"
+    commentaire: "Arithmétique exacte sur données constructeur. Rapport annexe 1 lot 2, ligne 16."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, couverture thermique avec 11,5 %"
+    source: CALC-A2-COUV-BRULEUR-RESINE
+    valeur: "2,9 fois avec 11,5 % de gaz"
+    verdict: CALCUL FAUX
+    nature: constructeur
+    citation: "Recovery Loss 11.5 % ; Mainly discharged as flue gas; a very small amount will be carbide."
+    emplacement: "Urban RIg ENG.pdf, p. 16"
+    commentaire: "11,5 % n'est pas une mesure de gaz ni une fraction clairement rattachée à l'entrée. Rapport annexe 1 lot 2, ligne 17."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, couverture thermique avec 15 %"
+    source: CALC-A2-COUV-BRULEUR-PLASTIQUE15
+    valeur: "3,7 fois"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "5 607,92 / 1 506,65 = 3,7221"
+    emplacement: "calculs.yaml, CALC-A2-COUV-BRULEUR-PLASTIQUE15"
+    commentaire: "Exact sous hypothèse de 15 %, pas mesure du continu. Rapport annexe 1 lot 2, ligne 18."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, autonomie combustible déclarée"
+    source: OW-ENG-P02-P14-AFFIRMATIONS
+    valeur: "pas de combustible après démarrage"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "It is not necessary for fuel for operation except initial startup."
+    emplacement: "Urban RIg ENG.pdf, p. 2"
+    commentaire: "Déclaration constructeur, non étendue aux déchets ménagers dans l'annexe. Rapport annexe 1 lot 2, ligne 19."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, électricité 600"
+    source: OW-CONSO-ENERGIE
+    valeur: "600 kW pour 200 t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "200t ; 10,000L/day(200t) ; 600kW/h ; 56,800kW/day(200t)"
+    emplacement: "consommation-electrique-et-fuel.pdf, p. 1"
+    commentaire: "Unités imprimées incorrectes ; valeur du tableau confirmée. Rapport annexe 1 lot 2, ligne 20."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, électricité par tonne"
+    source: CALC-A2-ELEC-MJ-T
+    valeur: "259,2 MJ/t"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "600 kW x 24 h/j x 3,6 MJ/kWh / 200 t/j = 259,2 MJ/t"
+    emplacement: "calculs.yaml, CALC-A2-ELEC-MJ-T"
+    commentaire: "Exact si 600 kW continus et 200 t/j effectifs. Rapport annexe 1 lot 2, ligne 21."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, électricité 20"
+    source: UR2000-JP-P08-SPEC
+    valeur: "20 kw/h"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "消費電力 ( 連続時 ) 20kw/h"
+    emplacement: "UR2000-JP.pdf, p. 8"
+    commentaire: "Contradiction 20 contre 600 correctement signalée ; retenir 600 par prudence. Rapport annexe 1 lot 2, ligne 22."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.5, énergie des essais Noda"
+    source: CHIBA-BILANS
+    valeur: "gazole et électricité utilisés"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "電力 65kwh ; 軽油 66ℓ"
+    emplacement: "prefecture-shiba-test-data-2.pdf, PDF p. 41 et 42"
+    commentaire: "Essais en lots, non transposables directement au continu. Rapport annexe 1 lot 2, ligne 23."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.6, modularité"
+    source: UR2000-JP-P06-P07-MODULES
+    valeur: "7 unités d'environ 12 t ; transport en 7 parties"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "本機処理プラント (200T) は 7 ユニットで構成。 ; 処理機本体を７分割しトラック搬送して現地組立方式を採用。"
+    emplacement: "UR2000-JP.pdf, p. 6"
+    commentaire: "Déclaration constructeur. Rapport annexe 1 lot 2, ligne 24."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.6, plan 1 000 t/j"
+    source: UR2000-JP-P09-P13-PLANS
+    valeur: "5 lignes URC-2000"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "1000t/day"
+    emplacement: "UR2000-JP.pdf, p. 10, plan de cinq ensembles"
+    commentaire: "Plan d'implantation, pas preuve de fonctionnement. Rapport annexe 1 lot 2, ligne 25."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.6, délais"
+    source: OW-ENG-P03-P19-GAMME-DELAIS + UR2000-JP-P09-P13-PLANS
+    valeur: "environ 10 mois contre 4 mois"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Continuous type = about 10 months"
+    emplacement: "Urban RIg ENG.pdf, p. 19 ; UR2000-JP.pdf, p. 13"
+    commentaire: "Contradiction correctement signalée ; retenir au minimum 10 mois. Rapport annexe 1 lot 2, ligne 26."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.6, installation et maintenance"
+    source: OW-TRANSPORT-INSTALLATION
+    valeur: "30 jours ; 3 jours tous les 3 mois"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "Days needed for installation onsite ; 3 months operation + 3 days maintenance"
+    emplacement: "transport installation and maintenance.pdf, p. 1, colonne 200t"
+    commentaire: "Document sans auteur ni date imprimés. Rapport annexe 1 lot 2, ligne 27."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.6, logistique conteneurs omise"
+    source: OW-TRANSPORT-INSTALLATION
+    valeur: "100 conteneurs de 40 pieds"
+    verdict: ABSENT
+    nature: constructeur
+    citation: "How many 40' containers for shipment ; 100"
+    emplacement: "transport installation and maintenance.pdf, p. 1, colonne 200t"
+    commentaire: "Peut coexister avec sept grands modules ; liste de colisage nécessaire. Rapport annexe 1 lot 2, ligne 28."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.4.7, produits vendables"
+    source: IGES-AEPW-PROPOSITION
+    valeur: "char, huile légère, huile mixte, off-gas"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "URBAN RIG can make a profit by recovering salable resources (carbide, light oil, mixed oil, off-gas)."
+    emplacement: "タイAEPW事業提案書英語版.pdf, p. 4"
+    commentaire: "Ne prouve ni prix, ni qualité, ni débouché. Rapport annexe 1 lot 2, ligne 29."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.5, hiérarchie des déchets"
+    source: WFD-2008-98-ART3-4
+    valeur: "prévention, réemploi, recyclage, autre valorisation, élimination"
+    verdict: CONFIRMÉ
+    nature: publique
+    citation: "prevention ; preparing for re-use ; recycling ; other recovery, e.g. energy recovery ; disposal"
+    emplacement: "directive 2008/98/CE consolidée au 16 octobre 2025, art. 4(1)"
+    commentaire: "La version actuelle confirme la substance de la fiche. Rapport annexe 1 lot 2, ligne 30."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.5, huile vendue comme matière première"
+    source: WFD-2008-98-ART3-4
+    valeur: "compterait comme recyclage"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "enters the recycling operation whereby waste materials are actually reprocessed into products, materials or substances"
+    emplacement: "directive 2008/98/CE consolidée au 16 octobre 2025, art. 11a(1)(c)"
+    commentaire: "La vente seule ne suffit pas ; re-transformation effective et règles de statut requises. Rapport annexe 1 lot 2, ligne 31."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.5, chlore de charge de vapocraqueur"
+    source: KUSENBERG-AICHE-2021
+    valeur: "environ 3 ppm"
+    verdict: DIFFÉRENT
+    nature: tiers
+    citation: "Overview of typical heteroatom specifications for fossil-based steam cracker feedstocks ; Chlorine 3 ppm"
+    emplacement: "Kusenberg et al., PDF p. 8, tableau 2"
+    commentaire: "Spécification industrielle typique, pas seuil universel. Rapport annexe 1 lot 2, ligne 32."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.5, exemption IED"
+    source: IED-2010-75-ART3-42
+    valeur: "texte ancien sur gaz non-déchet et gaz naturel"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "if the gases or liquids resulting from such thermal treatment of waste are treated prior to their incineration to such an extent that"
+    emplacement: "directive (UE) 2024/1785, art. 1(35), remplaçant l'art. 42(1), second alinéa"
+    commentaire: "Fiche obsolète ; classement prudent incinération encore défendable faute de preuve d'exemption. Rapport annexe 1 lot 2, ligne 33."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "section 1.5, comparaison JRC"
+    source: JRC-2023-PLASTIC-RECYCLING
+    valeur: "recyclage préférable dans toutes les voies ; pas de classement clair mécanique contre chimique"
+    verdict: DIFFÉRENT
+    nature: publique
+    citation: "Recycling (mechanical, physical or chemical) is preferable to energy recovery in all pathways analysed ; For some categories however, energy recovery can perform better ; a clear ranking could not be established."
+    emplacement: "JRC132067, PDF p. 9, page imprimée 4, Executive summary"
+    commentaire: "Préférence générale limitée au climat ; nuance omise pour d'autres catégories. Rapport annexe 1 lot 2, ligne 34."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "cohérence annexe 2, énergie"
+    source: annexe-02-html sections 2.6 et 2.8
+    valeur: "76,5 %, 11,5 %, 2,9, 3,7, 600 kW"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "2.9 times on OneWorld's resin-rich design (11.5 % gas) and 3.7 times with 15 % gas"
+    emplacement: "annexe 2 HTML, sections 2.6.2 et 2.8"
+    commentaire: "Cohérence formelle, mais mêmes erreurs de portée sur 76,5 % et 11,5 %. Rapport annexe 1 lot 2, ligne 35."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "cohérence annexe 2, émissions"
+    source: annexe-02-html section 2.7
+    valeur: "même lecture des dioxines"
+    verdict: CONFIRMÉ
+    nature: tiers
+    citation: "2022 and 2023 campaigns: oxygen was not reported ; The 2023 dioxin results (0.011 and 0.025) are within the BAT range"
+    emplacement: "annexe 2 HTML, section 2.7.2"
+    commentaire: "Cohérence entre annexes, mais contradiction logique interne faute d'O2. Rapport annexe 1 lot 2, ligne 36."
+  - date: 2026-11-25
+    agent: codex
+    document: nouveau-business-plan/annexes/annexe-01-html/index.html
+    ligne: "sections 1.4 à 1.6, concordance HTML et Markdown"
+    source: ANNEX-01-Process-and-Technology.md
+    valeur: "même texte et mêmes valeurs"
+    verdict: CONFIRMÉ
+    nature: constructeur
+    citation: "600 kW for a 200 t plant ; about 10 months of manufacturing for a continuous plant, or 4 months ; would count as recycling"
+    emplacement: "Markdown sections 1.4 à 1.6 ; HTML correspondant"
+    commentaire: "Aucun écart HTML/source dans le lot 2. Rapport annexe 1 lot 2, ligne 37."
