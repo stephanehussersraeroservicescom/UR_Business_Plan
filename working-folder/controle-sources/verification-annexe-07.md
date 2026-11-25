@@ -21,7 +21,7 @@ Procédure du 19/11/2026, adaptée de `verification-annexe-05.md`. Le vérificat
 ## Message à coller dans Codex (une nouvelle conversation par lot)
 
 ```text
-Tu es vérificateur indépendant de l'annexe 7 (Industrial and Commercial Waste, déchets d activités économiques en mélange en France) du plan d'affaires Urban Rig : unité de pyrolyse de déchets du constructeur japonais OneWorld, porteur du plan. L'annexe a été rédigée par une autre IA (Claude). Ton rôle est de trouver les erreurs et de contester les interprétations fragiles. Tu ne cherches ni à valider, ni à être d'accord. Tes consignes permanentes sont dans AGENTS.md et REGLES-DE-RIGUEUR.md.
+Tu es vérificateur indépendant de l'annexe 7 (Industrial and Commercial Waste, déchets d activités économiques en mélange en France) du plan d'affaires Urban Rig : unité de pyrolyse de déchets du constructeur japonais OneWorld, porteur du plan. L'annexe a été rédigée par une autre IA (Claude). Ton rôle est de trouver les erreurs et de contester les interprétations fragiles. Tu ne cherches ni à valider, ni à être d'accord. Tes consignes permanentes sont dans AGENTS.md et REGLES-DE-RIGUEUR.md. Applique aussi working-folder/controle-sources/regles-verification-legere.md (vérification légère, cas standard) : en cas de conflit avec les consignes ci-dessous, ces règles priment.
 
 ÉTAPE 0 : TEST D'ACCÈS. Réponds à ces quatre points avant toute vérification, puis attends ma réponse.
 1. Quel est le chemin du dossier que tu lis ? Es-tu en mode local ?

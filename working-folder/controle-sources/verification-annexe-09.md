@@ -7,7 +7,7 @@ Procédure du 19/11/2026, adaptée de `verification-annexe-05.md`. Le vérificat
 | Étape | Qui | Quoi |
 |---|---|---|
 | 1 | ChatGPT (Codex) | Test d'accès : dossier lu, consignes d'`AGENTS.md`, lecture d'un PDF, accès internet |
-| 2 | ChatGPT (Codex) | Vérification d'un lot (une nouvelle conversation par lot, deux lots). Il écrit son rapport dans `verifications/` et ses verdicts dans `verifications/registre-verifications.yaml` |
+| 2 | ChatGPT (Codex) | Vérification du lot unique (toute l'annexe). Il écrit son rapport dans `verifications/` et ses verdicts dans `verifications/registre-verifications.yaml` |
 | 3 | Claude (nouveau chat) | Relire chaque écart dans la source d'origine et le classer : ACCEPTÉ (corrigé), CONTESTÉ (avec citation), À TRANCHER. Fichier `verifications/ecarts-annexe-09.md` |
 | 4 | ChatGPT (Codex) | Facultatif : second tour sur les points CONTESTÉS |
 | 5 | Stéphane | Trancher les points restants ; commiter et pousser |
@@ -15,12 +15,12 @@ Procédure du 19/11/2026, adaptée de `verification-annexe-05.md`. Le vérificat
 ## Points d'attention propres à l'annexe 9
 
 - **Articles scientifiques sur PMC** (`pmc.ncbi.nlm.nih.gov`) : vérification de navigateur fréquente. Essayer le DOI chez l'éditeur.
-- **Décision D-050** : posée par Claude, pas encore tranchée par Stéphane. Le vérificateur la juge (fondée, fragile, à remplacer), il ne la traite pas comme un fait.
+- **Décisions D-050 et D-051** : prises par Stéphane, porteur du projet, le 19/11/2026 (prix de la machine 50 MEUR ; 5 MEUR de pré-traitement par ligne et 5 MEUR de bâtiment, génie civil, ingénierie et permis). Ce sont des choix du porteur, pas des faits sourcés : le vérificateur contrôle qu'ils sont repris tels quels et présentés comme décisions, et peut les juger (cohérents ou non avec les sources publiques).
 
 ## Message à coller dans Codex (une nouvelle conversation par lot)
 
 ```text
-Tu es vérificateur indépendant de l'annexe 9 (Equipment and Configuration, équipement, prix et pré-traitement) du plan d'affaires Urban Rig : unité de pyrolyse de déchets du constructeur japonais OneWorld, porteur du plan. L'annexe a été rédigée par une autre IA (Claude). Ton rôle est de trouver les erreurs et de contester les interprétations fragiles. Tu ne cherches ni à valider, ni à être d'accord. Tes consignes permanentes sont dans AGENTS.md et REGLES-DE-RIGUEUR.md.
+Tu es vérificateur indépendant de l'annexe 9 (Equipment and Configuration, équipement, prix et pré-traitement) du plan d'affaires Urban Rig : unité de pyrolyse de déchets du constructeur japonais OneWorld, porteur du plan. L'annexe a été rédigée par une autre IA (Claude). Ton rôle est de trouver les erreurs et de contester les interprétations fragiles. Tu ne cherches ni à valider, ni à être d'accord. Tes consignes permanentes sont dans AGENTS.md et REGLES-DE-RIGUEUR.md. Applique aussi working-folder/controle-sources/regles-verification-legere.md (vérification légère, cas standard) : en cas de conflit avec les consignes ci-dessous, ces règles priment.
 
 ÉTAPE 0 : TEST D'ACCÈS. Réponds à ces quatre points avant toute vérification, puis attends ma réponse.
 1. Quel est le chemin du dossier que tu lis ? Es-tu en mode local ?
@@ -30,7 +30,7 @@ Tu es vérificateur indépendant de l'annexe 9 (Equipment and Configuration, éq
 
 CE QUE TU VÉRIFIES
 - La version de référence est le HTML : nouveau-business-plan/annexes/annexe-09-html/index.html et ses fiches annexe-09-html/preuves/*.html (fiches 9.M, 9.P, 9.L, 9.C et 9.D). Les fiches 1.x, 2.x, 3.x, 5.x et 8.x renvoient à d'autres annexes, soumises à leur propre vérification : vérifie seulement que la valeur reprise est la même.
-- Registres : working-folder/reference/sources-externes/registre-sources.yaml (fiches A9-* et PRM-*), working-folder/controle-sources/calculs.yaml (CALC-A9-*), working-folder/params/_decisions.yaml (D-050 (prix fixé par le porteur : on vérifie qu il est repris tel quel), et D-035 citée).
+- Registres : working-folder/reference/sources-externes/registre-sources.yaml (fiches A9-* et PRM-*), working-folder/controle-sources/calculs.yaml (CALC-A9-*), working-folder/params/_decisions.yaml (D-050 et D-051 (choix du porteur : on vérifie qu'ils sont repris tels quels), et D-035 citée).
 - La source Markdown nouveau-business-plan/annexes/ANNEX-09-Equipment-and-Configuration.md porte les identifiants entre crochets : sers-t'en pour retrouver un identifiant, jamais comme preuve.
 - Rien dans ARCHIVE-NON-VERIFIE/ n'est une source. Ignore _to_delete/.
 
@@ -43,7 +43,7 @@ POUR CHAQUE AFFIRMATION CHIFFRÉE DU LOT
 NEUTRALITÉ ET CONTRADICTION (le plus important)
 - Pour chaque conclusion du lot, cherche activement une autre lecture des mêmes données. Dis laquelle te paraît la plus solide, avec la citation qui l'appuie.
 - Signale : une donnée de OneWorld présentée comme vérifiée ; un prix de petite annonce ou de site commercial présenté comme un devis ; un prix sans précision HT ou TTC, ni de périmètre ; une source plus récente ou plus solide que celle citée.
-- Si tu n'es pas d'accord avec la décision D-050, dis-le et explique pourquoi.
+- Si tu n'es pas d'accord avec les décisions D-050 ou D-051, dis-le et explique pourquoi.
 - Ta mémoire d'entraînement n'est pas une source.
 
 CE QUE TU ÉCRIS (et rien d'autre)
