@@ -6,11 +6,35 @@ Routes (toutes sous /model, aucune autre route de app.py n'est touchee) :
   GET  /model/api/description  flux, scenarios, champs modifiables (valeur, source, confiance, statut)
   POST /model/api/calcul       {flux, scenario, surcharges, choix} -> resultats complets (JSON)
 """
+import threading
+
 from flask import Blueprint, Response, jsonify, request
 
+from engine import flux as _flux
 from engine.flux import Donnees, calculer, description_page
 
 bp = Blueprint("modele_flux", __name__, url_prefix="/model")
+
+# Donnees en cache : la lecture des registres prend environ 1,5 s, le calcul 0,1 s.
+# Le cache est relu des qu'un fichier source change (date de modification).
+_CACHE = {"sig": None, "d": None}
+_VERROU = threading.Lock()
+
+
+def _signature():
+    fichiers = sorted(_flux.PARAMS.glob("*.yaml")) + [_flux.CALCULS, _flux.REG_EXT, _flux.EVIDENCE,
+                                                       _flux.DECISIONS, _flux.BILANS]
+    fichiers += sorted(_flux.VERIFS.glob("*codex*.md"))
+    return tuple((str(f), f.stat().st_mtime) for f in fichiers if f.exists())
+
+
+def _donnees():
+    sig = _signature()
+    with _VERROU:
+        if _CACHE["sig"] != sig:
+            _CACHE["d"] = Donnees()
+            _CACHE["sig"] = sig
+        return _CACHE["d"]
 
 
 @bp.route("", strict_slashes=False)
@@ -21,7 +45,7 @@ def page():
 @bp.route("/api/description")
 def api_description():
     try:
-        return jsonify(description_page(Donnees()))
+        return jsonify(description_page(_donnees()))
     except Exception as e:  # noqa: BLE001
         return jsonify({"erreur": str(e)}), 500
 
@@ -31,7 +55,7 @@ def api_calcul():
     try:
         d = request.get_json(force=True) or {}
         r = calculer(d.get("flux", "plastiques"), d.get("scenario", "standard"),
-                     d.get("surcharges") or {}, d.get("choix") or {}, Donnees())
+                     d.get("surcharges") or {}, d.get("choix") or {}, _donnees())
         return jsonify(r)
     except Exception as e:  # noqa: BLE001
         return jsonify({"erreur": f"{type(e).__name__} : {e}"}), 400
@@ -50,6 +74,9 @@ header h1{font-size:17px;margin:0;font-weight:600}header a{color:#b8cdf0;font-si
 .bandeau{background:#fff4e0;border-bottom:1px solid #f0d9a8;padding:8px 22px;font-size:13px;color:#6a4a08}
 main{display:grid;grid-template-columns:minmax(330px,430px) 1fr;gap:18px;padding:18px 22px}
 @media(max-width:980px){main{grid-template-columns:1fr}}
+main>*{min-width:0}
+#etat{font-size:12px;color:var(--mut);margin:0 0 10px}#etat.run{color:var(--acc)}
+.p .sanseffet{grid-column:1/3;font-size:11px;color:var(--warn)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px}
 .card h2{font-size:14px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
 label.l{display:block;font-size:12px;color:var(--mut);margin:8px 0 3px}
@@ -95,7 +122,7 @@ button.reset{margin-top:10px;padding:7px 12px;border:1px solid var(--line);borde
 </section>
 <section>
  <div id="err"></div>
- <div class="kpis" id="kpis"></div>
+ <div id="etat">Calcul en cours...</div><div class="kpis" id="kpis"></div>
  <div class="card" style="margin-top:16px"><h2>Bilan par tonne entrante (lu dans calculs.yaml)</h2><div class="scroll"><table id="bilan"></table></div></div>
  <div class="card"><h2>Bilan energetique et valeurs unitaires</h2><div class="scroll"><table id="energie"></table></div></div>
  <div class="card"><h2>Compte de resultat et cash-flow, structure avec dette</h2><div class="scroll"><table id="annees"></table></div></div>
@@ -104,7 +131,7 @@ button.reset{margin-top:10px;padding:7px 12px;border:1px solid var(--line);borde
 </section></main>
 <script>
 const $=id=>document.getElementById(id);
-let DESC=null, etat={flux:'plastiques',scenario:'standard',surcharges:{},choix:{}}, minuterie=null;
+let DESC=null, etat={flux:'plastiques',scenario:'standard',surcharges:{},choix:{}}, minuterie=null, seq=0, dernier=null, champModifie=null;
 const fmtM=v=>v==null?'n.d.':(v/1e6).toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' MEUR';
 const fmt=(v,d=1)=>v==null?'n.d.':Number(v).toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d});
 const pct=v=>v==null?'n.d.':fmt(v*100,1)+' %';
@@ -114,27 +141,28 @@ async function init(){
  DESC=await (await fetch('/model/api/description')).json();
  const fs=$('flux');
  for(const [k,f] of Object.entries(DESC.flux)){const o=new Option(f.label+(f.inactif?' (plus tard)':''),k);o.disabled=f.inactif;fs.add(o)}
- fs.onchange=()=>{etat.flux=fs.value;etat.choix.prix_entree=null;remplirEntree();lancer()};
- const sc=$('scen');DESC.scenarios.forEach(s=>{const b=document.createElement('button');b.textContent=s;b.dataset.s=s;b.onclick=()=>{etat.scenario=s;majScen();lancer()};sc.appendChild(b)});majScen();
+ fs.value=etat.flux;
+ fs.onchange=()=>{etat.flux=fs.value;etat.choix.prix_entree=null;remplirEntree();lancer(0)};
+ const sc=$('scen');DESC.scenarios.forEach(s=>{const b=document.createElement('button');b.textContent=s;b.dataset.s=s;b.onclick=()=>{etat.scenario=s;majScen();lancer(0)};sc.appendChild(b)});majScen();
  for(const [k,l] of Object.entries(DESC.sources_chaleur))$('chaleur').add(new Option(l,k));
- $('chaleur').onchange=e=>{etat.choix.source_chaleur=e.target.value;lancer()};
- $('gazorg').onchange=e=>{etat.choix.compter_gaz_organique=e.target.checked;lancer()};
- $('entree').onchange=e=>{etat.choix.prix_entree=e.target.value;lancer()};
+ $('chaleur').onchange=e=>{etat.choix.source_chaleur=e.target.value;lancer(0)};
+ $('gazorg').onchange=e=>{etat.choix.compter_gaz_organique=e.target.checked;lancer(0)};
+ $('entree').onchange=e=>{etat.choix.prix_entree=e.target.value;lancer(0)};
  const op=$('opts');DESC.options.forEach(k=>{const c=DESC.champs[k];const d=document.createElement('div');d.className='chk';
   d.innerHTML=`<input type="checkbox" id="o_${k}" ${c.valeur?'checked':''}><label for="o_${k}">${c.label} ${badge(c.statut)}</label>`;
-  d.querySelector('input').onchange=e=>{etat.surcharges[k]=e.target.checked;lancer()};op.appendChild(d)});
+  d.querySelector('input').onchange=e=>{etat.surcharges[k]=e.target.checked;lancer(0)};op.appendChild(d)});
  const g=$('groupes');
  for(const [nom,cles] of Object.entries(DESC.groupes)){const det=document.createElement('details');if(nom.startsWith('Prix'))det.open=true;
   det.innerHTML=`<summary>${nom}</summary>`;cles.forEach(k=>{const c=DESC.champs[k];if(!c)return;det.appendChild(ligne(k,c))});g.appendChild(det)}
  $('reset').onclick=()=>{etat.surcharges={};etat.choix={};document.querySelectorAll('.p input').forEach(i=>{i.value=i.dataset.def;i.parentElement.classList.remove('mod')});
-  DESC.options.forEach(k=>$('o_'+k).checked=!!DESC.champs[k].valeur);$('gazorg').checked=false;$('chaleur').value='huile';remplirEntree();lancer()};
- remplirEntree();lancer();
+  DESC.options.forEach(k=>$('o_'+k).checked=!!DESC.champs[k].valeur);$('gazorg').checked=false;$('chaleur').value='huile';document.querySelectorAll('.sanseffet').forEach(x=>x.remove());remplirEntree();lancer(0)};
+ remplirEntree();lancer(0);
 }
-function ligne(k,c){const d=document.createElement('div');d.className='p';
+function ligne(k,c){const d=document.createElement('div');d.className='p';d.dataset.k=k;
  d.innerHTML=`<div class="lab">${c.label}<br><span class="mut">${c.unite||''}</span></div><input type="number" step="any" value="${c.valeur}" data-def="${c.valeur}">
  <div class="meta">${badge(c.statut)}${conf(c.confiance)} ${c.source}${c.type_decision?' ; '+c.type_decision:''}${c.note?'<br>'+c.note:''}</div>`;
- const i=d.querySelector('input');i.oninput=()=>{const v=parseFloat(i.value);if(isNaN(v))return;
-  if(v==parseFloat(i.dataset.def)){delete etat.surcharges[k];d.classList.remove('mod')}else{etat.surcharges[k]=v;d.classList.add('mod')}lancer()};
+ const i=d.querySelector('input');i.oninput=()=>{const v=parseFloat(String(i.value).replace(',','.'));if(isNaN(v))return;
+  if(v==parseFloat(i.dataset.def)){delete etat.surcharges[k];d.classList.remove('mod')}else{etat.surcharges[k]=v;d.classList.add('mod')}champModifie=k;lancer()};
  return d}
 function majScen(){document.querySelectorAll('#scen button').forEach(b=>b.classList.toggle('on',b.dataset.s==etat.scenario))}
 function remplirEntree(){const f=DESC.flux[etat.flux],s=$('entree');s.innerHTML='';
@@ -142,10 +170,22 @@ function remplirEntree(){const f=DESC.flux[etat.flux],s=$('entree');s.innerHTML=
  s.value=etat.choix.prix_entree||f.prix_entree.defaut;
  $('fluxInfo').textContent=f.annexe+'. Bilan energetique : '+(f.bilan_energie||'');
  $('chaleur').value=etat.choix.source_chaleur||'huile'}
-function lancer(){clearTimeout(minuterie);minuterie=setTimeout(calcul,150)}
+// Recalcul automatique : 800 ms apres la derniere frappe (0 pour un choix dans une liste) ; une reponse plus ancienne
+// que la derniere demande est ignoree, pour qu'un resultat perime n'ecrase jamais le bon.
+function lancer(delai=800){clearTimeout(minuterie);$('etat').textContent='Recalcul...';$('etat').className='run';minuterie=setTimeout(calcul,delai)}
+function empreinte(r){const s=r.structure_defaut;return JSON.stringify([r.capex.total,r.synthese_an3,s.annees.map(l=>l.cash_flow_projet),s.annees.map(l=>l.cash_flow_actionnaire)])}
 async function calcul(){
- const r=await (await fetch('/model/api/calcul',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(etat)})).json();
- if(r.erreur){$('err').textContent=r.erreur;return}$('err').textContent='';afficher(r)}
+ const n=++seq, k=champModifie; champModifie=null;
+ let r;try{r=await (await fetch('/model/api/calcul',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(etat)})).json()}
+ catch(e){if(n===seq){$('err').textContent='Erreur de connexion : '+e;$('etat').textContent=''}return}
+ if(n!==seq)return;
+ if(r.erreur){$('err').textContent=r.erreur;$('etat').textContent='';return}$('err').textContent='';
+ const e=empreinte(r);
+ if(k){const lig=document.querySelector(`.p[data-k="${k}"]`);if(lig){let m=lig.querySelector('.sanseffet');
+  if(dernier!==null&&e===dernier){if(!m){m=document.createElement('div');m.className='sanseffet';lig.appendChild(m)}
+   m.textContent='Sans effet sur le flux, le scenario et les options choisis (voir les alertes).'}else if(m)m.remove()}}
+ dernier=e;afficher(r);
+ $('etat').className='';$('etat').textContent='Recalcule a '+new Date().toLocaleTimeString('fr-FR')+(Object.keys(etat.surcharges).length?' ; '+Object.keys(etat.surcharges).length+' valeur(s) modifiee(s)':'')}
 function afficher(r){
  const s=r.structure_defaut,f=r.structure_fonds_propres,a3=r.synthese_an3;
  const k=[['CAPEX (hors transport)',fmtM(r.capex.total)],['Tonnage nominal',fmt(r.tonnage_nominal,0)+' t/an'],
@@ -176,7 +216,13 @@ function afficher(r){
  $('annees').innerHTML=t;
  $('capex').innerHTML='<tr><th>Poste</th><th>Montant</th></tr>'+Object.entries(r.capex.postes).map(([k,v])=>`<tr><td>${k}</td><td>${fmtM(v)}</td></tr>`).join('')
   +`<tr><td>aleas</td><td>${fmtM(r.capex.aleas)}</td></tr><tr><td><b>Total</b></td><td><b>${fmtM(r.capex.total)}</b></td></tr>`;
- $('alertes').innerHTML=r.alertes.map(a=>`<li>${a}</li>`).join('');
+ const opt=k=>(k in etat.surcharges)?!!etat.surcharges[k]:!!DESC.champs[k].valeur, ex=[], hu=(r.calculs.huile||{}).kg_t;
+ if(e.huile_brulee_kg_t>0&&hu!=null&&e.huile_brulee_kg_t>=hu-0.01)ex.push("Toute l'huile produite est brulee pour couvrir le deficit de chaleur (D-069) : les prix, le facteur de qualite et les parts des fractions d'huile sont sans effet sur ce flux.");
+ if(!(e.gazole_l_t>0))ex.push("Aucun gazole n'est achete : le prix du fioul est sans effet.");
+ if(!opt('compter_metaux'))ex.push("Option revenu des metaux desactivee : les prix de la ferraille et de l'aluminium sont sans effet sur les OMR et les DAE.");
+ if(!opt('compter_hydrogene'))ex.push("Option hydrogene desactivee : prix et recuperation de l'hydrogene sans effet.");
+ ex.push("Seul le prix d'entree choisi dans la liste du haut est utilise ; les prix d'entree des autres gisements sont sans effet.");
+ $('alertes').innerHTML=r.alertes.map(a=>`<li>${a}</li>`).join('')+ex.map(a=>`<li class="mut">${a}</li>`).join('');
 }
 init();
 </script></body></html>"""
