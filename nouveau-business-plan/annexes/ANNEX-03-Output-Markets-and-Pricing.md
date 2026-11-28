@@ -12,13 +12,14 @@ Each figure or fact is followed by a small link. It opens the evidence sheet: wh
 
 **A note on 2026 prices.** Oil prices are in a period of crisis: the Brent averaged 69.0 USD per barrel in 2025 and 116.8 USD in September 2026 [A3-BM-PINKSHEET-2026-10], and 128.53 USD in the week to 9 October 2026 [A3-DGEC-NPG-2026-10-09-COTATIONS]. Defaults based on the latest prices are therefore high; the sensitivity of Section 3.1.6 shows the effect of a lower oil price.
 
-**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 3.
+**Revision.** This version was revised after an independent check of the annex. The changes are listed, point by point, in the project's register of discrepancies for Annex 3. Section 3.1.2 was later completed with a chlorine table by use and with the methods to raise the flash point.
 
 ## Key Messages
 
 - **The oil is priced by fraction.** OneWorld design data split the oil into 80 % gas oil, 10 % light oil and 10 % heavy oil [calc:CALC-A1-OW16-PART-GAZOLE] [calc:CALC-A1-OW16-PART-HEATING] [calc:CALC-A1-OW16-PART-HEAVY]. Each fraction is benchmarked to its fossil equivalent: naphtha, gas oil and low-sulphur fuel oil [hyp:D-028].
 - **At the latest prices, the benchmark value of the oil is 1,121 EUR/t; at a Brent of 80 USD it is 714 EUR/t, and at 50 USD 446 EUR/t** [calc:CALC-A3-HUILE-MOY-REF] [calc:CALC-A3-HUILE-MOY-BRENT80] [calc:CALC-A3-HUILE-MOY-BRENT50]. These are benchmarks before any quality discount; the discount is an operator input (Section 3.1.5).
 - **As produced from municipal plastics, the oil is a hazardous waste fuel.** Its flash point is below 40 °C [CHIBA-JLOS-HUILES], and a liquid waste with a flash point below 60 °C is hazardous [A3-REG1357-2014-HP3]: it can only be delivered to a plant authorised to receive this hazardous waste for thermal treatment or co-incineration. It does not meet the gas oil or fuel oil specifications without refining, and its chlorine is 2.7 to 10.5 times the limit for use in a steam cracker without purification [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]. A French end-of-waste order exists for pyrolysis oil sent to a steam cracker, but only for sorted plastic waste [A3-ARRETE-SSD-HUILE-PYROLYSE-2024].
+- **Chlorine and flash point are the two barriers to the better oil markets.** Without purification, every material use of the oil fails on chlorine; the flash point closes the finished fuels. Urban Rig treats them as two separate subjects, with its own series of tests [hyp:D-074] (Section 3.1.2).
 - **The char is intended as a solid fuel for cement kilns.** At its high-case energy content of 32,090 J/g [IZUMITEC-R35-339439] [hyp:D-038], energy parity with petroleum coke or coal gives an upper bound of 123 to 255 EUR/t [calc:CALC-A3-CHAR-PARITE-PETCOKE] [calc:CALC-A3-CHAR-PARITE-INSEE]. On the French market for waste fuels the producer usually pays the user [A3-OBS-NORMANDIE-CSR-2021]; the model default is 0 EUR/t, changeable between a gate fee paid by the plant and petroleum coke parity [hyp:D-068] (Section 3.7). French cement plants aim to cover 80 % of their energy with alternative fuels by 2030 [A3G-FDR-DECARBONATION-CIMENT-2023]. Its chlorine content, the decisive acceptance criterion, is still to be measured.
 - **Metals are priced at public scrap values:** 316.4 EUR/t for shredded steel scrap and 1,723 EUR/t for aluminium scrap, French exports in the first half of 2026 [A3H-COMEXT-MENSUEL-2025-2026].
 - **On a plastic-only feed, the surplus gas can be sold, including its hydrogen** [hyp:D-031]. The gas holds about 13 kg of hydrogen per tonne of resin-rich feed [calc:CALC-A3-H2-KG-T-RESINE], worth 27 to 109 EUR per tonne before purification [calc:CALC-A3-H2-VAL-GRIS] [calc:CALC-A3-H2-VAL-HYDRIX].
@@ -75,6 +76,40 @@ Reading.
 | Road diesel | Flash point above 55 °C, sulphur 10 mg/kg, density 820 to 845 kg/m³, water 200 mg/kg [A3-ARRETE-GAZOLE-1999-ANNEXE-I] | Fails on flash point, density, water and sulphur [CHIBA-JLOS-HUILES] | Does not pass without refining |
 
 In short, chlorine closes the steam cracker without purification, and the flash point closes the finished fuels. Finding technical solutions to reach the better markets (removing PVC upstream, dechlorination, stabilisation) is a matter for Urban Rig.
+
+Chlorine and flash point are treated below as two separate subjects [hyp:D-074].
+
+**Chlorine, use by use.** The two municipal oils hold 0.137 % and 0.526 % of chlorine [CHIBA-JLOS-HUILES], that is 1,370 and 5,260 ppm [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT]. The limits below come from different texts; the cement and recovered fuel limits are written for solid fuels, and applying them to an oil is an analogy.
+
+| Use | Chlorine limit | Type of source | Oil at 0.137 % | Oil at 0.526 % |
+|---|---|---|---|---|
+| Steam cracker, at the inlet | 3 ppm [KUSENBERG-AICHE-2021] | Study | Fail, 456.67 times [calc:CALC-A3-CHLORE-CRACKER-BAS] | Fail, 1,753.33 times [calc:CALC-A3-CHLORE-CRACKER-HAUT] |
+| Marine fuel, ISO 8217:2024 | Organic chlorides 50 ppm [ISO8217-2024-UKPI] | Press, secondary | Fail, 27.4 times [calc:CALC-A3-CHLORE-MARIN-BAS] | Fail, 105.2 times [calc:CALC-A3-CHLORE-MARIN-HAUT] |
+| End of waste, pyrolysis oil, without purification (table A) | Halogens 500 ppm [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] | Regulation | Fail, 2.74 times [calc:CALC-A3-CHLORE-TABA-BAS] | Fail, 10.52 times [calc:CALC-A3-CHLORE-TABA-HAUT] |
+| Blast furnace injection | 0.05 % [A3-IEACCC-PCI-PLASTIQUES-2010] | Study, older than eight years | Fail | Fail |
+| End of waste, tyre thermolysis oil (comparison only, tyres) | Halogens 1,000 ppm [A3-ARRETE-SSD-HUILE-THERMOLYSE-PNEUS-2026] | Regulation | Fail | Fail |
+| Cement kiln, CARBOR fuel at Créchy | 0.2 to 0.5 % [A3-VICAT-CRECHY-CARBOR-2008] | Permit, older than eight years | Pass | Fail |
+| Cement kiln, cement-grade recovered fuel | Below 0.5 % [A3-OBS-NORMANDIE-CSR-2021] | Observatory | Pass | Fail, 1.052 times [calc:CALC-A3-CHLORE-CIMENT-HAUT] |
+| Dedicated recovered fuel boiler | 0.8 to 1.2 % [RP-033] | Operator, commercial source | Pass | Pass |
+| Solid recovered fuel, regulatory limit | 15,000 mg/kg of dry matter [ARRETE-CSR-2016] | Regulation | Pass | Pass |
+| End of waste, after purification (table B) | Halogens 30,000 ppm [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] | Regulation | Pass under conditions, sorted plastic feed only | Pass under conditions, sorted plastic feed only |
+| Hazardous waste incineration | Above 1 %, combustion at 1,100 °C [IED-2010-75-ART50] | Regulation | Pass, normal regime | Pass, normal regime |
+| Road diesel, petrol, refinery inlet | Not found in the texts read (request R-062) | | Unknown | Unknown |
+
+Reading. Without purification, every material use fails, from the steam cracker to the end-of-waste order. The oil passes only as a low-grade fuel: dedicated recovered fuel boilers, hazardous waste incineration and, for the less chlorinated oil, cement kilns. Urban Rig will run a series of tests to remove the chlorine; the baseline is the capture of the chlorine carried by the superheated steam and its droplets with calcium carbonate, the purified water being returned to the process to absorb more chlorine; other methods will follow [hyp:D-074]. The results are to be recorded (request R-061).
+
+**Flash point, and how it can be raised.** The flash point depends on the light compounds of the oil [A3-AMSPEC-TECHTALK-MELANGES]; the very low values of pyrolysis liquids are attributed to very light compounds [A3-GALA-EF-2020-DISTILLATION].
+
+| Method | Effect documented | Type of source |
+|---|---|---|
+| Distillation, removing the light cut | Oils from sorted polyolefins of household waste: flash point below 25 °C raw, and 62 to 88 °C for cuts starting at 160 to 210 °C, all above the 55 °C of road diesel; the cuts stay below the minimum density of 820 kg/m³ [A3-GALA-EF-2020-DISTILLATION] | Journal article |
+| Stripping of the light ends (steam, nitrogen or vacuum) | Described as a way to remove the light ends physically; no figure [A3-LEARNOIL-POINT-ECLAIR] | Blog, lubricating oils |
+| Blending with a product of higher flash point | Not linear: the light component keeps dominating the blend [A3-AMSPEC-TECHTALK-MELANGES] | Commercial laboratory note |
+| Additives | No source read describes an additive that raises the flash point | Not found |
+
+How much oil the light cut takes. OneWorld design data put the light oil at 10 % of the oil [calc:CALC-A1-OW16-PART-HEATING]. In the Chiba distillations of virgin plastics, the light fraction took 28 % to 48 % of the volume [calc:CALC-A3-LEGER-CHIBA-PP] [calc:CALC-A3-LEGER-CHIBA-3P]; in the Spanish study, the part boiling below 180 °C was 33 % to 38 % [A3-GALA-EF-2020-DISTILLATION]. The two measured series contradict the OneWorld figure. After the Chiba light fraction was removed, the remaining oil had a flash point of 45 to 55 °C [CHIBA-DISTILLATION], still below the 60 °C threshold of a hazardous liquid waste [A3-REG1357-2014-HP3]. No distillation of an oil from household waste was found (request R-061).
+
+Urban Rig's route. Urban Rig intends to set the separation valve so that the light fraction goes to the burner with the gas [hyp:D-074]. On household and business waste this fits the model rule that burns part of the oil to cover the heat deficit [hyp:D-069]. On a plastic feed, where the gas already covers the heat demand, the light fraction would have to be sold or used otherwise. The cut temperature that gives a flash point above 55 °C or 60 °C, the share of oil sent to the burner and the chlorine of each cut are to be measured (request R-061).
 
 ### 3.1.3 Regulatory Status
 
@@ -372,6 +407,8 @@ Each line is a default that the operator can change [hyp:D-030]. The quality fac
 | Price of the oil itself | No public quotation | Quality factor 0.80 by default [hyp:D-067], no market evidence for it; ICIS and Argus paid (R-037) |
 | Steam cracker outlet | Regulation read | Plastic-only feed; oxygen and metals not measured (R-035) |
 | Fuel outlet | Regulation read | Hazardous waste (flash point); acceptance by an authorised plant to obtain |
+| Oil chlorine | Two measurements on municipal oils | Removal method to be tested by Urban Rig (D-074, R-061); fuel and refinery limits not found (R-062) |
+| Oil flash point | One measurement below 40 °C [CHIBA-JLOS-HUILES]; methods from the literature | Cut temperature and share of oil burnt to be measured (R-061) |
 | Char value | Energy parity and market practice | Chlorine not measured; sense of payment disputed (R-012, R-034, R-038) |
 | Metal prices | Trade statistics and Citeo | Cleanliness of the metals not analysed (R-031) |
 | Hydrogen | Calculated from one gas analysis | Gas quantity and purification cost (R-011, Annex 9) |
@@ -388,6 +425,8 @@ Each line is a default that the operator can change [hyp:D-030]. The quality fac
 | R-036 | Basis of the carbon credit statements; CO2 emissions of a URC-2000 |
 | R-037 | Paid quotations: pyrolysis oil, naphtha, scrap, recovered fuels |
 | R-038 | Acceptance conditions and price of the char in French cement plants and boilers |
+| R-061 | Oil from household waste: distillation curve, flash point and chlorine of each cut, results of the chlorine capture tests |
+| R-062 | Chlorine limits of road diesel, petrol, marine fuel and refinery inlets; origin of the chlorine threshold recalled by the sponsor |
 
 The open points of Annexes 1 and 2 also apply, in particular R-012 (char), R-013 (oil chlorine and fractions), R-015 (energy consumption) and R-031 (metals).
 

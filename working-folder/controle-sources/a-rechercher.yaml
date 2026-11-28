@@ -553,3 +553,41 @@ R-060:
   - R-015
   - R-019
   - R-025
+
+R-061:
+  question: 'Huile d''OMR : courbe de distillation ; part en masse et point d''eclair de l''huile restante pour
+    plusieurs temperatures de coupe ou reglages de la vanne de separation (par exemple 50, 120, 160 et 200 C) ;
+    teneur en chlore de chaque coupe ; resultats des essais de captation du chlore par le carbonate de calcium
+    dans la vapeur surchauffee (D-074).'
+  demande_par: Stephane
+  date: 2026-11-28
+  statut: a_demander
+  detenteur: OneWorld
+  cherche: Rapport Chiba (distillation de plastiques vierges seulement, CHIBA-DISTILLATION) ; documents OneWorld
+    (electrovanne de separation, aucune repartition mesuree, OW-ENG-P14-P15-PROCEDE) ; aucune distillation
+    d'huile d'OMR trouvee.
+  sources:
+  - CHIBA-DISTILLATION
+  - OW-ENG-P14-P15-PROCEDE
+  - A3-GALA-EF-2020-DISTILLATION
+  lien_avec:
+  - R-013
+  - R-035
+
+R-062:
+  question: 'Limites de chlore des carburants et des acheteurs : gazole EN 590, essence EN 228, combustibles
+    marins ISO 8217 (norme elle-meme), specification d''entree d''une raffinerie ; origine du seuil de 100 ppm
+    de chlore evoque par Stephane le 25/11/2026.'
+  demande_par: Stephane
+  date: 2026-11-28
+  statut: a_chercher
+  detenteur: public
+  cherche: Arrete gazole de 1999 (aucune limite de chlore dans le tableau lu), directive 98/70 (aucune),
+    ISO 8217 par l'article UK P&I (source secondaire, 50 ppm) ; registres et annexes du depot (aucun seuil de
+    100 ppm de chlore ; 100 ppm figure pour l'azote et l'oxygene dans la specification de vapocraqueur).
+  sources:
+  - A3-ARRETE-GAZOLE-1999-ANNEXE-I
+  - A3-DIR-98-70-ANNEXE-II
+  - ISO8217-2024-UKPI
+  lien_avec:
+  - R-013

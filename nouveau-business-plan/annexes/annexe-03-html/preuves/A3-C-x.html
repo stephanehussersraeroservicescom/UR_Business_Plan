@@ -40,12 +40,12 @@ figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;col
 <body><main><p class="crumb"><a href="../index.html">Annex 3. Output Markets and Pricing</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 3.C.x</h1>
 <p class="small">Calculation</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>Prix de reference de la fraction gazole recalcule pour un Brent de 50 USD/b (rapport constant, hypothese D-030)</p><p class="result" style="margin-top:10px">Result: <strong>487.916</strong> EUR/t</p></div>
- <div class="card"><h4>Confidence</h4><div class="conf">90 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Fraction legere : naphta NWE (Insee, aout 2026) rapporte au Brent du meme mois (Banque mondiale), EUR/t par USD/b</p><p class="result" style="margin-top:10px">Result: <strong>7.0055</strong> EUR/t par USD/b</p></div>
+ <div class="card"><h4>Confidence</h4><div class="conf">95 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
 </div>
 <h2>How it was calculated</h2>
 <p>The formula below is applied to the inputs listed, each taken from its own evidence sheet. The description of the calculation is recorded in the register in French.</p>
-<h3>Formula</h3><pre>ratio * brent</pre>
+<h3>Formula</h3><pre>naphta / brent</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>ratio</code></td><td>9.75832 EUR/t par USD/b</td><td>Gazole : cotation Rotterdam semaine au 09/10/2026 en EUR/t rapportee au Brent de la meme semaine, EUR/t par USD/b</td><td><span class="ev"><a href="A3-C-r.html">3.C.r</a></span></td></tr><tr><td><code>brent</code></td><td>50 USD/b</td><td>exemple de Stephane du 15/10/2026</td><td><span class="ev"><a href="A3-D.html#D-030">D-030</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A3-GAZOLE-BRENT50</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>naphta</code></td><td>636.8 EUR/t</td><td>serie 010002082, aout 2026</td><td><span class="ev"><a href="A3-P-g.html">3.P.g</a></span></td></tr><tr><td><code>brent</code></td><td>90.9 USD/b</td><td>page 1, Crude oil Brent, aout 2026</td><td><span class="ev"><a href="A3-P-a.html">3.P.a</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A3-RATIO-LEGERE</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>

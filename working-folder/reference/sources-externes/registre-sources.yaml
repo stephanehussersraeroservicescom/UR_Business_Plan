@@ -12926,3 +12926,54 @@ A7-FCBA-CLASSIF-BOIS-2022:
   nature_source: referentiel professionnel (filiere bois), cofinance par l'ADEME ; pas un texte reglementaire
   note: Lu par Claude par WebFetch le 25/11/2026 ; citations transcrites par un modele intermediaire,
     a recontroler sur le PDF. Ajoute apres l'ecart E-3 du lot 1 de Codex (annexe 7).
+
+A3-GALA-EF-2020-DISTILLATION:
+  titre: "Gala, Guerrero, Guirao, Domine, Serra, Characterization and Distillation of Pyrolysis Liquids Coming from Polyolefins Segregated of MSW for their Use as Automotive Diesel Fuel, Energy & Fuels 34(5) (2020) 5969-5982"
+  editeur: "American Chemical Society ; manuscrit accepte depose sur RiuNet (Universitat Politecnica de Valencia)"
+  date: 2020
+  type: etude_publique
+  url: "https://riunet.upv.es/bitstream/10251/164164/3/Gala%3bGuerrero%3bGuirao%20-%20Characterization%20and%20Distillation%20of%20Pyrolysis%20Liquids%20Coming%20from%20Polyole....pdf"
+  emplacement: "Tableau 7 et section 3.2.7 (liquides bruts) ; section 3.2 (distillation simulee) ; tableau 8 et section 3.3 (coupes distillees) ; pages du manuscrit"
+  contenu: >
+    Liquides de pyrolyse de polyolefines triees d'OMR (trois echantillons IPW, PCPW, PWPW) : point d'eclair inferieur
+    a 25 C, contre plus de 55 C pour le gazole routier EN 590, attribue a des composes tres legers. Distillation
+    simulee : fraction sous 180 C de 38, 33 et 33 % ; 180 a 380 C de 52, 54 et 57 % ; au-dessus de 380 C de 10, 13
+    et 12 %. Coupes distillees (debut de coupe 160 a 210 C, fin 360 a 395 C) : point d'eclair de 62, 63, 80, 78, 73,
+    83 et 88 C, tous au-dessus de 55 C ; masse volumique 802 a 807 kg/m3, sous le minimum de 820 kg/m3 ; tenue au
+    froid (CFPP) non conforme. Rendement de chaque coupe non chiffre.
+  citation: "the FP values were increased from < 25 ºC for the pyrolysis liquids to temperatures higher than 55 ºC (automotive diesel specification)"
+  statut: lu
+  consulte: 2026-11-25
+  note: "Lu via WebFetch le 25/11/2026 (extraction par un modele, citations a recontroler sur le PDF). Affectation des colonnes UPD1 a UPD7 aux plages de coupe ambigue dans le tableau 8. Base volume ou masse de la distillation simulee non precisee. Echantillons d'OMR espagnoles, polyolefines triees, pas d'OMR brutes."
+
+A3-AMSPEC-TECHTALK-MELANGES:
+  titre: "AmSpec, Technical Notes n. 028, Blending: Linear vs Non Linear"
+  editeur: "AmSpec (laboratoire d'inspection et d'analyse petroliere, source commerciale)"
+  date: "non datee (fichier depose en 2019)"
+  type: presse
+  url: "https://www.amspecgroup.com/wp-content/uploads/2014/05/AmSpec-TECHTALK-10-2019-Blending-Linear-vs-Non-Linear.pdf"
+  emplacement: "Paragraphe sur le point d'eclair ; guide de melange du gazole (ASTM D93 A non lineaire)"
+  contenu: >
+    Le point d'eclair d'un melange n'est pas lineaire : il depend des composes legers de l'echantillon. Exemple :
+    un melange 50/50 de produits a 100 F et 180 F ne donne pas 140 F ; le composant leger domine et le melange
+    reste vers 100 a 120 F.
+  citation: "Flash is basically a derivative of the light ends contained in the sample."
+  statut: lu
+  consulte: 2026-11-25
+  note: "Source commerciale, non datee. Lu via WebFetch le 25/11/2026."
+
+A3-LEARNOIL-POINT-ECLAIR:
+  titre: "Learn Oil Analysis, What to do when your oil flash point is low"
+  editeur: "learnoilanalysis.com (blog)"
+  date: "non datee"
+  type: blog
+  url: "https://learnoilanalysis.com/lube-oil-test-analysis-lab-lubrication-reliability-maintenance/what-to-do-when-your-oil-flash-point-is-low/"
+  emplacement: "Liste des remedes"
+  contenu: >
+    Deux moyens de relever un point d'eclair bas : diluer les composes legers par un appoint d'huile neuve, ou
+    les retirer physiquement par un kit d'elimination des legers (stripping). Aucun additif n'est cite. Contexte :
+    huiles de lubrification.
+  citation: "physically remove the light ends from the oil"
+  statut: lu
+  consulte: 2026-11-25
+  note: "Blog, contexte des huiles de lubrification, aucun chiffre. Lu via WebFetch le 25/11/2026."

@@ -26,6 +26,8 @@ The open points that affect the plan are listed in the project's reconciliation 
 
 **The products are wastes until proven otherwise.** As measured on municipal plastics, the oil has a flash point below 40 °C [CHIBA-JLOS-HUILES] and is a hazardous waste fuel [A3-REG1357-2014-HP3]; the French end-of-waste route for pyrolysis oil applies only to sorted plastic waste sent to a steam cracker [A3-ARRETE-SSD-HUILE-PYROLYSE-2024] (Annexes 3 and 4). No carbon revenue is counted [hyp:D-028].
 
+**Chlorine and flash point close the better oil markets.** The measured oils hold 0.137 % and 0.526 % of chlorine [CHIBA-JLOS-HUILES]: without purification, every material use fails, from the steam cracker at 3 ppm [KUSENBERG-AICHE-2021] to the end-of-waste order at 500 ppm of halogens [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]; the oil passes only as a low-grade fuel. Urban Rig treats chlorine and flash point as two separate subjects, with its own series of tests: capture of the chlorine with calcium carbonate, and a separation valve sending the light fraction to the burner [hyp:D-074] (Annex 3, Section 3.1.2).
+
 **Capital cost base.** The URC-2000 costs 50 MEUR with its options, installation included, shipping not included [hyp:D-050] [hyp:D-051]. With about 5 MEUR of pre-treatment and 5 MEUR for land, building, civil works, engineering and permits [hyp:D-051], the capital cost base is 60 MEUR per line before shipping [calc:CALC-A9-CAPEX-LIGNE]. This is not the total financing need: shipping, connections, contingency and working capital come on top (Annex 9).
 
 **Permit.** Pyrolysis of non-hazardous waste falls under heading 2771 of the classified installations, under authorisation [A4-AIDA-NOMENCLATURE-V58-2026] [A4-DGPR-NOTE-DECHETS-2022]. The plan assumes, by prudence, that the plant also falls under the Industrial Emissions Directive [hyp:D-052]. The review takes at least about 5.7 months after a complete file is lodged [calc:CALC-A4-DELAI-MIN-MOIS] (Annex 4).
@@ -94,6 +96,8 @@ According to OneWorld design data, the URC-2000 is a line of 7 units of about 12
 
 In OneWorld's design balance, gas oil makes up 80 % of the oil, light oil 10 % and heavy oil 10 % [calc:CALC-A1-OW16-PART-GAZOLE] [calc:CALC-A1-OW16-PART-HEATING] [calc:CALC-A1-OW16-PART-HEAVY]; the output of each zone has not been measured (R-013). The measured oils from municipal plastics fail the flash point of finished fuels, and their chlorine, 0.137 % and 0.526 % [CHIBA-JLOS-HUILES], closes the steam cracker without purification (Annex 3).
 
+The light fraction is larger than the design figure. In the Chiba distillations of virgin plastics it took 28 % to 48 % of the oil volume [calc:CALC-A3-LEGER-CHIBA-PP] [calc:CALC-A3-LEGER-CHIBA-3P], against 10 % in the OneWorld design balance [calc:CALC-A1-OW16-PART-HEATING]. Removing the light cut is the documented way to raise the flash point: on oils from sorted polyolefins of household waste, distilled cuts reached 62 to 88 °C [A3-GALA-EF-2020-DISTILLATION]. No additive doing this was found. Urban Rig plans to send the light fraction to the burner with the gas [hyp:D-074]; the cut temperature, the share of oil burnt and the chlorine of each cut are to be measured (request R-061).
+
 ### 4.4 Environmental Performance
 
 Measured dioxins were 0.011 and 0.025 ng-TEQ/m³ in 2023 [DIOXINES-2023] and 0.067 ng-TEQ/m³ in 2022 [CHIBA-OOSUMI-FUMEES], numerically below the EU limit of 0.1 [IED-2010-75-ANX6-P3]. The limits apply at 11 % oxygen [IED-2010-75-ANX6-P3], which the 2022 and 2023 reports do not give; compliance is not yet demonstrated and needs a full campaign on the target feed (Annex 2, request R-016). The process water of the test unit was untreated and above discharge standards [CHIBA-CONSTATS] (request R-017).
@@ -138,7 +142,7 @@ Five revenue streams: entry price paid by waste holders, oil, char, metals and, 
 
 ### 7.2 Oil Pricing
 
-Each fraction is priced at its fossil benchmark multiplied by a quality factor to be decided [hyp:D-030]. At the latest prices the weighted benchmark is 1,121 EUR/t; at a Brent of 80 USD it is 714 EUR/t, and at 50 USD 446 EUR/t [calc:CALC-A3-HUILE-MOY-REF] [calc:CALC-A3-HUILE-MOY-BRENT80] [calc:CALC-A3-HUILE-MOY-BRENT50]. These are benchmarks before any discount; the oil of household and business waste is off-specification (Annex 3). The model sells the oil at 0.80 of the weighted benchmark by default [hyp:D-067] and the char at 0 EUR/t by default [hyp:D-068]; hydrogen is not counted by default, and the metals of household and business waste are at 0 by default [hyp:D-073]. Revenues: to be completed from the financial model (Annexes 10 to 13).
+Each fraction is priced at its fossil benchmark multiplied by a quality factor to be decided [hyp:D-030]. At the latest prices the weighted benchmark is 1,121 EUR/t; at a Brent of 80 USD it is 714 EUR/t, and at 50 USD 446 EUR/t [calc:CALC-A3-HUILE-MOY-REF] [calc:CALC-A3-HUILE-MOY-BRENT80] [calc:CALC-A3-HUILE-MOY-BRENT50]. These are benchmarks before any discount; the oil of household and business waste is off-specification (Annex 3). The quantity of oil sold also depends on the flash point solution: if the light fraction is burnt, the measured series suggest that a quarter to a half of the oil would not be sold [calc:CALC-A3-LEGER-CHIBA-PP] [calc:CALC-A3-LEGER-CHIBA-3P] (request R-061). The model sells the oil at 0.80 of the weighted benchmark by default [hyp:D-067] and the char at 0 EUR/t by default [hyp:D-068]; hydrogen is not counted by default, and the metals of household and business waste are at 0 by default [hyp:D-073]. Revenues: to be completed from the financial model (Annexes 10 to 13).
 
 ### 7.3 Capital Requirements
 
@@ -208,7 +212,7 @@ The steps named by the annexes: a classification agreed early with the inspector
 
 ### 10.1 Technology Risk
 
-The yields come from batch tests; their transfer to the continuous URC-2000 is not demonstrated and needs a performance guarantee (Annex 2, R-009). No test on raw household or business waste exists (R-021). The process heat balance on these feeds is not established [hyp:D-029].
+The yields come from batch tests; their transfer to the continuous URC-2000 is not demonstrated and needs a performance guarantee (Annex 2, R-009). No test on raw household or business waste exists (R-021). The process heat balance on these feeds is not established [hyp:D-029]. The removal of chlorine from the oil and the cut that raises its flash point are not demonstrated; Urban Rig is to test both [hyp:D-074] (R-061).
 
 ### 10.2 Regulatory Risk
 
@@ -216,7 +220,7 @@ Classification under the Industrial Emissions Directive is assumed by prudence [
 
 ### 10.3 Market and Pricing Risk
 
-Oil benchmarks are at crisis levels in 2026: the Brent averaged 69.0 USD per barrel in 2025 and 116.8 USD in September 2026 [A3-BM-PINKSHEET-2026-10]. No public price exists for pyrolysis oil; the only European seller found stopped its plant in 2026 [A3F-PRYME-RAPPORT-ANNUEL-2025]. The sense of payment for the char is disputed (Annex 3). No carbon credit is available today [hyp:D-028].
+Oil benchmarks are at crisis levels in 2026: the Brent averaged 69.0 USD per barrel in 2025 and 116.8 USD in September 2026 [A3-BM-PINKSHEET-2026-10]. No public price exists for pyrolysis oil; the only European seller found stopped its plant in 2026 [A3F-PRYME-RAPPORT-ANNUEL-2025]. Until its chlorine is removed, the municipal oil is limited to low-grade fuel outlets (Annex 3, Section 3.1.2). The sense of payment for the char is disputed (Annex 3). No carbon credit is available today [hyp:D-028].
 
 ### 10.4 Feedstock Supply Risk
 

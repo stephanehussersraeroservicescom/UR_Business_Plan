@@ -1054,3 +1054,25 @@ D-073:
     eliminer) restent ouverts.
   preuves: [CIBS-TGAP-2026, A3J-ACER-H2-MARKETS-2025]
   a_verifier: "Taux d'interet (B14) ; effectif avec OneWorld (B11) ; cotation d'assurance (R-007)."
+
+D-074:
+  date: 2026-11-28
+  titre: "Huile : chlore et point d'eclair traites comme deux sujets separes ; essais d'Urban Rig"
+  de: "chlore et point d'eclair evoques ensemble comme limites de l'huile (annexe 3, section 3.1.2)"
+  vers: >
+    deux sujets distincts. (1) Chlore : serie d'essais d'Urban Rig, avec comme reference la captation du chlore
+    contenu dans la vapeur d'eau surchauffee et ses gouttelettes par reaction avec du carbonate de calcium, l'eau
+    epuree etant remise dans le procede pour absorber davantage de chlore ; d'autres methodes seront essayees
+    ensuite. (2) Point d'eclair : la vanne de separation est reglee pour envoyer la fraction legere au bruleur,
+    avec le gaz ; Stephane propose un reglage a 50 C, la temperature de coupe est a fixer par essais.
+    Les deux sont, pour l'instant, les deux limites qui ferment une partie des marches de l'huile.
+  unite: "-"
+  motif: >
+    Decisions de Stephane du 25/11/2026 : « il s agirait a mon avis de regler la valve de separation des gas a 50
+    degres de maniere a les utiliser en chaudiere (comme les gas) » ; et du 28/11/2026 : « on va le traiter en
+    tant que 2 sujets separes, le chlore et le point eclair » ; « on va mettre en place une serie d'essais pour
+    essayer de filtrer [...] la vapeur d'eau surchauffee, de la faire reagir avec du carbonate de calcium pour
+    fixer le chlore ». Remarque de Claude : les coupes de Gala (A3-GALA-EF-2020-DISTILLATION) atteignent plus de
+    55 C en demarrant a 160 a 210 C ; le lien entre reglage de la vanne et point d'eclair n'est pas connu (R-061).
+  preuves: [A3-GALA-EF-2020-DISTILLATION, CHIBA-DISTILLATION, CHIBA-JLOS-HUILES]
+  a_verifier: "Resultats des essais d'Urban Rig (R-061) ; part de la fraction legere sur huile d'OMR."

@@ -40,12 +40,12 @@ figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;col
 <body><main><p class="crumb"><a href="../index.html">Annex 3. Output Markets and Pricing</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 3.C.z</h1>
 <p class="small">Calculation</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>Pouvoir calorifique superieur du char de dechets alimentaires a 500 C (Khan et al. 2022), converti en MJ/kg</p><p class="result" style="margin-top:10px">Result: <strong>24.5514</strong> MJ/kg</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Fraction lourde : fioul lourd TBTS (&lt; 1 % S) Rotterdam semaine au 09/10/2026 (EUR/t) rapporte au Brent de la meme semaine</p><p class="result" style="margin-top:10px">Result: <strong>4.20913</strong> EUR/t par USD/b</p></div>
  <div class="card"><h4>Confidence</h4><div class="conf">95 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
 </div>
 <h2>How it was calculated</h2>
 <p>The formula below is applied to the inputs listed, each taken from its own evidence sheet. The description of the calculation is recorded in the register in French.</p>
-<h3>Formula</h3><pre>k * c / 1000</pre>
+<h3>Formula</h3><pre>hfo / brent</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>k</code></td><td>5864 kcal/kg</td><td>tableau 1, PY500</td><td><span class="ev"><a href="A3-L-ac.html">3.L.ac</a></span></td></tr><tr><td><code>c</code></td><td>4.1868 kJ/kcal</td><td>calorie IT</td><td><span class="ev"><a href="../../annexe-02-html/preuves/A2-4-n.html">2.4.n</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A5-KHAN-PCS-MJ-KG</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>hfo</code></td><td>541 EUR/t</td><td>page 3, tableau des cotations, semaine au 9 oct. 2026, ligne en EUR/t</td><td><span class="ev"><a href="A3-P-b.html">3.P.b</a></span></td></tr><tr><td><code>brent</code></td><td>128.53 USD/b</td><td>page 2, Brent date</td><td><span class="ev"><a href="A3-P-b.html">3.P.b</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A3-RATIO-LOURDE</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>

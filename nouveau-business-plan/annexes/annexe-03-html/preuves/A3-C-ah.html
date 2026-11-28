@@ -40,12 +40,12 @@ figcaption{font:13px/1.4 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;col
 <body><main><p class="crumb"><a href="../index.html">Annex 3. Output Markets and Pricing</a> · <a href="index.html">All evidence sheets</a></p><h1>Evidence 3.C.ah</h1>
 <p class="small">Calculation</p>
 <div class="cards">
- <div class="card"><h4>What this calculation gives</h4><p>Energie du gaz restant par tonne de charge riche en resines si tout l hydrogene est retire</p><p class="result" style="margin-top:10px">Result: <strong>2701.78</strong> MJ/t</p></div>
- <div class="card"><h4>Confidence</h4><div class="conf">90 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
+ <div class="card"><h4>What this calculation gives</h4><p>Valeur du char a parite energetique avec le charbon-vapeur importe en France (Comext, S1 2026), sur le PCS mesure du char</p><p class="result" style="margin-top:10px">Result: <strong>202.809</strong> EUR/t</p></div>
+ <div class="card"><h4>Confidence</h4><div class="conf">95 %</div><p class="small">Label CALCULÉ. A calculation is rated at its least reliable input, at most 95 %, and at most 90 % when it uses a working assumption.</p></div>
 </div>
 <h2>How it was calculated</h2>
 <p>The formula below is applied to the inputs listed, each taken from its own evidence sheet. The description of the calculation is recorded in the register in French.</p>
-<h3>Formula</h3><pre>gaz * (1 - e / 100)</pre>
+<h3>Formula</h3><pre>pcs * prix</pre>
 <h3>Inputs</h3>
-<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>gaz</code></td><td>4299.4 MJ/t</td><td>Energie du gaz par tonne de charge, charge riche en resines : « Recovery Loss » de 11,5 % de la brochure OneWorld p. 16 assimilee au gaz de composition KANSO (hypothese D-038, non mesure)</td><td><span class="ev"><a href="../../annexe-02-html/preuves/A2-5-d-10.html">2.5.d.10</a></span></td></tr><tr><td><code>e</code></td><td>37.1591 %</td><td>Part de l energie (PCI) du gaz de pyrolyse portee par l hydrogene</td><td><span class="ev"><a href="A3-C-ag.html">3.C.ag</a></span></td></tr></table>
-<p class="small">Register entry <code>CALC-A3-GAZ-SANS-H2-RESINE</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>
+<table><tr><th>Input</th><th>Value</th><th>Location or description</th><th>Evidence</th></tr><tr><td><code>pcs</code></td><td>32.09 GJ/t</td><td>p. 1</td><td><span class="ev"><a href="../../annexe-02-html/preuves/A2-2-l.html">2.2.l</a></span></td></tr><tr><td><code>prix</code></td><td>6.32 EUR/GJ</td><td>NC 2701 12 90, import France, janv.-juin 2026</td><td><span class="ev"><a href="A3-P-r.html">3.P.r</a></span></td></tr></table>
+<p class="small">Register entry <code>CALC-A3-CHAR-PARITE-CHARBON</code>. The formula is recalculated automatically by the project control script.</p></main></body></html>

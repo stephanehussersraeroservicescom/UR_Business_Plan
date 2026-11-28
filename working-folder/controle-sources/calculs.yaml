@@ -7557,3 +7557,122 @@ CALC-MOD-HUILE-PCS-MJ-KG:
       emplacement: PDF p. 45
   resultat: 46.0
   unite: MJ/kg
+
+CALC-A3-CHLORE-CRACKER-BAS:
+  description: Chlore de l huile de plastiques d emballage de Noda rapporte au seuil industriel de 3 ppm en entree de vapocraqueur
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 1370
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 45 (0,137 %)
+    limite:
+      valeur: 3
+      unite: ppm
+      source: KUSENBERG-AICHE-2021
+      emplacement: tableau 2
+  unite: fois
+  resultat: 456.67
+
+CALC-A3-CHLORE-CRACKER-HAUT:
+  description: Chlore de l huile de residus de Noda rapporte au seuil industriel de 3 ppm en entree de vapocraqueur
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 5260
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 46 (0,526 %)
+    limite:
+      valeur: 3
+      unite: ppm
+      source: KUSENBERG-AICHE-2021
+      emplacement: tableau 2
+  unite: fois
+  resultat: 1753.33
+
+CALC-A3-CHLORE-MARIN-BAS:
+  description: Chlore de l huile de plastiques d emballage de Noda rapporte a la limite de 50 ppm de chlorures organiques des combustibles marins ISO 8217:2024 (source secondaire)
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 1370
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 45 (0,137 %)
+    limite:
+      valeur: 50
+      unite: ppm
+      source: ISO8217-2024-UKPI
+      emplacement: paragraphe sur la clause 5.3
+  unite: fois
+  resultat: 27.4
+
+CALC-A3-CHLORE-MARIN-HAUT:
+  description: Chlore de l huile de residus de Noda rapporte a la limite de 50 ppm de chlorures organiques des combustibles marins ISO 8217:2024 (source secondaire)
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 5260
+      unite: ppm
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 46 (0,526 %)
+    limite:
+      valeur: 50
+      unite: ppm
+      source: ISO8217-2024-UKPI
+      emplacement: paragraphe sur la clause 5.3
+  unite: fois
+  resultat: 105.2
+
+CALC-A3-CHLORE-CIMENT-HAUT:
+  description: Chlore de l huile de residus de Noda (0,526 %) rapporte a la limite de 0,5 % d un CSR de qualite cimentiere (analogie, la limite vise un combustible solide)
+  formule: cl / limite
+  entrees:
+    cl:
+      valeur: 0.526
+      unite: '%'
+      source: CHIBA-JLOS-HUILES
+      emplacement: PDF p. 46
+    limite:
+      valeur: 0.5
+      unite: '%'
+      source: A3-OBS-NORMANDIE-CSR-2021
+      emplacement: page 2
+  unite: fois
+  resultat: 1.052
+
+CALC-A3-LEGER-CHIBA-PP:
+  description: Part en volume de la fraction legere (第一石油類) de l huile de PP vierge distillee a Chiba (56 mL sur 200 mL)
+  formule: leger / total * 100
+  entrees:
+    leger:
+      valeur: 56
+      unite: mL
+      source: CHIBA-DISTILLATION
+      emplacement: PDF p. 34
+    total:
+      valeur: 200
+      unite: mL
+      source: CHIBA-DISTILLATION
+      emplacement: PDF p. 34
+  unite: '%'
+  resultat: 28.0
+
+CALC-A3-LEGER-CHIBA-3P:
+  description: Part en volume de la fraction legere (第一石油類) de l huile du melange 3P distillee a Chiba (96 mL sur 200 mL)
+  formule: leger / total * 100
+  entrees:
+    leger:
+      valeur: 96
+      unite: mL
+      source: CHIBA-DISTILLATION
+      emplacement: PDF p. 34
+    total:
+      valeur: 200
+      unite: mL
+      source: CHIBA-DISTILLATION
+      emplacement: PDF p. 34
+  unite: '%'
+  resultat: 48.0

@@ -1,20 +1,20 @@
 # Critical Open Points
 
-The points below are not yet resolved and will decide whether the project is viable in the short, medium and long term. They come from the annexes and from their independent check. Each point names the annex where it is discussed and the request that would close it. This list is a working document for discussion; it adds no figure of its own.
+The points below are not yet resolved and will decide whether the project is viable in the short, medium and long term. They come from the annexes and from their independent check. Each point names the annex where it is discussed and the request that would close it. This list is a working document for discussion; it adds no figure of its own. Chlorine and flash point, the two limits of the oil, are kept as two separate points, as the sponsor decided [hyp:D-074].
 
 ## Short term: before any investment decision
 
 - **No continuous URC-2000 has been measured.** All Urban Rig tests were batch runs; the capacity, yields, consumption and availability of the continuous 200 t per day machine are OneWorld design data [UR2000-JP-P08-SPEC]. Contractual guarantees and an acceptance test on the target feed are needed (Annexes 1 and 2; request R-009).
 
-- **The mass and energy balance on household waste is not measured.** In the standard case, about 205 kg per tonne are not yet allocated to a product [calc:CALC-A5-NONALLOUE-CENT-KG-T]; the gas of the organic matter has not been measured, so energy self-sufficiency on this feed is undetermined (Annex 5; request R-021).
+- **Chlorine closes every material use of the oil.** The municipal oils hold 0.137 % and 0.526 % chlorine [CHIBA-JLOS-HUILES]. Without purification they fail the steam cracker inlet by 456.67 and 1,753.33 times [calc:CALC-A3-CHLORE-CRACKER-BAS] [calc:CALC-A3-CHLORE-CRACKER-HAUT], the end-of-waste order by 2.74 and 10.52 times [calc:CALC-A3-CHLORE-TABA-BAS] [calc:CALC-A3-CHLORE-TABA-HAUT], and marine fuel by 27.4 and 105.2 times [calc:CALC-A3-CHLORE-MARIN-BAS] [calc:CALC-A3-CHLORE-MARIN-HAUT]. The oil passes only as a low-grade fuel: dedicated recovered fuel boilers, hazardous waste incineration and, for the less chlorinated oil, cement kilns. Limits for road fuels and refineries were not found. What closes it: a chlorine removal method proved by tests; Urban Rig starts with chlorine capture by calcium carbonate in the superheated steam, then other methods [hyp:D-074] (Annex 3, Section 3.1.2; requests R-013, R-061, R-062).
 
-- **OneWorld's consumption figures contradict each other.** Electricity is 20 kW on the specification sheet [UR2000-JP-P08-SPEC] and 600 kW in the consumption table, which also states 10,000 L of fuel per day [OW-CONSO-ENERGIE]. Whether these are per day or at 200 t per day is unknown (Annexes 2 and 9; requests R-015, R-060).
+- **The flash point makes the oil a hazardous waste and closes the finished fuels.** The flash point is below 40 °C [CHIBA-JLOS-HUILES], and a liquid waste below 60 °C is hazardous [A3-REG1357-2014-HP3]. Removing the light cut is the documented remedy: distilled cuts of a comparable oil reached 62 to 88 °C [A3-GALA-EF-2020-DISTILLATION]; no additive was found. After the Chiba light fraction was removed, the rest of the oil was still at 45 to 55 °C [CHIBA-DISTILLATION], so the cut must be set higher. What closes it: tests of the separation valve, which Urban Rig plans to set so that the light fraction goes to the burner with the gas [hyp:D-074], measuring the flash point, the share of oil burnt and the chlorine of each cut (Annex 3, Section 3.1.2; request R-061).
 
-- **The oil from municipal waste is a hazardous waste.** Its flash point is below 40 °C [CHIBA-JLOS-HUILES], and a liquid waste below 60 °C is hazardous [A3-REG1357-2014-HP3]. It can only go to a plant authorised to receive it; no buyer has been identified (Annex 3).
+- **The mass and energy balance on household waste is not measured.** In the standard case, about 205 kg per tonne are not yet allocated to a product [calc:CALC-A5-NONALLOUE-CENT-KG-T]; the gas of the organic matter has not been measured, so energy self-sufficiency on this feed is undetermined (Annex 5; request R-021). Burning the light fraction of the oil would cover part of the heat deficit, as the model already does by default with the oil [hyp:D-069].
 
-- **Chlorine closes the best oil market.** The municipal oils hold 0.137 % and 0.526 % chlorine [CHIBA-JLOS-HUILES], far above what a steam cracker accepts without purification [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]. Removing PVC upstream or dechlorinating the oil is a technical choice for Urban Rig (Annexes 3 and 8; requests R-013, R-035).
+- **OneWorld's figures contradict each other and the measurements.** Electricity is 20 kW on the specification sheet [UR2000-JP-P08-SPEC] and 600 kW in the consumption table, which also states 10,000 L of fuel per day [OW-CONSO-ENERGIE]. Whether these are per day or at 200 t per day is unknown. The light oil is 10 % of the oil in the OneWorld design [calc:CALC-A1-OW16-PART-HEATING], but 28 % to 48 % in the Chiba distillations [calc:CALC-A3-LEGER-CHIBA-PP] [calc:CALC-A3-LEGER-CHIBA-3P]; this changes how much oil is sold if the light fraction is burnt (Annexes 2, 3 and 9; requests R-015, R-060, R-061).
 
-- **The char has no buyer and is not characterised.** Its chlorine, ash and full metals are not measured; the calorific value used, 32.09 MJ/kg, was measured on a urethane char [hyp:D-038]. Its default price in the model is zero (Annex 3; requests R-012, R-034, R-038).
+- **The char has no buyer and is not characterised.** Its chlorine, ash and full metals are not measured; chlorine decides the cement outlet, where recovered fuel must stay below 0.5 % [A3-OBS-NORMANDIE-CSR-2021]; the calorific value used, 32.09 MJ/kg, was measured on a urethane char [hyp:D-038]. Its default price in the model is zero (Annex 3; requests R-012, R-034, R-038).
 
 - **The permit regime is to be confirmed.** Authorisation under heading 2771 is probable; the IED incineration regime is assumed by prudence, with its best available techniques [hyp:D-052]. Whether the plant pays the waste tax, and which exemption applies, is not settled (Annex 4; request R-050).
 
@@ -30,11 +30,11 @@ The points below are not yet resolved and will decide whether the project is via
 
 ## Medium term: shaping the first plant
 
-- **The first feed is a strategic choice.** Sorted plastics have a closed energy balance and a possible end-of-waste route for the oil; household waste brings a gate fee but uncertain products and energy (Annexes 5, 7 and 8; decision of the sponsor, Annex 4, Section 4.8).
+- **The first feed is a strategic choice.** Sorted plastics have a closed energy balance and the only end-of-waste route for the oil, to a steam cracker after purification [A3-ARRETE-SSD-HUILE-PYROLYSE-2024]; household waste brings a gate fee but uncertain products and energy (Annexes 5, 7 and 8; decision of the sponsor, Annex 4, Section 4.8).
 
 - **The timetable is long.** About 10 months of manufacturing for the continuous machine [OW-ENG-P03-P19-GAMME-DELAIS], plus at least about 5.7 months of permit review after a complete file [calc:CALC-A4-DELAI-MIN-MOIS], plus the preparation of that file (Annexes 4 and 9).
 
-- **The price of the oil is not quoted anywhere.** The model uses a reference price and a quality factor set by the sponsor [hyp:D-067]; a paid quotation or a buyer's offer is needed (Annex 3; request R-037).
+- **The price of the oil is not quoted anywhere.** The model uses a reference price and a quality factor set by the sponsor [hyp:D-067]; a paid quotation or a buyer's offer is needed (Annex 3; request R-037). The quantity sold also depends on how much light oil is burnt to raise the flash point and on whether chlorine is removed, which decides the market (see the chlorine and flash point points).
 
 - **The financing structure is not set.** The model shows its assumptions; the total financing need, including contingency and working capital, is to be built on the decisions recorded in the model (Annexes 9 to 13).
 
